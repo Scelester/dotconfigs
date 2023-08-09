@@ -1,0 +1,8 @@
+#!/bin/sh
+
+x=""
+for ((i=1; i<=$#; i++)); do
+    x="$x ${!i}"
+done
+
+tgpt "$x"

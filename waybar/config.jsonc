@@ -1,0 +1,244 @@
+[
+  // {
+  //   "name": "ttop",
+  //   "layer": "top",
+  //   "exclusive": true,
+  //   "modules-right": [],
+  //   "modules-center": ["clock#two"],
+  //   "modules-left": ["hyprland/window"],
+
+    // "hyprland/window": {
+    //   "format": "{}",
+    //   "icon":true,
+    //   "icon-size":14,
+    //   "max-length":60,
+    //   "on-click":"/home/scelester/MyScripts/hyprexpotoggle.sh"
+    // },
+
+  //   "clock#two": {
+  //     "format": "{:%A %B -%e %Y} ",
+      // "tooltip": true,
+      // "tooltip-format": " {:%A, %B %e %Y}",
+  //     "on-click": "sh -c '(gnome-calendar)'",
+  //     "interval": 1
+  //   }
+
+  // },
+
+  {
+    "name": "bdown",
+    "layer": "top",
+    "position": "top",
+    "margin-bottom": 2,
+    "padding-top":4,
+    "mod": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "height": 30,
+
+    "modules-left": [
+      "custom/launch_wofi",
+      "hyprland/workspaces",
+      "cpu",
+      "memory",
+      "disk",
+      "hyprland/window"
+    ],
+    //"modules-left": ["custom/launch_wofi","hyprland/workspaces""hyprland/window"],
+    // "modules-center": ["custom/lock_screen","clock","custom/power_btn"],
+    "modules-center": ["clock"],
+    "modules-right": [
+      "custom/media",
+      "custom/power_profile",
+      "battery",
+      "backlight",
+      "pulseaudio",
+      "pulseaudio#microphone",
+      "tray",
+      "custom/dboard"
+    ],
+    // spotify lower
+    "custom/media": {
+      "format": "{icon} {}",
+      "max-length": 40,
+      "return-type": "json",
+      "format-icons": {
+        "spotify": "",
+        "default": "🎜"
+      },
+      "tooltip": true,
+      "tooltip-format": "{}",
+      "on-click": "playerctl -p spotify, play-pause",
+      "on-click-right": "playerctl -p spotify, next",
+      "on-double-click": "playerctl -p spotify, previous",
+      "on-scroll-down": "playerctl -p spotify, volume 0.1-",
+      "on-scroll-up": "playerctl -p spotify, volume 0.1+",
+      "escape": true,
+      "exec": "/home/scelester/.config/waybar/scripts/mediaplayer.py 2> /dev/null" // Script in resources folder
+      // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    },
+    "hyprland/window": {
+      "format": "{}",
+      "icon":true,
+      "icon-size":14,
+      "max-length":60,
+      "on-click":"/home/scelester/MyScripts/hyprexpotoggle.sh"
+    },
+
+
+    "custom/dboard": {
+      "tooltip": false,
+      "format": "{icon}",
+      "format-icons": {
+        "notification": "<span foreground='red'><sup></sup></span>",
+        "none": "",
+        "dnd-notification": "<span foreground='red'><sup></sup></span>",
+        "dnd-none": "",
+        "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+        "inhibited-none": "",
+        "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+        "dnd-inhibited-none": ""
+      },
+      "return-type": "json",
+      "exec-if": "which swaync-client",
+      "exec": "swaync-client -swb",
+      "on-click": "sleep 0.1;swaync-client -t -sw",
+      "on-click-right": "swaync-client -d -sw",
+      "escape": true
+    },
+
+    "custom/launch_wofi": {
+      "format": "",
+      "on-click": "pkill rofi; /home/scelester/.config/rofi/scripts/launcher_t3",
+      "on-click-right": "pkill rofi;/home/scelester/.config/rofi/scripts/launcher_t4",
+      "tooltip": false
+    },
+
+    "custom/lock_screen": {
+      "format": "",
+      "on-click": "sh -c '(swaylock)' & disown",
+      "tooltip": false
+    },
+
+    "custom/power_btn": {
+      "format": "",
+      "on-click": "sh -c '(wlogout --protocol layer-shell)' & disown",
+      "tooltip": false
+    },
+
+    "cpu": {
+      "interval": 10,
+      "format": " {usage}%",
+      "max-length": 10,
+      "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
+    },
+
+    "disk": {
+      "interval": 30,
+      "format": "󰋊 {percentage_used}%",
+      "path": "/",
+      "tooltip": true,
+      "tooltip-format": "HDD - {used} used out of {total} on {path} ({percentage_used}%)",
+      "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
+    },
+
+    "memory": {
+      "interval": 30,
+      "format": " {}%",
+      "max-length": 10,
+      "tooltip": true,
+      "tooltip-format": "Memory - {used:0.1f}GB used",
+      "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
+    },
+
+    "custom/updates": {
+      "format": "{}",
+      "exec": "~/.config/waybar/scripts/update-sys",
+      "on-click": "~/.config/waybar/scripts/update-sys update",
+      "interval": 300,
+      "tooltip": true
+    },
+
+    "hyprland/workspaces": {
+      "disable-scroll": true,
+      "all-outputs": true,
+      "on-click": "activate",
+      "persistent_workspaces": {}
+    },
+
+    "custom/power_profile": {
+      //shows the current power profile and switches to next on click
+      "exec": "asusctl profile -p | sed s:'Active profile is'::",
+      "interval": 30,
+      "format": "󰈐{}",
+      "on-click": "asusctl profile -n; pkill -SIGRTMIN+8 waybar",
+      "signal": 8
+    },
+
+    "tray": {
+      "icon-size": 18,
+      "spacing": 10
+    },
+
+    "clock": {
+      "format": "  {:%H:%M:%S}  ",
+      "tooltip": true,
+      "tooltip-format": " {:%A, %B %e %Y}",
+      "on-click": "sh -c '(gnome-calendar)'",
+      "interval": 1
+    },
+
+    "backlight": {
+      "device": "intel_backlight",
+      "format": "{icon} {percent}%",
+      "format-icons": ["󰃞", "󰃟", "󰃠"],
+      "on-scroll-up": "brightnessctl set 1%+",
+      "on-scroll-down": "brightnessctl set 1%-",
+      "min-length": 6
+    },
+
+    "battery": {
+      "states": {
+        "good": 95,
+        "warning": 30,
+        "critical": 20
+      },
+      "format": "{icon} {capacity}%",
+      "format-charging": " {capacity}%",
+      "format-plugged": " {capacity}%",
+      "format-alt": "{time} {icon}",
+      "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
+
+    "pulseaudio": {
+      "format": "{icon} {volume}%",
+      "format-muted": "",
+      "on-click": "pamixer -t",
+      "on-click-right": "pavucontrol",
+      "on-scroll-up": "pamixer -i 5",
+      "on-scroll-down": "pamixer -d 5",
+      "scroll-step": 5,
+      "format-icons": {
+        "headphone": "",
+        "hands-free": "",
+        "headset": "",
+        "phone": "",
+        "portable": "",
+        "car": "",
+        "default": ["", "", ""]
+      }
+    },
+
+    "pulseaudio#microphone": {
+      "format": "{format_source}",
+      "format-source": " {volume}%",
+      "format-source-muted": "",
+      "on-click": "pamixer --default-source -t",
+      "on-click-right": "pavucontrol",
+      "on-scroll-up": "pamixer --default-source -i 1",
+      "on-scroll-down": "pamixer --default-source -d 1",
+      "scroll-step": 1
+    }
+  }
+]

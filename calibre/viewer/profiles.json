@@ -1,0 +1,19 @@
+{
+  "viewer:": {
+    "Epub": {
+      "__timestamp__": "2024-05-30T10:55:26.087785+00:00",
+      "background_image_fade": 90,
+      "base_font_size": 23,
+      "book_scrollbar": true,
+      "columns_per_screen": {
+        "landscape": 1,
+        "portrait": 0
+      },
+      "max_text_width": 1000,
+      "read_mode": "flow",
+      "standalone_font_settings": {
+        "standard_font": "sans"
+      }
+    }
+  }
+}

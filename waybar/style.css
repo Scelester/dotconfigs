@@ -1,0 +1,198 @@
+/* Global Reset */
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    font-size: 13px;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+    margin-top: 3;
+    margin-bottom: 2;
+}
+
+/* Waybar */
+window#waybar {
+    background: rgba(0, 0, 0, 0.4);
+    color: #d0d2d8;
+}
+
+/* Tooltips */
+tooltip {
+    background: #1e1e2e;
+}
+
+tooltip label {
+    color: #515668;
+}
+
+/* Workspaces Buttons */
+#workspaces button {
+    padding: 0 5px;
+    color: #5e607c;
+    margin-right: 5px;
+    margin-top:0;
+}
+
+#workspaces button.active {
+    color: #c7cad8;
+}
+
+#workspaces button.focused {
+    color: #a6adc8;
+    background: #eba0ac;
+    border-radius: 10px;
+}
+
+#workspaces button.urgent {
+    color: #11111b;
+    background: #a6e3a1;
+    border-radius: 10px;
+}
+
+#workspaces button:hover {
+    background: rgb(233, 148, 51);
+    color: #cdd6f4;
+    border-radius: 10px;
+}
+
+/* Other Workspaces Elements */
+#custom-launch_wofi,
+#custom-dboard,
+#custom-lock_screen,
+#custom-power_btn,
+#custom-power_profile,
+#cpu,
+#disk,
+#custom-updates,
+#memory,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#tray,
+#workspaces,
+#backlight {
+    background: #000000;
+    padding: 0px 6px;
+    margin-bottom: 2px;
+}
+
+/* Specific Element Styles */
+#custom-dboard {
+    border-radius: 0 10px 10px 0;
+}
+
+#tray, #custom-lock_screen, #backlight, #custom-launch_wofi, #cpu {
+    border-radius: 10px 0px 0px 10px;
+}
+
+#custom-power_btn, #workspaces, #pulseaudio.microphone, #battery, #disk {
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 10px;
+}
+
+#clock {
+    color: rgb(223, 223, 138);
+    border-radius: 10px;
+    margin-top: 0;
+    padding: 0px;
+}
+
+#workspaces {
+    padding-right: 0px;
+    padding-left: 5px;
+}
+
+#custom-power_profile {
+    color: #a6e3a1;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 10px 0 0 10px;
+}
+
+#custom-launch_wofi {
+    color: #89b4fa;
+    margin-left: 3px;
+    border-right: 0px;
+}
+
+#pulseaudio {
+    color: #89b4fa;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#pulseaudio.microphone {
+    color: #cba6f7;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#battery {
+    color: #a6e3a1;
+    border-left: 0px;
+}
+
+#window {
+    background:none;
+    min-width: 200px;
+    margin-right: 20px;
+    min-width: 30px;
+    margin-top: 0;
+    color: #13aeb1;
+    text-decoration: underline;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+#custom-media {
+    color: rgb(17, 167, 17);
+    padding-left: 3px;
+    padding-right: 10px;
+    margin-left: 8px;
+}
+
+window#waybar.ttop * {
+    font-size: 12px;
+    font-weight: 500;
+    font-family: Tahoma, sans-serif;
+}
+
+/* Borders for Some Elements */
+#custom-power_btn, #workspaces, #pulseaudio.microphone, #battery, #disk, #custom-dboard {
+    /* border: 1px solid rgb(71, 71, 185); */
+    border-left: 0;
+}
+
+#custom-power_profile, #tray, #custom-launch_wofi, #cpu, #backlight {
+    /* border: 1px solid rgb(71, 71, 185); */
+    border-right: none;
+}
+
+#clock {
+    /* border: 1px solid rgb(71, 71, 185); */
+    min-width: 170px;
+    margin-left: 7px;
+    /* border-radius: 0 0 10px 10px; */
+}
+
+
+#clock.two {
+    background: rgba(0, 0, 0, 0.1);
+    /* border: 1px solid rgb(71, 71, 185); */
+    /* border-bottom: 0px; */
+    min-width: 170px;
+    border-radius: 0;
+    border: none;
+    color: #f7efd1;
+    font-size: 11px;
+    border-top: 2px inset #f7efd1;
+}
+
+#memory, #pulseaudio {
+    /* border: 1px solid rgb(71, 71, 185); */
+    border-left: 0;
+    border-right: 0;
+}

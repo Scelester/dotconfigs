@@ -1,0 +1,24 @@
+{
+  "about_get_books_msg_again": false,
+  "add a plugin dialog": "/home/scelester/Downloads",
+  "add books dialog dir": "/home/scelester/Megasync/heck",
+  "add books dialog dir-last-used-filter-spec-all-files": false,
+  "choose_library_icon": "/home/scelester/Pictures",
+  "sort_history": [
+    [
+      "title",
+      true
+    ],
+    [
+      "timestamp",
+      false
+    ],
+    [
+      "timestamp",
+      false
+    ]
+  ],
+  "systray_msg": true,
+  "welcome_wizard_device": "default",
+  "welcome_wizard_was_run": true
+}

@@ -1,0 +1,275 @@
+{
+  "geometry-of-main_window_geometry": {
+    "frame_geometry": {
+      "height": 1080,
+      "width": 1920,
+      "x": 0,
+      "y": 0
+    },
+    "full_screened": true,
+    "geometry": {
+      "height": 1080,
+      "width": 1920,
+      "x": 0,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 1049,
+      "width": 1920,
+      "x": 0,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAAB38AAAQ3AAAAAAAAAAAAAAd/AAAEGAAAAAACBAAAB4AAAAAAAAAAAAAAB38AAAQ3"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "Najing CEC Panda FPD Technology CO. ltd",
+      "model": "0x004D",
+      "name": "eDP-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-viewer_image_popup_geometry": {
+    "frame_geometry": {
+      "height": 996,
+      "width": 1890,
+      "x": 479,
+      "y": 436
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 996,
+      "width": 1890,
+      "x": 479,
+      "y": 436
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 1047,
+      "width": 1920,
+      "x": 479,
+      "y": 436
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAHfAAABtAAACUAAAAWXAAAB3wAAAbQAAAleAAAFygAAAAACAAAAB4AAAAHfAAABtAAACUAAAAWX"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "Najing CEC Panda FPD Technology CO. ltd",
+      "model": "0x004D",
+      "name": "eDP-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "image_popup_fit_image": false,
+  "image_popup_zoom_factor": 1,
+  "main_window_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAH9AAAAAgAAAAAAAAEAAAAD+fwCAAAAAvsAAAAQAHQAbwBjAC0AZABvAGMAawIAAAAAAAAAAAAAB2IAAAPk+wAAABYAcwBlAGEAcgBjAGgALQBkAG8AYwBrAAAAAAD/////AAAApgD///8AAAABAAABBQAABDj8AgAAAAT7AAAAFgBsAG8AbwBrAHUAcAAtAGQAbwBjAGsAAAAAAP////8AAACTAP////sAAAAcAGIAbwBvAGsAbQBhAHIAawBzAC0AZABvAGMAawAAAAAAAAAEOAAAAQoA////+wAAABwAaQBuAHMAcABlAGMAdABvAHIALQBkAG8AYwBrAAAAAAAAAAQ4AAAAGAD////7AAAAHgBoAGkAZwBoAGwAaQBnAGgAdABzAC0AZABvAGMAawAAAAAAAAAD+QAAAOcA////AAAHgAAABDgAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAAB4AYQBjAHQAaQBvAG4AcwBfAHQAbwBvAGwAYgBhAHICAAAAAP////8AAAAAAAAAAA=="
+  },
+  "old_prefs_migrated": true,
+  "session_data": {
+    "background_image_fade": 90,
+    "base_font_size": 24,
+    "book_scrollbar": false,
+    "columns_per_screen": {
+      "landscape": 1,
+      "portrait": 0
+    },
+    "controls_help_shown_count": 2,
+    "current_color_scheme": "sepia-dark",
+    "lines_per_sec_auto": 2,
+    "lines_per_sec_smooth": 20,
+    "max_text_width": 1000,
+    "paged_pixel_scroll_threshold": 60,
+    "paged_wheel_scrolls_by_screen": false,
+    "paged_wheel_section_jumps": true,
+    "read_mode": "flow",
+    "scroll_stop_boundaries": true,
+    "standalone_font_settings": {
+      "standard_font": "sans"
+    },
+    "standalone_misc_settings": {
+      "remember_window_geometry": true
+    },
+    "standalone_recently_opened": [
+      {
+        "authors": [
+          "Occupytheweb"
+        ],
+        "key": "/home/scelester/Calibre Library/Occupytheweb/Getting Started Becoming a Master Hacker_ Hacking is the Most Important Skill Set of the 21st Ce (24)/Getting Started Becoming a Master Hacker_ - Occupytheweb.epub",
+        "pathtoebook": "/home/scelester/Calibre Library/Occupytheweb/Getting Started Becoming a Master Hacker_ Hacking is the Most Important Skill Set of the 21st Ce (24)/Getting Started Becoming a Master Hacker_ - Occupytheweb.epub",
+        "timestamp": "2024-06-07T15:10:59.918Z",
+        "title": "Getting Started Becoming a Master Hacker: Hacking is the Most Important Skill Set of the 21st Century! (Linux Basics for Hackers)"
+      },
+      {
+        "authors": [
+          "Scelester"
+        ],
+        "key": "/home/scelester/Calibre Library/Scelester/Against the gods_0-2029 (22)/Against the gods_0-2029 - Scelester.epub",
+        "pathtoebook": "/home/scelester/Calibre Library/Scelester/Against the gods_0-2029 (22)/Against the gods_0-2029 - Scelester.epub",
+        "timestamp": "2024-06-07T15:06:49.393Z",
+        "title": "Against the gods_0-2029"
+      },
+      {
+        "authors": [
+          "Justin Seitz",
+          "Tim Arnold"
+        ],
+        "key": "/home/scelester/Calibre Library/Justin Seitz/Black Hat Python, 2nd Edition (23)/Black Hat Python, 2nd Edition - Justin Seitz.epub",
+        "pathtoebook": "/home/scelester/Calibre Library/Justin Seitz/Black Hat Python, 2nd Edition (23)/Black Hat Python, 2nd Edition - Justin Seitz.epub",
+        "timestamp": "2024-05-30T11:58:03.233Z",
+        "title": "Black Hat Python, 2nd Edition"
+      },
+      {
+        "authors": [
+          "Scelester"
+        ],
+        "key": "/home/scelester/Calibre Library/Scelester/Against the gods_0-2029 (21)/Against the gods_0-2029 - Scelester.epub",
+        "pathtoebook": "/home/scelester/Calibre Library/Scelester/Against the gods_0-2029 (21)/Against the gods_0-2029 - Scelester.epub",
+        "timestamp": "2024-02-06T10:52:41.460Z",
+        "title": "Against the gods_0-2029"
+      },
+      {
+        "authors": [
+          "Scelester"
+        ],
+        "key": "/home/scelester/Calibre Library/Scelester/Against the gods_0-2029 (20)/Against the gods_0-2029 - Scelester.epub",
+        "pathtoebook": "/home/scelester/Calibre Library/Scelester/Against the gods_0-2029 (20)/Against the gods_0-2029 - Scelester.epub",
+        "timestamp": "2024-02-06T10:52:11.242Z",
+        "title": "Against the gods_0-2029"
+      },
+      {
+        "authors": [
+          "Scelester"
+        ],
+        "key": "/home/scelester/Calibre Library/Scelester/Against the gods_0-2029 (19)/Against the gods_0-2029 - Scelester.epub",
+        "pathtoebook": "/home/scelester/Calibre Library/Scelester/Against the gods_0-2029 (19)/Against the gods_0-2029 - Scelester.epub",
+        "timestamp": "2024-02-06T10:48:27.977Z",
+        "title": "Against the gods_0-2029"
+      },
+      {
+        "authors": [
+          "Scelester"
+        ],
+        "key": "/home/scelester/Calibre Library/Scelester/Against the gods_0-2029 (16)/Against the gods_0-2029 - Scelester.epub",
+        "pathtoebook": "/home/scelester/Calibre Library/Scelester/Against the gods_0-2029 (16)/Against the gods_0-2029 - Scelester.epub",
+        "timestamp": "2024-02-06T10:44:45.099Z",
+        "title": "Against the gods_0-2029"
+      },
+      {
+        "authors": [
+          "Scelester"
+        ],
+        "key": "/home/scelester/Calibre Library/Scelester/Against the gods_0-2029 (15)/Against the gods_0-2029 - Scelester.epub",
+        "pathtoebook": "/home/scelester/Calibre Library/Scelester/Against the gods_0-2029 (15)/Against the gods_0-2029 - Scelester.epub",
+        "timestamp": "2024-02-06T10:28:54.148Z",
+        "title": "Against the gods_0-2029"
+      },
+      {
+        "authors": [
+          "Scelester"
+        ],
+        "key": "/home/scelester/Calibre Library/Scelester/Against the gods_0-2029 (14)/Against the gods_0-2029 - Scelester.epub",
+        "pathtoebook": "/home/scelester/Calibre Library/Scelester/Against the gods_0-2029 (14)/Against the gods_0-2029 - Scelester.epub",
+        "timestamp": "2024-02-06T10:07:52.529Z",
+        "title": "Against the gods_0-2029"
+      },
+      {
+        "authors": [
+          "Scelester"
+        ],
+        "key": "/home/scelester/Calibre Library/Scelester/Against the gods_0-2029 (13)/Against the gods_0-2029 - Scelester.epub",
+        "pathtoebook": "/home/scelester/Calibre Library/Scelester/Against the gods_0-2029 (13)/Against the gods_0-2029 - Scelester.epub",
+        "timestamp": "2024-02-06T10:07:35.319Z",
+        "title": "Against the gods_0-2029"
+      },
+      {
+        "authors": [
+          "Scelester"
+        ],
+        "key": "/home/scelester/Calibre Library/Scelester/Against the gods_0-2029 (11)/Against the gods_0-2029 - Scelester.epub",
+        "pathtoebook": "/home/scelester/Calibre Library/Scelester/Against the gods_0-2029 (11)/Against the gods_0-2029 - Scelester.epub",
+        "timestamp": "2024-02-05T12:59:41.951Z",
+        "title": "Against the gods_0-2029"
+      },
+      {
+        "authors": [
+          "Scelester"
+        ],
+        "key": "/home/scelester/Calibre Library/Scelester/Against the gods_0-2029 (10)/Against the gods_0-2029 - Scelester.epub",
+        "pathtoebook": "/home/scelester/Calibre Library/Scelester/Against the gods_0-2029 (10)/Against the gods_0-2029 - Scelester.epub",
+        "timestamp": "2024-02-05T12:58:18.983Z",
+        "title": "Against the gods_0-2029"
+      },
+      {
+        "authors": [
+          "Scelester"
+        ],
+        "key": "/home/scelester/Calibre Library/Scelester/Against the gods_0-2029 (9)/Against the gods_0-2029 - Scelester.epub",
+        "pathtoebook": "/home/scelester/Calibre Library/Scelester/Against the gods_0-2029 (9)/Against the gods_0-2029 - Scelester.epub",
+        "timestamp": "2024-02-05T12:45:32.777Z",
+        "title": "Against the gods_0-2029"
+      },
+      {
+        "authors": [
+          "Scelester"
+        ],
+        "key": "/home/scelester/Calibre Library/Scelester/Against the gods (7)/Against the gods - Scelester.epub",
+        "pathtoebook": "/home/scelester/Calibre Library/Scelester/Against the gods (7)/Against the gods - Scelester.epub",
+        "timestamp": "2024-02-05T12:40:27.051Z",
+        "title": "Against the gods"
+      },
+      {
+        "authors": [
+          "Scelester"
+        ],
+        "key": "/home/scelester/Calibre Library/Scelester/Against the gods (6)/Against the gods - Scelester.epub",
+        "pathtoebook": "/home/scelester/Calibre Library/Scelester/Against the gods (6)/Against the gods - Scelester.epub",
+        "timestamp": "2024-02-05T12:36:42.665Z",
+        "title": "Against the gods"
+      }
+    ],
+    "user_stylesheet": "body::after {\n    content: \"\";\n    border-top: 1px solid #ccc; /* Horizontal line style */\n    margin: 20px 0; /* Adjust the margin as needed */\n}\n\n\nbody::after {\n    content: '...'; /* Display ellipsis at the bottom */\n    position: relative;\n    bottom: 0;\n    left: 50%;\n    transform: translateX(-50%);\n    font-size: 24px; /* Adjust the font size as needed */\n    color: #888; /* Adjust the color as needed */\n    text-align: center;\n}\nbody {\n    padding:0 20px 40vh 20px !important;\n}\n\n"
+  }
+}

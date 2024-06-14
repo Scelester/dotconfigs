@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# Check if an argument is provided
+if [ $# -eq 0 ]; then
+    echo "No argument provided"
+    exit 1
+fi
+
+# Command with argument from the script argument
+command_with_arg=$1
+
+# Count the occurrences of 'Corked: no' and 'vesktop'
+corked_no_count=$(pactl list sink-inputs | grep -c 'Corked: no')
+# vesktop_count=$(pactl list sink-inputs | grep -c 'application.process.binary = "vesktop"')
+
+# # Check the counts to determine if audio is playing
+# if [[ $corked_no_count -eq 2 && $vesktop_count -ge 1 ]]; then
+#     echo "Running"
+# elif [[ $corked_no_count -eq 1 && $vesktop_count -ge 1 ]]; then
+#     $command_with_arg  # Execute the command with argument
+# elif [[ $corked_no_count -eq 1 && $vesktop_count -eq 0 ]]; then
+#     echo "Running"
+# else
+#     $command_with_arg  # Execute the command with argument
+# fi
+
+if [[ $corked_no_count -eq 0 ]]; then
+    $command_with_arg
+else
+    echo "running"
+fi

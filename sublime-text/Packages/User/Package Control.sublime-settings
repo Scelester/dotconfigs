@@ -1,0 +1,26 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+		"ColorHelper",
+	],
+	"installed_packages":
+	[
+		"ColorHelper",
+		"FileIcons",
+		"FileIcons Mono",
+		"Package Control",
+		"PackageDev",
+		"Terminal",
+		"Theme - Afterglow",
+	],
+	"variables": {
+    },
+    "rules": [
+        {
+            "class": "sidebar_label",
+            // "font.face": "system",
+            "font.size": 12,
+        },
+	],
+}

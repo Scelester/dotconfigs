@@ -1,0 +1,11 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN" "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
+<Menu>
+  <Name>Applications</Name>
+  <Menu>
+    <Name>Windows Applications</Name>
+    <Directory>cxmenu-cxoffice-afd294b6-276b-4ffd-99d8-39aeaa2acb47-3ii0rqp.directory</Directory>
+    <Include>
+      <Category>X-cxmenu-cxoffice-afd294b6-276b-4ffd-99d8-39aeaa2acb47-3ii0rqp</Category>
+    </Include>
+  </Menu>
+</Menu>

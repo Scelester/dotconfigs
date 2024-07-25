@@ -1,0 +1,978 @@
+{
+	"file_history":
+	[
+		"/home/scelester/.config/jgit/config",
+		"/home/scelester/.config/knfsshare",
+		"/home/scelester/.config/.gitignore",
+		"/home/scelester/.config/mimeapps.list",
+		"/home/scelester/.config/user-dirs.dirs",
+		"/home/scelester/MyScripts/StartupStates/why.txt",
+		"/home/scelester/.config/libinput-gestures.conf",
+		"/home/scelester/MyScripts/nightlight",
+		"/home/scelester/Downloads/churchill.html",
+		"/home/scelester/.zshrc",
+		"/home/scelester/.zshenv",
+		"/home/scelester/.zsh_history",
+		"/home/scelester/.var/app/org.libreoffice.LibreOffice/config/libreoffice/4/user/GraphicsRenderTests.log",
+		"/usr/lib/systemd/system/wpa_supplicant.service",
+		"/home/scelester/.phoronix-test-suite/phoronix-test-suite-dependencies.log",
+		"/home/scelester/Downloads/IT infra Network(3).drawio",
+		"/home/scelester/Downloads/S0950584915000282.txt",
+		"/home/scelester/Downloads/S0957417402000155(1).bib",
+		"/home/scelester/Downloads/S0957417402000155.txt",
+		"/home/scelester/Downloads/S0957417402000155.bib",
+		"/home/scelester/Documents/zoho",
+		"/home/scelester/.Xdefaults",
+		"/home/scelester/.config/firefoxprofileswitcher/config.json",
+		"/home/scelester/.config/firefoxprofileswitcher/profile-options.json",
+		"/home/scelester/Desktop/omni/chrome/toolkit/skin/classic/global/wizard.css",
+		"/home/scelester/.bashrc",
+		"/home/scelester/.profile",
+		"/home/scelester/rem_chapters.txt",
+		"/home/scelester/ProjectD/fetcher/STORAGE/NSHBA/NSHBA_chapterlist.txt",
+		"/home/scelester/ProjectD/fetcher/NSHBA_chapterlist.txt",
+		"/home/scelester/Downloads/chapterLinks new.txt",
+		"/home/scelester/Downloads/chapterLinks new(2).txt",
+		"/home/scelester/Downloads/chapterLinks new(1).txt",
+		"/home/scelester/ProjectD/fetcher/js note.js",
+		"/home/scelester/text.js",
+		"/home/scelester/Desktop/test.txt",
+		"/home/scelester/.games/SummertimeSaga-0-20-16-pc/SummertimeSaga.sh",
+		"/home/scelester/Downloads/03bc17944a36f44d1355.txt",
+		"/home/scelester/.config/ags/lib/hyprland.ts",
+		"/home/scelester/Desktop/leed.html",
+		"/home/scelester/.config/Gmail Desktop/custom.css",
+		"/home/scelester/Desktop/dot/rofi/powermenu/type-2/style-3.rasi",
+		"/home/scelester/MyScripts/StartupStates/nightlight",
+		"/home/scelester/Desktop/dot/xsettingsd/xsettingsd.conf",
+		"/usr/share/sddm/themes/Utterly-Nord/theme.conf",
+		"/usr/share/sddm/themes/Utterly-Nord/Main.qml",
+		"/usr/share/sddm/themes/Utterly-Nord/LICENSE.md",
+		"/home/scelester/Downloads/KMS_VL_ALL_AIO.cmd",
+		"/home/scelester/Downloads/f.txt",
+		"/home/scelester/Obsidian/.obsidian/snippets/snipplet.css",
+		"/home/scelester/Obsidian/.obsidian/themes/Obsidianite/theme.css",
+		"/home/scelester/Obsidian/Weboro/zoho & api/flow diagram.md",
+		"/home/scelester/.games/.gmy/Gym.sh",
+		"/home/scelester/.config/hypr/hypridle.conf",
+		"/home/scelester/.config/hypr/hyprlock.conf",
+		"/home/scelester/.config/hypr/settings/asus_specific_bindings.conf",
+		"/home/scelester/.config/hypr/scripts/isDontSleepOnAudio",
+		"/home/scelester/.config/hypr/scripts/apped_bg.sh",
+		"/home/scelester/Desktop/left-ga",
+		"/home/scelester/Desktop/right-ga",
+		"/home/scelester/Desktop/top-ga",
+		"/home/scelester/Desktop/test.py",
+		"/home/scelester/Desktop/bottom-ga",
+		"/home/scelester/dat",
+		"/home/scelester/MyScripts/battery_warrning",
+		"/home/scelester/ProjectD/ayusBro_proj/project-pa2413/.env",
+		"/home/scelester/Downloads/debug.log",
+		"/home/scelester/ProjectD/ayusBro_proj/project-pa2413/resources/views/home.blade.php",
+		"/home/scelester/Desktop/crackgen/pasgen",
+		"/home/scelester/Desktop/crackgen/passwords.txt",
+		"/home/scelester/Downloads/nabinpauudel664@gmail.com Backup authentication codes.txt",
+		"/home/scelester/ProjectD/actix_rust/Cargo.toml",
+		"/tmp/xa-KSWFO2/Winwheel.min.js",
+		"/tmp/xa-KSWFO2/README.md",
+		"/home/scelester/Desktop/Kernal_patching/mt7920_mt7921_fix.patch",
+		"/home/scelester/ProjectD/api_payadvtest/curl.sh",
+		"/home/scelester/ProjectD/ayusBro_proj/b/app/Http/Controllers/HomeController.php",
+		"/home/scelester/MyScripts/hyprexpotoggle.sh",
+		"/home/scelester/MyScripts/spotify_controller",
+		"/home/scelester/.config/ags/config.js",
+		"/home/scelester/Desktop/PoSayDone .dotfiles_wayland main files-rofi/bin/powermenu",
+		"/home/scelester/MyScripts/wallpaperchanger",
+		"/home/scelester/test.sh",
+		"/home/scelester/MyScripts/close_bg_apps",
+		"/home/scelester/.local/share/hyprpm/headersRoot/share/pkgconfig/hyprland.pc",
+		"/home/scelester/.local/share/hyprpm/hyprland-plugins/state.toml",
+		"/home/scelester/ProjectD/clickcon_api/public/.htaccess",
+		"/home/scelester/Downloads/latest-linux.yml",
+		"/home/scelester/Downloads/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.css.map",
+		"/home/scelester/ProjectD/clicknepal_old/resources/views/layouts/app.blade.php",
+		"/home/scelester/ProjectD/clickcon_api/routes/web.php",
+		"/home/scelester/ProjectD/clicknepal_old/app/Http/Controllers/Auth/LoginController.php",
+		"/home/scelester/ProjectD/clickcon_api/.env.example",
+		"/home/scelester/ProjectD/anish_proj/frontend/html/home.html",
+		"/home/scelester/ProjectD/anish_proj/frontend/html/blogposts.html",
+		"/home/scelester/ProjectD/anish_proj/frontend/html/myaccount.html",
+		"/home/scelester/ProjectD/anish_proj/frontend/css/allstyles.css",
+		"/home/scelester/ProjectD/anish_proj/frontend/html/test.html",
+		"/home/scelester/ProjectD/anish_proj/frontend/html/admin/adminaccounts.html",
+		"/home/scelester/ProjectD/anish_proj/frontend/html/admin/adminhome.html",
+		"/home/scelester/ProjectD/anish_proj/frontend/html/admin/adminposts.html",
+		"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/buyer.html",
+		"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/myaccountbuyer.html",
+		"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/myprojects.html",
+		"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/searchbuyer.html",
+		"/home/scelester/ProjectD/anish_proj/frontend/html/seller/seller.html",
+		"/home/scelester/ProjectD/anish_proj/frontend/html/seller/sellerbrowse.html",
+		"/home/scelester/ProjectD/anish_proj/frontend/html/login.html",
+		"/home/scelester/.config/ags/widget/bar/buttons/PowerMenu.ts",
+		"/home/scelester/.config/ags/widget/bar/ScreenCorners.ts",
+		"/home/scelester/.config/ags/widget/bar/Bar.ts",
+		"/home/scelester/.config/ags/lib/notifications.ts",
+		"/home/scelester/.config/ags/lib/battery.ts",
+		"/home/scelester/.config/ags/lib/swww.ts",
+		"/home/scelester/.config/ags/lib/icons.ts",
+		"/home/scelester/.config/ags/greeter/session.ts",
+		"/home/scelester/.config/ags/default.nix",
+		"/media/windows/Games/ULTRAKILL-SteamRIP.com/Read_Me_Instructions.txt",
+		"/home/scelester/.PlayOnLinux/playonlinux.cfg",
+		"/home/scelester/.PlayOnLinux/extensions.cfg",
+		"/home/scelester/.PlayOnLinux/wineprefix/default/playonlinux.cfg",
+		"/home/scelester/PlayOnLinux's virtual drives/default/playonlinux.cfg",
+		"/home/scelester/.selz/.var/app/org.mozilla.firefox/gmzz/MarinaCuckoldingReport/www.newgamesbox.net/README.txt",
+		"/home/scelester/.config/rog/rog-control-center.cfg",
+		"/home/scelester/.config/spotify/prefs",
+		"/home/scelester/ProjectD/softwaremate.com.au/softwaremate/.gitignore",
+		"/home/scelester/ProjectD/softwaremate.com.au/softwaremate/package.json",
+		"/home/scelester/Megasync/docker/nginx_next_docker_runner.sh"
+	],
+	"folder_history":
+	[
+		"/home/scelester/Desktop/crackgen",
+		"/home/scelester/Desktop/Kernal_patching",
+		"/home/scelester/ProjectD/anish_proj/frontend",
+		"/home/scelester/ProjectD/anish_proj/frontend/html",
+		"/home/scelester/ProjectD/fetcher",
+		"/home/scelester/.config/hypr",
+		"/home/scelester/.config/waybar",
+		"/home/scelester/.config",
+		"/home/scelester/MyScripts",
+		"/home/scelester/.config/ags",
+		"/home/scelester/.config/eww",
+		"/home/scelester/Desktop"
+	],
+	"last_version": 4169,
+	"last_window_id": 15,
+	"log_indexing": false,
+	"next_update_check": 1721984093,
+	"settings":
+	{
+		"new_window_full_screen": false,
+		"new_window_height": 1047.0,
+		"new_window_maximized": true,
+		"new_window_position":
+		[
+			0.0,
+			28.0
+		],
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"nav",
+						"nav-folder"
+					],
+					[
+						"background-c",
+						"background-color"
+					],
+					[
+						"navfile",
+						"nav-file-title-content"
+					],
+					[
+						"on",
+						"on-click-right"
+					],
+					[
+						"onsc",
+						"on-scroll-up"
+					],
+					[
+						"ons",
+						"on-scroll-down"
+					],
+					[
+						"text",
+						"text-decoration"
+					],
+					[
+						"font",
+						"font-style"
+					]
+				]
+			},
+			"build_system_choices":
+			[
+				[
+					[
+						[
+							"Packages/Python/Python.sublime-build",
+							""
+						],
+						[
+							"Packages/Python/Python.sublime-build",
+							"Syntax Check"
+						]
+					],
+					[
+						"Packages/Python/Python.sublime-build",
+						""
+					]
+				]
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"renm",
+						"Rename File"
+					],
+					[
+						"term",
+						"Terminal: Open"
+					],
+					[
+						"ter",
+						"Terminal: Open"
+					],
+					[
+						"ren",
+						"Rename File"
+					],
+					[
+						"open folder",
+						"Terminal: Open in project folder"
+					],
+					[
+						"t",
+						"Terminal: Open"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"setting",
+						"Preferences: Settings"
+					],
+					[
+						"theme",
+						"UI: Select Theme"
+					],
+					[
+						"select theme",
+						"UI: Select Theme"
+					],
+					[
+						"open ",
+						"View: Toggle Open Files in Side Bar"
+					],
+					[
+						"pcakageinsta",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 144.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/scelester/.config/jgit/config",
+				"/home/scelester/.config/knfsshare",
+				"/home/scelester/.config/.gitignore",
+				"/home/scelester/.config/mimeapps.list",
+				"/home/scelester/.config/user-dirs.dirs",
+				"/home/scelester/MyScripts/StartupStates/why.txt",
+				"/home/scelester/.config/libinput-gestures.conf",
+				"/home/scelester/MyScripts/nightlight",
+				"/home/scelester/Downloads/churchill.html",
+				"/home/scelester/.zshrc",
+				"/home/scelester/.zshenv",
+				"/home/scelester/.zsh_history",
+				"/home/scelester/.var/app/org.libreoffice.LibreOffice/config/libreoffice/4/user/GraphicsRenderTests.log",
+				"/usr/lib/systemd/system/wpa_supplicant.service",
+				"/home/scelester/.phoronix-test-suite/phoronix-test-suite-dependencies.log",
+				"/home/scelester/Downloads/IT infra Network(3).drawio",
+				"/home/scelester/Downloads/S0950584915000282.txt",
+				"/home/scelester/Downloads/S0957417402000155(1).bib",
+				"/home/scelester/Downloads/S0957417402000155.txt",
+				"/home/scelester/Downloads/S0957417402000155.bib",
+				"/home/scelester/Documents/zoho",
+				"/home/scelester/.Xdefaults",
+				"/home/scelester/.config/firefoxprofileswitcher/config.json",
+				"/home/scelester/.config/firefoxprofileswitcher/profile-options.json",
+				"/home/scelester/Desktop/omni/chrome/toolkit/skin/classic/global/wizard.css",
+				"/home/scelester/.bashrc",
+				"/home/scelester/.profile",
+				"/home/scelester/rem_chapters.txt",
+				"/home/scelester/ProjectD/fetcher/STORAGE/NSHBA/NSHBA_chapterlist.txt",
+				"/home/scelester/ProjectD/fetcher/NSHBA_chapterlist.txt",
+				"/home/scelester/Downloads/chapterLinks new.txt",
+				"/home/scelester/Downloads/chapterLinks new(2).txt",
+				"/home/scelester/Downloads/chapterLinks new(1).txt",
+				"/home/scelester/ProjectD/fetcher/js note.js",
+				"/home/scelester/text.js",
+				"/home/scelester/Desktop/test.txt",
+				"/home/scelester/.games/SummertimeSaga-0-20-16-pc/SummertimeSaga.sh",
+				"/home/scelester/Downloads/03bc17944a36f44d1355.txt",
+				"/home/scelester/.config/ags/lib/hyprland.ts",
+				"/home/scelester/Desktop/leed.html",
+				"/home/scelester/.config/Gmail Desktop/custom.css",
+				"/home/scelester/Desktop/dot/rofi/powermenu/type-2/style-3.rasi",
+				"/home/scelester/MyScripts/StartupStates/nightlight",
+				"/home/scelester/Desktop/dot/xsettingsd/xsettingsd.conf",
+				"/usr/share/sddm/themes/Utterly-Nord/theme.conf",
+				"/usr/share/sddm/themes/Utterly-Nord/Main.qml",
+				"/usr/share/sddm/themes/Utterly-Nord/LICENSE.md",
+				"/home/scelester/Downloads/KMS_VL_ALL_AIO.cmd",
+				"/home/scelester/Downloads/f.txt",
+				"/home/scelester/Obsidian/.obsidian/snippets/snipplet.css",
+				"/home/scelester/Obsidian/.obsidian/themes/Obsidianite/theme.css",
+				"/home/scelester/Obsidian/Weboro/zoho & api/flow diagram.md",
+				"/home/scelester/.games/.gmy/Gym.sh",
+				"/home/scelester/.config/hypr/hypridle.conf",
+				"/home/scelester/.config/hypr/hyprlock.conf",
+				"/home/scelester/.config/hypr/settings/asus_specific_bindings.conf",
+				"/home/scelester/.config/hypr/scripts/isDontSleepOnAudio",
+				"/home/scelester/.config/hypr/scripts/apped_bg.sh",
+				"/home/scelester/Desktop/left-ga",
+				"/home/scelester/Desktop/right-ga",
+				"/home/scelester/Desktop/top-ga",
+				"/home/scelester/Desktop/test.py",
+				"/home/scelester/Desktop/bottom-ga",
+				"/home/scelester/dat",
+				"/home/scelester/MyScripts/battery_warrning",
+				"/home/scelester/ProjectD/ayusBro_proj/project-pa2413/.env",
+				"/home/scelester/Downloads/debug.log",
+				"/home/scelester/ProjectD/ayusBro_proj/project-pa2413/resources/views/home.blade.php",
+				"/home/scelester/Desktop/crackgen/pasgen",
+				"/home/scelester/Desktop/crackgen/passwords.txt",
+				"/home/scelester/Downloads/nabinpauudel664@gmail.com Backup authentication codes.txt",
+				"/home/scelester/ProjectD/actix_rust/Cargo.toml",
+				"/tmp/xa-KSWFO2/Winwheel.min.js",
+				"/tmp/xa-KSWFO2/README.md",
+				"/home/scelester/Desktop/Kernal_patching/mt7920_mt7921_fix.patch",
+				"/home/scelester/ProjectD/api_payadvtest/curl.sh",
+				"/home/scelester/ProjectD/ayusBro_proj/b/app/Http/Controllers/HomeController.php",
+				"/home/scelester/MyScripts/hyprexpotoggle.sh",
+				"/home/scelester/MyScripts/spotify_controller",
+				"/home/scelester/.config/ags/config.js",
+				"/home/scelester/Desktop/PoSayDone .dotfiles_wayland main files-rofi/bin/powermenu",
+				"/home/scelester/MyScripts/wallpaperchanger",
+				"/home/scelester/test.sh",
+				"/home/scelester/MyScripts/close_bg_apps",
+				"/home/scelester/.local/share/hyprpm/headersRoot/share/pkgconfig/hyprland.pc",
+				"/home/scelester/.local/share/hyprpm/hyprland-plugins/state.toml",
+				"/home/scelester/ProjectD/clickcon_api/public/.htaccess",
+				"/home/scelester/Downloads/latest-linux.yml",
+				"/home/scelester/Downloads/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.css.map",
+				"/home/scelester/ProjectD/clicknepal_old/resources/views/layouts/app.blade.php",
+				"/home/scelester/ProjectD/clickcon_api/routes/web.php",
+				"/home/scelester/ProjectD/clicknepal_old/app/Http/Controllers/Auth/LoginController.php",
+				"/home/scelester/ProjectD/clickcon_api/.env.example",
+				"/home/scelester/ProjectD/anish_proj/frontend/html/home.html",
+				"/home/scelester/ProjectD/anish_proj/frontend/html/blogposts.html",
+				"/home/scelester/ProjectD/anish_proj/frontend/html/myaccount.html",
+				"/home/scelester/ProjectD/anish_proj/frontend/css/allstyles.css",
+				"/home/scelester/ProjectD/anish_proj/frontend/html/test.html",
+				"/home/scelester/ProjectD/anish_proj/frontend/html/admin/adminaccounts.html",
+				"/home/scelester/ProjectD/anish_proj/frontend/html/admin/adminhome.html",
+				"/home/scelester/ProjectD/anish_proj/frontend/html/admin/adminposts.html",
+				"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/buyer.html",
+				"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/myaccountbuyer.html",
+				"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/myprojects.html",
+				"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/searchbuyer.html",
+				"/home/scelester/ProjectD/anish_proj/frontend/html/seller/seller.html",
+				"/home/scelester/ProjectD/anish_proj/frontend/html/seller/sellerbrowse.html",
+				"/home/scelester/ProjectD/anish_proj/frontend/html/login.html",
+				"/home/scelester/.config/ags/widget/bar/buttons/PowerMenu.ts",
+				"/home/scelester/.config/ags/widget/bar/ScreenCorners.ts",
+				"/home/scelester/.config/ags/widget/bar/Bar.ts",
+				"/home/scelester/.config/ags/lib/notifications.ts",
+				"/home/scelester/.config/ags/lib/battery.ts",
+				"/home/scelester/.config/ags/lib/swww.ts",
+				"/home/scelester/.config/ags/lib/icons.ts",
+				"/home/scelester/.config/ags/greeter/session.ts",
+				"/home/scelester/.config/ags/default.nix",
+				"/media/windows/Games/ULTRAKILL-SteamRIP.com/Read_Me_Instructions.txt",
+				"/home/scelester/.PlayOnLinux/playonlinux.cfg",
+				"/home/scelester/.PlayOnLinux/extensions.cfg",
+				"/home/scelester/.PlayOnLinux/wineprefix/default/playonlinux.cfg",
+				"/home/scelester/PlayOnLinux's virtual drives/default/playonlinux.cfg",
+				"/home/scelester/.selz/.var/app/org.mozilla.firefox/gmzz/MarinaCuckoldingReport/www.newgamesbox.net/README.txt",
+				"/home/scelester/.config/rog/rog-control-center.cfg",
+				"/home/scelester/.config/spotify/prefs",
+				"/home/scelester/ProjectD/softwaremate.com.au/softwaremate/.gitignore",
+				"/home/scelester/ProjectD/softwaremate.com.au/softwaremate/package.json",
+				"/home/scelester/Megasync/docker/nginx_next_docker_runner.sh"
+			],
+			"find":
+			{
+				"height": 34.0
+			},
+			"find_in_files":
+			{
+				"height": 120.0,
+				"where_history":
+				[
+					""
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					";\n",
+					"source",
+					"preview",
+					"utt",
+					"itter",
+					"nav-file-title",
+					"file",
+					"python",
+					"&",
+					"hostel",
+					"hoste",
+					"hostel",
+					"#",
+					"/",
+					"/usr/share/sounds/freedesktop/stereo/message.oga",
+					"~/alert.wav",
+					"~",
+					"/css/allstyles.css"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"../css/allstyles.css"
+				],
+				"reverse": false,
+				"scrollbar_highlights": true,
+				"show_context": true,
+				"use_buffer2": true,
+				"use_gitignore": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 34.0
+			},
+			"input":
+			{
+				"height": 38.0
+			},
+			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 441.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"replace":
+			{
+				"height": 64.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"spot",
+						"spotify_controller"
+					],
+					[
+						"start",
+						"hypr/startup.conf"
+					],
+					[
+						"hyrp",
+						"hypr/hyprland.conf"
+					],
+					[
+						"blank",
+						"hypr/scripts/blankscreentog.sh"
+					],
+					[
+						"hyopr",
+						"hypr/scripts/offmonitor"
+					],
+					[
+						"lib",
+						"~/.config/hypr/scripts/start_libinput_gestures.sh"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 372.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 600.0
+			},
+			"show_minimap": true,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": false,
+			"side_bar_width": 263.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 1056.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"nav",
+						"nav-folder"
+					],
+					[
+						"background-c",
+						"background-color"
+					],
+					[
+						"navfile",
+						"nav-file-title-content"
+					],
+					[
+						"on",
+						"on-click-right"
+					],
+					[
+						"onsc",
+						"on-scroll-up"
+					],
+					[
+						"ons",
+						"on-scroll-down"
+					],
+					[
+						"text",
+						"text-decoration"
+					],
+					[
+						"font",
+						"font-style"
+					]
+				]
+			},
+			"build_system": "Packages/Python/Python.sublime-build",
+			"build_system_choices":
+			[
+				[
+					[
+						[
+							"Packages/Python/Python.sublime-build",
+							""
+						],
+						[
+							"Packages/Python/Python.sublime-build",
+							"Syntax Check"
+						]
+					],
+					[
+						"Packages/Python/Python.sublime-build",
+						""
+					]
+				]
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"renm",
+						"Rename File"
+					],
+					[
+						"term",
+						"Terminal: Open"
+					],
+					[
+						"ter",
+						"Terminal: Open"
+					],
+					[
+						"ren",
+						"Rename File"
+					],
+					[
+						"open folder",
+						"Terminal: Open in project folder"
+					],
+					[
+						"t",
+						"Terminal: Open"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"setting",
+						"Preferences: Settings"
+					],
+					[
+						"theme",
+						"UI: Select Theme"
+					],
+					[
+						"select theme",
+						"UI: Select Theme"
+					],
+					[
+						"open ",
+						"View: Toggle Open Files in Side Bar"
+					],
+					[
+						"pcakageinsta",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 144.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/scelester/.config/jgit/config",
+				"/home/scelester/.config/knfsshare",
+				"/home/scelester/.config/.gitignore",
+				"/home/scelester/.config/mimeapps.list",
+				"/home/scelester/.config/user-dirs.dirs",
+				"/home/scelester/MyScripts/StartupStates/why.txt",
+				"/home/scelester/.config/libinput-gestures.conf",
+				"/home/scelester/MyScripts/nightlight",
+				"/home/scelester/Downloads/churchill.html",
+				"/home/scelester/.zshrc",
+				"/home/scelester/.zshenv",
+				"/home/scelester/.zsh_history",
+				"/home/scelester/.var/app/org.libreoffice.LibreOffice/config/libreoffice/4/user/GraphicsRenderTests.log",
+				"/usr/lib/systemd/system/wpa_supplicant.service",
+				"/home/scelester/.phoronix-test-suite/phoronix-test-suite-dependencies.log",
+				"/home/scelester/Downloads/IT infra Network(3).drawio",
+				"/home/scelester/Downloads/S0950584915000282.txt",
+				"/home/scelester/Downloads/S0957417402000155(1).bib",
+				"/home/scelester/Downloads/S0957417402000155.txt",
+				"/home/scelester/Downloads/S0957417402000155.bib",
+				"/home/scelester/Documents/zoho",
+				"/home/scelester/.Xdefaults",
+				"/home/scelester/.config/firefoxprofileswitcher/config.json",
+				"/home/scelester/.config/firefoxprofileswitcher/profile-options.json",
+				"/home/scelester/Desktop/omni/chrome/toolkit/skin/classic/global/wizard.css",
+				"/home/scelester/.bashrc",
+				"/home/scelester/.profile",
+				"/home/scelester/rem_chapters.txt",
+				"/home/scelester/ProjectD/fetcher/STORAGE/NSHBA/NSHBA_chapterlist.txt",
+				"/home/scelester/ProjectD/fetcher/NSHBA_chapterlist.txt",
+				"/home/scelester/Downloads/chapterLinks new.txt",
+				"/home/scelester/Downloads/chapterLinks new(2).txt",
+				"/home/scelester/Downloads/chapterLinks new(1).txt",
+				"/home/scelester/ProjectD/fetcher/js note.js",
+				"/home/scelester/text.js",
+				"/home/scelester/Desktop/test.txt",
+				"/home/scelester/.games/SummertimeSaga-0-20-16-pc/SummertimeSaga.sh",
+				"/home/scelester/Downloads/03bc17944a36f44d1355.txt",
+				"/home/scelester/.config/ags/lib/hyprland.ts",
+				"/home/scelester/Desktop/leed.html",
+				"/home/scelester/.config/Gmail Desktop/custom.css",
+				"/home/scelester/Desktop/dot/rofi/powermenu/type-2/style-3.rasi",
+				"/home/scelester/MyScripts/StartupStates/nightlight",
+				"/home/scelester/Desktop/dot/xsettingsd/xsettingsd.conf",
+				"/usr/share/sddm/themes/Utterly-Nord/theme.conf",
+				"/usr/share/sddm/themes/Utterly-Nord/Main.qml",
+				"/usr/share/sddm/themes/Utterly-Nord/LICENSE.md",
+				"/home/scelester/Downloads/KMS_VL_ALL_AIO.cmd",
+				"/home/scelester/Downloads/f.txt",
+				"/home/scelester/Obsidian/.obsidian/snippets/snipplet.css",
+				"/home/scelester/Obsidian/.obsidian/themes/Obsidianite/theme.css",
+				"/home/scelester/Obsidian/Weboro/zoho & api/flow diagram.md",
+				"/home/scelester/.games/.gmy/Gym.sh",
+				"/home/scelester/.config/hypr/hypridle.conf",
+				"/home/scelester/.config/hypr/hyprlock.conf",
+				"/home/scelester/.config/hypr/settings/asus_specific_bindings.conf",
+				"/home/scelester/.config/hypr/scripts/isDontSleepOnAudio",
+				"/home/scelester/.config/hypr/scripts/apped_bg.sh",
+				"/home/scelester/Desktop/left-ga",
+				"/home/scelester/Desktop/right-ga",
+				"/home/scelester/Desktop/top-ga",
+				"/home/scelester/Desktop/test.py",
+				"/home/scelester/Desktop/bottom-ga",
+				"/home/scelester/dat",
+				"/home/scelester/MyScripts/battery_warrning",
+				"/home/scelester/ProjectD/ayusBro_proj/project-pa2413/.env",
+				"/home/scelester/Downloads/debug.log",
+				"/home/scelester/ProjectD/ayusBro_proj/project-pa2413/resources/views/home.blade.php",
+				"/home/scelester/Desktop/crackgen/pasgen",
+				"/home/scelester/Desktop/crackgen/passwords.txt",
+				"/home/scelester/Downloads/nabinpauudel664@gmail.com Backup authentication codes.txt",
+				"/home/scelester/ProjectD/actix_rust/Cargo.toml",
+				"/tmp/xa-KSWFO2/Winwheel.min.js",
+				"/tmp/xa-KSWFO2/README.md",
+				"/home/scelester/Desktop/Kernal_patching/mt7920_mt7921_fix.patch",
+				"/home/scelester/ProjectD/api_payadvtest/curl.sh",
+				"/home/scelester/ProjectD/ayusBro_proj/b/app/Http/Controllers/HomeController.php",
+				"/home/scelester/MyScripts/hyprexpotoggle.sh",
+				"/home/scelester/MyScripts/spotify_controller",
+				"/home/scelester/.config/ags/config.js",
+				"/home/scelester/Desktop/PoSayDone .dotfiles_wayland main files-rofi/bin/powermenu",
+				"/home/scelester/MyScripts/wallpaperchanger",
+				"/home/scelester/test.sh",
+				"/home/scelester/MyScripts/close_bg_apps",
+				"/home/scelester/.local/share/hyprpm/headersRoot/share/pkgconfig/hyprland.pc",
+				"/home/scelester/.local/share/hyprpm/hyprland-plugins/state.toml",
+				"/home/scelester/ProjectD/clickcon_api/public/.htaccess",
+				"/home/scelester/Downloads/latest-linux.yml",
+				"/home/scelester/Downloads/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.css.map",
+				"/home/scelester/ProjectD/clicknepal_old/resources/views/layouts/app.blade.php",
+				"/home/scelester/ProjectD/clickcon_api/routes/web.php",
+				"/home/scelester/ProjectD/clicknepal_old/app/Http/Controllers/Auth/LoginController.php",
+				"/home/scelester/ProjectD/clickcon_api/.env.example",
+				"/home/scelester/ProjectD/anish_proj/frontend/html/home.html",
+				"/home/scelester/ProjectD/anish_proj/frontend/html/blogposts.html",
+				"/home/scelester/ProjectD/anish_proj/frontend/html/myaccount.html",
+				"/home/scelester/ProjectD/anish_proj/frontend/css/allstyles.css",
+				"/home/scelester/ProjectD/anish_proj/frontend/html/test.html",
+				"/home/scelester/ProjectD/anish_proj/frontend/html/admin/adminaccounts.html",
+				"/home/scelester/ProjectD/anish_proj/frontend/html/admin/adminhome.html",
+				"/home/scelester/ProjectD/anish_proj/frontend/html/admin/adminposts.html",
+				"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/buyer.html",
+				"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/myaccountbuyer.html",
+				"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/myprojects.html",
+				"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/searchbuyer.html",
+				"/home/scelester/ProjectD/anish_proj/frontend/html/seller/seller.html",
+				"/home/scelester/ProjectD/anish_proj/frontend/html/seller/sellerbrowse.html",
+				"/home/scelester/ProjectD/anish_proj/frontend/html/login.html",
+				"/home/scelester/.config/ags/widget/bar/buttons/PowerMenu.ts",
+				"/home/scelester/.config/ags/widget/bar/ScreenCorners.ts",
+				"/home/scelester/.config/ags/widget/bar/Bar.ts",
+				"/home/scelester/.config/ags/lib/notifications.ts",
+				"/home/scelester/.config/ags/lib/battery.ts",
+				"/home/scelester/.config/ags/lib/swww.ts",
+				"/home/scelester/.config/ags/lib/icons.ts",
+				"/home/scelester/.config/ags/greeter/session.ts",
+				"/home/scelester/.config/ags/default.nix",
+				"/media/windows/Games/ULTRAKILL-SteamRIP.com/Read_Me_Instructions.txt",
+				"/home/scelester/.PlayOnLinux/playonlinux.cfg",
+				"/home/scelester/.PlayOnLinux/extensions.cfg",
+				"/home/scelester/.PlayOnLinux/wineprefix/default/playonlinux.cfg",
+				"/home/scelester/PlayOnLinux's virtual drives/default/playonlinux.cfg",
+				"/home/scelester/.selz/.var/app/org.mozilla.firefox/gmzz/MarinaCuckoldingReport/www.newgamesbox.net/README.txt",
+				"/home/scelester/.config/rog/rog-control-center.cfg",
+				"/home/scelester/.config/spotify/prefs",
+				"/home/scelester/ProjectD/softwaremate.com.au/softwaremate/.gitignore",
+				"/home/scelester/ProjectD/softwaremate.com.au/softwaremate/package.json",
+				"/home/scelester/Megasync/docker/nginx_next_docker_runner.sh"
+			],
+			"find":
+			{
+				"height": 34.0
+			},
+			"find_in_files":
+			{
+				"height": 120.0,
+				"where_history":
+				[
+					""
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					";\n",
+					"source",
+					"preview",
+					"utt",
+					"itter",
+					"nav-file-title",
+					"file",
+					"python",
+					"&",
+					"hostel",
+					"hoste",
+					"hostel",
+					"#",
+					"/",
+					"/usr/share/sounds/freedesktop/stereo/message.oga",
+					"~/alert.wav",
+					"~",
+					"/css/allstyles.css"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"../css/allstyles.css"
+				],
+				"reverse": false,
+				"scrollbar_highlights": true,
+				"show_context": true,
+				"use_buffer2": true,
+				"use_gitignore": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 34.0
+			},
+			"input":
+			{
+				"height": 38.0
+			},
+			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 441.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"position": "0,1,0,0,0,0,0,1046,1005,1920,1080,0",
+			"replace":
+			{
+				"height": 64.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"spot",
+						"spotify_controller"
+					],
+					[
+						"start",
+						"hypr/startup.conf"
+					],
+					[
+						"hyrp",
+						"hypr/hyprland.conf"
+					],
+					[
+						"blank",
+						"hypr/scripts/blankscreentog.sh"
+					],
+					[
+						"hyopr",
+						"hypr/scripts/offmonitor"
+					],
+					[
+						"lib",
+						"~/.config/hypr/scripts/start_libinput_gestures.sh"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 372.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 600.0
+			},
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": false,
+			"side_bar_width": 263.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 15
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}

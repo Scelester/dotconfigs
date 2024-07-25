@@ -1,0 +1,11 @@
+{
+    "variables": {
+    },
+    "rules": [
+        {
+            "class": "sidebar_label",
+            // "font.face": "system",
+            "font.size": 20
+        },
+    ]
+}

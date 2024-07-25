@@ -1,0 +1,10 @@
+#/bin/bash
+
+source /home/scelester/MyScripts/database_accesser.sh
+
+name="NightLightState"
+
+# Check the state from the database and restore the effect if necessary
+if [ "$(db_get)" == "t" ]; then
+    gammastep -O 4500 &
+fi

@@ -1,0 +1,15 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+	"hot_exit": "disabled",
+	"ignored_packages":
+	[
+		"ColorHelper",
+		"Vintage",
+	],
+	"theme": "Afterglow-green.sublime-theme",
+	"index_files": true,
+	"color_scheme": "Mariana.sublime-color-scheme",
+	"font_size": 13,
+	"default_line_ending": "unix",
+}

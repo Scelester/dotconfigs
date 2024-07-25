@@ -1,0 +1,10 @@
+{
+	"optOut": false,
+	"lastUpdateCheck": 1717913351648,
+	"update": {
+		"latest": "12.12.2",
+		"current": "9.2.1",
+		"type": "major",
+		"name": "@aws-amplify/cli-internal"
+	}
+}

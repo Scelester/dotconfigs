@@ -1,9 +1,9 @@
 {
 	"file_history":
 	[
+		"/home/scelester/MyScripts/database_accesser.sh",
 		"/home/scelester/MyScripts/battery_warrning",
 		"/home/scelester/MyScripts/nightlight",
-		"/home/scelester/MyScripts/database_accesser.sh",
 		"/home/scelester/.config/jgit/config",
 		"/home/scelester/.config/knfsshare",
 		"/home/scelester/.config/.gitignore",
@@ -148,7 +148,7 @@
 	"last_version": 4169,
 	"last_window_id": 15,
 	"log_indexing": false,
-	"next_update_check": 1721984093,
+	"next_update_check": 1722156893,
 	"settings":
 	{
 		"new_window_full_screen": false,
@@ -294,9 +294,9 @@
 			},
 			"file_history":
 			[
+				"/home/scelester/MyScripts/database_accesser.sh",
 				"/home/scelester/MyScripts/battery_warrning",
 				"/home/scelester/MyScripts/nightlight",
-				"/home/scelester/MyScripts/database_accesser.sh",
 				"/home/scelester/.config/jgit/config",
 				"/home/scelester/.config/knfsshare",
 				"/home/scelester/.config/.gitignore",
@@ -698,9 +698,9 @@
 			},
 			"file_history":
 			[
+				"/home/scelester/MyScripts/database_accesser.sh",
 				"/home/scelester/MyScripts/battery_warrning",
 				"/home/scelester/MyScripts/nightlight",
-				"/home/scelester/MyScripts/database_accesser.sh",
 				"/home/scelester/.config/jgit/config",
 				"/home/scelester/.config/knfsshare",
 				"/home/scelester/.config/.gitignore",
@@ -897,7 +897,7 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,1,0,0,0,0,0,1920,1017,1920,1080,0",
+			"position": "0,1,0,0,0,0,0,1021,971,1920,1080,0",
 			"replace":
 			{
 				"height": 64.0

@@ -35,6 +35,7 @@ window.indicator {
     .eye-care{
         @include floating-widget;
         margin: $spacing * 2;
+        margin-bottom: 150;
         padding: $popover-padding * 2;
         font-size: 58px;
         color: transparentize($fg, .1)

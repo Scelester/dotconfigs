@@ -1,4 +1,4 @@
-import { icon } from "lib/utils"
+import { bash, icon, sh } from "lib/utils"
 import icons from "lib/icons"
 import Progress from "./Progress"
 import brightness from "service/brightness"
@@ -6,6 +6,8 @@ import options from "options"
 
 const audio = await Service.import("audio")
 const { progress, microphone,speaker,eyecare } = options.osd
+
+const { eyecare:eyecarestate } = options.theme
 
 const DELAY = 2500
 
@@ -123,10 +125,22 @@ function Eyecare(){
         child: icon,
     })
 
-    // get eye care state from postgress
+    let count = 0;
+    let widgetEyecare_state = eyecarestate.value == "normal" ? "normal":"eyecare" ;
+    
 
-    return revealer.hook(eyecare, () => Utils.idle(() => {
+    return revealer.hook(eyecarestate, () => Utils.idle(() => {
+        // sh("notify-send widgetEyecare_state")
+        icon.icon = icons.custom[eyecarestate.value === "eyecare"?"eyecare":"normal"]
         revealer.reveal_child = true
+        count++
+
+        Utils.timeout(DELAY, () => {
+            count--
+            if (count === 0)
+                revealer.reveal_child = false
+        })
+        
     }))
 }
 
@@ -156,7 +170,12 @@ export default (monitor: number) => Widget.Window({
                 hpack: speaker.pack.h.bind(),
                 vpack: speaker.pack.v.bind(),
                 child: Mute(),
-            })
+            }),
+            Widget.Box({
+                hpack: eyecare.pack.h.bind(),
+                vpack: eyecare.pack.v.bind(),
+                child: Eyecare(),
+            }),
 
         ),
     }),

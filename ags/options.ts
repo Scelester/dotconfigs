@@ -225,6 +225,18 @@ const options = mkOptions(OPTIONS, {
                 v: opt<"start" | "center" | "end">("end"),
             },
         },
+        speaker: {
+            pack: {
+                h: opt<"start" | "center" | "end">("center"),
+                v: opt<"start" | "center" | "end">("end"),
+            },
+        },
+        eyecare: {
+            pack: {
+                h: opt<"start" | "center" | "end">("center"),
+                v: opt<"start" | "center" | "end">("end"),
+            },
+        }
     },
 
     notifications: {

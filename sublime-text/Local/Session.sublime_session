@@ -1,6 +1,9 @@
 {
 	"file_history":
 	[
+		"/home/scelester/MyScripts/battery_warrning",
+		"/home/scelester/MyScripts/nightlight",
+		"/home/scelester/MyScripts/database_accesser.sh",
 		"/home/scelester/.config/jgit/config",
 		"/home/scelester/.config/knfsshare",
 		"/home/scelester/.config/.gitignore",
@@ -8,7 +11,6 @@
 		"/home/scelester/.config/user-dirs.dirs",
 		"/home/scelester/MyScripts/StartupStates/why.txt",
 		"/home/scelester/.config/libinput-gestures.conf",
-		"/home/scelester/MyScripts/nightlight",
 		"/home/scelester/Downloads/churchill.html",
 		"/home/scelester/.zshrc",
 		"/home/scelester/.zshenv",
@@ -65,7 +67,6 @@
 		"/home/scelester/Desktop/test.py",
 		"/home/scelester/Desktop/bottom-ga",
 		"/home/scelester/dat",
-		"/home/scelester/MyScripts/battery_warrning",
 		"/home/scelester/ProjectD/ayusBro_proj/project-pa2413/.env",
 		"/home/scelester/Downloads/debug.log",
 		"/home/scelester/ProjectD/ayusBro_proj/project-pa2413/resources/views/home.blade.php",
@@ -127,8 +128,7 @@
 		"/home/scelester/.config/rog/rog-control-center.cfg",
 		"/home/scelester/.config/spotify/prefs",
 		"/home/scelester/ProjectD/softwaremate.com.au/softwaremate/.gitignore",
-		"/home/scelester/ProjectD/softwaremate.com.au/softwaremate/package.json",
-		"/home/scelester/Megasync/docker/nginx_next_docker_runner.sh"
+		"/home/scelester/ProjectD/softwaremate.com.au/softwaremate/package.json"
 	],
 	"folder_history":
 	[
@@ -294,6 +294,9 @@
 			},
 			"file_history":
 			[
+				"/home/scelester/MyScripts/battery_warrning",
+				"/home/scelester/MyScripts/nightlight",
+				"/home/scelester/MyScripts/database_accesser.sh",
 				"/home/scelester/.config/jgit/config",
 				"/home/scelester/.config/knfsshare",
 				"/home/scelester/.config/.gitignore",
@@ -301,7 +304,6 @@
 				"/home/scelester/.config/user-dirs.dirs",
 				"/home/scelester/MyScripts/StartupStates/why.txt",
 				"/home/scelester/.config/libinput-gestures.conf",
-				"/home/scelester/MyScripts/nightlight",
 				"/home/scelester/Downloads/churchill.html",
 				"/home/scelester/.zshrc",
 				"/home/scelester/.zshenv",
@@ -358,7 +360,6 @@
 				"/home/scelester/Desktop/test.py",
 				"/home/scelester/Desktop/bottom-ga",
 				"/home/scelester/dat",
-				"/home/scelester/MyScripts/battery_warrning",
 				"/home/scelester/ProjectD/ayusBro_proj/project-pa2413/.env",
 				"/home/scelester/Downloads/debug.log",
 				"/home/scelester/ProjectD/ayusBro_proj/project-pa2413/resources/views/home.blade.php",
@@ -420,8 +421,7 @@
 				"/home/scelester/.config/rog/rog-control-center.cfg",
 				"/home/scelester/.config/spotify/prefs",
 				"/home/scelester/ProjectD/softwaremate.com.au/softwaremate/.gitignore",
-				"/home/scelester/ProjectD/softwaremate.com.au/softwaremate/package.json",
-				"/home/scelester/Megasync/docker/nginx_next_docker_runner.sh"
+				"/home/scelester/ProjectD/softwaremate.com.au/softwaremate/package.json"
 			],
 			"find":
 			{
@@ -559,7 +559,7 @@
 			{
 			}
 		},
-		"new_window_width": 1056.0
+		"new_window_width": 1920.0
 	},
 	"windows":
 	[
@@ -698,6 +698,9 @@
 			},
 			"file_history":
 			[
+				"/home/scelester/MyScripts/battery_warrning",
+				"/home/scelester/MyScripts/nightlight",
+				"/home/scelester/MyScripts/database_accesser.sh",
 				"/home/scelester/.config/jgit/config",
 				"/home/scelester/.config/knfsshare",
 				"/home/scelester/.config/.gitignore",
@@ -705,7 +708,6 @@
 				"/home/scelester/.config/user-dirs.dirs",
 				"/home/scelester/MyScripts/StartupStates/why.txt",
 				"/home/scelester/.config/libinput-gestures.conf",
-				"/home/scelester/MyScripts/nightlight",
 				"/home/scelester/Downloads/churchill.html",
 				"/home/scelester/.zshrc",
 				"/home/scelester/.zshenv",
@@ -762,7 +764,6 @@
 				"/home/scelester/Desktop/test.py",
 				"/home/scelester/Desktop/bottom-ga",
 				"/home/scelester/dat",
-				"/home/scelester/MyScripts/battery_warrning",
 				"/home/scelester/ProjectD/ayusBro_proj/project-pa2413/.env",
 				"/home/scelester/Downloads/debug.log",
 				"/home/scelester/ProjectD/ayusBro_proj/project-pa2413/resources/views/home.blade.php",
@@ -824,8 +825,7 @@
 				"/home/scelester/.config/rog/rog-control-center.cfg",
 				"/home/scelester/.config/spotify/prefs",
 				"/home/scelester/ProjectD/softwaremate.com.au/softwaremate/.gitignore",
-				"/home/scelester/ProjectD/softwaremate.com.au/softwaremate/package.json",
-				"/home/scelester/Megasync/docker/nginx_next_docker_runner.sh"
+				"/home/scelester/ProjectD/softwaremate.com.au/softwaremate/package.json"
 			],
 			"find":
 			{
@@ -897,7 +897,7 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,1,0,0,0,0,0,1046,1005,1920,1080,0",
+			"position": "0,1,0,0,0,0,0,1920,1017,1920,1080,0",
 			"replace":
 			{
 				"height": 64.0

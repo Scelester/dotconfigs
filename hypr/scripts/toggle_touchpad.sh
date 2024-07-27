@@ -1,27 +1,33 @@
 #!/bin/bash
 
-# Define the file path
+# Source the database access functions
 source /home/scelester/MyScripts/database_accesser.sh
 
+# Define the name for the touchpad state
 name="TouchPadState"
 
-if [ "$(db_get)" == "f" ]; then
-  state="true"
-  db_set
+# Get the current state from the database
+current_state=$(db_get)
 
-  # If the current state is "off," change it to "on" and run the command
-  hyprctl keyword "device:elan1203:00-04f3:307a-touchpad:enabled" true
-  hyprctl reload
-  notify-send "Touchpad Enabled"
-
+# Determine the new state
+if [ "$current_state" == "t" ]; then
+    new_state="false"
 else
-  state="false"
-  db_set
+    new_state="true"
+fi
 
-  # If the current state is not "off," change it to "off" and run the command
-  hyprctl keyword "device:elan1203:00-04f3:307a-touchpad:enabled" false
-  echo "off" > "$file"
+echo "current_state :$current_state"
 
-  notify-send "Touchpad Disabled"
+# Update the state in the database
+state="$new_state"
+echo "new_state :$state"
+db_set
 
+# Use hyprctl to apply the new state
+if [ "$new_state" == "true" ]; then
+    hyprctl -r keyword '$TOUCHPAD_ENABLED' "true"
+    notify-send "Touchpad is now enabled."
+else
+    hyprctl -r keyword '$TOUCHPAD_ENABLED' "false"
+    notify-send "Touchpad is now disabled."
 fi

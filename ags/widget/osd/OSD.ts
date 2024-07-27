@@ -5,7 +5,7 @@ import brightness from "service/brightness"
 import options from "options"
 
 const audio = await Service.import("audio")
-const { progress, microphone } = options.osd
+const { progress, microphone,speaker,eyecare } = options.osd
 
 const DELAY = 2500
 
@@ -54,6 +54,35 @@ function OnScreenProgress(vertical: boolean) {
             icon(audio.speaker.icon_name || "", icons.audio.type.speaker),
         ), "notify::volume")
 }
+function Mute(){
+    const icon = Widget.Icon({
+        class_name: "speaker",
+    })
+
+    const revealer = Widget.Revealer({
+        transition: "slide_up",
+        child: icon,
+    })
+
+    let count = 0
+    let mute = audio.speaker.stream?.is_muted?? false
+
+    return revealer.hook(audio.speaker, () => Utils.idle(() => {
+        if (mute!== audio.speaker.stream?.is_muted) {
+            mute = audio.speaker.stream!.is_muted
+            icon.icon = icons.audio.volume[mute? "muted" : "high"]
+            revealer.reveal_child = true
+            count++
+
+            Utils.timeout(DELAY, () => {
+                count--
+                if (count === 0)
+                    revealer.reveal_child = false
+            })
+        }
+    }))
+}
+
 
 function MicrophoneMute() {
     const icon = Widget.Icon({
@@ -84,6 +113,23 @@ function MicrophoneMute() {
     }))
 }
 
+function Eyecare(){
+    const icon = Widget.Icon({
+        class_name: "eye-care",
+    })
+
+    const revealer = Widget.Revealer({
+        transition: "slide_up",
+        child: icon,
+    })
+
+    // get eye care state from postgress
+
+    return revealer.hook(eyecare, () => Utils.idle(() => {
+        revealer.reveal_child = true
+    }))
+}
+
 export default (monitor: number) => Widget.Window({
     monitor,
     name: `indicator${monitor}`,
@@ -106,6 +152,12 @@ export default (monitor: number) => Widget.Window({
                 vpack: microphone.pack.v.bind(),
                 child: MicrophoneMute(),
             }),
+            Widget.Box({
+                hpack: speaker.pack.h.bind(),
+                vpack: speaker.pack.v.bind(),
+                child: Mute(),
+            })
+
         ),
     }),
 })

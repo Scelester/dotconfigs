@@ -1,0 +1,11 @@
+#!/bin/bash
+
+
+# Mount the Windows drive
+sudo mount /dev/nvme0n1p4 /media/windows
+
+# Check if the mount failed due to Windows sleeping
+if [ $? -eq 14 ]; then
+  echo "Windows is sleeping, I'm mounting as read-only"
+  sudo mount -o ro /dev/nvme0n1p4 /media/windows
+fi

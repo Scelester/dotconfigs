@@ -1,0 +1,15 @@
+#/bin/bash
+
+source /home/scelester/MyScripts/database_accesser.sh
+
+name="NightLightState"
+
+
+if [ "$(db_get)" == "t" ]; then
+    
+    gammastep -O 4500 &
+    
+elif [ "$(db_get)" == "t" ];then
+    killall gammastep
+     
+fi

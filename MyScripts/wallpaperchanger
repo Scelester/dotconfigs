@@ -1,0 +1,12 @@
+#!/bin/bash
+
+rm ~/.config/hypr/wallpaper_old.png
+
+mv ~/.config/hypr/wallpaper.png ~/.config/hypr/wallpaper_old.png
+
+ln $1 /home/scelester/.config/hypr/wallpaper.png
+
+killall hyprpaper
+
+hyprpaper
+

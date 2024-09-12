@@ -19,7 +19,7 @@ window.indicator {
     .microphone {
         @include floating-widget;
         margin: $spacing * 2;
-        margin-left: 150;
+        margin-left: 160;
         padding: $popover-padding * 2;
         font-size: 58px;
         color: transparentize($fg, .1)
@@ -27,7 +27,7 @@ window.indicator {
     .speaker{
         @include floating-widget;
         margin: $spacing * 2;
-        margin-right: 150;
+        margin-right: 160;
         padding: $popover-padding * 2;
         font-size: 58px;
         color: transparentize($fg, .1)
@@ -37,6 +37,16 @@ window.indicator {
         margin: $spacing * 2;
         margin-bottom: 150;
         padding: $popover-padding * 2;
+        font-size: 58px;
+        color: transparentize($fg, .1)
+    }
+    .charging_mode{
+        @include floating-widget;
+        margin: $spacing * 2;
+        padding: $popover-padding * 2;
+        padding-right: 200;
+        background-color: black;
+        border-color: green;
         font-size: 58px;
         color: transparentize($fg, .1)
     }

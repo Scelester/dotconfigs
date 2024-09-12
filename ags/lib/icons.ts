@@ -89,6 +89,7 @@ export default {
     battery: {
         charging: "battery-flash-symbolic",
         warning: "battery-empty-symbolic",
+        unplugged: "/home/scelester/MyScripts/battery_mode.svg",
     },
     bluetooth: {
         enabled: "bluetooth-active-symbolic",
@@ -145,5 +146,8 @@ export default {
     custom:{
         eyecare: "weather-clear-night-symbolic", // Use a low-light icon
         normal: "weather-clear-symbolic", // Use a sun/day icon
+    },
+    firefox:{
+        "profile": "nix-snowflake-symbolic",
     }
 }

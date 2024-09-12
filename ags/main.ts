@@ -8,6 +8,7 @@ import NotificationPopups from "widget/notifications/NotificationPopups"
 import OSD from "widget/osd/OSD"
 import Overview from "widget/overview/Overview"
 import PowerMenu from "widget/powermenu/PowerMenu"
+//import FirefoxProfile from "widget/firefoxprofile/FirefoxProfile"
 import ScreenCorners from "widget/bar/ScreenCorners"
 import SettingsDialog from "widget/settings/SettingsDialog"
 import Verification from "widget/powermenu/Verification"
@@ -35,6 +36,7 @@ App.config({
         Launcher(),
         Overview(),
         PowerMenu(),
+        // FirefoxProfile(),
         SettingsDialog(),
         Verification(),
     ],

@@ -205,28 +205,28 @@
   },
   "geometry-of-calibre_main_window_geometry": {
     "frame_geometry": {
-      "height": 981,
-      "width": 842,
+      "height": 1017,
+      "width": 1920,
       "x": 0,
       "y": 0
     },
     "full_screened": false,
     "geometry": {
-      "height": 981,
-      "width": 842,
+      "height": 1017,
+      "width": 1920,
       "x": 0,
       "y": 0
     },
     "maximized": true,
     "normal_geometry": {
-      "height": 1039,
+      "height": 1080,
       "width": 1920,
       "x": 0,
       "y": 0
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAAAAAAAAAAAA0kAAAPUAAAAAAAAAAAAAAd/AAAEDgAAAAACAAAAB4AAAAAAAAAAAAAAA0kAAAPU"
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAAB38AAAP4AAAAAAAAAAAAAAd/AAAENwAAAAACAAAAB4AAAAAAAAAAAAAAB38AAAP4"
     },
     "screen": {
       "depth": 32,
@@ -670,7 +670,7 @@
     "__value__": "AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfQAAAAFAQEBAAAAAAAAAAAAAAAAAGT/////AAAAhAAAAAAAAAAFAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAD6AAAAAAAAAAAAA=="
   },
   "library_usage_stats": {
-    "/home/scelester/Calibre Library": 49
+    "/home/scelester/Calibre Library": 51
   },
   "light_palette_name": "",
   "light_palettes": {

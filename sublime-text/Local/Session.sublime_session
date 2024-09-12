@@ -1,8 +1,33 @@
 {
 	"file_history":
 	[
-		"/home/scelester/MyScripts/database_accesser.sh",
+		"/home/scelester/nohup.out",
+		"/home/scelester/MyScripts/battery_saver_mode.sh",
+		"/home/scelester/.icons/default/index.theme",
 		"/home/scelester/MyScripts/battery_warrning",
+		"/home/scelester/.config/electron-flags.conf",
+		"/home/scelester/.config/KADOKAWA/RPGMV/Local State",
+		"/home/scelester/.config/KADOKAWA/RPGMV/DefaultTGOfile1.rpgsave",
+		"/home/scelester/.config/KADOKAWA/RPGMV/First Run",
+		"/home/scelester/yoyo/urls.csv",
+		"/home/scelester/yoyo/chrome_History",
+		"/home/scelester/.amplify/amplify-configuration.json",
+		"/home/scelester/Downloads/MilanProject/Sliding-Sign-In-Sign-Up-Form-master/index.html",
+		"/home/scelester/Downloads/MilanProject/Sliding-Sign-In-Sign-Up-Form-master/app.js",
+		"/home/scelester/Downloads/MilanProject/Sliding-Sign-In-Sign-Up-Form-master/style.css",
+		"/tmp/xa-KM12R2/index.html",
+		"/home/scelester/Downloads/JXFOr194.html",
+		"/tmp/xa-2L4LR2/index.html",
+		"/home/scelester/ProjectD/aws_python_weboro_widget/README.md",
+		"/tmp/xa-IPUZR2/LICENSE.chromedriver",
+		"/home/scelester/.zshrc",
+		"/home/scelester/.zshenv",
+		"/home/scelester/.bash_history",
+		"/home/scelester/.gamez/The_Genesis_Order_-_Linux-v1.02/natives_blob.bin",
+		"/home/scelester/.gamez/The_Genesis_Order_-_Linux-v1.02/launcher.sh",
+		"/home/scelester/.mozilla/firefox/profiles.ini",
+		"/home/scelester/.mozilla/firefox/installs.ini",
+		"/home/scelester/MyScripts/database_accesser.sh",
 		"/home/scelester/MyScripts/nightlight",
 		"/home/scelester/.config/jgit/config",
 		"/home/scelester/.config/knfsshare",
@@ -12,8 +37,6 @@
 		"/home/scelester/MyScripts/StartupStates/why.txt",
 		"/home/scelester/.config/libinput-gestures.conf",
 		"/home/scelester/Downloads/churchill.html",
-		"/home/scelester/.zshrc",
-		"/home/scelester/.zshenv",
 		"/home/scelester/.zsh_history",
 		"/home/scelester/.var/app/org.libreoffice.LibreOffice/config/libreoffice/4/user/GraphicsRenderTests.log",
 		"/usr/lib/systemd/system/wpa_supplicant.service",
@@ -105,33 +128,11 @@
 		"/home/scelester/ProjectD/anish_proj/frontend/html/admin/adminposts.html",
 		"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/buyer.html",
 		"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/myaccountbuyer.html",
-		"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/myprojects.html",
-		"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/searchbuyer.html",
-		"/home/scelester/ProjectD/anish_proj/frontend/html/seller/seller.html",
-		"/home/scelester/ProjectD/anish_proj/frontend/html/seller/sellerbrowse.html",
-		"/home/scelester/ProjectD/anish_proj/frontend/html/login.html",
-		"/home/scelester/.config/ags/widget/bar/buttons/PowerMenu.ts",
-		"/home/scelester/.config/ags/widget/bar/ScreenCorners.ts",
-		"/home/scelester/.config/ags/widget/bar/Bar.ts",
-		"/home/scelester/.config/ags/lib/notifications.ts",
-		"/home/scelester/.config/ags/lib/battery.ts",
-		"/home/scelester/.config/ags/lib/swww.ts",
-		"/home/scelester/.config/ags/lib/icons.ts",
-		"/home/scelester/.config/ags/greeter/session.ts",
-		"/home/scelester/.config/ags/default.nix",
-		"/media/windows/Games/ULTRAKILL-SteamRIP.com/Read_Me_Instructions.txt",
-		"/home/scelester/.PlayOnLinux/playonlinux.cfg",
-		"/home/scelester/.PlayOnLinux/extensions.cfg",
-		"/home/scelester/.PlayOnLinux/wineprefix/default/playonlinux.cfg",
-		"/home/scelester/PlayOnLinux's virtual drives/default/playonlinux.cfg",
-		"/home/scelester/.selz/.var/app/org.mozilla.firefox/gmzz/MarinaCuckoldingReport/www.newgamesbox.net/README.txt",
-		"/home/scelester/.config/rog/rog-control-center.cfg",
-		"/home/scelester/.config/spotify/prefs",
-		"/home/scelester/ProjectD/softwaremate.com.au/softwaremate/.gitignore",
-		"/home/scelester/ProjectD/softwaremate.com.au/softwaremate/package.json"
+		"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/myprojects.html"
 	],
 	"folder_history":
 	[
+		"/home/scelester/ProjectD/aws_python_weboro_widget",
 		"/home/scelester/Desktop/crackgen",
 		"/home/scelester/Desktop/Kernal_patching",
 		"/home/scelester/ProjectD/anish_proj/frontend",
@@ -145,10 +146,10 @@
 		"/home/scelester/.config/eww",
 		"/home/scelester/Desktop"
 	],
-	"last_version": 4169,
+	"last_version": 4180,
 	"last_window_id": 15,
 	"log_indexing": false,
-	"next_update_check": 1722156893,
+	"next_update_check": 1726127286,
 	"settings":
 	{
 		"new_window_full_screen": false,
@@ -226,16 +227,16 @@
 				"selected_items":
 				[
 					[
-						"renm",
-						"Rename File"
+						"ter",
+						"Terminal: Open"
 					],
 					[
 						"term",
 						"Terminal: Open"
 					],
 					[
-						"ter",
-						"Terminal: Open"
+						"renm",
+						"Rename File"
 					],
 					[
 						"ren",
@@ -294,8 +295,33 @@
 			},
 			"file_history":
 			[
-				"/home/scelester/MyScripts/database_accesser.sh",
+				"/home/scelester/nohup.out",
+				"/home/scelester/MyScripts/battery_saver_mode.sh",
+				"/home/scelester/.icons/default/index.theme",
 				"/home/scelester/MyScripts/battery_warrning",
+				"/home/scelester/.config/electron-flags.conf",
+				"/home/scelester/.config/KADOKAWA/RPGMV/Local State",
+				"/home/scelester/.config/KADOKAWA/RPGMV/DefaultTGOfile1.rpgsave",
+				"/home/scelester/.config/KADOKAWA/RPGMV/First Run",
+				"/home/scelester/yoyo/urls.csv",
+				"/home/scelester/yoyo/chrome_History",
+				"/home/scelester/.amplify/amplify-configuration.json",
+				"/home/scelester/Downloads/MilanProject/Sliding-Sign-In-Sign-Up-Form-master/index.html",
+				"/home/scelester/Downloads/MilanProject/Sliding-Sign-In-Sign-Up-Form-master/app.js",
+				"/home/scelester/Downloads/MilanProject/Sliding-Sign-In-Sign-Up-Form-master/style.css",
+				"/tmp/xa-KM12R2/index.html",
+				"/home/scelester/Downloads/JXFOr194.html",
+				"/tmp/xa-2L4LR2/index.html",
+				"/home/scelester/ProjectD/aws_python_weboro_widget/README.md",
+				"/tmp/xa-IPUZR2/LICENSE.chromedriver",
+				"/home/scelester/.zshrc",
+				"/home/scelester/.zshenv",
+				"/home/scelester/.bash_history",
+				"/home/scelester/.gamez/The_Genesis_Order_-_Linux-v1.02/natives_blob.bin",
+				"/home/scelester/.gamez/The_Genesis_Order_-_Linux-v1.02/launcher.sh",
+				"/home/scelester/.mozilla/firefox/profiles.ini",
+				"/home/scelester/.mozilla/firefox/installs.ini",
+				"/home/scelester/MyScripts/database_accesser.sh",
 				"/home/scelester/MyScripts/nightlight",
 				"/home/scelester/.config/jgit/config",
 				"/home/scelester/.config/knfsshare",
@@ -305,8 +331,6 @@
 				"/home/scelester/MyScripts/StartupStates/why.txt",
 				"/home/scelester/.config/libinput-gestures.conf",
 				"/home/scelester/Downloads/churchill.html",
-				"/home/scelester/.zshrc",
-				"/home/scelester/.zshenv",
 				"/home/scelester/.zsh_history",
 				"/home/scelester/.var/app/org.libreoffice.LibreOffice/config/libreoffice/4/user/GraphicsRenderTests.log",
 				"/usr/lib/systemd/system/wpa_supplicant.service",
@@ -398,30 +422,7 @@
 				"/home/scelester/ProjectD/anish_proj/frontend/html/admin/adminposts.html",
 				"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/buyer.html",
 				"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/myaccountbuyer.html",
-				"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/myprojects.html",
-				"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/searchbuyer.html",
-				"/home/scelester/ProjectD/anish_proj/frontend/html/seller/seller.html",
-				"/home/scelester/ProjectD/anish_proj/frontend/html/seller/sellerbrowse.html",
-				"/home/scelester/ProjectD/anish_proj/frontend/html/login.html",
-				"/home/scelester/.config/ags/widget/bar/buttons/PowerMenu.ts",
-				"/home/scelester/.config/ags/widget/bar/ScreenCorners.ts",
-				"/home/scelester/.config/ags/widget/bar/Bar.ts",
-				"/home/scelester/.config/ags/lib/notifications.ts",
-				"/home/scelester/.config/ags/lib/battery.ts",
-				"/home/scelester/.config/ags/lib/swww.ts",
-				"/home/scelester/.config/ags/lib/icons.ts",
-				"/home/scelester/.config/ags/greeter/session.ts",
-				"/home/scelester/.config/ags/default.nix",
-				"/media/windows/Games/ULTRAKILL-SteamRIP.com/Read_Me_Instructions.txt",
-				"/home/scelester/.PlayOnLinux/playonlinux.cfg",
-				"/home/scelester/.PlayOnLinux/extensions.cfg",
-				"/home/scelester/.PlayOnLinux/wineprefix/default/playonlinux.cfg",
-				"/home/scelester/PlayOnLinux's virtual drives/default/playonlinux.cfg",
-				"/home/scelester/.selz/.var/app/org.mozilla.firefox/gmzz/MarinaCuckoldingReport/www.newgamesbox.net/README.txt",
-				"/home/scelester/.config/rog/rog-control-center.cfg",
-				"/home/scelester/.config/spotify/prefs",
-				"/home/scelester/ProjectD/softwaremate.com.au/softwaremate/.gitignore",
-				"/home/scelester/ProjectD/softwaremate.com.au/softwaremate/package.json"
+				"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/myprojects.html"
 			],
 			"find":
 			{
@@ -440,6 +441,8 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"initialize_state",
+					"version",
 					";\n",
 					"source",
 					"preview",
@@ -630,16 +633,16 @@
 				"selected_items":
 				[
 					[
-						"renm",
-						"Rename File"
+						"ter",
+						"Terminal: Open"
 					],
 					[
 						"term",
 						"Terminal: Open"
 					],
 					[
-						"ter",
-						"Terminal: Open"
+						"renm",
+						"Rename File"
 					],
 					[
 						"ren",
@@ -698,8 +701,33 @@
 			},
 			"file_history":
 			[
-				"/home/scelester/MyScripts/database_accesser.sh",
+				"/home/scelester/nohup.out",
+				"/home/scelester/MyScripts/battery_saver_mode.sh",
+				"/home/scelester/.icons/default/index.theme",
 				"/home/scelester/MyScripts/battery_warrning",
+				"/home/scelester/.config/electron-flags.conf",
+				"/home/scelester/.config/KADOKAWA/RPGMV/Local State",
+				"/home/scelester/.config/KADOKAWA/RPGMV/DefaultTGOfile1.rpgsave",
+				"/home/scelester/.config/KADOKAWA/RPGMV/First Run",
+				"/home/scelester/yoyo/urls.csv",
+				"/home/scelester/yoyo/chrome_History",
+				"/home/scelester/.amplify/amplify-configuration.json",
+				"/home/scelester/Downloads/MilanProject/Sliding-Sign-In-Sign-Up-Form-master/index.html",
+				"/home/scelester/Downloads/MilanProject/Sliding-Sign-In-Sign-Up-Form-master/app.js",
+				"/home/scelester/Downloads/MilanProject/Sliding-Sign-In-Sign-Up-Form-master/style.css",
+				"/tmp/xa-KM12R2/index.html",
+				"/home/scelester/Downloads/JXFOr194.html",
+				"/tmp/xa-2L4LR2/index.html",
+				"/home/scelester/ProjectD/aws_python_weboro_widget/README.md",
+				"/tmp/xa-IPUZR2/LICENSE.chromedriver",
+				"/home/scelester/.zshrc",
+				"/home/scelester/.zshenv",
+				"/home/scelester/.bash_history",
+				"/home/scelester/.gamez/The_Genesis_Order_-_Linux-v1.02/natives_blob.bin",
+				"/home/scelester/.gamez/The_Genesis_Order_-_Linux-v1.02/launcher.sh",
+				"/home/scelester/.mozilla/firefox/profiles.ini",
+				"/home/scelester/.mozilla/firefox/installs.ini",
+				"/home/scelester/MyScripts/database_accesser.sh",
 				"/home/scelester/MyScripts/nightlight",
 				"/home/scelester/.config/jgit/config",
 				"/home/scelester/.config/knfsshare",
@@ -709,8 +737,6 @@
 				"/home/scelester/MyScripts/StartupStates/why.txt",
 				"/home/scelester/.config/libinput-gestures.conf",
 				"/home/scelester/Downloads/churchill.html",
-				"/home/scelester/.zshrc",
-				"/home/scelester/.zshenv",
 				"/home/scelester/.zsh_history",
 				"/home/scelester/.var/app/org.libreoffice.LibreOffice/config/libreoffice/4/user/GraphicsRenderTests.log",
 				"/usr/lib/systemd/system/wpa_supplicant.service",
@@ -802,30 +828,7 @@
 				"/home/scelester/ProjectD/anish_proj/frontend/html/admin/adminposts.html",
 				"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/buyer.html",
 				"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/myaccountbuyer.html",
-				"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/myprojects.html",
-				"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/searchbuyer.html",
-				"/home/scelester/ProjectD/anish_proj/frontend/html/seller/seller.html",
-				"/home/scelester/ProjectD/anish_proj/frontend/html/seller/sellerbrowse.html",
-				"/home/scelester/ProjectD/anish_proj/frontend/html/login.html",
-				"/home/scelester/.config/ags/widget/bar/buttons/PowerMenu.ts",
-				"/home/scelester/.config/ags/widget/bar/ScreenCorners.ts",
-				"/home/scelester/.config/ags/widget/bar/Bar.ts",
-				"/home/scelester/.config/ags/lib/notifications.ts",
-				"/home/scelester/.config/ags/lib/battery.ts",
-				"/home/scelester/.config/ags/lib/swww.ts",
-				"/home/scelester/.config/ags/lib/icons.ts",
-				"/home/scelester/.config/ags/greeter/session.ts",
-				"/home/scelester/.config/ags/default.nix",
-				"/media/windows/Games/ULTRAKILL-SteamRIP.com/Read_Me_Instructions.txt",
-				"/home/scelester/.PlayOnLinux/playonlinux.cfg",
-				"/home/scelester/.PlayOnLinux/extensions.cfg",
-				"/home/scelester/.PlayOnLinux/wineprefix/default/playonlinux.cfg",
-				"/home/scelester/PlayOnLinux's virtual drives/default/playonlinux.cfg",
-				"/home/scelester/.selz/.var/app/org.mozilla.firefox/gmzz/MarinaCuckoldingReport/www.newgamesbox.net/README.txt",
-				"/home/scelester/.config/rog/rog-control-center.cfg",
-				"/home/scelester/.config/spotify/prefs",
-				"/home/scelester/ProjectD/softwaremate.com.au/softwaremate/.gitignore",
-				"/home/scelester/ProjectD/softwaremate.com.au/softwaremate/package.json"
+				"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/myprojects.html"
 			],
 			"find":
 			{
@@ -844,6 +847,8 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"initialize_state",
+					"version",
 					";\n",
 					"source",
 					"preview",

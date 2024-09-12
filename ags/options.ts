@@ -44,6 +44,7 @@ const options = mkOptions(OPTIONS, {
         blur: opt(0),
         scheme: opt<"dark" | "light">("dark"),
         eyecare: opt<"eyecare" | "normal">("eyecare"),
+        charging_mode:opt<"charging" | "unplugged" >("charging"),
         widget: { opacity: opt(94) },
         border: {
             width: opt(1),
@@ -235,6 +236,12 @@ const options = mkOptions(OPTIONS, {
             pack: {
                 h: opt<"start" | "center" | "end">("center"),
                 v: opt<"start" | "center" | "end">("end"),
+            },
+        },
+        charging_mode:{
+            pack: {
+                h: opt<"start" | "center" | "end">("center"),
+                v: opt<"start" | "center" | "end">("center"),
             },
         }
     },

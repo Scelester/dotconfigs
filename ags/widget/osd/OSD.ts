@@ -1,13 +1,15 @@
-import { bash, icon, sh } from "lib/utils"
+import { icon, sh } from "lib/utils"
 import icons from "lib/icons"
 import Progress from "./Progress"
 import brightness from "service/brightness"
 import options from "options"
+import Battery_state from "./charging_mode"
 
 const audio = await Service.import("audio")
-const { progress, microphone,speaker,eyecare } = options.osd
+const { progress, microphone,speaker,eyecare,charging_mode } = options.osd
 
 const { eyecare:eyecarestate } = options.theme
+const {charging_mode:charging_mode_state} = options.theme
 
 const DELAY = 2500
 
@@ -56,6 +58,7 @@ function OnScreenProgress(vertical: boolean) {
             icon(audio.speaker.icon_name || "", icons.audio.type.speaker),
         ), "notify::volume")
 }
+
 function Mute(){
     const icon = Widget.Icon({
         class_name: "speaker",
@@ -126,7 +129,7 @@ function Eyecare(){
     })
 
     let count = 0;
-    let widgetEyecare_state = eyecarestate.value == "normal" ? "normal":"eyecare" ;
+    // let widgetEyecare_state = eyecarestate.value == "normal" ? "normal":"eyecare" ;
     
 
     return revealer.hook(eyecarestate, () => Utils.idle(() => {
@@ -143,6 +146,42 @@ function Eyecare(){
         
     }))
 }
+
+// function Battery_state() {
+//     const icon = Widget.Icon({
+//         class_name: "charging_mode", // Ensure this class is styled appropriately
+//     });
+
+//     const revealer = Widget.Revealer({
+//         transition: "crossfade",
+//         child: icon,
+//     });
+
+//     let count = 0;
+
+//     function updateChargingMode() {
+//         sh("notify-send 'Battery_state updated'"); // Debugging notification
+//         icon.icon = icons.battery[charging_mode_state.value === "charging" ? "charging" : "unplugged"];
+//         revealer.reveal_child = true;
+
+//         count++;
+//         Utils.timeout(DELAY, () => {
+//             count--;
+//             if (count === 0)
+//                 revealer.reveal_child = false;
+//         });
+//     }
+
+//     // Initial update
+//     updateChargingMode();
+
+//     // Connect to changes in charging_mode_state
+//     charging_mode_state.connect('notify::value', updateChargingMode);
+
+//     return revealer;
+// }
+
+
 
 export default (monitor: number) => Widget.Window({
     monitor,
@@ -175,6 +214,11 @@ export default (monitor: number) => Widget.Window({
                 hpack: eyecare.pack.h.bind(),
                 vpack: eyecare.pack.v.bind(),
                 child: Eyecare(),
+            }),
+            Widget.Box({
+                hpack: charging_mode.pack.h.bind(),
+                vpack: charging_mode.pack.v.bind(),
+                child: Battery_state(),
             }),
 
         ),

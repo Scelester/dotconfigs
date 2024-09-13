@@ -41,7 +41,6 @@ on_ac() {
 
 # Check and apply the initial power state
 initialize_state() {
-    sleep 3
     current_state=$(cat /sys/class/power_supply/ACAD/online)
     
     if [[ "$current_state" -eq 0 ]]; then
@@ -71,7 +70,7 @@ monitor_power_state() {
             last_state="$current_state"
         fi
 
-        # Sleep for 5 seconds before checking again
+        # Sleep for 3 seconds before checking again
         sleep 3
     done
 }

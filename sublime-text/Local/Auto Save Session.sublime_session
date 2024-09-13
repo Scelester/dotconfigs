@@ -149,7 +149,7 @@
 	"last_version": 4180,
 	"last_window_id": 15,
 	"log_indexing": false,
-	"next_update_check": 1726213686,
+	"next_update_check": 1726300086,
 	"settings":
 	{
 		"new_window_full_screen": false,
@@ -605,6 +605,83 @@
 					]
 				]
 			},
+			"buffers":
+			[
+				{
+					"file": "/home/scelester/MyScripts/battery_saver_mode.sh",
+					"settings":
+					{
+						"buffer_size": 2414,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					},
+					"undo_stack":
+					[
+						[
+							15,
+							1,
+							"left_delete",
+							null,
+							"AQAAALsIAAAAAAAAuwgAAAAAAAABAAAANQ",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC8CAAAAAAAALwIAAAAAAAAAAAAAAAA8L8"
+						],
+						[
+							16,
+							1,
+							"insert",
+							{
+								"characters": "3"
+							},
+							"AQAAALsIAAAAAAAAvAgAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC7CAAAAAAAALsIAAAAAAAAAAAAAAAA8L8"
+						],
+						[
+							19,
+							1,
+							"left_delete",
+							null,
+							"AQAAAHoFAAAAAAAAegUAAAAAAAABAAAAMw",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB7BQAAAAAAAHsFAAAAAAAAAAAAAAAA8L8"
+						],
+						[
+							20,
+							1,
+							"insert",
+							{
+								"characters": "1"
+							},
+							"AQAAAHoFAAAAAAAAewUAAAAAAAAAAAAA",
+							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB6BQAAAAAAAHoFAAAAAAAAAAAAAAAA8L8"
+						],
+						[
+							1,
+							1,
+							"left_delete",
+							null,
+							"AQAAAHoFAAAAAAAAegUAAAAAAAABAAAAMQ",
+							"AQAAAAAAAAABAAAAewUAAAAAAAB7BQAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							2,
+							2,
+							"delete_word",
+							{
+								"forward": false
+							},
+							"AgAAAHQFAAAAAAAAdAUAAAAAAAAGAAAAc2xlZXAgcAUAAAAAAABwBQAAAAAAAAQAAAAgICAg",
+							"AQAAAAAAAAABAAAAegUAAAAAAAB6BQAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							3,
+							1,
+							"left_delete",
+							null,
+							"AQAAAG8FAAAAAAAAbwUAAAAAAAABAAAACg",
+							"AQAAAAAAAAABAAAAcAUAAAAAAABwBQAAAAAAAAAAAAAAAPC/"
+						]
+					]
+				}
+			],
 			"build_system": "Packages/Python/Python.sublime-build",
 			"build_system_choices":
 			[
@@ -847,6 +924,7 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"sleep",
 					"initialize_state",
 					"version",
 					";\n",
@@ -884,6 +962,46 @@
 				"whole_word": false,
 				"wrap": true
 			},
+			"groups":
+			[
+				{
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/home/scelester/MyScripts/battery_saver_mode.sh",
+							"selected": true,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 2414,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1391,
+										1391
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/ShellScript/Bash.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 731.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"stack_multiselect": false,
+							"type": "text"
+						}
+					]
+				}
+			],
 			"incremental_find":
 			{
 				"height": 34.0
@@ -891,6 +1009,28 @@
 			"input":
 			{
 				"height": 38.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
 			},
 			"menu_visible": true,
 			"output.exec":
@@ -903,6 +1043,7 @@
 			},
 			"pinned_build_system": "",
 			"position": "0,1,0,0,0,0,0,1021,971,1920,1080,0",
+			"project": "",
 			"replace":
 			{
 				"height": 64.0
@@ -959,6 +1100,7 @@
 				],
 				"width": 600.0
 			},
+			"selected_group": 0,
 			"settings":
 			{
 			},
@@ -971,7 +1113,8 @@
 			"template_settings":
 			{
 			},
-			"window_id": 15
+			"window_id": 15,
+			"workspace_name": ""
 		}
 	],
 	"workspaces":

@@ -1,0 +1,54 @@
+#!/bin/bash
+
+# Define states array
+states=("off" "invert-colors" "true_vibrance" "grayscale" "sepia")
+
+# File to store the current state index (temporary, lost after reboot)
+state_index_file="/tmp/current_state_index"
+
+# Initialize the index if the file doesn't exist
+if [ ! -f "$state_index_file" ]; then
+    echo 0 > "$state_index_file"
+fi
+
+# Read the current index
+current_index=$(cat "$state_index_file")
+
+# Determine the next state
+next_index=$(( (current_index + 1) % ${#states[@]} ))
+next_state="${states[$next_index]}"
+
+# Define notification parameters
+icon=1          # Info icon
+time_ms=2000     # 2 seconds
+color=0          # Default color
+
+# Apply the next state and notify
+case "$next_state" in
+    "off")
+        hyprshade off
+        # Clear any applied shader
+        hyprctl notify $icon $time_ms $color "Shade is now OFF"
+        ;;
+    "invert-colors")
+        hyprshade on invert-colors
+        hyprctl notify $icon $time_ms $color "Shade is now INVERT COLORS"
+        ;;
+    "true_vibrance")
+        hyprshade on true_vibrance
+        hyprctl notify $icon $time_ms $color "Shade is now TRUE VIBRANCE"
+        ;;
+    "grayscale")
+        hyprshade on grayscale
+        # Apply grayscale shader
+        hyprctl notify $icon $time_ms $color "Shade is now GRAYSCALE"
+        ;;
+    "sepia")
+        # Apply sepia shader
+        hyprshade on sepia
+        hyprctl notify $icon $time_ms $color "Shade is now SEPIA"
+        ;;
+esac
+
+# Save the new index
+echo "$next_index" > "$state_index_file"

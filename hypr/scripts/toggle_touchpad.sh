@@ -23,11 +23,16 @@ state="$new_state"
 echo "new_state :$state"
 db_set
 
+# Define notification parameters
+icon=1          # Info icon
+time_ms=2000     # 2 seconds
+color=0          # Default color
+
 # Use hyprctl to apply the new state
 if [ "$new_state" == "true" ]; then
     hyprctl -r keyword '$TOUCHPAD_ENABLED' "true"
-    notify-send "Touchpad is now enabled."
+    hyprctl notify $icon $time_ms $color "Touchpad is now enabled."
 else
     hyprctl -r keyword '$TOUCHPAD_ENABLED' "false"
-    notify-send "Touchpad is now disabled."
+    hyprctl notify $icon $time_ms $color "Touchpad is now disabled."
 fi

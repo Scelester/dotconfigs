@@ -1,9 +1,22 @@
 {
 	"file_history":
 	[
+		"/home/scelester/MyScripts/nightlight",
+		"/home/scelester/.config/hypr/scripts/toggle_shaders",
+		"/home/scelester/.config/hypr/shaders/blur.glsl",
+		"/home/scelester/.config/hypr/shaders/posterize.glsl",
+		"/home/scelester/.config/hypr/shaders/brightness_contrast.glsl",
+		"/home/scelester/.config/hypr/shaders/sepia.glsl",
+		"/home/scelester/.config/hypr/shaders/grayscale.glsl",
+		"/home/scelester/.config/hypr/shaders/invert-colors.glsl",
+		"/home/scelester/.config/hypr/shaders/true_vibrance.gls",
+		"/home/scelester/.config/hypr/settings/autostart.conf",
+		"/home/scelester/MyScripts/battery_saver_mode.sh",
+		"/home/scelester/MyScripts/.config",
+		"/etc/sioyek/prefs.config",
+		"/home/scelester/.config/sioyek/prefs_user.config",
 		"/home/scelester/Downloads/JXFOr194.html",
 		"/home/scelester/nohup.out",
-		"/home/scelester/MyScripts/battery_saver_mode.sh",
 		"/home/scelester/.icons/default/index.theme",
 		"/home/scelester/MyScripts/battery_warrning",
 		"/home/scelester/.config/electron-flags.conf",
@@ -28,7 +41,6 @@
 		"/home/scelester/.mozilla/firefox/profiles.ini",
 		"/home/scelester/.mozilla/firefox/installs.ini",
 		"/home/scelester/MyScripts/database_accesser.sh",
-		"/home/scelester/MyScripts/nightlight",
 		"/home/scelester/.config/jgit/config",
 		"/home/scelester/.config/knfsshare",
 		"/home/scelester/.config/.gitignore",
@@ -116,22 +128,11 @@
 		"/home/scelester/Downloads/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.css.map",
 		"/home/scelester/ProjectD/clicknepal_old/resources/views/layouts/app.blade.php",
 		"/home/scelester/ProjectD/clickcon_api/routes/web.php",
-		"/home/scelester/ProjectD/clicknepal_old/app/Http/Controllers/Auth/LoginController.php",
-		"/home/scelester/ProjectD/clickcon_api/.env.example",
-		"/home/scelester/ProjectD/anish_proj/frontend/html/home.html",
-		"/home/scelester/ProjectD/anish_proj/frontend/html/blogposts.html",
-		"/home/scelester/ProjectD/anish_proj/frontend/html/myaccount.html",
-		"/home/scelester/ProjectD/anish_proj/frontend/css/allstyles.css",
-		"/home/scelester/ProjectD/anish_proj/frontend/html/test.html",
-		"/home/scelester/ProjectD/anish_proj/frontend/html/admin/adminaccounts.html",
-		"/home/scelester/ProjectD/anish_proj/frontend/html/admin/adminhome.html",
-		"/home/scelester/ProjectD/anish_proj/frontend/html/admin/adminposts.html",
-		"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/buyer.html",
-		"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/myaccountbuyer.html",
-		"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/myprojects.html"
+		"/home/scelester/ProjectD/clicknepal_old/app/Http/Controllers/Auth/LoginController.php"
 	],
 	"folder_history":
 	[
+		"/home/scelester/.config",
 		"/home/scelester/ProjectD/aws_python_weboro_widget",
 		"/home/scelester/Desktop/crackgen",
 		"/home/scelester/Desktop/Kernal_patching",
@@ -140,7 +141,6 @@
 		"/home/scelester/ProjectD/fetcher",
 		"/home/scelester/.config/hypr",
 		"/home/scelester/.config/waybar",
-		"/home/scelester/.config",
 		"/home/scelester/MyScripts",
 		"/home/scelester/.config/ags",
 		"/home/scelester/.config/eww",
@@ -149,11 +149,11 @@
 	"last_version": 4180,
 	"last_window_id": 15,
 	"log_indexing": false,
-	"next_update_check": 1726213686,
+	"next_update_check": 1726818486,
 	"settings":
 	{
 		"new_window_full_screen": false,
-		"new_window_height": 1047.0,
+		"new_window_height": 1053.0,
 		"new_window_maximized": true,
 		"new_window_position":
 		[
@@ -295,9 +295,22 @@
 			},
 			"file_history":
 			[
+				"/home/scelester/MyScripts/nightlight",
+				"/home/scelester/.config/hypr/scripts/toggle_shaders",
+				"/home/scelester/.config/hypr/shaders/blur.glsl",
+				"/home/scelester/.config/hypr/shaders/posterize.glsl",
+				"/home/scelester/.config/hypr/shaders/brightness_contrast.glsl",
+				"/home/scelester/.config/hypr/shaders/sepia.glsl",
+				"/home/scelester/.config/hypr/shaders/grayscale.glsl",
+				"/home/scelester/.config/hypr/shaders/invert-colors.glsl",
+				"/home/scelester/.config/hypr/shaders/true_vibrance.gls",
+				"/home/scelester/.config/hypr/settings/autostart.conf",
+				"/home/scelester/MyScripts/battery_saver_mode.sh",
+				"/home/scelester/MyScripts/.config",
+				"/etc/sioyek/prefs.config",
+				"/home/scelester/.config/sioyek/prefs_user.config",
 				"/home/scelester/Downloads/JXFOr194.html",
 				"/home/scelester/nohup.out",
-				"/home/scelester/MyScripts/battery_saver_mode.sh",
 				"/home/scelester/.icons/default/index.theme",
 				"/home/scelester/MyScripts/battery_warrning",
 				"/home/scelester/.config/electron-flags.conf",
@@ -322,7 +335,6 @@
 				"/home/scelester/.mozilla/firefox/profiles.ini",
 				"/home/scelester/.mozilla/firefox/installs.ini",
 				"/home/scelester/MyScripts/database_accesser.sh",
-				"/home/scelester/MyScripts/nightlight",
 				"/home/scelester/.config/jgit/config",
 				"/home/scelester/.config/knfsshare",
 				"/home/scelester/.config/.gitignore",
@@ -410,19 +422,7 @@
 				"/home/scelester/Downloads/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.css.map",
 				"/home/scelester/ProjectD/clicknepal_old/resources/views/layouts/app.blade.php",
 				"/home/scelester/ProjectD/clickcon_api/routes/web.php",
-				"/home/scelester/ProjectD/clicknepal_old/app/Http/Controllers/Auth/LoginController.php",
-				"/home/scelester/ProjectD/clickcon_api/.env.example",
-				"/home/scelester/ProjectD/anish_proj/frontend/html/home.html",
-				"/home/scelester/ProjectD/anish_proj/frontend/html/blogposts.html",
-				"/home/scelester/ProjectD/anish_proj/frontend/html/myaccount.html",
-				"/home/scelester/ProjectD/anish_proj/frontend/css/allstyles.css",
-				"/home/scelester/ProjectD/anish_proj/frontend/html/test.html",
-				"/home/scelester/ProjectD/anish_proj/frontend/html/admin/adminaccounts.html",
-				"/home/scelester/ProjectD/anish_proj/frontend/html/admin/adminhome.html",
-				"/home/scelester/ProjectD/anish_proj/frontend/html/admin/adminposts.html",
-				"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/buyer.html",
-				"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/myaccountbuyer.html",
-				"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/myprojects.html"
+				"/home/scelester/ProjectD/clicknepal_old/app/Http/Controllers/Auth/LoginController.php"
 			],
 			"find":
 			{
@@ -441,6 +441,9 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"apply_shader",
+					"overview",
+					"sleep",
 					"initialize_state",
 					"version",
 					";\n",
@@ -555,7 +558,7 @@
 			"show_minimap": true,
 			"show_open_files": true,
 			"show_tabs": true,
-			"side_bar_visible": false,
+			"side_bar_visible": true,
 			"side_bar_width": 263.0,
 			"status_bar_visible": true,
 			"template_settings":
@@ -701,9 +704,22 @@
 			},
 			"file_history":
 			[
+				"/home/scelester/MyScripts/nightlight",
+				"/home/scelester/.config/hypr/scripts/toggle_shaders",
+				"/home/scelester/.config/hypr/shaders/blur.glsl",
+				"/home/scelester/.config/hypr/shaders/posterize.glsl",
+				"/home/scelester/.config/hypr/shaders/brightness_contrast.glsl",
+				"/home/scelester/.config/hypr/shaders/sepia.glsl",
+				"/home/scelester/.config/hypr/shaders/grayscale.glsl",
+				"/home/scelester/.config/hypr/shaders/invert-colors.glsl",
+				"/home/scelester/.config/hypr/shaders/true_vibrance.gls",
+				"/home/scelester/.config/hypr/settings/autostart.conf",
+				"/home/scelester/MyScripts/battery_saver_mode.sh",
+				"/home/scelester/MyScripts/.config",
+				"/etc/sioyek/prefs.config",
+				"/home/scelester/.config/sioyek/prefs_user.config",
 				"/home/scelester/Downloads/JXFOr194.html",
 				"/home/scelester/nohup.out",
-				"/home/scelester/MyScripts/battery_saver_mode.sh",
 				"/home/scelester/.icons/default/index.theme",
 				"/home/scelester/MyScripts/battery_warrning",
 				"/home/scelester/.config/electron-flags.conf",
@@ -728,7 +744,6 @@
 				"/home/scelester/.mozilla/firefox/profiles.ini",
 				"/home/scelester/.mozilla/firefox/installs.ini",
 				"/home/scelester/MyScripts/database_accesser.sh",
-				"/home/scelester/MyScripts/nightlight",
 				"/home/scelester/.config/jgit/config",
 				"/home/scelester/.config/knfsshare",
 				"/home/scelester/.config/.gitignore",
@@ -816,19 +831,7 @@
 				"/home/scelester/Downloads/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.css.map",
 				"/home/scelester/ProjectD/clicknepal_old/resources/views/layouts/app.blade.php",
 				"/home/scelester/ProjectD/clickcon_api/routes/web.php",
-				"/home/scelester/ProjectD/clicknepal_old/app/Http/Controllers/Auth/LoginController.php",
-				"/home/scelester/ProjectD/clickcon_api/.env.example",
-				"/home/scelester/ProjectD/anish_proj/frontend/html/home.html",
-				"/home/scelester/ProjectD/anish_proj/frontend/html/blogposts.html",
-				"/home/scelester/ProjectD/anish_proj/frontend/html/myaccount.html",
-				"/home/scelester/ProjectD/anish_proj/frontend/css/allstyles.css",
-				"/home/scelester/ProjectD/anish_proj/frontend/html/test.html",
-				"/home/scelester/ProjectD/anish_proj/frontend/html/admin/adminaccounts.html",
-				"/home/scelester/ProjectD/anish_proj/frontend/html/admin/adminhome.html",
-				"/home/scelester/ProjectD/anish_proj/frontend/html/admin/adminposts.html",
-				"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/buyer.html",
-				"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/myaccountbuyer.html",
-				"/home/scelester/ProjectD/anish_proj/frontend/html/buyer/myprojects.html"
+				"/home/scelester/ProjectD/clicknepal_old/app/Http/Controllers/Auth/LoginController.php"
 			],
 			"find":
 			{
@@ -847,6 +850,9 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"apply_shader",
+					"overview",
+					"sleep",
 					"initialize_state",
 					"version",
 					";\n",
@@ -902,7 +908,7 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,1,0,0,0,0,0,1021,971,1920,1080,0",
+			"position": "0,1,0,0,0,0,0,1021,977,1920,1080,0",
 			"replace":
 			{
 				"height": 64.0
@@ -965,7 +971,7 @@
 			"show_minimap": true,
 			"show_open_files": true,
 			"show_tabs": true,
-			"side_bar_visible": false,
+			"side_bar_visible": true,
 			"side_bar_width": 263.0,
 			"status_bar_visible": true,
 			"template_settings":

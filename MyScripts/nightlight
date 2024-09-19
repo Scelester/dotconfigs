@@ -9,12 +9,12 @@ if [ "$(db_get)" == "f" ]; then
     state="true"
     db_set
     
-    gammastep -O 3500 &
+    hyprshade on blue-light-filter &
     
 elif [ "$(db_get)" == "t" ];then
     state="false"
     db_set
 
-    killall gammastep
-     
+    hyprshade on true_vibrance 
+
 fi

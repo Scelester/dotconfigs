@@ -1,16 +1,37 @@
 [Desktop Entry]
-FullScreen=false
+FullScreen=true
+shouldShowMenuBarComingFromFullScreen=true
+shouldShowToolBarComingFromFullScreen=true
 
 [General]
 LockSidebar=true
-ShowSidebar=true
+ShowSidebar=false
 
 [MainWindow]
+MenuBar=Disabled
 ToolBarsMovable=Disabled
 
 [Recent Files]
-File1[$e]=$HOME/Documents/Nabin Paudel literature review.pdf
-Name1[$e]=Nabin Paudel literature review.pdf
+File1[$e]=$HOME/Desktop/Nepal_ Municipal Division (Districts and Local Units) - Population Statistics, Charts and Map.pdf
+File10[$e]=$HOME/ProjectD/clickcon_api/README.md
+File2[$e]=$HOME/Downloads/WP_2018-6_Taplejung.pdf
+File3[$e]=$HOME/Downloads/user manual.pdf
+File4[$e]=$HOME/Downloads/nlcms_2016(LAND COVER)/metadata/metadata_1972747.pdf
+File5[$e]=$HOME/Downloads/applsci-14-01578.pdf
+File6[$e]=$HOME/Downloads/nlcms_2016(LAND COVER)/Data Description.pdf
+File7[$e]=$HOME/ProjectD/Thesised_Graphs/Data and docs/2/Ghunsa Catchment.pdf
+File8[$e]=$HOME/ProjectD/Thesised_Graphs/Data and docs/1/How To By anujdai.pdf
+File9[$e]=$HOME/.cache/tldr/pages/windows/wsl-open.md
+Name1[$e]=Nepal_ Municipal Division (Districts and Local Units) - Population Statistics, Charts and Map.pdf
+Name10[$e]=README.md
+Name2[$e]=WP_2018-6_Taplejung.pdf
+Name3[$e]=user manual.pdf
+Name4[$e]=metadata_1972747.pdf
+Name5[$e]=applsci-14-01578.pdf
+Name6[$e]=Data Description.pdf
+Name7[$e]=Ghunsa Catchment.pdf
+Name8[$e]=How To By anujdai.pdf
+Name9[$e]=wsl-open.md
 
 [UiSettings]
 ColorScheme=KvAdaptaDark

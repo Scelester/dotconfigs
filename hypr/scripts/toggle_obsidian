@@ -1,0 +1,10 @@
+#!/bin/sh
+# Check if any Electron process is running that belongs to Obsidian
+if pgrep -f "electron.*obsidian" > /dev/null
+then
+    echo "Obsidian is already running."
+else
+    # Launch Obsidian if not running
+    echo "Starting Obsidian..."
+    obsidian &
+fi

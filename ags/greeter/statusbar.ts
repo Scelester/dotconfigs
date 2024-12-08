@@ -3,8 +3,10 @@ import options from "options"
 import icons from "lib/icons"
 import BatteryBar from "widget/bar/buttons/BatteryBar"
 import PanelButton from "widget/bar/PanelButton"
+import { sh } from "../lib/utils"
 
-const { scheme,eyecare } = options.theme
+
+const { scheme, eyecare } = options.theme
 const { monochrome } = options.bar.powermenu
 const { format } = options.bar.date
 
@@ -33,11 +35,17 @@ const darkmode = PanelButton({
 
 const eyecaremode = PanelButton({
     class_name: "eyecaremode",
-    child: Widget.Icon({ icon: eyecare.bind().as(s => icons.custom[s]) }),
-    on_clicked: () => eyecare.value = eyecare.value === "eyecare" ? "normal" : "eyecare",
-})
+    child: Widget.Icon({ 
+        icon: eyecare.bind().as(s => icons.custom[s]) 
+    }),
+    on_clicked: () => {
+        eyecare.value = eyecare.value === "eyecare" ? "normal" : "eyecare";
+        sh("notify-send gg");
+    },
+});
 
-export default Widget.CenterBox({
+
+export default Widget.CenterBox({ 
     class_name: "bar",
     hexpand: true,
     center_widget: date,

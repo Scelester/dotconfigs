@@ -7,9 +7,9 @@
 		"ColorHelper",
 		"Vintage",
 	],
-	"theme": "Afterglow-green.sublime-theme",
+	"theme": "OneDarkMaterial.sublime-theme",
 	"index_files": true,
-	"color_scheme": "Mariana.sublime-color-scheme",
+	"color_scheme": "Packages/Theme - Dark Material/schemes/Dark-Material.tmTheme",
 	"font_size": 13,
 	"default_line_ending": "unix",
 }

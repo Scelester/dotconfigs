@@ -1,0 +1,93 @@
+/* Mocha-inspired theme */
+body {
+    background-color: #2e2a32; /* Rich dark background */
+    color: #d9c7b6; /* Soft off-white text */
+    font-family: 'Roboto', sans-serif; /* Modern, clean font */
+}
+
+button {
+    background-color: #4a3b50; /* Coffee bean brown */
+    color: #f4e0d9; /* Light mocha-cream text */
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #705a75; /* Highlight with a slightly lighter mocha */
+}
+
+.container {
+    background-color: #3b353e; /* Slightly lighter mocha base */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+input, textarea {
+    background-color: #4a3b50;
+    color: #f4e0d9;
+    border: 1px solid #705a75;
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #8d6b88; /* Subtle border change on focus */
+}
+
+a {
+    color: #a98c8d; /* Soft reddish-mocha link color */
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #f4e0d9; /* Lighter mocha on hover */
+}
+
+/* Header styles */
+h1, h2, h3, h4, h5, h6 {
+    color: #f4e0d9; /* Cream-like tones for headers */
+}
+
+/* Additional UI elements */
+.navbar {
+    background-color: #4a3b50;
+    padding: 10px;
+    border-bottom: 1px solid #705a75;
+}
+
+.navbar a {
+    color: #d9c7b6;
+    padding: 10px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    color: #f4e0d9;
+}
+
+/* Modal */
+.modal {
+    background-color: #2e2a32;
+    color: #d9c7b6;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #4a3b50;
+    color: #d9c7b6;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #705a75;
+}

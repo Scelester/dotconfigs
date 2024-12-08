@@ -77,6 +77,16 @@ export function Favorites() {
                     children: fs
                         .map(f => query(f)?.[0])
                         .filter(f => f)
+                        .slice(0, Math.ceil(fs.length / 2))
+                        .map(QuickAppButton),
+                }),
+                Widget.Separator(),
+                Widget.Box({
+                    class_name: "quicklaunch horizontal",
+                    children: fs
+                        .map(f => query(f)?.[0])
+                        .filter(f => f)
+                        .slice(Math.ceil(fs.length / 2))
                         .map(QuickAppButton),
                 }),
             ])),

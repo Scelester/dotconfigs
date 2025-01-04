@@ -1,9 +1,15 @@
 {
   "about_get_books_msg_again": false,
   "add a plugin dialog": "/home/scelester/Downloads",
-  "add books dialog dir": "/home/scelester/Megasync/heck",
+  "add books dialog dir": "/home/scelester/Downloads",
   "add books dialog dir-last-used-filter-spec-all-files": false,
   "choose_library_icon": "/home/scelester/Pictures",
+  "notified-version-updates": {
+    "__class__": "set",
+    "__value__": [
+      "7.22"
+    ]
+  },
   "sort_history": [
     [
       "title",

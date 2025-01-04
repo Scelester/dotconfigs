@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.1" encoding="UTF-8"?>
 
 <channel name="xfce4-panel" version="1.0">
   <property name="configver" type="int" value="2"/>
@@ -55,13 +55,16 @@
       <property name="expand" type="bool" value="true"/>
       <property name="style" type="uint" value="0"/>
     </property>
-    <property name="plugin-4" type="string" value="pager"/>
+    <property name="plugin-4" type="string" value="pager">
+      <property name="rows" type="uint" value="1"/>
+    </property>
     <property name="plugin-5" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="wi-fi network connection “secondfloor21_5” active: secondfloor21_5 (55%)"/>
         <value type="string" value="wi-fi network connection “bcu-mba 5 ghz” active: bcu-mba 5 ghz (57%)"/>
         <value type="string" value="configuring wi-fi network connection “bcu-bsc.cit”…"/>
         <value type="string" value="wi-fi network connection “bcu-bsc.cit” active: bcu-bsc.cit (41%)"/>
@@ -73,6 +76,7 @@
         <value type="string" value="rquickshare"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="steam"/>
         <value type="string" value="CopyQ_copyq"/>
         <value type="string" value="blueman"/>
         <value type="string" value="tray-icon tray app"/>

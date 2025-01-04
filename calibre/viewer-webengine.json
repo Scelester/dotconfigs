@@ -1,28 +1,28 @@
 {
   "geometry-of-main_window_geometry": {
     "frame_geometry": {
-      "height": 981,
-      "width": 1034,
+      "height": 1022,
+      "width": 937,
       "x": 0,
       "y": 0
     },
     "full_screened": false,
     "geometry": {
-      "height": 981,
-      "width": 1034,
+      "height": 1022,
+      "width": 937,
       "x": 0,
       "y": 0
     },
     "maximized": true,
     "normal_geometry": {
-      "height": 1039,
-      "width": 1920,
+      "height": 1052,
+      "width": 960,
       "x": 0,
       "y": 0
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAAAAAAAAAAABAkAAAPUAAAAAAAAAAAAAAd/AAAEDgAAAAACAAAAB4AAAAAAAAAAAAAABAkAAAPU"
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAAA6gAAAP9AAAAAAAAAAAAAAO/AAAEGwAAAAACAAAAB4AAAAAAAAAAAAAAA6gAAAP9"
     },
     "screen": {
       "depth": 32,
@@ -105,7 +105,7 @@
   "image_popup_zoom_factor": 1,
   "main_window_state": {
     "__class__": "bytearray",
-    "__value__": "AAAA/wAAAAH9AAAAAgAAAAAAAAEAAAAD+fwCAAAAAvsAAAAQAHQAbwBjAC0AZABvAGMAawIAAAAAAAAAAAAAB2IAAAPk+wAAABYAcwBlAGEAcgBjAGgALQBkAG8AYwBrAAAAAAD/////AAAApgD///8AAAABAAABBQAABDj8AgAAAAT7AAAAFgBsAG8AbwBrAHUAcAAtAGQAbwBjAGsAAAAAAP////8AAACTAP////sAAAAcAGIAbwBvAGsAbQBhAHIAawBzAC0AZABvAGMAawAAAAAAAAAEOAAAAQoA////+wAAABwAaQBuAHMAcABlAGMAdABvAHIALQBkAG8AYwBrAAAAAAAAAAQ4AAAAGAD////7AAAAHgBoAGkAZwBoAGwAaQBnAGgAdABzAC0AZABvAGMAawAAAAAAAAAD+QAAAOcA////AAAECgAAA9UAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAAB4AYQBjAHQAaQBvAG4AcwBfAHQAbwBvAGwAYgBhAHICAAAAAP////8AAAAAAAAAAA=="
+    "__value__": "AAAA/wAAAAH9AAAAAgAAAAAAAAEAAAAD+fwCAAAAAvsAAAAQAHQAbwBjAC0AZABvAGMAawIAAAAAAAAAAAAAB2IAAAPk+wAAABYAcwBlAGEAcgBjAGgALQBkAG8AYwBrAAAAAAD/////AAAAnQD///8AAAABAAABBQAABDj8AgAAAAT7AAAAFgBsAG8AbwBrAHUAcAAtAGQAbwBjAGsAAAAAAP////8AAACHAP////sAAAAcAGIAbwBvAGsAbQBhAHIAawBzAC0AZABvAGMAawAAAAAAAAAEOAAAAPgA////+wAAABwAaQBuAHMAcABlAGMAdABvAHIALQBkAG8AYwBrAAAAAAAAAAQ4AAAAFQD////7AAAAHgBoAGkAZwBoAGwAaQBnAGgAdABzAC0AZABvAGMAawAAAAAAAAAD+QAAANsA////AAADqQAAA/4AAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAAB4AYQBjAHQAaQBvAG4AcwBfAHQAbwBvAGwAYgBhAHICAAAAAP////8AAAAAAAAAAA=="
   },
   "old_prefs_migrated": true,
   "session_data": {
@@ -135,12 +135,12 @@
     "standalone_recently_opened": [
       {
         "authors": [
-          "Occupytheweb"
+          "George Orwell"
         ],
-        "key": "/home/scelester/Calibre Library/Occupytheweb/Getting Started Becoming a Master Hacker_ Hacking is the Most Important Skill Set of the 21st Ce (24)/Getting Started Becoming a Master Hacker_ - Occupytheweb.epub",
-        "pathtoebook": "/home/scelester/Calibre Library/Occupytheweb/Getting Started Becoming a Master Hacker_ Hacking is the Most Important Skill Set of the 21st Ce (24)/Getting Started Becoming a Master Hacker_ - Occupytheweb.epub",
-        "timestamp": "2024-06-18T15:18:15.619Z",
-        "title": "Getting Started Becoming a Master Hacker: Hacking is the Most Important Skill Set of the 21st Century! (Linux Basics for Hackers)"
+        "key": "/home/scelester/Calibre Library/George Orwell/Animal Farm (27)/Animal Farm - George Orwell.epub",
+        "pathtoebook": "/home/scelester/Calibre Library/George Orwell/Animal Farm (27)/Animal Farm - George Orwell.epub",
+        "timestamp": "2024-12-13T19:30:07.575Z",
+        "title": "Animal Farm"
       },
       {
         "authors": [
@@ -148,8 +148,35 @@
         ],
         "key": "/home/scelester/Calibre Library/Scelester/Against the gods_0-2029 (22)/Against the gods_0-2029 - Scelester.epub",
         "pathtoebook": "/home/scelester/Calibre Library/Scelester/Against the gods_0-2029 (22)/Against the gods_0-2029 - Scelester.epub",
-        "timestamp": "2024-06-07T15:06:49.393Z",
+        "timestamp": "2024-12-13T18:49:02.353Z",
         "title": "Against the gods_0-2029"
+      },
+      {
+        "authors": [
+          "Jane Austen"
+        ],
+        "key": "/home/scelester/Calibre Library/Jane Austen/Pride and Prejudice (26)/Pride and Prejudice - Jane Austen.epub",
+        "pathtoebook": "/home/scelester/Calibre Library/Jane Austen/Pride and Prejudice (26)/Pride and Prejudice - Jane Austen.epub",
+        "timestamp": "2024-12-13T18:30:25.348Z",
+        "title": "Pride and Prejudice"
+      },
+      {
+        "authors": [
+          "Jane Austen"
+        ],
+        "key": "/home/scelester/Calibre Library/Jane Austen/Pride and Prejudice (25)/Pride and Prejudice - Jane Austen.epub",
+        "pathtoebook": "/home/scelester/Calibre Library/Jane Austen/Pride and Prejudice (25)/Pride and Prejudice - Jane Austen.epub",
+        "timestamp": "2024-12-13T18:29:02.684Z",
+        "title": "Pride and Prejudice"
+      },
+      {
+        "authors": [
+          "Occupytheweb"
+        ],
+        "key": "/home/scelester/Calibre Library/Occupytheweb/Getting Started Becoming a Master Hacker_ Hacking is the Most Important Skill Set of the 21st Ce (24)/Getting Started Becoming a Master Hacker_ - Occupytheweb.epub",
+        "pathtoebook": "/home/scelester/Calibre Library/Occupytheweb/Getting Started Becoming a Master Hacker_ Hacking is the Most Important Skill Set of the 21st Ce (24)/Getting Started Becoming a Master Hacker_ - Occupytheweb.epub",
+        "timestamp": "2024-06-18T15:18:15.619Z",
+        "title": "Getting Started Becoming a Master Hacker: Hacking is the Most Important Skill Set of the 21st Century! (Linux Basics for Hackers)"
       },
       {
         "authors": [

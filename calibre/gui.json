@@ -2,7 +2,7 @@
   "advanced search dialog current tab": 0,
   "basic_metadata_widget_splitter_state": {
     "__class__": "bytearray",
-    "__value__": "AAAA/wAAAAEAAAADAAABAgAAAYYAAAEKAf////8BAAAAAQA="
+    "__value__": "AAAA/wAAAAEAAAADAAABAgAAAbEAAAEKAf////8BAAAAAQA="
   },
   "book_info_dialog_splitter_state": {
     "__class__": "bytearray",
@@ -205,28 +205,28 @@
   },
   "geometry-of-calibre_main_window_geometry": {
     "frame_geometry": {
-      "height": 1017,
+      "height": 1052,
       "width": 1920,
-      "x": 0,
-      "y": 0
+      "x": 968,
+      "y": 43
     },
     "full_screened": false,
     "geometry": {
-      "height": 1017,
+      "height": 1052,
       "width": 1920,
-      "x": 0,
-      "y": 0
+      "x": 968,
+      "y": 43
     },
     "maximized": true,
     "normal_geometry": {
-      "height": 1080,
-      "width": 1920,
-      "x": 0,
-      "y": 0
+      "height": 1052,
+      "width": 960,
+      "x": 968,
+      "y": 43
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAAAAAAAAAAAB38AAAP4AAAAAAAAAAAAAAd/AAAENwAAAAACAAAAB4AAAAAAAAAAAAAAB38AAAP4"
+      "__value__": "AdnQywADAAAAAAPIAAAAKwAAC0cAAARGAAADyAAAACsAAAeHAAAERgAAAAACAAAAB4AAAAPIAAAAKwAAC0cAAARG"
     },
     "screen": {
       "depth": 32,
@@ -359,27 +359,27 @@
   "geometry-of-duplicates-question-dialog-geometry": {
     "frame_geometry": {
       "height": 380,
-      "width": 522,
+      "width": 603,
       "x": 0,
       "y": 0
     },
     "full_screened": false,
     "geometry": {
       "height": 380,
-      "width": 522,
+      "width": 603,
       "x": 0,
       "y": 0
     },
     "maximized": true,
     "normal_geometry": {
       "height": 380,
-      "width": 522,
+      "width": 603,
       "x": 0,
       "y": 0
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAAAAAAAAAAAAgkAAAF7AAAAAAAAAAAAAAIJAAABewAAAAACAAAAB4AAAAAAAAAAAAAAAgkAAAF7"
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAAAloAAAF7AAAAAAAAAAAAAAJaAAABewAAAAACAAAAB4AAAAAAAAAAAAAAAloAAAF7"
     },
     "screen": {
       "depth": 32,
@@ -462,26 +462,26 @@
     "frame_geometry": {
       "height": 996,
       "width": 1890,
-      "x": 10,
+      "x": 0,
       "y": 0
     },
     "full_screened": false,
     "geometry": {
       "height": 996,
       "width": 1890,
-      "x": 10,
+      "x": 0,
       "y": 0
     },
     "maximized": true,
     "normal_geometry": {
-      "height": 1030,
-      "width": 1850,
-      "x": 10,
+      "height": 996,
+      "width": 1890,
+      "x": 0,
       "y": 0
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAAKAAAAAAAAB2sAAAPjAAAACgAAAAAAAAdDAAAEBQAAAAACAAAAB4AAAAAKAAAAAAAAB2sAAAPj"
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAAB2EAAAPjAAAAAAAAAAAAAAdhAAAD4wAAAAACAAAAB4AAAAAAAAAAAAAAB2EAAAPj"
     },
     "screen": {
       "depth": 32,
@@ -670,7 +670,7 @@
     "__value__": "AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfQAAAAFAQEBAAAAAAAAAAAAAAAAAGT/////AAAAhAAAAAAAAAAFAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAD6AAAAAAAAAAAAA=="
   },
   "library_usage_stats": {
-    "/home/scelester/Calibre Library": 51
+    "/home/scelester/Calibre Library": 67
   },
   "light_palette_name": "",
   "light_palettes": {

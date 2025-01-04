@@ -162,7 +162,7 @@ const options = mkOptions(OPTIONS, {
                     "org.libreoffice.LibreOffice",
                     "code",
                     "spotify",
-                    "vesktop",
+                    "discord-canary",
                     "rustrover",
                     "rquickshare"
                 ],

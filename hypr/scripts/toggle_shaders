@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Define states array
-states=("off" "invert-colors" "true_vibrance" "grayscale" "sepia")
+# states=("off" "invert-colors" "true_vibrance" "grayscale" "sepia")
+states=("off" "true_vibrance" "eyecare")
 
 # File to store the current state index (temporary, lost after reboot)
 state_index_file="/tmp/current_state_index"
@@ -32,21 +33,26 @@ case "$next_state" in
         ;;
     "invert-colors")
         hyprshade on invert-colors
-        hyprctl notify $icon $time_ms $color "Shade is now INVERT COLORS"
+        hyprctl notify $icon $time_ms $color "INVERT COLORS"
         ;;
+    "eyecare")
+        hyprshade on blue-light-filter
+        hyprctl notify $icon $time_ms $color "Nightlightmode"    
+    ;;
+
     "true_vibrance")
         hyprshade on true_vibrance
-        hyprctl notify $icon $time_ms $color "Shade is now TRUE VIBRANCE"
+        hyprctl notify $icon $time_ms $color "TRUE VIBRANCE"
         ;;
     "grayscale")
         hyprshade on grayscale
         # Apply grayscale shader
-        hyprctl notify $icon $time_ms $color "Shade is now GRAYSCALE"
+        hyprctl notify $icon $time_ms $color "GRAYSCALE"
         ;;
     "sepia")
         # Apply sepia shader
         hyprshade on sepia
-        hyprctl notify $icon $time_ms $color "Shade is now SEPIA"
+        hyprctl notify $icon $time_ms $color "SEPIA"
         ;;
 esac
 

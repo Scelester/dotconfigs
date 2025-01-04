@@ -1,3 +1,5 @@
+MenuBar=Disabled
+
 [Desktop Entry]
 FullScreen=true
 shouldShowMenuBarComingFromFullScreen=true
@@ -12,26 +14,26 @@ MenuBar=Disabled
 ToolBarsMovable=Disabled
 
 [Recent Files]
-File1[$e]=$HOME/Desktop/Nepal_ Municipal Division (Districts and Local Units) - Population Statistics, Charts and Map.pdf
-File10[$e]=$HOME/ProjectD/clickcon_api/README.md
-File2[$e]=$HOME/Downloads/WP_2018-6_Taplejung.pdf
+File1[$e]=$HOME/ProjectD/clickcon_api/README.md
+File10[$e]=$HOME/Downloads/nabin_poster.pdf
+File2[$e]=$HOME/Downloads/Design a Data Centre solution to meet business client requirements (1).pdf
 File3[$e]=$HOME/Downloads/user manual.pdf
-File4[$e]=$HOME/Downloads/nlcms_2016(LAND COVER)/metadata/metadata_1972747.pdf
-File5[$e]=$HOME/Downloads/applsci-14-01578.pdf
-File6[$e]=$HOME/Downloads/nlcms_2016(LAND COVER)/Data Description.pdf
-File7[$e]=$HOME/ProjectD/Thesised_Graphs/Data and docs/2/Ghunsa Catchment.pdf
-File8[$e]=$HOME/ProjectD/Thesised_Graphs/Data and docs/1/How To By anujdai.pdf
-File9[$e]=$HOME/.cache/tldr/pages/windows/wsl-open.md
-Name1[$e]=Nepal_ Municipal Division (Districts and Local Units) - Population Statistics, Charts and Map.pdf
-Name10[$e]=README.md
-Name2[$e]=WP_2018-6_Taplejung.pdf
+File4[$e]=$HOME/Downloads/CMP6174 CWRK Assessment Brief 2023.pdf
+File5[$e]=$HOME/Documents/Nabin Paudel Milestone 1 Project Charter.pdf
+File6[$e]=$HOME/Documents/Business Case Study ECAM 2024.pdf
+File7[$e]=$HOME/ProjectD/EbookHub/Web/README.md
+File8[$e]=$HOME/Downloads/Nabin Paudel FYP Dissertation.pdf
+File9[$e]=$HOME/Downloads/mml-book.pdf
+Name1[$e]=README.md
+Name10[$e]=nabin_poster.pdf
+Name2[$e]=Design a Data Centre solution to meet business client requirements (1).pdf
 Name3[$e]=user manual.pdf
-Name4[$e]=metadata_1972747.pdf
-Name5[$e]=applsci-14-01578.pdf
-Name6[$e]=Data Description.pdf
-Name7[$e]=Ghunsa Catchment.pdf
-Name8[$e]=How To By anujdai.pdf
-Name9[$e]=wsl-open.md
+Name4[$e]=CMP6174 CWRK Assessment Brief 2023.pdf
+Name5[$e]=Nabin Paudel Milestone 1 Project Charter.pdf
+Name6[$e]=Business Case Study ECAM 2024.pdf
+Name7[$e]=README.md
+Name8[$e]=Nabin Paudel FYP Dissertation.pdf
+Name9[$e]=mml-book.pdf
 
 [UiSettings]
 ColorScheme=KvAdaptaDark

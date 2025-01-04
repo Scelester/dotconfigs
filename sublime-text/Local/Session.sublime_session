@@ -1,6 +1,21 @@
 {
 	"file_history":
 	[
+		"/home/scelester/.config/hypr/settings/autostart.conf",
+		"/home/scelester/.config/hypr/settings/env.conf",
+		"/home/scelester/.config/hypr/hyprland.conf",
+		"/home/scelester/.config/code-flags.conf",
+		"/home/scelester/.config/electron31-flags.conf",
+		"/home/scelester/.config/electron23-flags.conf",
+		"/home/scelester/.config/electron-flags.conf",
+		"/home/scelester/Container/Steamed/libraryfolder.vdf",
+		"/home/scelester/ProjectD/AI/Machining/test/main.py",
+		"/home/scelester/ProjectD/EbookHub/Web/README.md",
+		"/home/scelester/ProjectD/EbookHub/Web/Frontend/ebookhub/src/services/apiService.ts",
+		"/home/scelester/Desktop/console-export-2024-12-17_20-17-38.txt",
+		"/home/scelester/MyScripts/battery_saver_mode.sh",
+		"/home/scelester/MyScripts/nightlight",
+		"/home/scelester/Downloads/LINK TO MILESTONE -2 VIDEO.txt",
 		"/home/scelester/.config/libinput-gestures.conf",
 		"/home/scelester/ProjectD/Learn Rust/Cargo.toml",
 		"/home/scelester/ProjectD/Learn Rust/Cargo.lock",
@@ -15,14 +30,8 @@
 		"/home/scelester/Downloads/cart.txt",
 		"/home/scelester/Test.html",
 		"/home/scelester/ProjectD/NPT/README.md",
-		"/home/scelester/.config/code-flags.conf",
-		"/home/scelester/.config/electron23-flags.conf",
-		"/home/scelester/.config/electron-flags.conf",
-		"/home/scelester/.config/hypr/hyprland.conf",
 		"/home/scelester/Downloads/NVIDIA-Linux-x86_64-470.42.01.run",
 		"/home/scelester/.mozilla/firefox/dptbbxjy.Main-1716277206183/user.js",
-		"/home/scelester/MyScripts/battery_saver_mode.sh",
-		"/home/scelester/MyScripts/nightlight",
 		"/home/scelester/Documents/user.js",
 		"/home/scelester/explicit_filter.restore",
 		"/tmp/xa-L1J3U2/README.md",
@@ -32,7 +41,6 @@
 		"/home/scelester/.config/hypr/settings/asus_specific_bindings.conf",
 		"/tmp/xa-OXNMU2/Readme.txt",
 		"/home/scelester/ProjectD/Thesised_Graphs/Data and docs/2/url",
-		"/home/scelester/.config/hypr/settings/env.conf",
 		"/usr/share/applications/mimeinfo.cache",
 		"/usr/share/applications/code.desktop",
 		"/home/scelester/.config/hypr/shaders/true_vibrance.glsl",
@@ -51,7 +59,6 @@
 		"/home/scelester/.config/hypr/shaders/grayscale.glsl",
 		"/home/scelester/.config/hypr/shaders/invert-colors.glsl",
 		"/home/scelester/.config/hypr/shaders/true_vibrance.gls",
-		"/home/scelester/.config/hypr/settings/autostart.conf",
 		"/home/scelester/MyScripts/.config",
 		"/etc/sioyek/prefs.config",
 		"/home/scelester/.config/sioyek/prefs_user.config",
@@ -121,19 +128,12 @@
 		"/usr/share/sddm/themes/Utterly-Nord/theme.conf",
 		"/usr/share/sddm/themes/Utterly-Nord/Main.qml",
 		"/usr/share/sddm/themes/Utterly-Nord/LICENSE.md",
-		"/home/scelester/Downloads/KMS_VL_ALL_AIO.cmd",
-		"/home/scelester/Downloads/f.txt",
-		"/home/scelester/Obsidian/.obsidian/snippets/snipplet.css",
-		"/home/scelester/Obsidian/.obsidian/themes/Obsidianite/theme.css",
-		"/home/scelester/Obsidian/Weboro/zoho & api/flow diagram.md",
-		"/home/scelester/.games/.gmy/Gym.sh",
-		"/home/scelester/.config/hypr/hypridle.conf",
-		"/home/scelester/.config/hypr/hyprlock.conf"
+		"/home/scelester/Downloads/KMS_VL_ALL_AIO.cmd"
 	],
 	"folder_history":
 	[
-		"/home/scelester/.config",
 		"/home/scelester/.config/hypr",
+		"/home/scelester/.config",
 		"/home/scelester/ProjectD/aws_python_weboro_widget",
 		"/home/scelester/Desktop/crackgen",
 		"/home/scelester/Desktop/Kernal_patching",
@@ -146,14 +146,14 @@
 		"/home/scelester/.config/eww",
 		"/home/scelester/Desktop"
 	],
-	"last_version": 4180,
+	"last_version": 4189,
 	"last_window_id": 18,
 	"log_indexing": false,
-	"next_update_check": 1733731819,
+	"next_update_check": 1736073182,
 	"settings":
 	{
 		"new_window_full_screen": false,
-		"new_window_height": 1052.0,
+		"new_window_height": 525.0,
 		"new_window_maximized": true,
 		"new_window_position":
 		[
@@ -331,6 +331,21 @@
 			},
 			"file_history":
 			[
+				"/home/scelester/.config/hypr/settings/autostart.conf",
+				"/home/scelester/.config/hypr/settings/env.conf",
+				"/home/scelester/.config/hypr/hyprland.conf",
+				"/home/scelester/.config/code-flags.conf",
+				"/home/scelester/.config/electron31-flags.conf",
+				"/home/scelester/.config/electron23-flags.conf",
+				"/home/scelester/.config/electron-flags.conf",
+				"/home/scelester/Container/Steamed/libraryfolder.vdf",
+				"/home/scelester/ProjectD/AI/Machining/test/main.py",
+				"/home/scelester/ProjectD/EbookHub/Web/README.md",
+				"/home/scelester/ProjectD/EbookHub/Web/Frontend/ebookhub/src/services/apiService.ts",
+				"/home/scelester/Desktop/console-export-2024-12-17_20-17-38.txt",
+				"/home/scelester/MyScripts/battery_saver_mode.sh",
+				"/home/scelester/MyScripts/nightlight",
+				"/home/scelester/Downloads/LINK TO MILESTONE -2 VIDEO.txt",
 				"/home/scelester/.config/libinput-gestures.conf",
 				"/home/scelester/ProjectD/Learn Rust/Cargo.toml",
 				"/home/scelester/ProjectD/Learn Rust/Cargo.lock",
@@ -345,14 +360,8 @@
 				"/home/scelester/Downloads/cart.txt",
 				"/home/scelester/Test.html",
 				"/home/scelester/ProjectD/NPT/README.md",
-				"/home/scelester/.config/code-flags.conf",
-				"/home/scelester/.config/electron23-flags.conf",
-				"/home/scelester/.config/electron-flags.conf",
-				"/home/scelester/.config/hypr/hyprland.conf",
 				"/home/scelester/Downloads/NVIDIA-Linux-x86_64-470.42.01.run",
 				"/home/scelester/.mozilla/firefox/dptbbxjy.Main-1716277206183/user.js",
-				"/home/scelester/MyScripts/battery_saver_mode.sh",
-				"/home/scelester/MyScripts/nightlight",
 				"/home/scelester/Documents/user.js",
 				"/home/scelester/explicit_filter.restore",
 				"/tmp/xa-L1J3U2/README.md",
@@ -362,7 +371,6 @@
 				"/home/scelester/.config/hypr/settings/asus_specific_bindings.conf",
 				"/tmp/xa-OXNMU2/Readme.txt",
 				"/home/scelester/ProjectD/Thesised_Graphs/Data and docs/2/url",
-				"/home/scelester/.config/hypr/settings/env.conf",
 				"/usr/share/applications/mimeinfo.cache",
 				"/usr/share/applications/code.desktop",
 				"/home/scelester/.config/hypr/shaders/true_vibrance.glsl",
@@ -379,7 +387,6 @@
 				"/home/scelester/.config/hypr/shaders/grayscale.glsl",
 				"/home/scelester/.config/hypr/shaders/invert-colors.glsl",
 				"/home/scelester/.config/hypr/shaders/true_vibrance.gls",
-				"/home/scelester/.config/hypr/settings/autostart.conf",
 				"/home/scelester/MyScripts/.config",
 				"/etc/sioyek/prefs.config",
 				"/home/scelester/.config/sioyek/prefs_user.config",
@@ -451,22 +458,15 @@
 				"/usr/share/sddm/themes/Utterly-Nord/LICENSE.md",
 				"/home/scelester/Downloads/KMS_VL_ALL_AIO.cmd",
 				"/home/scelester/Downloads/f.txt",
-				"/home/scelester/Obsidian/.obsidian/snippets/snipplet.css",
-				"/home/scelester/Obsidian/.obsidian/themes/Obsidianite/theme.css",
-				"/home/scelester/Obsidian/Weboro/zoho & api/flow diagram.md",
-				"/home/scelester/.games/.gmy/Gym.sh",
-				"/home/scelester/.config/hypr/hypridle.conf",
-				"/home/scelester/.config/hypr/hyprlock.conf",
-				"/home/scelester/.config/hypr/scripts/isDontSleepOnAudio",
-				"/home/scelester/.config/hypr/scripts/apped_bg.sh"
+				"/home/scelester/Obsidian/.obsidian/snippets/snipplet.css"
 			],
 			"find":
 			{
-				"height": 34.0
+				"height": 63.0
 			},
 			"find_in_files":
 			{
-				"height": 148.0,
+				"height": 157.0,
 				"where_history":
 				[
 					""
@@ -477,6 +477,11 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"gsett",
+					"wayland",
+					"ozone",
+					"j'",
+					"j ",
 					"reso",
 					"res",
 					"Transformer",
@@ -513,7 +518,7 @@
 			},
 			"incremental_find":
 			{
-				"height": 34.0
+				"height": 35.0
 			},
 			"input":
 			{
@@ -531,7 +536,7 @@
 			"pinned_build_system": "",
 			"replace":
 			{
-				"height": 64.0
+				"height": 66.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -541,12 +546,12 @@
 				"selected_items":
 				[
 					[
-						"keybind",
-						"hypr/settings/keybindings.conf"
-					],
-					[
 						"env",
 						"settings/env.conf"
+					],
+					[
+						"keybind",
+						"hypr/settings/keybindings.conf"
 					],
 					[
 						"spot",
@@ -596,7 +601,7 @@
 			"show_minimap": true,
 			"show_open_files": true,
 			"show_tabs": true,
-			"side_bar_visible": false,
+			"side_bar_visible": true,
 			"side_bar_width": 263.0,
 			"status_bar_visible": true,
 			"template_settings":
@@ -778,6 +783,21 @@
 			},
 			"file_history":
 			[
+				"/home/scelester/.config/hypr/settings/autostart.conf",
+				"/home/scelester/.config/hypr/settings/env.conf",
+				"/home/scelester/.config/hypr/hyprland.conf",
+				"/home/scelester/.config/code-flags.conf",
+				"/home/scelester/.config/electron31-flags.conf",
+				"/home/scelester/.config/electron23-flags.conf",
+				"/home/scelester/.config/electron-flags.conf",
+				"/home/scelester/Container/Steamed/libraryfolder.vdf",
+				"/home/scelester/ProjectD/AI/Machining/test/main.py",
+				"/home/scelester/ProjectD/EbookHub/Web/README.md",
+				"/home/scelester/ProjectD/EbookHub/Web/Frontend/ebookhub/src/services/apiService.ts",
+				"/home/scelester/Desktop/console-export-2024-12-17_20-17-38.txt",
+				"/home/scelester/MyScripts/battery_saver_mode.sh",
+				"/home/scelester/MyScripts/nightlight",
+				"/home/scelester/Downloads/LINK TO MILESTONE -2 VIDEO.txt",
 				"/home/scelester/.config/libinput-gestures.conf",
 				"/home/scelester/ProjectD/Learn Rust/Cargo.toml",
 				"/home/scelester/ProjectD/Learn Rust/Cargo.lock",
@@ -792,14 +812,8 @@
 				"/home/scelester/Downloads/cart.txt",
 				"/home/scelester/Test.html",
 				"/home/scelester/ProjectD/NPT/README.md",
-				"/home/scelester/.config/code-flags.conf",
-				"/home/scelester/.config/electron23-flags.conf",
-				"/home/scelester/.config/electron-flags.conf",
-				"/home/scelester/.config/hypr/hyprland.conf",
 				"/home/scelester/Downloads/NVIDIA-Linux-x86_64-470.42.01.run",
 				"/home/scelester/.mozilla/firefox/dptbbxjy.Main-1716277206183/user.js",
-				"/home/scelester/MyScripts/battery_saver_mode.sh",
-				"/home/scelester/MyScripts/nightlight",
 				"/home/scelester/Documents/user.js",
 				"/home/scelester/explicit_filter.restore",
 				"/tmp/xa-L1J3U2/README.md",
@@ -809,7 +823,6 @@
 				"/home/scelester/.config/hypr/settings/asus_specific_bindings.conf",
 				"/tmp/xa-OXNMU2/Readme.txt",
 				"/home/scelester/ProjectD/Thesised_Graphs/Data and docs/2/url",
-				"/home/scelester/.config/hypr/settings/env.conf",
 				"/usr/share/applications/mimeinfo.cache",
 				"/usr/share/applications/code.desktop",
 				"/home/scelester/.config/hypr/shaders/true_vibrance.glsl",
@@ -826,7 +839,6 @@
 				"/home/scelester/.config/hypr/shaders/grayscale.glsl",
 				"/home/scelester/.config/hypr/shaders/invert-colors.glsl",
 				"/home/scelester/.config/hypr/shaders/true_vibrance.gls",
-				"/home/scelester/.config/hypr/settings/autostart.conf",
 				"/home/scelester/MyScripts/.config",
 				"/etc/sioyek/prefs.config",
 				"/home/scelester/.config/sioyek/prefs_user.config",
@@ -898,22 +910,15 @@
 				"/usr/share/sddm/themes/Utterly-Nord/LICENSE.md",
 				"/home/scelester/Downloads/KMS_VL_ALL_AIO.cmd",
 				"/home/scelester/Downloads/f.txt",
-				"/home/scelester/Obsidian/.obsidian/snippets/snipplet.css",
-				"/home/scelester/Obsidian/.obsidian/themes/Obsidianite/theme.css",
-				"/home/scelester/Obsidian/Weboro/zoho & api/flow diagram.md",
-				"/home/scelester/.games/.gmy/Gym.sh",
-				"/home/scelester/.config/hypr/hypridle.conf",
-				"/home/scelester/.config/hypr/hyprlock.conf",
-				"/home/scelester/.config/hypr/scripts/isDontSleepOnAudio",
-				"/home/scelester/.config/hypr/scripts/apped_bg.sh"
+				"/home/scelester/Obsidian/.obsidian/snippets/snipplet.css"
 			],
 			"find":
 			{
-				"height": 34.0
+				"height": 63.0
 			},
 			"find_in_files":
 			{
-				"height": 148.0,
+				"height": 157.0,
 				"where_history":
 				[
 					""
@@ -924,6 +929,11 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"gsett",
+					"wayland",
+					"ozone",
+					"j'",
+					"j ",
 					"reso",
 					"res",
 					"Transformer",
@@ -960,7 +970,7 @@
 			},
 			"incremental_find":
 			{
-				"height": 34.0
+				"height": 35.0
 			},
 			"input":
 			{
@@ -976,10 +986,10 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,1,0,0,0,0,0,937,1022,1920,1080,0",
+			"position": "0,1,0,0,0,0,0,1920,1050,1920,1080,0",
 			"replace":
 			{
-				"height": 64.0
+				"height": 66.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -989,12 +999,12 @@
 				"selected_items":
 				[
 					[
-						"keybind",
-						"hypr/settings/keybindings.conf"
-					],
-					[
 						"env",
 						"settings/env.conf"
+					],
+					[
+						"keybind",
+						"hypr/settings/keybindings.conf"
 					],
 					[
 						"spot",
@@ -1047,7 +1057,7 @@
 			"show_minimap": true,
 			"show_open_files": true,
 			"show_tabs": true,
-			"side_bar_visible": false,
+			"side_bar_visible": true,
 			"side_bar_width": 263.0,
 			"status_bar_visible": true,
 			"template_settings":

@@ -1,0 +1,24 @@
+1/4/2025, 9:15:21 PM GMT+5:45 0: 
+
+----------------------------------------------
+1/4/2025, 9:15:21 PM GMT+5:45 1: Discord starting: {"releaseChannel":"canary","version":"0.0.555"}, modulepath: /home/scelester/.config/discordcanary/0.0.555/modules
+1/4/2025, 9:15:21 PM GMT+5:45 2: ✅ webContents.created web1 ""
+1/4/2025, 9:15:21 PM GMT+5:45 3: ✅ window.created win1 "discord"
+1/4/2025, 9:15:21 PM GMT+5:45 4: ✅ webContents.did-finish-load web1
+1/4/2025, 9:15:38 PM GMT+5:45 5: ✅ webContents.created web2 ""
+1/4/2025, 9:15:38 PM GMT+5:45 6: ✅ window.created win2 "Discord"
+1/4/2025, 9:15:41 PM GMT+5:45 7: ✅ webContents.did-finish-load web2
+1/4/2025, 9:15:41 PM GMT+5:45 8: window.close win1
+1/4/2025, 9:15:41 PM GMT+5:45 9: webContents.destroyed web1
+1/4/2025, 9:15:41 PM GMT+5:45 10: window.closed win1
+1/4/2025, 9:16:46 PM GMT+5:45 11: window.close win2
+1/4/2025, 9:16:49 PM GMT+5:45 0: 
+
+----------------------------------------------
+1/4/2025, 9:16:49 PM GMT+5:45 1: Discord starting: {"releaseChannel":"canary","version":"0.0.555"}, modulepath: /home/scelester/.config/discordcanary/0.0.555/modules
+1/4/2025, 9:18:00 PM GMT+5:45 12: window.close win2
+1/4/2025, 9:18:02 PM GMT+5:45 0: 
+
+----------------------------------------------
+1/4/2025, 9:18:02 PM GMT+5:45 1: Discord starting: {"releaseChannel":"canary","version":"0.0.555"}, modulepath: /home/scelester/.config/discordcanary/0.0.555/modules
+1/4/2025, 9:18:51 PM GMT+5:45 13: window.close win2

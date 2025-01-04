@@ -1,14 +1,12 @@
-# git .config ignore list
-
 .git/
 .gitigrnore/
 chromium/
-discordcanary/
 yay/
 bleachbit/
 BraveSoftware/
 Gmail Desktop/
 discord/
+discordcanary/
 Postman/
 spotify/
 vesktop/
@@ -47,4 +45,5 @@ QtProject.conf
 mimeapps.list
 kdenliverc
 kdenlive-layoutsrc
-picom-jonaburg.conf
+picom-j
+

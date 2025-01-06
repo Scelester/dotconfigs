@@ -9,10 +9,25 @@ const AsusProfileToggle = () => ArrowToggleButton({
     icon: asusprof.as(p => icons.asusctl.profile[p]),
     label: asusprof,
     connection: [asusctl, () => asusctl.profile !== "Balanced"],
-    activate: () => asusctl.setProfile("Quiet"),
-    deactivate: () => asusctl.setProfile("Balanced"),
+    activate: () => {
+        if (asusctl.profile === "Balanced") {
+            asusctl.setProfile("Quiet");
+        } else if (asusctl.profile === "Quiet") {
+            asusctl.setProfile("Performance");
+        } else {
+            asusctl.setProfile("Balanced");
+        }
+    },
+    deactivate: () => {
+        if (asusctl.profile === "Quiet") {
+            asusctl.setProfile("Balanced");
+        } else if (asusctl.profile === "Performance") {
+            asusctl.setProfile("Quiet");
+        }
+    },
     activateOnArrow: false,
-})
+});
+
 
 const AsusProfileSelector = () => Menu({
     name: "asusctl-profile",

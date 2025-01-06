@@ -1,6 +1,8 @@
 {
 	"file_history":
 	[
+		"/home/scelester/stacked_output.mp4",
+		"/home/scelester/Desktop/Marvel Rivals.desktop",
 		"/home/scelester/.config/hypr/settings/autostart.conf",
 		"/home/scelester/.config/hypr/settings/env.conf",
 		"/home/scelester/.config/hypr/hyprland.conf",
@@ -126,9 +128,7 @@
 		"/home/scelester/MyScripts/StartupStates/nightlight",
 		"/home/scelester/Desktop/dot/xsettingsd/xsettingsd.conf",
 		"/usr/share/sddm/themes/Utterly-Nord/theme.conf",
-		"/usr/share/sddm/themes/Utterly-Nord/Main.qml",
-		"/usr/share/sddm/themes/Utterly-Nord/LICENSE.md",
-		"/home/scelester/Downloads/KMS_VL_ALL_AIO.cmd"
+		"/usr/share/sddm/themes/Utterly-Nord/Main.qml"
 	],
 	"folder_history":
 	[
@@ -149,11 +149,11 @@
 	"last_version": 4189,
 	"last_window_id": 18,
 	"log_indexing": false,
-	"next_update_check": 1736073182,
+	"next_update_check": 1736239352,
 	"settings":
 	{
 		"new_window_full_screen": false,
-		"new_window_height": 525.0,
+		"new_window_height": 522.0,
 		"new_window_maximized": true,
 		"new_window_position":
 		[
@@ -331,6 +331,8 @@
 			},
 			"file_history":
 			[
+				"/home/scelester/stacked_output.mp4",
+				"/home/scelester/Desktop/Marvel Rivals.desktop",
 				"/home/scelester/.config/hypr/settings/autostart.conf",
 				"/home/scelester/.config/hypr/settings/env.conf",
 				"/home/scelester/.config/hypr/hyprland.conf",
@@ -456,13 +458,11 @@
 				"/usr/share/sddm/themes/Utterly-Nord/theme.conf",
 				"/usr/share/sddm/themes/Utterly-Nord/Main.qml",
 				"/usr/share/sddm/themes/Utterly-Nord/LICENSE.md",
-				"/home/scelester/Downloads/KMS_VL_ALL_AIO.cmd",
-				"/home/scelester/Downloads/f.txt",
-				"/home/scelester/Obsidian/.obsidian/snippets/snipplet.css"
+				"/home/scelester/Downloads/KMS_VL_ALL_AIO.cmd"
 			],
 			"find":
 			{
-				"height": 63.0
+				"height": 35.0
 			},
 			"find_in_files":
 			{
@@ -783,6 +783,8 @@
 			},
 			"file_history":
 			[
+				"/home/scelester/stacked_output.mp4",
+				"/home/scelester/Desktop/Marvel Rivals.desktop",
 				"/home/scelester/.config/hypr/settings/autostart.conf",
 				"/home/scelester/.config/hypr/settings/env.conf",
 				"/home/scelester/.config/hypr/hyprland.conf",
@@ -908,13 +910,11 @@
 				"/usr/share/sddm/themes/Utterly-Nord/theme.conf",
 				"/usr/share/sddm/themes/Utterly-Nord/Main.qml",
 				"/usr/share/sddm/themes/Utterly-Nord/LICENSE.md",
-				"/home/scelester/Downloads/KMS_VL_ALL_AIO.cmd",
-				"/home/scelester/Downloads/f.txt",
-				"/home/scelester/Obsidian/.obsidian/snippets/snipplet.css"
+				"/home/scelester/Downloads/KMS_VL_ALL_AIO.cmd"
 			],
 			"find":
 			{
-				"height": 63.0
+				"height": 35.0
 			},
 			"find_in_files":
 			{
@@ -986,7 +986,7 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,1,0,0,0,0,0,1920,1050,1920,1080,0",
+			"position": "0,1,0,0,0,0,0,937,500,1920,1080,0",
 			"replace":
 			{
 				"height": 66.0

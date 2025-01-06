@@ -159,10 +159,10 @@ const options = mkOptions(OPTIONS, {
             max: opt(6),
             favorites: opt([
                 [
-                    "org.libreoffice.LibreOffice",
+                    "steam",
                     "code",
                     "spotify",
-                    "discord-canary",
+                    "vesktop",
                     "rustrover",
                     "rquickshare"
                 ],

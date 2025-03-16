@@ -7,9 +7,9 @@
 		"ColorHelper",
 		"Vintage",
 	],
-	"theme": "OneDarkMaterial.sublime-theme",
+	"theme": "Arc Dark.sublime-theme",
 	"index_files": true,
 	"color_scheme": "Packages/Theme - Dark Material/schemes/Dark-Material.tmTheme",
-	"font_size": 13,
+	"font_size": 11,
 	"default_line_ending": "unix",
 }

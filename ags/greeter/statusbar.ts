@@ -3,7 +3,6 @@ import options from "options"
 import icons from "lib/icons"
 import BatteryBar from "widget/bar/buttons/BatteryBar"
 import PanelButton from "widget/bar/PanelButton"
-import { sh } from "../lib/utils"
 
 
 const { scheme, eyecare } = options.theme
@@ -39,8 +38,7 @@ const eyecaremode = PanelButton({
         icon: eyecare.bind().as(s => icons.custom[s]) 
     }),
     on_clicked: () => {
-        eyecare.value = eyecare.value === "eyecare" ? "normal" : "eyecare";
-        sh("notify-send gg");
+        eyecare.value = eyecare.value === "eyecare" ? "eyecare" : "normal";
     },
 });
 

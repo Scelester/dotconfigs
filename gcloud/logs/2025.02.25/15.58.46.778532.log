@@ -1,0 +1,77 @@
+2025-02-25 15:58:46,816 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2025-02-25 15:58:46,835 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'describe']
+2025-02-25 15:58:46,837 DEBUG    root            Running [gcloud.projects.describe] with arguments: [PROJECT_ID_OR_NUMBER: "hire-enumerator-697cd"]
+2025-02-25 15:58:46,901 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2025-02-25 15:58:47,354 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/hire-enumerator-697cd?alt=json HTTP/11" 200 None
+2025-02-25 15:58:47,355 DEBUG    root            Chosen display Format:default
+2025-02-25 15:58:47,356 INFO     root            Display format: "default"
+2025-02-25 15:58:47,384 INFO     ___FILE_ONLY___ createTime
+2025-02-25 15:58:47,384 INFO     ___FILE_ONLY___ :
+2025-02-25 15:58:47,384 INFO     ___FILE_ONLY___  '
+2025-02-25 15:58:47,384 INFO     ___FILE_ONLY___ 2025-02-02T01:25:29.179824Z
+2025-02-25 15:58:47,384 INFO     ___FILE_ONLY___ '
+2025-02-25 15:58:47,384 INFO     ___FILE_ONLY___ 
+
+2025-02-25 15:58:47,384 INFO     ___FILE_ONLY___ labels
+2025-02-25 15:58:47,384 INFO     ___FILE_ONLY___ :
+2025-02-25 15:58:47,384 INFO     ___FILE_ONLY___ 
+
+2025-02-25 15:58:47,384 INFO     ___FILE_ONLY___   
+2025-02-25 15:58:47,385 INFO     ___FILE_ONLY___ firebase
+2025-02-25 15:58:47,385 INFO     ___FILE_ONLY___ :
+2025-02-25 15:58:47,385 INFO     ___FILE_ONLY___  
+2025-02-25 15:58:47,385 INFO     ___FILE_ONLY___ enabled
+2025-02-25 15:58:47,385 INFO     ___FILE_ONLY___ 
+
+2025-02-25 15:58:47,385 INFO     ___FILE_ONLY___   
+2025-02-25 15:58:47,385 INFO     ___FILE_ONLY___ firebase-core
+2025-02-25 15:58:47,385 INFO     ___FILE_ONLY___ :
+2025-02-25 15:58:47,385 INFO     ___FILE_ONLY___  
+2025-02-25 15:58:47,385 INFO     ___FILE_ONLY___ disabled
+2025-02-25 15:58:47,385 INFO     ___FILE_ONLY___ 
+
+2025-02-25 15:58:47,385 INFO     ___FILE_ONLY___ lifecycleState
+2025-02-25 15:58:47,385 INFO     ___FILE_ONLY___ :
+2025-02-25 15:58:47,385 INFO     ___FILE_ONLY___  
+2025-02-25 15:58:47,385 INFO     ___FILE_ONLY___ ACTIVE
+2025-02-25 15:58:47,386 INFO     ___FILE_ONLY___ 
+
+2025-02-25 15:58:47,386 INFO     ___FILE_ONLY___ name
+2025-02-25 15:58:47,386 INFO     ___FILE_ONLY___ :
+2025-02-25 15:58:47,386 INFO     ___FILE_ONLY___  
+2025-02-25 15:58:47,386 INFO     ___FILE_ONLY___ hire-enumerator
+2025-02-25 15:58:47,386 INFO     ___FILE_ONLY___ 
+
+2025-02-25 15:58:47,386 INFO     ___FILE_ONLY___ parent
+2025-02-25 15:58:47,386 INFO     ___FILE_ONLY___ :
+2025-02-25 15:58:47,386 INFO     ___FILE_ONLY___ 
+
+2025-02-25 15:58:47,386 INFO     ___FILE_ONLY___   
+2025-02-25 15:58:47,386 INFO     ___FILE_ONLY___ id
+2025-02-25 15:58:47,387 INFO     ___FILE_ONLY___ :
+2025-02-25 15:58:47,387 INFO     ___FILE_ONLY___  '
+2025-02-25 15:58:47,387 INFO     ___FILE_ONLY___ 1057870361500
+2025-02-25 15:58:47,387 INFO     ___FILE_ONLY___ '
+2025-02-25 15:58:47,387 INFO     ___FILE_ONLY___ 
+
+2025-02-25 15:58:47,387 INFO     ___FILE_ONLY___   
+2025-02-25 15:58:47,387 INFO     ___FILE_ONLY___ type
+2025-02-25 15:58:47,387 INFO     ___FILE_ONLY___ :
+2025-02-25 15:58:47,387 INFO     ___FILE_ONLY___  
+2025-02-25 15:58:47,387 INFO     ___FILE_ONLY___ organization
+2025-02-25 15:58:47,387 INFO     ___FILE_ONLY___ 
+
+2025-02-25 15:58:47,387 INFO     ___FILE_ONLY___ projectId
+2025-02-25 15:58:47,387 INFO     ___FILE_ONLY___ :
+2025-02-25 15:58:47,387 INFO     ___FILE_ONLY___  
+2025-02-25 15:58:47,387 INFO     ___FILE_ONLY___ hire-enumerator-697cd
+2025-02-25 15:58:47,387 INFO     ___FILE_ONLY___ 
+
+2025-02-25 15:58:47,388 INFO     ___FILE_ONLY___ projectNumber
+2025-02-25 15:58:47,388 INFO     ___FILE_ONLY___ :
+2025-02-25 15:58:47,388 INFO     ___FILE_ONLY___  '
+2025-02-25 15:58:47,388 INFO     ___FILE_ONLY___ 459384010887
+2025-02-25 15:58:47,388 INFO     ___FILE_ONLY___ '
+2025-02-25 15:58:47,388 INFO     ___FILE_ONLY___ 
+
+2025-02-25 15:58:47,388 DEBUG    root            SDK update checks are disabled.

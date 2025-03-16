@@ -1,0 +1,87 @@
+{
+	"general-logs": {
+		"currentLogFile": "/home/scelester/.config/heroic/logs/2025-03-14T08_22_57-heroic.log",
+		"lastLogFile": "/home/scelester/.config/heroic/logs/2025-03-14T08_21_40-heroic.log",
+		"legendaryLogFile": "/home/scelester/.config/heroic/logs/2025-03-14T08_22_57-legendary.log",
+		"gogdlLogFile": "/home/scelester/.config/heroic/logs/2025-03-14T08_22_57-gogdl.log",
+		"nileLogFile": "/home/scelester/.config/heroic/logs/2025-03-14T08_22_57-nile.log"
+	},
+	"userHome": "/home/scelester",
+	"language": "en",
+	"theme": "midnightMirage",
+	"userInfo": {
+		"account_id": "a975d9d034a542a8939e064258bff2f6",
+		"displayName": "Scelester",
+		"user": "scelester"
+	},
+	"settings": {
+		"checkUpdatesInterval": 10,
+		"enableUpdates": false,
+		"addDesktopShortcuts": false,
+		"addStartMenuShortcuts": false,
+		"autoInstallDxvk": true,
+		"autoInstallVkd3d": true,
+		"autoInstallDxvkNvapi": false,
+		"addSteamShortcuts": false,
+		"preferSystemLibs": false,
+		"checkForUpdatesOnStartup": true,
+		"autoUpdateGames": false,
+		"customWinePaths": [],
+		"defaultInstallPath": "/home/scelester/Games/Heroic",
+		"libraryTopSection": "disabled",
+		"defaultSteamPath": "/home/scelester/.steam/steam",
+		"defaultWinePrefix": "/home/scelester/Games/Heroic/Prefixes/default",
+		"hideChangelogsOnStartup": false,
+		"language": "en",
+		"maxWorkers": 0,
+		"minimizeOnLaunch": false,
+		"nvidiaPrime": false,
+		"enviromentOptions": [],
+		"wrapperOptions": [],
+		"showFps": false,
+		"useGameMode": false,
+		"wineCrossoverBottle": "Heroic",
+		"winePrefix": "/home/scelester/Games/Heroic/Prefixes/default",
+		"wineVersion": {
+			"bin": "/home/scelester/.local/share/Steam/compatibilitytools.d/GE-Proton9-25/proton",
+			"name": "Proton - GE-Proton9-25",
+			"type": "proton"
+		},
+		"enableEsync": true,
+		"enableFsync": true,
+		"enableMsync": false,
+		"eacRuntime": true,
+		"battlEyeRuntime": true,
+		"framelessWindow": false,
+		"beforeLaunchScriptPath": "",
+		"afterLaunchScriptPath": "",
+		"experimentalFeatures": {
+			"enableNewDesign": true,
+			"enableHelp": false,
+			"automaticWinetricksFixes": true,
+			"cometSupport": true,
+			"umuSupport": false
+		},
+		"altGogdlBin": "",
+		"altNileBin": ""
+	},
+	"contentFontFamily": "\"Cabin\", sans-serif",
+	"actionsFontFamily": "\"Cabin\", sans-serif",
+	"zoomPercent": 110,
+	"allTilesInColor": false,
+	"games": {
+		"recent": [
+			{
+				"appName": "vmQ65DhX1yysVYukRvvDTk",
+				"title": "UltraKill"
+			}
+		]
+	},
+	"window-props": {
+		"x": 0,
+		"y": 0,
+		"width": 1920,
+		"height": 1045,
+		"maximized": true
+	}
+}

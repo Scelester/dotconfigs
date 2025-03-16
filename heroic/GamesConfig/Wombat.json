@@ -1,0 +1,30 @@
+{
+  "Wombat": {
+    "autoInstallDxvk": true,
+    "autoInstallDxvkNvapi": false,
+    "autoInstallVkd3d": true,
+    "preferSystemLibs": false,
+    "enableEsync": true,
+    "enableMsync": false,
+    "enableFsync": true,
+    "nvidiaPrime": false,
+    "enviromentOptions": [],
+    "wrapperOptions": [],
+    "showFps": false,
+    "useGameMode": false,
+    "battlEyeRuntime": true,
+    "eacRuntime": true,
+    "language": "",
+    "beforeLaunchScriptPath": "",
+    "afterLaunchScriptPath": "",
+    "wineVersion": {
+      "bin": "/home/scelester/.local/share/Steam/compatibilitytools.d/GE-Proton9-25/proton",
+      "name": "Proton - GE-Proton9-25",
+      "type": "proton"
+    },
+    "winePrefix": "/home/scelester/Games/Heroic/Prefixes/default/World War Z",
+    "wineCrossoverBottle": "Heroic"
+  },
+  "version": "v0",
+  "explicit": true
+}

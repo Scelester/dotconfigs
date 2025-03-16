@@ -1,0 +1,124 @@
+{
+  "app_name": "64b0c77d07f644e6a2326a1fd7ab9926",
+  "app_title": "League of Legends",
+  "asset_infos": {
+    "Windows": {
+      "app_name": "64b0c77d07f644e6a2326a1fd7ab9926",
+      "asset_id": "64b0c77d07f644e6a2326a1fd7ab9926",
+      "build_version": "2609-591",
+      "catalog_item_id": "d398f3033c5e4b90b09dcbb4b962be80",
+      "label_name": "Live-Windows",
+      "metadata": {},
+      "namespace": "24b9b5e323bc40eea252a10cdd3b2f10",
+      "sidecar_rev": 0
+    }
+  },
+  "base_urls": [],
+  "metadata": {
+    "ageGatings": {},
+    "applicationId": "",
+    "categories": [
+      {
+        "path": "games"
+      },
+      {
+        "path": "applications"
+      }
+    ],
+    "creationDate": "2021-05-05T02:10:23.229Z",
+    "customAttributes": {
+      "BackgroundProcessNames": {
+        "type": "STRING",
+        "value": "RiotClientUx.exe,RiotClientUxRender.exe,RiotClientServices.exe"
+      },
+      "CanRunOffline": {
+        "type": "STRING",
+        "value": "true"
+      },
+      "CanSkipKoreanIdVerification": {
+        "type": "STRING",
+        "value": "true"
+      },
+      "FolderName": {
+        "type": "STRING",
+        "value": "LeagueofLegends"
+      },
+      "MainWindowProcessName": {
+        "type": "STRING",
+        "value": "LeagueClientUx.exe"
+      },
+      "MonitorPresence": {
+        "type": "STRING",
+        "value": "false"
+      },
+      "PresenceId": {
+        "type": "STRING",
+        "value": "24b9b5e323bc40eea252a10cdd3b2f10"
+      },
+      "ProcessNames": {
+        "type": "STRING",
+        "value": "LeagueClientUx.exe"
+      },
+      "RequirementsJson": {
+        "type": "STRING",
+        "value": "[]"
+      },
+      "UseAccessControl": {
+        "type": "STRING",
+        "value": "false"
+      }
+    },
+    "description": "League of Legends",
+    "developer": "Riot Games, Inc.",
+    "developerId": "o-f78uswldmqghexmu23y5qj6a5xnqrg",
+    "endOfSupport": false,
+    "entitlementName": "d398f3033c5e4b90b09dcbb4b962be80",
+    "entitlementType": "EXECUTABLE",
+    "eulaIds": [
+      "egstore"
+    ],
+    "id": "d398f3033c5e4b90b09dcbb4b962be80",
+    "installModes": [],
+    "itemType": "DURABLE",
+    "keyImages": [
+      {
+        "height": 1440,
+        "md5": "80471666c140f790f28dff68d72c384b",
+        "size": 660905,
+        "type": "DieselGameBox",
+        "uploadedDate": "2024-01-10T20:59:00.152Z",
+        "url": "https://cdn1.epicgames.com/item/24b9b5e323bc40eea252a10cdd3b2f10/EGS_LeagueofLegends_RiotGames_S1_2560x1440-80471666c140f790f28dff68d72c384b",
+        "width": 2560
+      },
+      {
+        "height": 1600,
+        "md5": "905a96cea329205358868f5871393042",
+        "size": 586933,
+        "type": "DieselGameBoxTall",
+        "uploadedDate": "2024-01-10T20:59:03.852Z",
+        "url": "https://cdn1.epicgames.com/item/24b9b5e323bc40eea252a10cdd3b2f10/EGS_LeagueofLegends_RiotGames_S2_1200x1600-905a96cea329205358868f5871393042",
+        "width": 1200
+      }
+    ],
+    "lastModifiedDate": "2024-01-10T21:00:05.285Z",
+    "mainGameItemList": [],
+    "namespace": "24b9b5e323bc40eea252a10cdd3b2f10",
+    "releaseInfo": [
+      {
+        "appId": "64b0c77d07f644e6a2326a1fd7ab9926",
+        "compatibleApps": [],
+        "dateAdded": "2023-03-01T23:46:28.680Z",
+        "id": "28f1209c77d646aab0296d9baaacd99c",
+        "platform": [
+          "Windows",
+          "Mac"
+        ]
+      }
+    ],
+    "requiresSecureAccount": false,
+    "status": "ACTIVE",
+    "title": "League of Legends",
+    "unsearchable": true
+  },
+  "sidecar": null
+}

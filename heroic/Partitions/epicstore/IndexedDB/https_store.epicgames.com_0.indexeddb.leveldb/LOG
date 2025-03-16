@@ -1,0 +1,3 @@
+2025/03/14-14:21:02.497 1a0aa Reusing MANIFEST /home/scelester/.config/heroic/Partitions/epicstore/IndexedDB/https_store.epicgames.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/03/14-14:21:02.497 1a0aa Recovering log #3
+2025/03/14-14:21:02.500 1a0aa Reusing old log /home/scelester/.config/heroic/Partitions/epicstore/IndexedDB/https_store.epicgames.com_0.indexeddb.leveldb/000003.log 

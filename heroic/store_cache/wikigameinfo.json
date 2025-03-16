@@ -1,0 +1,45 @@
+{
+	"UltraKill": {
+		"pcgamingwiki": {
+			"steamID": "1229490",
+			"howLongToBeatID": "75153",
+			"metacritic": {
+				"score": "",
+				"urlid": ""
+			},
+			"opencritic": {
+				"score": "",
+				"urlid": ""
+			},
+			"igdb": {
+				"score": "",
+				"urlid": ""
+			},
+			"direct3DVersions": [
+				""
+			],
+			"genres": [
+				"Action",
+				"FPS",
+				"Shooter"
+			],
+			"releaseDate": [
+				"Windows: EA",
+				"Linux: Cancelled|ref={{note|name=Abandoning_Linux|note=Despite demo version having Linux support, the developer has made the hard decision not to support it in commercial release of the game.<ref name=\"Abandoning_Linux_Ref\">{{Refsnip|url=https://steamcommunity.com/app/1229490/discussions/0/2799503175297630563/#c2799503175298217237|title=Is the game going to support linux on early access release?|date=2020-09-03"
+			]
+		},
+		"applegamingwiki": null,
+		"howlongtobeat": null,
+		"gamesdb": {
+			"steamID": ""
+		},
+		"steamInfo": {
+			"compatibilityLevel": "platinum",
+			"steamDeckCatagory": 3
+		},
+		"umuId": null
+	},
+	"__timestamp": {
+		"UltraKill": "Fri Mar 14 2025 14:08:33 GMT+0545 (Nepal Time)"
+	}
+}

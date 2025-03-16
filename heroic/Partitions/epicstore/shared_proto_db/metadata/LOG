@@ -1,0 +1,3 @@
+2025/03/14-14:16:36.429 1a0aa Reusing MANIFEST /home/scelester/.config/heroic/Partitions/epicstore/shared_proto_db/metadata/MANIFEST-000001
+2025/03/14-14:16:36.429 1a0aa Recovering log #3
+2025/03/14-14:16:36.430 1a0aa Reusing old log /home/scelester/.config/heroic/Partitions/epicstore/shared_proto_db/metadata/000003.log 

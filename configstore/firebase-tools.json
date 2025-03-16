@@ -1,0 +1,40 @@
+{
+	"motd": {
+		"cloudBuildErrorAfter": 1594252800000,
+		"cloudBuildWarnAfter": 1590019200000,
+		"defaultNode10After": 1594252800000,
+		"minVersion": "3.0.5",
+		"node8DeploysDisabledAfter": 1613390400000,
+		"node8RuntimeDisabledAfter": 1615809600000,
+		"node8WarnAfter": 1600128000000,
+		"fetched": 1740991859594
+	},
+	"usage": true,
+	"analytics-uuid": "5e158039-8891-4f25-ba6c-8d17095ba8de",
+	"user": {
+		"iss": "accounts.google.com",
+		"azp": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"aud": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"sub": "108038475607349697391",
+		"hd": "neuralgridlabs.com",
+		"email": "nabin.paudel@neuralgridlabs.com",
+		"email_verified": true,
+		"at_hash": "1cXEkXgbXruDolRQ7Ijs3w",
+		"iat": 1740991894,
+		"exp": 1740995494
+	},
+	"tokens": {
+		"expires_at": 1740995492387,
+		"access_token": "ya29.a0AeXRPp4L-02pueaVZRyEUO2xxWQzGysM3BbBFI6fCYyTFr3WHNdDal7apCCDI968mx-PYdZo-hlneR97nXcy23rynFDYDZJV5ndoyIIUO8gTG9k6GtQppuCs_QmUnFqOqwNJ9fTNIsGl0_N3p520rXUxkadVrxCcWMcrLPrHd7e4IgaCgYKAQcSARASFQHGX2Mi0VVTIXU-XiMleD5CVuUAZA0181",
+		"expires_in": 3599,
+		"refresh_token": "1//0gVEz6b3OFyZOCgYIARAAGBASNwF-L9IrU8mR05aIlB5fZRhGD83wzn-ZfGAJZcrSEdTpCCQDPCsnPfMWd-5NR60fKRw0w8pb0bs",
+		"scope": "https://www.googleapis.com/auth/firebase openid https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/cloud-platform",
+		"token_type": "Bearer",
+		"id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjI1ZjgyMTE3MTM3ODhiNjE0NTQ3NGI1MDI5YjAxNDFiZDViM2RlOWMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA4MDM4NDc1NjA3MzQ5Njk3MzkxIiwiaGQiOiJuZXVyYWxncmlkbGFicy5jb20iLCJlbWFpbCI6Im5hYmluLnBhdWRlbEBuZXVyYWxncmlkbGFicy5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6IjFjWEVrWGdiWHJ1RG9sUlE3SWpzM3ciLCJpYXQiOjE3NDA5OTE4OTQsImV4cCI6MTc0MDk5NTQ5NH0.phTB642h5MadfgTPF6WSBD85rF8b4IU4f5-LYjtlHLoc_plHrSAkxXec-9la-uZBvc9di38McaSWF3AyuS-6dlX-VyrJOmnfK9Tu_NHh5JSoUn6m_DxAyxTrVMtkjmnlvidbdukWd_qKFGZZoForKPHxGjWfdsKVnLbsrCJSOQdA_ybSnNRPJZC6IUxsWIgj9NDuURvpiH1TRRVM_K1_E4iU_b4topnRlw14nNVZYtt6qGp2c85jscUFu0TUL3XY59C458PAXAuuBlcCMIAUMWaKF_9kFql89_yN5SjFQam9PamB6eTQymcEeQdNbaGWzUy-mZUOQpa1_a9A1PQb2w"
+	},
+	"activeProjects": {
+		"/home/scelester/Container/ProjectD/Anweshan/Hire-Enumerator-FE": "prod",
+		"/home/scelester/Container/ProjectD/Anweshan/Hire-Enumerator-FE Func/Hire-Enumerator-Functions": "hire-enumerator-697cd",
+		"/home/scelester/Container/ProjectD/Anweshan/Hire-Enumerator-FE Func": "hire-enumerator-697cd"
+	}
+}

@@ -1,0 +1,686 @@
+{
+  "app_name": "540f935fa0ad4bd498177ee5ad3b54e4",
+  "app_title": "Roller Champions",
+  "asset_infos": {
+    "Windows": {
+      "app_name": "540f935fa0ad4bd498177ee5ad3b54e4",
+      "asset_id": "540f935fa0ad4bd498177ee5ad3b54e4",
+      "build_version": "RC_240314",
+      "catalog_item_id": "953b294fc47b436089ac9ca5e1a61038",
+      "label_name": "Live-Windows",
+      "metadata": {},
+      "namespace": "03208f1f61764f5a8f6b7ea24c56edf1",
+      "sidecar_rev": 0
+    }
+  },
+  "base_urls": [],
+  "metadata": {
+    "ageGatings": {},
+    "applicationId": "",
+    "categories": [
+      {
+        "path": "games"
+      },
+      {
+        "path": "applications"
+      }
+    ],
+    "creationDate": "2022-05-20T17:47:28.715Z",
+    "customAttributes": {
+      "CanSkipKoreanIdVerification": {
+        "type": "STRING",
+        "value": "true"
+      },
+      "FolderName": {
+        "type": "STRING",
+        "value": "RollerChampions"
+      },
+      "GameID": {
+        "type": "STRING",
+        "value": "11899"
+      },
+      "MonitorPresence": {
+        "type": "STRING",
+        "value": "false"
+      },
+      "NeverUpdate": {
+        "type": "STRING",
+        "value": "true"
+      },
+      "PresenceId": {
+        "type": "STRING",
+        "value": "03208f1f61764f5a8f6b7ea24c56edf1"
+      },
+      "RegistryKey": {
+        "type": "STRING",
+        "value": "InstallDir"
+      },
+      "RegistryPath": {
+        "type": "STRING",
+        "value": "SOFTWARE\\WOW6432Node\\Ubisoft\\Launcher\\Installs\\11899"
+      },
+      "RequirementsJson": {
+        "type": "STRING",
+        "value": "[]"
+      },
+      "ThirdPartyManagedProvider": {
+        "type": "STRING",
+        "value": "UbisoftConnect"
+      },
+      "UseAccessControl": {
+        "type": "STRING",
+        "value": "false"
+      },
+      "partnerLinkId": {
+        "type": "STRING",
+        "value": "5247baf718934393a10a58e6e3ce0492"
+      },
+      "partnerLinkType": {
+        "type": "STRING",
+        "value": "ubisoft"
+      }
+    },
+    "description": "Roller Champions",
+    "developer": "Ubisoft Entertainment",
+    "developerId": "o-3efjudxdtgsqnulml4bkeq3v9nec38",
+    "dlcItemList": [
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "hidden"
+          },
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2022-06-13T16:52:11.831Z",
+        "customAttributes": {
+          "parentPartnerLinkId": {
+            "type": "STRING",
+            "value": "5247baf718934393a10a58e6e3ce0492"
+          },
+          "partnerLinkId": {
+            "type": "STRING",
+            "value": "a700a24577144621a68af28ff0903b75"
+          },
+          "partnerLinkType": {
+            "type": "STRING",
+            "value": "ubisoft"
+          }
+        },
+        "description": "Roller Champions Gold Bundle",
+        "developer": "Ubisoft Entertainment",
+        "developerId": "o-3efjudxdtgsqnulml4bkeq3v9nec38",
+        "endOfSupport": false,
+        "entitlementName": "d7e53d5376a64a52866a3c94ade5e695",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "d7e53d5376a64a52866a3c94ade5e695",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2023-03-14T19:16:26.772Z",
+        "mainGameItem": {
+          "id": "953b294fc47b436089ac9ca5e1a61038",
+          "namespace": "03208f1f61764f5a8f6b7ea24c56edf1",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "953b294fc47b436089ac9ca5e1a61038",
+            "namespace": "03208f1f61764f5a8f6b7ea24c56edf1",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "03208f1f61764f5a8f6b7ea24c56edf1",
+        "releaseInfo": [
+          {
+            "appId": "ArionGB",
+            "compatibleApps": [],
+            "dateAdded": "2023-03-14T19:16:25.290Z",
+            "id": "148b8d2df1604574862aab23f6ab9dca",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Roller Champions Gold Bundle",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "hidden"
+          },
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2022-06-13T16:52:06.943Z",
+        "customAttributes": {
+          "parentPartnerLinkId": {
+            "type": "STRING",
+            "value": "5247baf718934393a10a58e6e3ce0492"
+          },
+          "partnerLinkId": {
+            "type": "STRING",
+            "value": "bcd767a6973d42cb95f8837508d42db1"
+          },
+          "partnerLinkType": {
+            "type": "STRING",
+            "value": "ubisoft"
+          }
+        },
+        "description": "Roller Champions - Silver Bundle",
+        "developer": "Ubisoft Entertainment",
+        "developerId": "o-3efjudxdtgsqnulml4bkeq3v9nec38",
+        "endOfSupport": false,
+        "entitlementName": "d73962b688204a8ba4726d40361e9331",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "d73962b688204a8ba4726d40361e9331",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2023-03-14T19:13:15.387Z",
+        "mainGameItem": {
+          "id": "953b294fc47b436089ac9ca5e1a61038",
+          "namespace": "03208f1f61764f5a8f6b7ea24c56edf1",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "953b294fc47b436089ac9ca5e1a61038",
+            "namespace": "03208f1f61764f5a8f6b7ea24c56edf1",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "03208f1f61764f5a8f6b7ea24c56edf1",
+        "releaseInfo": [
+          {
+            "appId": "ArionSB",
+            "compatibleApps": [],
+            "dateAdded": "2023-03-14T19:13:10.081Z",
+            "id": "b3310034eaf94c55be13090f9e597b61",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Roller Champions - Silver Bundle",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "hidden"
+          },
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2022-09-27T17:57:27.276Z",
+        "customAttributes": {
+          "parentPartnerLinkId": {
+            "type": "STRING",
+            "value": "5247baf718934393a10a58e6e3ce0492"
+          },
+          "partnerLinkId": {
+            "type": "STRING",
+            "value": "c4d2194ed8b6494bbca41988bd66ea58"
+          },
+          "partnerLinkType": {
+            "type": "STRING",
+            "value": "ubisoft"
+          }
+        },
+        "description": "Roller Champions Gold Bundle",
+        "developer": "Ubisoft Entertainment",
+        "developerId": "o-3efjudxdtgsqnulml4bkeq3v9nec38",
+        "endOfSupport": false,
+        "entitlementName": "02cddfbc1ebe411f9fa23874dbff18b9",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "02cddfbc1ebe411f9fa23874dbff18b9",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2023-03-14T19:16:13.900Z",
+        "mainGameItem": {
+          "id": "953b294fc47b436089ac9ca5e1a61038",
+          "namespace": "03208f1f61764f5a8f6b7ea24c56edf1",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "953b294fc47b436089ac9ca5e1a61038",
+            "namespace": "03208f1f61764f5a8f6b7ea24c56edf1",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "03208f1f61764f5a8f6b7ea24c56edf1",
+        "releaseInfo": [
+          {
+            "appId": "ArionGB2",
+            "compatibleApps": [],
+            "dateAdded": "2023-03-14T19:13:00.000Z",
+            "id": "e282102efa0442a883fc446dadae2e07",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Roller Champions Gold Bundle",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "hidden"
+          },
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2022-09-27T17:56:47.591Z",
+        "customAttributes": {
+          "parentPartnerLinkId": {
+            "type": "STRING",
+            "value": "5247baf718934393a10a58e6e3ce0492"
+          },
+          "partnerLinkId": {
+            "type": "STRING",
+            "value": "ec5ad2c59d624d9aa94aec5dcefdfdd0"
+          },
+          "partnerLinkType": {
+            "type": "STRING",
+            "value": "ubisoft"
+          }
+        },
+        "description": "Roller Champions - Silver Bundle",
+        "developer": "Ubisoft Entertainment",
+        "developerId": "o-3efjudxdtgsqnulml4bkeq3v9nec38",
+        "endOfSupport": false,
+        "entitlementName": "7b448ef58a4d439d8fbb438584725774",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "7b448ef58a4d439d8fbb438584725774",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2023-03-14T19:15:32.939Z",
+        "mainGameItem": {
+          "id": "953b294fc47b436089ac9ca5e1a61038",
+          "namespace": "03208f1f61764f5a8f6b7ea24c56edf1",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "953b294fc47b436089ac9ca5e1a61038",
+            "namespace": "03208f1f61764f5a8f6b7ea24c56edf1",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "03208f1f61764f5a8f6b7ea24c56edf1",
+        "releaseInfo": [
+          {
+            "appId": "ArionSB2",
+            "compatibleApps": [],
+            "dateAdded": "2023-03-14T19:15:31.663Z",
+            "id": "03da714e8ce0480fbab9609041cacadd",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Roller Champions - Silver Bundle",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "hidden"
+          },
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2022-11-24T10:19:21.143Z",
+        "customAttributes": {
+          "neverUpdate": {
+            "type": "STRING",
+            "value": "true"
+          },
+          "parentPartnerLinkId": {
+            "type": "STRING",
+            "value": "5247baf718934393a10a58e6e3ce0492"
+          },
+          "partnerLinkId": {
+            "type": "STRING",
+            "value": "c6abc467560c4e5f97cc4e4da85e82df"
+          },
+          "partnerLinkType": {
+            "type": "STRING",
+            "value": "ubisoft"
+          }
+        },
+        "description": "Roller Champions - Silver Bundle Season 3",
+        "developer": "Ubisoft Entertainment",
+        "developerId": "o-3efjudxdtgsqnulml4bkeq3v9nec38",
+        "endOfSupport": false,
+        "entitlementName": "e5a433ee11914323a9a0248a66c0906c",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "e5a433ee11914323a9a0248a66c0906c",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2023-04-04T14:57:49.610Z",
+        "mainGameItem": {
+          "id": "953b294fc47b436089ac9ca5e1a61038",
+          "namespace": "03208f1f61764f5a8f6b7ea24c56edf1",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "953b294fc47b436089ac9ca5e1a61038",
+            "namespace": "03208f1f61764f5a8f6b7ea24c56edf1",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "03208f1f61764f5a8f6b7ea24c56edf1",
+        "releaseInfo": [
+          {
+            "appId": "ArionSB3",
+            "compatibleApps": [],
+            "dateAdded": "2023-03-14T19:17:23.108Z",
+            "id": "0c3ea31a4db04133bfaff37e87ae3383",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Roller Champions - Silver Bundle Season 3",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "hidden"
+          },
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2022-11-24T09:45:20.103Z",
+        "customAttributes": {
+          "neverUpdate": {
+            "type": "STRING",
+            "value": "true"
+          },
+          "parentPartnerLinkId": {
+            "type": "STRING",
+            "value": "5247baf718934393a10a58e6e3ce0492"
+          },
+          "partnerLinkId": {
+            "type": "STRING",
+            "value": "1163148702704c419032fb6b6ee2731b"
+          },
+          "partnerLinkType": {
+            "type": "STRING",
+            "value": "ubisoft"
+          }
+        },
+        "description": "Roller Champions Gold Bundle Season 3",
+        "developer": "Ubisoft Entertainment",
+        "developerId": "o-3efjudxdtgsqnulml4bkeq3v9nec38",
+        "endOfSupport": false,
+        "entitlementName": "a816b574bef84cf9abac72d6348ccda7",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "a816b574bef84cf9abac72d6348ccda7",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2023-04-04T14:57:49.526Z",
+        "mainGameItem": {
+          "id": "953b294fc47b436089ac9ca5e1a61038",
+          "namespace": "03208f1f61764f5a8f6b7ea24c56edf1",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "953b294fc47b436089ac9ca5e1a61038",
+            "namespace": "03208f1f61764f5a8f6b7ea24c56edf1",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "03208f1f61764f5a8f6b7ea24c56edf1",
+        "releaseInfo": [
+          {
+            "appId": "ArionGB3",
+            "compatibleApps": [],
+            "dateAdded": "2023-03-14T19:17:38.937Z",
+            "id": "ca8a196142e748959eda9641cc404772",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Roller Champions Gold Bundle Season 3",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "hidden"
+          },
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-03-23T09:58:55.633Z",
+        "customAttributes": {
+          "neverUpdate": {
+            "type": "STRING",
+            "value": "true"
+          },
+          "parentPartnerLinkId": {
+            "type": "STRING",
+            "value": "5247baf718934393a10a58e6e3ce0492"
+          },
+          "partnerLinkId": {
+            "type": "STRING",
+            "value": "02386617d3f14b44b614b9aa07cf4287"
+          },
+          "partnerLinkType": {
+            "type": "STRING",
+            "value": "ubisoft"
+          }
+        },
+        "description": "Roller Champions - Silver Bundle Season 4",
+        "developer": "Ubisoft Entertainment",
+        "developerId": "o-3efjudxdtgsqnulml4bkeq3v9nec38",
+        "endOfSupport": false,
+        "entitlementName": "6105bee2c8404dfda8d84a32a339690a",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "6105bee2c8404dfda8d84a32a339690a",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2023-04-04T14:57:49.496Z",
+        "mainGameItem": {
+          "id": "953b294fc47b436089ac9ca5e1a61038",
+          "namespace": "03208f1f61764f5a8f6b7ea24c56edf1",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "953b294fc47b436089ac9ca5e1a61038",
+            "namespace": "03208f1f61764f5a8f6b7ea24c56edf1",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "03208f1f61764f5a8f6b7ea24c56edf1",
+        "releaseInfo": [
+          {
+            "appId": "ArionSB4",
+            "compatibleApps": [],
+            "dateAdded": "2023-03-23T09:59:25.750Z",
+            "id": "c976e82022f44d95a2dccfbc7111faf9",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Roller Champions - Silver Bundle Season 4",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "hidden"
+          },
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-03-23T09:53:38.906Z",
+        "customAttributes": {
+          "neverUpdate": {
+            "type": "STRING",
+            "value": "true"
+          },
+          "parentPartnerLinkId": {
+            "type": "STRING",
+            "value": "5247baf718934393a10a58e6e3ce0492"
+          },
+          "partnerLinkId": {
+            "type": "STRING",
+            "value": "3e405ad3aadd47ea84c1a012cdae4819"
+          },
+          "partnerLinkType": {
+            "type": "STRING",
+            "value": "ubisoft"
+          }
+        },
+        "description": "Roller Champions Gold Bundle Season 4",
+        "developer": "Ubisoft Entertainment",
+        "developerId": "o-3efjudxdtgsqnulml4bkeq3v9nec38",
+        "endOfSupport": false,
+        "entitlementName": "c72d8b8086824d0f96f670af700eb080",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "c72d8b8086824d0f96f670af700eb080",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2023-04-04T14:57:49.597Z",
+        "mainGameItem": {
+          "id": "953b294fc47b436089ac9ca5e1a61038",
+          "namespace": "03208f1f61764f5a8f6b7ea24c56edf1",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "953b294fc47b436089ac9ca5e1a61038",
+            "namespace": "03208f1f61764f5a8f6b7ea24c56edf1",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "03208f1f61764f5a8f6b7ea24c56edf1",
+        "releaseInfo": [
+          {
+            "appId": "ArionGB4",
+            "compatibleApps": [],
+            "dateAdded": "2023-03-23T09:58:06.611Z",
+            "id": "01f944598d924947b32778675bfb9b7d",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Roller Champions Gold Bundle Season 4",
+        "unsearchable": true
+      }
+    ],
+    "endOfSupport": false,
+    "entitlementName": "953b294fc47b436089ac9ca5e1a61038",
+    "entitlementType": "EXECUTABLE",
+    "eulaIds": [
+      "egstore"
+    ],
+    "id": "953b294fc47b436089ac9ca5e1a61038",
+    "itemType": "DURABLE",
+    "keyImages": [
+      {
+        "height": 1440,
+        "md5": "5f9186dedfc0626bcd7f347d5909723a",
+        "size": 1088248,
+        "type": "DieselGameBox",
+        "uploadedDate": "2022-06-20T18:27:07.549Z",
+        "url": "https://cdn1.epicgames.com/offer/03208f1f61764f5a8f6b7ea24c56edf1/XXXX_Store_Landscape_2560x1440_2560x1440-5f9186dedfc0626bcd7f347d5909723a",
+        "width": 2560
+      },
+      {
+        "height": 1600,
+        "md5": "7a934dde19d172d4e9c51fce0a4114d8",
+        "size": 623300,
+        "type": "DieselGameBoxTall",
+        "uploadedDate": "2022-06-20T18:27:10.704Z",
+        "url": "https://cdn1.epicgames.com/offer/03208f1f61764f5a8f6b7ea24c56edf1/XXXX_Store_Portrait_1200x1600_1200x1600-7a934dde19d172d4e9c51fce0a4114d8",
+        "width": 1200
+      }
+    ],
+    "lastModifiedDate": "2024-04-30T20:33:17.984Z",
+    "mainGameItemList": [],
+    "namespace": "03208f1f61764f5a8f6b7ea24c56edf1",
+    "releaseInfo": [
+      {
+        "appId": "540f935fa0ad4bd498177ee5ad3b54e4",
+        "id": "87313fd51630478bafa86dfd08d0ea02",
+        "platform": [
+          "Windows"
+        ]
+      }
+    ],
+    "requiresSecureAccount": false,
+    "status": "ACTIVE",
+    "title": "Roller Champions",
+    "unsearchable": true
+  },
+  "sidecar": null
+}

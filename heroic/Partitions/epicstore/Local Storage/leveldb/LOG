@@ -1,0 +1,6 @@
+2025/03/14-14:13:57.857 1a0aa Reusing MANIFEST /home/scelester/.config/heroic/Partitions/epicstore/Local Storage/leveldb/MANIFEST-000001
+2025/03/14-14:13:57.858 1a0aa Recovering log #3
+2025/03/14-14:13:57.858 1a0aa Reusing old log /home/scelester/.config/heroic/Partitions/epicstore/Local Storage/leveldb/000003.log 
+2025/03/14-14:21:02.004 1a0ab Level-0 table #5: started
+2025/03/14-14:21:02.008 1a0ab Level-0 table #5: 26605 bytes OK
+2025/03/14-14:21:02.011 1a0ab Delete type=0 #3

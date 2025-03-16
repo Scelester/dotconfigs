@@ -89,7 +89,11 @@ export default {
     battery: {
         charging: "battery-flash-symbolic",
         warning: "battery-empty-symbolic",
-        unplugged: "/home/scelester/MyScripts/battery_mode.svg",
+        unplugged_100: "/home/scelester/MyScripts/battery_100.png",
+        unplugged_70: "/home/scelester/MyScripts/battery_70.png",
+        unplugged_50: "/home/scelester/MyScripts/battery_50.png",
+        unplugged_30: "/home/scelester/MyScripts/battery_30.png",
+        unplugged_15: "/home/scelester/MyScripts/battery_15.png",
     },
     bluetooth: {
         enabled: "bluetooth-active-symbolic",

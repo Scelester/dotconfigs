@@ -43,7 +43,7 @@ const options = mkOptions(OPTIONS, {
 
         blur: opt(0),
         scheme: opt<"dark" | "light">("dark"),
-        eyecare: opt<"eyecare" | "normal">("eyecare"),
+        eyecare: opt<"eyecare" | "normal">("normal"),
         charging_mode:opt<"charging" | "unplugged" >("charging"),
         widget: { opacity: opt(94) },
         border: {
@@ -161,8 +161,8 @@ const options = mkOptions(OPTIONS, {
                 [
                     "steam",
                     "code",
-                    "spotify",
-                    "vesktop",
+                    "heroic",
+                    "discord",
                     "rustrover",
                     "rquickshare"
                 ],

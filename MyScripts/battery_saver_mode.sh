@@ -1,82 +1,79 @@
 #!/bin/bash
+# /bin/battery_saver_mode - ACPI action script for battery/AC modes in a Wayland session
 
-# Function to handle actions when power is disconnected (battery mode)
+# Function for logging messages
+log_message() {
+    logger "$1"
+}
+
+# Get the active user (assumes one active session)
+USER=$(who | awk '{print $1}' | head -n 1)
+if [ -z "$USER" ]; then
+    log_message "No logged-in user found."
+    exit 1
+fi
+
+# Retrieve environment variables from the active user's session
+XDG_RUNTIME_DIR=$(sudo -u "$USER" printenv XDG_RUNTIME_DIR)
+WAYLAND_DISPLAY=$(sudo -u "$USER" printenv WAYLAND_DISPLAY)
+DISPLAY=$(sudo -u "$USER" printenv DISPLAY)
+HYPRLAND_INSTANCE_SIGNATURE=$(sudo -u "$USER" printenv HYPRLAND_INSTANCE_SIGNATURE)
+XAUTHORITY=$(sudo -u "$USER" printenv XAUTHORITY)
+
+# Export the necessary environment variables
+export XDG_RUNTIME_DIR
+export WAYLAND_DISPLAY
+export DISPLAY
+export HYPRLAND_INSTANCE_SIGNATURE
+export XAUTHORITY
+
+# Log the retrieved environment variables for debugging
+log_message "Battery Saver: USER=$USER"
+log_message "Battery Saver: XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR"
+log_message "Battery Saver: WAYLAND_DISPLAY=$WAYLAND_DISPLAY"
+log_message "Battery Saver: DISPLAY=$DISPLAY"
+if [ -z "$HYPRLAND_INSTANCE_SIGNATURE" ]; then
+    log_message "Battery Saver: HYPRLAND_INSTANCE_SIGNATURE not set! (is hyprland running?)"
+else
+    log_message "Battery Saver: HYPRLAND_INSTANCE_SIGNATURE=$HYPRLAND_INSTANCE_SIGNATURE"
+fi
+if [ -z "$XAUTHORITY" ]; then
+    log_message "Battery Saver: XAUTHORITY not set (this is fine for Wayland)"
+else
+    log_message "Battery Saver: XAUTHORITY=$XAUTHORITY"
+fi
+
+# Define action functions
+
 on_battery() {
-    echo "Power disconnected, switching to battery mode..."
-    # Set the Asus performance profile to Quiet
-    ags -r "asusctl.setProfile('Quiet')"
-
-    # Set the display configuration (e.g., refresh rate or resolution)
-    hyprctl keyword monitor eDP-1,1920x1080,60,1
-
-    # Kill hypridle and load the battery-specific config
-    pkill hypridle
-    nohup hypridle -c ~/.config/hypr/hypridle_battery.conf &
-
-    # Change Hyprland settings for better battery life
-    hyprctl keyword decoration:drop_shadow false
-    hyprctl keyword misc:vfr true
-
-    ags -r 'toggleChargingMode(0)'
-
+    log_message "Power disconnected, switching to battery mode..."
+    sudo -u "$USER" ags -r "asusctl.setProfile('Quiet')"
+    sudo -u "$USER" hyprctl keyword monitor eDP-1,1920x1080,60,1
+    sudo -u "$USER" pkill hypridle
+    sudo -u "$USER" nohup hypridle -c /home/"$USER"/.config/hypr/hypridle_battery.conf &
+    sudo -u "$USER" hyprctl keyword decoration:drop_shadow false
+    sudo -u "$USER" hyprctl keyword misc:vfr true
+    sudo -u "$USER" systemd-run --user --scope /usr/local/bin/ags -r 'toggleChargingMode(0)'
 }
 
-# Function to handle actions when power is connected (AC mode)
 on_ac() {
-    echo "Power connected, reverting to AC mode..."
-    # Revert Asus profile or display settings if necessary
-    ags -r "asusctl.setProfile('Balanced')"  # Example revert to Balanced
-    
-    # Re-enable Hyprland shadow settings for performance on AC
-    hyprctl keyword decoration:drop_shadow true
-    hyprctl keyword misc:vfr false
-
-    # Set the display configuration (e.g., resolution and refresh rate)
-    hyprctl keyword monitor eDP-1,preferred,144,1
-
-    pkill hypridle
-    nohup hypridle -c ~/.config/hypr/hypridle.conf &
-    ags -r 'toggleChargingMode(1)'
+    log_message "Power connected, reverting to AC mode..."
+    sudo -u "$USER" ags -r "asusctl.setProfile('Balanced')"
+    sudo -u "$USER" hyprctl keyword decoration:drop_shadow true
+    sudo -u "$USER" hyprctl keyword misc:vfr false
+    sudo -u "$USER" hyprctl keyword monitor eDP-1,preferred,144,1
+    sudo -u "$USER" pkill hypridle
+    sudo -u "$USER" nohup hypridle -c /home/"$USER"/.config/hypr/hypridle.conf &
+    sudo -u "$USER" systemd-run --user --scope /usr/local/bin/ags -r 'toggleChargingMode(1)'
 }
 
-# Check and apply the initial power state
-initialize_state() {
-    current_state=$(cat /sys/class/power_supply/ACAD/online)
-    
-    if [[ "$current_state" -eq 0 ]]; then
-        # Power is disconnected (on battery)
-        on_battery
-    else
-        # Power is connected (on AC)
-        on_ac
-    fi
-}
+# Determine the current power state (0 = unplugged, 1 = plugged)
+power_state=$(cat /sys/class/power_supply/ACAD/online 2>/dev/null)
+log_message "Current power state: $power_state"
 
-# Monitor the power supply state and trigger actions on change
-monitor_power_state() {
-    last_state=$(cat /sys/class/power_supply/ACAD/online)
+if [[ "$power_state" -eq 0 ]]; then
+    on_battery
+else
+    on_ac
+fi
 
-    while true; do
-        current_state=$(cat /sys/class/power_supply/ACAD/online)
-
-        if [[ "$current_state" != "$last_state" ]]; then
-            if [[ "$current_state" -eq 0 ]]; then
-                # Power is disconnected (on battery)
-                on_battery
-            else
-                # Power is connected (on AC)
-                on_ac
-            fi
-            last_state="$current_state"
-        fi
-
-        # Sleep for 3 seconds before checking again
-        sleep 3
-    done
-}
-
-# Initialize based on the current power state
-initialize_state
-
-# Start monitoring the power state for changes
-monitor_power_state

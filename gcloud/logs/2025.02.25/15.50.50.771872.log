@@ -1,0 +1,70 @@
+2025-02-25 15:50:50,773 DEBUG    root            Loaded Command Group: ['gcloud', 'iam']
+2025-02-25 15:50:50,774 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'service_accounts']
+2025-02-25 15:50:50,809 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'service-accounts', 'list']
+2025-02-25 15:50:50,811 DEBUG    root            Running [gcloud.iam.service-accounts.list] with arguments: [--project: "hire-enumerator-697cd"]
+2025-02-25 15:50:50,811 DEBUG    root            Chosen display Format:table(displayName:label="DISPLAY NAME", email, disabled)
+2025-02-25 15:50:50,812 INFO     root            Display format: "table(displayName:label="DISPLAY NAME", email, disabled)"
+2025-02-25 15:50:50,881 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2025-02-25 15:50:52,738 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "GET /v1/projects/hire-enumerator-697cd/serviceAccounts?alt=json&pageSize=100 HTTP/11" 403 None
+2025-02-25 15:50:52,739 DEBUG    root            Chosen display Format:default
+2025-02-25 15:50:52,769 DEBUG    root            Chosen display Format:default
+2025-02-25 15:50:52,770 DEBUG    root            Chosen display Format:default
+2025-02-25 15:50:52,771 DEBUG    root            (gcloud.iam.service-accounts.list) [nabin.paudel@neuralgridlabs.com] does not have permission to access projects instance [hire-enumerator-697cd] (or it may not exist): Permission 'iam.serviceAccounts.list' denied on resource (or it may not exist). This command is authenticated as nabin.paudel@neuralgridlabs.com which is the active account specified by the [core/account] property.
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: iam.googleapis.com
+  metadata:
+    permission: iam.serviceAccounts.list
+  reason: IAM_PERMISSION_DENIED
+Traceback (most recent call last):
+  File "/opt/google-cloud-cli/lib/googlecloudsdk/calliope/cli.py", line 981, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/google-cloud-cli/lib/googlecloudsdk/calliope/backend.py", line 937, in Run
+    ).Display()
+      ^^^^^^^^^
+  File "/opt/google-cloud-cli/lib/googlecloudsdk/calliope/display.py", line 507, in Display
+    self._printer.Print(self._resources)
+  File "/opt/google-cloud-cli/lib/googlecloudsdk/core/resource/resource_printer_base.py", line 301, in Print
+    for resource in resources:
+                    ^^^^^^^^^
+  File "/opt/google-cloud-cli/lib/surface/iam/service_accounts/list.py", line 59, in Run
+    for item in list_pager.YieldFromList(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/google-cloud-cli/lib/third_party/apitools/base/py/list_pager.py", line 120, in YieldFromList
+    response = getattr(service, method)(request,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/google-cloud-cli/lib/googlecloudsdk/generated_clients/apis/iam/v1/iam_v1_client.py", line 4163, in List
+    return self._RunMethod(
+           ^^^^^^^^^^^^^^^^
+  File "/opt/google-cloud-cli/lib/third_party/apitools/base/py/base_api.py", line 747, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/google-cloud-cli/lib/third_party/apitools/base/py/base_api.py", line 753, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/google-cloud-cli/lib/third_party/apitools/base/py/base_api.py", line 612, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpForbiddenError: HttpError accessing <https://iam.googleapis.com/v1/projects/hire-enumerator-697cd/serviceAccounts?alt=json&pageSize=100>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Tue, 25 Feb 2025 10:05:52 GMT', 'server': 'ESF', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked', 'status': 403}>, content <{
+  "error": {
+    "code": 403,
+    "message": "Permission 'iam.serviceAccounts.list' denied on resource (or it may not exist).",
+    "status": "PERMISSION_DENIED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "IAM_PERMISSION_DENIED",
+        "domain": "iam.googleapis.com",
+        "metadata": {
+          "permission": "iam.serviceAccounts.list"
+        }
+      }
+    ]
+  }
+}
+>
+2025-02-25 15:50:52,772 ERROR    root            (gcloud.iam.service-accounts.list) [nabin.paudel@neuralgridlabs.com] does not have permission to access projects instance [hire-enumerator-697cd] (or it may not exist): Permission 'iam.serviceAccounts.list' denied on resource (or it may not exist). This command is authenticated as nabin.paudel@neuralgridlabs.com which is the active account specified by the [core/account] property.
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: iam.googleapis.com
+  metadata:
+    permission: iam.serviceAccounts.list
+  reason: IAM_PERMISSION_DENIED

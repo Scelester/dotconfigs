@@ -1,0 +1,2604 @@
+{
+  "app_name": "6c227b0fac70445aae645f0d601dc5d2",
+  "app_title": "Phantasy Star Online 2",
+  "asset_infos": {
+    "Windows": {
+      "app_name": "6c227b0fac70445aae645f0d601dc5d2",
+      "asset_id": "6c227b0fac70445aae645f0d601dc5d2",
+      "build_version": "v73100_rc_73_20250206_1827",
+      "catalog_item_id": "1f091643abf5463aab58d9ed807da700",
+      "label_name": "Live-Windows",
+      "metadata": {
+        "installationPoolId": "d0850fcdf3fe47d09baf5504a91623b1",
+        "update_type": "PATCH"
+      },
+      "namespace": "bf333e6236914222a95a536389c05813",
+      "sidecar_rev": 0
+    }
+  },
+  "base_urls": [],
+  "metadata": {
+    "ageGatings": {},
+    "applicationId": "fghi4567VNJsjy2d0JVEedCgecaG1ind",
+    "categories": [
+      {
+        "path": "public"
+      },
+      {
+        "path": "games"
+      },
+      {
+        "path": "applications"
+      }
+    ],
+    "creationDate": "2020-05-27T16:51:57.799Z",
+    "customAttributes": {
+      "CanRunOffline": {
+        "type": "STRING",
+        "value": "true"
+      },
+      "CanSkipKoreanIdVerification": {
+        "type": "STRING",
+        "value": "true"
+      },
+      "FolderName": {
+        "type": "STRING",
+        "value": "PHANTASYSTARONLINE2_NA"
+      },
+      "MonitorPresence": {
+        "type": "STRING",
+        "value": "false"
+      },
+      "PresenceId": {
+        "type": "STRING",
+        "value": "bf333e6236914222a95a536389c05813"
+      },
+      "RequirementsJson": {
+        "type": "STRING",
+        "value": "[]"
+      },
+      "RequiresAdminElevation": {
+        "type": "STRING",
+        "value": "true"
+      },
+      "UseAccessControl": {
+        "type": "STRING",
+        "value": "false"
+      }
+    },
+    "description": "Phantasy Star Online 2",
+    "developer": "SEGA",
+    "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+    "dlcItemList": [
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "public"
+          },
+          {
+            "path": "addons"
+          },
+          {
+            "path": "addons/durable"
+          }
+        ],
+        "creationDate": "2021-10-15T03:40:40.065Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "PSO2:NGS BeginnerStartDashPack",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "77e848be28054e1c92dd10ab59b20d75",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "77e848be28054e1c92dd10ab59b20d75",
+        "installModes": [],
+        "itemType": "DURABLE",
+        "keyImages": [],
+        "lastModifiedDate": "2023-10-11T21:21:12.624Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "PSO2:NGS BeginnerStartDashPack",
+        "unsearchable": true
+      },
+      {
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2022-10-04T07:30:06.739Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "200AC Exchange Ticket audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "7e0f6d6839634111b5fe00e6402e650b",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "7e0f6d6839634111b5fe00e6402e650b",
+        "itemType": "CONSUMABLE",
+        "lastModifiedDate": "2022-12-13T19:17:35.869Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "200AC Exchange Ticket audience",
+        "unsearchable": true,
+        "useCount": 1
+      },
+      {
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2022-10-04T07:31:30.961Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "5000AC Exchange ticket audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "417a70ab56354fa4bfb5f2849e6ec814",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "417a70ab56354fa4bfb5f2849e6ec814",
+        "itemType": "CONSUMABLE",
+        "lastModifiedDate": "2022-12-13T19:17:35.867Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "5000AC Exchange ticket audience",
+        "unsearchable": true,
+        "useCount": 1
+      },
+      {
+        "ageGatings": {},
+        "categories": [
+          {
+            "path": "public"
+          },
+          {
+            "path": "addons"
+          },
+          {
+            "path": "addons/consumable"
+          }
+        ],
+        "creationDate": "2021-01-04T19:50:33.700Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "DLC07 Audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "ed66ba30c9a5483b83fa107527031d88",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "ed66ba30c9a5483b83fa107527031d88",
+        "itemType": "CONSUMABLE",
+        "keyImages": [],
+        "lastModifiedDate": "2023-10-11T21:21:12.631Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "DLC07 Audience",
+        "unsearchable": true,
+        "useCount": 1
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "public"
+          },
+          {
+            "path": "addons"
+          },
+          {
+            "path": "addons/durable"
+          }
+        ],
+        "creationDate": "2021-05-18T11:40:20.271Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "PSO2:NGS SP2 Audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "a129e65b8d22443282437fcc445af0ac",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "a129e65b8d22443282437fcc445af0ac",
+        "installModes": [],
+        "itemType": "DURABLE",
+        "keyImages": [],
+        "lastModifiedDate": "2021-05-18T11:40:20.271Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "PSO2:NGS SP2 Audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "public"
+          },
+          {
+            "path": "addons"
+          },
+          {
+            "path": "addons/consumable"
+          }
+        ],
+        "creationDate": "2021-07-21T18:01:26.897Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "DLC24 Audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "84fc29c0a27c4effb42a4096ef8c8cc2",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "84fc29c0a27c4effb42a4096ef8c8cc2",
+        "installModes": [],
+        "itemType": "CONSUMABLE",
+        "keyImages": [],
+        "lastModifiedDate": "2021-08-19T02:39:24.107Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "DLC24 Audience",
+        "unsearchable": true,
+        "useCount": 1
+      },
+      {
+        "ageGatings": {},
+        "categories": [
+          {
+            "path": "public"
+          },
+          {
+            "path": "addons"
+          },
+          {
+            "path": "addons/consumable"
+          }
+        ],
+        "creationDate": "2021-01-04T19:48:46.271Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "DLC04 Audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "b3f02456e7e2493184112f6264211881",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "b3f02456e7e2493184112f6264211881",
+        "itemType": "CONSUMABLE",
+        "keyImages": [],
+        "lastModifiedDate": "2021-05-25T03:30:15.164Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "DLC04 Audience",
+        "unsearchable": true,
+        "useCount": 1
+      },
+      {
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2022-03-28T19:44:17.184Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "PSO2:NGS - ANadRP",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "141249d9af5145cfa2de9b9546e6c2d4",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "141249d9af5145cfa2de9b9546e6c2d4",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2023-10-11T21:21:12.612Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "PSO2:NGS - ANadRP",
+        "unsearchable": true
+      },
+      {
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2022-10-04T07:26:28.441Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "PSO2:NGS_CS_Pack_Type2",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "f8d1084e721a45b385ed9b477a52d5a9",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "f8d1084e721a45b385ed9b477a52d5a9",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2023-10-11T21:21:12.631Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "PSO2:NGS_CS_Pack_Type2",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "public"
+          },
+          {
+            "path": "addons"
+          },
+          {
+            "path": "addons/durable"
+          }
+        ],
+        "creationDate": "2021-10-15T03:39:08.696Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "PSO2:NGS RetemPack_Male Audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "c63edd5d275049e196d60bb7f7960987",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "c63edd5d275049e196d60bb7f7960987",
+        "installModes": [],
+        "itemType": "DURABLE",
+        "keyImages": [],
+        "lastModifiedDate": "2023-10-11T21:21:12.628Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "PSO2:NGS RetemPack_Male Audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "categories": [
+          {
+            "path": "public"
+          },
+          {
+            "path": "addons"
+          },
+          {
+            "path": "addons/consumable"
+          }
+        ],
+        "creationDate": "2021-01-04T19:50:45.980Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "DLC08 Audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "675957b029914b19a90335ff7b5252cc",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "675957b029914b19a90335ff7b5252cc",
+        "itemType": "CONSUMABLE",
+        "keyImages": [],
+        "lastModifiedDate": "2023-10-11T21:21:12.622Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "DLC08 Audience",
+        "unsearchable": true,
+        "useCount": 1
+      },
+      {
+        "ageGatings": {},
+        "categories": [
+          {
+            "path": "public"
+          },
+          {
+            "path": "addons"
+          },
+          {
+            "path": "addons/consumable"
+          }
+        ],
+        "creationDate": "2021-01-04T19:47:56.616Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "DLC02 Audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "1d2492538ac347869627cea90273d0ad",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "1d2492538ac347869627cea90273d0ad",
+        "itemType": "CONSUMABLE",
+        "keyImages": [],
+        "lastModifiedDate": "2021-05-25T03:30:15.164Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "DLC02 Audience",
+        "unsearchable": true,
+        "useCount": 1
+      },
+      {
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2022-10-04T07:32:12.999Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "10000AC Exchange Ticket audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "0825045ac0fc4a18a4f33fb27c975918",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "0825045ac0fc4a18a4f33fb27c975918",
+        "itemType": "CONSUMABLE",
+        "lastModifiedDate": "2022-12-13T19:17:35.865Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "10000AC Exchange Ticket audience",
+        "unsearchable": true,
+        "useCount": 1
+      },
+      {
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2022-06-09T15:58:51.807Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "2200 ET",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "a14082ea52fe4d5dbf137bfd411f03e7",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "a14082ea52fe4d5dbf137bfd411f03e7",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2022-08-31T00:35:56.900Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "2200 ET",
+        "unsearchable": true
+      },
+      {
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2022-10-04T07:30:43.286Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "1000AC Exchange Ticket audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "eda53029cf5b401ca03f1d3a74020a59",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "eda53029cf5b401ca03f1d3a74020a59",
+        "itemType": "CONSUMABLE",
+        "lastModifiedDate": "2022-12-13T19:17:35.871Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "1000AC Exchange Ticket audience",
+        "unsearchable": true,
+        "useCount": 1
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "public"
+          },
+          {
+            "path": "addons"
+          },
+          {
+            "path": "addons/durable"
+          }
+        ],
+        "creationDate": "2021-05-18T11:39:51.798Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "PSO2:NGS SP1 Audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "037d842800d14168a8821a58f725f54f",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "037d842800d14168a8821a58f725f54f",
+        "installModes": [],
+        "itemType": "DURABLE",
+        "keyImages": [],
+        "lastModifiedDate": "2021-05-18T11:39:51.798Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "PSO2:NGS SP1 Audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "categories": [
+          {
+            "path": "public"
+          },
+          {
+            "path": "addons"
+          },
+          {
+            "path": "addons/consumable"
+          }
+        ],
+        "creationDate": "2021-01-04T20:05:56.335Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "DLC18 Audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "46e7cf468d314bf5a8a2b7b5023edf34",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "46e7cf468d314bf5a8a2b7b5023edf34",
+        "itemType": "CONSUMABLE",
+        "keyImages": [],
+        "lastModifiedDate": "2021-05-25T03:30:15.164Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "DLC18 Audience",
+        "unsearchable": true,
+        "useCount": 1
+      },
+      {
+        "ageGatings": {},
+        "categories": [
+          {
+            "path": "public"
+          },
+          {
+            "path": "addons"
+          },
+          {
+            "path": "addons/consumable"
+          }
+        ],
+        "creationDate": "2021-01-04T19:50:08.565Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "DLC05 Audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "be5482031f42489d812a729e77d4394c",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "be5482031f42489d812a729e77d4394c",
+        "itemType": "CONSUMABLE",
+        "keyImages": [],
+        "lastModifiedDate": "2021-05-25T03:30:15.164Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "DLC05 Audience",
+        "unsearchable": true,
+        "useCount": 1
+      },
+      {
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2022-10-04T07:25:41.356Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "PSO2:NGS_CS_Pack_Type1",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "7554c59deae64ae4834aef724e061565",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "7554c59deae64ae4834aef724e061565",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2023-10-11T21:21:12.623Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "PSO2:NGS_CS_Pack_Type1",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "categories": [
+          {
+            "path": "public"
+          },
+          {
+            "path": "addons"
+          },
+          {
+            "path": "addons/durable"
+          }
+        ],
+        "creationDate": "2021-01-04T20:05:31.364Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "DLC16 Audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "10cf8c685fa245ea885ae93408ee5957",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "10cf8c685fa245ea885ae93408ee5957",
+        "itemType": "DURABLE",
+        "keyImages": [],
+        "lastModifiedDate": "2021-05-25T03:30:15.158Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "DLC16 Audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "categories": [
+          {
+            "path": "public"
+          },
+          {
+            "path": "addons"
+          },
+          {
+            "path": "addons/consumable"
+          }
+        ],
+        "creationDate": "2021-01-04T20:05:44.277Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "DLC17 Audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "56ee256d88804d35ae36d9f6fa2da458",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "56ee256d88804d35ae36d9f6fa2da458",
+        "itemType": "CONSUMABLE",
+        "keyImages": [],
+        "lastModifiedDate": "2021-05-25T03:30:15.164Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "DLC17 Audience",
+        "unsearchable": true,
+        "useCount": 1
+      },
+      {
+        "ageGatings": {},
+        "categories": [
+          {
+            "path": "public"
+          },
+          {
+            "path": "addons"
+          },
+          {
+            "path": "addons/consumable"
+          }
+        ],
+        "creationDate": "2021-01-04T19:48:31.177Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "DLC03 Audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "9c5d442eb4de4aad9f074fa92634e677",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "9c5d442eb4de4aad9f074fa92634e677",
+        "itemType": "CONSUMABLE",
+        "keyImages": [],
+        "lastModifiedDate": "2021-05-25T03:30:15.164Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "DLC03 Audience",
+        "unsearchable": true,
+        "useCount": 1
+      },
+      {
+        "ageGatings": {},
+        "categories": [
+          {
+            "path": "public"
+          },
+          {
+            "path": "addons"
+          },
+          {
+            "path": "addons/durable"
+          }
+        ],
+        "creationDate": "2021-01-04T20:05:18.147Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "DLC15 Audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "254e44ff71a6420d95ffeaa9fb529468",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "254e44ff71a6420d95ffeaa9fb529468",
+        "itemType": "DURABLE",
+        "keyImages": [],
+        "lastModifiedDate": "2021-05-25T03:30:15.164Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "DLC15 Audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "categories": [
+          {
+            "path": "public"
+          },
+          {
+            "path": "addons"
+          },
+          {
+            "path": "addons/consumable"
+          }
+        ],
+        "creationDate": "2021-01-04T19:50:58.404Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "DLC09 Audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "392f7dccb5b14d968307defd6c6d696f",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "392f7dccb5b14d968307defd6c6d696f",
+        "itemType": "CONSUMABLE",
+        "keyImages": [],
+        "lastModifiedDate": "2023-10-11T21:21:12.618Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "DLC09 Audience",
+        "unsearchable": true,
+        "useCount": 1
+      },
+      {
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2022-03-28T19:46:00.563Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "PSO2:NGS - SPKP Type 2",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "753d39d40d6847f08ccbddac7d7bf134",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "753d39d40d6847f08ccbddac7d7bf134",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2023-10-11T21:21:12.623Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "PSO2:NGS - SPKP Type 2",
+        "unsearchable": true
+      },
+      {
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2022-03-28T19:45:37.588Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "PSO2:NGS - SPKP Type 1",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "ca854a83de564331bcc2b18b343a080a",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "ca854a83de564331bcc2b18b343a080a",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2023-10-11T21:21:12.628Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "PSO2:NGS - SPKP Type 1",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "public"
+          },
+          {
+            "path": "addons"
+          },
+          {
+            "path": "addons/durable"
+          }
+        ],
+        "creationDate": "2021-05-18T11:39:27.798Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "PSO2:NGS SDRP Audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "85cc27f6b94740efa1d61d6b5ab98857",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "85cc27f6b94740efa1d61d6b5ab98857",
+        "installModes": [],
+        "itemType": "DURABLE",
+        "keyImages": [],
+        "lastModifiedDate": "2021-12-14T22:09:37.197Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "PSO2:NGS SDRP Audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "categories": [
+          {
+            "path": "public"
+          },
+          {
+            "path": "addons"
+          },
+          {
+            "path": "addons/consumable"
+          }
+        ],
+        "creationDate": "2021-01-04T20:02:53.758Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "DLC10 Audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "7a105c5b3bb442d29f72cfc8919995a6",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "7a105c5b3bb442d29f72cfc8919995a6",
+        "itemType": "CONSUMABLE",
+        "keyImages": [],
+        "lastModifiedDate": "2023-10-11T21:21:12.624Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "DLC10 Audience",
+        "unsearchable": true,
+        "useCount": 1
+      },
+      {
+        "ageGatings": {},
+        "categories": [
+          {
+            "path": "public"
+          },
+          {
+            "path": "addons"
+          },
+          {
+            "path": "addons/durable"
+          }
+        ],
+        "creationDate": "2021-01-04T20:04:21.351Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "DLC13 Audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "926f0dc703b140539b7fcc8bb3fb24e3",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "926f0dc703b140539b7fcc8bb3fb24e3",
+        "itemType": "DURABLE",
+        "keyImages": [],
+        "lastModifiedDate": "2021-05-25T03:30:15.164Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "DLC13 Audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "public"
+          },
+          {
+            "path": "addons"
+          },
+          {
+            "path": "addons/consumable"
+          }
+        ],
+        "creationDate": "2022-06-09T15:58:51.679Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "2200 ET audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "ad3b6e1bd5c449c9a46c195616c4e928",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "ad3b6e1bd5c449c9a46c195616c4e928",
+        "itemType": "CONSUMABLE",
+        "lastModifiedDate": "2022-08-31T00:35:56.903Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "2200 ET audience",
+        "unsearchable": true,
+        "useCount": 1
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "public"
+          },
+          {
+            "path": "addons"
+          },
+          {
+            "path": "addons/durable"
+          }
+        ],
+        "creationDate": "2021-10-15T03:40:11.777Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "PSO2:NGS RetemPack_Female",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "2fb90d04373a460589713175a524245a",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "2fb90d04373a460589713175a524245a",
+        "installModes": [],
+        "itemType": "DURABLE",
+        "keyImages": [],
+        "lastModifiedDate": "2023-10-11T21:21:12.616Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "PSO2:NGS RetemPack_Female",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "categories": [
+          {
+            "path": "public"
+          },
+          {
+            "path": "addons"
+          },
+          {
+            "path": "addons/consumable"
+          }
+        ],
+        "creationDate": "2021-01-04T18:46:24.917Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "DLC01 Audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "7e96124b4c214a80a680abb3f4e69a90",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "7e96124b4c214a80a680abb3f4e69a90",
+        "itemType": "CONSUMABLE",
+        "keyImages": [],
+        "lastModifiedDate": "2021-05-25T03:30:15.164Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "DLC01 Audience",
+        "unsearchable": true,
+        "useCount": 1
+      },
+      {
+        "ageGatings": {},
+        "categories": [
+          {
+            "path": "public"
+          },
+          {
+            "path": "addons"
+          },
+          {
+            "path": "addons/durable"
+          }
+        ],
+        "creationDate": "2021-01-04T20:05:03.791Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "DLC14 Audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "ed5ed1c0a06e461db752702720741af4",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "ed5ed1c0a06e461db752702720741af4",
+        "itemType": "DURABLE",
+        "keyImages": [],
+        "lastModifiedDate": "2021-05-25T03:30:15.164Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "DLC14 Audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "categories": [
+          {
+            "path": "public"
+          },
+          {
+            "path": "addons"
+          },
+          {
+            "path": "addons/consumable"
+          }
+        ],
+        "creationDate": "2021-01-04T19:50:21.516Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "DLC06 Audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "3f44471735d64685ad6850fd5545dbb6",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "3f44471735d64685ad6850fd5545dbb6",
+        "itemType": "CONSUMABLE",
+        "keyImages": [],
+        "lastModifiedDate": "2023-10-11T21:21:12.622Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "DLC06 Audience",
+        "unsearchable": true,
+        "useCount": 1
+      },
+      {
+        "ageGatings": {},
+        "categories": [
+          {
+            "path": "public"
+          },
+          {
+            "path": "addons"
+          },
+          {
+            "path": "addons/durable"
+          }
+        ],
+        "creationDate": "2021-01-04T20:06:10.211Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "DLC19 Audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "9d50b2bdd2f849569592b82a59ae76fc",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "9d50b2bdd2f849569592b82a59ae76fc",
+        "itemType": "DURABLE",
+        "keyImages": [],
+        "lastModifiedDate": "2021-05-25T03:30:15.164Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "DLC19 Audience",
+        "unsearchable": true,
+        "useCount": 1
+      },
+      {
+        "ageGatings": {},
+        "categories": [
+          {
+            "path": "public"
+          },
+          {
+            "path": "addons"
+          },
+          {
+            "path": "addons/consumable"
+          }
+        ],
+        "creationDate": "2021-01-04T20:03:07.536Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "DLC11 Audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "c30f63596988425bb93e87b6cc454c89",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "c30f63596988425bb93e87b6cc454c89",
+        "itemType": "CONSUMABLE",
+        "keyImages": [],
+        "lastModifiedDate": "2023-10-11T21:21:12.627Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "DLC11 Audience",
+        "unsearchable": true,
+        "useCount": 1
+      },
+      {
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2022-03-28T19:44:53.964Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "PSO2:NGS - ANagRP",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "b2e5ab1ba5ba4427bd7c63c19f073f22",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "b2e5ab1ba5ba4427bd7c63c19f073f22",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2023-10-11T21:21:12.626Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "PSO2:NGS - ANagRP",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "public"
+          },
+          {
+            "path": "addons"
+          },
+          {
+            "path": "addons/consumable"
+          }
+        ],
+        "creationDate": "2021-07-21T18:01:13.968Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "DLC23 Audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "99b2eff37a4745ce8fb1f409c28c699c",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "99b2eff37a4745ce8fb1f409c28c699c",
+        "installModes": [],
+        "itemType": "CONSUMABLE",
+        "keyImages": [],
+        "lastModifiedDate": "2021-08-19T02:39:24.107Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "DLC23 Audience",
+        "unsearchable": true,
+        "useCount": 1
+      },
+      {
+        "ageGatings": {},
+        "categories": [
+          {
+            "path": "public"
+          },
+          {
+            "path": "addons"
+          },
+          {
+            "path": "addons/consumable"
+          }
+        ],
+        "creationDate": "2021-01-04T20:04:07.421Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "DLC12 Audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "1bf1ee2617c64769aee498ecbc67651b",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "1bf1ee2617c64769aee498ecbc67651b",
+        "itemType": "CONSUMABLE",
+        "keyImages": [],
+        "lastModifiedDate": "2021-05-25T03:30:15.164Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "DLC12 Audience",
+        "unsearchable": true,
+        "useCount": 1
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-01-21T00:57:33.535Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "2200AC Exchange Ticket audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "fd2c793296744f0cbcf7c3b2f5fad796",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "fd2c793296744f0cbcf7c3b2f5fad796",
+        "itemType": "CONSUMABLE",
+        "lastModifiedDate": "2023-10-11T21:21:12.632Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "2200AC Exchange Ticket audience",
+        "unsearchable": true,
+        "useCount": 1
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-02-08T22:33:46.842Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "PSO2 Data",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "3e65c8b6cdc5493e872bce1e0075eec3",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "3e65c8b6cdc5493e872bce1e0075eec3",
+        "itemType": "DURABLE",
+        "keyImages": [
+          {
+            "height": 1440,
+            "md5": "f02470e73ffe7d974e85097d3441addf",
+            "size": 1005897,
+            "type": "DieselGameBox",
+            "uploadedDate": "2023-06-14T21:03:45.418Z",
+            "url": "https://cdn1.epicgames.com/item/bf333e6236914222a95a536389c05813/wide_2560x1440-f02470e73ffe7d974e85097d3441addf",
+            "width": 2560
+          },
+          {
+            "height": 1600,
+            "md5": "0ca56e2ee5690a524e2adb322d0538b7",
+            "size": 966194,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2023-06-14T21:03:48.507Z",
+            "url": "https://cdn1.epicgames.com/item/bf333e6236914222a95a536389c05813/tall_1200x1600-0ca56e2ee5690a524e2adb322d0538b7",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2023-06-14T21:03:50.680Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "releaseInfo": [
+          {
+            "appId": "b1c2080a74ab4626b0e721798ee58f41",
+            "id": "0525b0687c554b93b43cb513045a4acc",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "PSO2 Data",
+        "unsearchable": true
+      },
+      {
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-03-21T13:59:31.335Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "PSO2:NGSSonicCollab",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "ac19f0d1d8f145ee882fd0c398843623",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "ac19f0d1d8f145ee882fd0c398843623",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2023-10-11T21:21:12.626Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "PSO2:NGSSonicCollab",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-02-08T22:36:45.106Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          },
+          "FolderName": {
+            "type": "STRING",
+            "value": "PSO2Data"
+          }
+        },
+        "description": "PSO2 Data",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "00cff6789ec24c118d997def812bce9f",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "00cff6789ec24c118d997def812bce9f",
+        "itemType": "DURABLE",
+        "keyImages": [
+          {
+            "height": 1440,
+            "md5": "f02470e73ffe7d974e85097d3441addf",
+            "size": 1005897,
+            "type": "DieselGameBox",
+            "uploadedDate": "2023-06-09T01:35:19.756Z",
+            "url": "https://cdn1.epicgames.com/item/bf333e6236914222a95a536389c05813/wide_2560x1440-f02470e73ffe7d974e85097d3441addf",
+            "width": 2560
+          },
+          {
+            "height": 1600,
+            "md5": "0ca56e2ee5690a524e2adb322d0538b7",
+            "size": 966194,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2023-06-09T01:35:22.449Z",
+            "url": "https://cdn1.epicgames.com/item/bf333e6236914222a95a536389c05813/EGS_PSO2Data_SEGA_DLC_S2_1200x1600-0ca56e2ee5690a524e2adb322d0538b7_1200x1600-0ca56e2ee5690a524e2adb322d0538b7",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2023-06-09T17:13:33.121Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "releaseInfo": [
+          {
+            "appId": "e5f9253ba212421c8a23cc1a60d392e9",
+            "id": "33e2f13c751947e2991c624792c27555",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "PSO2 Data - Staging",
+        "unsearchable": true
+      },
+      {
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-07-18T09:31:44.713Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "[Black Friday] 2200AC Exchange Ticket audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "b8ba5ae26ad14326af336e940dfdcea1",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "b8ba5ae26ad14326af336e940dfdcea1",
+        "itemType": "CONSUMABLE",
+        "lastModifiedDate": "2023-11-22T05:37:18.805Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "[Black Friday] 2200AC Exchange Ticket audience",
+        "unsearchable": true,
+        "useCount": 1
+      },
+      {
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-12-01T17:11:36.198Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "[SS'24]2200AC Exchange Ticket audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "931dd075ce0140fe83a6ee572ac8f2d8",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "931dd075ce0140fe83a6ee572ac8f2d8",
+        "itemType": "CONSUMABLE",
+        "lastModifiedDate": "2024-02-05T20:42:30.657Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "[SS'24]2200AC Exchange Ticket audience",
+        "unsearchable": true,
+        "useCount": 1
+      },
+      {
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-12-22T13:26:32.093Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "[SPRING'24] 2200AC Exchange Ticket audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "b9e43307b9424a06bdcdb8bc29b2e4b3",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "b9e43307b9424a06bdcdb8bc29b2e4b3",
+        "itemType": "CONSUMABLE",
+        "lastModifiedDate": "2024-04-09T16:11:27.171Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "[SPRING'24] 2200AC Exchange Ticket audience",
+        "unsearchable": true,
+        "useCount": 1
+      },
+      {
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2024-02-01T17:13:28.913Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "2200AC",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "067ae5685f0346f3a8cfe552835a9166",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "067ae5685f0346f3a8cfe552835a9166",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-06-25T20:55:39.860Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "2200AC",
+        "unsearchable": true
+      },
+      {
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2024-05-30T13:03:07.161Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "[BLACK FRIDAY'24] 2200AC Exchange Ticket audience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "61537e062e3c4ca8a77d8077cf3b8a59",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "61537e062e3c4ca8a77d8077cf3b8a59",
+        "itemType": "CONSUMABLE",
+        "lastModifiedDate": "2024-10-30T03:01:39.789Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "[BLACK FRIDAY'24] 2200AC Exchange Ticket audience",
+        "unsearchable": true,
+        "useCount": 1
+      },
+      {
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2025-01-22T01:33:44.156Z",
+        "description": "[Super Origin Festival'25] 2200AC Exchange Ticket_ConsumableAudience",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "7f6a8fed43334fa5b663ff5a80b9a267",
+        "entitlementType": "AUDIENCE",
+        "id": "7f6a8fed43334fa5b663ff5a80b9a267",
+        "itemType": "CONSUMABLE",
+        "lastModifiedDate": "2025-03-05T02:00:29.237Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "[Super Origin Festival'25] 2200AC Exchange Ticket_ConsumableAudience",
+        "unsearchable": false,
+        "useCount": 1
+      }
+    ],
+    "endOfSupport": false,
+    "entitlementName": "1f091643abf5463aab58d9ed807da700",
+    "entitlementType": "EXECUTABLE",
+    "eulaIds": [
+      "egstore"
+    ],
+    "id": "1f091643abf5463aab58d9ed807da700",
+    "itemType": "DURABLE",
+    "keyImages": [
+      {
+        "alt": "Phantasy Star Online 2 Offer",
+        "height": 1440,
+        "md5": "52a5811f2e1e253895a9d4b863f96117",
+        "size": 1021313,
+        "type": "DieselGameBox",
+        "uploadedDate": "2025-01-08T10:01:17.576Z",
+        "url": "https://cdn1.epicgames.com/spt-assets/10c145e8c86440f1b8a90ae7ff33d613/phantasy-star-online-2-1k91m.jpg",
+        "width": 2560
+      },
+      {
+        "alt": "Download Phantasy Star Online 2 Offer",
+        "height": 1600,
+        "md5": "f0c0899d16891ceab8be856b7920adb5",
+        "size": 973574,
+        "type": "DieselGameBoxTall",
+        "uploadedDate": "2025-02-21T07:03:36.513Z",
+        "url": "https://cdn1.epicgames.com/spt-assets/10c145e8c86440f1b8a90ae7ff33d613/phantasy-star-online-2-1oqke.jpg",
+        "width": 1200
+      }
+    ],
+    "lastModifiedDate": "2025-03-05T02:00:29.237Z",
+    "mainGameItemList": [],
+    "namespace": "bf333e6236914222a95a536389c05813",
+    "releaseInfo": [
+      {
+        "appId": "6c227b0fac70445aae645f0d601dc5d2",
+        "id": "0d79d2ca001b48b4961f7105ce90306b",
+        "platform": [
+          "Windows"
+        ]
+      }
+    ],
+    "status": "ACTIVE",
+    "title": "Phantasy Star Online 2",
+    "unsearchable": true
+  },
+  "sidecar": null
+}

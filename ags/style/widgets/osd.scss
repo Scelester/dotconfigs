@@ -50,4 +50,9 @@ window.indicator {
         font-size: 58px;
         color: transparentize($fg, .1)
     }
+    .unplugged{
+        @include floating-widget;
+        font-size: 280px;
+        background-color: black;
+    }
 }

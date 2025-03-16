@@ -1,0 +1,3 @@
+#!/usr/bin/sh
+
+firefox -profile /home/scelester/.mozilla/firefox/profile-01JJX7D5MFP8HJP4Z8G99YQQPY/

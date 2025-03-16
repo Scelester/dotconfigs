@@ -1,11 +1,119 @@
 {
 	"file_history":
 	[
-		"/home/scelester/stacked_output.mp4",
-		"/home/scelester/Desktop/Marvel Rivals.desktop",
-		"/home/scelester/.config/hypr/settings/autostart.conf",
+		"/home/scelester/batterisworkign.txt",
+		"/home/scelester/test.txt",
 		"/home/scelester/.config/hypr/settings/env.conf",
 		"/home/scelester/.config/hypr/hyprland.conf",
+		"/home/scelester/Container/Testspace/testing_acpid.sh",
+		"/home/scelester/nohup.out",
+		"/home/scelester/MyScripts/battery_saver_mode.sh",
+		"/home/scelester/log.txrt",
+		"/home/scelester/.config/hypr/settings/window_rule.conf",
+		"/home/scelester/.config/hypr/settings/keybindings.conf",
+		"/home/scelester/Downloads/app.css",
+		"/home/scelester/.config/hypr/hypridle.conf",
+		"/home/scelester/ProjectD/mysql_to_psql/QuickScript.py",
+		"/home/scelester/ProjectD/mysql_to_psql/anweshan_livedb.sql",
+		"/home/scelester/mysql2postgres/bin/mysqltopostgres",
+		"/home/scelester/ProjectD/mysql_to_psql/anweshan_livedb_processed.sql",
+		"/home/scelester/ProjectD/mysql_to_psql/anweshan_live_postgres.sql",
+		"/home/scelester/ProjectD/mysql_to_psql/anweshan_livedb_modified.sql",
+		"/home/scelester/ProjectD/mysql_to_psql/anweshan_schema_psql.sql",
+		"/home/scelester/ProjectD/mysql_to_psql/anweshan_livedb_psql.sql",
+		"/home/scelester/Container/ProjectD/mysql_to_psql/anweshan_livedb.sql",
+		"/home/scelester/Container/ProjectD/mysql_to_psql/edited_anweshan_livedb.sql",
+		"/home/scelester/Container/ProjectD/mysql_to_psql/pgloader/migration.load",
+		"/home/scelester/Container/ProjectD/mysql_to_psql/pgloader/entrypoint.sh",
+		"/home/scelester/Container/ProjectD/mysql_to_psql/docker-compose.yml",
+		"/home/scelester/Container/ProjectD/mysql_to_psql/pgloader/Dockerfile",
+		"/home/scelester/Container/ProjectD/mysql_to_psql/patch.lisp",
+		"/home/scelester/Container/ProjectD/mysql_to_psql/output/postgres.sql",
+		"/home/scelester/anweshan_livedb.sql",
+		"/home/scelester/Container/ProjectD/mysql_to_psql/combined_output.txt",
+		"/home/scelester/Container/ProjectD/mysql_to_psql/entrypoint.sh",
+		"/home/scelester/ProjectD/mysql_to_psql/Dockerfile",
+		"/home/scelester/ProjectD/mysql_to_psql/entrypoint.sh",
+		"/home/scelester/Container/ProjectD/mysql_to_psql/Docker",
+		"/home/scelester/entrypoint.sh",
+		"/home/scelester/Dockerfile",
+		"/home/scelester/.config/sublime-text/Packages/Default/Preferences.sublime-settings",
+		"/home/scelester/.config/sublime-text/Packages/User/Preferences.sublime-settings",
+		"/home/scelester/mysql_dump.sql",
+		"/home/scelester/localhost.sql",
+		"/home/scelester/.config/hypr/settings/mouse_and_keyboards.conf",
+		"/home/scelester/.steam/steam/steamapps/common/Counter-Strike Global Offensive/game/cs2.sh",
+		"/home/scelester/gg.txt",
+		"/home/scelester/.config/mpd/mpd.conf",
+		"/home/scelester/MyScripts/SPYT.sh",
+		"/home/scelester/.config/hypr/settings/autostart.conf",
+		"/home/scelester/.config/hypr/settings/asus_specific_bindings.conf",
+		"/home/scelester/chatgpt this",
+		"/home/scelester/.zshrc",
+		"/home/scelester/Downloads/android-studio/bin/studio.sh",
+		"/home/scelester/Downloads/android-studio/Install-Linux-tar.txt",
+		"/home/scelester/updateprofile",
+		"/home/scelester/MyScripts/ffanwesan",
+		"/home/scelester/.profile",
+		"/home/scelester/ProjectD/School_on_laravel/saraswoti_school/resources/lang/en/general.php",
+		"/home/scelester/ProjectD/School_on_laravel/saraswoti_school/resources/lang/ne/general.php",
+		"/tmp/fz3temp-2/general.php",
+		"/home/scelester/ProjectD/School_on_laravel/saraswoti_school/resources/views/home.blade.php",
+		"/home/scelester/dbname.sql",
+		"/home/scelester/database.sql",
+		"/home/scelester/index.html",
+		"/tmp/fz3temp-2/.env",
+		"/tmp/fz3temp-2/index.php",
+		"/home/scelester/schema.md",
+		"/home/scelester/Desktop/Testspace/cashap/ajshsjsje@outlook.com/leidian.config",
+		"/home/scelester/Downloads/ajshsjsje@outlook.com/leidian.config",
+		"/home/scelester/.local/share/Steam/steamapps/common/Counter-Strike Global Offensive/game/cs2.sh",
+		"/home/scelester/.config/hypr/scripts/custom_autostarts/104_share_picker_fix",
+		"/home/scelester/.config/hypr/scripts/toggle_touchpad.sh",
+		"/home/scelester/.config/hypr/scripts/isDontSleepOnAudio",
+		"/home/scelester/MyScripts/mount_window_drive",
+		"/home/scelester/MyScripts/legalize_non_sleepmode",
+		"/home/scelester/MyScripts/battery_warrning",
+		"/home/scelester/MyScripts/nightlight",
+		"/home/scelester/MyScripts/ffa",
+		"/home/scelester/MyScripts/database_accesser.sh",
+		"/home/scelester/ProjectD/School_on_laravel/saraswoti_school/resources/views/contact.blade.php",
+		"/home/scelester/Downloads/Nabin_Paudel_Resume.txt",
+		"/home/scelester/Desktop/Testspace/holyfinder/gofa/phoneinfoga-maltego/README.md",
+		"/home/scelester/Games/Among.Us.v2024.3.5i/README.txt",
+		"/home/scelester/Games/Among.Us.v2024.3.5i/_INSTALL TUTORIAL.txt",
+		"/home/scelester/Games/Among.Us.v2024.3.5i/Free Premium Accounts at OfficialMrB.com.txt",
+		"/home/scelester/log.plymouth",
+		"/usr/share/plymouth/themes/archcraft/archcraft.script",
+		"/home/scelester/output.txt",
+		"/usr/share/plymouth/themes/archcraft/archcraft.plymouth",
+		"/usr/share/plymouth/themes/script/script.script",
+		"/usr/share/plymouth/themes/script/script.plymouth",
+		"/home/scelester/Desktop/Testspace",
+		"/home/scelester/Downloads/postgresql-16.6/INSTALL",
+		"/home/scelester/Downloads/postgresql-16.6/README",
+		"/home/scelester/Container/.gamez/Milfy.City.Final.Edition/Milfy.City.Final.Edition.v1.0d/game/patch.rpy",
+		"/tmp/xa-NI3P02/patch.rpy",
+		"/home/scelester/ProjectD/Link_to_prince_lab.txt",
+		"/home/scelester/Downloads/impresstemplate/fedora-slideshow/README.md",
+		"/home/scelester/Downloads/impresstemplate/fedora-slideshow/project_license.txt",
+		"/home/scelester/Container/.gamez/Milfy.City.Final.Edition/Milfy.City.Final.Edition.v1.0d/MilfyCity.sh",
+		"/home/scelester/Container/.gamez/Milfy.City.Final.Edition/Free Premium Accounts at OfficialMrB.com.txt",
+		"/home/scelester/.local/share/DaVinciResolve/logs/ResolveDebug.txt",
+		"/home/scelester/.local/share/DaVinciResolve/logs/resolve_graphics_log.txt",
+		"/home/scelester/dasfdsa",
+		"/home/scelester/Container/.torent/Bulma Adventure 4/Bulma Adventure 4/Fap For Fun - Read me.txt",
+		"/usr/lib/dri/nvidia_drv_video.so",
+		"/home/scelester/Downloads/patch.txt",
+		"/home/scelester/.archlinux.draft.txt",
+		"/home/scelester/Container/.gamez/HeartProblems/www.newgamesbox.com/README.txt",
+		"/home/scelester/Container/.gamez/IndecentWifeHana/www.newgamesbox.com/Indecent Wife Hana/IWH-Beta.sh",
+		"/home/scelester/untitled",
+		"/home/scelester/.config/gamemode.ini",
+		"/home/scelester/.config/gamemode.ini.off",
+		"/home/scelester/Desktop/test.rs",
+		"/home/scelester/stacked_output.mp4",
+		"/home/scelester/Desktop/Marvel Rivals.desktop",
 		"/home/scelester/.config/code-flags.conf",
 		"/home/scelester/.config/electron31-flags.conf",
 		"/home/scelester/.config/electron23-flags.conf",
@@ -15,124 +123,19 @@
 		"/home/scelester/ProjectD/EbookHub/Web/README.md",
 		"/home/scelester/ProjectD/EbookHub/Web/Frontend/ebookhub/src/services/apiService.ts",
 		"/home/scelester/Desktop/console-export-2024-12-17_20-17-38.txt",
-		"/home/scelester/MyScripts/battery_saver_mode.sh",
-		"/home/scelester/MyScripts/nightlight",
 		"/home/scelester/Downloads/LINK TO MILESTONE -2 VIDEO.txt",
 		"/home/scelester/.config/libinput-gestures.conf",
 		"/home/scelester/ProjectD/Learn Rust/Cargo.toml",
 		"/home/scelester/ProjectD/Learn Rust/Cargo.lock",
 		"/home/scelester/Container/ProjectD/Learn Rust/Introduction/Getting started/About/Cargo.toml",
-		"/home/scelester/Container/ProjectD/Learn Rust/Introduction/Getting started/Editor/Cargo.toml",
-		"/home/scelester/Container/ProjectD/Learn Rust/Cargo.toml",
-		"/home/scelester/Container/test.txt",
-		"/home/scelester/Downloads/message(3).txt",
-		"/home/scelester/Downloads/message(2).txt",
-		"/home/scelester/Downloads/message(1).txt",
-		"/home/scelester/Downloads/message.txt",
-		"/home/scelester/Downloads/cart.txt",
-		"/home/scelester/Test.html",
-		"/home/scelester/ProjectD/NPT/README.md",
-		"/home/scelester/Downloads/NVIDIA-Linux-x86_64-470.42.01.run",
-		"/home/scelester/.mozilla/firefox/dptbbxjy.Main-1716277206183/user.js",
-		"/home/scelester/Documents/user.js",
-		"/home/scelester/explicit_filter.restore",
-		"/tmp/xa-L1J3U2/README.md",
-		"/tmp/xa-R2TUU2/README.md",
-		"/home/scelester/Downloads/hermes_NPL_new_wgs/license.txt",
-		"/home/scelester/.config/hypr/settings/keybindings.conf",
-		"/home/scelester/.config/hypr/settings/asus_specific_bindings.conf",
-		"/tmp/xa-OXNMU2/Readme.txt",
-		"/home/scelester/ProjectD/Thesised_Graphs/Data and docs/2/url",
-		"/usr/share/applications/mimeinfo.cache",
-		"/usr/share/applications/code.desktop",
-		"/home/scelester/.config/hypr/shaders/true_vibrance.glsl",
-		"/home/scelester/.zshrc",
-		"/home/scelester/.zshenv",
-		"/home/scelester/MyScripts/random_cowsay.sh",
-		"/home/scelester/.config/sublime-text/Packages/Theme - Dark Material/Dark-Material.sublime-theme",
-		"/home/scelester/.config/sublime-text/Packages/User/Dark-Material.sublime-theme",
-		"/home/scelester/.config/sublime-text/Packages/User/Default (Linux).sublime-keymap",
-		"/home/scelester/.config/sublime-text/Packages/Default/Default (Linux).sublime-keymap",
-		"/home/scelester/.config/hypr/scripts/toggle_shaders",
-		"/home/scelester/.config/hypr/shaders/blur.glsl",
-		"/home/scelester/.config/hypr/shaders/posterize.glsl",
-		"/home/scelester/.config/hypr/shaders/brightness_contrast.glsl",
-		"/home/scelester/.config/hypr/shaders/sepia.glsl",
-		"/home/scelester/.config/hypr/shaders/grayscale.glsl",
-		"/home/scelester/.config/hypr/shaders/invert-colors.glsl",
-		"/home/scelester/.config/hypr/shaders/true_vibrance.gls",
-		"/home/scelester/MyScripts/.config",
-		"/etc/sioyek/prefs.config",
-		"/home/scelester/.config/sioyek/prefs_user.config",
-		"/home/scelester/Downloads/JXFOr194.html",
-		"/home/scelester/nohup.out",
-		"/home/scelester/.icons/default/index.theme",
-		"/home/scelester/MyScripts/battery_warrning",
-		"/home/scelester/.config/KADOKAWA/RPGMV/Local State",
-		"/home/scelester/.config/KADOKAWA/RPGMV/DefaultTGOfile1.rpgsave",
-		"/home/scelester/.config/KADOKAWA/RPGMV/First Run",
-		"/home/scelester/yoyo/urls.csv",
-		"/home/scelester/yoyo/chrome_History",
-		"/home/scelester/.amplify/amplify-configuration.json",
-		"/home/scelester/Downloads/MilanProject/Sliding-Sign-In-Sign-Up-Form-master/index.html",
-		"/home/scelester/Downloads/MilanProject/Sliding-Sign-In-Sign-Up-Form-master/app.js",
-		"/home/scelester/Downloads/MilanProject/Sliding-Sign-In-Sign-Up-Form-master/style.css",
-		"/tmp/xa-KM12R2/index.html",
-		"/tmp/xa-2L4LR2/index.html",
-		"/home/scelester/ProjectD/aws_python_weboro_widget/README.md",
-		"/tmp/xa-IPUZR2/LICENSE.chromedriver",
-		"/home/scelester/.bash_history",
-		"/home/scelester/.gamez/The_Genesis_Order_-_Linux-v1.02/natives_blob.bin",
-		"/home/scelester/.gamez/The_Genesis_Order_-_Linux-v1.02/launcher.sh",
-		"/home/scelester/.mozilla/firefox/profiles.ini",
-		"/home/scelester/.mozilla/firefox/installs.ini",
-		"/home/scelester/MyScripts/database_accesser.sh",
-		"/home/scelester/.config/jgit/config",
-		"/home/scelester/.config/knfsshare",
-		"/home/scelester/.config/.gitignore",
-		"/home/scelester/.config/mimeapps.list",
-		"/home/scelester/.config/user-dirs.dirs",
-		"/home/scelester/MyScripts/StartupStates/why.txt",
-		"/home/scelester/Downloads/churchill.html",
-		"/home/scelester/.zsh_history",
-		"/home/scelester/.var/app/org.libreoffice.LibreOffice/config/libreoffice/4/user/GraphicsRenderTests.log",
-		"/usr/lib/systemd/system/wpa_supplicant.service",
-		"/home/scelester/.phoronix-test-suite/phoronix-test-suite-dependencies.log",
-		"/home/scelester/Downloads/IT infra Network(3).drawio",
-		"/home/scelester/Downloads/S0950584915000282.txt",
-		"/home/scelester/Downloads/S0957417402000155(1).bib",
-		"/home/scelester/Downloads/S0957417402000155.txt",
-		"/home/scelester/Downloads/S0957417402000155.bib",
-		"/home/scelester/Documents/zoho",
-		"/home/scelester/.Xdefaults",
-		"/home/scelester/.config/firefoxprofileswitcher/config.json",
-		"/home/scelester/.config/firefoxprofileswitcher/profile-options.json",
-		"/home/scelester/Desktop/omni/chrome/toolkit/skin/classic/global/wizard.css",
-		"/home/scelester/.bashrc",
-		"/home/scelester/.profile",
-		"/home/scelester/rem_chapters.txt",
-		"/home/scelester/ProjectD/fetcher/STORAGE/NSHBA/NSHBA_chapterlist.txt",
-		"/home/scelester/ProjectD/fetcher/NSHBA_chapterlist.txt",
-		"/home/scelester/Downloads/chapterLinks new.txt",
-		"/home/scelester/Downloads/chapterLinks new(2).txt",
-		"/home/scelester/Downloads/chapterLinks new(1).txt",
-		"/home/scelester/ProjectD/fetcher/js note.js",
-		"/home/scelester/text.js",
-		"/home/scelester/Desktop/test.txt",
-		"/home/scelester/.games/SummertimeSaga-0-20-16-pc/SummertimeSaga.sh",
-		"/home/scelester/Downloads/03bc17944a36f44d1355.txt",
-		"/home/scelester/.config/ags/lib/hyprland.ts",
-		"/home/scelester/Desktop/leed.html",
-		"/home/scelester/.config/Gmail Desktop/custom.css",
-		"/home/scelester/Desktop/dot/rofi/powermenu/type-2/style-3.rasi",
-		"/home/scelester/MyScripts/StartupStates/nightlight",
-		"/home/scelester/Desktop/dot/xsettingsd/xsettingsd.conf",
-		"/usr/share/sddm/themes/Utterly-Nord/theme.conf",
-		"/usr/share/sddm/themes/Utterly-Nord/Main.qml"
+		"/home/scelester/Container/ProjectD/Learn Rust/Introduction/Getting started/Editor/Cargo.toml"
 	],
 	"folder_history":
 	[
 		"/home/scelester/.config/hypr",
+		"/home/scelester/Container/ProjectD/mysql_to_psql",
+		"/home/scelester/ProjectD/mysql_to_psql",
+		"/home/scelester/Container/Testspace/gamescope_builder",
 		"/home/scelester/.config",
 		"/home/scelester/ProjectD/aws_python_weboro_widget",
 		"/home/scelester/Desktop/crackgen",
@@ -146,14 +149,14 @@
 		"/home/scelester/.config/eww",
 		"/home/scelester/Desktop"
 	],
-	"last_version": 4189,
-	"last_window_id": 18,
+	"last_version": 4192,
+	"last_window_id": 23,
 	"log_indexing": false,
-	"next_update_check": 1736239352,
+	"next_update_check": 1742208362,
 	"settings":
 	{
 		"new_window_full_screen": false,
-		"new_window_height": 522.0,
+		"new_window_height": 1080.0,
 		"new_window_maximized": true,
 		"new_window_position":
 		[
@@ -166,6 +169,14 @@
 			{
 				"selected_items":
 				[
+					[
+						"admin",
+						"adminRole"
+					],
+					[
+						"print",
+						"println\tprintln!(…)"
+					],
 					[
 						"nav",
 						"nav-folder"
@@ -227,6 +238,82 @@
 				"selected_items":
 				[
 					[
+						"ren",
+						"File: Rename File"
+					],
+					[
+						"folder",
+						"Project: Add Folder"
+					],
+					[
+						"ter",
+						"Terminal: Open"
+					],
+					[
+						"open terminl",
+						"Terminal: Open"
+					],
+					[
+						"termina",
+						"Terminal: Open in project folder"
+					],
+					[
+						"OPEN TERM",
+						"Terminal: Open in project folder"
+					],
+					[
+						"terminali",
+						"Terminal: Open in project folder"
+					],
+					[
+						"instal",
+						"Package Control: Install Package"
+					],
+					[
+						"rename",
+						"File: Rename File"
+					],
+					[
+						"theme",
+						"UI: Select Theme"
+					],
+					[
+						"instl",
+						"Package Control: Install Package"
+					],
+					[
+						"INSTALL",
+						"Package Control: Install Package"
+					],
+					[
+						"THEME",
+						"UI: Select Theme"
+					],
+					[
+						"terminalview",
+						"Terminal View: Open Bash Terminal"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"package",
+						"Package Control: Add Repository"
+					],
+					[
+						"term",
+						"Terminal: Open"
+					],
+					[
+						"snippe",
+						"Snippet: Some(…)"
+					],
+					[
+						"terminal ",
+						"Terminal: Open"
+					],
+					[
 						"dist",
 						"View: Toggle Distraction Free"
 					],
@@ -243,20 +330,12 @@
 						"UI: Select Color Scheme"
 					],
 					[
-						"theme",
-						"UI: Select Theme"
-					],
-					[
 						"them",
 						"UI: Select Theme"
 					],
 					[
 						"font",
 						"Set Syntax: Font"
-					],
-					[
-						"install",
-						"Package Control: Install Package"
 					],
 					[
 						"keyb",
@@ -271,19 +350,7 @@
 						"UI: Customize Theme"
 					],
 					[
-						"ter",
-						"Terminal: Open"
-					],
-					[
-						"term",
-						"Terminal: Open"
-					],
-					[
 						"renm",
-						"Rename File"
-					],
-					[
-						"ren",
 						"Rename File"
 					],
 					[
@@ -315,7 +382,7 @@
 			},
 			"console":
 			{
-				"height": 144.0,
+				"height": 168.0,
 				"history":
 				[
 				]
@@ -331,11 +398,115 @@
 			},
 			"file_history":
 			[
-				"/home/scelester/stacked_output.mp4",
-				"/home/scelester/Desktop/Marvel Rivals.desktop",
-				"/home/scelester/.config/hypr/settings/autostart.conf",
+				"/home/scelester/batterisworkign.txt",
+				"/home/scelester/test.txt",
 				"/home/scelester/.config/hypr/settings/env.conf",
 				"/home/scelester/.config/hypr/hyprland.conf",
+				"/home/scelester/Container/Testspace/testing_acpid.sh",
+				"/home/scelester/nohup.out",
+				"/home/scelester/MyScripts/battery_saver_mode.sh",
+				"/home/scelester/log.txrt",
+				"/home/scelester/.config/hypr/settings/window_rule.conf",
+				"/home/scelester/.config/hypr/settings/keybindings.conf",
+				"/home/scelester/Downloads/app.css",
+				"/home/scelester/.config/hypr/hypridle.conf",
+				"/home/scelester/ProjectD/mysql_to_psql/QuickScript.py",
+				"/home/scelester/ProjectD/mysql_to_psql/anweshan_livedb.sql",
+				"/home/scelester/mysql2postgres/bin/mysqltopostgres",
+				"/home/scelester/ProjectD/mysql_to_psql/anweshan_livedb_processed.sql",
+				"/home/scelester/ProjectD/mysql_to_psql/anweshan_live_postgres.sql",
+				"/home/scelester/ProjectD/mysql_to_psql/anweshan_livedb_modified.sql",
+				"/home/scelester/ProjectD/mysql_to_psql/anweshan_schema_psql.sql",
+				"/home/scelester/ProjectD/mysql_to_psql/anweshan_livedb_psql.sql",
+				"/home/scelester/Container/ProjectD/mysql_to_psql/anweshan_livedb.sql",
+				"/home/scelester/Container/ProjectD/mysql_to_psql/edited_anweshan_livedb.sql",
+				"/home/scelester/Container/ProjectD/mysql_to_psql/pgloader/migration.load",
+				"/home/scelester/Container/ProjectD/mysql_to_psql/pgloader/entrypoint.sh",
+				"/home/scelester/Container/ProjectD/mysql_to_psql/docker-compose.yml",
+				"/home/scelester/Container/ProjectD/mysql_to_psql/pgloader/Dockerfile",
+				"/home/scelester/Container/ProjectD/mysql_to_psql/patch.lisp",
+				"/home/scelester/Container/ProjectD/mysql_to_psql/output/postgres.sql",
+				"/home/scelester/anweshan_livedb.sql",
+				"/home/scelester/Container/ProjectD/mysql_to_psql/combined_output.txt",
+				"/home/scelester/Container/ProjectD/mysql_to_psql/entrypoint.sh",
+				"/home/scelester/Container/ProjectD/mysql_to_psql/Docker",
+				"/home/scelester/entrypoint.sh",
+				"/home/scelester/Dockerfile",
+				"/home/scelester/mysql_dump.sql",
+				"/home/scelester/localhost.sql",
+				"/home/scelester/.config/hypr/settings/mouse_and_keyboards.conf",
+				"/home/scelester/.steam/steam/steamapps/common/Counter-Strike Global Offensive/game/cs2.sh",
+				"/home/scelester/gg.txt",
+				"/home/scelester/.config/mpd/mpd.conf",
+				"/home/scelester/MyScripts/SPYT.sh",
+				"/home/scelester/.config/hypr/settings/autostart.conf",
+				"/home/scelester/.config/hypr/settings/asus_specific_bindings.conf",
+				"/home/scelester/chatgpt this",
+				"/home/scelester/.zshrc",
+				"/home/scelester/Downloads/android-studio/bin/studio.sh",
+				"/home/scelester/Downloads/android-studio/Install-Linux-tar.txt",
+				"/home/scelester/updateprofile",
+				"/home/scelester/MyScripts/ffanwesan",
+				"/home/scelester/.profile",
+				"/home/scelester/ProjectD/School_on_laravel/saraswoti_school/resources/lang/en/general.php",
+				"/home/scelester/ProjectD/School_on_laravel/saraswoti_school/resources/lang/ne/general.php",
+				"/tmp/fz3temp-2/general.php",
+				"/home/scelester/ProjectD/School_on_laravel/saraswoti_school/resources/views/home.blade.php",
+				"/home/scelester/dbname.sql",
+				"/home/scelester/database.sql",
+				"/home/scelester/index.html",
+				"/tmp/fz3temp-2/.env",
+				"/tmp/fz3temp-2/index.php",
+				"/home/scelester/schema.md",
+				"/home/scelester/Desktop/Testspace/cashap/ajshsjsje@outlook.com/leidian.config",
+				"/home/scelester/Downloads/ajshsjsje@outlook.com/leidian.config",
+				"/home/scelester/.local/share/Steam/steamapps/common/Counter-Strike Global Offensive/game/cs2.sh",
+				"/home/scelester/.config/hypr/scripts/custom_autostarts/104_share_picker_fix",
+				"/home/scelester/.config/hypr/scripts/toggle_touchpad.sh",
+				"/home/scelester/.config/hypr/scripts/isDontSleepOnAudio",
+				"/home/scelester/MyScripts/mount_window_drive",
+				"/home/scelester/MyScripts/legalize_non_sleepmode",
+				"/home/scelester/MyScripts/battery_warrning",
+				"/home/scelester/MyScripts/nightlight",
+				"/home/scelester/MyScripts/ffa",
+				"/home/scelester/MyScripts/database_accesser.sh",
+				"/home/scelester/ProjectD/School_on_laravel/saraswoti_school/resources/views/contact.blade.php",
+				"/home/scelester/Downloads/Nabin_Paudel_Resume.txt",
+				"/home/scelester/Desktop/Testspace/holyfinder/gofa/phoneinfoga-maltego/README.md",
+				"/home/scelester/Games/Among.Us.v2024.3.5i/README.txt",
+				"/home/scelester/Games/Among.Us.v2024.3.5i/_INSTALL TUTORIAL.txt",
+				"/home/scelester/Games/Among.Us.v2024.3.5i/Free Premium Accounts at OfficialMrB.com.txt",
+				"/home/scelester/log.plymouth",
+				"/usr/share/plymouth/themes/archcraft/archcraft.script",
+				"/home/scelester/output.txt",
+				"/usr/share/plymouth/themes/archcraft/archcraft.plymouth",
+				"/usr/share/plymouth/themes/script/script.script",
+				"/usr/share/plymouth/themes/script/script.plymouth",
+				"/home/scelester/Desktop/Testspace",
+				"/home/scelester/Downloads/postgresql-16.6/INSTALL",
+				"/home/scelester/Downloads/postgresql-16.6/README",
+				"/home/scelester/Container/.gamez/Milfy.City.Final.Edition/Milfy.City.Final.Edition.v1.0d/game/patch.rpy",
+				"/tmp/xa-NI3P02/patch.rpy",
+				"/home/scelester/ProjectD/Link_to_prince_lab.txt",
+				"/home/scelester/Downloads/impresstemplate/fedora-slideshow/README.md",
+				"/home/scelester/Downloads/impresstemplate/fedora-slideshow/project_license.txt",
+				"/home/scelester/Container/.gamez/Milfy.City.Final.Edition/Milfy.City.Final.Edition.v1.0d/MilfyCity.sh",
+				"/home/scelester/Container/.gamez/Milfy.City.Final.Edition/Free Premium Accounts at OfficialMrB.com.txt",
+				"/home/scelester/.local/share/DaVinciResolve/logs/ResolveDebug.txt",
+				"/home/scelester/.local/share/DaVinciResolve/logs/resolve_graphics_log.txt",
+				"/home/scelester/dasfdsa",
+				"/home/scelester/Container/.torent/Bulma Adventure 4/Bulma Adventure 4/Fap For Fun - Read me.txt",
+				"/usr/lib/dri/nvidia_drv_video.so",
+				"/home/scelester/Downloads/patch.txt",
+				"/home/scelester/.archlinux.draft.txt",
+				"/home/scelester/Container/.gamez/HeartProblems/www.newgamesbox.com/README.txt",
+				"/home/scelester/Container/.gamez/IndecentWifeHana/www.newgamesbox.com/Indecent Wife Hana/IWH-Beta.sh",
+				"/home/scelester/untitled",
+				"/home/scelester/.config/gamemode.ini",
+				"/home/scelester/.config/gamemode.ini.off",
+				"/home/scelester/Desktop/test.rs",
+				"/home/scelester/stacked_output.mp4",
+				"/home/scelester/Desktop/Marvel Rivals.desktop",
 				"/home/scelester/.config/code-flags.conf",
 				"/home/scelester/.config/electron31-flags.conf",
 				"/home/scelester/.config/electron23-flags.conf",
@@ -345,8 +516,6 @@
 				"/home/scelester/ProjectD/EbookHub/Web/README.md",
 				"/home/scelester/ProjectD/EbookHub/Web/Frontend/ebookhub/src/services/apiService.ts",
 				"/home/scelester/Desktop/console-export-2024-12-17_20-17-38.txt",
-				"/home/scelester/MyScripts/battery_saver_mode.sh",
-				"/home/scelester/MyScripts/nightlight",
 				"/home/scelester/Downloads/LINK TO MILESTONE -2 VIDEO.txt",
 				"/home/scelester/.config/libinput-gestures.conf",
 				"/home/scelester/ProjectD/Learn Rust/Cargo.toml",
@@ -356,117 +525,15 @@
 				"/home/scelester/Container/ProjectD/Learn Rust/Cargo.toml",
 				"/home/scelester/Container/test.txt",
 				"/home/scelester/Downloads/message(3).txt",
-				"/home/scelester/Downloads/message(2).txt",
-				"/home/scelester/Downloads/message(1).txt",
-				"/home/scelester/Downloads/message.txt",
-				"/home/scelester/Downloads/cart.txt",
-				"/home/scelester/Test.html",
-				"/home/scelester/ProjectD/NPT/README.md",
-				"/home/scelester/Downloads/NVIDIA-Linux-x86_64-470.42.01.run",
-				"/home/scelester/.mozilla/firefox/dptbbxjy.Main-1716277206183/user.js",
-				"/home/scelester/Documents/user.js",
-				"/home/scelester/explicit_filter.restore",
-				"/tmp/xa-L1J3U2/README.md",
-				"/tmp/xa-R2TUU2/README.md",
-				"/home/scelester/Downloads/hermes_NPL_new_wgs/license.txt",
-				"/home/scelester/.config/hypr/settings/keybindings.conf",
-				"/home/scelester/.config/hypr/settings/asus_specific_bindings.conf",
-				"/tmp/xa-OXNMU2/Readme.txt",
-				"/home/scelester/ProjectD/Thesised_Graphs/Data and docs/2/url",
-				"/usr/share/applications/mimeinfo.cache",
-				"/usr/share/applications/code.desktop",
-				"/home/scelester/.config/hypr/shaders/true_vibrance.glsl",
-				"/home/scelester/.zshrc",
-				"/home/scelester/.zshenv",
-				"/home/scelester/MyScripts/random_cowsay.sh",
-				"/home/scelester/.config/sublime-text/Packages/User/Default (Linux).sublime-keymap",
-				"/home/scelester/.config/sublime-text/Packages/Default/Default (Linux).sublime-keymap",
-				"/home/scelester/.config/hypr/scripts/toggle_shaders",
-				"/home/scelester/.config/hypr/shaders/blur.glsl",
-				"/home/scelester/.config/hypr/shaders/posterize.glsl",
-				"/home/scelester/.config/hypr/shaders/brightness_contrast.glsl",
-				"/home/scelester/.config/hypr/shaders/sepia.glsl",
-				"/home/scelester/.config/hypr/shaders/grayscale.glsl",
-				"/home/scelester/.config/hypr/shaders/invert-colors.glsl",
-				"/home/scelester/.config/hypr/shaders/true_vibrance.gls",
-				"/home/scelester/MyScripts/.config",
-				"/etc/sioyek/prefs.config",
-				"/home/scelester/.config/sioyek/prefs_user.config",
-				"/home/scelester/Downloads/JXFOr194.html",
-				"/home/scelester/nohup.out",
-				"/home/scelester/.icons/default/index.theme",
-				"/home/scelester/MyScripts/battery_warrning",
-				"/home/scelester/.config/KADOKAWA/RPGMV/Local State",
-				"/home/scelester/.config/KADOKAWA/RPGMV/DefaultTGOfile1.rpgsave",
-				"/home/scelester/.config/KADOKAWA/RPGMV/First Run",
-				"/home/scelester/yoyo/urls.csv",
-				"/home/scelester/yoyo/chrome_History",
-				"/home/scelester/.amplify/amplify-configuration.json",
-				"/home/scelester/Downloads/MilanProject/Sliding-Sign-In-Sign-Up-Form-master/index.html",
-				"/home/scelester/Downloads/MilanProject/Sliding-Sign-In-Sign-Up-Form-master/app.js",
-				"/home/scelester/Downloads/MilanProject/Sliding-Sign-In-Sign-Up-Form-master/style.css",
-				"/tmp/xa-KM12R2/index.html",
-				"/tmp/xa-2L4LR2/index.html",
-				"/home/scelester/ProjectD/aws_python_weboro_widget/README.md",
-				"/tmp/xa-IPUZR2/LICENSE.chromedriver",
-				"/home/scelester/.bash_history",
-				"/home/scelester/.gamez/The_Genesis_Order_-_Linux-v1.02/natives_blob.bin",
-				"/home/scelester/.gamez/The_Genesis_Order_-_Linux-v1.02/launcher.sh",
-				"/home/scelester/.mozilla/firefox/profiles.ini",
-				"/home/scelester/.mozilla/firefox/installs.ini",
-				"/home/scelester/MyScripts/database_accesser.sh",
-				"/home/scelester/.config/jgit/config",
-				"/home/scelester/.config/knfsshare",
-				"/home/scelester/.config/.gitignore",
-				"/home/scelester/.config/mimeapps.list",
-				"/home/scelester/.config/user-dirs.dirs",
-				"/home/scelester/MyScripts/StartupStates/why.txt",
-				"/home/scelester/Downloads/churchill.html",
-				"/home/scelester/.zsh_history",
-				"/home/scelester/.var/app/org.libreoffice.LibreOffice/config/libreoffice/4/user/GraphicsRenderTests.log",
-				"/usr/lib/systemd/system/wpa_supplicant.service",
-				"/home/scelester/.phoronix-test-suite/phoronix-test-suite-dependencies.log",
-				"/home/scelester/Downloads/IT infra Network(3).drawio",
-				"/home/scelester/Downloads/S0950584915000282.txt",
-				"/home/scelester/Downloads/S0957417402000155(1).bib",
-				"/home/scelester/Downloads/S0957417402000155.txt",
-				"/home/scelester/Downloads/S0957417402000155.bib",
-				"/home/scelester/Documents/zoho",
-				"/home/scelester/.Xdefaults",
-				"/home/scelester/.config/firefoxprofileswitcher/config.json",
-				"/home/scelester/.config/firefoxprofileswitcher/profile-options.json",
-				"/home/scelester/Desktop/omni/chrome/toolkit/skin/classic/global/wizard.css",
-				"/home/scelester/.bashrc",
-				"/home/scelester/.profile",
-				"/home/scelester/rem_chapters.txt",
-				"/home/scelester/ProjectD/fetcher/STORAGE/NSHBA/NSHBA_chapterlist.txt",
-				"/home/scelester/ProjectD/fetcher/NSHBA_chapterlist.txt",
-				"/home/scelester/Downloads/chapterLinks new.txt",
-				"/home/scelester/Downloads/chapterLinks new(2).txt",
-				"/home/scelester/Downloads/chapterLinks new(1).txt",
-				"/home/scelester/ProjectD/fetcher/js note.js",
-				"/home/scelester/text.js",
-				"/home/scelester/Desktop/test.txt",
-				"/home/scelester/.games/SummertimeSaga-0-20-16-pc/SummertimeSaga.sh",
-				"/home/scelester/Downloads/03bc17944a36f44d1355.txt",
-				"/home/scelester/.config/ags/lib/hyprland.ts",
-				"/home/scelester/Desktop/leed.html",
-				"/home/scelester/.config/Gmail Desktop/custom.css",
-				"/home/scelester/Desktop/dot/rofi/powermenu/type-2/style-3.rasi",
-				"/home/scelester/MyScripts/StartupStates/nightlight",
-				"/home/scelester/Desktop/dot/xsettingsd/xsettingsd.conf",
-				"/usr/share/sddm/themes/Utterly-Nord/theme.conf",
-				"/usr/share/sddm/themes/Utterly-Nord/Main.qml",
-				"/usr/share/sddm/themes/Utterly-Nord/LICENSE.md",
-				"/home/scelester/Downloads/KMS_VL_ALL_AIO.cmd"
+				"/home/scelester/Downloads/message(2).txt"
 			],
 			"find":
 			{
-				"height": 35.0
+				"height": 31.0
 			},
 			"find_in_files":
 			{
-				"height": 157.0,
+				"height": 484.0,
 				"where_history":
 				[
 					""
@@ -474,31 +541,12 @@
 			},
 			"find_state":
 			{
-				"case_sensitive": false,
+				"case_sensitive": true,
 				"find_history":
 				[
-					"gsett",
-					"wayland",
-					"ozone",
-					"j'",
-					"j ",
-					"reso",
-					"res",
-					"Transformer",
-					"books",
-					"bookse",
-					"short",
-					"new",
-					"short",
-					"pkill",
-					"/home/scelester/ProjectD/Thesised_Graphs/Data and docs/2",
-					"cursor",
-					"cusrsor",
-					"mouse",
-					"png",
-					"random",
-					"toggle",
-					"menu"
+					"override",
+					"QT_QPA_PLATFORMTHEME",
+					"rofi"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -506,7 +554,6 @@
 				"regex": false,
 				"replace_history":
 				[
-					"."
 				],
 				"reverse": false,
 				"scrollbar_highlights": true,
@@ -518,11 +565,11 @@
 			},
 			"incremental_find":
 			{
-				"height": 35.0
+				"height": 31.0
 			},
 			"input":
 			{
-				"height": 38.0
+				"height": 164.0
 			},
 			"menu_visible": false,
 			"output.exec":
@@ -536,7 +583,7 @@
 			"pinned_build_system": "",
 			"replace":
 			{
-				"height": 66.0
+				"height": 58.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -546,8 +593,44 @@
 				"selected_items":
 				[
 					[
+						"hyprland",
+						"hyprland.conf"
+					],
+					[
 						"env",
 						"settings/env.conf"
+					],
+					[
+						"en",
+						"settings/env.conf"
+					],
+					[
+						"",
+						"hypridle.conf"
+					],
+					[
+						"mouse",
+						"settings/mouse_and_keyboards.conf"
+					],
+					[
+						"env.conf",
+						"settings/env.conf"
+					],
+					[
+						"ke",
+						"settings/keybindings.conf"
+					],
+					[
+						"key",
+						"settings/keybindings.conf"
+					],
+					[
+						"au",
+						"settings/autostart.conf"
+					],
+					[
+						"h",
+						"hyprland.conf"
 					],
 					[
 						"keybind",
@@ -602,7 +685,7 @@
 			"show_open_files": true,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 263.0,
+			"side_bar_width": 262.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
@@ -617,6 +700,14 @@
 			{
 				"selected_items":
 				[
+					[
+						"admin",
+						"adminRole"
+					],
+					[
+						"print",
+						"println\tprintln!(…)"
+					],
 					[
 						"nav",
 						"nav-folder"
@@ -679,6 +770,82 @@
 				"selected_items":
 				[
 					[
+						"ren",
+						"File: Rename File"
+					],
+					[
+						"folder",
+						"Project: Add Folder"
+					],
+					[
+						"ter",
+						"Terminal: Open"
+					],
+					[
+						"open terminl",
+						"Terminal: Open"
+					],
+					[
+						"termina",
+						"Terminal: Open in project folder"
+					],
+					[
+						"OPEN TERM",
+						"Terminal: Open in project folder"
+					],
+					[
+						"terminali",
+						"Terminal: Open in project folder"
+					],
+					[
+						"instal",
+						"Package Control: Install Package"
+					],
+					[
+						"rename",
+						"File: Rename File"
+					],
+					[
+						"theme",
+						"UI: Select Theme"
+					],
+					[
+						"instl",
+						"Package Control: Install Package"
+					],
+					[
+						"INSTALL",
+						"Package Control: Install Package"
+					],
+					[
+						"THEME",
+						"UI: Select Theme"
+					],
+					[
+						"terminalview",
+						"Terminal View: Open Bash Terminal"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"package",
+						"Package Control: Add Repository"
+					],
+					[
+						"term",
+						"Terminal: Open"
+					],
+					[
+						"snippe",
+						"Snippet: Some(…)"
+					],
+					[
+						"terminal ",
+						"Terminal: Open"
+					],
+					[
 						"dist",
 						"View: Toggle Distraction Free"
 					],
@@ -695,20 +862,12 @@
 						"UI: Select Color Scheme"
 					],
 					[
-						"theme",
-						"UI: Select Theme"
-					],
-					[
 						"them",
 						"UI: Select Theme"
 					],
 					[
 						"font",
 						"Set Syntax: Font"
-					],
-					[
-						"install",
-						"Package Control: Install Package"
 					],
 					[
 						"keyb",
@@ -723,19 +882,7 @@
 						"UI: Customize Theme"
 					],
 					[
-						"ter",
-						"Terminal: Open"
-					],
-					[
-						"term",
-						"Terminal: Open"
-					],
-					[
 						"renm",
-						"Rename File"
-					],
-					[
-						"ren",
 						"Rename File"
 					],
 					[
@@ -767,7 +914,7 @@
 			},
 			"console":
 			{
-				"height": 144.0,
+				"height": 168.0,
 				"history":
 				[
 				]
@@ -783,11 +930,115 @@
 			},
 			"file_history":
 			[
-				"/home/scelester/stacked_output.mp4",
-				"/home/scelester/Desktop/Marvel Rivals.desktop",
-				"/home/scelester/.config/hypr/settings/autostart.conf",
+				"/home/scelester/batterisworkign.txt",
+				"/home/scelester/test.txt",
 				"/home/scelester/.config/hypr/settings/env.conf",
 				"/home/scelester/.config/hypr/hyprland.conf",
+				"/home/scelester/Container/Testspace/testing_acpid.sh",
+				"/home/scelester/nohup.out",
+				"/home/scelester/MyScripts/battery_saver_mode.sh",
+				"/home/scelester/log.txrt",
+				"/home/scelester/.config/hypr/settings/window_rule.conf",
+				"/home/scelester/.config/hypr/settings/keybindings.conf",
+				"/home/scelester/Downloads/app.css",
+				"/home/scelester/.config/hypr/hypridle.conf",
+				"/home/scelester/ProjectD/mysql_to_psql/QuickScript.py",
+				"/home/scelester/ProjectD/mysql_to_psql/anweshan_livedb.sql",
+				"/home/scelester/mysql2postgres/bin/mysqltopostgres",
+				"/home/scelester/ProjectD/mysql_to_psql/anweshan_livedb_processed.sql",
+				"/home/scelester/ProjectD/mysql_to_psql/anweshan_live_postgres.sql",
+				"/home/scelester/ProjectD/mysql_to_psql/anweshan_livedb_modified.sql",
+				"/home/scelester/ProjectD/mysql_to_psql/anweshan_schema_psql.sql",
+				"/home/scelester/ProjectD/mysql_to_psql/anweshan_livedb_psql.sql",
+				"/home/scelester/Container/ProjectD/mysql_to_psql/anweshan_livedb.sql",
+				"/home/scelester/Container/ProjectD/mysql_to_psql/edited_anweshan_livedb.sql",
+				"/home/scelester/Container/ProjectD/mysql_to_psql/pgloader/migration.load",
+				"/home/scelester/Container/ProjectD/mysql_to_psql/pgloader/entrypoint.sh",
+				"/home/scelester/Container/ProjectD/mysql_to_psql/docker-compose.yml",
+				"/home/scelester/Container/ProjectD/mysql_to_psql/pgloader/Dockerfile",
+				"/home/scelester/Container/ProjectD/mysql_to_psql/patch.lisp",
+				"/home/scelester/Container/ProjectD/mysql_to_psql/output/postgres.sql",
+				"/home/scelester/anweshan_livedb.sql",
+				"/home/scelester/Container/ProjectD/mysql_to_psql/combined_output.txt",
+				"/home/scelester/Container/ProjectD/mysql_to_psql/entrypoint.sh",
+				"/home/scelester/Container/ProjectD/mysql_to_psql/Docker",
+				"/home/scelester/entrypoint.sh",
+				"/home/scelester/Dockerfile",
+				"/home/scelester/mysql_dump.sql",
+				"/home/scelester/localhost.sql",
+				"/home/scelester/.config/hypr/settings/mouse_and_keyboards.conf",
+				"/home/scelester/.steam/steam/steamapps/common/Counter-Strike Global Offensive/game/cs2.sh",
+				"/home/scelester/gg.txt",
+				"/home/scelester/.config/mpd/mpd.conf",
+				"/home/scelester/MyScripts/SPYT.sh",
+				"/home/scelester/.config/hypr/settings/autostart.conf",
+				"/home/scelester/.config/hypr/settings/asus_specific_bindings.conf",
+				"/home/scelester/chatgpt this",
+				"/home/scelester/.zshrc",
+				"/home/scelester/Downloads/android-studio/bin/studio.sh",
+				"/home/scelester/Downloads/android-studio/Install-Linux-tar.txt",
+				"/home/scelester/updateprofile",
+				"/home/scelester/MyScripts/ffanwesan",
+				"/home/scelester/.profile",
+				"/home/scelester/ProjectD/School_on_laravel/saraswoti_school/resources/lang/en/general.php",
+				"/home/scelester/ProjectD/School_on_laravel/saraswoti_school/resources/lang/ne/general.php",
+				"/tmp/fz3temp-2/general.php",
+				"/home/scelester/ProjectD/School_on_laravel/saraswoti_school/resources/views/home.blade.php",
+				"/home/scelester/dbname.sql",
+				"/home/scelester/database.sql",
+				"/home/scelester/index.html",
+				"/tmp/fz3temp-2/.env",
+				"/tmp/fz3temp-2/index.php",
+				"/home/scelester/schema.md",
+				"/home/scelester/Desktop/Testspace/cashap/ajshsjsje@outlook.com/leidian.config",
+				"/home/scelester/Downloads/ajshsjsje@outlook.com/leidian.config",
+				"/home/scelester/.local/share/Steam/steamapps/common/Counter-Strike Global Offensive/game/cs2.sh",
+				"/home/scelester/.config/hypr/scripts/custom_autostarts/104_share_picker_fix",
+				"/home/scelester/.config/hypr/scripts/toggle_touchpad.sh",
+				"/home/scelester/.config/hypr/scripts/isDontSleepOnAudio",
+				"/home/scelester/MyScripts/mount_window_drive",
+				"/home/scelester/MyScripts/legalize_non_sleepmode",
+				"/home/scelester/MyScripts/battery_warrning",
+				"/home/scelester/MyScripts/nightlight",
+				"/home/scelester/MyScripts/ffa",
+				"/home/scelester/MyScripts/database_accesser.sh",
+				"/home/scelester/ProjectD/School_on_laravel/saraswoti_school/resources/views/contact.blade.php",
+				"/home/scelester/Downloads/Nabin_Paudel_Resume.txt",
+				"/home/scelester/Desktop/Testspace/holyfinder/gofa/phoneinfoga-maltego/README.md",
+				"/home/scelester/Games/Among.Us.v2024.3.5i/README.txt",
+				"/home/scelester/Games/Among.Us.v2024.3.5i/_INSTALL TUTORIAL.txt",
+				"/home/scelester/Games/Among.Us.v2024.3.5i/Free Premium Accounts at OfficialMrB.com.txt",
+				"/home/scelester/log.plymouth",
+				"/usr/share/plymouth/themes/archcraft/archcraft.script",
+				"/home/scelester/output.txt",
+				"/usr/share/plymouth/themes/archcraft/archcraft.plymouth",
+				"/usr/share/plymouth/themes/script/script.script",
+				"/usr/share/plymouth/themes/script/script.plymouth",
+				"/home/scelester/Desktop/Testspace",
+				"/home/scelester/Downloads/postgresql-16.6/INSTALL",
+				"/home/scelester/Downloads/postgresql-16.6/README",
+				"/home/scelester/Container/.gamez/Milfy.City.Final.Edition/Milfy.City.Final.Edition.v1.0d/game/patch.rpy",
+				"/tmp/xa-NI3P02/patch.rpy",
+				"/home/scelester/ProjectD/Link_to_prince_lab.txt",
+				"/home/scelester/Downloads/impresstemplate/fedora-slideshow/README.md",
+				"/home/scelester/Downloads/impresstemplate/fedora-slideshow/project_license.txt",
+				"/home/scelester/Container/.gamez/Milfy.City.Final.Edition/Milfy.City.Final.Edition.v1.0d/MilfyCity.sh",
+				"/home/scelester/Container/.gamez/Milfy.City.Final.Edition/Free Premium Accounts at OfficialMrB.com.txt",
+				"/home/scelester/.local/share/DaVinciResolve/logs/ResolveDebug.txt",
+				"/home/scelester/.local/share/DaVinciResolve/logs/resolve_graphics_log.txt",
+				"/home/scelester/dasfdsa",
+				"/home/scelester/Container/.torent/Bulma Adventure 4/Bulma Adventure 4/Fap For Fun - Read me.txt",
+				"/usr/lib/dri/nvidia_drv_video.so",
+				"/home/scelester/Downloads/patch.txt",
+				"/home/scelester/.archlinux.draft.txt",
+				"/home/scelester/Container/.gamez/HeartProblems/www.newgamesbox.com/README.txt",
+				"/home/scelester/Container/.gamez/IndecentWifeHana/www.newgamesbox.com/Indecent Wife Hana/IWH-Beta.sh",
+				"/home/scelester/untitled",
+				"/home/scelester/.config/gamemode.ini",
+				"/home/scelester/.config/gamemode.ini.off",
+				"/home/scelester/Desktop/test.rs",
+				"/home/scelester/stacked_output.mp4",
+				"/home/scelester/Desktop/Marvel Rivals.desktop",
 				"/home/scelester/.config/code-flags.conf",
 				"/home/scelester/.config/electron31-flags.conf",
 				"/home/scelester/.config/electron23-flags.conf",
@@ -797,8 +1048,6 @@
 				"/home/scelester/ProjectD/EbookHub/Web/README.md",
 				"/home/scelester/ProjectD/EbookHub/Web/Frontend/ebookhub/src/services/apiService.ts",
 				"/home/scelester/Desktop/console-export-2024-12-17_20-17-38.txt",
-				"/home/scelester/MyScripts/battery_saver_mode.sh",
-				"/home/scelester/MyScripts/nightlight",
 				"/home/scelester/Downloads/LINK TO MILESTONE -2 VIDEO.txt",
 				"/home/scelester/.config/libinput-gestures.conf",
 				"/home/scelester/ProjectD/Learn Rust/Cargo.toml",
@@ -808,117 +1057,15 @@
 				"/home/scelester/Container/ProjectD/Learn Rust/Cargo.toml",
 				"/home/scelester/Container/test.txt",
 				"/home/scelester/Downloads/message(3).txt",
-				"/home/scelester/Downloads/message(2).txt",
-				"/home/scelester/Downloads/message(1).txt",
-				"/home/scelester/Downloads/message.txt",
-				"/home/scelester/Downloads/cart.txt",
-				"/home/scelester/Test.html",
-				"/home/scelester/ProjectD/NPT/README.md",
-				"/home/scelester/Downloads/NVIDIA-Linux-x86_64-470.42.01.run",
-				"/home/scelester/.mozilla/firefox/dptbbxjy.Main-1716277206183/user.js",
-				"/home/scelester/Documents/user.js",
-				"/home/scelester/explicit_filter.restore",
-				"/tmp/xa-L1J3U2/README.md",
-				"/tmp/xa-R2TUU2/README.md",
-				"/home/scelester/Downloads/hermes_NPL_new_wgs/license.txt",
-				"/home/scelester/.config/hypr/settings/keybindings.conf",
-				"/home/scelester/.config/hypr/settings/asus_specific_bindings.conf",
-				"/tmp/xa-OXNMU2/Readme.txt",
-				"/home/scelester/ProjectD/Thesised_Graphs/Data and docs/2/url",
-				"/usr/share/applications/mimeinfo.cache",
-				"/usr/share/applications/code.desktop",
-				"/home/scelester/.config/hypr/shaders/true_vibrance.glsl",
-				"/home/scelester/.zshrc",
-				"/home/scelester/.zshenv",
-				"/home/scelester/MyScripts/random_cowsay.sh",
-				"/home/scelester/.config/sublime-text/Packages/User/Default (Linux).sublime-keymap",
-				"/home/scelester/.config/sublime-text/Packages/Default/Default (Linux).sublime-keymap",
-				"/home/scelester/.config/hypr/scripts/toggle_shaders",
-				"/home/scelester/.config/hypr/shaders/blur.glsl",
-				"/home/scelester/.config/hypr/shaders/posterize.glsl",
-				"/home/scelester/.config/hypr/shaders/brightness_contrast.glsl",
-				"/home/scelester/.config/hypr/shaders/sepia.glsl",
-				"/home/scelester/.config/hypr/shaders/grayscale.glsl",
-				"/home/scelester/.config/hypr/shaders/invert-colors.glsl",
-				"/home/scelester/.config/hypr/shaders/true_vibrance.gls",
-				"/home/scelester/MyScripts/.config",
-				"/etc/sioyek/prefs.config",
-				"/home/scelester/.config/sioyek/prefs_user.config",
-				"/home/scelester/Downloads/JXFOr194.html",
-				"/home/scelester/nohup.out",
-				"/home/scelester/.icons/default/index.theme",
-				"/home/scelester/MyScripts/battery_warrning",
-				"/home/scelester/.config/KADOKAWA/RPGMV/Local State",
-				"/home/scelester/.config/KADOKAWA/RPGMV/DefaultTGOfile1.rpgsave",
-				"/home/scelester/.config/KADOKAWA/RPGMV/First Run",
-				"/home/scelester/yoyo/urls.csv",
-				"/home/scelester/yoyo/chrome_History",
-				"/home/scelester/.amplify/amplify-configuration.json",
-				"/home/scelester/Downloads/MilanProject/Sliding-Sign-In-Sign-Up-Form-master/index.html",
-				"/home/scelester/Downloads/MilanProject/Sliding-Sign-In-Sign-Up-Form-master/app.js",
-				"/home/scelester/Downloads/MilanProject/Sliding-Sign-In-Sign-Up-Form-master/style.css",
-				"/tmp/xa-KM12R2/index.html",
-				"/tmp/xa-2L4LR2/index.html",
-				"/home/scelester/ProjectD/aws_python_weboro_widget/README.md",
-				"/tmp/xa-IPUZR2/LICENSE.chromedriver",
-				"/home/scelester/.bash_history",
-				"/home/scelester/.gamez/The_Genesis_Order_-_Linux-v1.02/natives_blob.bin",
-				"/home/scelester/.gamez/The_Genesis_Order_-_Linux-v1.02/launcher.sh",
-				"/home/scelester/.mozilla/firefox/profiles.ini",
-				"/home/scelester/.mozilla/firefox/installs.ini",
-				"/home/scelester/MyScripts/database_accesser.sh",
-				"/home/scelester/.config/jgit/config",
-				"/home/scelester/.config/knfsshare",
-				"/home/scelester/.config/.gitignore",
-				"/home/scelester/.config/mimeapps.list",
-				"/home/scelester/.config/user-dirs.dirs",
-				"/home/scelester/MyScripts/StartupStates/why.txt",
-				"/home/scelester/Downloads/churchill.html",
-				"/home/scelester/.zsh_history",
-				"/home/scelester/.var/app/org.libreoffice.LibreOffice/config/libreoffice/4/user/GraphicsRenderTests.log",
-				"/usr/lib/systemd/system/wpa_supplicant.service",
-				"/home/scelester/.phoronix-test-suite/phoronix-test-suite-dependencies.log",
-				"/home/scelester/Downloads/IT infra Network(3).drawio",
-				"/home/scelester/Downloads/S0950584915000282.txt",
-				"/home/scelester/Downloads/S0957417402000155(1).bib",
-				"/home/scelester/Downloads/S0957417402000155.txt",
-				"/home/scelester/Downloads/S0957417402000155.bib",
-				"/home/scelester/Documents/zoho",
-				"/home/scelester/.Xdefaults",
-				"/home/scelester/.config/firefoxprofileswitcher/config.json",
-				"/home/scelester/.config/firefoxprofileswitcher/profile-options.json",
-				"/home/scelester/Desktop/omni/chrome/toolkit/skin/classic/global/wizard.css",
-				"/home/scelester/.bashrc",
-				"/home/scelester/.profile",
-				"/home/scelester/rem_chapters.txt",
-				"/home/scelester/ProjectD/fetcher/STORAGE/NSHBA/NSHBA_chapterlist.txt",
-				"/home/scelester/ProjectD/fetcher/NSHBA_chapterlist.txt",
-				"/home/scelester/Downloads/chapterLinks new.txt",
-				"/home/scelester/Downloads/chapterLinks new(2).txt",
-				"/home/scelester/Downloads/chapterLinks new(1).txt",
-				"/home/scelester/ProjectD/fetcher/js note.js",
-				"/home/scelester/text.js",
-				"/home/scelester/Desktop/test.txt",
-				"/home/scelester/.games/SummertimeSaga-0-20-16-pc/SummertimeSaga.sh",
-				"/home/scelester/Downloads/03bc17944a36f44d1355.txt",
-				"/home/scelester/.config/ags/lib/hyprland.ts",
-				"/home/scelester/Desktop/leed.html",
-				"/home/scelester/.config/Gmail Desktop/custom.css",
-				"/home/scelester/Desktop/dot/rofi/powermenu/type-2/style-3.rasi",
-				"/home/scelester/MyScripts/StartupStates/nightlight",
-				"/home/scelester/Desktop/dot/xsettingsd/xsettingsd.conf",
-				"/usr/share/sddm/themes/Utterly-Nord/theme.conf",
-				"/usr/share/sddm/themes/Utterly-Nord/Main.qml",
-				"/usr/share/sddm/themes/Utterly-Nord/LICENSE.md",
-				"/home/scelester/Downloads/KMS_VL_ALL_AIO.cmd"
+				"/home/scelester/Downloads/message(2).txt"
 			],
 			"find":
 			{
-				"height": 35.0
+				"height": 31.0
 			},
 			"find_in_files":
 			{
-				"height": 157.0,
+				"height": 484.0,
 				"where_history":
 				[
 					""
@@ -926,31 +1073,12 @@
 			},
 			"find_state":
 			{
-				"case_sensitive": false,
+				"case_sensitive": true,
 				"find_history":
 				[
-					"gsett",
-					"wayland",
-					"ozone",
-					"j'",
-					"j ",
-					"reso",
-					"res",
-					"Transformer",
-					"books",
-					"bookse",
-					"short",
-					"new",
-					"short",
-					"pkill",
-					"/home/scelester/ProjectD/Thesised_Graphs/Data and docs/2",
-					"cursor",
-					"cusrsor",
-					"mouse",
-					"png",
-					"random",
-					"toggle",
-					"menu"
+					"override",
+					"QT_QPA_PLATFORMTHEME",
+					"rofi"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -958,7 +1086,6 @@
 				"regex": false,
 				"replace_history":
 				[
-					"."
 				],
 				"reverse": false,
 				"scrollbar_highlights": true,
@@ -970,11 +1097,11 @@
 			},
 			"incremental_find":
 			{
-				"height": 35.0
+				"height": 31.0
 			},
 			"input":
 			{
-				"height": 38.0
+				"height": 164.0
 			},
 			"menu_visible": false,
 			"output.exec":
@@ -986,10 +1113,10 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,1,0,0,0,0,0,937,500,1920,1080,0",
+			"position": "0,1,0,0,0,0,0,933,1038,1920,1080,0",
 			"replace":
 			{
-				"height": 66.0
+				"height": 58.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -999,8 +1126,44 @@
 				"selected_items":
 				[
 					[
+						"hyprland",
+						"hyprland.conf"
+					],
+					[
 						"env",
 						"settings/env.conf"
+					],
+					[
+						"en",
+						"settings/env.conf"
+					],
+					[
+						"",
+						"hypridle.conf"
+					],
+					[
+						"mouse",
+						"settings/mouse_and_keyboards.conf"
+					],
+					[
+						"env.conf",
+						"settings/env.conf"
+					],
+					[
+						"ke",
+						"settings/keybindings.conf"
+					],
+					[
+						"key",
+						"settings/keybindings.conf"
+					],
+					[
+						"au",
+						"settings/autostart.conf"
+					],
+					[
+						"h",
+						"hyprland.conf"
 					],
 					[
 						"keybind",
@@ -1058,12 +1221,12 @@
 			"show_open_files": true,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 263.0,
+			"side_bar_width": 262.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
 			},
-			"window_id": 17
+			"window_id": 23
 		}
 	],
 	"workspaces":

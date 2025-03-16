@@ -1,0 +1,4228 @@
+{
+  "app_name": "56a31432931740cdb0112d237d7d65aa",
+  "app_title": "Pinball FX",
+  "asset_infos": {
+    "Windows": {
+      "app_name": "56a31432931740cdb0112d237d7d65aa",
+      "asset_id": "56a31432931740cdb0112d237d7d65aa",
+      "build_version": "1.0.24.133147",
+      "catalog_item_id": "db2967c067614552a6245145fe42a9a8",
+      "label_name": "Live-Windows",
+      "metadata": {
+        "installationPoolId": "4830a947cfd04f27b7b25229f49f56f5"
+      },
+      "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+      "sidecar_rev": 0
+    }
+  },
+  "base_urls": [],
+  "metadata": {
+    "ageGatings": {},
+    "applicationId": "fghi4567I4RTxT9dg8l8oIpo5xIWtht6",
+    "categories": [
+      {
+        "path": "public"
+      },
+      {
+        "path": "games"
+      },
+      {
+        "path": "applications"
+      }
+    ],
+    "creationDate": "2020-07-03T21:54:59.221Z",
+    "customAttributes": {
+      "CanRunOffline": {
+        "type": "STRING",
+        "value": "true"
+      },
+      "CanSkipKoreanIdVerification": {
+        "type": "STRING",
+        "value": "true"
+      },
+      "CloudSaveFolder": {
+        "type": "STRING",
+        "value": "{AppData}/PinballFX/Saved/SaveGames/"
+      },
+      "FolderName": {
+        "type": "STRING",
+        "value": "PinballFX"
+      },
+      "MonitorPresence": {
+        "type": "STRING",
+        "value": "false"
+      },
+      "PresenceId": {
+        "type": "STRING",
+        "value": "c11f80fe3b674a2bbf60e4c46d588a54"
+      },
+      "RequirementsJson": {
+        "type": "STRING",
+        "value": "[]"
+      },
+      "UseAccessControl": {
+        "type": "STRING",
+        "value": "false"
+      }
+    },
+    "description": "Pinball FX",
+    "developer": "Zen Studios",
+    "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+    "dlcItemList": [
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2022-08-11T15:39:37.925Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "Homeworld Journey to Hiigara Pinball audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "2b5b1d3f47de41bea516751a88541520",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "2b5b1d3f47de41bea516751a88541520",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.323Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Homeworld Journey to Hiigara Pinball audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2022-01-25T22:05:42.943Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "575 Tickets audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "64bbd28914084efe88348677a2eb0fd2",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "64bbd28914084efe88348677a2eb0fd2",
+        "installModes": [],
+        "itemType": "CONSUMABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.335Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "575 Tickets audience",
+        "unsearchable": true,
+        "useCount": 1
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2022-01-25T22:26:01.290Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "Starter Customizing Kit audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "15594f9678e341e79a0606d251c712ca",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "15594f9678e341e79a0606d251c712ca",
+        "installModes": [],
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:29.216Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Starter Customizing Kit audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2022-01-25T22:05:22.766Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "220 Tickets audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "4bc2fe034c404bb59a4d72a556bf1919",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "4bc2fe034c404bb59a4d72a556bf1919",
+        "installModes": [],
+        "itemType": "CONSUMABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.330Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "220 Tickets audience",
+        "unsearchable": true,
+        "useCount": 1
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2022-01-25T22:24:25.387Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Indiana Jones: The Pinball Adventure",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "2b555312a422414eaf781a8b7c6dda3a",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "2b555312a422414eaf781a8b7c6dda3a",
+        "installModes": [],
+        "itemType": "DURABLE",
+        "keyImages": [
+          {
+            "height": 1440,
+            "md5": "6e911b828439b75f3be4538de1b6a8a3",
+            "size": 893189,
+            "type": "DieselGameBox",
+            "uploadedDate": "2022-03-30T22:16:34.726Z",
+            "url": "https://cdn1.epicgames.com/item/c11f80fe3b674a2bbf60e4c46d588a54/EGS_IndianaJonesThePinballAdventure_ZenStudios_DLC_S1_2560x1440-6e911b828439b75f3be4538de1b6a8a3",
+            "width": 2560
+          },
+          {
+            "height": 1600,
+            "md5": "fbea4258177634448f2adab6b5a3b349",
+            "size": 716931,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2022-03-30T22:16:37.045Z",
+            "url": "https://cdn1.epicgames.com/item/c11f80fe3b674a2bbf60e4c46d588a54/EGS_IndianaJonesThePinballAdventure_ZenStudios_DLC_S2_1200x1600-fbea4258177634448f2adab6b5a3b349",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2024-03-14T14:55:21.322Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "c078ab6246714dbcbb89ce76057b979a",
+            "id": "38cdbad3e0464eed93cd4cfad0e4862e",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Indiana Jones: The Pinball Adventure",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2022-01-25T22:06:07.724Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "1200 Tickets audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "7c65c1c1282d4e0b889b23e066e60249",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "7c65c1c1282d4e0b889b23e066e60249",
+        "installModes": [],
+        "itemType": "CONSUMABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.342Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "1200 Tickets audience",
+        "unsearchable": true,
+        "useCount": 1
+      },
+      {
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2022-01-25T22:04:26.360Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "100 Tickets audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "7a5449e5a2c54fc9b40a725b3bbe4ca9",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "7a5449e5a2c54fc9b40a725b3bbe4ca9",
+        "itemType": "CONSUMABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.341Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "100 Tickets audience",
+        "unsearchable": true,
+        "useCount": 1
+      },
+      {
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2022-09-02T18:49:07.068Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "150 Tickets audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "3c5ba20451dd41e4a23f629a898b389b",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "3c5ba20451dd41e4a23f629a898b389b",
+        "itemType": "CONSUMABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.326Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "150 Tickets audience",
+        "unsearchable": true,
+        "useCount": 1
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2022-11-23T20:59:40.749Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          },
+          "FolderName": {
+            "type": "STRING",
+            "value": "DreamWorks"
+          }
+        },
+        "description": "DreamWorks Pinball",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "4ae0369c481647fea26049e65e38af73",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "4ae0369c481647fea26049e65e38af73",
+        "itemType": "DURABLE",
+        "keyImages": [
+          {
+            "height": 1440,
+            "md5": "5f00e34f3402be4425a010f536f15396",
+            "size": 623666,
+            "type": "DieselGameBox",
+            "uploadedDate": "2022-12-08T17:00:16.184Z",
+            "url": "https://cdn1.epicgames.com/offer/c11f80fe3b674a2bbf60e4c46d588a54/EGS_DreamWorksPinball_ZenStudios_DLC_S1_2560x1440-5f00e34f3402be4425a010f536f15396",
+            "width": 2560
+          },
+          {
+            "height": 1600,
+            "md5": "9502cc5593311561d2e1c68c3fdd979e",
+            "size": 385255,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2022-12-08T17:00:25.141Z",
+            "url": "https://cdn1.epicgames.com/offer/c11f80fe3b674a2bbf60e4c46d588a54/EGS_DreamWorksPinball_ZenStudios_DLC_S2_1200x1600-9502cc5593311561d2e1c68c3fdd979e",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2024-03-14T14:55:21.329Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "bea0c795225d4a48b53946f835651b3f",
+            "id": "0f0ed4fefe0b4e9bb4af28843ccdfd4a",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "DreamWorks Pinball",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-01-12T12:55:38.577Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Marvel Pinball Collection 1",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "15e47f3f23b5450d8b922538f92db56d",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "15e47f3f23b5450d8b922538f92db56d",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:29.217Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "a8e9e7d01e584d6c98af8cefe65ec1fd",
+            "id": "6191782ea387409cb6535d27d964cdf2",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Marvel Pinball Collection 1",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-01-12T12:56:15.155Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Star Wars\u2122 Pinball Collection 1",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "1ac985333b414a3d8b169448a1446485",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "1ac985333b414a3d8b169448a1446485",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:29.218Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "adc9198f52294cf98a72e63d6dc08f99",
+            "id": "4b0e0bcf162447caa55353e34072a954",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Star Wars\u2122 Pinball Collection 1",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-01-12T12:56:54.335Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Star Wars\u2122 Pinball Collection 2",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "c98fb18e2c844aad9ab834ae0d1d06f7",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "c98fb18e2c844aad9ab834ae0d1d06f7",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.354Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "63abdc4400854140ac4379816969c13c",
+            "id": "ec558ad63306435fbe2aac3d48a75f00",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Star Wars\u2122 Pinball Collection 2",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-01-12T12:57:38.360Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Star Wars\u2122 Pinball: Thrill of the Hunt",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "9ea7df4e480841469654c3dc1b2be825",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "9ea7df4e480841469654c3dc1b2be825",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.347Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "25de45d2f6674543ae343dfcc6715b41",
+            "id": "31bd75adab3e4ba2b5141d5284cf6499",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Star Wars\u2122 Pinball: Thrill of the Hunt",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-01-12T12:58:17.689Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Universal Classics\u2122 Pinball",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "beedaeaabdc84e4a85bf8979ec04de77",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "beedaeaabdc84e4a85bf8979ec04de77",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.351Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "e72a69c41bf14a59865510c845282c8e",
+            "id": "e8370ff9f2b149d5b09d4c9348cac224",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Universal Classics\u2122 Pinball",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-01-12T12:58:47.294Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Jurassic World\u2122 Pinball",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "21a5601f364d4876895d027c7a07b64c",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "21a5601f364d4876895d027c7a07b64c",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:29.226Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "a5e9eec4a57c400d9da6ca6a033818be",
+            "id": "1a6753a258ea4d18a3c49a62e3e66450",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Jurassic World\u2122 Pinball",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-01-12T12:59:21.411Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Zen Originals Collection 1",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "68d2bcc92997423e8901ed0f8db27b83",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "68d2bcc92997423e8901ed0f8db27b83",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.336Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "7a487acf7207423c84017301965741bf",
+            "id": "2cb2f7ddafd24cf8b8ef9a9a387b0b2f",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Zen Originals Collection 1",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-01-12T12:59:54.562Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Secrets and Shadows Pack",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "a82afcc02a6f40a4a370a5f1751f46d6",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "a82afcc02a6f40a4a370a5f1751f46d6",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.348Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "90d87434976841dbba55f2379392c57e",
+            "id": "1f8d79b075474497a857eb3aa5b09d62",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Secrets and Shadows Pack",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-01-12T13:00:25.659Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Grimm Tales",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "11b6bf89d77948b99c079e4c4e408b76",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "11b6bf89d77948b99c079e4c4e408b76",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:29.215Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "15d9f2b4121e4c0bb896cbe42042fc5e",
+            "id": "0571b15e8942454b9838342d59a2715c",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Grimm Tales",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-01-12T13:02:34.747Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Wrath of the Elder Gods",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "392614b2d19c4c9c89e61844357c3989",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "392614b2d19c4c9c89e61844357c3989",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.325Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "84198a1c34644ae2ad7d3523418a0935",
+            "id": "87582564423b4885acec76b06f15f768",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Wrath of the Elder Gods",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-01-12T13:03:05.364Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Williams Pinball: Universal Monsters Pack",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "3611358910f44140b7ce155aaf89a77c",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "3611358910f44140b7ce155aaf89a77c",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.324Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "d4a3a0bbfdb7499eba3af0048b7834a7",
+            "id": "ea4d5c3abfef46179eb11533651833a5",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Williams Pinball: Universal Monsters Pack",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-01-12T13:03:30.750Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Williams Pinball Collection 1",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "d35092f4401f49c5931fe9500751696d",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "d35092f4401f49c5931fe9500751696d",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.356Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "fe171c76ade042fc9e51e96c10c50b93",
+            "id": "baf126f65ebc42e89cd35f004e66aec7",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Williams Pinball Collection 1",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-01-12T13:04:16.018Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Williams Pinball Collection 2",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "73ef75025fae4eba8d1a2fe0c36db233",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "73ef75025fae4eba8d1a2fe0c36db233",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.340Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "3a3931ad11d244cd991e25da20271dea",
+            "id": "bae211bedeff45a48586b2ea439e7d27",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Williams Pinball Collection 2",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-01-12T13:04:42.097Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Williams Pinball: Swords of Fury\u2122",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "e8501e168cc64739b6263882894be143",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "e8501e168cc64739b6263882894be143",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.358Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "91433c0c03834fdd9169ac2f710f5301",
+            "id": "0f81b68edfcd41c3ab1befc5c957fb69",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Williams Pinball: Swords of Fury\u2122",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-01-12T13:05:27.805Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Williams Pinball: Bride of Pinbot\u2122",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "8cfec44f39e044d6a2b6b90bed7678cb",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "8cfec44f39e044d6a2b6b90bed7678cb",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.345Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "4ba53224c4a749fc971fae9ede7d3a6c",
+            "id": "63cb039fc3a349158338802256169b19",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Williams Pinball: Bride of Pinbot\u2122",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-01-12T13:06:17.509Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Williams Pinball: World Cup Soccer",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "c85b6b3a5c0544d991b6b248eb8deed7",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "c85b6b3a5c0544d991b6b248eb8deed7",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.354Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "f1ae0c5de241494c8c6fe519de7a2a73",
+            "id": "af3e3425ee0b42fead517382c66934f7",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Williams Pinball: World Cup Soccer",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-01-12T13:06:44.942Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Williams Pinball: The Addams Family",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "5eae50797fac44c5a8943145a4dcb292",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "5eae50797fac44c5a8943145a4dcb292",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.335Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "be1dd6d0a32d45a6b8bcb26739da61cc",
+            "id": "fb251a005bf04d26831af3a25dcd4a8c",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Williams Pinball: The Addams Family",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-01-12T13:07:12.870Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "World War Z Pinball",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "79f19747c8fb4886b5e77e5d48be4966",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "79f19747c8fb4886b5e77e5d48be4966",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.341Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "71e4f90bb5e949bf8e9f717c1d4b32ab",
+            "id": "295fb1214c35447ba29bee2f76eb0a2b",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "World War Z Pinball",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-01-12T13:07:36.030Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Garfield Pinball",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "a1e15b0cd6cb4d13a6f26206832dfeab",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "a1e15b0cd6cb4d13a6f26206832dfeab",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.348Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "f1d1d8a1fd474f168a8c18f08c9292b5",
+            "id": "a5a27fdbed464eafaa1d56a6e700f2fe",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Garfield Pinball",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-01-12T13:08:03.925Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "MY LITTLE PONY Pinball",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "2602cb7448f84784a20523a7cd471bc8",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "2602cb7448f84784a20523a7cd471bc8",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:29.227Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "7aa773bbd7d046aeb78a1717f6a36ada",
+            "id": "212e5cf3ad424e3ca66aa7570831ce5d",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "MY LITTLE PONY Pinball",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-01-12T13:08:31.630Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Peanuts' Snoopy Pinball",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "ace0cecfb9234dcaad6089a635ffac4f",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "ace0cecfb9234dcaad6089a635ffac4f",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.349Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "926e6960a4524708a5ac2f2b87ad9bdf",
+            "id": "07ac84900f3c4944af74151f0b4f5064",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Peanuts' Snoopy Pinball",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-01-12T13:08:59.283Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Gearbox\u00ae Pinball",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "49c0a1866b484cdba3bd55398cd3dfbd",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "49c0a1866b484cdba3bd55398cd3dfbd",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.329Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "d3c2a456b510499eb1eb1da62a0abe3c",
+            "id": "904edf5e2fe7476894e3c1ddd3accff7",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Gearbox\u00ae Pinball",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-01-12T13:06:44.876Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "Williams Pinball: The Addams Family audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "395805f91c294e0d9405d2891307fca7",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "395805f91c294e0d9405d2891307fca7",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.325Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Williams Pinball: The Addams Family audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-01-12T13:04:15.928Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "Williams Pinball Collection 2 audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "84826271e2724421b053aa47c58397ea",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "84826271e2724421b053aa47c58397ea",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.343Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Williams Pinball Collection 2 audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-01-12T13:03:30.618Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "Williams Pinball Collection 1 audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "ee56fe5b13cc42df9518f7073bea15b3",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "ee56fe5b13cc42df9518f7073bea15b3",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.360Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Williams Pinball Collection 1 audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-01-12T12:55:38.495Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "Marvel Pinball Collection 1 audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "d328dec515ca4f7c8907dcc3579dbc40",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "d328dec515ca4f7c8907dcc3579dbc40",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.356Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Marvel Pinball Collection 1 audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-01-12T12:57:38.247Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "Star Wars\u2122 Pinball: Thrill of the Hunt audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "0c5a2b756f1243ff9accc4f326608477",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "0c5a2b756f1243ff9accc4f326608477",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.316Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Star Wars\u2122 Pinball: Thrill of the Hunt audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-01-12T13:08:59.221Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "Gearbox\u00ae Pinball audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "8c424dad628646b69447d68fd38af1c9",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "8c424dad628646b69447d68fd38af1c9",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.344Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Gearbox\u00ae Pinball audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-01-12T13:07:35.962Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "Garfield Pinball audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "c11ffa136bcc487e82fb5c0a7b7b41e7",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "c11ffa136bcc487e82fb5c0a7b7b41e7",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.352Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Garfield Pinball audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-01-12T13:08:03.859Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "MY LITTLE PONY Pinball audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "513dd2f9d7594eb28ab41864a8ad750e",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "513dd2f9d7594eb28ab41864a8ad750e",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.332Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "MY LITTLE PONY Pinball audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-01-12T12:59:21.340Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "Zen Originals Collection 1 audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "794dc6067be04997a7586dbae2dfc68c",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "794dc6067be04997a7586dbae2dfc68c",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.341Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Zen Originals Collection 1 audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-01-12T12:59:54.492Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "Secrets and Shadows Pack audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "292ee2e3d4e64b71834590173fa7e1cc",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "292ee2e3d4e64b71834590173fa7e1cc",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.322Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Secrets and Shadows Pack audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-01-12T13:04:42.021Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "Williams Pinball: Swords of Fury\u2122 audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "5a1ddd3681b94fd5913e56343cd93e0b",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "5a1ddd3681b94fd5913e56343cd93e0b",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.333Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Williams Pinball: Swords of Fury\u2122 audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-01-12T12:58:47.226Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "Jurassic World\u2122 Pinball audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "c4d4c6ca380d4555b1364fb278c83fe7",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "c4d4c6ca380d4555b1364fb278c83fe7",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.352Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Jurassic World\u2122 Pinball audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-01-12T12:58:17.613Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "Universal Classics\u2122 Pinball audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "c10e07bda9654e6d9205ddc7ad5b2dc0",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "c10e07bda9654e6d9205ddc7ad5b2dc0",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.352Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Universal Classics\u2122 Pinball audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-01-12T13:06:17.437Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "Williams Pinball: World Cup Soccer audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "47b9f4f5e3f54f2992246cd6d42e4692",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "47b9f4f5e3f54f2992246cd6d42e4692",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.329Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Williams Pinball: World Cup Soccer audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-01-12T13:07:12.794Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "World War Z Pinball audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "ed5342ff38d24fc58ea38bb035854473",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "ed5342ff38d24fc58ea38bb035854473",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.360Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "World War Z Pinball audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-01-12T13:00:25.587Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "Grimm Tales audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "36e23a33d9a4460db8f62c914065751a",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "36e23a33d9a4460db8f62c914065751a",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.324Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Grimm Tales audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-01-12T12:56:54.250Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "Star Wars\u2122 Pinball Collection 2 audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "865a26c1f32a4581929df11f4646dd62",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "865a26c1f32a4581929df11f4646dd62",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.343Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Star Wars\u2122 Pinball Collection 2 audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-01-12T13:08:31.559Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "Peanuts' Snoopy Pinball audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "0c10c530d6e947be8302a4ae40645dbc",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "0c10c530d6e947be8302a4ae40645dbc",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.315Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Peanuts' Snoopy Pinball audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-01-12T13:02:34.568Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "Wrath of the Elder Gods audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "8de491a143ad456b9407721fb4dc0523",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "8de491a143ad456b9407721fb4dc0523",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.345Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Wrath of the Elder Gods audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-01-12T13:03:05.276Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "Williams Pinball: Universal Monsters Pack audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "c4dbcbd6018f4eb28b316581e9a9c442",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "c4dbcbd6018f4eb28b316581e9a9c442",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.353Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Williams Pinball: Universal Monsters Pack audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-01-12T13:05:27.728Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "Williams Pinball: Bride of Pinbot\u2122 audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "2bab19230407419bb8be34a092437f59",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "2bab19230407419bb8be34a092437f59",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.323Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Williams Pinball: Bride of Pinbot\u2122 audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-01-12T12:56:15.075Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "Star Wars\u2122 Pinball Collection 1 audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "eb9588659e20408d9d46582fd2418080",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "eb9588659e20408d9d46582fd2418080",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.359Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Star Wars\u2122 Pinball Collection 1 audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-03-14T01:20:43.910Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Williams Pinball: Twilight Zone",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "d2206299acaf465ea28f32a4484228d0",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "d2206299acaf465ea28f32a4484228d0",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.355Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "624f704e97a24671b66fa6ee8bab3730",
+            "id": "01b412fee074445a9b661ba44b027798",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Williams Pinball: Twilight Zone",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-03-14T01:18:41.398Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Marvel Pinball Collection 2",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "3cb93cde9c8f4425843af4714f8ebf5a",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "3cb93cde9c8f4425843af4714f8ebf5a",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.327Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "42b75237786e4457b47b3335ddd45ef0",
+            "id": "49f90b601d164c59a0b8b5238f7ce994",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Marvel Pinball Collection 2",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-03-14T01:23:00.608Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Godzilla vs. Kong Pinball Pack",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "5761c33646c84ebe8b612a32d6ca35aa",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "5761c33646c84ebe8b612a32d6ca35aa",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.332Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "7891fd67d9d9421fb61a6489d83ce705",
+            "id": "86dbce65f2eb4418abf2584cf6560135",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Godzilla vs. Kong Pinball Pack",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-03-14T01:23:27.939Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Crypt of the Necrodancer Pinball",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "16934af7f4284548869998db53ddb2d2",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "16934af7f4284548869998db53ddb2d2",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.317Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "2b54c97673e6473cbc948bf999400db6",
+            "id": "607f020092c24832b19e2bb727197526",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Crypt of the Necrodancer Pinball",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-03-14T01:18:41.298Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "Marvel Pinball Collection 2 audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "40129d0059e0439a8b81702ed52e47bc",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "40129d0059e0439a8b81702ed52e47bc",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.327Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Marvel Pinball Collection 2 audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-03-14T01:20:43.849Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "Williams Pinball: Twilight Zone audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "5c9248e1881d42c49a22ddffb558f8f4",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "5c9248e1881d42c49a22ddffb558f8f4",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.334Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Williams Pinball: Twilight Zone audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-03-14T01:23:27.880Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "Crypt of the Necrodancer Pinball audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "bd710e0c2c814d2cb8a1bf7aa31807b4",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "bd710e0c2c814d2cb8a1bf7aa31807b4",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.350Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Crypt of the Necrodancer Pinball audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "audience"
+          },
+          {
+            "path": "public"
+          }
+        ],
+        "creationDate": "2023-03-14T01:23:00.524Z",
+        "customAttributes": {
+          "SupportedPlatforms": {
+            "type": "STRING",
+            "value": "Windows"
+          }
+        },
+        "description": "Godzilla vs. Kong Pinball Pack audience",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "50da5cb58d9341ff86db8d14923b0aa7",
+        "entitlementType": "AUDIENCE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "50da5cb58d9341ff86db8d14923b0aa7",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.331Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Godzilla vs. Kong Pinball Pack audience",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-05-19T21:45:33.048Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Pinball FX - Honor and Legacy Pack",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "29066fea9d9e4d25bcb7abf4fd7c8ef4",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "29066fea9d9e4d25bcb7abf4fd7c8ef4",
+        "itemType": "DURABLE",
+        "keyImages": [
+          {
+            "height": 1440,
+            "md5": "803c6b679bef699e931552c104df3b20",
+            "size": 390333,
+            "type": "DieselGameBox",
+            "uploadedDate": "2023-05-25T17:00:32.204Z",
+            "url": "https://cdn1.epicgames.com/item/c11f80fe3b674a2bbf60e4c46d588a54/EGS_PinballFXHonorandLegacyPack_ZenStudios_AddOn_S1_2560x1440-803c6b679bef699e931552c104df3b20",
+            "width": 2560
+          },
+          {
+            "height": 1600,
+            "md5": "624b0a7847cc35cb6b797a0f8224b455",
+            "size": 226245,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2023-05-25T17:00:38.495Z",
+            "url": "https://cdn1.epicgames.com/item/c11f80fe3b674a2bbf60e4c46d588a54/EGS_PinballFXHonorandLegacyPack_ZenStudios_AddOn_S2_1200x1600-624b0a7847cc35cb6b797a0f8224b455",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2024-03-14T14:55:21.321Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "ae4d6967a2b84d638c016fcdc7d8e0ec",
+            "id": "b6683b8d760b42aa97353ce616435af2",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Pinball FX - Honor and Legacy Pack",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-05-19T21:46:33.947Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Pinball FX - Williams Pinball: Whirlwind",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "016e8ee441334e86aaca78be368ef812",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "016e8ee441334e86aaca78be368ef812",
+        "itemType": "DURABLE",
+        "keyImages": [
+          {
+            "height": 1440,
+            "md5": "16683cedb9a12920c5f9fc2a4e6fab1e",
+            "size": 668471,
+            "type": "DieselGameBox",
+            "uploadedDate": "2023-05-25T17:12:44.752Z",
+            "url": "https://cdn1.epicgames.com/item/c11f80fe3b674a2bbf60e4c46d588a54/EGS_PinballFXWilliamsPinballWhirlwind_ZenStudios_AddOn_S1_2560x1440-16683cedb9a12920c5f9fc2a4e6fab1e",
+            "width": 2560
+          },
+          {
+            "height": 1600,
+            "md5": "6692bbad8a8431f94f793cd7cc5756cc",
+            "size": 341063,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2023-05-25T17:12:55.582Z",
+            "url": "https://cdn1.epicgames.com/item/c11f80fe3b674a2bbf60e4c46d588a54/EGS_PinballFXWilliamsPinballWhirlwind_ZenStudios_AddOn_S2_1200x1600-6692bbad8a8431f94f793cd7cc5756cc",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2024-03-14T14:55:21.310Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "6c107e9f88b345e7866116092904e089",
+            "id": "0ee3ae6097d04bb4b9ef29342567d084",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Pinball FX - Williams Pinball: Whirlwind",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-07-31T22:18:58.895Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Williams\u2122 Pinball: Star Trek\u2122: The Next Generation",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "08693fb2837e454785ecfb78fb379657",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "08693fb2837e454785ecfb78fb379657",
+        "itemType": "DURABLE",
+        "keyImages": [
+          {
+            "height": 1440,
+            "md5": "5ec8fe7a444ec256ec7b90d08216f339",
+            "size": 908856,
+            "type": "DieselGameBox",
+            "uploadedDate": "2023-08-23T17:50:35.987Z",
+            "url": "https://cdn1.epicgames.com/item/c11f80fe3b674a2bbf60e4c46d588a54/EGS_PinballFXStarTrekTheNextGeneration_ZenStudios_AddOn_S1_2560x1440-5ec8fe7a444ec256ec7b90d08216f339",
+            "width": 2560
+          },
+          {
+            "height": 1600,
+            "md5": "e381491f5fb1ea00b1cf7878ece1fdb6",
+            "size": 579413,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2023-08-23T17:50:38.982Z",
+            "url": "https://cdn1.epicgames.com/item/c11f80fe3b674a2bbf60e4c46d588a54/EGS_PinballFXStarTrekTheNextGeneration_ZenStudios_AddOn_S2_1200x1600-e381491f5fb1ea00b1cf7878ece1fdb6",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2024-03-14T14:55:21.315Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "eb1f371db12447829938fca1ee2de243",
+            "id": "22ce08b83b9a4b37a06655ea1b699048",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Williams\u2122 Pinball: Star Trek\u2122: The Next Generation",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-09-22T17:24:09.683Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Pinball FX - South Park Pinball",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "cab80d31361448e39986e99e05ec3f83",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "cab80d31361448e39986e99e05ec3f83",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.354Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "fce0e33312a04b43b26caa53991f576f",
+            "compatibleApps": [],
+            "dateAdded": "2023-09-22T17:42:36.713Z",
+            "id": "6fa5d4b96c97484c965edfcbc77a5b7d",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Pinball FX - South Park Pinball",
+        "unsearchable": true
+      },
+      {
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-09-22T17:24:49.012Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Pinball FX - Williams Pinball Volume 7",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "227b2986b2ab489cb2714d1fc049373e",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "227b2986b2ab489cb2714d1fc049373e",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.318Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Pinball FX - Williams Pinball Volume 7",
+        "unsearchable": true
+      },
+      {
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-11-16T11:35:45.702Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Pinball FX - Star Trek\u2122 Pinball",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "f94df402e0ba488e98bde73210ad36ff",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "f94df402e0ba488e98bde73210ad36ff",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.360Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "2505f35aeca545f38c659b06ad6a2a2f",
+            "id": "5847cd45d50e4f1eb7cbecb07a3132c2",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Pinball FX - Star Trek\u2122 Pinball",
+        "unsearchable": true
+      },
+      {
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-11-16T11:35:58.196Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Pinball FX - Game Night Pinball Volume 1",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "7cfbb622053741bbb18fbbb138721365",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "7cfbb622053741bbb18fbbb138721365",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.342Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "011454b1dd104dcdaf1d41574725771c",
+            "id": "1fa6572cbc74475197c20d04d7bbc337",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Pinball FX - Game Night Pinball Volume 1",
+        "unsearchable": true
+      },
+      {
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-11-16T11:36:11.362Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Pinball FX - Charity Pack",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "08cdc7124b604fe09230f4d21e060374",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "08cdc7124b604fe09230f4d21e060374",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.315Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "0b57bedd5fcf4064b0a7763a28105518",
+            "id": "30d832e9ada843399db6643d2ec3a28c",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Pinball FX - Charity Pack",
+        "unsearchable": true
+      },
+      {
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2023-11-16T11:36:25.799Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Pinball FX - A Charlie Brown Christmas\u2122 Pinball",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "d3ab0c80209a4d278c71b936318d7eae",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "d3ab0c80209a4d278c71b936318d7eae",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-03-14T14:55:21.357Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "3c9c61087ea2448282926de260748ec6",
+            "id": "8f8546feef794b8b8066f54c8f6dc154",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Pinball FX - A Charlie Brown Christmas\u2122 Pinball",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2024-04-18T07:00:50.623Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Pinball FX - Pacific Rim Pinball",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "7c8801093ffc41fc92202c393d65c18d",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "7c8801093ffc41fc92202c393d65c18d",
+        "itemType": "DURABLE",
+        "keyImages": [
+          {
+            "height": 1440,
+            "md5": "69dfa016997b1372936ae8795af383e8",
+            "size": 976797,
+            "type": "DieselGameBox",
+            "uploadedDate": "2024-04-24T12:06:56.444Z",
+            "url": "https://cdn1.epicgames.com/item/c11f80fe3b674a2bbf60e4c46d588a54/EGS_PinballFXPacificRimPinball_ZenStudios_AddOn_S1_2560x1440-69dfa016997b1372936ae8795af383e8",
+            "width": 2560
+          },
+          {
+            "height": 1600,
+            "md5": "e89d8fa3dc0f7bce5fb02d0f6898ff6b",
+            "size": 501581,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2024-04-24T12:06:59.539Z",
+            "url": "https://cdn1.epicgames.com/item/c11f80fe3b674a2bbf60e4c46d588a54/EGS_PinballFXPacificRimPinball_ZenStudios_AddOn_S2_1200x1600-e89d8fa3dc0f7bce5fb02d0f6898ff6b",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2024-04-24T12:08:14.582Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "17d3cc97bd144802a7b191286366228b",
+            "id": "c2cf4722a65b41299ffc8dc32828a95a",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Pinball FX - Pacific Rim Pinball",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2024-04-18T07:01:05.417Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Pinball FX - Super League Football",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "a5a679dd45374eb19f14564736617948",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "a5a679dd45374eb19f14564736617948",
+        "itemType": "DURABLE",
+        "keyImages": [
+          {
+            "height": 1440,
+            "md5": "e87a02ad31a49c0e78a313933d8718c0",
+            "size": 835390,
+            "type": "DieselGameBox",
+            "uploadedDate": "2024-04-24T12:07:19.521Z",
+            "url": "https://cdn1.epicgames.com/item/c11f80fe3b674a2bbf60e4c46d588a54/EGS_PinballFXSuperLeagueFootball_ZenStudios_AddOn_S1_2560x1440-e87a02ad31a49c0e78a313933d8718c0",
+            "width": 2560
+          },
+          {
+            "height": 1600,
+            "md5": "2d0d8e4810ef531afaac3faca8b3f170",
+            "size": 995154,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2024-04-24T12:07:22.748Z",
+            "url": "https://cdn1.epicgames.com/item/c11f80fe3b674a2bbf60e4c46d588a54/EGS_PinballFXSuperLeagueFootball_ZenStudios_AddOn_S2_1200x1600-2d0d8e4810ef531afaac3faca8b3f170",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2024-04-24T18:19:49.260Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "d1e04ec112c6418a88941f8f3d5945d5",
+            "id": "f6021c0ca52840e48ca76f4822519ecf",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Pinball FX - Super League Football",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2024-04-18T07:01:16.264Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Pinball FX - Universal Pinball: TV Classics",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "620569a4e13246c6b985fc811303f885",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "620569a4e13246c6b985fc811303f885",
+        "itemType": "DURABLE",
+        "keyImages": [
+          {
+            "height": 1440,
+            "md5": "c7f63cc8d5be6b6f29abfcd2c9e0aa99",
+            "size": 1037436,
+            "type": "DieselGameBox",
+            "uploadedDate": "2024-04-24T12:06:32.426Z",
+            "url": "https://cdn1.epicgames.com/item/c11f80fe3b674a2bbf60e4c46d588a54/EGS_PinballFXUniversalPinballTVClassics_ZenStudios_AddOn_S1_2560x1440-c7f63cc8d5be6b6f29abfcd2c9e0aa99",
+            "width": 2560
+          },
+          {
+            "height": 1600,
+            "md5": "bc5fb193895ba9fdc45f3b0c0fc52653",
+            "size": 640642,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2024-04-24T12:06:35.540Z",
+            "url": "https://cdn1.epicgames.com/item/c11f80fe3b674a2bbf60e4c46d588a54/EGS_PinballFXUniversalPinballTVClassics_ZenStudios_AddOn_S2_1200x1600-bc5fb193895ba9fdc45f3b0c0fc52653",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2024-04-24T12:08:14.581Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "78e1c51e876e496fb3dddea3e6df1317",
+            "id": "0c5f33997dbc43b3a8dc888119eca1c1",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Pinball FX - Universal Pinball: TV Classics",
+        "unsearchable": true
+      },
+      {
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2024-07-17T15:15:40.555Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Pinball FX - The Princess Bride Pinball",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "98be44e01e80486787b84744d17ad72b",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "98be44e01e80486787b84744d17ad72b",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-08-29T14:51:37.710Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "9994022cd5bd496d9a06b6cd29992019",
+            "id": "f63652cfb60c42a39c27909bc4c60e0a",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Pinball FX - The Princess Bride Pinball",
+        "unsearchable": true
+      },
+      {
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2024-07-17T15:18:32.561Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Pinball FX - Goat Simulator Pinball",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "c71a70b1b0904f2e8374e027de68d9f7",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "c71a70b1b0904f2e8374e027de68d9f7",
+        "itemType": "DURABLE",
+        "lastModifiedDate": "2024-08-29T14:51:37.710Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "7037dab8b0d6461081e9906012c5231e",
+            "id": "c49a7fa956014f15989844d0b910c587",
+            "platform": [
+              "Windows"
+            ]
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Pinball FX - Goat Simulator Pinball",
+        "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2024-11-14T14:47:46.667Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Pinball FX - Williams Pinball Volume 8",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "c4aeb4906d0a4770bbac3ed6751df6da",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "c4aeb4906d0a4770bbac3ed6751df6da",
+        "itemType": "DURABLE",
+        "keyImages": [
+          {
+            "height": 1440,
+            "md5": "3bcd43f2c8ee0e0c17dcfc3334d4a8a4",
+            "size": 803733,
+            "type": "DieselGameBox",
+            "uploadedDate": "2024-12-03T14:08:29.800Z",
+            "url": "https://cdn1.epicgames.com/item/c11f80fe3b674a2bbf60e4c46d588a54/EGS_PinballFXWilliamsPinballVolume8_ZenStudios_AddOn_S1_2560x1440-3bcd43f2c8ee0e0c17dcfc3334d4a8a4",
+            "width": 2560
+          },
+          {
+            "height": 1600,
+            "md5": "9f79c1b5c9ccbbb01ebfb274a981e8eb",
+            "size": 374770,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2024-12-03T14:08:37.606Z",
+            "url": "https://cdn1.epicgames.com/item/c11f80fe3b674a2bbf60e4c46d588a54/EGS_PinballFXWilliamsPinballVolume8_ZenStudios_AddOn_S2_1200x1600-9f79c1b5c9ccbbb01ebfb274a981e8eb",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2024-12-12T15:49:54.882Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [
+          {
+            "appId": "422673b7e8d14831a4f5847c5e611b0d",
+            "compatibleApps": [],
+            "id": "31ab9f0896814d8487e9dc68b5c1d881",
+            "platform": []
+          }
+        ],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Pinball FX - Williams Pinball Volume 8",
+        "unsearchable": true
+      }
+    ],
+    "endOfSupport": false,
+    "entitlementName": "db2967c067614552a6245145fe42a9a8",
+    "entitlementType": "EXECUTABLE",
+    "eulaIds": [
+      "egstore"
+    ],
+    "id": "db2967c067614552a6245145fe42a9a8",
+    "installModes": [],
+    "itemType": "DURABLE",
+    "keyImages": [
+      {
+        "height": 1440,
+        "md5": "ae93c79584d28ea29167892040d2bd15",
+        "size": 688349,
+        "type": "DieselGameBox",
+        "uploadedDate": "2024-06-12T11:08:27.677Z",
+        "url": "https://cdn1.epicgames.com/item/c11f80fe3b674a2bbf60e4c46d588a54/EGS_PinballFX_ZenStudios_S1_2560x1440-ae93c79584d28ea29167892040d2bd15",
+        "width": 2560
+      },
+      {
+        "height": 1600,
+        "md5": "5828295208578366ff8ca48dd3c88913",
+        "size": 423255,
+        "type": "DieselGameBoxTall",
+        "uploadedDate": "2024-06-12T11:08:31.740Z",
+        "url": "https://cdn1.epicgames.com/item/c11f80fe3b674a2bbf60e4c46d588a54/EGS_PinballFX_ZenStudios_S2_1200x1600-5828295208578366ff8ca48dd3c88913",
+        "width": 1200
+      }
+    ],
+    "lastModifiedDate": "2024-12-12T15:49:54.911Z",
+    "mainGameItemList": [],
+    "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+    "releaseInfo": [
+      {
+        "appId": "56a31432931740cdb0112d237d7d65aa",
+        "compatibleApps": [],
+        "dateAdded": "2021-11-01T20:41:41.631Z",
+        "id": "5ccba0196ad7423b82f9bf54552f89c7",
+        "platform": [
+          "Windows"
+        ]
+      }
+    ],
+    "requiresSecureAccount": false,
+    "status": "ACTIVE",
+    "title": "Pinball FX",
+    "unsearchable": true
+  },
+  "sidecar": null
+}

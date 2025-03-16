@@ -1,0 +1,19 @@
+<application>
+  <component name="Trusted.Paths">
+    <option name="TRUSTED_PROJECT_PATHS">
+      <map>
+        <entry key="$USER_HOME$/ProjectD" value="true" />
+        <entry key="$USER_HOME$/ProjectD/Fluttering" value="true" />
+        <entry key="$USER_HOME$/ProjectD/HotelInFlutter" value="true" />
+        <entry key="$USER_HOME$/ProjectD/HotelInFlutter/yala" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="Trusted.Paths.Settings">
+    <option name="TRUSTED_PATHS">
+      <list>
+        <option value="$USER_HOME$/ProjectD" />
+      </list>
+    </option>
+  </component>
+</application>

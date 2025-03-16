@@ -36,7 +36,15 @@ mute() {
     pamixer -u
   else 
     pamixer -m
+  fi
+}
 
+mic_mute() {
+  mic_muted="$(pamixer --default-source --get-mute)"
+  if $mic_muted; then
+    pamixer --default-source -u
+  else
+    pamixer --default-source -m
   fi
 }
 
@@ -44,5 +52,6 @@ case "$1" in
   up) up;;
   down) down;;
   mute) mute;;
+  mic_mute) mic_mute;;
   playpause) playpause;;
 esac

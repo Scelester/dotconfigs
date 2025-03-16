@@ -1,0 +1,440 @@
+{
+  "app_name": "fdbd9987b8344d2ead326c7f18d6da0e",
+  "app_title": "Witch It",
+  "asset_infos": {
+    "Windows": {
+      "app_name": "fdbd9987b8344d2ead326c7f18d6da0e",
+      "asset_id": "fdbd9987b8344d2ead326c7f18d6da0e",
+      "build_version": "1.6.2.23465",
+      "catalog_item_id": "a01d846767aa43d0bbb285548d59817d",
+      "label_name": "Live-Windows",
+      "metadata": {
+        "installationPoolId": "0b018c8ae2964af5afd8adc09cd9720f",
+        "update_type": "MINOR"
+      },
+      "namespace": "b9e6e3d5a4474a8ead248c62bfdf08b7",
+      "sidecar_rev": 1
+    }
+  },
+  "base_urls": [],
+  "metadata": {
+    "applicationId": "",
+    "categories": [
+      {
+        "path": "games"
+      },
+      {
+        "path": "applications"
+      }
+    ],
+    "creationDate": "2023-05-05T21:17:11.582Z",
+    "customAttributes": {
+      "FolderName": {
+        "type": "STRING",
+        "value": "WitchIt"
+      }
+    },
+    "description": "Witch It",
+    "developer": "Barrel Roll Games GmbH & Co. KG",
+    "developerId": "o-ur7c9fhlj4tk5quljfy7znqz9qz2t3",
+    "dlcItemList": [
+      {
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2024-09-05T12:37:02.677Z",
+        "customAttributes": {},
+        "description": "Moon Sorceress DLC",
+        "developer": "Barrel Roll Games GmbH & Co. KG",
+        "developerId": "o-ur7c9fhlj4tk5quljfy7znqz9qz2t3",
+        "endOfSupport": false,
+        "entitlementName": "a32d3a17bce448c9b4a5d1bb7bd19fb5",
+        "entitlementType": "EXECUTABLE",
+        "id": "a32d3a17bce448c9b4a5d1bb7bd19fb5",
+        "itemType": "DURABLE",
+        "keyImages": [
+          {
+            "alt": "Witch It Moon Sorceress DLC Offer",
+            "height": 1440,
+            "md5": "8679011282e273a0d414bc486866edca",
+            "size": 1438377,
+            "type": "DieselGameBox",
+            "uploadedDate": "2024-09-16T13:58:33.793Z",
+            "url": "https://cdn1.epicgames.com/spt-assets/03887d7e03fd460eb1c3074d1de865dd/witch-it-1dw6f.jpg",
+            "width": 2560
+          },
+          {
+            "alt": "Download Witch It Moon Sorceress DLC Offer",
+            "height": 1600,
+            "md5": "240b5635a419c99c6d6cdd96ab55a07d",
+            "size": 913862,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2024-09-16T13:58:34.766Z",
+            "url": "https://cdn1.epicgames.com/spt-assets/03887d7e03fd460eb1c3074d1de865dd/witch-it-6bsoz.jpg",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2024-10-24T13:26:26.462Z",
+        "mainGameItem": {
+          "id": "a01d846767aa43d0bbb285548d59817d",
+          "namespace": "b9e6e3d5a4474a8ead248c62bfdf08b7",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "a01d846767aa43d0bbb285548d59817d",
+            "namespace": "b9e6e3d5a4474a8ead248c62bfdf08b7",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "b9e6e3d5a4474a8ead248c62bfdf08b7",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Moon Sorceress DLC",
+        "unsearchable": false
+      },
+      {
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2024-09-05T12:36:27.945Z",
+        "customAttributes": {},
+        "description": "Time Keeper DLC",
+        "developer": "Barrel Roll Games GmbH & Co. KG",
+        "developerId": "o-ur7c9fhlj4tk5quljfy7znqz9qz2t3",
+        "endOfSupport": false,
+        "entitlementName": "074abd1041fd4e8c8263f8ccf7519140",
+        "entitlementType": "EXECUTABLE",
+        "id": "074abd1041fd4e8c8263f8ccf7519140",
+        "itemType": "DURABLE",
+        "keyImages": [
+          {
+            "alt": "Witch It Time Keeper DLC Offer",
+            "height": 1440,
+            "md5": "00bae0fe76e543a9db4bd7896e49f56d",
+            "size": 1652581,
+            "type": "DieselGameBox",
+            "uploadedDate": "2024-09-16T15:46:41.902Z",
+            "url": "https://cdn1.epicgames.com/spt-assets/03887d7e03fd460eb1c3074d1de865dd/witch-it-1m33s.jpg",
+            "width": 2560
+          },
+          {
+            "alt": "Download Witch It Time Keeper DLC Offer",
+            "height": 1600,
+            "md5": "d34866cdfd8c6730d2b796ddc2d0a8b3",
+            "size": 1016087,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2024-09-16T15:46:45.163Z",
+            "url": "https://cdn1.epicgames.com/spt-assets/03887d7e03fd460eb1c3074d1de865dd/witch-it-1fohb.jpg",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2024-10-24T13:26:26.462Z",
+        "mainGameItem": {
+          "id": "a01d846767aa43d0bbb285548d59817d",
+          "namespace": "b9e6e3d5a4474a8ead248c62bfdf08b7",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "a01d846767aa43d0bbb285548d59817d",
+            "namespace": "b9e6e3d5a4474a8ead248c62bfdf08b7",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "b9e6e3d5a4474a8ead248c62bfdf08b7",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Time Keeper DLC",
+        "unsearchable": false
+      },
+      {
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2024-09-05T12:36:50.107Z",
+        "customAttributes": {},
+        "description": "Eternal Protector DLC",
+        "developer": "Barrel Roll Games GmbH & Co. KG",
+        "developerId": "o-ur7c9fhlj4tk5quljfy7znqz9qz2t3",
+        "endOfSupport": false,
+        "entitlementName": "c9d4c36fb83f4c3ea3c3a001f7e5b068",
+        "entitlementType": "EXECUTABLE",
+        "id": "c9d4c36fb83f4c3ea3c3a001f7e5b068",
+        "itemType": "DURABLE",
+        "keyImages": [
+          {
+            "alt": "Witch It Eternal Protector DLC Offer",
+            "height": 1440,
+            "md5": "72c48f4eab589227c3cf118ae42d5921",
+            "size": 1277256,
+            "type": "DieselGameBox",
+            "uploadedDate": "2024-09-16T15:40:24.817Z",
+            "url": "https://cdn1.epicgames.com/spt-assets/03887d7e03fd460eb1c3074d1de865dd/witch-it-1vm58.jpg",
+            "width": 2560
+          },
+          {
+            "alt": "Download Witch It Eternal Protector DLC Offer",
+            "height": 1600,
+            "md5": "8aa30fedc20f30d2bf625cecc2ae232e",
+            "size": 914062,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2024-09-16T15:40:31.184Z",
+            "url": "https://cdn1.epicgames.com/spt-assets/03887d7e03fd460eb1c3074d1de865dd/witch-it-r2tuc.jpg",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2024-10-24T13:26:26.462Z",
+        "mainGameItem": {
+          "id": "a01d846767aa43d0bbb285548d59817d",
+          "namespace": "b9e6e3d5a4474a8ead248c62bfdf08b7",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "a01d846767aa43d0bbb285548d59817d",
+            "namespace": "b9e6e3d5a4474a8ead248c62bfdf08b7",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "b9e6e3d5a4474a8ead248c62bfdf08b7",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Eternal Protector DLC",
+        "unsearchable": false
+      },
+      {
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2024-09-05T12:37:14.539Z",
+        "customAttributes": {},
+        "description": "Winter Storm Witch DLC",
+        "developer": "Barrel Roll Games GmbH & Co. KG",
+        "developerId": "o-ur7c9fhlj4tk5quljfy7znqz9qz2t3",
+        "endOfSupport": false,
+        "entitlementName": "85836f72f25a47b7b6aee48d58bd456f",
+        "entitlementType": "EXECUTABLE",
+        "id": "85836f72f25a47b7b6aee48d58bd456f",
+        "itemType": "DURABLE",
+        "keyImages": [
+          {
+            "alt": "Witch It Winter Storm Witch DLC Offer",
+            "height": 1440,
+            "md5": "8fbbb1d679ac631757f7b0b142b63641",
+            "size": 1446524,
+            "type": "DieselGameBox",
+            "uploadedDate": "2024-09-16T15:33:36.380Z",
+            "url": "https://cdn1.epicgames.com/spt-assets/03887d7e03fd460eb1c3074d1de865dd/witch-it-1inil.jpg",
+            "width": 2560
+          },
+          {
+            "alt": "Download Witch It Winter Storm Witch DLC Offer",
+            "height": 1600,
+            "md5": "6d7a16aae4ef3358783180d90d9f9836",
+            "size": 938684,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2024-09-16T15:33:36.869Z",
+            "url": "https://cdn1.epicgames.com/spt-assets/03887d7e03fd460eb1c3074d1de865dd/witch-it-1mw3o.jpg",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2024-10-24T13:26:26.462Z",
+        "mainGameItem": {
+          "id": "a01d846767aa43d0bbb285548d59817d",
+          "namespace": "b9e6e3d5a4474a8ead248c62bfdf08b7",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "a01d846767aa43d0bbb285548d59817d",
+            "namespace": "b9e6e3d5a4474a8ead248c62bfdf08b7",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "b9e6e3d5a4474a8ead248c62bfdf08b7",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Winter Storm Witch DLC",
+        "unsearchable": false
+      },
+      {
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2024-10-24T13:26:26.477Z",
+        "description": "Fluffy Luaq DLC",
+        "developer": "Barrel Roll Games GmbH & Co. KG",
+        "developerId": "o-ur7c9fhlj4tk5quljfy7znqz9qz2t3",
+        "endOfSupport": false,
+        "entitlementName": "da9247da4e864036babc37a3605afe00",
+        "entitlementType": "EXECUTABLE",
+        "id": "da9247da4e864036babc37a3605afe00",
+        "itemType": "DURABLE",
+        "keyImages": [
+          {
+            "alt": "Witch It Fluffy Luaq DLC Offer",
+            "height": 1440,
+            "md5": "db81b77ef147f4c6866428f07a62400a",
+            "size": 1086181,
+            "type": "DieselGameBox",
+            "uploadedDate": "2024-10-23T11:40:37.210Z",
+            "url": "https://cdn1.epicgames.com/spt-assets/03887d7e03fd460eb1c3074d1de865dd/witch-it-1atpw.jpg",
+            "width": 2560
+          },
+          {
+            "alt": "Download Witch It Fluffy Luaq DLC Offer",
+            "height": 1600,
+            "md5": "467d8d05879c9ec017497fcdefd4ab5d",
+            "size": 746998,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2024-10-23T11:40:38.699Z",
+            "url": "https://cdn1.epicgames.com/spt-assets/03887d7e03fd460eb1c3074d1de865dd/witch-it-1w8eq.jpg",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2024-10-24T13:26:26.477Z",
+        "mainGameItem": {
+          "id": "a01d846767aa43d0bbb285548d59817d",
+          "namespace": "b9e6e3d5a4474a8ead248c62bfdf08b7",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "a01d846767aa43d0bbb285548d59817d",
+            "namespace": "b9e6e3d5a4474a8ead248c62bfdf08b7",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "b9e6e3d5a4474a8ead248c62bfdf08b7",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Fluffy Luaq DLC",
+        "unsearchable": false
+      },
+      {
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2024-12-20T20:33:40.175Z",
+        "description": "Winterdream Witch DLC",
+        "developer": "Barrel Roll Games GmbH & Co. KG",
+        "developerId": "o-ur7c9fhlj4tk5quljfy7znqz9qz2t3",
+        "endOfSupport": false,
+        "entitlementName": "8447a7e8fd8040dd8a4e1907c9deb6b1",
+        "entitlementType": "EXECUTABLE",
+        "id": "8447a7e8fd8040dd8a4e1907c9deb6b1",
+        "itemType": "DURABLE",
+        "keyImages": [
+          {
+            "alt": "Witch It Winterdream Witch DLC Offer",
+            "height": 1440,
+            "md5": "45da7ca87a0b19bd8d7d2e13703d8596",
+            "size": 1309121,
+            "type": "DieselGameBox",
+            "uploadedDate": "2024-12-04T09:59:19.868Z",
+            "url": "https://cdn1.epicgames.com/spt-assets/03887d7e03fd460eb1c3074d1de865dd/witch-it-jql55.jpg",
+            "width": 2560
+          },
+          {
+            "alt": "Download Witch It Winterdream Witch DLC Offer",
+            "height": 1600,
+            "md5": "a18f14f5ecde6be0e9dad5a3b506fea0",
+            "size": 898559,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2024-12-04T09:59:23.345Z",
+            "url": "https://cdn1.epicgames.com/spt-assets/03887d7e03fd460eb1c3074d1de865dd/witch-it-ddly6.jpg",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2024-12-20T20:33:40.175Z",
+        "mainGameItem": {
+          "id": "a01d846767aa43d0bbb285548d59817d",
+          "namespace": "b9e6e3d5a4474a8ead248c62bfdf08b7",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "a01d846767aa43d0bbb285548d59817d",
+            "namespace": "b9e6e3d5a4474a8ead248c62bfdf08b7",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "b9e6e3d5a4474a8ead248c62bfdf08b7",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Winterdream Witch DLC",
+        "unsearchable": false
+      }
+    ],
+    "endOfSupport": false,
+    "entitlementName": "a01d846767aa43d0bbb285548d59817d",
+    "entitlementType": "EXECUTABLE",
+    "id": "a01d846767aa43d0bbb285548d59817d",
+    "itemType": "DURABLE",
+    "keyImages": [
+      {
+        "alt": "Witch It Offer",
+        "height": 1440,
+        "md5": "a59a8ef10eccc412912ff96f21a483f6",
+        "size": 1158400,
+        "type": "DieselGameBox",
+        "uploadedDate": "2024-01-19T10:33:05.770Z",
+        "url": "https://cdn1.epicgames.com/spt-assets/03887d7e03fd460eb1c3074d1de865dd/witch-it-1h1bk.jpg",
+        "width": 2560
+      },
+      {
+        "alt": "Download Witch It Offer",
+        "height": 1600,
+        "md5": "acd58b3580ded12ff257116f39fa17e3",
+        "size": 2220134,
+        "type": "DieselGameBoxTall",
+        "uploadedDate": "2024-03-25T16:28:10.282Z",
+        "url": "https://cdn1.epicgames.com/spt-assets/03887d7e03fd460eb1c3074d1de865dd/witch-it-3y04i.png",
+        "width": 1200
+      }
+    ],
+    "lastModifiedDate": "2024-12-20T20:33:40.504Z",
+    "mainGameItemList": [],
+    "namespace": "b9e6e3d5a4474a8ead248c62bfdf08b7",
+    "releaseInfo": [
+      {
+        "appId": "fdbd9987b8344d2ead326c7f18d6da0e",
+        "id": "e8784863cde44c7b9750aecd91d2e803",
+        "platform": [
+          "Windows"
+        ]
+      }
+    ],
+    "requiresSecureAccount": false,
+    "status": "ACTIVE",
+    "title": "Witch It",
+    "unsearchable": false
+  },
+  "sidecar": {
+    "config": {
+      "deploymentId": "574c994c6e494be9a7852c1ab3d1b7bb"
+    },
+    "rev": 1
+  }
+}

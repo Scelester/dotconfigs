@@ -4,11 +4,3 @@ type=libvirt
 uri=qemu+unix:///session
 save-on-quit=true
 
-[display 4a679259-9ed2-442b-bb12-821f5769e023]
-last-seen-name=Test Arch
-uuid=4a679259-9ed2-442b-bb12-821f5769e023
-acceleration-3d=false
-run-in-bg=false
-access-last-time=1736085295750830
-access-ntimes=7
-access-total-time=1859

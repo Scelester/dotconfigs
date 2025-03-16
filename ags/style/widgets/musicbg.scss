@@ -1,0 +1,127 @@
+/* Music Controller Container */
+.music-bg {
+    /* A semi-transparent dark background so the controls are visible over any desktop */
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.music-bg:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.music-box-container {
+    padding: 10px;
+    /* Extra space inside the container */
+
+}
+
+
+/* Music Button Base Style */
+.music-btn {
+    background-color: transparent;
+    /* No button background by default */
+    border: none;
+    /* Remove borders */
+    color: #ffffff;
+    font-size: 16px;
+    padding: 6px 10px;
+    transition: background-color 0.2s ease;
+}
+
+.music-title {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 12px;
+}
+
+
+
+/***** Search Overlay Styling *****/
+.search-overlay {
+    background: transparent;
+    margin: 20px;
+}
+
+.search-entry {
+    background-color: rgba(17, 17, 17, 0.9);
+    border-radius: 10px;
+    color: white;
+    padding: 12px;
+    font-size: 14px;
+    caret-color: white;
+}
+
+.search-results {
+    background-color: rgb(0, 0, 0);
+    border-radius: 28px;
+    padding: 10px;
+    min-width: 1850px;
+    min-height: 350px;
+}
+
+.search-item {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 6px;
+    border: 1px dotted rgb(241, 241, 241,0.2);
+    padding: 4px 5px;
+    margin: 4px 0;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+
+.search-item:hover {
+    background-color: rgba(78, 114, 223, 0.7);
+    font-size: 17px;
+}
+.search-item:focus{
+    background-color: blue;
+    font-weight: bold;
+}
+
+.search-section-label {
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+/***** Lyrics Overlay Styling *****/
+.lyrics-overlay {
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 15px;
+}
+
+.lyrics-text {
+    color: white;
+    background: transparent;
+    font-size: 18px;
+    padding: 15px;
+    min-width: 1850px;
+    min-height: 350px;
+}
+
+/***** Close Button (Universal) *****/
+.close-btn {
+    background:transparent;
+    border-radius: 15px;
+    border: 1px solid rgb(192, 190, 188,0.2);
+    padding: 10px;
+    margin-top: 15px;
+    transition: 0.2s ease;
+}
+
+
+/***** Enhanced Existing Styles *****/
+.music-btn.play {
+    background-color: rgba(78, 114, 223, 0.3);
+    border-radius: 50%;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+.music-btn.play:hover {
+    background-color: rgba(78, 114, 223, 0.5);
+}

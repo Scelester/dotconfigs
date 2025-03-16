@@ -1,6 +1,6 @@
 {
     "DesktopAudioDevice1": {
-        "prev_ver": 520093696,
+        "prev_ver": 520093697,
         "name": "Desktop Audio",
         "uuid": "37c6985d-7aa5-42b8-88b3-d3d2cc17f6d6",
         "id": "pulse_output_capture",
@@ -31,7 +31,7 @@
         "private_settings": {}
     },
     "AuxAudioDevice1": {
-        "prev_ver": 520093696,
+        "prev_ver": 520093697,
         "name": "Mic/Aux",
         "uuid": "02f0bc0e-cfec-4a35-9d7e-2bbe28dacf26",
         "id": "pulse_input_capture",
@@ -42,7 +42,7 @@
         "mixers": 255,
         "sync": 0,
         "flags": 0,
-        "volume": 1.0,
+        "volume": 0.0,
         "balance": 0.5,
         "enabled": true,
         "muted": false,
@@ -59,7 +59,33 @@
         "deinterlace_mode": 0,
         "deinterlace_field_order": 0,
         "monitoring_type": 0,
-        "private_settings": {}
+        "private_settings": {},
+        "filters": [
+            {
+                "prev_ver": 520093697,
+                "name": "Noise Suppression",
+                "uuid": "df4f6d24-1e68-4108-affb-bd9245555222",
+                "id": "noise_suppress_filter",
+                "versioned_id": "noise_suppress_filter_v2",
+                "settings": {},
+                "mixers": 255,
+                "sync": 0,
+                "flags": 0,
+                "volume": 1.0,
+                "balance": 0.5,
+                "enabled": true,
+                "muted": false,
+                "push-to-mute": false,
+                "push-to-mute-delay": 0,
+                "push-to-talk": false,
+                "push-to-talk-delay": 0,
+                "hotkeys": {},
+                "deinterlace_mode": 0,
+                "deinterlace_field_order": 0,
+                "monitoring_type": 0,
+                "private_settings": {}
+            }
+        ]
     },
     "current_scene": "Scene",
     "current_program_scene": "Scene",
@@ -71,7 +97,7 @@
     "name": "Untitled",
     "sources": [
         {
-            "prev_ver": 520093696,
+            "prev_ver": 520093697,
             "name": "Scene",
             "uuid": "1eaf08f6-a3ee-4621-9665-e9fda2ca810a",
             "id": "scene",
@@ -159,13 +185,13 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520093696,
+            "prev_ver": 520093697,
             "name": "Screen Capture (PipeWire)",
             "uuid": "b31a9d9a-2cbb-4557-903f-084a9d717b94",
             "id": "pipewire-screen-capture-source",
             "versioned_id": "pipewire-screen-capture-source",
             "settings": {
-                "RestoreToken": "d3a0e2da-611c-4d8f-b03b-45d3cb1e3f13"
+                "RestoreToken": "a4f8ebbf-89fb-4e96-8a44-a9820bb44a93"
             },
             "mixers": 0,
             "sync": 0,
@@ -195,7 +221,7 @@
             "fade_to_black": false
         },
         {
-            "name": "Fade",
+            "name": "Cut",
             "duration": 300,
             "hotkeys": [],
             "id": 2,

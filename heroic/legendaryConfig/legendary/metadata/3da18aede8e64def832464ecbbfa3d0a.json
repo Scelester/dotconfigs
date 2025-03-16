@@ -1,0 +1,109 @@
+{
+  "app_name": "3da18aede8e64def832464ecbbfa3d0a",
+  "app_title": "Space Punks",
+  "asset_infos": {
+    "Windows": {
+      "app_name": "3da18aede8e64def832464ecbbfa3d0a",
+      "asset_id": "3da18aede8e64def832464ecbbfa3d0a",
+      "build_version": "REL_UPDATE_9_Shipping_1221514-6863bf3adf-deploy-20230214-112848",
+      "catalog_item_id": "e24cb0ee3d1c4279b60100178b73db42",
+      "label_name": "Live-Windows",
+      "metadata": {},
+      "namespace": "0ded1556336546bf849c9d28878ec86c",
+      "sidecar_rev": 0
+    }
+  },
+  "base_urls": [],
+  "metadata": {
+    "ageGatings": {},
+    "applicationId": "fghi4567eZsIvqRA88f2YZofEkuvs1MI",
+    "categories": [
+      {
+        "path": "games"
+      },
+      {
+        "path": "applications"
+      }
+    ],
+    "creationDate": "2021-05-03T17:41:54.709Z",
+    "customAttributes": {
+      "CanRunOffline": {
+        "type": "STRING",
+        "value": "true"
+      },
+      "CanSkipKoreanIdVerification": {
+        "type": "STRING",
+        "value": "true"
+      },
+      "FolderName": {
+        "type": "STRING",
+        "value": "SpacePunks"
+      },
+      "MonitorPresence": {
+        "type": "STRING",
+        "value": "false"
+      },
+      "PresenceId": {
+        "type": "STRING",
+        "value": "0ded1556336546bf849c9d28878ec86c"
+      },
+      "RequirementsJson": {
+        "type": "STRING",
+        "value": "[]"
+      },
+      "UseAccessControl": {
+        "type": "STRING",
+        "value": "false"
+      }
+    },
+    "description": "Space Punks",
+    "developer": "Jagex",
+    "developerId": "o-pabxa6wl5qzfbkdutrz85c2mnrptrr",
+    "endOfSupport": false,
+    "entitlementName": "e24cb0ee3d1c4279b60100178b73db42",
+    "entitlementType": "EXECUTABLE",
+    "eulaIds": [
+      "(egstore && Jagex)"
+    ],
+    "id": "e24cb0ee3d1c4279b60100178b73db42",
+    "installModes": [],
+    "itemType": "DURABLE",
+    "keyImages": [
+      {
+        "height": 1440,
+        "md5": "f1836394c24ad706d84b41236b96dc7c",
+        "size": 579612,
+        "type": "DieselGameBox",
+        "uploadedDate": "2022-04-19T23:40:31.366Z",
+        "url": "https://cdn1.epicgames.com/item/0ded1556336546bf849c9d28878ec86c/EGS_SpacePunks_FlyingWildHog_S1_2560x1440-f1836394c24ad706d84b41236b96dc7c",
+        "width": 2560
+      },
+      {
+        "height": 1600,
+        "md5": "2dbf956bf38d5bf1908846df08b06933",
+        "size": 391443,
+        "type": "DieselGameBoxTall",
+        "uploadedDate": "2022-04-19T23:40:34.889Z",
+        "url": "https://cdn1.epicgames.com/item/0ded1556336546bf849c9d28878ec86c/EGS_SpacePunks_FlyingWildHog_S2_1200x1600-2dbf956bf38d5bf1908846df08b06933",
+        "width": 1200
+      }
+    ],
+    "lastModifiedDate": "2023-09-01T22:00:18.965Z",
+    "mainGameItemList": [],
+    "namespace": "0ded1556336546bf849c9d28878ec86c",
+    "releaseInfo": [
+      {
+        "appId": "3da18aede8e64def832464ecbbfa3d0a",
+        "id": "afb8ba24816c48f49a0b024bfcc27c3e",
+        "platform": [
+          "Windows"
+        ]
+      }
+    ],
+    "requiresSecureAccount": false,
+    "status": "ACTIVE",
+    "title": "Space Punks",
+    "unsearchable": true
+  },
+  "sidecar": null
+}

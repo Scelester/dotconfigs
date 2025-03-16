@@ -8,13 +8,15 @@ import NotificationPopups from "widget/notifications/NotificationPopups"
 import OSD from "widget/osd/OSD"
 import Overview from "widget/overview/Overview"
 import PowerMenu from "widget/powermenu/PowerMenu"
-//import FirefoxProfile from "widget/firefoxprofile/FirefoxProfile"
+import FirefoxProfile from "widget/firefoxprofile/FirefoxProfile";
 import ScreenCorners from "widget/bar/ScreenCorners"
 import SettingsDialog from "widget/settings/SettingsDialog"
 import Verification from "widget/powermenu/Verification"
 import { forMonitors } from "lib/utils"
+import musicBG from "widget/desktopWidgets/musicBg/musicIndex"
 import { setupQuickSettings } from "widget/quicksettings/QuickSettings"
 import { setupDateMenu } from "widget/datemenu/DateMenu"
+import { desktopWidgets } from "widget/desktopWidgets/index"
 
 App.config({
     onConfigParsed: () => {
@@ -27,6 +29,7 @@ App.config({
         "overview": options.transition.value,
         "quicksettings": options.transition.value,
         "datemenu": options.transition.value,
+        "firefox-profiles": options.transition.value,
     },
     windows: () => [
         ...forMonitors(Bar),
@@ -36,8 +39,10 @@ App.config({
         Launcher(),
         Overview(),
         PowerMenu(),
-        // FirefoxProfile(),
+        FirefoxProfile(),
         SettingsDialog(),
         Verification(),
+        desktopWidgets(),
+        // musicBG(),
     ],
 })

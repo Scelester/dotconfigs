@@ -1,0 +1,191 @@
+(14:06:40) INFO:    [Legendary]:        Legendary location: /usr/lib/heroic/app.asar.unpacked/build/bin/x64/linux/legendary
+(14:06:40) INFO:    [Gog]:              GOGDL location: /usr/lib/heroic/app.asar.unpacked/build/bin/x64/linux/gogdl
+(14:06:40) INFO:    [Connection]:       Connectivity: check-online
+(14:06:40) INFO:    [Connection]:       Pinging external endpoints
+(14:06:40) INFO:    [Gog]:              Checking for existing gog manifests
+(14:06:40) WARNING: [Backend]:          Failed to register protocol with OS.
+(14:06:41) INFO:    [Connection]:       Connectivity: online
+(14:06:41) ERROR:   [Gog]:              Unable to syncQueued playtime, userData not present
+(14:06:41) INFO:    [Gog]:              Running command: GOGDL_CONFIG_PATH=/home/scelester/.config/heroic/gogdlConfig /usr/lib/heroic/app.asar.unpacked/build/bin/x64/linux/gogdl --auth-config-path /home/scelester/.config/heroic/gog_store/auth.json auth
+(14:06:41) INFO:    [Backend]:          AreWeAntiCheatYet data downloaded
+(14:06:43) INFO:    [Winetricks]:       Downloading Winetricks
+(14:06:43) INFO:    [Legendary]:        Running command: LEGENDARY_CONFIG_PATH=/home/scelester/.config/heroic/legendaryConfig/legendary /usr/lib/heroic/app.asar.unpacked/build/bin/x64/linux/legendary --version
+(14:06:43) INFO:    [Gog]:              Running command: GOGDL_CONFIG_PATH=/home/scelester/.config/heroic/gogdlConfig /usr/lib/heroic/app.asar.unpacked/build/bin/x64/linux/gogdl --auth-config-path /home/scelester/.config/heroic/gog_store/auth.json --version
+(14:06:43) INFO:    [Nile]:             Running command: NILE_CONFIG_PATH=/home/scelester/.config/heroic/nile_config /usr/lib/heroic/app.asar.unpacked/build/bin/x64/linux/nile --version
+(14:06:43) INFO:    [Backend]:          
+System Information:
+CPU: 8x Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz
+Memory: 16.6 GB (used: 6.55 GB)
+GPUs:
+  GPU 0:
+    Name: NVIDIA Corporation TU117M [GeForce GTX 1650 Mobile / Max-Q]
+    IDs: D=1f99 V=10de SD=177f SV=1043
+    Driver: nvidia
+  GPU 1:
+    Name: Intel Corporation CometLake-H GT2 [UHD Graphics]
+    IDs: D=9bc4 V=8086 SD=177f SV=1043
+    Driver: i915
+OS: Archcraft 6.13.6-arch1-1 (linux)
+
+The current system is not a Steam Deck
+We are not running inside a Flatpak container
+
+Software Versions:
+  Heroic: 2.16.0 Scopper Gaban
+  Legendary: 0.20.36 Urban Flight (Heroic)
+  gogdl: 1.1.2
+  comet: comet 0.2.0
+  Nile: 1.1.2 Will A. Zeppeli
+
+(14:06:45) INFO:    [WineDownloader]:   Updating wine versions info
+(14:06:45) INFO:    [WineDownloader]:   Fetching upstream information...
+(14:06:47) INFO:    [WineDownloader]:   wine versions updated
+(14:07:11) INFO:    [Frontend]:         Refreshing undefined Library
+(14:07:11) WARNING: [Backend]:          refresh not implemented on Sideload Library Manager
+(14:07:11) INFO:    [Legendary]:        Refreshing library...
+(14:07:11) INFO:    [Legendary]:        Refreshing Epic Games...
+(14:07:11) INFO:    [Backend]:          Frontend Ready
+(14:07:11) INFO:    [Backend]:          Checking for new Heroic Updates
+(14:07:11) INFO:    [Backend]:          Checking for current version changelog
+(14:07:11) INFO:    [Frontend]:         Updated to a new version, cleaaning up the cache.
+(14:07:11) INFO:    [Legendary]:        Running command: LEGENDARY_CONFIG_PATH=/home/scelester/.config/heroic/legendaryConfig/legendary /usr/lib/heroic/app.asar.unpacked/build/bin/x64/linux/legendary cleanup
+(14:07:11) INFO:    [Legendary]:        Running command: LEGENDARY_CONFIG_PATH=/home/scelester/.config/heroic/legendaryConfig/legendary /usr/lib/heroic/app.asar.unpacked/build/bin/x64/linux/legendary list --third-party
+(14:07:15) INFO:    [Legendary]:        Game list updated, got 24 games & DLCs
+(14:07:15) WARNING: [Backend]:          listUpdateableGames not implemented on Sideload Library Manager
+(14:07:16) INFO:    [Legendary]:        Checking for game updates: LEGENDARY_CONFIG_PATH=/home/scelester/.config/heroic/legendaryConfig/legendary /usr/lib/heroic/app.asar.unpacked/build/bin/x64/linux/legendary list --third-party
+(14:07:16) INFO:    [Backend]:          Starting the Download Queue
+(14:07:19) WARNING: [Legendary]:        Failed to parse games from /home/scelester/.config/heroic/legendaryConfig/legendary/installed.json with: Error: ENOENT: no such file or directory, open '/home/scelester/.config/heroic/legendaryConfig/legendary/installed.json'
+    at Object.readFileSync (node:fs:448:20)
+    at Object.t.readFileSync (node:electron/js2c/node_init:2:10175)
+    at Module.ta (/usr/lib/heroic/app.asar/build/main/main.js:115:3825)
+    at /usr/lib/heroic/app.asar/build/main/main.js:189:2385
+    at WebContents.<anonymous> (node:electron/js2c/browser_init:2:83724)
+(14:07:19) INFO:    [Legendary]:        Found 0 games to update
+(14:08:31) INFO:    [ExtraGameInfo]:    Getting ExtraGameInfo data for UltraKill
+(14:08:31) INFO:    [ExtraGameInfo]:    Getting PCGamingWiki data for UltraKill
+(14:08:31) INFO:    [ExtraGameInfo]:    Getting HowLongToBeat data for UltraKill
+(14:08:31) INFO:    [ExtraGameInfo]:    Getting GamesDB data for UltraKill
+(14:08:31) INFO:    [ExtraGameInfo]:    Getting ExtraGameInfo data for UltraKill
+(14:08:31) INFO:    [ExtraGameInfo]:    Getting PCGamingWiki data for UltraKill
+(14:08:31) INFO:    [ExtraGameInfo]:    Getting HowLongToBeat data for UltraKill
+(14:08:31) INFO:    [ExtraGameInfo]:    Getting GamesDB data for UltraKill
+(14:08:31) WARNING: [Backend]:          getExtraInfo not implemented on Sideload Game Manager. called for appName = vmQ65DhX1yysVYukRvvDTk
+(14:08:32) ERROR:   [ExtraGameInfo]:    Got AxiosError when sending HowLongToBeat request for UltraKill: {
+  "message": "Request failed with status code 404",
+  "name": "AxiosError",
+  "stack": "AxiosError: Request failed with status code 404\n    at settle (/usr/lib/heroic/app.asar/node_modules/axios/lib/core/settle.js:19:12)\n    at IncomingMessage.handleStreamEnd (/usr/lib/heroic/app.asar/node_modules/axios/lib/adapters/http.js:599:11)\n    at IncomingMessage.emit (node:events:531:35)\n    at endReadableNT (node:internal/streams/readable:1696:12)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)\n    at Axios.request (/usr/lib/heroic/app.asar/node_modules/axios/lib/core/Axios.js:45:41)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at $u (/usr/lib/heroic/app.asar/build/main/main.js:7:3251)\n    at async Promise.all (index 1)\n    at Ao (/usr/lib/heroic/app.asar/build/main/main.js:7:6290)\n    at WebContents.<anonymous> (node:electron/js2c/browser_init:2:83724)",
+  "config": {
+    "transitional": {
+      "silentJSONParsing": true,
+      "forcedJSONParsing": true,
+      "clarifyTimeoutError": false
+    },
+    "adapter": [
+      "xhr",
+      "http",
+      "fetch"
+    ],
+    "transformRequest": [
+      null
+    ],
+    "transformResponse": [
+      null
+    ],
+    "timeout": 0,
+    "xsrfCookieName": "XSRF-TOKEN",
+    "xsrfHeaderName": "X-XSRF-TOKEN",
+    "maxContentLength": -1,
+    "maxBodyLength": -1,
+    "env": {},
+    "headers": {
+      "Accept": "*/*",
+      "Content-Type": "application/json",
+      "User-Agent": "HeroicGamesLauncher/2.16.0",
+      "Referer": "https://howlongtobeat.com/",
+      "Content-Length": "344",
+      "Accept-Encoding": "gzip, compress, deflate, br"
+    },
+    "method": "post",
+    "url": "https://www.howlongtobeat.com/api/search",
+    "data": "{\"searchType\":\"games\",\"searchTerms\":[\"UltraKill\"],\"searchPage\":1,\"size\":20,\"searchOptions\":{\"games\":{\"userId\":0,\"platform\":\"\",\"sortCategory\":\"popular\",\"rangeCategory\":\"main\",\"rangeTime\":{\"min\":0,\"max\":0},\"gameplay\":{\"perspective\":\"\",\"flow\":\"\",\"genre\":\"\"},\"modifier\":\"\"},\"users\":{\"sortCategory\":\"postcount\"},\"filter\":\"\",\"sort\":0,\"randomizer\":0}}"
+  },
+  "code": "ERR_BAD_REQUEST",
+  "status": 404
+}
+(14:08:32) ERROR:   [ExtraGameInfo]:    Got AxiosError when sending HowLongToBeat request for UltraKill: {
+  "message": "Request failed with status code 404",
+  "name": "AxiosError",
+  "stack": "AxiosError: Request failed with status code 404\n    at settle (/usr/lib/heroic/app.asar/node_modules/axios/lib/core/settle.js:19:12)\n    at IncomingMessage.handleStreamEnd (/usr/lib/heroic/app.asar/node_modules/axios/lib/adapters/http.js:599:11)\n    at IncomingMessage.emit (node:events:531:35)\n    at endReadableNT (node:internal/streams/readable:1696:12)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)\n    at Axios.request (/usr/lib/heroic/app.asar/node_modules/axios/lib/core/Axios.js:45:41)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at $u (/usr/lib/heroic/app.asar/build/main/main.js:7:3251)\n    at async Promise.all (index 1)\n    at Ao (/usr/lib/heroic/app.asar/build/main/main.js:7:6290)\n    at WebContents.<anonymous> (node:electron/js2c/browser_init:2:83724)",
+  "config": {
+    "transitional": {
+      "silentJSONParsing": true,
+      "forcedJSONParsing": true,
+      "clarifyTimeoutError": false
+    },
+    "adapter": [
+      "xhr",
+      "http",
+      "fetch"
+    ],
+    "transformRequest": [
+      null
+    ],
+    "transformResponse": [
+      null
+    ],
+    "timeout": 0,
+    "xsrfCookieName": "XSRF-TOKEN",
+    "xsrfHeaderName": "X-XSRF-TOKEN",
+    "maxContentLength": -1,
+    "maxBodyLength": -1,
+    "env": {},
+    "headers": {
+      "Accept": "*/*",
+      "Content-Type": "application/json",
+      "User-Agent": "HeroicGamesLauncher/2.16.0",
+      "Referer": "https://howlongtobeat.com/",
+      "Content-Length": "344",
+      "Accept-Encoding": "gzip, compress, deflate, br"
+    },
+    "method": "post",
+    "url": "https://www.howlongtobeat.com/api/search",
+    "data": "{\"searchType\":\"games\",\"searchTerms\":[\"UltraKill\"],\"searchPage\":1,\"size\":20,\"searchOptions\":{\"games\":{\"userId\":0,\"platform\":\"\",\"sortCategory\":\"popular\",\"rangeCategory\":\"main\",\"rangeTime\":{\"min\":0,\"max\":0},\"gameplay\":{\"perspective\":\"\",\"flow\":\"\",\"genre\":\"\"},\"modifier\":\"\"},\"users\":{\"sortCategory\":\"postcount\"},\"filter\":\"\",\"sort\":0,\"randomizer\":0}}"
+  },
+  "code": "ERR_BAD_REQUEST",
+  "status": 404
+}
+(14:08:32) DEBUG:   [Backend]:          ProtonDB data for 1229490 {"bestReportedTier":"platinum","confidence":"strong","score":0.91,"tier":"platinum","total":271,"trendingTier":"platinum"}
+(14:08:33) DEBUG:   [Backend]:          SteamDeck data for 1229490 {"success":1,"results":{"appid":1229490,"resolved_category":3,"resolved_items":[{"display_type":4,"loc_token":"#SteamDeckVerified_TestResult_DefaultControllerConfigFullyFunctional"},{"display_type":4,"loc_token":"#SteamDeckVerified_TestResult_ControllerGlyphsMatchDeckDevice"},{"display_type":4,"loc_token":"#SteamDeckVerified_TestResult_InterfaceTextIsLegible"},{"display_type":4,"loc_token":"#SteamDeckVerified_TestResult_DefaultConfigurationIsPerformant"}],"steam_deck_blog_url":"","search_id":null}}
+(14:08:33) DEBUG:   [Backend]:          ProtonDB data for 1229490 {"bestReportedTier":"platinum","confidence":"strong","score":0.91,"tier":"platinum","total":271,"trendingTier":"platinum"}
+(14:08:33) INFO:    [Backend]:          Launching UltraKill (vmQ65DhX1yysVYukRvvDTk)
+(14:08:33) INFO:    [Backend]:          Preventing display from sleep
+(14:08:33) INFO:    [Backend]:          Checking if wine version exists: Proton - GE-Proton9-25
+(14:08:33) INFO:    [Backend]:          Checking if wine version exists: Proton - GE-Proton9-25
+(14:08:33) INFO:    [Backend]:          Checking if wine version exists: Proton - GE-Proton9-25
+(14:08:33) INFO:    [Backend]:          Checking if wine version exists: Proton - GE-Proton9-25
+(14:08:33) DEBUG:   [Backend]:          Running Wine command: run wineboot --init
+(14:08:33) INFO:    [Backend]:          Preventing machine to sleep
+(14:08:33) WARNING: [Backend]:          getExtraInfo not implemented on Sideload Game Manager. called for appName = vmQ65DhX1yysVYukRvvDTk
+(14:08:33) DEBUG:   [Backend]:          SteamDeck data for 1229490 {"success":1,"results":{"appid":1229490,"resolved_category":3,"resolved_items":[{"display_type":4,"loc_token":"#SteamDeckVerified_TestResult_DefaultControllerConfigFullyFunctional"},{"display_type":4,"loc_token":"#SteamDeckVerified_TestResult_ControllerGlyphsMatchDeckDevice"},{"display_type":4,"loc_token":"#SteamDeckVerified_TestResult_InterfaceTextIsLegible"},{"display_type":4,"loc_token":"#SteamDeckVerified_TestResult_DefaultConfigurationIsPerformant"}],"steam_deck_blog_url":"","search_id":null}}
+(14:08:35) INFO:    [Backend]:          Created/Updated Wineprefix at /home/scelester/Games/Heroic/Prefixes/default/UltraKill
+(14:08:36) INFO:    [Backend]:          launching non-native sideloaded: /home/scelester/Games/Heroic/ULTRAKILL/ULTRAKILL.exe 
+(14:08:36) INFO:    [Backend]:          Checking if wine version exists: Proton - GE-Proton9-25
+(14:08:36) DEBUG:   [Backend]:          Running Wine command: waitforexitandrun /home/scelester/Games/Heroic/ULTRAKILL/ULTRAKILL.exe
+(14:08:36) DEBUG:   [Backend]:          Logging to file "/home/scelester/.config/heroic/GamesConfig/vmQ65DhX1yysVYukRvvDTk-lastPlay.log"
+(14:08:36) INFO:    [Backend]:          Preventing display to sleep
+(14:08:36) WARNING: [Backend]:          getExtraInfo not implemented on Sideload Game Manager. called for appName = vmQ65DhX1yysVYukRvvDTk
+(14:13:12) INFO:    [Backend]:          vmQ65DhX1yysVYukRvvDTk: Setting enableDXVKFpsLimit to true
+(14:13:12) INFO:    [Backend]:          vmQ65DhX1yysVYukRvvDTk: Setting enableDXVKFpsLimit to false
+(14:13:17) INFO:    [Backend]:          vmQ65DhX1yysVYukRvvDTk: Setting autoInstallDxvkNvapi to true
+(14:13:18) INFO:    [Backend]:          vmQ65DhX1yysVYukRvvDTk: Setting autoInstallDxvkNvapi to false
+(14:13:23) INFO:    [Backend]:          vmQ65DhX1yysVYukRvvDTk: Setting launcherArgs to "LD_PRELOAD=\"\""
+(14:13:25) INFO:    [Backend]:          vmQ65DhX1yysVYukRvvDTk: Setting launcherArgs to ""
+(14:13:29) INFO:    [Backend]:          vmQ65DhX1yysVYukRvvDTk: Setting launcherArgs to "LD_PRELOAD=\"\""
+(14:13:30) INFO:    [Backend]:          vmQ65DhX1yysVYukRvvDTk: Setting launcherArgs to ""
+(14:13:40) INFO:    [Backend]:          vmQ65DhX1yysVYukRvvDTk: Setting enviromentOptions to [{"key":"LD_PRELOAD","value":"\"\""}]
+(14:13:54) INFO:    [Backend]:          vmQ65DhX1yysVYukRvvDTk: Setting gamescope to {"enableUpscaling":false,"enableLimiter":false,"enableForceGrabCursor":false,"windowType":"fullscreen","gameWidth":"","gameHeight":"","upscaleHeight":"","upscaleWidth":"","upscaleMethod":"fsr","fpsLimiter":"","fpsLimiterNoFocus":"","additionalOptions":""}
+(14:15:34) INFO:    [Backend]:          Stopping Display Power Saver Blocker
+(14:15:34) INFO:    [Frontend]:         Refreshing sideload Library
+(14:15:34) WARNING: [Backend]:          refresh not implemented on Sideload Library Manager
+(14:15:34) INFO:    [Backend]:          Stopping Power Saver Blocker
+(14:15:34) INFO:    [Backend]:          Stopping Display Sleep Blocker

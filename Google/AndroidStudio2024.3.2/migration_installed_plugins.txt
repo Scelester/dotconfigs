@@ -1,4 +1,0 @@
-Docker
-io.flutter
-com.intellij.marketplace
-Dart

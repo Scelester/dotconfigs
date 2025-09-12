@@ -1,6 +1,0 @@
-com.markskelton.one-dark-theme
-com.chrisrm.idea.MaterialThemeUI
-Docker
-io.flutter
-com.intellij.marketplace
-Dart

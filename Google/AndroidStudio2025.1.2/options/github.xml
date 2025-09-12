@@ -1,7 +1,0 @@
-<application>
-  <component name="GithubAccounts">
-    <account name="Scelester" id="fba15c15-dc0f-4e13-ad4b-e52461415671">
-      <server host="github.com" />
-    </account>
-  </component>
-</application>

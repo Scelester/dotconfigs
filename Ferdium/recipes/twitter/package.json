@@ -1,0 +1,14 @@
+{
+  "id": "twitter",
+  "name": "X",
+  "version": "1.4.2",
+  "license": "MIT",
+  "aliases": [
+    "Twitter"
+  ],
+  "config": {
+    "serviceURL": "https://x.com",
+    "hasNotificationSound": true
+  },
+  "defaultIcon": "https://cdn.jsdelivr.net/gh/ferdium/ferdium-recipes@main/recipes/twitter/icon.svg"
+}

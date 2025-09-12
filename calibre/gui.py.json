@@ -85,6 +85,8 @@
   "upload_news_to_device": true,
   "use_roman_numerals_for_series_number": true,
   "viewer_search_history": [],
-  "viewer_toc_search_history": [],
+  "viewer_toc_search_history": [
+    "1616"
+  ],
   "worker_limit": 6
 }

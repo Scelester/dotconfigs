@@ -159,12 +159,12 @@ const options = mkOptions(OPTIONS, {
             max: opt(6),
             favorites: opt([
                 [
-                    "steam",
+                    "firefox",
                     "code",
-                    "heroic",
-                    "discord",
-                    "rustrover",
-                    "rquickshare"
+                    "subl",
+                    "ferdium",
+                    "onlyoffice-desktopeditors",
+                    "android-studio"
                 ],
             ]),
         },

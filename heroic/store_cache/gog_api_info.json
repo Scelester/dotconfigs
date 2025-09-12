@@ -1,1 +1,327 @@
-{}
+{
+	"epic_602eb4abc8764c87b7f2607a1ef8c18e": {
+		"id": "54896517447556333",
+		"game_id": "52852374397232609",
+		"platform_id": "epic",
+		"external_id": "602eb4abc8764c87b7f2607a1ef8c18e",
+		"dlcs_ids": [],
+		"dlcs": [],
+		"parent_id": null,
+		"supported_operating_systems": [
+			{
+				"slug": "windows",
+				"name": "Windows"
+			}
+		],
+		"available_languages": [
+			{
+				"code": "en-US"
+			}
+		],
+		"first_release_date": null,
+		"game": {
+			"id": "52852374397232609",
+			"parent_id": null,
+			"dlcs_ids": [],
+			"first_release_date": "2020-06-02T00:00:00+0000",
+			"releases": [
+				{
+					"id": "53393942949122978",
+					"platform_id": "test",
+					"external_id": "riot.valorant",
+					"release_per_platform_id": "test_riot.valorant",
+					"availability": 0
+				},
+				{
+					"id": "53397287128895633",
+					"platform_id": "test",
+					"external_id": "valorant",
+					"release_per_platform_id": "test_valorant",
+					"availability": 0
+				},
+				{
+					"id": "53399714993033897",
+					"platform_id": "riot",
+					"external_id": "valorant",
+					"release_per_platform_id": "riot_valorant",
+					"availability": 0
+				},
+				{
+					"id": "53405465371465844",
+					"platform_id": "riot",
+					"external_id": "valorant.live",
+					"release_per_platform_id": "riot_valorant.live",
+					"availability": 0
+				},
+				{
+					"id": "54896517447556333",
+					"platform_id": "epic",
+					"external_id": "602eb4abc8764c87b7f2607a1ef8c18e",
+					"release_per_platform_id": "epic_602eb4abc8764c87b7f2607a1ef8c18e",
+					"availability": 0
+				},
+				{
+					"id": "55403729381641939",
+					"platform_id": "beamdog",
+					"external_id": "00000000-0000-0000-0000-000000008695",
+					"release_per_platform_id": "beamdog_00000000-0000-0000-0000-000000008695",
+					"availability": 0
+				},
+				{
+					"id": "55406709965604449",
+					"platform_id": "beamdog",
+					"external_id": "602eb4abc8764c87b7f2607a1ef8c18e",
+					"release_per_platform_id": "beamdog_602eb4abc8764c87b7f2607a1ef8c18e",
+					"availability": 0
+				},
+				{
+					"id": "55406917187005206",
+					"platform_id": "test",
+					"external_id": "602eb4abc8764c87b7f2607a1ef8c18e",
+					"release_per_platform_id": "test_602eb4abc8764c87b7f2607a1ef8c18e",
+					"availability": 0
+				},
+				{
+					"id": "55407077131811642",
+					"platform_id": "humble",
+					"external_id": "602eb4abc8764c87b7f2607a1ef8c18e",
+					"release_per_platform_id": "humble_602eb4abc8764c87b7f2607a1ef8c18e",
+					"availability": 0
+				},
+				{
+					"id": "55420956089357221",
+					"platform_id": "egg",
+					"external_id": "602eb4abc8764c87b7f2607a1ef8c18e",
+					"release_per_platform_id": "egg_602eb4abc8764c87b7f2607a1ef8c18e",
+					"availability": 0
+				},
+				{
+					"id": "57662123189504216",
+					"platform_id": "psn",
+					"external_id": "PPSA20676_00",
+					"release_per_platform_id": "psn_PPSA20676_00",
+					"availability": 0
+				},
+				{
+					"id": "57664465303818968",
+					"platform_id": "psn",
+					"external_id": "PPSA20711_00",
+					"release_per_platform_id": "psn_PPSA20711_00",
+					"availability": 0
+				},
+				{
+					"id": "57781084462118209",
+					"platform_id": "xboxone",
+					"external_id": "2139646219",
+					"release_per_platform_id": "xboxone_2139646219",
+					"availability": 0
+				},
+				{
+					"id": "52852374397232609",
+					"platform_id": "generic",
+					"external_id": "52852374397232609",
+					"release_per_platform_id": "generic_52852374397232609",
+					"availability": 1
+				}
+			],
+			"title": {
+				"*": "Valorant",
+				"en-US": "Valorant"
+			},
+			"sorting_title": {
+				"*": "Valorant",
+				"en-US": "Valorant"
+			},
+			"type": "game",
+			"developers_ids": [
+				"51141383260696366"
+			],
+			"developers": [
+				{
+					"id": "51141383260696366",
+					"name": "Riot Games",
+					"slug": "riot-games"
+				}
+			],
+			"publishers_ids": [
+				"51141383260696366"
+			],
+			"publishers": [
+				{
+					"id": "51141383260696366",
+					"name": "Riot Games",
+					"slug": "riot-games"
+				}
+			],
+			"genres_ids": [
+				"51141224821260861",
+				"51141228183502708"
+			],
+			"genres": [
+				{
+					"id": "51141224821260861",
+					"name": {
+						"*": "Shooter",
+						"en-US": "Shooter"
+					},
+					"slug": "shooter"
+				},
+				{
+					"id": "51141228183502708",
+					"name": {
+						"*": "Tactical",
+						"en-US": "Tactical"
+					},
+					"slug": "tactical"
+				}
+			],
+			"themes_ids": [
+				"51071842231533391",
+				"51071842246739768",
+				"51141225463821636"
+			],
+			"themes": [
+				{
+					"id": "51071842231533391",
+					"name": {
+						"*": "Action",
+						"en-US": "Action"
+					},
+					"slug": "action"
+				},
+				{
+					"id": "51071842246739768",
+					"name": {
+						"*": "Fantasy",
+						"en-US": "Fantasy"
+					},
+					"slug": "fantasy"
+				},
+				{
+					"id": "51141225463821636",
+					"name": {
+						"*": "Science fiction",
+						"en-US": "Science fiction"
+					},
+					"slug": "science-fiction"
+				}
+			],
+			"screenshots": [
+				{
+					"url_format": "https://images.gog.com/3be2dc977129d0011d35a2114165f03ce4d8ab8deadce0a280d4d90a6722d877{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/569af46be38b97f12cf3d1dc116b1ee9525ff14c4269169f8fc86bd7cffa9ef8{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/deef79487f9c47a4b9a76d1e8939d13ac91357faf6d9f1b7eaca6db159a3a040{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/aa69ad7a82c49e228a2915a38f7c7f64e0dbfe84d023e7d894c46d6a2a80a85e{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/3a9c383ad93fefb2cb05ee449b61868c48c30ff94e669b7df095bb3cdfcd43ff{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/417d8b6c8cea5103892c5b3722403a24cafe282c042ef7e8aaccdea8116e032e{formatter}.{ext}?namespace=gamesdb"
+				}
+			],
+			"videos": [
+				{
+					"provider": "youtube",
+					"video_id": "g8amyzDHOKw",
+					"thumbnail_id": "g8amyzDHOKw",
+					"name": "Gameplay Trailer"
+				},
+				{
+					"provider": "youtube",
+					"video_id": "e_E9W2vsRbQ",
+					"thumbnail_id": "e_E9W2vsRbQ",
+					"name": "Trailer"
+				},
+				{
+					"provider": "youtube",
+					"video_id": "4iGU6PctOBg",
+					"thumbnail_id": "4iGU6PctOBg",
+					"name": "Trailer"
+				},
+				{
+					"provider": "youtube",
+					"video_id": "qqVvNWBDjA4",
+					"thumbnail_id": "qqVvNWBDjA4",
+					"name": "Gameplay Trailer"
+				}
+			],
+			"artworks": [
+				{
+					"url_format": "https://images.gog.com/3529d014c8ae38a94599d086fedc9b992454b78610e622af08061506ccf8a240{formatter}.{ext}?namespace=gamesdb"
+				},
+				{
+					"url_format": "https://images.gog.com/048679d4dc6ea2eb2d417bbf0180885afb1fa017a0e6311d8b15cb5bf6861d75{formatter}.{ext}?namespace=gamesdb"
+				}
+			],
+			"summary": {
+				"*": "Valorant is a character-based 5v5 tactical shooter set on the global stage. Outwit, outplay, and outshine your competition with tactical abilities, precise gunplay, and adaptive teamwork.",
+				"en-US": "Valorant is a character-based 5v5 tactical shooter set on the global stage. Outwit, outplay, and outshine your competition with tactical abilities, precise gunplay, and adaptive teamwork."
+			},
+			"visible_in_library": true,
+			"aggregated_rating": 78.3333,
+			"game_modes": [
+				{
+					"id": "53051908711988230",
+					"name": "Multiplayer",
+					"slug": "multiplayer"
+				}
+			],
+			"horizontal_artwork": {
+				"url_format": "https://images.gog.com/1ac28414673b01bf70ca3e1942855fe7c7513e1888b32bf381460cfc7212dfba{formatter}.{ext}?namespace=gamesdb"
+			},
+			"background": {
+				"url_format": "https://images.gog.com/1ac28414673b01bf70ca3e1942855fe7c7513e1888b32bf381460cfc7212dfba{formatter}.{ext}?namespace=gamesdb"
+			},
+			"vertical_cover": {
+				"url_format": "https://images.gog.com/ae2f5c501deed14ff64d9f64d8ab2b34de2d6566ac30aefa184ea367c7aa1fb3{formatter}.{ext}?namespace=gamesdb"
+			},
+			"cover": {
+				"url_format": "https://images.gog.com/ae2f5c501deed14ff64d9f64d8ab2b34de2d6566ac30aefa184ea367c7aa1fb3{formatter}.{ext}?namespace=gamesdb"
+			},
+			"logo": {
+				"url_format": "https://images.gog.com/ae2f5c501deed14ff64d9f64d8ab2b34de2d6566ac30aefa184ea367c7aa1fb3{formatter}.{ext}?namespace=gamesdb"
+			},
+			"square_icon": {
+				"url_format": "https://images.gog.com/3529d014c8ae38a94599d086fedc9b992454b78610e622af08061506ccf8a240{formatter}.{ext}?namespace=gamesdb"
+			},
+			"global_popularity_all_time": 0,
+			"global_popularity_current": 0,
+			"slug": "valorant-2020"
+		},
+		"title": {
+			"*": "VALORANT",
+			"en-US": "Valorant"
+		},
+		"sorting_title": {
+			"*": "VALORANT",
+			"en-US": "VALORANT"
+		},
+		"type": "game",
+		"summary": {
+			"*": "Valorant is a character-based 5v5 tactical shooter set on the global stage. Outwit, outplay, and outshine your competition with tactical abilities, precise gunplay, and adaptive teamwork.",
+			"en-US": "Valorant is a character-based 5v5 tactical shooter set on the global stage. Outwit, outplay, and outshine your competition with tactical abilities, precise gunplay, and adaptive teamwork."
+		},
+		"videos": [],
+		"game_modes": [
+			{
+				"id": "53051908711988230",
+				"name": "Multiplayer",
+				"slug": "multiplayer"
+			}
+		],
+		"logo": {
+			"url_format": "https://images.gog.com/ae2f5c501deed14ff64d9f64d8ab2b34de2d6566ac30aefa184ea367c7aa1fb3{formatter}.{ext}?namespace=gamesdb"
+		},
+		"etag": "W/\"aaa439d1cfc576e9c1c3bfa47f55af42\""
+	},
+	"__timestamp": {
+		"epic_602eb4abc8764c87b7f2607a1ef8c18e": "Sun Jul 13 2025 22:10:44 GMT+0545 (Nepal Time)"
+	}
+}

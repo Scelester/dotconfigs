@@ -20,5 +20,9 @@
 		<string>gsdfadfasdf</string>
 		<string>gsdfa</string>
 	</array>
+	<key>lineedit_history_viewer-search-panel-expression</key>
+	<array>
+		<string>brute</string>
+	</array>
 </dict>
 </plist>

@@ -1,0 +1,11 @@
+{
+  "id": "messenger",
+  "name": "Messenger",
+  "version": "1.8.5",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://messenger.com",
+    "hasNotificationSound": true
+  },
+  "defaultIcon": "https://cdn.jsdelivr.net/gh/ferdium/ferdium-recipes@main/recipes/messenger/icon.svg"
+}

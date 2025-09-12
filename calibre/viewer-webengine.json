@@ -1,28 +1,28 @@
 {
   "geometry-of-main_window_geometry": {
     "frame_geometry": {
-      "height": 1022,
-      "width": 937,
+      "height": 1080,
+      "width": 1920,
       "x": 0,
       "y": 0
     },
-    "full_screened": false,
+    "full_screened": true,
     "geometry": {
-      "height": 1022,
-      "width": 937,
+      "height": 1080,
+      "width": 1920,
       "x": 0,
       "y": 0
     },
     "maximized": true,
     "normal_geometry": {
-      "height": 1052,
-      "width": 960,
+      "height": 1080,
+      "width": 1920,
       "x": 0,
       "y": 0
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAAAAAAAAAAAA6gAAAP9AAAAAAAAAAAAAAO/AAAEGwAAAAACAAAAB4AAAAAAAAAAAAAAA6gAAAP9"
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAAB38AAAQ3AAAAAAAAAAAAAAd/AAAENwAAAAACBAAAB4AAAAAAAAAAAAAAB38AAAQ3"
     },
     "screen": {
       "depth": 32,
@@ -105,9 +105,15 @@
   "image_popup_zoom_factor": 1,
   "main_window_state": {
     "__class__": "bytearray",
-    "__value__": "AAAA/wAAAAH9AAAAAgAAAAAAAAEAAAAD+fwCAAAAAvsAAAAQAHQAbwBjAC0AZABvAGMAawIAAAAAAAAAAAAAB2IAAAPk+wAAABYAcwBlAGEAcgBjAGgALQBkAG8AYwBrAAAAAAD/////AAAAnQD///8AAAABAAABBQAABDj8AgAAAAT7AAAAFgBsAG8AbwBrAHUAcAAtAGQAbwBjAGsAAAAAAP////8AAACHAP////sAAAAcAGIAbwBvAGsAbQBhAHIAawBzAC0AZABvAGMAawAAAAAAAAAEOAAAAPgA////+wAAABwAaQBuAHMAcABlAGMAdABvAHIALQBkAG8AYwBrAAAAAAAAAAQ4AAAAFQD////7AAAAHgBoAGkAZwBoAGwAaQBnAGgAdABzAC0AZABvAGMAawAAAAAAAAAD+QAAANsA////AAADqQAAA/4AAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAAB4AYQBjAHQAaQBvAG4AcwBfAHQAbwBvAGwAYgBhAHICAAAAAP////8AAAAAAAAAAA=="
+    "__value__": "AAAA/wAAAAH9AAAAAgAAAAAAAAE8AAAEEvwCAAAAAvsAAAAQAHQAbwBjAC0AZABvAGMAawIAAAAAAAAAAAAAB2IAAAPk+wAAABYAcwBlAGEAcgBjAGgALQBkAG8AYwBrAAAAAAAAAAQSAAAAgQD///8AAAABAAABBQAABDj8AgAAAAT7AAAAFgBsAG8AbwBrAHUAcAAtAGQAbwBjAGsAAAAAAP////8AAACHAP////sAAAAcAGIAbwBvAGsAbQBhAHIAawBzAC0AZABvAGMAawAAAAAAAAAEOAAAANwA////+wAAABwAaQBuAHMAcABlAGMAdABvAHIALQBkAG8AYwBrAAAAAAAAAAQ4AAAAFQD////7AAAAHgBoAGkAZwBoAGwAaQBnAGgAdABzAC0AZABvAGMAawAAAAAAAAAD+QAAAL8A////AAAHgAAABDgAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAAB4AYQBjAHQAaQBvAG4AcwBfAHQAbwBvAGwAYgBhAHICAAAAAP////8AAAAAAAAAAA=="
   },
   "old_prefs_migrated": true,
+  "saved-search-settings": {
+    "brute": {
+      "case_sensitive": false,
+      "mode": "normal"
+    }
+  },
   "session_data": {
     "background_image_fade": 90,
     "base_font_size": 24,
@@ -117,7 +123,7 @@
       "portrait": 0
     },
     "controls_help_shown_count": 2,
-    "current_color_scheme": "sepia-dark",
+    "current_color_scheme": "system",
     "lines_per_sec_auto": 2,
     "lines_per_sec_smooth": 20,
     "max_text_width": 1000,
@@ -127,7 +133,7 @@
     "read_mode": "flow",
     "scroll_stop_boundaries": true,
     "standalone_font_settings": {
-      "standard_font": "sans"
+      "standard_font": "mono"
     },
     "standalone_misc_settings": {
       "remember_window_geometry": true
@@ -135,12 +141,22 @@
     "standalone_recently_opened": [
       {
         "authors": [
-          "George Orwell"
+          "Justin Seitz",
+          "Tim Arnold"
         ],
-        "key": "/home/scelester/Calibre Library/George Orwell/Animal Farm (27)/Animal Farm - George Orwell.epub",
-        "pathtoebook": "/home/scelester/Calibre Library/George Orwell/Animal Farm (27)/Animal Farm - George Orwell.epub",
-        "timestamp": "2024-12-13T19:30:07.575Z",
-        "title": "Animal Farm"
+        "key": "/home/scelester/Calibre Library/Justin Seitz/Black Hat Python, 2nd Edition (23)/Black Hat Python, 2nd Edition - Justin Seitz.epub",
+        "pathtoebook": "/home/scelester/Calibre Library/Justin Seitz/Black Hat Python, 2nd Edition (23)/Black Hat Python, 2nd Edition - Justin Seitz.epub",
+        "timestamp": "2025-06-11T14:33:38.174Z",
+        "title": "Black Hat Python, 2nd Edition"
+      },
+      {
+        "authors": [
+          "Kindhearted Bee (善良的蜜蜂 Shan Liang de Mi Feng)"
+        ],
+        "key": "/home/scelester/Calibre Library/Kindhearted Bee (Shan Liang De Mi Feng  Shan Liang de Mi Feng)/Martial God Asura (Xiu Luo Wu Shen  Xiu Luo Wu Shen) (30)/Martial God Asura (Xiu Luo Wu Shen  Xiu Lu - Kindhearted Bee (Shan Liang De Mi Feng  Sh.epub",
+        "pathtoebook": "/home/scelester/Calibre Library/Kindhearted Bee (Shan Liang De Mi Feng  Shan Liang de Mi Feng)/Martial God Asura (Xiu Luo Wu Shen  Xiu Luo Wu Shen) (30)/Martial God Asura (Xiu Luo Wu Shen  Xiu Lu - Kindhearted Bee (Shan Liang De Mi Feng  Sh.epub",
+        "timestamp": "2025-05-01T16:13:51.352Z",
+        "title": "Martial God Asura (修罗武神 Xiu Luo Wu Shen)"
       },
       {
         "authors": [
@@ -148,8 +164,17 @@
         ],
         "key": "/home/scelester/Calibre Library/Scelester/Against the gods_0-2029 (22)/Against the gods_0-2029 - Scelester.epub",
         "pathtoebook": "/home/scelester/Calibre Library/Scelester/Against the gods_0-2029 (22)/Against the gods_0-2029 - Scelester.epub",
-        "timestamp": "2024-12-13T18:49:02.353Z",
+        "timestamp": "2025-03-31T10:38:22.807Z",
         "title": "Against the gods_0-2029"
+      },
+      {
+        "authors": [
+          "George Orwell"
+        ],
+        "key": "/home/scelester/Calibre Library/George Orwell/Animal Farm (27)/Animal Farm - George Orwell.epub",
+        "pathtoebook": "/home/scelester/Calibre Library/George Orwell/Animal Farm (27)/Animal Farm - George Orwell.epub",
+        "timestamp": "2025-03-24T05:32:16.598Z",
+        "title": "Animal Farm"
       },
       {
         "authors": [
@@ -177,16 +202,6 @@
         "pathtoebook": "/home/scelester/Calibre Library/Occupytheweb/Getting Started Becoming a Master Hacker_ Hacking is the Most Important Skill Set of the 21st Ce (24)/Getting Started Becoming a Master Hacker_ - Occupytheweb.epub",
         "timestamp": "2024-06-18T15:18:15.619Z",
         "title": "Getting Started Becoming a Master Hacker: Hacking is the Most Important Skill Set of the 21st Century! (Linux Basics for Hackers)"
-      },
-      {
-        "authors": [
-          "Justin Seitz",
-          "Tim Arnold"
-        ],
-        "key": "/home/scelester/Calibre Library/Justin Seitz/Black Hat Python, 2nd Edition (23)/Black Hat Python, 2nd Edition - Justin Seitz.epub",
-        "pathtoebook": "/home/scelester/Calibre Library/Justin Seitz/Black Hat Python, 2nd Edition (23)/Black Hat Python, 2nd Edition - Justin Seitz.epub",
-        "timestamp": "2024-05-30T11:58:03.233Z",
-        "title": "Black Hat Python, 2nd Edition"
       },
       {
         "authors": [
@@ -297,6 +312,8 @@
         "title": "Against the gods"
       }
     ],
-    "user_stylesheet": "body::after {\n    content: \"\";\n    border-top: 1px solid #ccc; /* Horizontal line style */\n    margin: 20px 0; /* Adjust the margin as needed */\n}\n\n\nbody::after {\n    content: '...'; /* Display ellipsis at the bottom */\n    position: relative;\n    bottom: 0;\n    left: 50%;\n    transform: translateX(-50%);\n    font-size: 24px; /* Adjust the font size as needed */\n    color: #888; /* Adjust the color as needed */\n    text-align: center;\n}\nbody {\n    padding:0 20px 40vh 20px !important;\n}\n\n"
-  }
+    "user_stylesheet": "body::after {\n    content: \"\";\n    border-top: 1px solid #ccc; /* Horizontal line style */\n    margin: 20px 0; /* Adjust the margin as needed */\n}\n\n\nbody::after {\n    content: '...'; /* Display ellipsis at the bottom */\n    position: relative;\n    bottom: 0;\n    left: 50%;\n    transform: translateX(-50%);\n    font-size: 24px; /* Adjust the font size as needed */\n    color: #888; /* Adjust the color as needed */\n    text-align: center;\n}\nbody {\n    padding:0 20px 40vh 20px !important;\n}\n\np{\nline-height: 50px;\n}"
+  },
+  "viewer-search-case-sensitive": false,
+  "viewer-search-mode": "normal"
 }

@@ -2,17 +2,17 @@
 	"games": [
 		{
 			"runner": "sideload",
-			"app_name": "vmQ65DhX1yysVYukRvvDTk",
-			"title": "UltraKill",
+			"app_name": "8MDr6nKHGUYMSGLs4Kex4y",
+			"title": "Forgive Me Father",
 			"install": {
-				"executable": "/home/scelester/Games/Heroic/ULTRAKILL/ULTRAKILL.exe",
+				"executable": "/home/scelester/Games/Forgive.Me.Father.2.v1.1.1.8s/game/FMF2.exe",
 				"platform": "Windows",
 				"is_dlc": false
 			},
-			"folder_name": "/home/scelester/Games/Heroic/ULTRAKILL",
-			"art_cover": "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/9e45ebad5881cc0dd99397226f099dbc.png",
+			"folder_name": "/home/scelester/Games/Forgive.Me.Father.2.v1.1.1.8s/game",
+			"art_cover": "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/a34cabdfefb3cd42260e0dec1202dc7b.png",
 			"is_installed": true,
-			"art_square": "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/9e45ebad5881cc0dd99397226f099dbc.png",
+			"art_square": "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/a34cabdfefb3cd42260e0dec1202dc7b.png",
 			"canRunOffline": true,
 			"browserUrl": "",
 			"customUserAgent": "",

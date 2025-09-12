@@ -1,0 +1,8 @@
+2025-08-20 12:29:06,984 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2025-08-20 12:29:06,988 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'get_value']
+2025-08-20 12:29:06,989 DEBUG    root            Running [gcloud.config.get-value] with arguments: [SECTION/PROPERTY: "project"]
+2025-08-20 12:29:06,989 DEBUG    root            Chosen display Format:value(.)
+2025-08-20 12:29:06,990 INFO     root            Display format: "value(.)"
+2025-08-20 12:29:06,990 INFO     ___FILE_ONLY___ hire-enumerator-697cd
+
+2025-08-20 12:29:06,990 DEBUG    root            SDK update checks are disabled.

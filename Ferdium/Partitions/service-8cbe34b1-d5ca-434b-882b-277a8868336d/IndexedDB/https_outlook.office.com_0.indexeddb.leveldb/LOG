@@ -1,0 +1,4 @@
+2025/09/11-22:30:21.879 dd0 Reusing MANIFEST /home/scelester/.config/Ferdium/Partitions/service-8cbe34b1-d5ca-434b-882b-277a8868336d/IndexedDB/https_outlook.office.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/09/11-22:30:21.880 dd0 Recovering log #19
+2025/09/11-22:30:21.880 dd0 Reusing old log /home/scelester/.config/Ferdium/Partitions/service-8cbe34b1-d5ca-434b-882b-277a8868336d/IndexedDB/https_outlook.office.com_0.indexeddb.leveldb/000019.log 
+2025/09/11-22:30:21.880 dd0 Delete type=2 #18

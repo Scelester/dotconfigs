@@ -1,0 +1,61 @@
+2025-08-20 12:23:32,794 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2025-08-20 12:23:32,795 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'application_default']
+2025-08-20 12:23:32,841 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'application-default', 'login']
+2025-08-20 12:23:32,842 DEBUG    root            Running [gcloud.auth.application-default.login] with arguments: []
+2025-08-20 12:23:33,179 DEBUG    requests_oauthlib.oauth2_session Generated new state et6A1BoXPE9sBO4vhT9S4sSbH8JPrY.
+2025-08-20 12:23:33,244 INFO     ___FILE_ONLY___ Your browser has been opened to visit:
+
+    https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=764086051850-6qr4p6gpi6hn506pt8ejuq83di341hur.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8085%2F&scope=openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fsqlservice.login&state=et6A1BoXPE9sBO4vhT9S4sSbH8JPrY&access_type=offline&code_challenge=efqL-Fz73eLypkqeiT3txYHvxg9AedxIoN_frWeaJU0&code_challenge_method=S256
+
+
+2025-08-20 12:23:45,372 INFO     google_auth_oauthlib.flow "GET /?state=et6A1BoXPE9sBO4vhT9S4sSbH8JPrY&code=4/0AVMBsJhNP4mpP77jBhSU57CsoZjQX7UHyLhJ1Ia42A9cA_jofreSR-Aw-0SzuIC1ndRuMQ&scope=email%20https://www.googleapis.com/auth/userinfo.email%20openid&authuser=1&hd=neuralgridlabs.com&prompt=consent HTTP/1.1" 200 937
+2025-08-20 12:23:45,372 DEBUG    requests_oauthlib.oauth2_session Requesting url https://oauth2.googleapis.com/token using method POST.
+2025-08-20 12:23:45,372 DEBUG    requests_oauthlib.oauth2_session Supplying headers {b'Accept': b'application/json', b'Content-Type': b'application/x-www-form-urlencoded;charset=UTF-8', b'user-agent': b'google-cloud-sdk gcloud/534.0.0 command/gcloud.auth.application-default.login invocation-id/6bd58df08b1c4b9eb5db06fbd7312d85 environment/None environment-version/None client-os/LINUX client-os-ver/6.16.1 client-pltf-arch/x86_64 interactive/True from-script/False python/3.13.7 term/xterm (Linux 6.16.1-zen1-1-zen)'} and data {'grant_type': 'authorization_code', 'client_id': '764086051850-6qr4p6gpi6hn506pt8ejuq83di341hur.apps.googleusercontent.com', 'client_secret': 'd-FL95Q19q7MQmFpd7hHD0Ty', 'code': '4/0AVMBsJhNP4mpP77jBhSU57CsoZjQX7UHyLhJ1Ia42A9cA_jofreSR-Aw-0SzuIC1ndRuMQ', 'redirect_uri': 'http://localhost:8085/', 'code_verifier': 'HgY9bkasmvVR2CSjRhYm6Dj3GXPPdzDYkJOdVNc7Im.mqkD_JfIMD9ThJQs9NU.gKBUHT~I3wt1NHtfAV2klzJ9_wjGh-gKStj9PoaSsuz_aKwUU.T43uRI6L6Ujc_yr'}
+2025-08-20 12:23:45,373 DEBUG    requests_oauthlib.oauth2_session Passing through key word arguments {'json': None, 'timeout': None, 'auth': None, 'verify': None, 'proxies': None}.
+2025-08-20 12:23:45,374 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-08-20 12:23:45,681 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+2025-08-20 12:23:45,682 DEBUG    requests_oauthlib.oauth2_session Prepared fetch token request body grant_type=authorization_code&client_id=764086051850-6qr4p6gpi6hn506pt8ejuq83di341hur.apps.googleusercontent.com&client_secret=d-FL95Q19q7MQmFpd7hHD0Ty&code=4%2F0AVMBsJhNP4mpP77jBhSU57CsoZjQX7UHyLhJ1Ia42A9cA_jofreSR-Aw-0SzuIC1ndRuMQ&redirect_uri=http%3A%2F%2Flocalhost%3A8085%2F&code_verifier=HgY9bkasmvVR2CSjRhYm6Dj3GXPPdzDYkJOdVNc7Im.mqkD_JfIMD9ThJQs9NU.gKBUHT~I3wt1NHtfAV2klzJ9_wjGh-gKStj9PoaSsuz_aKwUU.T43uRI6L6Ujc_yr
+2025-08-20 12:23:45,682 DEBUG    requests_oauthlib.oauth2_session Request to fetch token completed with status 200.
+2025-08-20 12:23:45,682 DEBUG    requests_oauthlib.oauth2_session Request headers were {'user-agent': b'google-cloud-sdk gcloud/534.0.0 command/gcloud.auth.application-default.login invocation-id/6bd58df08b1c4b9eb5db06fbd7312d85 environment/None environment-version/None client-os/LINUX client-os-ver/6.16.1 client-pltf-arch/x86_64 interactive/True from-script/False python/3.13.7 term/xterm (Linux 6.16.1-zen1-1-zen)', 'Accept-Encoding': 'gzip, deflate', 'Accept': b'application/json', 'Connection': 'keep-alive', 'Content-Type': b'application/x-www-form-urlencoded;charset=UTF-8', 'Content-Length': '421'}
+2025-08-20 12:23:45,682 DEBUG    requests_oauthlib.oauth2_session Request body was grant_type=authorization_code&client_id=764086051850-6qr4p6gpi6hn506pt8ejuq83di341hur.apps.googleusercontent.com&client_secret=d-FL95Q19q7MQmFpd7hHD0Ty&code=4%2F0AVMBsJhNP4mpP77jBhSU57CsoZjQX7UHyLhJ1Ia42A9cA_jofreSR-Aw-0SzuIC1ndRuMQ&redirect_uri=http%3A%2F%2Flocalhost%3A8085%2F&code_verifier=HgY9bkasmvVR2CSjRhYm6Dj3GXPPdzDYkJOdVNc7Im.mqkD_JfIMD9ThJQs9NU.gKBUHT~I3wt1NHtfAV2klzJ9_wjGh-gKStj9PoaSsuz_aKwUU.T43uRI6L6Ujc_yr
+2025-08-20 12:23:45,682 DEBUG    requests_oauthlib.oauth2_session Response headers were {'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Date': 'Wed, 20 Aug 2025 06:38:45 GMT', 'Expires': 'Mon, 01 Jan 1990 00:00:00 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Vary': 'Origin, X-Origin, Referer', 'Content-Encoding': 'gzip', 'Server': 'scaffolding on HTTPServer2', 'X-XSS-Protection': '0', 'X-Frame-Options': 'SAMEORIGIN', 'X-Content-Type-Options': 'nosniff', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'Transfer-Encoding': 'chunked'} and content {
+  "access_token": "ya29.A0AS3H6Nzlo0aL-CvKxAw9Wc2d_Lu6sbtDb24gJbybRwWblG95LWoo-acIK5df9iwIDmWc5N5BJIX0gT3aEUWpMboR6jKB7B8XvgEW9r8J5oILeAg9--w4pCqi0DNC-qxHxzuJWXr51L7zrQGmcFwIQU9WODtiOBworF17M-DTOfWKMh4Hid4gOMGbzS8EudnWhd9fVVYaCgYKAR4SARQSFQHGX2Mig-xMe_v9IPeh4rpAfSaiOQ0206",
+  "expires_in": 3599,
+  "refresh_token": "1//0gNEUHtZRGRaLCgYIARAAGBASNwF-L9IrK_pw6dg3VAlNkEFBALkqrpn_GPEccWe0GUG_S0v-wkG-tJtfYnrfcFROtfoh4XihsM0",
+  "scope": "https://www.googleapis.com/auth/userinfo.email openid",
+  "token_type": "Bearer",
+  "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijk4ZGM1NWM4YjIwOTM2M2EyNDUxNzc0YmNlNWM0MjcxOGQxM2NiN2QiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI3NjQwODYwNTE4NTAtNnFyNHA2Z3BpNmhuNTA2cHQ4ZWp1cTgzZGkzNDFodXIuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI3NjQwODYwNTE4NTAtNnFyNHA2Z3BpNmhuNTA2cHQ4ZWp1cTgzZGkzNDFodXIuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDgwMzg0NzU2MDczNDk2OTczOTEiLCJoZCI6Im5ldXJhbGdyaWRsYWJzLmNvbSIsImVtYWlsIjoibmFiaW4ucGF1ZGVsQG5ldXJhbGdyaWRsYWJzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiNGNzSUN1Z0hjaW5wVmFiVEhNTHktdyIsImlhdCI6MTc1NTY3MTkyNSwiZXhwIjoxNzU1Njc1NTI1fQ.IYklT240rDRbmWaWZQPuPw1fCGj6XuEdyKMMZOYbRBbqAqtQPgpGkvuuFoSepvOrNPQe5u9U4Ko-G81y0qG06CBrR27XFg47J1JVytXR1B5gyW4IqMBZV85odxK-yEaR8Vd4lVKpLp_wQxCrNqMOxU0_Ppa8gJKtDF9IyI7-sec3140ib7XzoVLYznWqKSzcKP4KT6SKD5ZHya2pFQ-SCspPzyffBqilQAzqrEemFgy6o4vPx8rDD58Cxb1iUiewVhtsddrkgr_2192mw-Wptza0N3_TmtXWiBS-H_VwHNzPakwhzjW_KVaMd1tEwv-pzMm7awEBW7-ZsIJZ3uuCxw"
+}.
+2025-08-20 12:23:45,682 DEBUG    requests_oauthlib.oauth2_session Invoking 0 token response hooks.
+2025-08-20 12:23:45,682 DEBUG    requests_oauthlib.oauth2_session Obtained token {'access_token': 'ya29.A0AS3H6Nzlo0aL-CvKxAw9Wc2d_Lu6sbtDb24gJbybRwWblG95LWoo-acIK5df9iwIDmWc5N5BJIX0gT3aEUWpMboR6jKB7B8XvgEW9r8J5oILeAg9--w4pCqi0DNC-qxHxzuJWXr51L7zrQGmcFwIQU9WODtiOBworF17M-DTOfWKMh4Hid4gOMGbzS8EudnWhd9fVVYaCgYKAR4SARQSFQHGX2Mig-xMe_v9IPeh4rpAfSaiOQ0206', 'expires_in': 3599, 'refresh_token': '1//0gNEUHtZRGRaLCgYIARAAGBASNwF-L9IrK_pw6dg3VAlNkEFBALkqrpn_GPEccWe0GUG_S0v-wkG-tJtfYnrfcFROtfoh4XihsM0', 'scope': ['https://www.googleapis.com/auth/userinfo.email', 'openid'], 'token_type': 'Bearer', 'id_token': 'eyJhbGciOiJSUzI1NiIsImtpZCI6Ijk4ZGM1NWM4YjIwOTM2M2EyNDUxNzc0YmNlNWM0MjcxOGQxM2NiN2QiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI3NjQwODYwNTE4NTAtNnFyNHA2Z3BpNmhuNTA2cHQ4ZWp1cTgzZGkzNDFodXIuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI3NjQwODYwNTE4NTAtNnFyNHA2Z3BpNmhuNTA2cHQ4ZWp1cTgzZGkzNDFodXIuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDgwMzg0NzU2MDczNDk2OTczOTEiLCJoZCI6Im5ldXJhbGdyaWRsYWJzLmNvbSIsImVtYWlsIjoibmFiaW4ucGF1ZGVsQG5ldXJhbGdyaWRsYWJzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiNGNzSUN1Z0hjaW5wVmFiVEhNTHktdyIsImlhdCI6MTc1NTY3MTkyNSwiZXhwIjoxNzU1Njc1NTI1fQ.IYklT240rDRbmWaWZQPuPw1fCGj6XuEdyKMMZOYbRBbqAqtQPgpGkvuuFoSepvOrNPQe5u9U4Ko-G81y0qG06CBrR27XFg47J1JVytXR1B5gyW4IqMBZV85odxK-yEaR8Vd4lVKpLp_wQxCrNqMOxU0_Ppa8gJKtDF9IyI7-sec3140ib7XzoVLYznWqKSzcKP4KT6SKD5ZHya2pFQ-SCspPzyffBqilQAzqrEemFgy6o4vPx8rDD58Cxb1iUiewVhtsddrkgr_2192mw-Wptza0N3_TmtXWiBS-H_VwHNzPakwhzjW_KVaMd1tEwv-pzMm7awEBW7-ZsIJZ3uuCxw', 'expires_at': 1755675524.6828206}.
+2025-08-20 12:23:45,683 ERROR    root            There was a problem with web authentication. Try running again with --no-browser.
+2025-08-20 12:23:45,683 DEBUG    root            (gcloud.auth.application-default.login) https://www.googleapis.com/auth/cloud-platform scope is required but not consented. Please run the login command again and consent in the login page.
+Traceback (most recent call last):
+  File "/usr/bin/../../opt/google-cloud-cli/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/usr/bin/../../opt/google-cloud-cli/lib/googlecloudsdk/calliope/backend.py", line 945, in Run
+    resources = command_instance.Run(args)
+  File "/usr/bin/../../opt/google-cloud-cli/lib/surface/auth/application_default/login.py", line 218, in Run
+    creds = auth_util.DoInstalledAppBrowserFlowGoogleAuth(
+        scopes,
+    ...<4 lines>...
+        **flow_params
+    )
+  File "/usr/bin/../../opt/google-cloud-cli/lib/googlecloudsdk/api_lib/auth/util.py", line 370, in DoInstalledAppBrowserFlowGoogleAuth
+    user_creds = BrowserFlowWithNoBrowserFallbackRunner(
+        scopes, client_config).Run(**query_params)
+  File "/usr/bin/../../opt/google-cloud-cli/lib/googlecloudsdk/api_lib/auth/util.py", line 145, in Run
+    return self._flow.Run(**kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/usr/bin/../../opt/google-cloud-cli/lib/googlecloudsdk/core/credentials/flow.py", line 262, in Run
+    return self._Run(**kwargs)
+           ~~~~~~~~~^^^^^^^^^^
+  File "/usr/bin/../../opt/google-cloud-cli/lib/googlecloudsdk/core/credentials/flow.py", line 370, in _Run
+    self._CheckScopes()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/usr/bin/../../opt/google-cloud-cli/lib/googlecloudsdk/core/credentials/flow.py", line 380, in _CheckScopes
+    raise AuthRequestFailedError(
+    ...<3 lines>...
+    )
+googlecloudsdk.core.credentials.flow.AuthRequestFailedError: https://www.googleapis.com/auth/cloud-platform scope is required but not consented. Please run the login command again and consent in the login page.
+2025-08-20 12:23:45,686 ERROR    root            (gcloud.auth.application-default.login) https://www.googleapis.com/auth/cloud-platform scope is required but not consented. Please run the login command again and consent in the login page.

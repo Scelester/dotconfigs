@@ -1,0 +1,22 @@
+<unity_prefs version_major="1" version_minor="1">
+	<pref name="GPUVerified" type="int">1</pref>
+	<pref name="GameQuality" type="int">1</pref>
+	<pref name="GameQualityStartup" type="int">0</pref>
+	<pref name="Screenmanager Fullscreen mode" type="int">1</pref>
+	<pref name="Screenmanager Fullscreen mode Default" type="int">0</pref>
+	<pref name="Screenmanager Resolution Height" type="int">1080</pref>
+	<pref name="Screenmanager Resolution Height Default" type="int">640</pref>
+	<pref name="Screenmanager Resolution Use Native" type="int">1</pref>
+	<pref name="Screenmanager Resolution Use Native Default" type="int">1</pref>
+	<pref name="Screenmanager Resolution Width" type="int">1920</pref>
+	<pref name="Screenmanager Resolution Width Default" type="int">1080</pref>
+	<pref name="Screenmanager Window Position X" type="int">0</pref>
+	<pref name="Screenmanager Window Position Y" type="int">0</pref>
+	<pref name="UnitySelectMonitor" type="int">0</pref>
+	<pref name="anon_aws_identityid" type="string">dXMtd2VzdC0yOmFhZWJiNGUyLWRhOTUtYzY2MS1lM2ZjLWE0YzkyMDhmODIwMQ==</pref>
+	<pref name="serverRegionV2" type="string">YXNpYV9yZWdpb24=</pref>
+	<pref name="unity.cloud_userid" type="string">ZDY3ZGY1ZmFmYzYwZGJjNmY4YzdlZmQzYzg0ODkyNDM=</pref>
+	<pref name="unity.player_session_count" type="string">MQ==</pref>
+	<pref name="unity.player_sessionid" type="string">NTg5NTA2OTkzODg0MzYyNjY4</pref>
+	<pref name="whats_new2" type="string">MS41OQ==</pref>
+</unity_prefs>

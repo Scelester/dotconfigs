@@ -637,3 +637,165 @@ btop++ needs an interactive shell to run.
 2025/03/16 (18:24:40) | ===> btop++ v.1.4.0
 2025/03/16 (18:24:40) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
 2025/03/16 (18:24:40) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/03/18 (08:08:44) | ===> btop++ v.1.4.0
+2025/03/18 (08:08:44) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/03/18 (08:08:44) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/03/18 (09:28:47) | ===> btop++ v.1.4.0
+2025/03/18 (09:28:47) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/03/18 (09:28:47) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/03/19 (08:39:21) | ===> btop++ v.1.4.0
+2025/03/19 (08:39:21) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/03/19 (08:39:21) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/03/19 (08:39:47) | ===> btop++ v.1.4.0
+2025/03/19 (08:39:47) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/03/19 (08:39:47) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/03/21 (20:51:54) | ===> btop++ v.1.4.0
+2025/03/21 (20:51:54) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/03/21 (20:51:54) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/03/23 (12:25:57) | ===> btop++ v.1.4.0
+2025/03/23 (12:25:57) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/03/23 (18:35:20) | ===> btop++ v.1.4.0
+2025/03/23 (18:35:20) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/03/23 (18:35:20) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/03/24 (20:13:07) | ===> btop++ v.1.4.0
+2025/03/24 (20:13:07) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/03/24 (20:13:07) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/03/25 (09:33:34) | ===> btop++ v.1.4.0
+2025/03/25 (09:33:34) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/03/25 (09:33:34) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/03/25 (20:58:37) | ===> btop++ v.1.4.0
+2025/03/25 (20:58:37) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/03/25 (20:58:37) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/03/28 (11:31:06) | ===> btop++ v.1.4.0
+2025/03/28 (11:31:06) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/03/28 (11:31:07) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/04/03 (22:37:45) | ===> btop++ v.1.4.0
+2025/04/03 (22:37:45) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/03 (22:37:45) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/04/03 (22:38:25) | ===> btop++ v.1.4.0
+2025/04/03 (22:38:25) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/03 (22:38:25) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/04/10 (12:25:54) | ===> btop++ v.1.4.0
+2025/04/10 (12:25:54) | ERROR: No UTF-8 locale detected!
+Use --utf-force argument to force start if you're sure your terminal can handle it.
+
+2025/04/10 (12:25:59) | ===> btop++ v.1.4.0
+2025/04/10 (12:25:59) | ERROR: No UTF-8 locale detected!
+Use --utf-force argument to force start if you're sure your terminal can handle it.
+
+2025/04/10 (12:26:04) | ===> btop++ v.1.4.0
+2025/04/10 (12:26:04) | WARNING: No UTF-8 locale detected! Forcing start with --utf-force argument.
+2025/04/10 (12:26:04) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/10 (12:26:04) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/04/10 (12:27:23) | ===> btop++ v.1.4.0
+2025/04/10 (12:27:23) | WARNING: No UTF-8 locale detected! Forcing start with --utf-force argument.
+2025/04/10 (12:27:23) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/10 (12:27:23) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/04/10 (14:54:47) | ===> btop++ v.1.4.0
+2025/04/10 (14:54:47) | WARNING: No UTF-8 locale detected! Forcing start with --utf-force argument.
+2025/04/10 (14:54:47) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/10 (14:54:47) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/04/17 (19:16:21) | ===> btop++ v.1.4.0
+2025/04/17 (19:16:21) | ERROR: No UTF-8 locale detected!
+Use --utf-force argument to force start if you're sure your terminal can handle it.
+
+2025/04/17 (19:16:25) | ===> btop++ v.1.4.0
+2025/04/17 (19:16:25) | WARNING: No UTF-8 locale detected! Forcing start with --utf-force argument.
+2025/04/17 (19:16:25) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/17 (19:16:25) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/04/18 (19:09:34) | ===> btop++ v.1.4.0
+2025/04/18 (19:09:34) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/18 (19:09:34) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/04/19 (18:51:22) | ===> btop++ v.1.4.0
+2025/04/19 (18:51:22) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/19 (18:51:22) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/04/19 (18:53:23) | ===> btop++ v.1.4.0
+2025/04/19 (18:53:23) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/19 (18:53:23) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/04/20 (16:12:15) | ===> btop++ v.1.4.0
+2025/04/20 (16:12:15) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/20 (16:12:15) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/04/20 (16:12:44) | ===> btop++ v.1.4.0
+2025/04/20 (16:12:44) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/20 (16:12:44) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/04/20 (16:12:51) | ===> btop++ v.1.4.0
+2025/04/20 (16:12:51) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/20 (16:12:51) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/04/20 (19:25:25) | ===> btop++ v.1.4.0
+2025/04/20 (19:25:25) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/20 (19:25:25) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/04/22 (08:08:32) | ===> btop++ v.1.4.0
+2025/04/22 (08:08:32) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/22 (08:08:32) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/04/22 (08:26:44) | ===> btop++ v.1.4.0
+2025/04/22 (08:26:44) | ERROR: No UTF-8 locale detected!
+Use --utf-force argument to force start if you're sure your terminal can handle it.
+
+2025/04/22 (08:26:50) | ===> btop++ v.1.4.0
+2025/04/22 (08:26:50) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/22 (08:26:50) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/04/22 (16:37:37) | ===> btop++ v.1.4.0
+2025/04/22 (16:37:37) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/22 (16:37:37) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/04/22 (23:39:40) | ===> btop++ v.1.4.0
+2025/04/22 (23:39:40) | ERROR: No UTF-8 locale detected!
+Use --utf-force argument to force start if you're sure your terminal can handle it.
+
+2025/04/22 (23:39:52) | ===> btop++ v.1.4.0
+2025/04/22 (23:39:52) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/22 (23:39:52) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/04/25 (07:25:10) | ===> btop++ v.1.4.0
+2025/04/25 (07:25:10) | ERROR: No UTF-8 locale detected!
+Use --utf-force argument to force start if you're sure your terminal can handle it.
+
+2025/04/25 (07:25:14) | ===> btop++ v.1.4.0
+2025/04/25 (07:25:14) | WARNING: No UTF-8 locale detected! Forcing start with --utf-force argument.
+2025/04/25 (07:25:14) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/25 (07:25:14) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/04/25 (07:25:41) | ===> btop++ v.1.4.0
+2025/04/25 (07:25:41) | ERROR: No UTF-8 locale detected!
+Use --utf-force argument to force start if you're sure your terminal can handle it.
+
+2025/04/25 (07:25:42) | ===> btop++ v.1.4.0
+2025/04/25 (07:25:42) | WARNING: No UTF-8 locale detected! Forcing start with --utf-force argument.
+2025/04/25 (07:25:42) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/25 (07:25:42) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/04/28 (19:07:56) | ===> btop++ v.1.4.0
+2025/04/28 (19:07:56) | ERROR: No UTF-8 locale detected!
+Use --utf-force argument to force start if you're sure your terminal can handle it.
+
+2025/04/28 (19:08:06) | ===> btop++ v.1.4.0
+2025/04/28 (19:08:06) | WARNING: No UTF-8 locale detected! Forcing start with --utf-force argument.
+2025/04/28 (19:08:06) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/28 (19:08:06) | WARNING: Intel GPU: Failed to initialize PMU

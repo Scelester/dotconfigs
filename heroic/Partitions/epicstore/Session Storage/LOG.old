@@ -1,3 +1,3 @@
-2025/03/02-19:59:32.445 125b Reusing MANIFEST /home/scelester/.config/heroic/Partitions/epicstore/Session Storage/MANIFEST-000001
-2025/03/02-19:59:32.445 125b Recovering log #3
-2025/03/02-19:59:32.445 125b Reusing old log /home/scelester/.config/heroic/Partitions/epicstore/Session Storage/000003.log 
+2025/06/15-22:39:53.062 281a Reusing MANIFEST /home/scelester/.config/heroic/Partitions/epicstore/Session Storage/MANIFEST-000001
+2025/06/15-22:39:53.063 281a Recovering log #3
+2025/06/15-22:39:53.064 281a Reusing old log /home/scelester/.config/heroic/Partitions/epicstore/Session Storage/000003.log 

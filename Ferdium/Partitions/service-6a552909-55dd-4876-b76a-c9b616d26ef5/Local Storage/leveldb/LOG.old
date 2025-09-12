@@ -1,0 +1,9 @@
+2025/09/11-20:30:20.179 dd0 Reusing MANIFEST /home/scelester/.config/Ferdium/Partitions/service-6a552909-55dd-4876-b76a-c9b616d26ef5/Local Storage/leveldb/MANIFEST-000001
+2025/09/11-20:30:20.182 dd0 Recovering log #4
+2025/09/11-20:30:20.183 dd0 Reusing old log /home/scelester/.config/Ferdium/Partitions/service-6a552909-55dd-4876-b76a-c9b616d26ef5/Local Storage/leveldb/000004.log 
+2025/09/11-20:59:18.657 dd1 Level-0 table #8: started
+2025/09/11-20:59:18.661 dd1 Level-0 table #8: 15382 bytes OK
+2025/09/11-20:59:18.662 dd1 Delete type=0 #4
+2025/09/12-02:22:04.107 dd1 Level-0 table #10: started
+2025/09/12-02:22:04.113 dd1 Level-0 table #10: 13483 bytes OK
+2025/09/12-02:22:04.116 dd1 Delete type=0 #7

@@ -1,0 +1,3 @@
+2025-03-17 08:18:11.028 [info] updateURL https://api2.cursor.sh/updates/api/update/linux-x64/cursor/0.46.11/3c9caaf6e6369711163c8ec07384e81b41c7c301fb4c392c8e88b5764eaca993/stable
+2025-03-17 08:18:11.028 [info] update#setState idle
+2025-03-17 08:18:25.690 [info] Extension host with pid 10911 exited with code: 0, signal: unknown.

@@ -4,17 +4,17 @@
       <map>
         <entry key="$USER_HOME$/ProjectD/Fluttering">
           <value>
-            <RecentProjectMetaInfo frameTitle="yala – main.dart [yala]" opened="true" projectWorkspaceId="2t486x2YtYqBWZvIytieg6LJkga">
-              <option name="activationTimestamp" value="1741705139679" />
+            <RecentProjectMetaInfo frameTitle="yala – settings.gradle [yala_android]" opened="true" projectWorkspaceId="2t486x2YtYqBWZvIytieg6LJkga">
+              <option name="activationTimestamp" value="1746698756176" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="build" value="AI-242.23726.103.2422.13016713" />
               <option name="buildTimestamp" value="1738782900000" />
               <option name="colorInfo">
                 <RecentProjectColorInfo associatedIndex="4" />
               </option>
-              <frame x="0" y="35" width="1920" height="1045" />
+              <frame x="0" y="0" width="1920" height="1080" />
               <option name="productionCode" value="AI" />
-              <option name="projectOpenTimestamp" value="1740367068912" />
+              <option name="projectOpenTimestamp" value="1746696395688" />
             </RecentProjectMetaInfo>
           </value>
         </entry>

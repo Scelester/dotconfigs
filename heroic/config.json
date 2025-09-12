@@ -13,7 +13,7 @@
     "autoUpdateGames": false,
     "customWinePaths": [],
     "defaultInstallPath": "/home/scelester/Games/Heroic",
-    "libraryTopSection": "disabled",
+    "libraryTopSection": "recently_played",
     "defaultSteamPath": "/home/scelester/.steam/steam",
     "defaultWinePrefix": "/home/scelester/Games/Heroic/Prefixes/default",
     "hideChangelogsOnStartup": false,
@@ -37,9 +37,12 @@
     "enableMsync": false,
     "eacRuntime": true,
     "battlEyeRuntime": true,
-    "framelessWindow": false,
+    "framelessWindow": true,
     "beforeLaunchScriptPath": "",
     "afterLaunchScriptPath": "",
+    "disableUMU": false,
+    "verboseLogs": false,
+    "downloadProtonToSteam": false,
     "experimentalFeatures": {
       "enableNewDesign": true,
       "enableHelp": false,
@@ -48,9 +51,10 @@
       "umuSupport": false
     },
     "altGogdlBin": "",
-    "altNileBin": ""
+    "altNileBin": "",
+    "exitToTray": false,
+    "darkTrayIcon": false,
+    "discordRPC": true
   },
-  "enable-features":"UseOzonePlatform",
-  "ozone-platform":"x11",
   "version": "v0"
 }

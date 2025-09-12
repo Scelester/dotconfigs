@@ -2,34 +2,37 @@ MenuBar=Disabled
 
 [Desktop Entry]
 FullScreen=false
-shouldShowMenuBarComingFromFullScreen=true
+shouldShowMenuBarComingFromFullScreen=false
 shouldShowToolBarComingFromFullScreen=true
 
 [General]
 LockSidebar=true
 ShowSidebar=false
 
+[MainWindow]
+MenuBar=Disabled
+
 [Recent Files]
-File1[$e]=$HOME/Documents/Infra Resit/CMP6175 CWRK Assessment Brief 2022-23.pdf
-File10[$e]=$HOME/Downloads/1_CamScanner 03-12-2025 10.35.pdf
-File2[$e]=$HOME/Documents/Infra Resit/old Nabin Paudel Assesment Report Infra.pdf
-File3[$e]=$HOME/Desktop/Cover Letter.pdf
-File4[$e]=$HOME/Desktop/Presenation.pdf
-File5[$e]=$HOME/Documents/Infra Resit/Nabin Paudel Assesment Report Infra.pdf
-File6[$e]=$HOME/Desktop/Nabin Paudel Resume.pdf
-File7[$e]=$HOME/Container/Testspace/Nabin_Paudel_Resume.pdf
-File8[$e]=$HOME/Documents/Nabin Paudel Resume.pdf
-File9[$e]=$HOME/Desktop/Invoice 54.pdf
-Name1[$e]=CMP6175 CWRK Assessment Brief 2022-23.pdf
-Name10[$e]=1_CamScanner 03-12-2025 10.35.pdf
-Name2[$e]=old Nabin Paudel Assesment Report Infra.pdf
-Name3[$e]=Cover Letter.pdf
-Name4[$e]=Presenation.pdf
-Name5[$e]=Nabin Paudel Assesment Report Infra.pdf
-Name6[$e]=Nabin Paudel Resume.pdf
-Name7[$e]=Nabin_Paudel_Resume.pdf
-Name8[$e]=Nabin Paudel Resume.pdf
-Name9[$e]=Invoice 54.pdf
+File1[$e]=$HOME/Downloads/Aston Zhang, Zachary C. Lipton, Mu Li & Alexander J. Smola - Dive into Deep Learning - libgen.li.pdf
+File10[$e]=$HOME/Downloads/arcodify cv/Sanchar Limbu.pdf
+File2[$e]=$HOME/Technical Specification — Replication of theneverrestproject.org (WordPress).pdf
+File3[$e]=$HOME/Documents/Nabin Paudel Resume.pdf
+File4[$e]=$HOME/Downloads/amrit-adhikari.pdf
+File5[$e]=$HOME/Downloads/arcodify cv/Amrit_Adhikari - Resume.pdf
+File6[$e]=$HOME/Downloads/arcodify cv/Bibek Lamichhane.pdf
+File7[$e]=$HOME/Downloads/arcodify cv/Supran-Maharjan-cv_new.pdf
+File8[$e]=$HOME/Downloads/Resume.pdf
+File9[$e]=$HOME/Downloads/Supran-Maharjan-cv_new.pdf
+Name1[$e]=Aston Zhang, Zachary C. Lipton, Mu Li & Alexander J. Smola - Dive into Deep Learning - libgen.li.pdf
+Name10[$e]=Sanchar Limbu.pdf
+Name2[$e]=Technical Specification — Replication of theneverrestproject.org (WordPress).pdf
+Name3[$e]=Nabin Paudel Resume.pdf
+Name4[$e]=amrit-adhikari.pdf
+Name5[$e]=Amrit_Adhikari - Resume.pdf
+Name6[$e]=Bibek Lamichhane.pdf
+Name7[$e]=Supran-Maharjan-cv_new.pdf
+Name8[$e]=Resume.pdf
+Name9[$e]=Supran-Maharjan-cv_new.pdf
 
 [UiSettings]
 ColorScheme=KvAdaptaDark

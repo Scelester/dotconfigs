@@ -4,6 +4,13 @@
 configs:
 - level: 0
   monitors:
+  - id: "bd4586e4497d69c4858f7e8bf6d6f8c31b59d3a3"
+    display_name: "Najing CEC Panda FPD Technology CO. ltd 0x004D  (eDP-1)"
+    geometry:
+      x: 0
+      y: 0
+      width: 1920
+      height: 1080
   - id: "184aad52180a2b8270c52d072e758e987addd904"
     display_name: "Najing CEC Panda FPD Technology CO. ltd 0x004D (eDP1)"
     geometry:
@@ -12,72 +19,99 @@ configs:
       width: 1920
       height: 1080
   icons:
-    "trash:///":
-      row: 0
+    "/home/scelester/Desktop/document1.jpg":
+      row: 1
+      col: 1
+    "/home/scelester/Desktop/togglemonitorlock":
+      row: 2
+      col: 1
+    "/home/scelester/Desktop/cover_updated.jpg":
+      row: 7
       col: 0
-    "E24A70F54A70C835":
-      row: 4
-      col: 0
-      last_seen: 1735975454613745
-    "/home/scelester/Desktop/Invoice 54.pdf":
-      row: 4
-      col: 0
-    "/home/scelester/Desktop/log_archive_2025-01-13_162042.tgz":
+    "/home/scelester/Desktop/test":
       row: 5
       col: 0
+    "/home/scelester/Desktop/Presenation.pdf":
+      row: 6
+      col: 0
+    "/home/scelester/Desktop/fix_cursor.sh":
+      row: 3
+      col: 1
     "/home/scelester/Desktop/test.rs":
       row: 6
       col: 0
-    "/home/scelester/Desktop/doc2.jpg":
-      row: 8
-      col: 0
+    "/home/scelester/Desktop/Enabling Secure Boot.pdf":
+      row: 6
+      col: 1
     "/home/scelester/Desktop/Nabin Paudel.odg":
+      row: 4
+      col: 2
+    "/home/scelester/Desktop/Old Firefox Data":
+      row: 6
+      col: 2
+    "/home/scelester/Desktop/log_archive_2025-01-13_162042.tgz":
+      row: 5
+      col: 0
+    "/home/scelester/Desktop/PFT":
       row: 5
       col: 1
-    "/home/scelester/Desktop/Testspace":
+    "5bfd9bbd-e34b-411a-90d1-c41ec13be40b":
+      row: 1
+      col: 0
+      last_seen: 1736477452492225
+    "/home/scelester/Desktop/Screenshot_1739550081.png":
       row: 3
-      col: 1
-    "/":
-      row: 2
+      col: 2
+    "Trash":
+      row: 1
       col: 0
     "1E08798F08796725":
       row: 1
       col: 0
       last_seen: 1735975454612524
-    "Trash":
-      row: 1
+    "E24A70F54A70C835":
+      row: 4
       col: 0
-    "/home/scelester/Desktop/steam.desktop":
-      row: 5
+      last_seen: 1735975454613745
+    "/home/scelester/Desktop/hypr.zip":
+      row: 8
+      col: 1
+    "/home/scelester/Desktop/Testspace":
+      row: 4
+      col: 1
+    "/home/scelester/Desktop/Screenshot_1739550262.png":
+      row: 2
+      col: 2
+    "/home/scelester/Desktop/Screenshot_1739550267.png":
+      row: 0
+      col: 2
+    "/home/scelester/Desktop/Invoice 54.pdf":
+      row: 4
       col: 0
-    "/home/scelester/Desktop/test":
-      row: 5
+    "/home/scelester/Desktop/scelester.gif":
+      row: 0
+      col: 1
+    "/":
+      row: 2
       col: 0
     "/home/scelester":
       row: 3
       col: 0
-    "/home/scelester/Desktop/document1.jpg":
+    "trash:///":
       row: 0
-      col: 1
-    "/home/scelester/Desktop/togglemonitorlock":
-      row: 1
-      col: 1
-    "/home/scelester/Desktop/scelester.gif":
-      row: 9
       col: 0
-    "5bfd9bbd-e34b-411a-90d1-c41ec13be40b":
-      row: 1
+    "/home/scelester/Desktop/steam.desktop":
+      row: 5
       col: 0
-      last_seen: 1736477452492225
     "/home/scelester/Desktop/Cover Letter.pdf":
-      row: 4
-      col: 1
-    "/home/scelester/Desktop/Presenation.pdf":
-      row: 6
-      col: 0
-    "/home/scelester/Desktop/cover_updated.jpg":
       row: 7
-      col: 0
-    "/home/scelester/Desktop/fix_cursor.sh":
-      row: 2
       col: 1
+    "/home/scelester/Desktop/doc2.jpg":
+      row: 8
+      col: 0
+    "/home/scelester/Desktop/Screenshot_1739550264.png":
+      row: 1
+      col: 2
+    "/home/scelester/Desktop/PFT.zip":
+      row: 5
+      col: 2

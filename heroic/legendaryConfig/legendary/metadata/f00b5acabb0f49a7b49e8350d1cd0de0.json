@@ -25,7 +25,7 @@
         "path": "applications"
       }
     ],
-    "creationDate": "2021-06-22T23:56:12.504Z",
+    "creationDate": "2025-05-16T16:56:38.614Z",
     "customAttributes": {
       "CanRunOffline": {
         "type": "STRING",
@@ -66,7 +66,6 @@
       "egstore"
     ],
     "id": "450d325cc72e4fcbb5999aaf0f672e10",
-    "installModes": [],
     "itemType": "DURABLE",
     "keyImages": [
       {
@@ -88,18 +87,16 @@
         "width": 1200
       }
     ],
-    "lastModifiedDate": "2024-05-21T05:39:09.429Z",
+    "lastModifiedDate": "2025-05-21T17:42:27.494Z",
     "mainGameItemList": [],
     "namespace": "301980d060324bb29202677f468c6c44",
     "releaseInfo": [
       {
         "appId": "f00b5acabb0f49a7b49e8350d1cd0de0",
-        "compatibleApps": [],
-        "dateAdded": "2021-12-03T16:57:01.109Z",
-        "id": "0660bcdf2a6a4d6a8076c60ecc14f884",
+        "id": "3e65db3a31fe47e7bd72bb57fc0dc1b7",
         "platform": [
-          "Windows",
-          "Mac"
+          "Mac",
+          "Windows"
         ]
       }
     ],

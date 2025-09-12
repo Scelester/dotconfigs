@@ -184,7 +184,6 @@
           "egstore"
         ],
         "id": "dd82eb03ce4f4aa3aa2606695325bf72",
-        "installModes": [],
         "itemType": "CONSUMABLE",
         "keyImages": [],
         "lastModifiedDate": "2021-11-09T12:06:17.052Z",
@@ -447,7 +446,6 @@
           "egstore"
         ],
         "id": "5d20762104744926a406cc0b0cbc9cc8",
-        "installModes": [],
         "itemType": "CONSUMABLE",
         "keyImages": [],
         "lastModifiedDate": "2021-10-05T04:21:45.218Z",
@@ -547,7 +545,6 @@
           "egstore"
         ],
         "id": "27492b36ba5b464888a9d3d7c1260d2a",
-        "installModes": [],
         "itemType": "CONSUMABLE",
         "keyImages": [],
         "lastModifiedDate": "2021-09-07T15:22:19.534Z",
@@ -643,7 +640,6 @@
           "egstore"
         ],
         "id": "cddd17e69f2e4a23934cd968e79b57c3",
-        "installModes": [],
         "itemType": "CONSUMABLE",
         "keyImages": [],
         "lastModifiedDate": "2021-08-10T10:58:32.499Z",
@@ -943,7 +939,6 @@
       "egstore"
     ],
     "id": "4846b408b2e5424baecf1dc29683402e",
-    "installModes": [],
     "itemType": "DURABLE",
     "keyImages": [
       {

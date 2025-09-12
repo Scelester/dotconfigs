@@ -1,0 +1,2 @@
+2025/09/11-18:09:20.817 f18 Creating DB /home/scelester/.config/Ferdium/Partitions/service-8cbe34b1-d5ca-434b-882b-277a8868336d/WebStorage/3/IndexedDB/indexeddb.leveldb since it was missing.
+2025/09/11-18:09:20.823 f18 Reusing MANIFEST /home/scelester/.config/Ferdium/Partitions/service-8cbe34b1-d5ca-434b-882b-277a8868336d/WebStorage/3/IndexedDB/indexeddb.leveldb/MANIFEST-000001

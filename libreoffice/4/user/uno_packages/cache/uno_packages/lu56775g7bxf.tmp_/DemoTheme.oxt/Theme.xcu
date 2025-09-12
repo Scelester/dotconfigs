@@ -1,0 +1,670 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE oor:component-data SYSTEM "../../../../component-update.dtd">
+<oor:component-data xmlns:oor="http://openoffice.org/2001/registry"   xmlns:xs="http://www.w3.org/2001/XMLSchema"   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   xmlns:install="http://openoffice.org/2004/installation" oor:name="UI"   oor:package="org.openoffice.Office">
+  <node oor:name="ColorScheme">
+    <node oor:name="ColorSchemes">
+      <node oor:name="Lime Theme" oor:op="replace">
+        <node oor:name="WindowColor">
+          <prop oor:name="Light">
+            <value>15266465</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>1118481</value>
+          </prop>
+        </node>
+        <node oor:name="WindowTextColor">
+          <prop oor:name="Light">
+            <value>1118481</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>14540253</value>
+          </prop>
+        </node>
+        <node oor:name="BaseColor">
+          <prop oor:name="Light">
+            <value>16777175</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>1842204</value>
+          </prop>
+        </node>
+        <node oor:name="ButtonColor">
+          <prop oor:name="Light">
+            <value>13953643</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>3355443</value>
+          </prop>
+        </node>
+        <node oor:name="ButtonTextColor">
+          <prop oor:name="Light">
+            <value>1118481</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>15658734</value>
+          </prop>
+        </node>
+        <node oor:name="AccentColor">
+          <prop oor:name="Light">
+            <value>5866416</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>5280650</value>
+          </prop>
+        </node>
+        <node oor:name="DisabledColor">
+          <prop oor:name="Light">
+            <value>7238003</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>8421504</value>
+          </prop>
+        </node>
+        <node oor:name="DisabledTextColor">
+          <prop oor:name="Light">
+            <value>6710886</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>11711154</value>
+          </prop>
+        </node>
+        <node oor:name="ShadowColor">
+          <prop oor:name="Light">
+            <value>7238003</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>10066329</value>
+          </prop>
+        </node>
+        <node oor:name="SeparatorColor">
+          <prop oor:name="Light">
+            <value>9014414</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>10066329</value>
+          </prop>
+        </node>
+        <node oor:name="FaceColor">
+          <prop oor:name="Light">
+            <value>2764338</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>15658734</value>
+          </prop>
+        </node>
+        <node oor:name="ActiveColor">
+          <prop oor:name="Light">
+            <value>4042473</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>5280650</value>
+          </prop>
+        </node>
+        <node oor:name="ActiveTextColor">
+          <prop oor:name="Light">
+            <value>16579836</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>15658734</value>
+          </prop>
+        </node>
+        <node oor:name="ActiveBorderColor">
+          <prop oor:name="Light">
+            <value>12632256</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>15658734</value>
+          </prop>
+        </node>
+        <node oor:name="FieldColor">
+          <prop oor:name="Light">
+            <value>1777184</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>3355443</value>
+          </prop>
+        </node>
+        <node oor:name="MenuBarColor">
+          <prop oor:name="Light">
+            <value>13953643</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>1842204</value>
+          </prop>
+        </node>
+        <node oor:name="MenuBarTextColor">
+          <prop oor:name="Light">
+            <value>1118481</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>15658734</value>
+          </prop>
+        </node>
+        <node oor:name="MenuBarHighlightColor">
+          <prop oor:name="Light">
+            <value>4042473</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>5280650</value>
+          </prop>
+        </node>
+        <node oor:name="MenuBarHighlightTextColor">
+          <prop oor:name="Light">
+            <value>0</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>15658734</value>
+          </prop>
+        </node>
+        <node oor:name="MenuColor">
+          <prop oor:name="Light">
+            <value>13953643</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>1842204</value>
+          </prop>
+        </node>
+        <node oor:name="MenuTextColor">
+          <prop oor:name="Light">
+            <value>1118481</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>15658734</value>
+          </prop>
+        </node>
+        <node oor:name="MenuHighlightColor">
+          <prop oor:name="Light">
+            <value>5866416</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>5280650</value>
+          </prop>
+        </node>
+        <node oor:name="MenuHighlightTextColor">
+          <prop oor:name="Light">
+            <value>1118481</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>15658734</value>
+          </prop>
+        </node>
+        <node oor:name="MenuBorderColor">
+          <prop oor:name="Light">
+            <value>2764338</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>10066329</value>
+          </prop>
+        </node>
+        <node oor:name="InactiveColor">
+          <prop oor:name="Light">
+            <value>2764338</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>8421504</value>
+          </prop>
+        </node>
+        <node oor:name="InactiveTextColor">
+          <prop oor:name="Light">
+            <value>7238003</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>13421772</value>
+          </prop>
+        </node>
+        <node oor:name="InactiveBorderColor">
+          <prop oor:name="Light">
+            <value>2764338</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>11711154</value>
+          </prop>
+        </node>
+        <node oor:name="DocColor">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>0</value>
+          </prop>
+        </node>
+        <node oor:name="DocBoundaries">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="AppBackground">
+          <prop oor:name="Light">
+            <value>16185812</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>1118481</value>
+          </prop>
+        </node>
+        <node oor:name="TableBoundaries">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="FontColor">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="Links">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="LinksVisited">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="Spell">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="SmartTags">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="Shadow">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="WriterTextGrid">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="WriterFieldShadings">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="WriterIdxShadings">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="Grammar">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="WriterScriptIndicator">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="WriterSectionBoundaries">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="WriterHeaderFooterMark">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="WriterPageBreaks">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="WriterDirectCursor">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="CalcGrid">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>1842204</value>
+          </prop>
+        </node>
+        <node oor:name="CalcCellFocus">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="CalcPageBreak">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="CalcPageBreakManual">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="CalcPageBreakAutomatic">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="CalcHiddenColRow">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="CalcTextOverflow">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="CalcComments">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="CalcDetective">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="CalcDetectiveError">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="CalcReference">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="CalcNotesBackground">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="CalcValue">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="CalcFormula">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="CalcText">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="CalcProtectedBackground">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="DrawGrid">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="BASICEditor">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="BASICIdentifier">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="BASICComment">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="BASICNumber">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="BASICString">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="BASICOperator">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="BASICKeyword">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="BASICError">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="SQLIdentifier">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="SQLNumber">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="SQLString">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="SQLOperator">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="SQLKeyword">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="SQLParameter">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="SQLComment">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="HTMLSGML">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="HTMLComment">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="HTMLKeyword">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+        <node oor:name="HTMLUnknown">
+          <prop oor:name="Light">
+            <value>-1</value>
+          </prop>
+          <prop oor:name="Dark">
+            <value>-1</value>
+          </prop>
+        </node>
+      </node>
+    </node>
+    <prop oor:name="CurrentColorScheme">
+      <value>CustomTheme</value>
+    </prop>
+  </node>
+</oor:component-data>
+

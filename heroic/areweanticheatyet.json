@@ -236,7 +236,7 @@
     "name": "Paladins",
     "logo": "",
     "native": false,
-    "status": "Broken",
+    "status": "Running",
     "reference": "",
     "anticheats": [
       "Easy Anti-Cheat"
@@ -277,6 +277,11 @@
         "name": "No plans to dedicate time for steam deck / linux compatibility",
         "date": "Feb 14, 2023, 02:13 AM",
         "reference": "https://www.reddit.com/r/paladinsgame/comments/110mcuf/with_em_striving_to_do_better_how_about_some/j8g2nam/"
+      },
+      {
+        "name": "EAC updated, and Linux allowed after Evil Mojo layoffs",
+        "date": "April 1, 2025, 12:00 AM",
+        "reference": "https://www.protondb.com/app/444090/1000#JBFivnOCC-"
       }
     ],
     "storeIds": {
@@ -287,7 +292,7 @@
       }
     },
     "slug": "paladins",
-    "dateChanged": "2024-01-19T04:40:56.000Z"
+    "dateChanged": "2025-04-05T19:13:42.0000000-04:00"
   },
   {
     "url": "https://pubg.com/",
@@ -799,17 +804,12 @@
     "name": "Warhammer: Vermintide 2",
     "logo": "",
     "native": false,
-    "status": "Broken",
-    "reference": "https://www.protondb.com/app/552500#OFEC_7WqWG",
+    "status": "Running",
+    "reference": "https://gamingonlinux.com/2025/03/warhammer-vermintide-2-gets-an-easy-anti-cheat-upgrade-finally-works-properly-on-linux",
     "anticheats": [
       "Easy Anti-Cheat"
     ],
-    "notes": [
-      [
-        "It's complicated...",
-        "https://github.com/AreWeAntiCheatYet/AreWeAntiCheatYet/issues/1271"
-      ]
-    ],
+    "notes": [],
     "updates": [
       {
         "name": "EAC Implementation more complex than suspected",
@@ -826,7 +826,7 @@
       "steam": "552500"
     },
     "slug": "warhammer-vermintide-2",
-    "dateChanged": "2024-01-19T04:40:56.000Z"
+    "dateChanged": "2025-04-05T19:07:27.0000000-04:00"
   },
   {
     "url": "https://www.escapefromtarkov.com/",
@@ -1264,7 +1264,7 @@
     "dateChanged": "2024-01-19T04:40:56.000Z"
   },
   {
-    "url": "https://blessunleashed.com/",
+    "url": "https://blessunleashedpc.valofe.com/",
     "name": "Bless Unleashed",
     "logo": "",
     "native": false,
@@ -1279,14 +1279,14 @@
       "steam": "1254120"
     },
     "slug": "bless-unleashed",
-    "dateChanged": "2024-01-19T04:40:56.000Z"
+    "dateChanged": "2025-06-29T22:13:14.0000000-04:00"
   },
   {
     "url": "http://www.risingstorm2.com/",
     "name": "Rising Storm 2: Vietnam",
     "logo": "",
     "native": false,
-    "status": "Broken",
+    "status": "Running",
     "reference": "https://www.protondb.com/app/418460#9Rm6QJUXau",
     "anticheats": [
       "Easy Anti-Cheat"
@@ -1301,7 +1301,7 @@
       }
     },
     "slug": "rising-storm-2-vietnam",
-    "dateChanged": "2024-01-19T04:40:56.000Z"
+    "dateChanged": "2025-04-05T19:10:15.0000000-04:00"
   },
   {
     "url": "",
@@ -1478,23 +1478,18 @@
     "name": "Rec Room",
     "logo": "",
     "native": false,
-    "status": "Broken",
-    "reference": "",
+    "status": "Running",
+    "reference": "https://github.com/ValveSoftware/Proton/issues/4395",
     "anticheats": [
       "Easy Anti-Cheat"
     ],
-    "notes": [
-      [
-        "Anti-cheat currently works, however, Themida anti-tamper is not correctly virtualized under Wine/Proton.",
-        ""
-      ]
-    ],
+    "notes": [],
     "updates": [],
     "storeIds": {
       "steam": "471710"
     },
     "slug": "rec-room",
-    "dateChanged": "2024-12-27T07:54:55.0000000-06:00"
+    "dateChanged": "2025-06-20T16:16:24.0000000-04:00"
   },
   {
     "url": "https://worldwar3.com/",
@@ -1616,24 +1611,18 @@
     "name": "Zero Hour",
     "logo": "",
     "native": false,
-    "status": "Broken",
-    "reference": "https://www.protondb.com/app/1359090#qQYAVWJv3L",
+    "status": "Running",
+    "reference": "",
     "anticheats": [
       "Denuvo Anti-Cheat"
     ],
     "notes": [],
-    "updates": [
-      {
-        "name": "Denuvo seems to break compatibility",
-        "reference": "https://www.protondb.com/app/1359090#qQYAVWJv3L",
-        "date": "Mon Feb 06 2023 14:46:40 GMT+0000"
-      }
-    ],
+    "updates": [],
     "storeIds": {
       "steam": "1359090"
     },
     "slug": "zero-hour",
-    "dateChanged": "2024-01-19T04:40:56.000Z"
+    "dateChanged": "2025-06-24T20:12:49.0000000-04:00"
   },
   {
     "url": "https://wiplegames.com/?page_id=53",
@@ -2000,8 +1989,8 @@
     "name": "Digimon Masters Online",
     "logo": "",
     "native": false,
-    "status": "Broken",
-    "reference": "",
+    "status": "Running",
+    "reference": "https://youtube.com/watch?v=uHA4dOmyPeE",
     "anticheats": [
       "XIGNCODE3"
     ],
@@ -2011,7 +2000,7 @@
       "steam": "537180"
     },
     "slug": "digimon-masters-online",
-    "dateChanged": "2024-01-19T04:40:56.000Z"
+    "dateChanged": "2025-04-05T19:17:55.0000000-04:00"
   },
   {
     "url": "https://postscriptumgame.com/",
@@ -2078,7 +2067,7 @@
     "name": "Dirty Bomb",
     "logo": "",
     "native": false,
-    "status": "Broken",
+    "status": "Running",
     "reference": "",
     "anticheats": [
       "Easy Anti-Cheat"
@@ -2089,7 +2078,7 @@
       "steam": "333930"
     },
     "slug": "dirty-bomb",
-    "dateChanged": "2024-01-19T04:40:56.000Z"
+    "dateChanged": "2025-06-23T22:30:44.0000000-04:00"
   },
   {
     "url": "",
@@ -3708,7 +3697,7 @@
     "status": "Broken",
     "reference": "",
     "anticheats": [
-      "Anti-Cheat Expert"
+      "miHoYo Protect"
     ],
     "notes": [
       [
@@ -3728,7 +3717,7 @@
         "slug": "honkai-star-rail"
       }
     },
-    "dateChanged": "2024-07-31T00:00:00.000Z"
+    "dateChanged": "2025-05-26T16:54:01.0000000-04:00"
   },
   {
     "url": "",
@@ -4259,22 +4248,22 @@
     "name": "Lost Ark",
     "logo": "",
     "native": false,
-    "status": "Broken",
-    "reference": "",
+    "status": "Running",
+    "reference": "https://www.gamingonlinux.com/2025/07/lost-ark-from-amazon-games-appears-to-have-enabled-the-anti-cheat-for-linux-steamos/",
     "anticheats": [
       "Easy Anti-Cheat",
       "AnyBrain"
     ],
     "notes": [
       [
-        "Works with GeForce Now",
-        "https://www.nvidia.com/en-us/geforce/forums/gfn-game-requests/44/473967/lost-ark-on-geforce-now/3242656/"
+        "Proton 10 beta; Proton-GE 10.9 or later recommended.",
+        null
       ]
     ],
     "updates": [],
     "storeIds": {},
     "slug": "lost-ark",
-    "dateChanged": "2024-09-22T22:18:43.937Z"
+    "dateChanged": "2025-07-17T18:24:43.0000000-04:00"
   },
   {
     "url": "https://archeageunchained.com/",
@@ -5319,14 +5308,24 @@
     "url": "https://www.toweroffantasy-global.com/",
     "name": "Tower of Fantasy",
     "logo": "",
-    "status": "Denied",
+    "status": "Running",
     "native": false,
     "reference": "",
     "anticheats": [
       "KSophon"
     ],
-    "notes": [],
+    "notes": [
+      [
+        "Didn't work before publisher was changed to Perfect World",
+        ""
+      ]
+    ],
     "updates": [
+      {
+        "name": "Game started working on Linux",
+        "date": "31 March 2025 05:12:08 UTC",
+        "reference": "https://www.protondb.com/app/2064650#nnunTaGO89"
+      },
       {
         "name": "Refused Steam Deck Support",
         "date": "5 August 2022 4:42 PM UTC-5",
@@ -5341,7 +5340,7 @@
       }
     },
     "slug": "tower-of-fantasy",
-    "dateChanged": "2024-01-20T04:40:56.000Z"
+    "dateChanged": "2025-04-30T17:16:00.000Z"
   },
   {
     "url": "https://www.lostlight.game/",
@@ -5476,25 +5475,19 @@
     "name": "Marauders",
     "logo": "",
     "native": false,
-    "status": "Broken",
-    "reference": "https://github.com/Starz0r/AreWeAntiCheatYet/issues/908",
+    "status": "Running",
+    "reference": "",
     "anticheats": [
       "Easy Anti-Cheat",
       "Denuvo Anti-Cheat"
     ],
     "notes": [],
-    "updates": [
-      {
-        "name": "Broken since Health Update",
-        "date": "Thu Nov 10 2022 16:57:21 GMT+0000",
-        "reference": "https://www.protondb.com/app/1789480#SW4IbnCxju"
-      }
-    ],
+    "updates": [],
     "storeIds": {
       "steam": "1789480"
     },
     "slug": "marauders",
-    "dateChanged": "2024-11-11T06:05:11.335Z"
+    "dateChanged": "2025-06-22T15:34:27.0000000-04:00"
   },
   {
     "url": "https://www.predecessorgame.com/",
@@ -6023,7 +6016,7 @@
     "name": "Deceit 2",
     "logo": "",
     "native": false,
-    "status": "Broken",
+    "status": "Running",
     "reference": "",
     "anticheats": [
       "Easy Anti-Cheat"
@@ -6031,7 +6024,7 @@
     "updates": [],
     "notes": [],
     "storeIds": {},
-    "dateChanged": "2024-01-19T04:40:56.000Z"
+    "dateChanged": "2025-06-18T15:20:49.0000000-04:00"
   },
   {
     "url": "",
@@ -6535,21 +6528,36 @@
     "name": "ヘブンバーンズレッド (Heaven Burns Red)",
     "logo": "",
     "native": false,
-    "status": "Broken",
+    "status": "Running",
     "reference": "",
     "anticheats": [
+      "Anti-Cheat Expert",
       "Crackproof",
       "WFSDrv"
     ],
-    "updates": [],
+    "updates": [
+      {
+        "name": "As of Wine-Staging 10.5, Heaven Burns Red is playable on Linux.",
+        "date": "May 28, 2025, 13:15:00 UTC",
+        "reference": "https://www.protondb.com/app/1973710"
+      }
+    ],
     "notes": [
+      [
+        "Requires Wine 10.5+ or Proton 10+.",
+        null
+      ],
+      [
+        "Proton 10.x series lacks the patches to run HBR for now.",
+        null
+      ],
       [
         "Playable on Waydroid",
         null
       ]
     ],
     "storeIds": {},
-    "dateChanged": "2024-07-31T00:01:49.712Z"
+    "dateChanged": "2025-05-30T17:20:03.0000000-04:00"
   },
   {
     "url": "",
@@ -7345,12 +7353,23 @@
     "name": "Wuthering Waves",
     "logo": "",
     "native": false,
-    "status": "Broken",
+    "status": "Running",
     "reference": "",
     "anticheats": [
       "Anti-Cheat Expert"
     ],
-    "updates": [],
+    "updates": [
+      {
+        "name": "Steam Deck rating changed from Unknown to Playable.",
+        "date": "Jul 15, 2025, 12:00 PM GMT-7",
+        "reference": "https://store.steampowered.com/app/3513350/Wuthering_Waves/"
+      },
+      {
+        "name": "Publisher claims to be looking into better Steam Deck compatibility on the Steam store page description.",
+        "date": "Jun 12, 2025, 12:00 PM GMT-7",
+        "reference": "https://store.steampowered.com/app/3513350/Wuthering_Waves/"
+      }
+    ],
     "notes": [
       [
         "Playable on GeForce NOW.",
@@ -7359,10 +7378,20 @@
       [
         "Might be playable on native Steam Deck hardware (non-OLED only).",
         null
+      ],
+      [
+        "Proton-GE 10.8 or greater is recommended.",
+        "https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/GE-Proton10-8"
       ]
     ],
-    "storeIds": {},
-    "dateChanged": "2025-03-02T14:19:28.0000000-05:00"
+    "storeIds": {
+      "steam": "3513350",
+      "epic": {
+        "namespace": "e885327ce4414509bff4c10757f88334",
+        "slug": "wuthering-waves-76ebc5"
+      }
+    },
+    "dateChanged": "2025-07-04T23:34:35.0000000-04:00"
   },
   {
     "url": "",
@@ -7813,7 +7842,7 @@
     "name": "Mabinogi",
     "logo": "",
     "native": false,
-    "status": "Broken",
+    "status": "Running",
     "reference": "",
     "anticheats": [
       "AhnLab HackShield",
@@ -7822,7 +7851,7 @@
     "updates": [],
     "notes": [],
     "storeIds": {},
-    "dateChanged": "2024-10-07T22:48:08.575Z"
+    "dateChanged": "2025-05-29T18:21:47.0000000-04:00"
   },
   {
     "url": "",
@@ -7888,10 +7917,14 @@
       [
         "Runs on native Steam Deck hardware only.",
         null
+      ],
+      [
+        "Developers said they would like to enable wide Linux support in the future.",
+        "https://steamcommunity.com/app/1282270/discussions/4/4626981087516566932/?ctp=2#comment_603023633548348038"
       ]
     ],
     "storeIds": {},
-    "dateChanged": "2024-12-07T20:44:24.865Z"
+    "dateChanged": "2025-05-26T16:58:56.0000000-04:00"
   },
   {
     "url": "",
@@ -8069,20 +8102,15 @@
     "name": "Dune: Awakening",
     "logo": "",
     "native": false,
-    "status": "Broken",
+    "status": "Running",
     "reference": "",
     "anticheats": [
-      "Easy Anti-Cheat"
+      "BattlEye"
     ],
     "updates": [],
-    "notes": [
-      [
-        "Unreleased, Speculative",
-        null
-      ]
-    ],
+    "notes": [],
     "storeIds": {},
-    "dateChanged": "2024-07-03T19:31:11.479Z"
+    "dateChanged": "2025-06-26T19:17:36.0000000-04:00"
   },
   {
     "url": "",
@@ -8271,7 +8299,7 @@
     "name": "Delta Force: Hawk Ops",
     "logo": "",
     "native": false,
-    "status": "Broken",
+    "status": "Denied",
     "reference": "",
     "anticheats": [
       "Anti-Cheat Expert"
@@ -8279,12 +8307,16 @@
     "updates": [],
     "notes": [
       [
-        "Runs on native Steam Deck hardware only.",
+        "Maybe runs on native Steam Deck (non-OLED) hardware only.",
         null
+      ],
+      [
+        "Game Director says you should play on mobile through Google Play. (Waydroid might be usuable here?)",
+        "https://www.reddit.com/r/gaming/comments/1k8evyo/comment/mpc3vcd/"
       ]
     ],
     "storeIds": {},
-    "dateChanged": "2024-12-07T19:29:55.985Z"
+    "dateChanged": "2025-05-26T17:05:13.0000000-04:00"
   },
   {
     "url": "",
@@ -8949,22 +8981,17 @@
     "name": "Splitgate 2",
     "logo": "",
     "native": false,
-    "status": "Planned",
-    "reference": "https://www.reddit.com/r/Splitgate/comments/1f9s4la/splitgate_2_ama_with_1047_games_ceo_ian_proulx/llnx5tq/",
+    "status": "Running",
+    "reference": "",
     "anticheats": [
-      "EQU8"
+      "RedKard"
     ],
     "updates": [],
-    "notes": [
-      [
-        "Unreleased, Anticheat broken in closed alpha.",
-        null
-      ]
-    ],
+    "notes": [],
     "storeIds": {
       "steam": "2918300"
     },
-    "dateChanged": "2025-03-02T14:23:05.0000000-05:00"
+    "dateChanged": "2025-06-19T15:01:37.0000000-04:00"
   },
   {
     "url": "https://xeragame.com/",
@@ -9442,17 +9469,17 @@
     "name": "Test Drive Unlimited Solar Crown",
     "logo": "",
     "native": false,
-    "status": "Planned",
-    "reference": "https://steamdeckhq.com/news/test-drive-unlimited-solar-crown-steam-deck/",
+    "status": "Running",
+    "reference": "",
     "anticheats": [
-      "Unknown (Custom)"
+      "SARD"
     ],
     "updates": [],
     "notes": [],
     "storeIds": {
       "steam": "1249970"
     },
-    "dateChanged": "2024-09-23T22:37:01.179Z"
+    "dateChanged": "2025-06-29T22:14:33.0000000-04:00"
   },
   {
     "url": "",
@@ -11260,13 +11287,24 @@
     "name": "Punishing: Gray Raven",
     "logo": "",
     "native": false,
-    "status": "Broken",
+    "status": "Running",
     "reference": "",
     "anticheats": [
       "Anti-Cheat Expert"
     ],
-    "updates": [],
-    "notes": [],
+    "updates": [
+      {
+        "name": "As of Wine-Staging 10.5, Punishing: Gray Raven is playable on Linux.",
+        "date": "May 28, 2025, 13:15:00 UTC",
+        "reference": "https://github.com/AreWeAntiCheatYet/AreWeAntiCheatYet/issues/1792"
+      }
+    ],
+    "notes": [
+      [
+        "Proton 10.x series lacks the patches to run PGR for now.",
+        null
+      ]
+    ],
     "storeIds": {},
     "dateChanged": "2024-10-02T22:05:44.357Z"
   },
@@ -15775,15 +15813,15 @@
     "name": "Squad 44",
     "logo": "",
     "native": false,
-    "status": "Planned",
-    "reference": "https://steamcommunity.com/app/736220/discussions/0/7221029098486130805/?ctp=2#c4429939958292527216",
+    "status": "Running",
+    "reference": "https://www.gamingonlinux.com/2025/03/ww2-shooter-squad-44-from-offworld-updates-easy-anti-cheat-enabling-linux-support/",
     "anticheats": [
       "Easy Anti-Cheat"
     ],
     "updates": [],
     "notes": [],
     "storeIds": {},
-    "dateChanged": "2024-12-27T08:10:43.0000000-06:00"
+    "dateChanged": "2025-04-05T19:12:01.0000000-04:00"
   },
   {
     "url": "",
@@ -15882,20 +15920,31 @@
     "dateChanged": "2024-10-28T10:56:10.339473-05:00"
   },
   {
-    "url": "",
+    "url": "https://crsed.net",
     "slug": "crsed-cuisine-royale",
     "name": "CRSED: Cuisine Royale",
     "logo": "",
     "native": false,
-    "status": "Supported",
+    "status": "Denied",
     "reference": "",
     "anticheats": [
-      "Easy Anti-Cheat"
+      "BattlEye"
     ],
-    "updates": [],
+    "updates": [
+      {
+        "name": "Switched to BattlEye anti-cheat",
+        "date": "May 14, 2025, 8:59 AM GMT+2",
+        "reference": "https://store.steampowered.com/news/app/884660/view/503951081162670247"
+      },
+      {
+        "name": "The end of support for Linux",
+        "date": "May 27, 2025, 6:36 PM GMT+2",
+        "reference": "https://store.steampowered.com/news/app/884660/view/546735912086668871"
+      }
+    ],
     "notes": [],
     "storeIds": {},
-    "dateChanged": "2024-10-28T10:56:10.340530-05:00"
+    "dateChanged": "2025-06-02T00:04:23.068803+02:00"
   },
   {
     "url": "",
@@ -17908,27 +17957,6 @@
   },
   {
     "url": "",
-    "slug": "avatar-frontiers-of-pandora",
-    "name": "Avatar: Frontiers of Pandora",
-    "logo": "",
-    "native": false,
-    "status": "Broken",
-    "reference": "",
-    "anticheats": [
-      "Easy Anti-Cheat"
-    ],
-    "updates": [],
-    "notes": [
-      [
-        "Unreleased, Speculative",
-        null
-      ]
-    ],
-    "storeIds": {},
-    "dateChanged": "2024-11-10T23:20:07.484698-06:00"
-  },
-  {
-    "url": "",
     "slug": "v-rising",
     "name": "V Rising",
     "logo": "",
@@ -19492,7 +19520,7 @@
     "name": "Blindfire",
     "logo": "",
     "native": false,
-    "status": "Broken",
+    "status": "Supported",
     "reference": "",
     "anticheats": [
       "Easy Anti-Cheat"
@@ -19500,7 +19528,7 @@
     "updates": [],
     "notes": [],
     "storeIds": {},
-    "dateChanged": "2024-11-18T16:33:32.429148-06:00"
+    "dateChanged": "2025-06-15T14:55:48.0000000-04:00"
   },
   {
     "url": "",
@@ -19765,5 +19793,476 @@
     },
     "slug": "infinity-nikki",
     "dateChanged": "2024-12-06T02:30:00.000Z"
+  },
+  {
+    "url": "",
+    "slug": "rematch",
+    "name": "REMATCH",
+    "logo": "",
+    "native": false,
+    "status": "Running",
+    "reference": "",
+    "anticheats": [
+      "Easy Anti-Cheat"
+    ],
+    "updates": [],
+    "notes": [
+      [
+        "Running in Closed Play Test.",
+        null
+      ]
+    ],
+    "storeIds": {},
+    "dateChanged": "2025-05-26T17:07:53.0000000-04:00"
+  },
+  {
+    "url": "",
+    "slug": "nba-2k25",
+    "name": "NBA 2K25",
+    "logo": "",
+    "native": false,
+    "status": "Running",
+    "reference": "",
+    "anticheats": [
+      "Easy Anti-Cheat"
+    ],
+    "updates": [],
+    "notes": [],
+    "storeIds": {},
+    "dateChanged": "2025-05-29T18:34:45.0000000-04:00"
+  },
+  {
+    "url": "",
+    "slug": "elden-ring-nightreign",
+    "name": "Elden Ring: Nightreign",
+    "logo": "",
+    "native": false,
+    "status": "Running",
+    "reference": "",
+    "anticheats": [
+      "Easy Anti-Cheat"
+    ],
+    "updates": [],
+    "notes": [],
+    "storeIds": {},
+    "dateChanged": "2025-05-30T17:20:59.0000000-04:00"
+  },
+  {
+    "url": "",
+    "slug": "steel-hunters",
+    "name": "Steel Hunters",
+    "logo": "",
+    "native": false,
+    "status": "Running",
+    "reference": "",
+    "anticheats": [
+      "Easy Anti-Cheat"
+    ],
+    "updates": [],
+    "notes": [],
+    "storeIds": {},
+    "dateChanged": "2025-06-01T19:29:24.0000000-04:00"
+  },
+  {
+    "url": "https://re1999.bluepoch.com/",
+    "name": "Reverse: 1999",
+    "logo": "",
+    "native": false,
+    "status": "Running",
+    "reference": "",
+    "anticheats": [
+      "Anti-Cheat Expert"
+    ],
+    "notes": [
+      [
+        "On early Wine-Staging 10.5+ builds, some engine elements, such as video media playback, are broken.",
+        ""
+      ],
+      [
+        "Proton 10.x series lacks the patches to run R:1999 for now.",
+        null
+      ]
+    ],
+    "updates": [
+      {
+        "name": "As of Wine-Staging 10.5, Reverse: 1999 is playable on Linux.",
+        "date": "May 28, 2025, 13:15:00 UTC",
+        "reference": "https://www.protondb.com/app/3092660"
+      }
+    ],
+    "storeIds": {
+      "steam": "3092660"
+    },
+    "slug": "reverse-1999",
+    "dateChanged": "2025-05-28T06:30:00.000Z"
+  },
+  {
+    "url": "https://lna.roglobal.com/",
+    "slug": "ragnarok-origin-roo",
+    "name": "Ragnarok Origin: ROO",
+    "logo": "",
+    "native": false,
+    "status": "Running",
+    "reference": "",
+    "anticheats": [
+      "ROO In-House Anti-Cheat"
+    ],
+    "updates": [],
+    "notes": [],
+    "storeIds": {},
+    "dateChanged": "2025-06-14T15:24:39.0000000-04:00"
+  },
+  {
+    "url": "",
+    "slug": "fantasy-life-i",
+    "name": "FANTASY LIFE i: The Girl Who Steals Time",
+    "logo": "",
+    "native": false,
+    "status": "Running",
+    "reference": "",
+    "anticheats": [
+      "Easy Anti-Cheat"
+    ],
+    "updates": [],
+    "notes": [],
+    "storeIds": {},
+    "dateChanged": "2025-06-16T15:21:43.0000000-04:00"
+  },
+  {
+    "url": "",
+    "name": "La Tale - Evolved",
+    "logo": "",
+    "native": false,
+    "status": "Running",
+    "reference": "",
+    "anticheats": [
+      "nProtect GameGuard"
+    ],
+    "notes": [],
+    "updates": [],
+    "storeIds": {},
+    "slug": "latale-evolved",
+    "dateChanged": "2025-06-17T15:16:34.0000000-04:00"
+  },
+  {
+    "url": "",
+    "name": "CarX Street",
+    "logo": "",
+    "native": false,
+    "status": "Broken",
+    "reference": "",
+    "anticheats": [
+      "Easy Anti-Cheat"
+    ],
+    "notes": [],
+    "updates": [],
+    "storeIds": {},
+    "slug": "carx-street",
+    "dateChanged": "2025-06-30T15:49:34.0000000-04:00"
+  },
+  {
+    "url": "",
+    "slug": "warcos2",
+    "name": "Warcos 2",
+    "logo": "",
+    "native": false,
+    "status": "Broken",
+    "reference": "",
+    "anticheats": [
+      "Easy Anti-Cheat"
+    ],
+    "updates": [],
+    "notes": [
+      [
+        "Unreleased, Speculative",
+        null
+      ]
+    ],
+    "storeIds": {},
+    "dateChanged": "2025-07-05T22:26:53.452Z"
+  },
+  {
+    "url": "",
+    "name": "Karos Classic",
+    "logo": "",
+    "native": false,
+    "status": "Broken",
+    "reference": "",
+    "anticheats": [
+      "XIGNCODE3"
+    ],
+    "notes": [],
+    "updates": [],
+    "storeIds": {},
+    "slug": "karos-classic",
+    "dateChanged": "2025-07-06T23:35:08.0000000-04:00"
+  },
+  {
+    "url": "",
+    "name": "Dead Island Riptide",
+    "logo": "",
+    "native": false,
+    "status": "Running",
+    "reference": "",
+    "anticheats": [
+      "VAC"
+    ],
+    "notes": [],
+    "updates": [],
+    "storeIds": {},
+    "slug": "dead-island-riptide",
+    "dateChanged": "2025-07-06T23:35:08.0000000-04:00"
+  },
+  {
+    "url": "",
+    "name": "Lineage",
+    "logo": "",
+    "native": false,
+    "status": "Broken",
+    "reference": "",
+    "anticheats": [
+      "nProtect GameGuard"
+    ],
+    "notes": [],
+    "updates": [],
+    "storeIds": {},
+    "slug": "lineage",
+    "dateChanged": "2025-07-08T10:19:57.0000000-04:00"
+  },
+  {
+    "url": "",
+    "name": "Day of Dragons",
+    "logo": "",
+    "native": false,
+    "status": "Running",
+    "reference": "",
+    "anticheats": [
+      "Easy Anti-Cheat"
+    ],
+    "notes": [],
+    "updates": [],
+    "storeIds": {},
+    "slug": "day-of-dragons",
+    "dateChanged": "2025-07-09T23:53:29.0000000-04:00"
+  },
+  {
+    "url": "",
+    "name": "Sonic Rumble",
+    "logo": "",
+    "native": false,
+    "status": "Broken",
+    "reference": "",
+    "anticheats": [
+      "Uncheater"
+    ],
+    "notes": [
+      [
+        "Unreleased, Speculative",
+        null
+      ]
+    ],
+    "updates": [],
+    "storeIds": {},
+    "slug": "sonic-rumble",
+    "dateChanged": "2025-07-10T23:58:07.0000000-04:00"
+  },
+  {
+    "url": "",
+    "name": "Black Stigma",
+    "logo": "",
+    "native": false,
+    "status": "Broken",
+    "reference": "",
+    "anticheats": [
+      "Cheat Blocker"
+    ],
+    "notes": [
+      [
+        "Unreleased, Speculative",
+        null
+      ]
+    ],
+    "updates": [],
+    "storeIds": {},
+    "slug": "black-stigma",
+    "dateChanged": "2025-07-11T18:36:32.0000000-04:00"
+  },
+  {
+    "url": "",
+    "name": "Umamusume: Pretty Derby",
+    "logo": "",
+    "native": false,
+    "status": "Running",
+    "reference": "",
+    "anticheats": [
+      "CrackProof"
+    ],
+    "notes": [],
+    "updates": [],
+    "storeIds": {},
+    "slug": "umamusume-pretty-derby",
+    "dateChanged": "2025-07-12T15:55:19.0000000-04:00"
+  },
+  {
+    "url": "",
+    "slug": "dirt-rally",
+    "name": "DiRT Rally",
+    "logo": "",
+    "native": false,
+    "status": "Supported",
+    "reference": "",
+    "anticheats": [
+      "VAC"
+    ],
+    "updates": [],
+    "notes": [],
+    "storeIds": {},
+    "dateChanged": "2025-07-13T17:01:58.0000000-04:00"
+  },
+  {
+    "url": "",
+    "slug": "minifighter",
+    "name": "minifighter",
+    "logo": "",
+    "native": false,
+    "status": "Broken",
+    "reference": "",
+    "anticheats": [
+      "nProtect GameGuard"
+    ],
+    "updates": [],
+    "notes": [],
+    "storeIds": {},
+    "dateChanged": "2025-07-16T20:21:09.0000000-04:00"
+  },
+  {
+    "url": "",
+    "slug": "hide-and-hold-out-h2o",
+    "name": "Hide & Hold Out - H2o",
+    "logo": "",
+    "native": false,
+    "status": "Running",
+    "reference": "",
+    "anticheats": [
+      "Easy Anti-Cheat"
+    ],
+    "updates": [],
+    "notes": [],
+    "storeIds": {},
+    "dateChanged": "2025-07-16T20:24:29.0000000-04:00"
+  },
+  {
+    "url": "",
+    "slug": "battlefield-6",
+    "name": "Battlefield 6",
+    "logo": "",
+    "native": false,
+    "status": "Denied",
+    "reference": "",
+    "anticheats": [
+      "EA anticheat"
+    ],
+    "updates": [],
+    "notes": [],
+    "storeIds": {},
+    "dateChanged": "2025-07-16T20:26:00.0000000-04:00"
+  },
+  {
+    "url": "",
+    "slug": "ghost-of-tsushima-directors-cut",
+    "name": "Ghost of Tsushima Director's Cut",
+    "logo": "",
+    "native": false,
+    "status": "Denied",
+    "reference": "",
+    "anticheats": [
+      "PlayStation Overlay"
+    ],
+    "updates": [],
+    "notes": [
+      [
+        "Singleplayer is still completely playable.",
+        null
+      ]
+    ],
+    "storeIds": {},
+    "dateChanged": "2025-07-19T23:51:36.0000000-04:00"
+  },
+  {
+    "url": "",
+    "slug": "sword-of-justice",
+    "name": "Sword of Justice",
+    "logo": "",
+    "native": false,
+    "status": "Broken",
+    "reference": "",
+    "anticheats": [
+      "NEAC Protect"
+    ],
+    "updates": [],
+    "notes": [],
+    "storeIds": {},
+    "dateChanged": "2025-07-20T23:28:51.0000000-04:00"
+  },
+  {
+    "url": "",
+    "slug": "blade-soul-neo",
+    "name": "Blade & Soul NEO",
+    "logo": "",
+    "native": false,
+    "status": "Broken",
+    "reference": "",
+    "anticheats": [
+      "Anti-Cheat Solution"
+    ],
+    "updates": [],
+    "notes": [],
+    "storeIds": {},
+    "dateChanged": "2025-07-21T23:43:03.0000000-04:00"
+  },
+  {
+    "url": "https://thefinals.qq.com",
+    "slug": "the-finals-china",
+    "name": "The Finals (CN)",
+    "logo": "",
+    "native": false,
+    "status": "Broken",
+    "reference": "",
+    "anticheats": [
+      "Anti-Cheat Expert"
+    ],
+    "updates": [],
+    "notes": [
+      [
+        "Unreleased, Speculative",
+        null
+      ]
+    ],
+    "storeIds": {},
+    "dateChanged": "2025-07-23T13:02:30.0000000-04:00"
+  },
+  {
+    "url": "https://ubisoft.com/en-us/game/rainbow-six/siege",
+    "name": "Tom Clancy's Rainbow Six® Siege X",
+    "logo": "",
+    "native": false,
+    "status": "Denied",
+    "reference": "",
+    "anticheats": [
+      "FairFight",
+      "BattlEye",
+      "R6 ShieldGuard"
+    ],
+    "notes": [],
+    "updates": [],
+    "storeIds": {
+      "steam": "359550",
+      "epic": {
+        "namespace": "carnation",
+        "slug": "rainbow-six-siege"
+      }
+    },
+    "slug": "rainbow-six-siege-x",
+    "dateChanged": "2025-08-07T20:28:01.0000000-04:00"
   }
 ]

@@ -1,0 +1,114 @@
+2025-08-20 14:14:03,915 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'images']
+2025-08-20 14:14:03,975 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'images', 'list_tags']
+2025-08-20 14:14:04,053 DEBUG    root            Running [gcloud.container.images.list-tags] with arguments: [--format: "get(digest)", --sort-by: "['TIMESTAMP']", IMAGE_NAME: "asia-east1.gcr.io/hire-enumerator-697cd/gcf"]
+2025-08-20 14:14:04,056 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): asia-east1.gcr.io:443
+2025-08-20 14:14:04,416 DEBUG    urllib3.connectionpool https://asia-east1.gcr.io:443 "GET /v2/ HTTP/11" 404 None
+2025-08-20 14:14:04,416 DEBUG    root            Unexpected response pinging the registry: 404
+Body: b'Invalid host name asia-east1.gcr.io.'
+Traceback (most recent call last):
+  File "/usr/bin/../../opt/google-cloud-cli/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/usr/bin/../../opt/google-cloud-cli/lib/googlecloudsdk/calliope/backend.py", line 945, in Run
+    resources = command_instance.Run(args)
+  File "/usr/bin/../../opt/google-cloud-cli/lib/surface/container/images/list_tags.py", line 131, in Run
+    with docker_image.FromRegistry(
+         ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        basic_creds=util.CredentialProvider(),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        name=repository,
+        ^^^^^^^^^^^^^^^^
+        transport=http_obj) as image:
+        ^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../../opt/google-cloud-cli/lib/third_party/containerregistry/client/v2_2/docker_image_.py", line 398, in __enter__
+    self._transport = docker_http.Transport(
+                      ~~~~~~~~~~~~~~~~~~~~~^
+        self._name, self._creds, self._original_transport, docker_http.PULL)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../../opt/google-cloud-cli/lib/third_party/containerregistry/client/v2_2/docker_http_.py", line 205, in __init__
+    self._Ping()
+    ~~~~~~~~~~^^
+  File "/usr/bin/../../opt/google-cloud-cli/lib/third_party/containerregistry/client/v2_2/docker_http_.py", line 234, in _Ping
+    _CheckState(
+    ~~~~~~~~~~~^
+        resp.status in [
+        ^^^^^^^^^^^^^^^^
+            six.moves.http_client.OK, six.moves.http_client.UNAUTHORIZED
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ], 'Unexpected response pinging the registry: {}\nBody: {}'.format(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            resp.status, content or '<empty>'))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../../opt/google-cloud-cli/lib/third_party/containerregistry/client/v2_2/docker_http_.py", line 156, in _CheckState
+    raise BadStateException(message if message else 'Unknown')
+containerregistry.client.v2_2.docker_http_.BadStateException: Unexpected response pinging the registry: 404
+Body: b'Invalid host name asia-east1.gcr.io.'
+2025-08-20 14:14:04,418 ERROR    ___FILE_ONLY___ BEGIN CRASH STACKTRACE
+Traceback (most recent call last):
+  File "/usr/bin/../../opt/google-cloud-cli/lib/googlecloudsdk/command_lib/crash_handling.py", line 199, in Wrapper
+    target_function(*args, **kwargs)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../../opt/google-cloud-cli/lib/googlecloudsdk/gcloud_main.py", line 190, in main
+    gcloud_cli.Execute()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/usr/bin/../../opt/google-cloud-cli/lib/googlecloudsdk/calliope/cli.py", line 1016, in Execute
+    self._HandleAllErrors(exc, command_path_string, specified_arg_names)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../../opt/google-cloud-cli/lib/googlecloudsdk/calliope/cli.py", line 1053, in _HandleAllErrors
+    exceptions.HandleError(exc, command_path_string, self.__known_error_handler)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../../opt/google-cloud-cli/lib/googlecloudsdk/calliope/exceptions.py", line 594, in HandleError
+    core_exceptions.reraise(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/bin/../../opt/google-cloud-cli/lib/googlecloudsdk/core/exceptions.py", line 149, in reraise
+    six.reraise(type(exc_value), exc_value, tb)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../../opt/google-cloud-cli/lib/third_party/six/__init__.py", line 719, in reraise
+    raise value
+  File "/usr/bin/../../opt/google-cloud-cli/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/usr/bin/../../opt/google-cloud-cli/lib/googlecloudsdk/calliope/backend.py", line 945, in Run
+    resources = command_instance.Run(args)
+  File "/usr/bin/../../opt/google-cloud-cli/lib/surface/container/images/list_tags.py", line 131, in Run
+    with docker_image.FromRegistry(
+         ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        basic_creds=util.CredentialProvider(),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        name=repository,
+        ^^^^^^^^^^^^^^^^
+        transport=http_obj) as image:
+        ^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../../opt/google-cloud-cli/lib/third_party/containerregistry/client/v2_2/docker_image_.py", line 398, in __enter__
+    self._transport = docker_http.Transport(
+                      ~~~~~~~~~~~~~~~~~~~~~^
+        self._name, self._creds, self._original_transport, docker_http.PULL)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../../opt/google-cloud-cli/lib/third_party/containerregistry/client/v2_2/docker_http_.py", line 205, in __init__
+    self._Ping()
+    ~~~~~~~~~~^^
+  File "/usr/bin/../../opt/google-cloud-cli/lib/third_party/containerregistry/client/v2_2/docker_http_.py", line 234, in _Ping
+    _CheckState(
+    ~~~~~~~~~~~^
+        resp.status in [
+        ^^^^^^^^^^^^^^^^
+            six.moves.http_client.OK, six.moves.http_client.UNAUTHORIZED
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ], 'Unexpected response pinging the registry: {}\nBody: {}'.format(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            resp.status, content or '<empty>'))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../../opt/google-cloud-cli/lib/third_party/containerregistry/client/v2_2/docker_http_.py", line 156, in _CheckState
+    raise BadStateException(message if message else 'Unknown')
+containerregistry.client.v2_2.docker_http_.BadStateException: Unexpected response pinging the registry: 404
+Body: b'Invalid host name asia-east1.gcr.io.'
+2025-08-20 14:14:04,421 ERROR    root            gcloud crashed (BadStateException): Unexpected response pinging the registry: 404
+Body: b'Invalid host name asia-east1.gcr.io.'
+2025-08-20 14:14:04,421 INFO     ___FILE_ONLY___ 
+If you would like to report this issue, please run the following command:
+
+2025-08-20 14:14:04,422 INFO     ___FILE_ONLY___   gcloud feedback
+
+2025-08-20 14:14:04,422 INFO     ___FILE_ONLY___ 
+To check gcloud for common problems, please run the following command:
+
+2025-08-20 14:14:04,422 INFO     ___FILE_ONLY___   gcloud info --run-diagnostics
+

@@ -3,6 +3,7 @@
     <ids>
       <option value="GitHub.MainMenu" />
       <option value="Github.Share" />
+      <option value="ActivateTerminalToolWindow" />
     </ids>
   </component>
   <component name="FileEditorProviderManager">{}</component>
@@ -14,7 +15,8 @@
   <component name="PropertyService"><![CDATA[{
   "keyToString": {
     "DART_PROJECT_TEMPLATE": "CLI Application",
-    "FLUTTER_LAST_SURVEY_CONTENT_CHECK_KEY": "1741702176077",
+    "FLUTTER_LAST_SURVEY_CONTENT_CHECK_KEY": "1746683213679",
+    "FindSplitterProportion": "0.329698",
     "LAST_CALCULATED_COLOR_INDEX_KEY": "7",
     "MarketplacePluginsSearchHistory": "/tag:Theme",
     "NewProjectWizard.gitState": "true",
@@ -35,16 +37,19 @@
     "defaultJdkConfigured": "true",
     "enter_selection_count": "5",
     "experimental.ui.used.version": "242.23726.103.2422.13016713",
+    "file.gist.reindex.count": "1",
     "fileTypeChangedCounter": "2",
     "fontSizeToResetConsole": "13.0",
     "fontSizeToResetEditor": "13.0",
     "got.it.tooltip.new.terminal.promotion.242": "1",
+    "got.it.tooltip.speed.search.shown": "1",
     "ide.memory.adjusted": "true",
     "ignore.ide.script.launcher.used": "true",
     "input.method.disabler.muted": "true",
     "installed.kotlin.plugin.version": "242.23726.103.2422.13016713-AS",
     "io.flutter.console.preferencesSet": "true",
     "jdk.selected.JAVA_MODULE": "Android API 35, extension level 13 Platform",
+    "kotlin.lastUpdateCheck": "1746693800662",
     "last_opened_file_path": "/home/scelester/ProjectD/Fluttering",
     "migrated.non.roamable.values.from.general.settings": "true",
     "mt.autoReset": "true",

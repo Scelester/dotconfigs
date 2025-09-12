@@ -17,7 +17,7 @@
 	<name>Open as root</name>
 	<submenu></submenu>
 	<unique-id>1622790717174452-1</unique-id>
-	<command>sudo -E thunar</command>
+	<command>sudo thunar</command>
 	<description>Open directory as root</description>
 	<range></range>
 	<patterns>*</patterns>

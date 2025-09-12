@@ -1,19 +1,14 @@
 {
 	"general-logs": {
-		"currentLogFile": "/home/scelester/.config/heroic/logs/2025-03-14T08_22_57-heroic.log",
-		"lastLogFile": "/home/scelester/.config/heroic/logs/2025-03-14T08_21_40-heroic.log",
-		"legendaryLogFile": "/home/scelester/.config/heroic/logs/2025-03-14T08_22_57-legendary.log",
-		"gogdlLogFile": "/home/scelester/.config/heroic/logs/2025-03-14T08_22_57-gogdl.log",
-		"nileLogFile": "/home/scelester/.config/heroic/logs/2025-03-14T08_22_57-nile.log"
+		"currentLogFile": "/home/scelester/.config/heroic/logs/2025-08-08T07_14_52-heroic.log",
+		"lastLogFile": "/home/scelester/.config/heroic/logs/2025-07-13T16_22_37-heroic.log",
+		"legendaryLogFile": "/home/scelester/.config/heroic/logs/2025-08-08T07_14_52-legendary.log",
+		"gogdlLogFile": "/home/scelester/.config/heroic/logs/2025-08-08T07_14_52-gogdl.log",
+		"nileLogFile": "/home/scelester/.config/heroic/logs/2025-08-08T07_14_52-nile.log"
 	},
 	"userHome": "/home/scelester",
 	"language": "en",
-	"theme": "midnightMirage",
-	"userInfo": {
-		"account_id": "a975d9d034a542a8939e064258bff2f6",
-		"displayName": "Scelester",
-		"user": "scelester"
-	},
+	"theme": "sweet",
 	"settings": {
 		"checkUpdatesInterval": 10,
 		"enableUpdates": false,
@@ -28,7 +23,7 @@
 		"autoUpdateGames": false,
 		"customWinePaths": [],
 		"defaultInstallPath": "/home/scelester/Games/Heroic",
-		"libraryTopSection": "disabled",
+		"libraryTopSection": "recently_played",
 		"defaultSteamPath": "/home/scelester/.steam/steam",
 		"defaultWinePrefix": "/home/scelester/Games/Heroic/Prefixes/default",
 		"hideChangelogsOnStartup": false,
@@ -52,7 +47,7 @@
 		"enableMsync": false,
 		"eacRuntime": true,
 		"battlEyeRuntime": true,
-		"framelessWindow": false,
+		"framelessWindow": true,
 		"beforeLaunchScriptPath": "",
 		"afterLaunchScriptPath": "",
 		"experimentalFeatures": {
@@ -63,17 +58,20 @@
 			"umuSupport": false
 		},
 		"altGogdlBin": "",
-		"altNileBin": ""
+		"altNileBin": "",
+		"exitToTray": false,
+		"darkTrayIcon": false,
+		"discordRPC": true
 	},
 	"contentFontFamily": "\"Cabin\", sans-serif",
 	"actionsFontFamily": "\"Cabin\", sans-serif",
-	"zoomPercent": 110,
+	"zoomPercent": 120,
 	"allTilesInColor": false,
 	"games": {
 		"recent": [
 			{
-				"appName": "vmQ65DhX1yysVYukRvvDTk",
-				"title": "UltraKill"
+				"appName": "8MDr6nKHGUYMSGLs4Kex4y",
+				"title": "Forgive Me Father"
 			}
 		]
 	},
@@ -81,7 +79,13 @@
 		"x": 0,
 		"y": 0,
 		"width": 1920,
-		"height": 1045,
-		"maximized": true
-	}
+		"height": 1042,
+		"maximized": false
+	},
+	"userInfo": {
+		"account_id": "a975d9d034a542a8939e064258bff2f6",
+		"displayName": "Scelester",
+		"user": "scelester"
+	},
+	"titlesAlwaysVisible": true
 }

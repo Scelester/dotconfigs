@@ -96,7 +96,6 @@
           "egstore"
         ],
         "id": "edfcce492c5a4e918f186c0cb191476d",
-        "installModes": [],
         "itemType": "DURABLE",
         "keyImages": [
           {
@@ -157,7 +156,6 @@
           "egstore"
         ],
         "id": "1b5af7433b4244e698b6bbe3d8047347",
-        "installModes": [],
         "itemType": "DURABLE",
         "keyImages": [],
         "lastModifiedDate": "2022-04-05T19:54:29.000Z",
@@ -675,7 +673,6 @@
       "egstore"
     ],
     "id": "b51279fe75d841dd9a0dcb1a1b85bf4b",
-    "installModes": [],
     "itemType": "DURABLE",
     "keyImages": [
       {

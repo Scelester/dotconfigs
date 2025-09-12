@@ -1,0 +1,108 @@
+<application>
+  <component name="ActionHistoryManager">
+    <ids>
+      <option value="GitHub.MainMenu" />
+      <option value="Github.Share" />
+      <option value="ActivateTerminalToolWindow" />
+      <option value="WelcomeScreen.Plugins" />
+      <option value="RestartIde" />
+      <option value="CloseProject" />
+      <option value="ProjectViewPopupMenuSettingsGroup" />
+      <option value="Android.SyncProject" />
+      <option value="BuildMenu" />
+    </ids>
+  </component>
+  <component name="FileEditorProviderManager">{}</component>
+  <component name="NotRoamableUiSettings">
+    <option name="fontFace" value="Noto Sans" />
+    <option name="fontSize" value="12.0" />
+    <option name="presentationModeIdeScale" value="1.75" />
+  </component>
+  <component name="PropertyService"><![CDATA[{
+  "keyToString": {
+    "2025Q2": "true",
+    "DART_PROJECT_TEMPLATE": "CLI Application",
+    "FLUTTER_LAST_SURVEY_CONTENT_CHECK_KEY": "1747637441918",
+    "FLUTTER_LAST_SURVEY_PROMPT_KEY": "1747642515832",
+    "FindSplitterProportion": "0.329698",
+    "LAST_CALCULATED_COLOR_INDEX_KEY": "8",
+    "MarketplacePluginsSearchHistory": "material\nmat\nma\n/tag:Theme",
+    "MultipleBuildsView.Splitter.Proportion": "0.36722222",
+    "NewProjectWizard.gitState": "true",
+    "NewProjectWizard.gradleDslState": "GROOVY",
+    "NewProjectWizard.groupIdState": "org.example",
+    "NextRunPlatformUpdateBuild": "AI-251.26094.121.2512.13991807",
+    "NextRunPlatformUpdateSelfBuild": "AI-251.26094.121.2512.13930704",
+    "NextRunPlatformUpdateVersion": "Narwhal Feature Drop | 2025.1.2 Patch 2",
+    "Notification.DoNotAsk-null": "true",
+    "PluginConfigurable.selectionTab": "1",
+    "RunOnceActivity.TerminalOptionsProvider.migration.2025.1.1": "true",
+    "RunOnceActivity.VFSInitializationConditionsToFusReporter": "true",
+    "RunOnceActivity.cidr.test.framework.showIndexingAsTask": "true",
+    "RunOnceActivity.cidr.test.roots.only": "true",
+    "RunOnceActivity.git.modal.commit.deprecation.notification": "true",
+    "RunOnceActivity.git.modal.commit.toggle": "true",
+    "RunOnceActivity.set.chat.model.provider.canary4": "true",
+    "SAVED_ANDROID_NPW_LANGUAGE": "Kotlin",
+    "SAVED_RENDER_LANGUAGE": "Java",
+    "Source Code Editor With PreviewLayout": "Editor only",
+    "build.toolwindow.Build Output.selection.state": "com.intellij.build.BuildTreeConsoleView",
+    "build.toolwindow.Sync.selection.state": "com.intellij.build.BuildTreeConsoleView",
+    "com.intellij.ide.projectWizard.generators.JavaNewProjectWizard$Step.selectedStep": "Gradle",
+    "defaultJdkConfigured": "true",
+    "enter_selection_count": "5",
+    "experimental.ui.used.version": "251.26094.121.2512.13930704",
+    "file.gist.reindex.count": "1",
+    "fileTypeChangedCounter": "29",
+    "fontSizeToResetConsole": "13.0",
+    "fontSizeToResetEditor": "12.0",
+    "got.it.tooltip.new.terminal.promotion.242": "1",
+    "got.it.tooltip.new.terminal.promotion.243": "1",
+    "got.it.tooltip.speed.search.shown": "1",
+    "ide.memory.adjusted": "true",
+    "ide.updates.old.dirs.scan.scheduled": "1757838538628",
+    "ignore.ide.script.launcher.used": "true",
+    "input.method.disabler.muted": "true",
+    "installed.kotlin.plugin.version": "251.26094.121.2512.13930704-AS",
+    "io.flutter.androidStudioBotAcknowledgedKey": "true",
+    "io.flutter.console.preferencesSet": "true",
+    "jdk.selected.JAVA_MODULE": "Android API 35, extension level 13 Platform",
+    "kotlin.lastUpdateCheck": "1746693800662",
+    "last.imported.location": "/home/scelester/ProjectD/App AUS java/Task-management",
+    "last_opened_file_path": "/home/scelester/ProjectD/Fluttering",
+    "migrate.android.sdk.path.to.roamable.storage": "false",
+    "migrated.non.roamable.values.from.general.settings": "true",
+    "mt.autoReset": "true",
+    "mt.showInstallAtom": "true",
+    "mt.showStatisticsAgreement": "true",
+    "org.jetbrains.kotlin.tools.projectWizard.KotlinNewProjectWizard$Step.selectedStep": "IntelliJ",
+    "org.jetbrains.plugins.groovy.config.wizard.GroovyNewProjectWizard$Step.selectedStep": "IntelliJ",
+    "previousColorScheme": "_@user_Material Space",
+    "project.wizard.group": "JAVA_MODULE_io.flutter.module.FlutterModuleBuilder",
+    "registry.to.advanced.settings.migration.build": "AI-251.26094.121.2512.13930704",
+    "terminal.gen.one.option.visible": "false"
+  },
+  "keyToStringList": {
+    "DART_SDK_KNOWN_PATHS": [
+      "/opt/flutter/bin/cache/dart-sdk"
+    ],
+    "FLUTTER_SDK_KNOWN_PATHS": [
+      "/usr/lib/flutter"
+    ],
+    "file.chooser.recent.files": [
+      "/home/scelester/ProjectD/App AUS java/Task-management",
+      "/opt/flutter/bin/cache/dart-sdk",
+      "/home/scelester/ProjectD/Fluttering",
+      "/home/scelester/ProjectD",
+      "/home/scelester/ProjectD/HotelInFlutter"
+    ],
+    "fileTypeDetectors": [
+      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
+      "com.jetbrains.cidr.lang.OCHeaderFileTypeDetector",
+      "com.intellij.docker.dockerFile.DockerFileTypeDetector",
+      "com.android.tools.idea.profilers.capture.MemoryCaptureFileType$Detector",
+      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ]
+  }
+}]]></component>
+</application>

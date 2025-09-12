@@ -1,0 +1,2 @@
+2025/09/11-23:01:21.075 dd0 Creating DB /home/scelester/.config/Ferdium/Partitions/service-e264c3b3-79e0-4592-85bc-97590ee82130/IndexedDB/https_m365.cloud.microsoft_0.indexeddb.leveldb since it was missing.
+2025/09/11-23:01:21.084 dd0 Reusing MANIFEST /home/scelester/.config/Ferdium/Partitions/service-e264c3b3-79e0-4592-85bc-97590ee82130/IndexedDB/https_m365.cloud.microsoft_0.indexeddb.leveldb/MANIFEST-000001

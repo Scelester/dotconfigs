@@ -1,3 +1,5 @@
-2025/03/14-14:06:40.790 1a0aa Reusing MANIFEST /home/scelester/.config/heroic/Local Storage/leveldb/MANIFEST-000001
-2025/03/14-14:06:40.802 1a0aa Recovering log #3
-2025/03/14-14:06:40.804 1a0aa Reusing old log /home/scelester/.config/heroic/Local Storage/leveldb/000003.log 
+2025/08/08-12:59:52.253 40911 Reusing MANIFEST /home/scelester/.config/heroic/Local Storage/leveldb/MANIFEST-000001
+2025/08/08-12:59:52.266 40911 Recovering log #4
+2025/08/08-12:59:52.270 40911 Level-0 table #7: started
+2025/08/08-12:59:52.274 40911 Level-0 table #7: 131120 bytes OK
+2025/08/08-12:59:52.276 40911 Delete type=0 #4

@@ -1,0 +1,24 @@
+2025/09/11-22:29:51.205 dd1 Reusing MANIFEST /home/scelester/.config/Ferdium/Partitions/service-8cbe34b1-d5ca-434b-882b-277a8868336d/IndexedDB/https_outlook.office.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/09/11-22:29:51.205 dd1 Recovering log #12
+2025/09/11-22:29:51.205 dd1 Reusing old log /home/scelester/.config/Ferdium/Partitions/service-8cbe34b1-d5ca-434b-882b-277a8868336d/IndexedDB/https_outlook.office.com_0.indexeddb.leveldb/000012.log 
+2025/09/11-22:29:51.210 df9 Level-0 table #17: started
+2025/09/11-22:29:51.212 df9 Level-0 table #17: 1893 bytes OK
+2025/09/11-22:29:51.214 df9 Delete type=0 #12
+2025/09/11-22:29:51.215 dfa Manual compaction at level-0 from '\x00\x06\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at '\x00\x06\x00\x00\x05' @ 149 : 1
+2025/09/11-22:29:51.215 dfa Compacting 1@0 + 1@1 files
+2025/09/11-22:29:51.216 dfa Generated table #18@0: 54 keys, 1420 bytes
+2025/09/11-22:29:51.216 dfa Compacted 1@0 + 1@1 files => 1420 bytes
+2025/09/11-22:29:51.219 dfa compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/09/11-22:29:51.219 dfa Delete type=2 #17
+2025/09/11-22:29:51.219 dd0 Manual compaction at level-0 from '\x00\x06\x00\x00\x05' @ 149 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/09/11-22:29:52.335 dfa Level-0 table #20: started
+2025/09/11-22:29:52.337 dfa Level-0 table #20: 542 bytes OK
+2025/09/11-22:29:52.371 dfa Delete type=2 #14
+2025/09/11-22:29:52.371 dfa Delete type=0 #16
+2025/09/11-22:29:52.371 df9 Manual compaction at level-0 from '\x00\x07\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x08\x00\x00\x00' @ 0 : 0; will stop at '\x00\x07\x00\x00\x05' @ 167 : 1
+2025/09/11-22:29:52.371 df9 Compacting 1@0 + 1@1 files
+2025/09/11-22:29:52.373 df9 Generated table #21@0: 54 keys, 1417 bytes
+2025/09/11-22:29:52.373 df9 Compacted 1@0 + 1@1 files => 1417 bytes
+2025/09/11-22:29:52.374 df9 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/09/11-22:29:52.374 df9 Delete type=2 #20
+2025/09/11-22:29:52.375 dd0 Manual compaction at level-0 from '\x00\x07\x00\x00\x05' @ 167 : 1 .. '\x00\x08\x00\x00\x00' @ 0 : 0; will stop at (end)

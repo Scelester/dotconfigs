@@ -1,0 +1,12 @@
+{
+  "id": "reddit",
+  "name": "Reddit",
+  "version": "1.4.1",
+  "license": "MIT",
+  "repository": "https://github.com/ferdium/ferdium-recipes",
+  "config": {
+    "hasIndirectMessages": true,
+    "serviceURL": "https://www.reddit.com/"
+  },
+  "defaultIcon": "https://cdn.jsdelivr.net/gh/ferdium/ferdium-recipes@main/recipes/reddit/icon.svg"
+}

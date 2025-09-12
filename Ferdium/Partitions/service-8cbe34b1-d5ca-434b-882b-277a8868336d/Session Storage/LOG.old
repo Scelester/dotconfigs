@@ -1,0 +1,6 @@
+2025/09/11-20:30:22.441 dd0 Reusing MANIFEST /home/scelester/.config/Ferdium/Partitions/service-8cbe34b1-d5ca-434b-882b-277a8868336d/Session Storage/MANIFEST-000001
+2025/09/11-20:30:22.441 dd0 Recovering log #6
+2025/09/11-20:30:22.441 dd0 Reusing old log /home/scelester/.config/Ferdium/Partitions/service-8cbe34b1-d5ca-434b-882b-277a8868336d/Session Storage/000006.log 
+2025/09/11-22:52:21.920 dd0 Level-0 table #10: started
+2025/09/11-22:52:21.925 dd0 Level-0 table #10: 42266 bytes OK
+2025/09/11-22:52:21.927 dd0 Delete type=0 #6

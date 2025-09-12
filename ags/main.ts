@@ -32,10 +32,11 @@ App.config({
         "firefox-profiles": options.transition.value,
     },
     windows: () => [
-        ...forMonitors(Bar),
+        // ...forMonitors(Bar),
         ...forMonitors(NotificationPopups),
         ...forMonitors(ScreenCorners),
         ...forMonitors(OSD),
+        Bar(0), // single monitor bar
         Launcher(),
         Overview(),
         PowerMenu(),
@@ -43,6 +44,5 @@ App.config({
         SettingsDialog(),
         Verification(),
         desktopWidgets(),
-        // musicBG(),
     ],
 })

@@ -1,0 +1,24 @@
+<application>
+  <component name="ProjectManager">
+    <defaultProject>
+      <component name="MaterialThemeProjectNewConfig">
+        <option name="metadata">
+          <MTProjectMetadataState>
+            <option name="userId" value="-22610bf9:196d9a61e6e:-7f87" />
+          </MTProjectMetadataState>
+        </option>
+      </component>
+      <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;
+  }
+}</component>
+      <component name="WindowStateProjectService">
+        <state x="464" y="156" key="SettingsEditor" timestamp="1747398288846">
+          <screen x="0" y="0" width="1920" height="1080" />
+        </state>
+        <state x="464" y="156" key="SettingsEditor/0.0.1920.1080" timestamp="1747398288846" />
+      </component>
+    </defaultProject>
+  </component>
+</application>

@@ -16,14 +16,23 @@
   "choose_icon_theme_initial_tab": 2,
   "color_palette": "dark",
   "cover_corner_radius": 5,
-  "cover_grid_color": [
-    80,
-    80,
-    80
-  ],
+  "cover_grid_background": {
+    "dark": [
+      45,
+      45,
+      45
+    ],
+    "dark_texture": ":dark_wood.png",
+    "light": [
+      80,
+      80,
+      80
+    ],
+    "light_texture": ":dark_wood.png",
+    "migrated": true
+  },
   "cover_grid_height": 0.0,
   "cover_grid_show_title": true,
-  "cover_grid_texture": ":dark_wood.png",
   "cover_grid_width": 0.0,
   "custom_colors_for_color_dialog": [
     [
@@ -205,28 +214,28 @@
   },
   "geometry-of-calibre_main_window_geometry": {
     "frame_geometry": {
-      "height": 1052,
-      "width": 1920,
-      "x": 968,
-      "y": 43
+      "height": 480,
+      "width": 919,
+      "x": 495,
+      "y": 20
     },
     "full_screened": false,
     "geometry": {
-      "height": 1052,
-      "width": 1920,
-      "x": 968,
-      "y": 43
+      "height": 480,
+      "width": 919,
+      "x": 495,
+      "y": 20
     },
     "maximized": true,
     "normal_geometry": {
-      "height": 1052,
-      "width": 960,
-      "x": 968,
-      "y": 43
+      "height": -1,
+      "width": -1,
+      "x": 0,
+      "y": 0
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAPIAAAAKwAAC0cAAARGAAADyAAAACsAAAeHAAAERgAAAAACAAAAB4AAAAPIAAAAKwAAC0cAAARG"
+      "__value__": "AdnQywADAAAAAAHvAAAAFAAABYUAAAHzAAAAAAAAAAD////+/////gAAAAACAAAAB4AAAAHvAAAAFAAABYUAAAHz"
     },
     "screen": {
       "depth": 32,
@@ -411,26 +420,26 @@
     "frame_geometry": {
       "height": 996,
       "width": 1890,
-      "x": 740,
-      "y": 279
+      "x": 15,
+      "y": 42
     },
     "full_screened": false,
     "geometry": {
       "height": 996,
       "width": 1890,
-      "x": 740,
-      "y": 279
+      "x": 15,
+      "y": 42
     },
     "maximized": true,
     "normal_geometry": {
       "height": 996,
       "width": 1890,
-      "x": 740,
-      "y": 279
+      "x": 15,
+      "y": 42
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAALkAAABFwAACkUAAAT6AAAC5AAAARcAAApFAAAE+gAAAAACAAAAB4AAAALkAAABFwAACkUAAAT6"
+      "__value__": "AdnQywADAAAAAAAPAAAAKgAAB3AAAAQNAAAADwAAACoAAAdwAAAEDQAAAAACAAAAB4AAAAAPAAAAKgAAB3AAAAQN"
     },
     "screen": {
       "depth": 32,
@@ -525,14 +534,14 @@
     },
     "maximized": true,
     "normal_geometry": {
-      "height": 996,
-      "width": 1890,
+      "height": 819,
+      "width": 1700,
       "x": 0,
       "y": 0
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAAAAAAAAAAABqMAAAMyAAAAAAAAAAAAAAdhAAAD4wAAAAACAAAAB4AAAAAAAAAAAAAABqMAAAMy"
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAABqMAAAMyAAAAAAAAAAAAAAajAAADMgAAAAACAAAAB4AAAAAAAAAAAAAABqMAAAMy"
     },
     "screen": {
       "depth": 32,
@@ -667,10 +676,10 @@
   "grid view visible": true,
   "jobs view column layout3": {
     "__class__": "bytearray",
-    "__value__": "AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfQAAAAFAQEBAAAAAAAAAAAAAAAAAGT/////AAAAhAAAAAAAAAAFAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAD6AAAAAAAAAAAAA=="
+    "__value__": "AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfQAAAAFAQEBAAAAAAAAAAAAAAAAAGT/////AAAAhAAAAAAAAAAFAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAD6AAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=="
   },
   "library_usage_stats": {
-    "/home/scelester/Calibre Library": 67
+    "/home/scelester/Calibre Library": 81
   },
   "light_palette_name": "",
   "light_palettes": {

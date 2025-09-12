@@ -1,2 +1,3 @@
-2025/03/02-12:08:36.575 d173d Creating DB /home/scelester/.config/heroic/Partitions/epicstore/shared_proto_db since it was missing.
-2025/03/02-12:08:36.579 d173d Reusing MANIFEST /home/scelester/.config/heroic/Partitions/epicstore/shared_proto_db/MANIFEST-000001
+2025/06/02-21:15:44.092 a314 Reusing MANIFEST /home/scelester/.config/heroic/Partitions/epicstore/shared_proto_db/MANIFEST-000001
+2025/06/02-21:15:44.092 a314 Recovering log #3
+2025/06/02-21:15:44.093 a314 Reusing old log /home/scelester/.config/heroic/Partitions/epicstore/shared_proto_db/000003.log 

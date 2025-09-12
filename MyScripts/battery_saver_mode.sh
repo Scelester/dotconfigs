@@ -49,8 +49,6 @@ on_battery() {
     log_message "Power disconnected, switching to battery mode..."
     sudo -u "$USER" ags -r "asusctl.setProfile('Quiet')"
     sudo -u "$USER" hyprctl keyword monitor eDP-1,1920x1080,60,1
-    sudo -u "$USER" pkill hypridle
-    sudo -u "$USER" nohup hypridle -c /home/"$USER"/.config/hypr/hypridle_battery.conf &
     sudo -u "$USER" hyprctl keyword decoration:drop_shadow false
     sudo -u "$USER" hyprctl keyword misc:vfr true
     sudo -u "$USER" systemd-run --user --scope /usr/local/bin/ags -r 'toggleChargingMode(0)'
@@ -62,8 +60,6 @@ on_ac() {
     sudo -u "$USER" hyprctl keyword decoration:drop_shadow true
     sudo -u "$USER" hyprctl keyword misc:vfr false
     sudo -u "$USER" hyprctl keyword monitor eDP-1,preferred,144,1
-    sudo -u "$USER" pkill hypridle
-    sudo -u "$USER" nohup hypridle -c /home/"$USER"/.config/hypr/hypridle.conf &
     sudo -u "$USER" systemd-run --user --scope /usr/local/bin/ags -r 'toggleChargingMode(1)'
 }
 

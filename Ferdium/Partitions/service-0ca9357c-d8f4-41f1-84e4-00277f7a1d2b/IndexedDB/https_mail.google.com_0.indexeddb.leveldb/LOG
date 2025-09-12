@@ -1,0 +1,12 @@
+2025/09/12-11:11:38.176 f1d Reusing MANIFEST /home/scelester/.config/Ferdium/Partitions/service-0ca9357c-d8f4-41f1-84e4-00277f7a1d2b/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/09/12-11:11:38.176 f1d Recovering log #7
+2025/09/12-11:11:38.183 f1d Reusing old log /home/scelester/.config/Ferdium/Partitions/service-0ca9357c-d8f4-41f1-84e4-00277f7a1d2b/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000007.log 
+2025/09/12-11:11:41.631 e13 Compacting 1@1 + 1@2 files
+2025/09/12-11:11:41.652 e13 Generated table #10@1: 186 keys, 774348 bytes
+2025/09/12-11:11:41.654 e13 Compacted 1@1 + 1@2 files => 774348 bytes
+2025/09/12-11:11:41.655 e13 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/09/12-11:11:41.658 e13 Delete type=2 #5
+2025/09/12-11:11:41.658 e13 Delete type=2 #8
+2025/09/12-11:11:55.684 e14 Level-0 table #12: started
+2025/09/12-11:11:55.706 e14 Level-0 table #12: 3222297 bytes OK
+2025/09/12-11:11:55.708 e14 Delete type=0 #7

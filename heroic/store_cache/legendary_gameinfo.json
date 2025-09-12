@@ -1,1 +1,50 @@
-{}
+{
+	"cbd5b3d310a54b12bf3fe8c41994174f": {
+		"about": {
+			"image": {
+				"src": "https://cdn2.unrealengine.com/egs-valorant-riotgames-s2-1200x1600-acb298cb4959.jpg",
+				"_type": "Diesel Image"
+			},
+			"developerAttribution": "Riot Games",
+			"_type": "Diesel Product About",
+			"publisherAttribution": "Riot Games",
+			"description": "# DEFY THE LIMITS FOR FREE IN VALORANT\n\nFIGHT AROUND THE WORLD\nBlend your style and experience on a global, competitive stage. Attack and defend your side using sharp gunplay and tactical abilities. And, with one life per-round, you'll have to think faster than your opponent if you want to survive. \n\nCREATIVITY IS YOUR GREATEST WEAPON\nMore than guns and bullets, you’ll choose an Agent armed with adaptive, swift, and lethal abilities that create opportunities to let your gunplay shine. Each map is purpose-built for team strategies, spectacular plays, and clutch moments. Make the plays others will imitate for years to come.\n",
+			"shortDescription": "VALORANT is a character-based 5v5 tactical shooter set on the global stage. Outwit, outplay, and outshine your competition with tactical abilities, precise gunplay, and adaptive teamwork. ",
+			"title": "VALORANT",
+			"developerLogo": {
+				"_type": "Diesel Image"
+			}
+		},
+		"reqs": [
+			{
+				"_type": "Diesel System Detail Item",
+				"title": "OS",
+				"minimum": "Windows 10 (64-bit, Version 2004 / Build 19041 or higher)",
+				"recommended": "Windows 10/11 (64-bit)"
+			},
+			{
+				"_type": "Diesel System Detail Item",
+				"title": "Processor",
+				"minimum": "Intel Core 2 Duo E8400 (Intel), Athlon 200GE (AMD)",
+				"recommended": "Intel i3-4150 (Intel), Ryzen 3 1200 (AMD)"
+			},
+			{
+				"_type": "Diesel System Detail Item",
+				"title": "Memory",
+				"minimum": "RAM 4GB",
+				"recommended": "RAM 4GB"
+			},
+			{
+				"_type": "Diesel System Detail Item",
+				"title": "Graphics",
+				"minimum": "Intel HD 4000, Radeon R5 200",
+				"recommended": "GeForce GT 730, Radeon R7 240"
+			}
+		],
+		"releaseDate": "2020-06-02T04:00:00",
+		"storeUrl": "https://www.epicgames.com/store/product/valorant"
+	},
+	"__timestamp": {
+		"cbd5b3d310a54b12bf3fe8c41994174f": "Sun Jul 13 2025 22:10:46 GMT+0545 (Nepal Time)"
+	}
+}

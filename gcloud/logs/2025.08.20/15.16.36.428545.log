@@ -1,0 +1,220 @@
+2025-08-20 15:16:36,431 DEBUG    root            Loaded Command Group: ['gcloud', 'functions']
+2025-08-20 15:16:36,554 DEBUG    root            Loaded Command Group: ['gcloud', 'functions', 'describe']
+2025-08-20 15:16:36,564 DEBUG    root            Running [gcloud.functions.describe] with arguments: [--region: "asia-south1", NAME: "syncApplicationsToMeiliSearch"]
+2025-08-20 15:16:36,584 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2025-08-20 15:16:37,458 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/hire-enumerator-697cd/locations/asia-south1/functions/syncApplicationsToMeiliSearch?alt=json HTTP/11" 200 None
+2025-08-20 15:16:37,482 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2025-08-20 15:16:37,936 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/projects/hire-enumerator-697cd/locations/asia-south1/functions/syncApplicationsToMeiliSearch?alt=json HTTP/11" 200 None
+2025-08-20 15:16:37,944 DEBUG    root            Chosen display Format:default
+2025-08-20 15:16:37,946 INFO     root            Display format: "default"
+2025-08-20 15:16:38,057 INFO     ___FILE_ONLY___ automaticUpdatePolicy
+2025-08-20 15:16:38,058 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,058 INFO     ___FILE_ONLY___  {
+2025-08-20 15:16:38,058 INFO     ___FILE_ONLY___ }
+2025-08-20 15:16:38,058 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,058 INFO     ___FILE_ONLY___ availableMemoryMb
+2025-08-20 15:16:38,059 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,060 INFO     ___FILE_ONLY___  
+2025-08-20 15:16:38,060 INFO     ___FILE_ONLY___ 256
+2025-08-20 15:16:38,060 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,060 INFO     ___FILE_ONLY___ buildEnvironmentVariables
+2025-08-20 15:16:38,061 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,061 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,061 INFO     ___FILE_ONLY___   
+2025-08-20 15:16:38,061 INFO     ___FILE_ONLY___ GOOGLE_NODE_RUN_SCRIPTS
+2025-08-20 15:16:38,061 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,061 INFO     ___FILE_ONLY___  '
+2025-08-20 15:16:38,061 INFO     ___FILE_ONLY___ '
+2025-08-20 15:16:38,061 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,062 INFO     ___FILE_ONLY___ buildId
+2025-08-20 15:16:38,062 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,062 INFO     ___FILE_ONLY___  
+2025-08-20 15:16:38,062 INFO     ___FILE_ONLY___ 61ee0c3c-f0fb-4830-8304-6b8ca8173cf2
+2025-08-20 15:16:38,063 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,063 INFO     ___FILE_ONLY___ buildName
+2025-08-20 15:16:38,063 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,063 INFO     ___FILE_ONLY___  
+2025-08-20 15:16:38,063 INFO     ___FILE_ONLY___ projects/459384010887/locations/asia-south1/builds/61ee0c3c-f0fb-4830-8304-6b8ca8173cf2
+2025-08-20 15:16:38,063 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,063 INFO     ___FILE_ONLY___ buildServiceAccount
+2025-08-20 15:16:38,063 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,064 INFO     ___FILE_ONLY___  
+2025-08-20 15:16:38,064 INFO     ___FILE_ONLY___ projects/hire-enumerator-697cd/serviceAccounts/459384010887-compute@developer.gserviceaccount.com
+2025-08-20 15:16:38,064 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,064 INFO     ___FILE_ONLY___ dockerRegistry
+2025-08-20 15:16:38,064 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,064 INFO     ___FILE_ONLY___  
+2025-08-20 15:16:38,064 INFO     ___FILE_ONLY___ ARTIFACT_REGISTRY
+2025-08-20 15:16:38,064 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,064 INFO     ___FILE_ONLY___ entryPoint
+2025-08-20 15:16:38,064 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,065 INFO     ___FILE_ONLY___  
+2025-08-20 15:16:38,065 INFO     ___FILE_ONLY___ syncApplicationsToMeiliSearch
+2025-08-20 15:16:38,065 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,065 INFO     ___FILE_ONLY___ environmentVariables
+2025-08-20 15:16:38,065 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,065 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,065 INFO     ___FILE_ONLY___   
+2025-08-20 15:16:38,065 INFO     ___FILE_ONLY___ EVENTARC_CLOUD_EVENT_SOURCE
+2025-08-20 15:16:38,066 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,066 INFO     ___FILE_ONLY___  
+2025-08-20 15:16:38,066 INFO     ___FILE_ONLY___ projects/hire-enumerator-697cd/locations/asia-south1/functions/syncApplicationsToMeiliSearch
+2025-08-20 15:16:38,066 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,066 INFO     ___FILE_ONLY___   
+2025-08-20 15:16:38,066 INFO     ___FILE_ONLY___ FIREBASE_CONFIG
+2025-08-20 15:16:38,066 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,066 INFO     ___FILE_ONLY___  '
+2025-08-20 15:16:38,067 INFO     ___FILE_ONLY___ {"projectId":"hire-enumerator-697cd","storageBucket":"hire-enumerator-697cd.firebasestorage.app"}
+2025-08-20 15:16:38,067 INFO     ___FILE_ONLY___ '
+2025-08-20 15:16:38,067 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,067 INFO     ___FILE_ONLY___   
+2025-08-20 15:16:38,067 INFO     ___FILE_ONLY___ GCLOUD_PROJECT
+2025-08-20 15:16:38,067 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,067 INFO     ___FILE_ONLY___  
+2025-08-20 15:16:38,067 INFO     ___FILE_ONLY___ hire-enumerator-697cd
+2025-08-20 15:16:38,067 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,067 INFO     ___FILE_ONLY___ eventTrigger
+2025-08-20 15:16:38,068 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,068 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,068 INFO     ___FILE_ONLY___   
+2025-08-20 15:16:38,068 INFO     ___FILE_ONLY___ eventType
+2025-08-20 15:16:38,068 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,068 INFO     ___FILE_ONLY___  
+2025-08-20 15:16:38,068 INFO     ___FILE_ONLY___ providers/cloud.firestore/eventTypes/document.write
+2025-08-20 15:16:38,068 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,068 INFO     ___FILE_ONLY___   
+2025-08-20 15:16:38,068 INFO     ___FILE_ONLY___ failurePolicy
+2025-08-20 15:16:38,069 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,069 INFO     ___FILE_ONLY___  {
+2025-08-20 15:16:38,069 INFO     ___FILE_ONLY___ }
+2025-08-20 15:16:38,069 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,069 INFO     ___FILE_ONLY___   
+2025-08-20 15:16:38,069 INFO     ___FILE_ONLY___ resource
+2025-08-20 15:16:38,069 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,069 INFO     ___FILE_ONLY___  
+2025-08-20 15:16:38,069 INFO     ___FILE_ONLY___ projects/hire-enumerator-697cd/databases/(default)/documents/applications/{applicationId}
+2025-08-20 15:16:38,069 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,069 INFO     ___FILE_ONLY___   
+2025-08-20 15:16:38,070 INFO     ___FILE_ONLY___ service
+2025-08-20 15:16:38,070 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,070 INFO     ___FILE_ONLY___  
+2025-08-20 15:16:38,070 INFO     ___FILE_ONLY___ firestore.googleapis.com
+2025-08-20 15:16:38,070 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,070 INFO     ___FILE_ONLY___ ingressSettings
+2025-08-20 15:16:38,070 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,070 INFO     ___FILE_ONLY___  
+2025-08-20 15:16:38,070 INFO     ___FILE_ONLY___ ALLOW_ALL
+2025-08-20 15:16:38,070 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,070 INFO     ___FILE_ONLY___ labels
+2025-08-20 15:16:38,071 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,071 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,071 INFO     ___FILE_ONLY___   
+2025-08-20 15:16:38,071 INFO     ___FILE_ONLY___ deployment-tool
+2025-08-20 15:16:38,071 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,071 INFO     ___FILE_ONLY___  
+2025-08-20 15:16:38,071 INFO     ___FILE_ONLY___ cli-firebase
+2025-08-20 15:16:38,071 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,071 INFO     ___FILE_ONLY___   
+2025-08-20 15:16:38,071 INFO     ___FILE_ONLY___ firebase-functions-codebase
+2025-08-20 15:16:38,071 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,071 INFO     ___FILE_ONLY___  
+2025-08-20 15:16:38,071 INFO     ___FILE_ONLY___ functions_v1
+2025-08-20 15:16:38,072 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,072 INFO     ___FILE_ONLY___   
+2025-08-20 15:16:38,072 INFO     ___FILE_ONLY___ firebase-functions-hash
+2025-08-20 15:16:38,072 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,072 INFO     ___FILE_ONLY___  
+2025-08-20 15:16:38,072 INFO     ___FILE_ONLY___ ece54a4a968dadfa52a9b1447dbcf1664adc8ee6
+2025-08-20 15:16:38,072 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,072 INFO     ___FILE_ONLY___ maxInstances
+2025-08-20 15:16:38,072 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,072 INFO     ___FILE_ONLY___  
+2025-08-20 15:16:38,073 INFO     ___FILE_ONLY___ 3000
+2025-08-20 15:16:38,073 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,073 INFO     ___FILE_ONLY___ name
+2025-08-20 15:16:38,073 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,073 INFO     ___FILE_ONLY___  
+2025-08-20 15:16:38,073 INFO     ___FILE_ONLY___ projects/hire-enumerator-697cd/locations/asia-south1/functions/syncApplicationsToMeiliSearch
+2025-08-20 15:16:38,073 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,073 INFO     ___FILE_ONLY___ runtime
+2025-08-20 15:16:38,073 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,073 INFO     ___FILE_ONLY___  
+2025-08-20 15:16:38,073 INFO     ___FILE_ONLY___ nodejs18
+2025-08-20 15:16:38,073 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,073 INFO     ___FILE_ONLY___ satisfiesPzi
+2025-08-20 15:16:38,073 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,073 INFO     ___FILE_ONLY___  
+2025-08-20 15:16:38,073 INFO     ___FILE_ONLY___ true
+2025-08-20 15:16:38,073 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,073 INFO     ___FILE_ONLY___ satisfiesPzs
+2025-08-20 15:16:38,074 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,074 INFO     ___FILE_ONLY___  
+2025-08-20 15:16:38,074 INFO     ___FILE_ONLY___ true
+2025-08-20 15:16:38,074 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,074 INFO     ___FILE_ONLY___ serviceAccountEmail
+2025-08-20 15:16:38,074 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,074 INFO     ___FILE_ONLY___  
+2025-08-20 15:16:38,074 INFO     ___FILE_ONLY___ hire-enumerator-697cd@appspot.gserviceaccount.com
+2025-08-20 15:16:38,074 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,074 INFO     ___FILE_ONLY___ sourceUploadUrl
+2025-08-20 15:16:38,074 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,074 INFO     ___FILE_ONLY___  
+2025-08-20 15:16:38,074 INFO     ___FILE_ONLY___ https://storage.googleapis.com/uploads-739596605352.asia-south1.cloudfunctions.appspot.com/fdd73246-cf5b-4d73-a1e7-0d193a58be22.zip
+2025-08-20 15:16:38,074 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,074 INFO     ___FILE_ONLY___ status
+2025-08-20 15:16:38,074 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,075 INFO     ___FILE_ONLY___  
+2025-08-20 15:16:38,075 INFO     ___FILE_ONLY___ ACTIVE
+2025-08-20 15:16:38,075 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,075 INFO     ___FILE_ONLY___ timeout
+2025-08-20 15:16:38,075 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,075 INFO     ___FILE_ONLY___  
+2025-08-20 15:16:38,075 INFO     ___FILE_ONLY___ 60s
+2025-08-20 15:16:38,075 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,075 INFO     ___FILE_ONLY___ updateTime
+2025-08-20 15:16:38,075 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,075 INFO     ___FILE_ONLY___  '
+2025-08-20 15:16:38,075 INFO     ___FILE_ONLY___ 2025-08-20T09:18:40.600Z
+2025-08-20 15:16:38,075 INFO     ___FILE_ONLY___ '
+2025-08-20 15:16:38,075 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,075 INFO     ___FILE_ONLY___ versionId
+2025-08-20 15:16:38,075 INFO     ___FILE_ONLY___ :
+2025-08-20 15:16:38,076 INFO     ___FILE_ONLY___  '
+2025-08-20 15:16:38,076 INFO     ___FILE_ONLY___ 2
+2025-08-20 15:16:38,076 INFO     ___FILE_ONLY___ '
+2025-08-20 15:16:38,076 INFO     ___FILE_ONLY___ 
+
+2025-08-20 15:16:38,076 DEBUG    root            SDK update checks are disabled.

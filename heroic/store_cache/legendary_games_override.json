@@ -1,4 +1,7 @@
 {
+	"__timestamp": {
+		"gamesOverride": "Mon Jun 02 2025 21:20:37 GMT+0545 (Nepal Time)"
+	},
 	"gamesOverride": {
 		"executable_override": {
 			"3be3c4d681bc46b3b8b26c5df3ae0a18": {
@@ -64,7 +67,7 @@
 			"5be88c20a859439baeb1667d06a3aed2": 1,
 			"5daeb974a22a435988892319b3a4f476": 1,
 			"7dcfb9cd9d134728b2646466c34c7b3b": 1,
-			"Fortnite": 6,
+			"Fortnite": 7,
 			"Fortnite_Mac": 1,
 			"Ginger": 1,
 			"Lavender": 1,
@@ -97,8 +100,5 @@
 			"c8dae1ab0570475a8b38a9041e614840": 1,
 			"ee9a44b4530942499ef1c8c390731fce": 1
 		}
-	},
-	"__timestamp": {
-		"gamesOverride": "Tue Feb 25 2025 11:11:45 GMT+0545 (Nepal Time)"
 	}
 }

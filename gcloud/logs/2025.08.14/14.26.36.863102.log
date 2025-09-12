@@ -1,0 +1,164 @@
+2025-08-14 14:26:36,878 DEBUG    root            Loaded Command Group: ['gcloud', 'storage']
+2025-08-14 14:26:36,879 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets']
+2025-08-14 14:26:37,339 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets', 'add_iam_policy_binding']
+2025-08-14 14:26:37,341 DEBUG    root            Running [gcloud.storage.buckets.add-iam-policy-binding] with arguments: [--member: "serviceAccount:service-652347975853@gcp-sa-aiplatform.iam.gserviceaccount.com", --role: "roles/storage.objectAdmin", URL: "gs://cloud-ai-platform-f511c133-160b-4432-b173-aa89cc7e9fbc"]
+2025-08-14 14:26:37,358 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2025-08-14 14:26:37,359 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-08-14 14:26:37,683 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/11" 400 None
+2025-08-14 14:26:37,683 DEBUG    root            using google-auth reauth
+2025-08-14 14:26:37,683 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2025-08-14 14:26:37,796 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+2025-08-14 14:26:37,797 DEBUG    google.auth.transport.requests Making request: POST https://reauth.googleapis.com/v2/sessions:start
+2025-08-14 14:26:37,797 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): reauth.googleapis.com:443
+2025-08-14 14:26:38,734 DEBUG    urllib3.connectionpool https://reauth.googleapis.com:443 "POST /v2/sessions:start HTTP/11" 200 None
+2025-08-14 14:26:42,379 DEBUG    google.auth.transport.requests Making request: POST https://reauth.googleapis.com/v2/sessions/ALgCv6yZsirA-0wUcSAIsdJo5HZtFi_BfaDILqrq0pagyfhUdcBATv5j2N5xkiSJ:continue
+2025-08-14 14:26:43,629 DEBUG    urllib3.connectionpool https://reauth.googleapis.com:443 "POST /v2/sessions/ALgCv6yZsirA-0wUcSAIsdJo5HZtFi_BfaDILqrq0pagyfhUdcBATv5j2N5xkiSJ:continue HTTP/11" 200 None
+2025-08-14 14:26:43,629 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2025-08-14 14:26:43,744 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+2025-08-14 14:26:43,769 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2025-08-14 14:26:44,360 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /storage/v1/b/cloud-ai-platform-f511c133-160b-4432-b173-aa89cc7e9fbc/iam?alt=json&fields=bindings%2Cetag&optionsRequestedPolicyVersion=3 HTTP/11" 200 681
+2025-08-14 14:26:45,907 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "PUT /storage/v1/b/cloud-ai-platform-f511c133-160b-4432-b173-aa89cc7e9fbc/iam?alt=json HTTP/11" 200 989
+2025-08-14 14:26:45,908 DEBUG    root            Chosen display Format:default
+2025-08-14 14:26:45,909 INFO     root            Display format: "default"
+2025-08-14 14:26:45,935 INFO     ___FILE_ONLY___ bindings
+2025-08-14 14:26:45,935 INFO     ___FILE_ONLY___ :
+2025-08-14 14:26:45,935 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:26:45,935 INFO     ___FILE_ONLY___ -
+2025-08-14 14:26:45,935 INFO     ___FILE_ONLY___  
+2025-08-14 14:26:45,935 INFO     ___FILE_ONLY___ members
+2025-08-14 14:26:45,935 INFO     ___FILE_ONLY___ :
+2025-08-14 14:26:45,935 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:26:45,935 INFO     ___FILE_ONLY___   
+2025-08-14 14:26:45,935 INFO     ___FILE_ONLY___ -
+2025-08-14 14:26:45,936 INFO     ___FILE_ONLY___  
+2025-08-14 14:26:45,936 INFO     ___FILE_ONLY___ projectEditor:nepali-asr-model-cloud
+2025-08-14 14:26:45,936 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:26:45,936 INFO     ___FILE_ONLY___   
+2025-08-14 14:26:45,936 INFO     ___FILE_ONLY___ -
+2025-08-14 14:26:45,936 INFO     ___FILE_ONLY___  
+2025-08-14 14:26:45,936 INFO     ___FILE_ONLY___ projectOwner:nepali-asr-model-cloud
+2025-08-14 14:26:45,936 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:26:45,936 INFO     ___FILE_ONLY___   
+2025-08-14 14:26:45,936 INFO     ___FILE_ONLY___ role
+2025-08-14 14:26:45,936 INFO     ___FILE_ONLY___ :
+2025-08-14 14:26:45,936 INFO     ___FILE_ONLY___  
+2025-08-14 14:26:45,936 INFO     ___FILE_ONLY___ roles/storage.legacyBucketOwner
+2025-08-14 14:26:45,936 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:26:45,936 INFO     ___FILE_ONLY___ -
+2025-08-14 14:26:45,936 INFO     ___FILE_ONLY___  
+2025-08-14 14:26:45,936 INFO     ___FILE_ONLY___ members
+2025-08-14 14:26:45,936 INFO     ___FILE_ONLY___ :
+2025-08-14 14:26:45,936 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:26:45,936 INFO     ___FILE_ONLY___   
+2025-08-14 14:26:45,936 INFO     ___FILE_ONLY___ -
+2025-08-14 14:26:45,937 INFO     ___FILE_ONLY___  
+2025-08-14 14:26:45,937 INFO     ___FILE_ONLY___ projectViewer:nepali-asr-model-cloud
+2025-08-14 14:26:45,937 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:26:45,937 INFO     ___FILE_ONLY___   
+2025-08-14 14:26:45,937 INFO     ___FILE_ONLY___ role
+2025-08-14 14:26:45,937 INFO     ___FILE_ONLY___ :
+2025-08-14 14:26:45,937 INFO     ___FILE_ONLY___  
+2025-08-14 14:26:45,937 INFO     ___FILE_ONLY___ roles/storage.legacyBucketReader
+2025-08-14 14:26:45,937 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:26:45,937 INFO     ___FILE_ONLY___ -
+2025-08-14 14:26:45,937 INFO     ___FILE_ONLY___  
+2025-08-14 14:26:45,937 INFO     ___FILE_ONLY___ members
+2025-08-14 14:26:45,937 INFO     ___FILE_ONLY___ :
+2025-08-14 14:26:45,937 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:26:45,937 INFO     ___FILE_ONLY___   
+2025-08-14 14:26:45,937 INFO     ___FILE_ONLY___ -
+2025-08-14 14:26:45,937 INFO     ___FILE_ONLY___  
+2025-08-14 14:26:45,937 INFO     ___FILE_ONLY___ projectEditor:nepali-asr-model-cloud
+2025-08-14 14:26:45,937 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:26:45,937 INFO     ___FILE_ONLY___   
+2025-08-14 14:26:45,937 INFO     ___FILE_ONLY___ -
+2025-08-14 14:26:45,937 INFO     ___FILE_ONLY___  
+2025-08-14 14:26:45,937 INFO     ___FILE_ONLY___ projectOwner:nepali-asr-model-cloud
+2025-08-14 14:26:45,938 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:26:45,938 INFO     ___FILE_ONLY___   
+2025-08-14 14:26:45,938 INFO     ___FILE_ONLY___ role
+2025-08-14 14:26:45,938 INFO     ___FILE_ONLY___ :
+2025-08-14 14:26:45,938 INFO     ___FILE_ONLY___  
+2025-08-14 14:26:45,938 INFO     ___FILE_ONLY___ roles/storage.legacyObjectOwner
+2025-08-14 14:26:45,938 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:26:45,938 INFO     ___FILE_ONLY___ -
+2025-08-14 14:26:45,938 INFO     ___FILE_ONLY___  
+2025-08-14 14:26:45,938 INFO     ___FILE_ONLY___ members
+2025-08-14 14:26:45,938 INFO     ___FILE_ONLY___ :
+2025-08-14 14:26:45,938 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:26:45,938 INFO     ___FILE_ONLY___   
+2025-08-14 14:26:45,938 INFO     ___FILE_ONLY___ -
+2025-08-14 14:26:45,938 INFO     ___FILE_ONLY___  
+2025-08-14 14:26:45,938 INFO     ___FILE_ONLY___ projectViewer:nepali-asr-model-cloud
+2025-08-14 14:26:45,938 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:26:45,938 INFO     ___FILE_ONLY___   
+2025-08-14 14:26:45,938 INFO     ___FILE_ONLY___ role
+2025-08-14 14:26:45,939 INFO     ___FILE_ONLY___ :
+2025-08-14 14:26:45,939 INFO     ___FILE_ONLY___  
+2025-08-14 14:26:45,939 INFO     ___FILE_ONLY___ roles/storage.legacyObjectReader
+2025-08-14 14:26:45,939 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:26:45,939 INFO     ___FILE_ONLY___ -
+2025-08-14 14:26:45,939 INFO     ___FILE_ONLY___  
+2025-08-14 14:26:45,939 INFO     ___FILE_ONLY___ members
+2025-08-14 14:26:45,939 INFO     ___FILE_ONLY___ :
+2025-08-14 14:26:45,939 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:26:45,939 INFO     ___FILE_ONLY___   
+2025-08-14 14:26:45,939 INFO     ___FILE_ONLY___ -
+2025-08-14 14:26:45,939 INFO     ___FILE_ONLY___  
+2025-08-14 14:26:45,939 INFO     ___FILE_ONLY___ serviceAccount:service-652347975853@gcp-sa-aiplatform.iam.gserviceaccount.com
+2025-08-14 14:26:45,939 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:26:45,939 INFO     ___FILE_ONLY___   
+2025-08-14 14:26:45,939 INFO     ___FILE_ONLY___ role
+2025-08-14 14:26:45,939 INFO     ___FILE_ONLY___ :
+2025-08-14 14:26:45,939 INFO     ___FILE_ONLY___  
+2025-08-14 14:26:45,939 INFO     ___FILE_ONLY___ roles/storage.objectAdmin
+2025-08-14 14:26:45,940 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:26:45,940 INFO     ___FILE_ONLY___ etag
+2025-08-14 14:26:45,940 INFO     ___FILE_ONLY___ :
+2025-08-14 14:26:45,940 INFO     ___FILE_ONLY___  
+2025-08-14 14:26:45,940 INFO     ___FILE_ONLY___ CAI=
+2025-08-14 14:26:45,940 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:26:45,940 INFO     ___FILE_ONLY___ kind
+2025-08-14 14:26:45,940 INFO     ___FILE_ONLY___ :
+2025-08-14 14:26:45,940 INFO     ___FILE_ONLY___  
+2025-08-14 14:26:45,940 INFO     ___FILE_ONLY___ storage#policy
+2025-08-14 14:26:45,940 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:26:45,940 INFO     ___FILE_ONLY___ resourceId
+2025-08-14 14:26:45,940 INFO     ___FILE_ONLY___ :
+2025-08-14 14:26:45,940 INFO     ___FILE_ONLY___  
+2025-08-14 14:26:45,940 INFO     ___FILE_ONLY___ projects/_/buckets/cloud-ai-platform-f511c133-160b-4432-b173-aa89cc7e9fbc
+2025-08-14 14:26:45,940 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:26:45,940 INFO     ___FILE_ONLY___ version
+2025-08-14 14:26:45,941 INFO     ___FILE_ONLY___ :
+2025-08-14 14:26:45,941 INFO     ___FILE_ONLY___  
+2025-08-14 14:26:45,941 INFO     ___FILE_ONLY___ 1
+2025-08-14 14:26:45,941 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:26:45,941 DEBUG    root            SDK update checks are disabled.
+2025-08-14 14:26:45,942 INFO     ___FILE_ONLY___ 
+
+To take a quick anonymous survey, run:
+  $ gcloud survey
+
+

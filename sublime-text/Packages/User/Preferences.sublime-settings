@@ -1,15 +1,6 @@
-// Settings in here override those in "Default/Preferences.sublime-settings",
-// and are overridden in turn by syntax-specific settings.
 {
+	"color_scheme": "Mariana.sublime-color-scheme",
+	"theme": "Adaptive.sublime-theme",
+	"font_size": 13,
 	"hot_exit": "disabled",
-	"ignored_packages":
-	[
-		"ColorHelper",
-		"Vintage",
-	],
-	"theme": "Arc Dark.sublime-theme",
-	"index_files": true,
-	"color_scheme": "Packages/Theme - Dark Material/schemes/Dark-Material.tmTheme",
-	"font_size": 11,
-	"default_line_ending": "unix",
 }

@@ -1,0 +1,42 @@
+2025/09/12-11:11:38.526 e14 Reusing MANIFEST /home/scelester/.config/Ferdium/Partitions/service-6a552909-55dd-4876-b76a-c9b616d26ef5/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/09/12-11:11:38.526 e14 Recovering log #567
+2025/09/12-11:11:38.532 e14 Reusing old log /home/scelester/.config/Ferdium/Partitions/service-6a552909-55dd-4876-b76a-c9b616d26ef5/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000567.log 
+2025/09/12-11:11:44.819 e29 Level-0 table #584: started
+2025/09/12-11:11:44.823 e29 Level-0 table #584: 177127 bytes OK
+2025/09/12-11:11:44.825 e29 Delete type=0 #567
+2025/09/12-11:11:44.825 e14 Manual compaction at level-0 from '\x00-\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00.\x00\x00\x00' @ 0 : 0; will stop at '\x00-\x00\x00\x05' @ 2130771 : 1
+2025/09/12-11:11:44.826 e14 Compacting 1@0 + 1@1 files
+2025/09/12-11:11:44.831 e14 Generated table #585@0: 3914 keys, 74210 bytes
+2025/09/12-11:11:44.832 e14 Generated table #586@0: 57 keys, 2742 bytes
+2025/09/12-11:11:44.832 e14 Compacted 1@0 + 1@1 files => 76952 bytes
+2025/09/12-11:11:44.836 e14 compacted to: files[ 0 2 14 0 0 0 0 ]
+2025/09/12-11:11:44.836 e14 Delete type=2 #584
+2025/09/12-11:11:44.837 e14 Manual compaction at level-0 from '\x00-\x00\x00\x05' @ 2130771 : 1 .. '\x00.\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/09/12-11:11:46.433 e2b Compacting 1@1 + 7@2 files
+2025/09/12-11:11:46.478 e2b Generated table #587@1: 56313 keys, 2242079 bytes
+2025/09/12-11:11:46.494 e2b Generated table #588@1: 3116 keys, 2161103 bytes
+2025/09/12-11:11:46.510 e2b Generated table #589@1: 3676 keys, 2160664 bytes
+2025/09/12-11:11:46.524 e2b Generated table #590@1: 3507 keys, 2154389 bytes
+2025/09/12-11:11:46.548 e2b Generated table #591@1: 18536 keys, 2190781 bytes
+2025/09/12-11:11:46.585 e2b Generated table #592@1: 28556 keys, 2266842 bytes
+2025/09/12-11:11:46.611 e2b Generated table #593@1: 22411 keys, 2208189 bytes
+2025/09/12-11:11:46.612 e2b Generated table #594@1: 39 keys, 13170 bytes
+2025/09/12-11:11:46.613 e2b Compacted 1@1 + 7@2 files => 15397217 bytes
+2025/09/12-11:11:46.615 e2b compacted to: files[ 0 1 15 0 0 0 0 ]
+2025/09/12-11:11:46.615 e2b Delete type=2 #570
+2025/09/12-11:11:46.615 e2b Delete type=2 #575
+2025/09/12-11:11:46.615 e2b Delete type=2 #576
+2025/09/12-11:11:46.615 e2b Delete type=2 #572
+2025/09/12-11:11:46.615 e2b Delete type=2 #585
+2025/09/12-11:11:46.615 e2b Delete type=2 #574
+2025/09/12-11:11:46.615 e2b Delete type=2 #573
+2025/09/12-11:11:46.615 e2b Delete type=2 #571
+2025/09/12-11:11:46.615 e2b Delete type=2 #577
+2025/09/12-11:11:50.263 e14 Compacting 1@1 + 2@2 files
+2025/09/12-11:11:50.327 e14 Generated table #595@1: 101577 keys, 2252264 bytes
+2025/09/12-11:11:50.343 e14 Generated table #596@1: 26040 keys, 606778 bytes
+2025/09/12-11:11:50.343 e14 Compacted 1@1 + 2@2 files => 2859042 bytes
+2025/09/12-11:11:50.345 e14 compacted to: files[ 0 0 15 0 0 0 0 ]
+2025/09/12-11:11:50.345 e14 Delete type=2 #566
+2025/09/12-11:11:50.345 e14 Delete type=2 #586
+2025/09/12-11:11:50.345 e14 Delete type=2 #565

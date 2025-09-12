@@ -1,2 +1,27 @@
 echo Hash::make('Narayan2034@#');
+Mail::raw("Hello gay boi!", function($msg){
+$msg->to('aadarshsunam4@gmail.com')->subject('Test Mail');
+});
+asset('css/app.bundle.css')
+Storage::allDisks();
+Storage::allDisks();
+config('filesystems.disks');
+Storage::getDefaultDriver();
+Storage::disk('azure')->url('tinker-test.txt');
+Storage::getDefaultDriver();  
+Storage::disk('azure')->put('tinker-test.txt', 'Hello Azure!');  
+Storage::disk('azure')->url('tinker-test.txt');    
+Storage::disk('azure')->get('tinker-test.txt');                     
+// => "Hello Azure!"    
+Storage::disk('azure')->get('tinker-test.txt');
+Storage::disk('azure')->get('tinker-test.txt');                     
+Storage::disk('azure')->url('tinker-test.txt');    
+$endpoint = rtrim(env('AZURE_STORAGE_URL'), '/');
+        $container = trim(env('AZURE_STORAGE_CONTAINER'), '/');
+        $prefix = trim(env('AZURE_STORAGE_PREFIX', ''), '/');
 
+        $segments = array_filter([$endpoint, $container, $prefix, ltrim($path, '/')]);
+        return implode('/', $segments);
+Storage::disk('azure')->exists('test')
+Storage::disk('azure')->exist('tinker-test.txt');
+Storage::disk('azure')->has('tinker-test.txt');

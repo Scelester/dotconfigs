@@ -5,12 +5,12 @@
     "Windows": {
       "app_name": "6c227b0fac70445aae645f0d601dc5d2",
       "asset_id": "6c227b0fac70445aae645f0d601dc5d2",
-      "build_version": "v73100_rc_73_20250206_1827",
+      "build_version": "v73400_rc_78_20250728_2245",
       "catalog_item_id": "1f091643abf5463aab58d9ed807da700",
       "label_name": "Live-Windows",
       "metadata": {
         "installationPoolId": "d0850fcdf3fe47d09baf5504a91623b1",
-        "update_type": "PATCH"
+        "update_type": "MINOR"
       },
       "namespace": "bf333e6236914222a95a536389c05813",
       "sidecar_rev": 0
@@ -84,7 +84,7 @@
             "path": "addons/durable"
           }
         ],
-        "creationDate": "2021-10-15T03:40:40.065Z",
+        "creationDate": "2025-05-21T07:30:55.935Z",
         "customAttributes": {
           "SupportedPlatforms": {
             "type": "STRING",
@@ -101,10 +101,9 @@
           "egstore"
         ],
         "id": "77e848be28054e1c92dd10ab59b20d75",
-        "installModes": [],
         "itemType": "DURABLE",
         "keyImages": [],
-        "lastModifiedDate": "2023-10-11T21:21:12.624Z",
+        "lastModifiedDate": "2025-05-23T03:03:56.820Z",
         "mainGameItem": {
           "id": "1f091643abf5463aab58d9ed807da700",
           "namespace": "bf333e6236914222a95a536389c05813",
@@ -250,7 +249,7 @@
         "id": "ed66ba30c9a5483b83fa107527031d88",
         "itemType": "CONSUMABLE",
         "keyImages": [],
-        "lastModifiedDate": "2023-10-11T21:21:12.631Z",
+        "lastModifiedDate": "2025-05-23T03:03:54.950Z",
         "mainGameItem": {
           "id": "1f091643abf5463aab58d9ed807da700",
           "namespace": "bf333e6236914222a95a536389c05813",
@@ -301,7 +300,6 @@
           "egstore"
         ],
         "id": "a129e65b8d22443282437fcc445af0ac",
-        "installModes": [],
         "itemType": "DURABLE",
         "keyImages": [],
         "lastModifiedDate": "2021-05-18T11:40:20.271Z",
@@ -355,7 +353,6 @@
           "egstore"
         ],
         "id": "84fc29c0a27c4effb42a4096ef8c8cc2",
-        "installModes": [],
         "itemType": "CONSUMABLE",
         "keyImages": [],
         "lastModifiedDate": "2021-08-19T02:39:24.107Z",
@@ -437,7 +434,7 @@
             "path": "addons"
           }
         ],
-        "creationDate": "2022-03-28T19:44:17.184Z",
+        "creationDate": "2025-05-21T07:30:56.853Z",
         "customAttributes": {
           "CanRunOffline": {
             "type": "STRING",
@@ -455,7 +452,29 @@
         ],
         "id": "141249d9af5145cfa2de9b9546e6c2d4",
         "itemType": "DURABLE",
-        "lastModifiedDate": "2023-10-11T21:21:12.612Z",
+        "keyImages": [
+          {
+            "alt": "PSO2:NGS - Aelio Nadar Renewal Pack-621831",
+            "height": 1440,
+            "md5": "2cbb2d32a63d3860564ac3b48d24dba1",
+            "size": 990057,
+            "type": "DieselGameBox",
+            "uploadedDate": "2022-04-13T15:23:23.336Z",
+            "url": "https://cdn1.epicgames.com/offer/bf333e6236914222a95a536389c05813/EGS_PSO2NGSAelioNadarRenewalPack_SEGACorporation_AddOn_S1_2560x1440-2cbb2d32a63d3860564ac3b48d24dba1",
+            "width": 2560
+          },
+          {
+            "alt": "PSO2:NGS - Aelio Nadar Renewal Pack-521991",
+            "height": 1600,
+            "md5": "dc9e1718860ae612c45e95d405299703",
+            "size": 998336,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2022-04-13T15:23:17.638Z",
+            "url": "https://cdn1.epicgames.com/offer/bf333e6236914222a95a536389c05813/EGS_PSO2NGSAelioNadarRenewalPack_SEGACorporation_AddOn_S2_1200x1600-dc9e1718860ae612c45e95d405299703",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2025-05-23T03:03:54.950Z",
         "mainGameItem": {
           "id": "1f091643abf5463aab58d9ed807da700",
           "namespace": "bf333e6236914222a95a536389c05813",
@@ -481,7 +500,7 @@
             "path": "addons"
           }
         ],
-        "creationDate": "2022-10-04T07:26:28.441Z",
+        "creationDate": "2025-05-21T07:30:54.914Z",
         "customAttributes": {
           "CanRunOffline": {
             "type": "STRING",
@@ -499,7 +518,29 @@
         ],
         "id": "f8d1084e721a45b385ed9b477a52d5a9",
         "itemType": "DURABLE",
-        "lastModifiedDate": "2023-10-11T21:21:12.631Z",
+        "keyImages": [
+          {
+            "alt": "PSO2:NGS Crimson Stia /Type 2 Pack-988232",
+            "height": 1440,
+            "md5": "4aa473a272fa8c44c80c1d765b0fe514",
+            "size": 995285,
+            "type": "DieselGameBox",
+            "uploadedDate": "2022-10-25T17:43:40.327Z",
+            "url": "https://cdn1.epicgames.com/offer/bf333e6236914222a95a536389c05813/EGS_PSO2NGSCrimsonLotusStiaType2Pack_SEGACorporation_AddOn_S1_2560x1440-4aa473a272fa8c44c80c1d765b0fe514",
+            "width": 2560
+          },
+          {
+            "alt": "PSO2:NGS Crimson Stia /Type 2 Pack-797088",
+            "height": 1600,
+            "md5": "15efb93c437092be8959d40872dc7012",
+            "size": 554096,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2022-10-25T17:43:37.061Z",
+            "url": "https://cdn1.epicgames.com/offer/bf333e6236914222a95a536389c05813/EGS_PSO2NGSCrimsonLotusStiaType2Pack_SEGACorporation_AddOn_S2_1200x1600-15efb93c437092be8959d40872dc7012",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2025-05-23T03:03:54.950Z",
         "mainGameItem": {
           "id": "1f091643abf5463aab58d9ed807da700",
           "namespace": "bf333e6236914222a95a536389c05813",
@@ -533,7 +574,7 @@
             "path": "addons/durable"
           }
         ],
-        "creationDate": "2021-10-15T03:39:08.696Z",
+        "creationDate": "2025-05-21T07:30:54.910Z",
         "customAttributes": {
           "SupportedPlatforms": {
             "type": "STRING",
@@ -550,10 +591,9 @@
           "egstore"
         ],
         "id": "c63edd5d275049e196d60bb7f7960987",
-        "installModes": [],
         "itemType": "DURABLE",
         "keyImages": [],
-        "lastModifiedDate": "2023-10-11T21:21:12.628Z",
+        "lastModifiedDate": "2025-05-23T03:03:55.727Z",
         "mainGameItem": {
           "id": "1f091643abf5463aab58d9ed807da700",
           "namespace": "bf333e6236914222a95a536389c05813",
@@ -605,7 +645,7 @@
         "id": "675957b029914b19a90335ff7b5252cc",
         "itemType": "CONSUMABLE",
         "keyImages": [],
-        "lastModifiedDate": "2023-10-11T21:21:12.622Z",
+        "lastModifiedDate": "2025-05-23T03:03:54.950Z",
         "mainGameItem": {
           "id": "1f091643abf5463aab58d9ed807da700",
           "namespace": "bf333e6236914222a95a536389c05813",
@@ -846,7 +886,6 @@
           "egstore"
         ],
         "id": "037d842800d14168a8821a58f725f54f",
-        "installModes": [],
         "itemType": "DURABLE",
         "keyImages": [],
         "lastModifiedDate": "2021-05-18T11:39:51.798Z",
@@ -979,7 +1018,7 @@
             "path": "addons"
           }
         ],
-        "creationDate": "2022-10-04T07:25:41.356Z",
+        "creationDate": "2025-05-21T07:30:54.905Z",
         "customAttributes": {
           "CanRunOffline": {
             "type": "STRING",
@@ -997,7 +1036,29 @@
         ],
         "id": "7554c59deae64ae4834aef724e061565",
         "itemType": "DURABLE",
-        "lastModifiedDate": "2023-10-11T21:21:12.623Z",
+        "keyImages": [
+          {
+            "alt": "PSO2:NGS Crimson Stia/Type 1  Pack-630925",
+            "height": 1440,
+            "md5": "87ee6f88ea081b31dde848141018dcb1",
+            "size": 960905,
+            "type": "DieselGameBox",
+            "uploadedDate": "2022-10-25T17:39:10.757Z",
+            "url": "https://cdn1.epicgames.com/offer/bf333e6236914222a95a536389c05813/EGS_PSO2NGSCrimsonLotusStiaType1Pack_SEGACorporation_AddOn_S1_2560x1440-87ee6f88ea081b31dde848141018dcb1",
+            "width": 2560
+          },
+          {
+            "alt": "PSO2:NGS Crimson Stia/Type 1  Pack-129586",
+            "height": 1600,
+            "md5": "cf700c184a592f66c50650ad5bd03b17",
+            "size": 531388,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2022-10-25T17:39:07.101Z",
+            "url": "https://cdn1.epicgames.com/offer/bf333e6236914222a95a536389c05813/EGS_PSO2NGSCrimsonLotusStiaType1Pack_SEGACorporation_AddOn_S2_1200x1600-cf700c184a592f66c50650ad5bd03b17",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2025-05-23T03:03:54.950Z",
         "mainGameItem": {
           "id": "1f091643abf5463aab58d9ed807da700",
           "namespace": "bf333e6236914222a95a536389c05813",
@@ -1255,7 +1316,7 @@
         "id": "392f7dccb5b14d968307defd6c6d696f",
         "itemType": "CONSUMABLE",
         "keyImages": [],
-        "lastModifiedDate": "2023-10-11T21:21:12.618Z",
+        "lastModifiedDate": "2025-05-23T03:03:55.888Z",
         "mainGameItem": {
           "id": "1f091643abf5463aab58d9ed807da700",
           "namespace": "bf333e6236914222a95a536389c05813",
@@ -1281,7 +1342,7 @@
             "path": "addons"
           }
         ],
-        "creationDate": "2022-03-28T19:46:00.563Z",
+        "creationDate": "2025-05-21T07:30:56.855Z",
         "customAttributes": {
           "CanRunOffline": {
             "type": "STRING",
@@ -1299,7 +1360,29 @@
         ],
         "id": "753d39d40d6847f08ccbddac7d7bf134",
         "itemType": "DURABLE",
-        "lastModifiedDate": "2023-10-11T21:21:12.623Z",
+        "keyImages": [
+          {
+            "alt": "PSO2:NGS - Silver Peaks Kvaris Pack/Type 2 Pack-546906",
+            "height": 1440,
+            "md5": "8e19bb5b304e9f3860c8dbc4f8c4dc43",
+            "size": 1010791,
+            "type": "DieselGameBox",
+            "uploadedDate": "2022-04-13T14:46:32.309Z",
+            "url": "https://cdn1.epicgames.com/offer/bf333e6236914222a95a536389c05813/EGS_PSO2NGSSilverPeaksKvarisPackType2Pack_SEGACorporation_AddOn_S1_2560x1440-8e19bb5b304e9f3860c8dbc4f8c4dc43",
+            "width": 2560
+          },
+          {
+            "alt": "PSO2:NGS - Silver Peaks Kvaris Pack/Type 2 Pack-708743",
+            "height": 1600,
+            "md5": "9d748696a514ca0967e1d8401601c03e",
+            "size": 1010299,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2022-04-13T14:46:26.024Z",
+            "url": "https://cdn1.epicgames.com/offer/bf333e6236914222a95a536389c05813/EGS_PSO2NGSSilverPeaksKvarisPackType2Pack_SEGACorporation_AddOn_S2_1200x1600-9d748696a514ca0967e1d8401601c03e",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2025-05-23T03:03:54.950Z",
         "mainGameItem": {
           "id": "1f091643abf5463aab58d9ed807da700",
           "namespace": "bf333e6236914222a95a536389c05813",
@@ -1325,7 +1408,7 @@
             "path": "addons"
           }
         ],
-        "creationDate": "2022-03-28T19:45:37.588Z",
+        "creationDate": "2025-05-21T07:30:56.860Z",
         "customAttributes": {
           "CanRunOffline": {
             "type": "STRING",
@@ -1343,7 +1426,29 @@
         ],
         "id": "ca854a83de564331bcc2b18b343a080a",
         "itemType": "DURABLE",
-        "lastModifiedDate": "2023-10-11T21:21:12.628Z",
+        "keyImages": [
+          {
+            "alt": "PSO2:NGS - Silver Peaks Kvaris Pack/Type 1 Pack-206319",
+            "height": 1440,
+            "md5": "469d2ae6ed474b22f03111e92f21fa25",
+            "size": 946509,
+            "type": "DieselGameBox",
+            "uploadedDate": "2022-04-13T14:55:47.531Z",
+            "url": "https://cdn1.epicgames.com/offer/bf333e6236914222a95a536389c05813/EGS_PSO2NGSSilverPeaksKvarisPackType1Pack_SEGACorporation_AddOn_S1_2560x1440-469d2ae6ed474b22f03111e92f21fa25",
+            "width": 2560
+          },
+          {
+            "alt": "PSO2:NGS - Silver Peaks Kvaris Pack/Type 1 Pack-232273",
+            "height": 1600,
+            "md5": "590fc33f64eaba60d480f7cb0488ac7d",
+            "size": 989968,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2022-04-13T14:55:42.589Z",
+            "url": "https://cdn1.epicgames.com/offer/bf333e6236914222a95a536389c05813/EGS_PSO2NGSSilverPeaksKvarisPackType1Pack_SEGACorporation_AddOn_S2_1200x1600-590fc33f64eaba60d480f7cb0488ac7d",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2025-05-23T03:03:54.950Z",
         "mainGameItem": {
           "id": "1f091643abf5463aab58d9ed807da700",
           "namespace": "bf333e6236914222a95a536389c05813",
@@ -1394,7 +1499,6 @@
           "egstore"
         ],
         "id": "85cc27f6b94740efa1d61d6b5ab98857",
-        "installModes": [],
         "itemType": "DURABLE",
         "keyImages": [],
         "lastModifiedDate": "2021-12-14T22:09:37.197Z",
@@ -1449,7 +1553,7 @@
         "id": "7a105c5b3bb442d29f72cfc8919995a6",
         "itemType": "CONSUMABLE",
         "keyImages": [],
-        "lastModifiedDate": "2023-10-11T21:21:12.624Z",
+        "lastModifiedDate": "2025-05-23T03:03:56.820Z",
         "mainGameItem": {
           "id": "1f091643abf5463aab58d9ed807da700",
           "namespace": "bf333e6236914222a95a536389c05813",
@@ -1587,7 +1691,7 @@
             "path": "addons/durable"
           }
         ],
-        "creationDate": "2021-10-15T03:40:11.777Z",
+        "creationDate": "2025-05-21T07:30:55.929Z",
         "customAttributes": {
           "SupportedPlatforms": {
             "type": "STRING",
@@ -1604,10 +1708,9 @@
           "egstore"
         ],
         "id": "2fb90d04373a460589713175a524245a",
-        "installModes": [],
         "itemType": "DURABLE",
         "keyImages": [],
-        "lastModifiedDate": "2023-10-11T21:21:12.616Z",
+        "lastModifiedDate": "2025-05-23T03:03:55.888Z",
         "mainGameItem": {
           "id": "1f091643abf5463aab58d9ed807da700",
           "namespace": "bf333e6236914222a95a536389c05813",
@@ -1762,7 +1865,7 @@
         "id": "3f44471735d64685ad6850fd5545dbb6",
         "itemType": "CONSUMABLE",
         "keyImages": [],
-        "lastModifiedDate": "2023-10-11T21:21:12.622Z",
+        "lastModifiedDate": "2025-05-23T03:03:55.888Z",
         "mainGameItem": {
           "id": "1f091643abf5463aab58d9ed807da700",
           "namespace": "bf333e6236914222a95a536389c05813",
@@ -1866,7 +1969,7 @@
         "id": "c30f63596988425bb93e87b6cc454c89",
         "itemType": "CONSUMABLE",
         "keyImages": [],
-        "lastModifiedDate": "2023-10-11T21:21:12.627Z",
+        "lastModifiedDate": "2025-05-23T03:03:56.820Z",
         "mainGameItem": {
           "id": "1f091643abf5463aab58d9ed807da700",
           "namespace": "bf333e6236914222a95a536389c05813",
@@ -1892,7 +1995,7 @@
             "path": "addons"
           }
         ],
-        "creationDate": "2022-03-28T19:44:53.964Z",
+        "creationDate": "2025-05-21T07:30:56.857Z",
         "customAttributes": {
           "CanRunOffline": {
             "type": "STRING",
@@ -1910,7 +2013,29 @@
         ],
         "id": "b2e5ab1ba5ba4427bd7c63c19f073f22",
         "itemType": "DURABLE",
-        "lastModifiedDate": "2023-10-11T21:21:12.626Z",
+        "keyImages": [
+          {
+            "alt": "PSO2:NGS - Aelio Nager Renewal Pack-256512",
+            "height": 1440,
+            "md5": "6543729e097a91da15613868af12e3f7",
+            "size": 992627,
+            "type": "DieselGameBox",
+            "uploadedDate": "2022-04-13T14:59:43.120Z",
+            "url": "https://cdn1.epicgames.com/offer/bf333e6236914222a95a536389c05813/EGS_PSO2NGSAelioNagerRenewalPack_SEGACorporation_AddOn_S1_2560x1440-6543729e097a91da15613868af12e3f7",
+            "width": 2560
+          },
+          {
+            "alt": "PSO2:NGS - Aelio Nager Renewal Pack-973651",
+            "height": 1600,
+            "md5": "e8ad2e6fb27623f2e36221388068962b",
+            "size": 1002023,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2022-04-13T14:59:38.584Z",
+            "url": "https://cdn1.epicgames.com/offer/bf333e6236914222a95a536389c05813/EGS_PSO2NGSAelioNagerRenewalPack_SEGACorporation_AddOn_S2_1200x1600-e8ad2e6fb27623f2e36221388068962b",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2025-05-23T03:03:54.950Z",
         "mainGameItem": {
           "id": "1f091643abf5463aab58d9ed807da700",
           "namespace": "bf333e6236914222a95a536389c05813",
@@ -1961,7 +2086,6 @@
           "egstore"
         ],
         "id": "99b2eff37a4745ce8fb1f409c28c699c",
-        "installModes": [],
         "itemType": "CONSUMABLE",
         "keyImages": [],
         "lastModifiedDate": "2021-08-19T02:39:24.107Z",
@@ -2048,7 +2172,7 @@
             "path": "public"
           }
         ],
-        "creationDate": "2023-01-21T00:57:33.535Z",
+        "creationDate": "2025-05-21T07:30:54.915Z",
         "customAttributes": {
           "SupportedPlatforms": {
             "type": "STRING",
@@ -2066,7 +2190,7 @@
         ],
         "id": "fd2c793296744f0cbcf7c3b2f5fad796",
         "itemType": "CONSUMABLE",
-        "lastModifiedDate": "2023-10-11T21:21:12.632Z",
+        "lastModifiedDate": "2025-05-23T03:03:55.727Z",
         "mainGameItem": {
           "id": "1f091643abf5463aab58d9ed807da700",
           "namespace": "bf333e6236914222a95a536389c05813",
@@ -2167,7 +2291,7 @@
             "path": "addons"
           }
         ],
-        "creationDate": "2023-03-21T13:59:31.335Z",
+        "creationDate": "2025-05-21T07:30:54.908Z",
         "customAttributes": {
           "CanRunOffline": {
             "type": "STRING",
@@ -2185,7 +2309,29 @@
         ],
         "id": "ac19f0d1d8f145ee882fd0c398843623",
         "itemType": "DURABLE",
-        "lastModifiedDate": "2023-10-11T21:21:12.626Z",
+        "keyImages": [
+          {
+            "alt": "PSO2:NGS - Sonic Collab: Suits/C-Space Pack-277123",
+            "height": 1440,
+            "md5": "4ef887dd463c531d661319f06ad4b5b5",
+            "size": 949163,
+            "type": "DieselGameBox",
+            "uploadedDate": "2023-05-11T11:44:50.742Z",
+            "url": "https://cdn1.epicgames.com/offer/bf333e6236914222a95a536389c05813/EGS_PSO2NGSSonicCollabSuitsCSpacePack_SEGACorporation_AddOn_S1_2560x1440-4ef887dd463c531d661319f06ad4b5b5",
+            "width": 2560
+          },
+          {
+            "alt": "PSO2:NGS - Sonic Collab: Suits/C-Space Pack-554157",
+            "height": 1600,
+            "md5": "b194b9255e46dfc2c42bcbc9b3c5f899",
+            "size": 538302,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2023-05-11T11:44:47.558Z",
+            "url": "https://cdn1.epicgames.com/offer/bf333e6236914222a95a536389c05813/EGS_PSO2NGSSonicCollabSuitsCSpacePack_SEGACorporation_AddOn_S2_1200x1600-b194b9255e46dfc2c42bcbc9b3c5f899",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2025-05-23T03:03:54.950Z",
         "mainGameItem": {
           "id": "1f091643abf5463aab58d9ed807da700",
           "namespace": "bf333e6236914222a95a536389c05813",
@@ -2533,7 +2679,7 @@
         "entitlementType": "AUDIENCE",
         "id": "7f6a8fed43334fa5b663ff5a80b9a267",
         "itemType": "CONSUMABLE",
-        "lastModifiedDate": "2025-03-05T02:00:29.237Z",
+        "lastModifiedDate": "2025-03-21T06:45:30.558Z",
         "mainGameItem": {
           "id": "1f091643abf5463aab58d9ed807da700",
           "namespace": "bf333e6236914222a95a536389c05813",
@@ -2552,6 +2698,354 @@
         "title": "[Super Origin Festival'25] 2200AC Exchange Ticket_ConsumableAudience",
         "unsearchable": false,
         "useCount": 1
+      },
+      {
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2025-03-21T06:45:30.568Z",
+        "description": "An exchange ticket for 2,200 ARKS Cash (AC).\n\n- Purchasable 1 time only.\n\n- The discount may not be exactly 55%, depending on your country's currency.\n\n- After purchasing this ticket, collect your 2,200 AC in-game currency by logging in to the game.",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "c15e40241de244f6a6e3fc028abd6e44",
+        "entitlementType": "EXECUTABLE",
+        "id": "c15e40241de244f6a6e3fc028abd6e44",
+        "itemType": "DURABLE",
+        "keyImages": [
+          {
+            "alt": "Phantasy Star Online 2 [Super Origin Festival'25] 2200AC Exchange Ticket Offer",
+            "height": 1440,
+            "md5": "589eeebbfb16144965abc97cb689ca59",
+            "size": 910122,
+            "type": "DieselGameBox",
+            "uploadedDate": "2025-03-14T07:57:21.148Z",
+            "url": "https://cdn1.epicgames.com/spt-assets/10c145e8c86440f1b8a90ae7ff33d613/phantasy-star-online-2-1shli.jpg",
+            "width": 2560
+          },
+          {
+            "alt": "Download Phantasy Star Online 2 [Super Origin Festival'25] 2200AC Exchange Ticket Offer",
+            "height": 1600,
+            "md5": "91f87a26c33a38c4714a7b73f0ae1188",
+            "size": 704359,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2025-03-14T07:57:27.534Z",
+            "url": "https://cdn1.epicgames.com/spt-assets/10c145e8c86440f1b8a90ae7ff33d613/phantasy-star-online-2-143kb.jpg",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2025-03-21T06:45:30.568Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "[Super Origin Festival'25] 2200AC Exchange Ticket",
+        "unsearchable": false
+      },
+      {
+        "categories": [
+          {
+            "path": "addons"
+          },
+          {
+            "path": "addons/durable"
+          }
+        ],
+        "creationDate": "2025-05-23T03:03:54.976Z",
+        "description": "PSO2:NGS - Fiery Dunes Retem/Type 2 Pack",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "95eeae7b04b34af7b9b93c19d0eb42da",
+        "entitlementType": "EXECUTABLE",
+        "id": "95eeae7b04b34af7b9b93c19d0eb42da",
+        "itemType": "DURABLE",
+        "keyImages": [
+          {
+            "alt": "PSO2:NGS - Fiery Dunes Retem/Type 2 Pack-131606",
+            "height": 1440,
+            "md5": "3d9e8b6c72dac1def82e132feb478f08",
+            "size": 991934,
+            "type": "DieselGameBox",
+            "uploadedDate": "2021-12-02T21:54:30.174Z",
+            "url": "https://cdn1.epicgames.com/offer/bf333e6236914222a95a536389c05813/EGS_PSO2NGSFieryDunesRetemType2Pack_SEGACorporation_AddOn_S1_2560x1440-3d9e8b6c72dac1def82e132feb478f08",
+            "width": 2560
+          },
+          {
+            "alt": "PSO2:NGS - Fiery Dunes Retem/Type 2 Pack-653975",
+            "height": 1600,
+            "md5": "6133733b5f55cacfda05fdfe8ccfe526",
+            "size": 985876,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2021-12-02T21:54:25.688Z",
+            "url": "https://cdn1.epicgames.com/offer/bf333e6236914222a95a536389c05813/EGS_PSO2NGSFieryDunesRetemType2Pack_SEGACorporation_AddOn_S2_1200x1600-6133733b5f55cacfda05fdfe8ccfe526",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2025-05-23T03:03:54.976Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "PSO2:NGS - Fiery Dunes Retem/Type 2 Pack",
+        "unsearchable": false
+      },
+      {
+        "categories": [
+          {
+            "path": "addons"
+          },
+          {
+            "path": "addons/durable"
+          }
+        ],
+        "creationDate": "2025-05-23T03:03:54.970Z",
+        "description": "[SALE] 2200AC Exchange Ticket",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "30b726243b6f4be3839db2619194caf2",
+        "entitlementType": "EXECUTABLE",
+        "id": "30b726243b6f4be3839db2619194caf2",
+        "itemType": "DURABLE",
+        "keyImages": [
+          {
+            "alt": "[SALE] 2200AC Exchange Ticket-867717",
+            "height": 1440,
+            "md5": "9e1ce1cfa8a974ead78c8e4c9f8d57e5",
+            "size": 307017,
+            "type": "DieselGameBox",
+            "uploadedDate": "2023-01-21T01:09:06.546Z",
+            "url": "https://cdn1.epicgames.com/offer/bf333e6236914222a95a536389c05813/EGS_SALE2200ACExchangeTicket_SEGACorporation_AddOn_S1_2560x1440-9e1ce1cfa8a974ead78c8e4c9f8d57e5",
+            "width": 2560
+          },
+          {
+            "alt": "[SALE] 2200AC Exchange Ticket-710844",
+            "height": 1600,
+            "md5": "802d914329eb2fc81b430dc7b26eb50e",
+            "size": 147147,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2023-01-21T01:09:00.038Z",
+            "url": "https://cdn1.epicgames.com/offer/bf333e6236914222a95a536389c05813/EGS_SALE2200ACExchangeTicket_SEGACorporation_AddOn_S2_1200x1600-802d914329eb2fc81b430dc7b26eb50e",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2025-05-23T03:03:54.970Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "[SALE] 2200AC Exchange Ticket",
+        "unsearchable": false
+      },
+      {
+        "categories": [
+          {
+            "path": "addons"
+          },
+          {
+            "path": "addons/durable"
+          }
+        ],
+        "creationDate": "2025-05-23T03:03:54.983Z",
+        "description": "PSO2:NGS - Fiery Dunes Retem/Type 1 Pack",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "df22b4c9a1d2497cbbbe5ca801bcc38d",
+        "entitlementType": "EXECUTABLE",
+        "id": "df22b4c9a1d2497cbbbe5ca801bcc38d",
+        "itemType": "DURABLE",
+        "keyImages": [
+          {
+            "alt": "PSO2:NGS - Fiery Dunes Retem/Type 1 Pack-697865",
+            "height": 1440,
+            "md5": "e774c93f461fcbdc3950dc891ef65c24",
+            "size": 992514,
+            "type": "DieselGameBox",
+            "uploadedDate": "2021-12-02T21:49:12.847Z",
+            "url": "https://cdn1.epicgames.com/offer/bf333e6236914222a95a536389c05813/EGS_PSO2NGSFieryDunesRetemType1Pack_SEGACorporation_AddOn_S1_2560x1440-e774c93f461fcbdc3950dc891ef65c24",
+            "width": 2560
+          },
+          {
+            "alt": "PSO2:NGS - Fiery Dunes Retem/Type 1 Pack-768429",
+            "height": 1600,
+            "md5": "d16d093552c3b2ae7be905984064f279",
+            "size": 979290,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2021-12-02T21:49:09.870Z",
+            "url": "https://cdn1.epicgames.com/offer/bf333e6236914222a95a536389c05813/EGS_PSO2NGSFieryDunesRetemType1Pack_SEGACorporation_AddOn_S2_1200x1600-d16d093552c3b2ae7be905984064f279",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2025-05-23T03:03:54.983Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "PSO2:NGS - Fiery Dunes Retem/Type 1 Pack",
+        "unsearchable": false
+      },
+      {
+        "categories": [
+          {
+            "path": "addons"
+          },
+          {
+            "path": "addons/durable"
+          }
+        ],
+        "creationDate": "2025-05-23T03:03:54.968Z",
+        "description": "PSO2:NGS - Beginners! Rappy Pack",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "2ff01e33a4e043e6907873902c4db076",
+        "entitlementType": "EXECUTABLE",
+        "id": "2ff01e33a4e043e6907873902c4db076",
+        "itemType": "DURABLE",
+        "keyImages": [
+          {
+            "alt": "PSO2:NGS - Beginners! Rappy Pack-907010",
+            "height": 1440,
+            "md5": "00b6eb54df8499b7080ebc544a8d7486",
+            "size": 1005626,
+            "type": "DieselGameBox",
+            "uploadedDate": "2021-12-02T21:40:07.886Z",
+            "url": "https://cdn1.epicgames.com/offer/bf333e6236914222a95a536389c05813/EGS_PSO2NGSBeginnersRappyPack_SEGACorporation_AddOn_S1_2560x1440-00b6eb54df8499b7080ebc544a8d7486",
+            "width": 2560
+          },
+          {
+            "alt": "PSO2:NGS - Beginners! Rappy Pack-650610",
+            "height": 1600,
+            "md5": "521d5104eafc50da0459bed11f0feef2",
+            "size": 881756,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2021-12-02T21:40:04.915Z",
+            "url": "https://cdn1.epicgames.com/offer/bf333e6236914222a95a536389c05813/EGS_PSO2NGSBeginnersRappyPack_SEGACorporation_AddOn_S2_1200x1600-521d5104eafc50da0459bed11f0feef2",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2025-05-23T03:03:54.968Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "PSO2:NGS - Beginners! Rappy Pack",
+        "unsearchable": false
+      },
+      {
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2025-07-16T02:03:38.786Z",
+        "description": "An exchange ticket for 2,200 ARKS Cash (AC).\n\n- Purchasable 1 time only.\n\n- The discount may not be exactly 55%, depending on your country's currency.\n\n- After purchasing this ticket, collect your 2,200 AC in-game currency by logging in to the game.",
+        "developer": "SEGA",
+        "developerId": "o-yqy54tnq77et5vf5dtpvz8czyahm2y",
+        "endOfSupport": false,
+        "entitlementName": "fbb11edca9864db8b8002b25a88be635",
+        "entitlementType": "EXECUTABLE",
+        "id": "fbb11edca9864db8b8002b25a88be635",
+        "itemType": "DURABLE",
+        "keyImages": [
+          {
+            "alt": "Phantasy Star Online 2 [BLACK FRIDAY'25] 2200AC Exchange Ticket Offer",
+            "height": 1440,
+            "md5": "589eeebbfb16144965abc97cb689ca59",
+            "size": 910122,
+            "type": "DieselGameBox",
+            "uploadedDate": "2025-06-23T07:41:51.296Z",
+            "url": "https://cdn1.epicgames.com/spt-assets/10c145e8c86440f1b8a90ae7ff33d613/phantasy-star-online-2-1ape0.jpg",
+            "width": 2560
+          },
+          {
+            "alt": "Download Phantasy Star Online 2 [BLACK FRIDAY'25] 2200AC Exchange Ticket Offer",
+            "height": 1600,
+            "md5": "91f87a26c33a38c4714a7b73f0ae1188",
+            "size": 704359,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2025-06-23T07:41:54.487Z",
+            "url": "https://cdn1.epicgames.com/spt-assets/10c145e8c86440f1b8a90ae7ff33d613/phantasy-star-online-2-z91fc.jpg",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2025-07-16T02:03:38.786Z",
+        "mainGameItem": {
+          "id": "1f091643abf5463aab58d9ed807da700",
+          "namespace": "bf333e6236914222a95a536389c05813",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "1f091643abf5463aab58d9ed807da700",
+            "namespace": "bf333e6236914222a95a536389c05813",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "bf333e6236914222a95a536389c05813",
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "[BLACK FRIDAY'25] 2200AC Exchange Ticket",
+        "unsearchable": false
       }
     ],
     "endOfSupport": false,
@@ -2576,15 +3070,15 @@
       {
         "alt": "Download Phantasy Star Online 2 Offer",
         "height": 1600,
-        "md5": "f0c0899d16891ceab8be856b7920adb5",
-        "size": 973574,
+        "md5": "b22792946625c5188f4729341080c46d",
+        "size": 508885,
         "type": "DieselGameBoxTall",
-        "uploadedDate": "2025-02-21T07:03:36.513Z",
-        "url": "https://cdn1.epicgames.com/spt-assets/10c145e8c86440f1b8a90ae7ff33d613/phantasy-star-online-2-1oqke.jpg",
+        "uploadedDate": "2025-07-30T02:42:25.377Z",
+        "url": "https://cdn1.epicgames.com/spt-assets/10c145e8c86440f1b8a90ae7ff33d613/phantasy-star-online-2-1q7nt.jpg",
         "width": 1200
       }
     ],
-    "lastModifiedDate": "2025-03-05T02:00:29.237Z",
+    "lastModifiedDate": "2025-08-05T23:03:19.878Z",
     "mainGameItemList": [],
     "namespace": "bf333e6236914222a95a536389c05813",
     "releaseInfo": [

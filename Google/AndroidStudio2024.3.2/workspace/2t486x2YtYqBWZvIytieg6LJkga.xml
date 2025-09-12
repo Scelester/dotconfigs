@@ -1,0 +1,967 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="yala" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="114w9s2v84q72" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/pages/Addpage/addpage.dart">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="1148">
+              <caret line="72" column="31" lean-forward="true" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#17#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"addpage.dart","foregroundColor":-8336444,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"80cbc4"}}]},"icon":[10,45,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,85,114,108,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,-101,1,10,-104,1,106,97,114,58,102,105,108,101,58,47,104,111,109,101,47,115,99,101,108,101,115,116,101,114,47,46,108,111,99,97,108,47,115,104,97,114,101,47,71,111,111,103,108,101,47,65,110,100,114,111,105,100,83,116,117,100,105,111,50,48,50,52,46,51,46,50,47,65,116,111,109,37,50,48,77,97,116,101,114,105,97,108,37,50,48,73,99,111,110,115,47,108,105,98,47,97,45,102,105,108,101,45,105,99,111,110,45,105,100,101,97,45,49,48,49,46,50,46,48,46,106,97,114,33,47,97,115,115,101,116,115,47,105,99,111,110,115,47,102,105,108,101,115,47,100,97,114,116,46,115,118,103]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="912">
+              <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"pubspec.yaml","foregroundColor":-8336444,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"80cbc4"}}]},"icon":[10,45,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,85,114,108,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,-94,1,10,-97,1,106,97,114,58,102,105,108,101,58,47,104,111,109,101,47,115,99,101,108,101,115,116,101,114,47,46,108,111,99,97,108,47,115,104,97,114,101,47,71,111,111,103,108,101,47,65,110,100,114,111,105,100,83,116,117,100,105,111,50,48,50,52,46,51,46,50,47,65,116,111,109,37,50,48,77,97,116,101,114,105,97,108,37,50,48,73,99,111,110,115,47,108,105,98,47,97,45,102,105,108,101,45,105,99,111,110,45,105,100,101,97,45,49,48,49,46,50,46,48,46,106,97,114,33,47,97,115,115,101,116,115,47,105,99,111,110,115,47,102,105,108,101,115,47,102,108,117,116,116,101,114,108,111,99,107,46,115,118,103]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/lib/pages/Explorepage/explorepage.dart">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="4032">
+              <caret line="169" column="21" selection-start-line="169" selection-start-column="21" selection-end-line="169" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"explorepage.dart","foregroundColor":-1052687,"textAttributes":{"name":"a"},"icon":[10,45,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,85,114,108,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,-101,1,10,-104,1,106,97,114,58,102,105,108,101,58,47,104,111,109,101,47,115,99,101,108,101,115,116,101,114,47,46,108,111,99,97,108,47,115,104,97,114,101,47,71,111,111,103,108,101,47,65,110,100,114,111,105,100,83,116,117,100,105,111,50,48,50,52,46,51,46,50,47,65,116,111,109,37,50,48,77,97,116,101,114,105,97,108,37,50,48,73,99,111,110,115,47,108,105,98,47,97,45,102,105,108,101,45,105,99,111,110,45,105,100,101,97,45,49,48,49,46,50,46,48,46,106,97,114,33,47,97,115,115,101,116,115,47,105,99,111,110,115,47,102,105,108,101,115,47,100,97,114,116,46,115,118,103]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/android/build.gradle">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="432">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"build.gradle","foregroundColor":-1052687,"textAttributes":{"name":"a"},"icon":[10,45,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,85,114,108,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,-99,1,10,-102,1,106,97,114,58,102,105,108,101,58,47,104,111,109,101,47,115,99,101,108,101,115,116,101,114,47,46,108,111,99,97,108,47,115,104,97,114,101,47,71,111,111,103,108,101,47,65,110,100,114,111,105,100,83,116,117,100,105,111,50,48,50,52,46,51,46,50,47,65,116,111,109,37,50,48,77,97,116,101,114,105,97,108,37,50,48,73,99,111,110,115,47,108,105,98,47,97,45,102,105,108,101,45,105,99,111,110,45,105,100,101,97,45,49,48,49,46,50,46,48,46,106,97,114,33,47,97,115,115,101,116,115,47,105,99,111,110,115,47,102,105,108,101,115,47,103,114,97,100,108,101,46,115,118,103]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/android/settings.gradle">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="600">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"settings.gradle","foregroundColor":-8336444,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"80cbc4"}}]},"icon":[10,45,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,85,114,108,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,-99,1,10,-102,1,106,97,114,58,102,105,108,101,58,47,104,111,109,101,47,115,99,101,108,101,115,116,101,114,47,46,108,111,99,97,108,47,115,104,97,114,101,47,71,111,111,103,108,101,47,65,110,100,114,111,105,100,83,116,117,100,105,111,50,48,50,52,46,51,46,50,47,65,116,111,109,37,50,48,77,97,116,101,114,105,97,108,37,50,48,73,99,111,110,115,47,108,105,98,47,97,45,102,105,108,101,45,105,99,111,110,45,105,100,101,97,45,49,48,49,46,50,46,48,46,106,97,114,33,47,97,115,115,101,116,115,47,105,99,111,110,115,47,102,105,108,101,115,47,103,114,97,100,108,101,46,115,118,103]}]]></tab>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "Markdown": {
+      "usageCount": 18,
+      "lastUsed": 1746683190026
+    },
+    "Dart": {
+      "usageCount": 106,
+      "lastUsed": 1748888622917
+    },
+    "YAML": {
+      "usageCount": 18,
+      "lastUsed": 1748888622612
+    },
+    "XML": {
+      "usageCount": 5,
+      "lastUsed": 1747648028465
+    },
+    "Gradle": {
+      "usageCount": 24,
+      "lastUsed": 1748888622966
+    },
+    "Properties": {
+      "usageCount": 6,
+      "lastUsed": 1747392499693
+    },
+    "IDEA_MODULE": {
+      "usageCount": 9,
+      "lastUsed": 1746779922049
+    },
+    "Kotlin": {
+      "usageCount": 4,
+      "lastUsed": 1746697390771
+    },
+    "AUTO_DETECTED": {
+      "usageCount": 1,
+      "lastUsed": 1746776580577
+    },
+    "PLAIN_TEXT": {
+      "usageCount": 1,
+      "lastUsed": 1746777792816
+    },
+    "Shell Script": {
+      "usageCount": 1,
+      "lastUsed": 1747639680891
+    }
+  }
+}]]></component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>main</find>
+      <find>reviewpo</find>
+      <find>select</find>
+      <find>LocationSearchAppBar</find>
+      <find>Color.</find>
+      <find>color.</find>
+      <find>LIKE</find>
+      <find>EW</find>
+      <find>padding</find>
+      <find>home</find>
+      <find>c</find>
+      <find>color</find>
+      <find>follow</find>
+      <find>follow`</find>
+      <find>hour ago</find>
+      <find>1 h</find>
+      <find>h</find>
+      <find>share</find>
+      <find>great</find>
+      <find>1 hr</find>
+      <find>bottom</find>
+      <find>descr</find>
+      <find>title</find>
+      <find>this is</find>
+      <find>curcu</find>
+      <find>DEPENDE</find>
+      <find>user</find>
+      <find>explore</find>
+      <find>class</find>
+      <find>plugins</find>
+      <find>gradle</find>
+      <find>rootprojectnam</find>
+      <find>depend</find>
+      <find>depende</find>
+      <find>material</find>
+      <find>material_colo</find>
+      <find>material_color</find>
+      <find>add new</find>
+      <find>_takePicture</find>
+      <find>build</find>
+      <find>35.0.0</find>
+      <find>uses</find>
+      <find />
+    </findStrings>
+    <replaceStrings>
+      <replace>h</replace>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/lib</dir>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/android</dir>
+      <dir>$PROJECT_DIR$/lib/pages/Addpage</dir>
+    </dirStrings>
+  </component>
+  <component name="FindInProjectScope">
+    <option name="isCustomScope" value="true" />
+    <option name="customScopeName" value="Project Files" />
+  </component>
+  <component name="GitBranchesPopupTreeState">
+    <expand>
+      <path>
+        <item name="TreeRoot" type="41d8a9c2:GitBranchesTreeModel$TreeRoot" />
+        <item name="LOCAL" type="6e158aa5:GitBranchType$LOCAL" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="GitSEFilterConfiguration">{}</component>
+  <component name="IdeDocumentHistory">{
+  &quot;changedPaths&quot;: [
+    &quot;/home/scelester/.config/Google/AndroidStudio2024.3.2/studio64.vmoptions&quot;,
+    &quot;/home/scelester/ProjectD/Fluttering/android/gradle/wrapper/gradle-wrapper.properties&quot;,
+    &quot;/home/scelester/ProjectD/Fluttering/android/settings.gradle&quot;,
+    &quot;/home/scelester/ProjectD/Fluttering/pubspec.yaml&quot;,
+    &quot;/home/scelester/ProjectD/Fluttering/lib/pages/Addpage/addpage.dart&quot;,
+    &quot;/home/scelester/ProjectD/Fluttering/android/app/src/main/AndroidManifest.xml&quot;
+  ]
+}</component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="Dart">
+      <summary usageCount="106" lastUsage="1748888622917" />
+    </language>
+    <language id="Groovy">
+      <summary usageCount="24" lastUsage="1748888622966" />
+    </language>
+    <language id="Markdown">
+      <summary usageCount="18" lastUsage="1746683190026" />
+    </language>
+    <language id="Properties">
+      <summary usageCount="6" lastUsage="1747392499697" />
+    </language>
+    <language id="Shell Script">
+      <summary usageCount="1" lastUsage="1747639680891" />
+    </language>
+    <language id="TEXT">
+      <summary usageCount="1" lastUsage="1746777792816" />
+    </language>
+    <language id="XML">
+      <summary usageCount="5" lastUsage="1747648028465" />
+    </language>
+    <language id="kotlin">
+      <summary usageCount="4" lastUsage="1746697390771" />
+    </language>
+    <language id="yaml">
+      <summary usageCount="18" lastUsage="1748888622612" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="yala" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/scelester/ProjectD/Fluttering}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yala" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/scelester/ProjectD/Fluttering}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/scelester/ProjectD/Fluttering/lib}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yala" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/scelester/ProjectD/Fluttering}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/scelester/ProjectD/Fluttering/lib}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/scelester/ProjectD/Fluttering/lib/pages}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yala" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/scelester/ProjectD/Fluttering}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/scelester/ProjectD/Fluttering/lib}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/scelester/ProjectD/Fluttering/lib/pages}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/scelester/ProjectD/Fluttering/lib/pages/Addpage}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yala" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/scelester/ProjectD/Fluttering}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/scelester/ProjectD/Fluttering/lib}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/scelester/ProjectD/Fluttering/lib/pages}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/scelester/ProjectD/Fluttering/lib/pages/Explorepage}" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+          <presentation>
+            <attributes />
+            <data iconPath="icons/toolwindows/toolWindowProject.svg" iconPlugin="com.mallowigi" isLeaf="false" text="yala" />
+            <item name="yala" type="b2602c69:ProjectViewProjectNode" />
+            <presentation>
+              <attributes>
+                <map>
+                  <entry key="filePath" value="$PROJECT_DIR$" />
+                </map>
+              </attributes>
+              <data iconPath="icons/mt/modules/ModuleOpen.svg" iconPlugin="com.mallowigi" isLeaf="false" text="Fluttering" />
+              <item name="dir{file:///home/scelester/ProjectD/Fluttering}" type="462c0819:PsiDirectoryNode" />
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.dart_tool" />
+                  </map>
+                </attributes>
+                <data iconPath="icons/modules/excludeRoot.svg" iconPlugin="com.mallowigi" isLeaf="false" text=".dart_tool" />
+                <item name="dir{file:///home/scelester/ProjectD/Fluttering/.dart_tool}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.idea" />
+                  </map>
+                </attributes>
+                <data isLeaf="false" text=".idea" />
+                <item name="dir{file:///home/scelester/ProjectD/Fluttering/.idea}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/android" />
+                  </map>
+                </attributes>
+                <data isLeaf="false" text="android" />
+                <item name="dir{file:///home/scelester/ProjectD/Fluttering/android}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/build" />
+                  </map>
+                </attributes>
+                <data iconPath="icons/modules/excludedGeneratedRoot.svg" iconPlugin="com.mallowigi" isLeaf="false" text="build" />
+                <item name="dir{file:///home/scelester/ProjectD/Fluttering/build}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/ios" />
+                  </map>
+                </attributes>
+                <data isLeaf="false" text="ios" />
+                <item name="dir{file:///home/scelester/ProjectD/Fluttering/ios}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/lib" />
+                  </map>
+                </attributes>
+                <data isLeaf="false" text="lib" />
+                <item name="dir{file:///home/scelester/ProjectD/Fluttering/lib}" type="462c0819:PsiDirectoryNode" />
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/lib/component" />
+                    </map>
+                  </attributes>
+                  <data isLeaf="false" text="component" />
+                  <item name="dir{file:///home/scelester/ProjectD/Fluttering/lib/component}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/lib/pages" />
+                    </map>
+                  </attributes>
+                  <data isLeaf="false" text="pages" />
+                  <item name="dir{file:///home/scelester/ProjectD/Fluttering/lib/pages}" type="462c0819:PsiDirectoryNode" />
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/lib/pages/Addpage" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/nodes/folderOpen.svg" iconPlugin="com.mallowigi" isLeaf="false" text="Addpage" />
+                    <item name="dir{file:///home/scelester/ProjectD/Fluttering/lib/pages/Addpage}" type="462c0819:PsiDirectoryNode" />
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/lib/pages/Addpage/addpage.dart" />
+                        </map>
+                      </attributes>
+                      <data isLeaf="true" text="addpage.dart" />
+                      <item name="addpage.dart" type="ab9368bb:PsiFileNode" />
+                    </presentation>
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/lib/pages/Explorepage" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/nodes/folderOpen.svg" iconPlugin="com.mallowigi" isLeaf="false" text="Explorepage" />
+                    <item name="dir{file:///home/scelester/ProjectD/Fluttering/lib/pages/Explorepage}" type="462c0819:PsiDirectoryNode" />
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/lib/pages/Explorepage/explorepage.dart" />
+                        </map>
+                      </attributes>
+                      <data isLeaf="true" text="explorepage.dart" />
+                      <item name="explorepage.dart" type="ab9368bb:PsiFileNode" />
+                    </presentation>
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/lib/pages/Homepage" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/nodes/folder.svg" iconPlugin="com.mallowigi" isLeaf="false" text="Homepage" />
+                    <item name="dir{file:///home/scelester/ProjectD/Fluttering/lib/pages/Homepage}" type="462c0819:PsiDirectoryNode" />
+                  </presentation>
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+                    </map>
+                  </attributes>
+                  <data isLeaf="true" text="main.dart" />
+                  <item name="main.dart" type="ab9368bb:PsiFileNode" />
+                </presentation>
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/test" />
+                  </map>
+                </attributes>
+                <data iconPath="icons/nodes/testSourceFolder.svg" iconPlugin="com.mallowigi" isLeaf="false" text="test" />
+                <item name="dir{file:///home/scelester/ProjectD/Fluttering/test}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/web" />
+                  </map>
+                </attributes>
+                <data iconPath="icons/nodes/webFolder.svg" iconPlugin="com.mallowigi" isLeaf="false" text="web" />
+                <item name="dir{file:///home/scelester/ProjectD/Fluttering/web}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.flutter-plugins" />
+                  </map>
+                </attributes>
+                <data isLeaf="true" text=".flutter-plugins" />
+                <item name=".flutter-plugins" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.flutter-plugins-dependencies" />
+                  </map>
+                </attributes>
+                <data iconPath="files/expui/fileTypes/text.svg" iconPlugin="com.mallowigi" isLeaf="true" text=".flutter-plugins-dependencies" />
+                <item name=".flutter-plugins-dependencies" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.gitignore" />
+                  </map>
+                </attributes>
+                <data isLeaf="true" text=".gitignore" />
+                <item name=".gitignore" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.metadata" />
+                  </map>
+                </attributes>
+                <data isLeaf="true" text=".metadata" />
+                <item name=".metadata" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/analysis_options.yaml" />
+                  </map>
+                </attributes>
+                <data isLeaf="true" text="analysis_options.yaml" />
+                <item name="analysis_options.yaml" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/pubspec.lock" />
+                  </map>
+                </attributes>
+                <data isLeaf="true" text="pubspec.lock" />
+                <item name="pubspec.lock" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/pubspec.yaml" />
+                  </map>
+                </attributes>
+                <data isLeaf="true" text="pubspec.yaml" />
+                <item name="pubspec.yaml" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/README.md" />
+                  </map>
+                </attributes>
+                <data isLeaf="true" text="README.md" />
+                <item name="README.md" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/yala.iml" />
+                  </map>
+                </attributes>
+                <data iconPath="icons/nodes/ideaModule.svg" iconPlugin="com.mallowigi" isLeaf="true" text="yala.iml" />
+                <item name="yala.iml" type="ab9368bb:PsiFileNode" />
+              </presentation>
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="icons/nodes/ppLib.svg" iconPlugin="com.mallowigi" isLeaf="false" text="External Libraries" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="icons/scope/scratches.svg" iconPlugin="com.mallowigi" isLeaf="true" text="Scratches and Consoles" />
+              <item name="Scratches and Consoles" type="b85a3e1f:ScratchTreeStructureProvider$MyProjectNode" />
+            </presentation>
+          </presentation>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="ReaderModeSettings">
+    <option name="enableVisualFormatting" value="false" />
+  </component>
+  <component name="RunConfigurationStartHistory">
+    <history>
+      <element setting="Flutter.main.dart" />
+    </history>
+  </component>
+  <component name="SplittingTabsState">
+    <tool-windows>
+      <tool-window id="Logcat" selected-tab="0">
+        <tabs>
+          <tab name="Logcat">
+            <content>
+              <panel>{'device':{'deviceId':'adb-00109346J009292-KpNr8t._adb-tls-connect._tcp','name':'Nothing A015','serialNumber':'adb-00109346J009292-KpNr8t._adb-tls-connect._tcp','isOnline':false,'release':'15','sdk':35,'featureLevel':35,'model':'A015','type':'HANDHELD','isEmulator':false},'formattingConfig':{'preset':'STANDARD'},'filter':'package:mine ','filterMatchCase':false,'isSoftWrap':false}</panel>
+            </content>
+          </tab>
+        </tabs>
+      </tool-window>
+    </tool-windows>
+  </component>
+  <component name="TerminalArrangementManager">
+    <option name="myTabStates">
+      <TerminalTabState tabName="Local">
+        <shellCommand>
+          <arg value="/bin/zsh" />
+          <arg value="-i" />
+        </shellCommand>
+      </TerminalTabState>
+    </option>
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info id="Build Variants" show_stripe_button="false" side_tool="true" />
+      <window_info id="Merge Requests" show_stripe_button="false" />
+      <window_info id="Structure" show_stripe_button="false" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24453124" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Resources Explorer" order="2" weight="0.25" />
+      <window_info id="Bookmarks" order="3" side_tool="true" weight="0.32994792" />
+      <window_info id="Pull Requests" order="4" show_stripe_button="false" weight="0.13828126" />
+      <window_info anchor="bottom" id="Android Profiler" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Services" show_stripe_button="false" />
+      <window_info anchor="bottom" id="clangd" show_stripe_button="false" />
+      <window_info anchor="bottom" id="App Inspection" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.6261996" />
+      <window_info anchor="bottom" id="Problems" order="2" />
+      <window_info anchor="bottom" id="Problems View" order="3" weight="0.33829173" />
+      <window_info anchor="bottom" id="Logcat" order="4" weight="0.3296545" />
+      <window_info anchor="bottom" id="App Quality Insights" order="5" weight="0.33829173" />
+      <window_info anchor="bottom" id="Build" order="6" />
+      <window_info anchor="bottom" id="Dart Analysis" order="7" show_stripe_button="false" weight="0.30509257" />
+      <window_info anchor="bottom" id="Debug" order="8" show_stripe_button="false" weight="0.3296545" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.33829173" />
+      <window_info anchor="bottom" id="Run" order="10" show_stripe_button="false" weight="0.33829173" />
+      <window_info anchor="right" id="Coverage" show_stripe_button="false" side_tool="true" />
+      <window_info anchor="right" id="Layout Validation" show_stripe_button="false" />
+      <window_info anchor="right" id="App Links Assistant" show_stripe_button="false" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="1" weight="0.25" />
+      <window_info anchor="right" id="Device Manager" order="2" weight="0.25" />
+      <window_info anchor="right" id="Device Manager 2" order="3" weight="0.32994792" />
+      <window_info anchor="right" id="Running Devices" order="4" weight="0.32994792" />
+      <window_info anchor="right" id="StudioBot" order="5" weight="0.32994792" />
+      <window_info anchor="right" id="Flutter DevTools" order="6" show_stripe_button="false" />
+      <window_info anchor="right" id="Flutter DevTools Extensions" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Device Explorer" order="8" show_stripe_button="false" side_tool="true" weight="0.3781284" />
+      <window_info anchor="right" id="Flutter Deep Links" order="9" show_stripe_button="false" />
+      <window_info anchor="right" id="Flutter Property Editor" order="10" show_stripe_button="false" />
+      <window_info anchor="right" id="Assistant" order="11" visible="true" weight="0.1940104" />
+      <window_info anchor="right" id="Flutter Inspector" order="12" show_stripe_button="false" weight="0.37109375" />
+      <unified_weights bottom="0.33829173" left="0.24453124" right="0.1940104" />
+    </layoutV2>
+    <layout-to-restore>
+      <window_info id="Bookmarks" show_stripe_button="false" side_tool="true" />
+      <window_info id="Build Variants" show_stripe_button="false" side_tool="true" />
+      <window_info id="Merge Requests" show_stripe_button="false" />
+      <window_info id="Structure" show_stripe_button="false" side_tool="true" />
+      <window_info id="DFA" show_stripe_button="false" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26223958" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Resources Explorer" order="2" weight="0.25" />
+      <window_info id="Pull Requests" order="3" show_stripe_button="false" weight="0.13828126" />
+      <window_info anchor="bottom" id="Android Profiler" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Services" show_stripe_button="false" />
+      <window_info anchor="bottom" id="clangd" show_stripe_button="false" />
+      <window_info anchor="bottom" id="App Inspection" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.32966506" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.49043062" />
+      <window_info anchor="bottom" id="Problems" order="2" />
+      <window_info anchor="bottom" id="Problems View" order="3" weight="0.6244019" />
+      <window_info anchor="bottom" id="Logcat" order="4" weight="0.32966506" />
+      <window_info anchor="bottom" id="App Quality Insights" order="5" />
+      <window_info anchor="bottom" id="Build" order="6" />
+      <window_info anchor="bottom" id="Dart Analysis" order="7" show_stripe_button="false" weight="0.30509257" />
+      <window_info anchor="bottom" id="Run" order="8" show_stripe_button="false" weight="0.32966506" />
+      <window_info anchor="bottom" id="Find" order="9" show_stripe_button="false" weight="0.32966506" />
+      <window_info anchor="right" id="documentation.v2" show_stripe_button="false" side_tool="true" />
+      <window_info anchor="right" id="Coverage" show_stripe_button="false" side_tool="true" />
+      <window_info anchor="right" id="Layout Validation" show_stripe_button="false" />
+      <window_info anchor="right" id="App Links Assistant" show_stripe_button="false" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="1" weight="0.25" />
+      <window_info anchor="right" id="Device Manager" order="2" weight="0.25" />
+      <window_info anchor="right" id="Device Manager 2" order="3" weight="0.32994792" />
+      <window_info anchor="right" id="Running Devices" order="4" weight="0.2502604" />
+      <window_info anchor="right" id="StudioBot" order="5" weight="0.25" />
+      <window_info anchor="right" id="Flutter DevTools" order="6" show_stripe_button="false" />
+      <window_info anchor="right" id="Flutter DevTools Extensions" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Device Explorer" order="8" show_stripe_button="false" sideWeight="0.49948347" side_tool="true" weight="0.37109375" />
+      <window_info anchor="right" id="Flutter Deep Links" order="9" show_stripe_button="false" />
+      <window_info anchor="right" id="Flutter Inspector" order="10" show_stripe_button="false" weight="0.37109375" />
+      <unified_weights bottom="0.49043062" left="0.26223958" right="0.2502604" />
+    </layout-to-restore>
+    <recentWindows>
+      <value>Assistant</value>
+      <value>App Quality Insights</value>
+      <value>Run</value>
+      <value>Device Manager 2</value>
+      <value>Messages</value>
+      <value>Problems View</value>
+      <value>Project</value>
+      <value>Terminal</value>
+      <value>StudioBot</value>
+      <value>Running Devices</value>
+      <value>Debug</value>
+      <value>Logcat</value>
+      <value>Bookmarks</value>
+      <value>Device Explorer</value>
+      <value>Notifications</value>
+      <value>Version Control</value>
+      <value>Commit</value>
+      <value>Resources Explorer</value>
+      <value>Find</value>
+      <value>Pull Requests</value>
+      <value>Hierarchy</value>
+      <value>Dart Analysis</value>
+      <value>Flutter Inspector</value>
+      <value>Flutter Outline</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="619" y="232" width="671" height="620" key="#Notifications" timestamp="1746776178333">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="619" y="232" width="671" height="620" key="#Notifications/0.0.1920.1080@0.0.1920.1080" timestamp="1746776178333" />
+    <state x="485" y="257" key="#PSD" timestamp="1747409386221">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="485" y="257" key="#PSD/0.0.1920.1080@0.0.1920.1080" timestamp="1747409386221" />
+    <state x="560" y="210" width="874" height="694" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1740384630555">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="560" y="210" width="874" height="694" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1740384630555" />
+    <state x="560" y="206" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1748888585223">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="560" y="206" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1748888585223" />
+    <state x="740" y="316" width="746" height="489" key="AndroidProcessChooserDialog" timestamp="1747409022721">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="740" y="316" width="746" height="489" key="AndroidProcessChooserDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1747409022721" />
+    <state x="283" y="122" width="1335" height="922" key="FileChooserDialogImpl" timestamp="1747396975918">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="283" y="122" width="1335" height="922" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1747396975918" />
+    <state x="693" y="389" width="524" height="306" key="Github.ShareDialog" timestamp="1741703833827">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="693" y="389" width="524" height="306" key="Github.ShareDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1741703833827" />
+    <state width="1838" height="307" key="GridCell.Tab.0.bottom" timestamp="1747649007519">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1838" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1744280528723" />
+    <state width="1838" height="307" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1747649007519" />
+    <state width="1838" height="307" key="GridCell.Tab.0.center" timestamp="1747649007518">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1838" height="284" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1744280528723" />
+    <state width="1838" height="307" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1747649007518" />
+    <state width="1838" height="307" key="GridCell.Tab.0.left" timestamp="1747649007518">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1838" height="284" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1744280528723" />
+    <state width="1838" height="307" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1747649007518" />
+    <state width="1838" height="307" key="GridCell.Tab.0.right" timestamp="1747649007519">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1838" height="284" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1744280528723" />
+    <state width="1838" height="307" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1747649007519" />
+    <state x="0" y="0" width="1920" height="1080" key="IDE.errors.dialog" timestamp="1747637918291">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1920" y="0" key="IDE.errors.dialog/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1744267392741" />
+    <state x="0" y="0" width="1920" height="1080" key="IDE.errors.dialog/0.0.1920.1080@0.0.1920.1080" timestamp="1747637918291" />
+    <state x="0" y="0" width="860" height="427" key="ProcessPopupWindow" timestamp="1748888606883">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="0" y="0" width="860" height="427" key="ProcessPopupWindow/0.0.1920.1080@0.0.1920.1080" timestamp="1748888606883" />
+    <state x="732" y="211" width="457" height="693" key="ScreenshotViewer.Dimensions" timestamp="1740384587647">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="732" y="211" width="457" height="693" key="ScreenshotViewer.Dimensions/0.0.1920.1080@0.0.1920.1080" timestamp="1740384587647" />
+    <state x="469" y="207" key="SettingsEditor" timestamp="1746783561216">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2389" y="207" key="SettingsEditor/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1744267598269" />
+    <state x="469" y="207" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1746783561216" />
+    <state x="2480" y="290" key="Vcs.Push.Dialog.v2" timestamp="1744280494099">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2480" y="290" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1744280494099" />
+    <state x="762" y="294" key="chooseDestDirectoryDialog" timestamp="1747643914561">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="762" y="294" key="chooseDestDirectoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1747643914561" />
+    <state x="698" y="229" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1746780639140">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="698" y="229" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1746780639140" />
+    <state x="639" y="0" width="715" height="825" key="find.popup" timestamp="1747647786753">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2596" y="131" width="688" height="727" key="find.popup/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1744271490492" />
+    <state x="639" y="0" width="715" height="825" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1747647786753" />
+    <state x="0" y="0" width="700" height="530" key="recent.locations.popup" timestamp="1747637452882">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2529" y="274" width="700" height="530" key="recent.locations.popup/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1744268880609" />
+    <state x="0" y="0" width="700" height="530" key="recent.locations.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1747637452882" />
+    <state x="0" y="0" key="run.anything.popup" timestamp="1747637586622">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2544" y="247" key="run.anything.popup/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1744279670273" />
+    <state x="0" y="0" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1747637586622" />
+    <state x="0" y="0" width="672" height="189" key="search.everywhere.popup" timestamp="1747648028392">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2543" y="254" width="706" height="713" key="search.everywhere.popup/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1744279421649" />
+    <state x="0" y="0" width="672" height="189" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1747648028392" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/new.dart" />
+    <entry file="file:///usr/lib/flutter/packages/flutter/lib/src/material/icons.dart" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/component/InfiniteCarousel.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/component/LocationAndSearchBar.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="53" column="12" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/pages/Homepage/homepage.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/flutter/packages/flutter/lib/src/widgets/framework.dart" />
+    <entry file="file://$PROJECT_DIR$/android/yala_android.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pubspec.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/component/BottomNavBar.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/kotlin/com/yala/yala/MainActivity.kt">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="132">
+            <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          </editor-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="21" lean-forward="true" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="767">
+          <caret line="67" column="1" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/studio64.vmoptions">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yala.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/flutter/bin/cache/dart-sdk/lib/_http/http_impl.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="3218" column="11" selection-start-line="3218" selection-start-column="11" selection-end-line="3218" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/main.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+          <folding>
+            <element signature="e#13#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/widget_test.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#0#1048#0" expanded="true" />
+            <element signature="e#363#402#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/flutter/bin/flutter">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/flutter/packages/flutter/lib/src/widgets/framework.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="799" column="8" selection-start-line="799" selection-start-column="8" selection-end-line="799" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="43" lean-forward="true" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+          <folding>
+            <element signature="e#210#1399#0" />
+            <element signature="e#1998#2179#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/pages/Addpage/addpage.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1148">
+          <caret line="72" column="31" lean-forward="true" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/pages/Explorepage/explorepage.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4032">
+          <caret line="169" column="21" selection-start-line="169" selection-start-column="21" selection-end-line="169" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -5,7 +5,7 @@
     "Windows": {
       "app_name": "56a31432931740cdb0112d237d7d65aa",
       "asset_id": "56a31432931740cdb0112d237d7d65aa",
-      "build_version": "1.0.24.133147",
+      "build_version": "1.0.25.138686",
       "catalog_item_id": "db2967c067614552a6245145fe42a9a8",
       "label_name": "Live-Windows",
       "metadata": {
@@ -146,7 +146,6 @@
           "egstore"
         ],
         "id": "64bbd28914084efe88348677a2eb0fd2",
-        "installModes": [],
         "itemType": "CONSUMABLE",
         "lastModifiedDate": "2024-03-14T14:55:21.335Z",
         "mainGameItem": {
@@ -197,7 +196,6 @@
           "egstore"
         ],
         "id": "15594f9678e341e79a0606d251c712ca",
-        "installModes": [],
         "itemType": "DURABLE",
         "lastModifiedDate": "2024-03-14T14:55:29.216Z",
         "mainGameItem": {
@@ -247,7 +245,6 @@
           "egstore"
         ],
         "id": "4bc2fe034c404bb59a4d72a556bf1919",
-        "installModes": [],
         "itemType": "CONSUMABLE",
         "lastModifiedDate": "2024-03-14T14:55:21.330Z",
         "mainGameItem": {
@@ -295,7 +292,6 @@
           "egstore"
         ],
         "id": "2b555312a422414eaf781a8b7c6dda3a",
-        "installModes": [],
         "itemType": "DURABLE",
         "keyImages": [
           {
@@ -373,7 +369,6 @@
           "egstore"
         ],
         "id": "7c65c1c1282d4e0b889b23e066e60249",
-        "installModes": [],
         "itemType": "CONSUMABLE",
         "lastModifiedDate": "2024-03-14T14:55:21.342Z",
         "mainGameItem": {
@@ -4174,6 +4169,72 @@
         "status": "ACTIVE",
         "title": "Pinball FX - Williams Pinball Volume 8",
         "unsearchable": true
+      },
+      {
+        "ageGatings": {},
+        "applicationId": "",
+        "categories": [
+          {
+            "path": "addons"
+          }
+        ],
+        "creationDate": "2025-05-20T14:49:38.330Z",
+        "customAttributes": {
+          "CanRunOffline": {
+            "type": "STRING",
+            "value": "true"
+          }
+        },
+        "description": "Pinball FX - Tomb Raider Pinball",
+        "developer": "Zen Studios",
+        "developerId": "o-r7rf64mtq3yr8uhhvdf8sba3hpqbj2",
+        "endOfSupport": false,
+        "entitlementName": "a9c528fb5d00455a8cac1d0971596218",
+        "entitlementType": "EXECUTABLE",
+        "eulaIds": [
+          "egstore"
+        ],
+        "id": "a9c528fb5d00455a8cac1d0971596218",
+        "itemType": "DURABLE",
+        "keyImages": [
+          {
+            "height": 1440,
+            "md5": "4deced26a1cf9c27a570bf93e001ec9c",
+            "size": 863146,
+            "type": "DieselGameBox",
+            "uploadedDate": "2025-06-12T11:46:49.845Z",
+            "url": "https://cdn1.epicgames.com/item/c11f80fe3b674a2bbf60e4c46d588a54/EGS_PinballFXTombRaiderPinball_ZenStudios_AddOn_S1_2560x1440-4deced26a1cf9c27a570bf93e001ec9c",
+            "width": 2560
+          },
+          {
+            "height": 1600,
+            "md5": "9bd11c32a5e7583923faff9757d3dd8f",
+            "size": 895238,
+            "type": "DieselGameBoxTall",
+            "uploadedDate": "2025-06-12T11:46:54.743Z",
+            "url": "https://cdn1.epicgames.com/item/c11f80fe3b674a2bbf60e4c46d588a54/EGS_PinballFXTombRaiderPinball_ZenStudios_AddOn_S2_1200x1600-9bd11c32a5e7583923faff9757d3dd8f",
+            "width": 1200
+          }
+        ],
+        "lastModifiedDate": "2025-06-20T13:27:35.541Z",
+        "mainGameItem": {
+          "id": "db2967c067614552a6245145fe42a9a8",
+          "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+          "unsearchable": false
+        },
+        "mainGameItemList": [
+          {
+            "id": "db2967c067614552a6245145fe42a9a8",
+            "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+            "unsearchable": false
+          }
+        ],
+        "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
+        "releaseInfo": [],
+        "requiresSecureAccount": false,
+        "status": "ACTIVE",
+        "title": "Pinball FX - Tomb Raider Pinball",
+        "unsearchable": true
       }
     ],
     "endOfSupport": false,
@@ -4183,7 +4244,6 @@
       "egstore"
     ],
     "id": "db2967c067614552a6245145fe42a9a8",
-    "installModes": [],
     "itemType": "DURABLE",
     "keyImages": [
       {
@@ -4205,7 +4265,7 @@
         "width": 1200
       }
     ],
-    "lastModifiedDate": "2024-12-12T15:49:54.911Z",
+    "lastModifiedDate": "2025-05-20T14:49:38.341Z",
     "mainGameItemList": [],
     "namespace": "c11f80fe3b674a2bbf60e4c46d588a54",
     "releaseInfo": [

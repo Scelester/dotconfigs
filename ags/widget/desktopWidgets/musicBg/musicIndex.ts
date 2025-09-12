@@ -25,7 +25,12 @@ export const musicBG = () => {
             let lines = statusOutput.trim().split("\n");
             let mpcTitle;
             if (lines.length === 0 || !isPlayingNow) {
-                mpcTitle = "... No Song Playing";
+                if (!statusOutput.includes("[paused]")) {
+                    mpcTitle = ".. No Song Playing";
+                }else{
+                    mpcTitle = lines[0];
+                }
+
             } else {
                 mpcTitle = lines[0];
             }
@@ -38,6 +43,11 @@ export const musicBG = () => {
                     : "media-playback-start-symbolic"
             );
         } catch (error) {
+            Utils.notify({
+                summary: "error",
+                body: `err:${error}`,
+            });
+
             songTitle.setValue("... No Song Playing");
         }
     };

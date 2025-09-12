@@ -4,23 +4,16 @@ Installed in: /home/scelester/Games/Heroic/ULTRAKILL
 
 System Info:
 CPU: 8x Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz
-Memory: 16.6 GB (used: 6.55 GB)
+Memory: 16.59 GB (used: 3.09 GB)
 GPUs:
-  GPU 0:
-    Name: NVIDIA Corporation TU117M [GeForce GTX 1650 Mobile / Max-Q]
-    IDs: D=1f99 V=10de SD=177f SV=1043
-    Driver: nvidia
-  GPU 1:
-    Name: Intel Corporation CometLake-H GT2 [UHD Graphics]
-    IDs: D=9bc4 V=8086 SD=177f SV=1043
-    Driver: i915
-OS: Archcraft 6.13.6-arch1-1 (linux)
+
+OS: Archcraft 6.14.5-arch1-1 (linux)
 
 The current system is not a Steam Deck
 We are not running inside a Flatpak container
 
 Software Versions:
-  Heroic: 2.16.0 Scopper Gaban
+  Heroic: 2.16.1 Scopper Gaban
   Legendary: 0.20.36 Urban Flight (Heroic)
   gogdl: 1.1.2
   comet: comet 0.2.0
@@ -34,8 +27,14 @@ Game Settings: {
 	"enableEsync": true,
 	"enableMsync": false,
 	"enableFsync": true,
+	"launcherArgs": "",
 	"nvidiaPrime": false,
-	"enviromentOptions": [],
+	"enviromentOptions": [
+		{
+			"key": "LD_PRELOAD",
+			"value": "\"\""
+		}
+	],
 	"wrapperOptions": [],
 	"showFps": false,
 	"useGameMode": false,
@@ -44,6 +43,20 @@ Game Settings: {
 	"language": "",
 	"beforeLaunchScriptPath": "",
 	"afterLaunchScriptPath": "",
+	"gamescope": {
+		"enableUpscaling": false,
+		"enableLimiter": false,
+		"enableForceGrabCursor": false,
+		"windowType": "fullscreen",
+		"gameWidth": "",
+		"gameHeight": "",
+		"upscaleHeight": "",
+		"upscaleWidth": "",
+		"upscaleMethod": "fsr",
+		"fpsLimiter": "",
+		"fpsLimiterNoFocus": "",
+		"additionalOptions": ""
+	},
 	"verboseLogs": false,
 	"wineVersion": {
 		"bin": "/home/scelester/.local/share/Steam/compatibilitytools.d/GE-Proton9-25/proton",
@@ -51,11 +64,9 @@ Game Settings: {
 		"type": "proton"
 	},
 	"winePrefix": "/home/scelester/Games/Heroic/Prefixes/default/UltraKill",
-	"wineCrossoverBottle": ""
+	"wineCrossoverBottle": "",
+	"enableDXVKFpsLimit": false
 }
 
-Game launched at: Fri Mar 14 2025 14:08:33 GMT+0545 (Nepal Time)
+Game launched at: Wed May 14 2025 19:50:08 GMT+0545 (Nepal Time)
 
-Winetricks packages: 
-
-============= End of log =============

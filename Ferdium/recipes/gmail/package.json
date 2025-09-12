@@ -1,0 +1,10 @@
+{
+  "id": "gmail",
+  "name": "Gmail",
+  "version": "1.6.3",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://mail.google.com"
+  },
+  "defaultIcon": "https://cdn.jsdelivr.net/gh/ferdium/ferdium-recipes@main/recipes/gmail/icon.svg"
+}

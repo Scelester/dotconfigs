@@ -60,10 +60,6 @@
         "type": "STRING",
         "value": "true"
       },
-      "UseAccessControl": {
-        "type": "STRING",
-        "value": "false"
-      },
       "extraLaunchOption_001_Args": {
         "type": "STRING",
         "value": "-nobattleye"
@@ -702,7 +698,6 @@
           "egstore"
         ],
         "id": "094da37630e84ab389a4ec359d6f7aaa",
-        "installModes": [],
         "itemType": "DURABLE",
         "keyImages": [
           {
@@ -1017,7 +1012,6 @@
           "egstore"
         ],
         "id": "4c3d3fad6d0a42659113933165f0accf",
-        "installModes": [],
         "itemType": "DURABLE",
         "keyImages": [
           {
@@ -1306,7 +1300,7 @@
         "width": 1200
       }
     ],
-    "lastModifiedDate": "2020-06-11T14:27:42.814Z",
+    "lastModifiedDate": "2025-06-20T22:32:33.494Z",
     "mainGameItemList": [],
     "namespace": "ark",
     "releaseInfo": [

@@ -111,28 +111,28 @@
   },
   "geometry-of-import-foreign-geometry": {
     "frame_geometry": {
-      "height": 495,
-      "width": 933,
+      "height": 494,
+      "width": 468,
       "x": 0,
       "y": 0
     },
     "full_screened": false,
     "geometry": {
-      "height": 495,
-      "width": 933,
+      "height": 494,
+      "width": 468,
       "x": 0,
       "y": 0
     },
     "maximized": true,
     "normal_geometry": {
-      "height": 1045,
-      "width": 960,
+      "height": 494,
+      "width": 468,
       "x": 0,
       "y": 0
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAAAAAAAAAAAA6QAAAHuAAAAAAAAAAAAAAO/AAAEFAAAAAACAAAAB4AAAAAAAAAAAAAAA6QAAAHu"
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAAAdMAAAHtAAAAAAAAAAAAAAHTAAAB7QAAAAACAAAAB4AAAAAAAAAAAAAAAdMAAAHt"
     },
     "screen": {
       "depth": 32,
@@ -162,28 +162,28 @@
   },
   "geometry-of-main_window_geometry": {
     "frame_geometry": {
-      "height": 1003,
-      "width": 933,
-      "x": 0,
-      "y": 0
+      "height": 1042,
+      "width": 1920,
+      "x": 495,
+      "y": 20
     },
     "full_screened": false,
     "geometry": {
-      "height": 1003,
-      "width": 933,
-      "x": 0,
-      "y": 0
+      "height": 1042,
+      "width": 1920,
+      "x": 495,
+      "y": 20
     },
     "maximized": true,
     "normal_geometry": {
-      "height": 1080,
+      "height": 1042,
       "width": 1920,
-      "x": 0,
-      "y": 0
+      "x": 495,
+      "y": 20
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAAAAAAAAAAAA6QAAAPqAAAAAAAAAAAAAAd/AAAENwAAAAACAAAAB4AAAAAAAAAAAAAAA6QAAAPq"
+      "__value__": "AdnQywADAAAAAAHvAAAAFAAACW4AAAQlAAAB7wAAABQAAAluAAAEJQAAAAACAAAAB4AAAAHvAAAAFAAACW4AAAQl"
     },
     "screen": {
       "depth": 32,
@@ -221,11 +221,12 @@
   },
   "main_window_state": {
     "__class__": "bytearray",
-    "__value__": "AAAA/wAAAAD9AAAABAAAAAAAAAA2AAADmPwCAAAABfsAAAAkAGYAaQBsAGUAcwAtAGIAcgBvAHcAcwBlAHIALQBkAG8AYwBrAQAAADsAAAOYAAAAPwD////7AAAAHgB0AG8AYwAtAHYAaQBlAHcAZQByAC0AZABvAGMAawAAAAAA/////wAAAD8A////+wAAACAAdABlAHgAdAAtAHMAZQBhAHIAYwBoAC0AZABvAGMAawAAAAAA/////wAAAIQA////+wAAACAAYwBoAGUAYwBrAHAAbwBpAG4AdABzAC0AZABvAGMAawAAAAAA/////wAAAHIA////+wAAACYAcwBhAHYAZQBkAC0AcwBlAGEAcgBjAGgAZQBzAC0AZABvAGMAawAAAAAA/////wAAAiQA////AAAAAQAAAEUAAAOY/AIAAAAC+wAAABgAcAByAGUAdgBpAGUAdwAtAGQAbwBjAGsBAAAAOwAAA5gAAABRAP////sAAAAaAGwAaQB2AGUALQBjAHMAcwAtAGQAbwBjAGsAAAAAAP////8AAABLAP///wAAAAIAAAAAAAAAAPwBAAAAAfsAAAAeAGMAaABlAGMAawAtAGIAbwBvAGsALQBkAG8AYwBrAAAAAAD/////AAAAWAD///8AAAADAAAAAAAAAAD8AQAAAAH7AAAAHABpAG4AcwBwAGUAYwB0AG8AcgAtAGQAbwBjAGsAAAAAAP////8AAAA2AP///wAAAx4AAAOYAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAMAAAAUAGcAbABvAGIAYQBsAC0AYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABIAdABvAG8AbABzAC0AYgBhAHIBAAABIv////8AAAAAAAAAAAAAABYAcABsAHUAZwBpAG4AcwAtAGIAYQByAAAAAAD/////AAAAAAAAAAA="
+    "__value__": "AAAA/wAAAAD9AAAABAAAAAAAAAA2AAADv/wCAAAABfsAAAAkAGYAaQBsAGUAcwAtAGIAcgBvAHcAcwBlAHIALQBkAG8AYwBrAQAAADsAAAO/AAAAPwD////7AAAAHgB0AG8AYwAtAHYAaQBlAHcAZQByAC0AZABvAGMAawAAAAAA/////wAAAD8A////+wAAACAAdABlAHgAdAAtAHMAZQBhAHIAYwBoAC0AZABvAGMAawAAAAAA/////wAAAIEA////+wAAACAAYwBoAGUAYwBrAHAAbwBpAG4AdABzAC0AZABvAGMAawAAAAAA/////wAAAHIA////+wAAACYAcwBhAHYAZQBkAC0AcwBlAGEAcgBjAGgAZQBzAC0AZABvAGMAawAAAAAA/////wAAAiQA////AAAAAQAAAcMAAAO//AIAAAAC+wAAABgAcAByAGUAdgBpAGUAdwAtAGQAbwBjAGsBAAAAOwAAA78AAABRAP////sAAAAaAGwAaQB2AGUALQBjAHMAcwAtAGQAbwBjAGsAAAAAAP////8AAABLAP///wAAAAIAAAAAAAAAAPwBAAAAAfsAAAAeAGMAaABlAGMAawAtAGIAbwBvAGsALQBkAG8AYwBrAAAAAAD/////AAAAWAD///8AAAADAAAAAAAAAAD8AQAAAAH7AAAAHABpAG4AcwBwAGUAYwB0AG8AcgAtAGQAbwBjAGsAAAAAAP////8AAAA2AP///wAABXsAAAO/AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAMAAAAUAGcAbABvAGIAYQBsAC0AYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABIAdABvAG8AbABzAC0AYgBhAHIBAAABIv////8AAAAAAAAAAAAAABYAcABsAHUAZwBpAG4AcwAtAGIAYQByAAAAAAD/////AAAAAAAAAAA="
   },
   "merge_identical_selectors": true,
   "merge_rules_with_identical_properties": true,
   "recent-books": [
+    "/home/scelester/Downloads/DEPLOYING ACTIVE DIRECTORY.epub",
     "/home/scelester/Calibre Library/Jane Austen/Pride and Prejudice (25)/Pride and Prejudice - Jane Austen.epub",
     "/home/scelester/Calibre Library/George Orwell/Animal Farm (27)/Animal Farm - George Orwell.epub",
     "/home/scelester/Calibre Library/Scelester/Against the gods_0-2029 (22)/Against the gods_0-2029 - Scelester.epub",

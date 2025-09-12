@@ -1,0 +1,6 @@
+2025/09/11-23:01:10.462 dd1 Reusing MANIFEST /home/scelester/.config/Ferdium/Partitions/service-0ca9357c-d8f4-41f1-84e4-00277f7a1d2b/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/09/11-23:01:10.462 dd1 Recovering log #4
+2025/09/11-23:01:10.467 dd1 Reusing old log /home/scelester/.config/Ferdium/Partitions/service-0ca9357c-d8f4-41f1-84e4-00277f7a1d2b/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000004.log 
+2025/09/11-23:01:30.989 dd1 Level-0 table #8: started
+2025/09/11-23:01:31.011 dd1 Level-0 table #8: 3210981 bytes OK
+2025/09/11-23:01:31.016 dd1 Delete type=0 #4

@@ -1,0 +1,382 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="Task-management" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="1h5g5c01jiv4o" SIDE_TABS_SIZE_LIMIT_KEY="-1" />
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "JAVA": {
+      "usageCount": 7,
+      "lastUsed": 1747408268684
+    }
+  }
+}]]></component>
+  <component name="GitSEFilterConfiguration"><![CDATA[{}]]></component>
+  <component name="IdeDocumentHistory">{}</component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="JAVA">
+      <summary usageCount="7" lastUsage="1747408268689" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="AndroidView" proportions="" version="1" />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Task-management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/scelester/Container/ProjectD/App AUS java/Task-management}" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+          <presentation>
+            <attributes />
+            <data iconPath="icons/toolwindows/toolWindowProject.svg" iconPlugin="com.mallowigi" isLeaf="false" text="Task-management" />
+            <item name="Task-management" type="b2602c69:ProjectViewProjectNode" />
+            <presentation>
+              <attributes>
+                <map>
+                  <entry key="filePath" value="$USER_HOME$/Container/ProjectD/App AUS java/Task-management" />
+                </map>
+              </attributes>
+              <data iconPath="icons/mt/modules/ModuleOpen.svg" iconPlugin="com.mallowigi" isLeaf="false" text="Task-management" />
+              <item name="dir{file:///home/scelester/Container/ProjectD/App AUS java/Task-management}" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$USER_HOME$/Container/ProjectD/App AUS java/Task-management/.gradle" />
+                  </map>
+                </attributes>
+                <data isLeaf="false" text=".gradle" />
+                <item name="dir{file:///home/scelester/Container/ProjectD/App AUS java/Task-management/.gradle}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$USER_HOME$/Container/ProjectD/App AUS java/Task-management/app" />
+                  </map>
+                </attributes>
+                <data isLeaf="false" text="app" />
+                <item name="dir{file:///home/scelester/Container/ProjectD/App AUS java/Task-management/app}" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$USER_HOME$/Container/ProjectD/App AUS java/Task-management/gradle" />
+                  </map>
+                </attributes>
+                <data isLeaf="false" text="gradle" />
+                <item name="dir{file:///home/scelester/Container/ProjectD/App AUS java/Task-management/gradle}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$USER_HOME$/Container/ProjectD/App AUS java/Task-management/.gitignore" />
+                  </map>
+                </attributes>
+                <data isLeaf="true" text=".gitignore" />
+                <item name=".gitignore" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$USER_HOME$/Container/ProjectD/App AUS java/Task-management/build.gradle.kts" />
+                  </map>
+                </attributes>
+                <data isLeaf="true" text="build.gradle.kts" />
+                <item name="build.gradle.kts" type="24436e51:KtFileTreeNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$USER_HOME$/Container/ProjectD/App AUS java/Task-management/gradle.properties" />
+                  </map>
+                </attributes>
+                <data isLeaf="true" text="gradle.properties" />
+                <item name="gradle.properties" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$USER_HOME$/Container/ProjectD/App AUS java/Task-management/gradlew" />
+                  </map>
+                </attributes>
+                <data isLeaf="true" text="gradlew" />
+                <item name="gradlew" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$USER_HOME$/Container/ProjectD/App AUS java/Task-management/gradlew.bat" />
+                  </map>
+                </attributes>
+                <data isLeaf="true" text="gradlew.bat" />
+                <item name="gradlew.bat" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$USER_HOME$/Container/ProjectD/App AUS java/Task-management/local.properties" />
+                  </map>
+                </attributes>
+                <data isLeaf="true" text="local.properties" />
+                <item name="local.properties" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$USER_HOME$/Container/ProjectD/App AUS java/Task-management/settings.gradle.kts" />
+                  </map>
+                </attributes>
+                <data isLeaf="true" text="settings.gradle.kts" />
+                <item name="settings.gradle.kts" type="24436e51:KtFileTreeNode" />
+              </presentation>
+            </presentation>
+            <presentation>
+              <attributes>
+                <map>
+                  <entry key="filePath" value="$PROJECT_DIR$/.gitignore" />
+                </map>
+              </attributes>
+              <data iconPath="icons/vcs/ignore_file.svg" iconPlugin="com.mallowigi" isLeaf="true" text=".gitignore" />
+              <item name=".gitignore" type="ab9368bb:PsiFileNode" />
+            </presentation>
+            <presentation>
+              <attributes>
+                <map>
+                  <entry key="filePath" value="$PROJECT_DIR$/build.gradle.kts" />
+                </map>
+              </attributes>
+              <data iconPath="files/plugins/kotlin/kotlin_gradle_script.svg" iconPlugin="com.mallowigi" isLeaf="true" text="build.gradle.kts" />
+              <item name="build.gradle.kts" type="24436e51:KtFileTreeNode" />
+            </presentation>
+            <presentation>
+              <attributes>
+                <map>
+                  <entry key="filePath" value="$PROJECT_DIR$/gradle.properties" />
+                </map>
+              </attributes>
+              <data iconPath="files/fileTypes/properties.svg" iconPlugin="com.mallowigi" isLeaf="true" text="gradle.properties" />
+              <item name="gradle.properties" type="ab9368bb:PsiFileNode" />
+            </presentation>
+            <presentation>
+              <attributes>
+                <map>
+                  <entry key="filePath" value="$PROJECT_DIR$/gradlew" />
+                </map>
+              </attributes>
+              <data iconPath="icons/nodes/console.svg" iconPlugin="com.mallowigi" isLeaf="true" text="gradlew" />
+              <item name="gradlew" type="ab9368bb:PsiFileNode" />
+            </presentation>
+            <presentation>
+              <attributes>
+                <map>
+                  <entry key="filePath" value="$PROJECT_DIR$/gradlew.bat" />
+                </map>
+              </attributes>
+              <data iconPath="files/fileTypes/text.svg" iconPlugin="com.mallowigi" isLeaf="true" text="gradlew.bat" />
+              <item name="gradlew.bat" type="ab9368bb:PsiFileNode" />
+            </presentation>
+            <presentation>
+              <attributes>
+                <map>
+                  <entry key="filePath" value="$PROJECT_DIR$/local.properties" />
+                </map>
+              </attributes>
+              <data iconPath="files/fileTypes/properties.svg" iconPlugin="com.mallowigi" isLeaf="true" text="local.properties" />
+              <item name="local.properties" type="ab9368bb:PsiFileNode" />
+            </presentation>
+            <presentation>
+              <attributes>
+                <map>
+                  <entry key="filePath" value="$PROJECT_DIR$/settings.gradle.kts" />
+                </map>
+              </attributes>
+              <data iconPath="files/plugins/kotlin/kotlin_gradle_script.svg" iconPlugin="com.mallowigi" isLeaf="true" text="settings.gradle.kts" />
+              <item name="settings.gradle.kts" type="24436e51:KtFileTreeNode" />
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="icons/nodes/ppLib.svg" iconPlugin="com.mallowigi" isLeaf="false" text="External Libraries" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="icons/scope/scratches.svg" iconPlugin="com.mallowigi" isLeaf="true" text="Scratches and Consoles" />
+              <item name="Scratches and Consoles" type="b85a3e1f:ScratchTreeStructureProvider$MyProjectNode" />
+            </presentation>
+          </presentation>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Task-management" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Task management" type="e9137016:NonAndroidModuleNode" />
+            </path>
+            <path>
+              <item name="Task-management" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Task management" type="e9137016:NonAndroidModuleNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+          </expand>
+          <select />
+          <presentation>
+            <attributes />
+            <data iconPath="icons/toolwindows/toolWindowProject.svg" iconPlugin="com.mallowigi" isLeaf="false" text="Task-management" />
+            <item name="Task-management" type="1abcf292:AndroidViewProjectNode" />
+            <presentation>
+              <attributes />
+              <data iconPath="icons/nodes/Module.svg" iconPlugin="com.mallowigi" isLeaf="true" text=":" />
+              <item name=":" type="e9137016:NonAndroidModuleNode" />
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="icons/nodes/Module.svg" iconPlugin="com.mallowigi" isLeaf="false" text="Task management" />
+              <item name="Task management" type="e9137016:NonAndroidModuleNode" />
+              <presentation>
+                <attributes />
+                <data iconPath="icons/nodes/Module.svg" iconPlugin="com.mallowigi" isLeaf="false" text="app" />
+                <item name="app" type="feadf853:AndroidModuleNode" />
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$USER_HOME$/Container/ProjectD/App AUS java/Task-management/app" />
+                    </map>
+                  </attributes>
+                  <data isLeaf="false" text="app" />
+                  <item name="dir{file:///home/scelester/Container/ProjectD/App AUS java/Task-management/app}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes />
+                  <data iconPath="icons/nodes/Module.svg" iconPlugin="com.mallowigi" isLeaf="false" text="androidTest" />
+                  <item name="androidTest" type="feadf853:AndroidModuleNode" />
+                </presentation>
+                <presentation>
+                  <attributes />
+                  <data iconPath="icons/nodes/Module.svg" iconPlugin="com.mallowigi" isLeaf="false" text="main" />
+                  <item name="main" type="feadf853:AndroidModuleNode" />
+                </presentation>
+                <presentation>
+                  <attributes />
+                  <data iconPath="icons/nodes/Module.svg" iconPlugin="com.mallowigi" isLeaf="false" text="unitTest" />
+                  <item name="unitTest" type="feadf853:AndroidModuleNode" />
+                </presentation>
+              </presentation>
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="icons/plugins/gradle/gradle.svg" iconPlugin="com.mallowigi" isLeaf="false" text="Gradle Scripts" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
+            </presentation>
+          </presentation>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="ReaderModeSettings">
+    <option name="enableVisualFormatting" value="false" />
+  </component>
+  <component name="TerminalArrangementManager">
+    <option name="myTabStates">
+      <TerminalTabState tabName="Local">
+        <shellCommand>
+          <arg value="/bin/zsh" />
+          <arg value="-i" />
+        </shellCommand>
+      </TerminalTabState>
+    </option>
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26380208" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Resources Explorer" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.3296545" />
+      <window_info anchor="bottom" id="Problems" order="2" />
+      <window_info anchor="bottom" id="Problems View" order="3" />
+      <window_info anchor="bottom" id="Logcat" order="4" />
+      <window_info anchor="bottom" id="App Quality Insights" order="5" />
+      <window_info anchor="bottom" id="Build" order="6" show_stripe_button="false" weight="0.3296545" />
+      <window_info anchor="right" id="Notifications" order="0" weight="0.32994792" />
+      <window_info anchor="right" id="Gradle" order="1" weight="0.32994792" />
+      <window_info anchor="right" id="Device Manager" order="2" weight="0.25" />
+      <window_info active="true" anchor="right" id="Device Manager 2" order="3" visible="true" weight="0.20651042" />
+      <window_info anchor="right" id="Running Devices" order="4" weight="0.32994792" />
+      <window_info anchor="right" id="StudioBot" order="5" weight="0.25" />
+      <window_info anchor="right" id="Flutter Property Editor" order="6" />
+      <window_info anchor="right" id="Flutter DevTools" order="7" />
+      <window_info anchor="right" id="Flutter DevTools Extensions" order="8" />
+      <window_info anchor="right" id="Flutter Deep Links" order="9" />
+      <unified_weights bottom="0.3296545" left="0.26380208" right="0.20651042" />
+    </layoutV2>
+    <recentWindows>
+      <value>Build</value>
+      <value>Project</value>
+      <value>Device Manager 2</value>
+      <value>Running Devices</value>
+      <value>Terminal</value>
+      <value>Notifications</value>
+      <value>Gradle</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="560" y="163" width="860" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1747397289361">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="560" y="163" width="860" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1747397289361" />
+    <state x="748" y="263" key="FileChooserDialogImpl" timestamp="1747398061916">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="748" y="263" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1747398061916" />
+    <state x="0" y="0" width="553" height="280" key="ProcessPopupWindow" timestamp="1747408425506">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="0" y="0" width="553" height="280" key="ProcessPopupWindow/0.0.1920.1080@0.0.1920.1080" timestamp="1747408425506" />
+    <state x="0" y="0" width="670" height="180" key="search.everywhere.popup" timestamp="1747408455961">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="0" y="0" width="670" height="180" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1747408455961" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/Container/ProjectD/App AUS java/Task-management/app/src/main/java/com/example/taskmanagement/changePassword.java">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="600">
+            <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+            <folding>
+              <element signature="e#37#393#0" expanded="true" />
+            </folding>
+          </editor-state>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Container/ProjectD/App AUS java/Task-management/app/src/main/java/com/example/taskmanagement/MainActivity.java">
+      <provider selected="true" editor-type-id="android-source-code">
+        <state>
+          <editor-state relative-caret-position="222">
+            <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+          </editor-state>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

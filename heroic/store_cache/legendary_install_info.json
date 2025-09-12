@@ -1,1 +1,46 @@
-{}
+{
+	"602eb4abc8764c87b7f2607a1ef8c18e": {
+		"game": {
+			"app_name": "602eb4abc8764c87b7f2607a1ef8c18e",
+			"title": "VALORANT",
+			"version": "2609-591",
+			"platform_versions": {
+				"Windows": "2609-591"
+			},
+			"cloud_saves_supported": false,
+			"cloud_save_folder": null,
+			"cloud_save_folder_mac": null,
+			"is_dlc": false,
+			"external_activation": null,
+			"launch_options": [],
+			"command_line": null,
+			"owned_dlc": []
+		},
+		"install": null,
+		"manifest": {
+			"size": 4171,
+			"type": "binary",
+			"version": 21,
+			"feature_level": 21,
+			"app_name": "0578b99425c844c1874a2b99bfadd74e",
+			"launch_exe": "Live.exe",
+			"launch_command": "--launch-product=valorant --launch-patchline=live --thirdparty",
+			"build_version": "2609-591",
+			"build_id": "UcMIaU9NR9SxqgkJvbl12g",
+			"prerequisites": null,
+			"uninstaller": null,
+			"install_tags": [
+				""
+			],
+			"num_files": 1,
+			"num_chunks": 71,
+			"disk_size": 73632944,
+			"download_size": 67286120,
+			"tag_disk_size": [],
+			"tag_download_size": []
+		}
+	},
+	"__timestamp": {
+		"602eb4abc8764c87b7f2607a1ef8c18e": "Sun Jul 13 2025 22:10:50 GMT+0545 (Nepal Time)"
+	}
+}

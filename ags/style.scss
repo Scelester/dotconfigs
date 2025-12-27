@@ -1,0 +1,729 @@
+/* Minimal dark grid skin for the bar, dashboard, and OSD */
+
+$neo-bg: #050812;
+$neo-surface: #0c1220;
+$neo-card: #111a2d;
+$neo-ink: #e7edf7;
+$neo-muted: #9fb2cf;
+$neo-accent: #58d2ff;
+$neo-accent-2: #9d8cff;
+$neo-accent-3: #f2c572;
+$neo-emerald: #5ae4a7;
+$neo-shadow: rgba(0, 0, 0, 0.34);
+
+/* Base */
+* {
+  color: $neo-ink;
+  font-family: "JetBrainsMono Nerd Font", "Fira Code Nerd Font", "Inter", "sans-serif";
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1.35;
+}
+
+label {
+  letter-spacing: 0.05em;
+}
+
+window {
+  background: transparent;
+}
+
+/* Bar */
+window.bar {
+  background: transparent;
+  font-size: 10px;
+}
+
+window.bar label {
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+}
+
+window.bar .bar-content {
+  padding: 4px 8px;
+  border: 1px solid rgba($neo-ink, 0.14);
+  border-radius: 9px;
+  background: linear-gradient(180deg, rgba($neo-card, 0.92), rgba($neo-surface, 0.94));
+  box-shadow: 0 8px 24px $neo-shadow;
+}
+
+window.bar button {
+  background: rgba($neo-surface, 0.95);
+  border: 1px solid rgba($neo-ink, 0.16);
+  border-radius: 5px;
+  padding: 3px;
+  min-width: 20px;
+  min-height: 20px;
+  box-shadow: none;
+  transition: background 120ms ease, border-color 120ms ease;
+}
+
+window.bar button:hover {
+  background: rgba($neo-accent, 0.14);
+  border-color: rgba($neo-accent, 0.55);
+}
+
+window.bar button:active {
+  background: rgba($neo-accent, 0.22);
+}
+
+window.bar .launcher {
+  background: rgba($neo-accent, 0.25);
+  color: $neo-ink;
+  border-color: rgba($neo-accent, 0.55);
+  font-size: 14px;
+  padding: 4px 6px;
+  min-width: 28px;
+  min-height: 28px;
+  border-radius: 8px;
+}
+
+window.bar .workspaces {
+  padding: 4px;
+  border: 1px solid rgba($neo-ink, 0.12);
+  border-radius: 7px;
+  background: rgba($neo-card, 0.9);
+  display: flex;
+  align-items: center;
+}
+
+window.bar .workspace-btn {
+  min-width: 20px;
+  min-height: 20px;
+  padding: 3px;
+  border-radius: 4px;
+  background: rgba($neo-surface, 0.9);
+  border: 1px solid rgba($neo-ink, 0.14);
+  font-size: 11px;
+}
+
+window.bar .workspace-btn.active {
+  background: rgba($neo-accent-2, 0.25);
+  border-color: rgba($neo-accent-2, 0.65);
+  box-shadow: none;
+}
+
+window.bar .ws-circle {
+  font-weight: 800;
+}
+
+window.bar .center-section .music-player {
+  min-width: 140px;
+  background: linear-gradient(135deg, rgba($neo-accent, 0.18), rgba($neo-accent-2, 0.18));
+  border: 1px solid rgba($neo-ink, 0.14);
+  border-radius: 7px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  box-shadow: none;
+}
+
+window.bar .music-icon {
+  padding: 3px;
+  border: 1px solid rgba($neo-ink, 0.14);
+  border-radius: 5px;
+  background: rgba($neo-surface, 0.9);
+  min-width: 20px;
+  min-height: 20px;
+  font-size: 12px;
+}
+
+window.bar .music-info {
+  color: $neo-ink;
+}
+
+window.bar .system-indicators {
+  padding: 4px;
+  border: 1px solid rgba($neo-ink, 0.12);
+  border-radius: 8px;
+  background: rgba($neo-card, 0.95);
+  display: flex;
+  align-items: center;
+}
+
+window.bar .indicator {
+  min-width: 20px;
+  min-height: 20px;
+  padding: 3px;
+  background: rgba($neo-surface, 0.95);
+  border: 1px solid rgba($neo-ink, 0.12);
+  border-radius: 5px;
+  box-shadow: none;
+  font-size: 12px;
+}
+
+// window.bar .indicator.battery {
+//   // background: rgba($neo-emerald, 0.18);
+//   // border-color: rgba($neo-emerald, 0.6);
+// }
+
+window.bar .battery-percentage {
+  font-weight: 700;
+}
+
+window.bar .left-section,
+window.bar .center-section,
+window.bar .right-section {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+window.bar .tray-container {
+  padding: 4px;
+  border: 1px solid rgba($neo-ink, 0.12);
+  border-radius: 8px;
+  background: rgba($neo-card, 0.9);
+  display: flex;
+  align-items: center;
+}
+
+window.bar .tray-item {
+  padding: 3px;
+  border-radius: 5px;
+  border: 1px solid rgba($neo-ink, 0.12);
+  background: rgba($neo-surface, 0.95);
+  box-shadow: none;
+  min-width: 20px;
+  min-height: 20px;
+  font-size: 12px;
+}
+
+window.bar .datetime {
+  background: rgba($neo-accent, 0.18);
+  border: 1px solid rgba($neo-accent, 0.5);
+  border-radius: 9px;
+  padding: 2px 8px;
+  box-shadow: none;
+}
+
+window.bar .time {
+  font-size: 11.5px;
+  font-weight: 700;
+}
+
+window.bar .date {
+  color: $neo-muted;
+}
+
+/* Dashboard */
+window.dashboard {
+  background: transparent;
+}
+
+window.dashboard .dashboard-overlay {
+  padding: 12px;
+  border: 1px solid rgba($neo-ink, 0.14);
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba($neo-bg, 0.9), rgba($neo-card, 0.95));
+  box-shadow: 0 28px 64px $neo-shadow;
+}
+
+window.dashboard .dashboard-surface {
+  padding: 12px;
+  border: 1px solid rgba($neo-ink, 0.12);
+  border-radius: 12px;
+  background: $neo-surface;
+  box-shadow: inset 0 1px 0 rgba($neo-ink, 0.08);
+}
+
+window.dashboard .top-controls {
+  margin-bottom: 10px;
+}
+
+window.dashboard .dashboard-header {
+  margin-bottom: 8px;
+}
+
+window.dashboard .dashboard-columns {
+  margin-top: 4px;
+}
+
+window.dashboard .dashboard-column {
+  min-width: 0;
+}
+
+window.dashboard .dashboard-column > * {
+  margin-bottom: 6px;
+}
+
+window.dashboard .dashboard-column > *:last-child {
+  margin-bottom: 0;
+}
+
+window.dashboard .dashboard-card {
+  padding: 10px;
+  border: 1px solid rgba($neo-ink, 0.12);
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba($neo-card, 0.96), rgba($neo-surface, 0.98));
+  box-shadow: 0 14px 38px $neo-shadow;
+}
+
+window.dashboard .profile-card {
+  background: linear-gradient(180deg, rgba($neo-accent-2, 0.18), rgba($neo-card, 0.96));
+}
+
+window.dashboard .card-title {
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1px solid rgba($neo-accent, 0.6);
+  border-radius: 8px;
+  background: rgba($neo-accent, 0.16);
+  box-shadow: none;
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: $neo-ink;
+  margin-bottom: 6px;
+}
+
+window.dashboard .profile-top {
+  margin-bottom: 8px;
+}
+
+window.dashboard .profile-avatar {
+  width: 82px;
+  height: 82px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba($neo-ink, 0.14);
+  background: rgba($neo-surface, 0.96);
+  box-shadow: none;
+}
+
+window.dashboard .profile-avatar-img {
+  border-radius: 16px;
+}
+
+window.dashboard .profile-avatar-initial {
+  font-size: 30px;
+  color: $neo-ink;
+}
+
+window.dashboard .profile-name {
+  font-size: 17px;
+  font-weight: 800;
+}
+
+window.dashboard .profile-title {
+  color: $neo-muted;
+}
+
+window.dashboard .profile-meta {
+  color: $neo-muted;
+}
+
+window.dashboard .profile-status {
+  padding: 6px 8px;
+  border: 1px solid rgba($neo-accent, 0.5);
+  border-radius: 10px;
+  background: rgba($neo-accent, 0.12);
+  box-shadow: none;
+  margin-bottom: 6px;
+}
+
+window.dashboard .profile-bio {
+  color: $neo-ink;
+}
+
+window.dashboard .dashboard-list-row {
+  padding: 6px 8px;
+  margin-bottom: 6px;
+  border: 1px solid rgba($neo-ink, 0.12);
+  border-radius: 10px;
+  background: rgba($neo-card, 0.96);
+  box-shadow: none;
+}
+
+window.dashboard .dashboard-list-row:last-child {
+  margin-bottom: 0;
+}
+
+window.dashboard .dashboard-note {
+  font-size: 11px;
+  color: $neo-muted;
+  padding: 6px 8px;
+  border: 1px solid rgba($neo-ink, 0.12);
+  border-radius: 10px;
+  background: rgba($neo-accent-3, 0.14);
+  box-shadow: none;
+}
+
+window.dashboard .power-card {
+  background: linear-gradient(140deg, rgba($neo-emerald, 0.14), rgba($neo-card, 0.96));
+}
+
+window.dashboard .power-row {
+  padding: 8px 10px;
+  border: 1px solid rgba($neo-ink, 0.12);
+  border-radius: 10px;
+  background: rgba($neo-surface, 0.96);
+  box-shadow: none;
+  transition: transform 120ms ease, border 120ms ease, background 120ms ease;
+}
+
+window.dashboard .power-row:hover {
+  background: rgba($neo-accent, 0.12);
+  border-color: rgba($neo-accent, 0.5);
+  transform: translateY(-1px);
+}
+
+window.dashboard .power-row.active {
+  background: rgba($neo-emerald, 0.16);
+  border-color: rgba($neo-emerald, 0.75);
+  box-shadow: 0 12px 26px $neo-shadow;
+}
+
+window.dashboard .power-row.disabled {
+  opacity: 0.5;
+}
+
+window.dashboard .power-icon {
+  padding: 6px 8px;
+  border-radius: 10px;
+  border: 1px solid rgba($neo-ink, 0.14);
+  background: rgba($neo-card, 0.94);
+  font-size: 16px;
+}
+
+window.dashboard .power-row.active .power-icon {
+  background: rgba($neo-emerald, 0.18);
+  border-color: rgba($neo-emerald, 0.7);
+}
+
+window.dashboard .power-label {
+  font-weight: 800;
+}
+
+window.dashboard .power-hint {
+  font-size: 10.5px;
+  color: $neo-muted;
+}
+
+window.dashboard .power-active {
+  color: $neo-accent;
+  font-size: 14px;
+}
+
+window.dashboard .notification-card {
+  background: linear-gradient(180deg, rgba($neo-accent, 0.12), rgba($neo-card, 0.96));
+  border: 1px solid rgba($neo-accent, 0.35);
+}
+
+window.dashboard .notification-card-header {
+  padding-bottom: 2px;
+}
+
+window.dashboard .notification-list {
+  min-height: 0;
+}
+
+window.dashboard .notification-row {
+  background: rgba($neo-surface, 0.98);
+  border: 1px solid rgba($neo-ink, 0.12);
+  box-shadow: 0 10px 24px $neo-shadow;
+  border-left: 3px solid rgba($neo-accent, 0.8);
+}
+
+window.dashboard .notification-row:hover {
+  border-color: rgba($neo-accent, 0.45);
+}
+
+window.dashboard .notification-title {
+  font-weight: 800;
+}
+
+window.dashboard .notification-body {
+  color: $neo-muted;
+  font-size: 11px;
+}
+
+window.dashboard .notification-app {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 10px;
+}
+
+window.dashboard .notification-time {
+  font-size: 10px;
+  color: $neo-muted;
+  padding: 2px 6px;
+  border-radius: 8px;
+  background: rgba($neo-card, 0.9);
+}
+
+window.dashboard .notification-clear {
+  padding: 4px 10px;
+}
+
+window.dashboard .notification-dismiss {
+  min-width: 26px;
+  min-height: 26px;
+  padding: 2px 6px;
+  border-radius: 8px;
+  background: rgba($neo-accent, 0.16);
+  border: 1px solid rgba($neo-accent, 0.5);
+  box-shadow: none;
+}
+
+window.dashboard .notification-dismiss:hover {
+  background: rgba($neo-accent, 0.24);
+}
+
+/* Notification popups */
+window.notifications {
+  background: transparent;
+}
+
+window.notifications .pill-button {
+  padding: 4px 10px;
+  border-radius: 10px;
+  background: rgba($neo-accent, 0.12);
+  border: 1px solid rgba($neo-accent, 0.45);
+  box-shadow: none;
+  color: $neo-ink;
+  font-weight: 700;
+}
+
+window.notifications .notification-popups {
+  min-width: 260px;
+  gap: 10px;
+}
+
+window.notifications .notification-popup {
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba($neo-ink, 0.1);
+  background: linear-gradient(150deg, rgba($neo-card, 0.86), rgba($neo-surface, 0.94));
+  box-shadow:
+    inset 3px 0 0 rgba($neo-accent, 0.6),
+    0 12px 28px rgba($neo-ink, 0.25);
+  transition: transform 120ms ease, border 120ms ease, background 120ms ease, box-shadow 120ms ease;
+}
+
+window.notifications .notification-popup:hover {
+  transform: translateY(-2px);
+  border-color: rgba($neo-accent, 0.5);
+  background: linear-gradient(150deg, rgba($neo-accent, 0.14), rgba($neo-surface, 0.96));
+  box-shadow:
+    inset 3px 0 0 rgba($neo-accent, 0.7),
+    0 16px 34px rgba($neo-ink, 0.28);
+}
+
+window.notifications .notification-popup-header {
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba($neo-ink, 0.08);
+}
+
+window.notifications .notification-popup-title {
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+window.notifications .notification-close {
+  min-width: 26px;
+  min-height: 26px;
+  padding: 2px 6px;
+  border-radius: 9px;
+  background: rgba($neo-ink, 0.04);
+  border: 1px solid rgba($neo-ink, 0.12);
+  box-shadow: none;
+}
+
+window.notifications .notification-close:hover {
+  background: rgba($neo-accent, 0.22);
+  border-color: rgba($neo-accent, 0.45);
+}
+
+window.notifications .notification-popup .notification-title {
+  font-weight: 800;
+  font-size: 12px;
+}
+
+window.notifications .notification-popup .notification-body {
+  color: rgba($neo-ink, 0.78);
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+window.notifications .notification-time {
+  padding: 2px 6px;
+  border-radius: 8px;
+  background: rgba($neo-ink, 0.06);
+}
+
+window.dashboard .muted {
+  color: $neo-muted;
+}
+
+window.dashboard .todo-item.checked {
+  background: rgba($neo-accent-2, 0.12);
+}
+
+window.dashboard .todo-icon {
+  color: $neo-ink;
+  font-weight: 900;
+}
+
+window.dashboard scrolledwindow {
+  min-height: 0;
+  background: rgba($neo-surface, 0.98);
+  border: 1px solid rgba($neo-ink, 0.12);
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+window.dashboard scrolledwindow > viewport {
+  padding: 6px;
+}
+
+window.dashboard .gauge-stack {
+  padding: 5px;
+  border: 1px solid rgba($neo-ink, 0.12);
+  border-radius: 9px;
+  background: rgba($neo-card, 0.95);
+  box-shadow: none;
+}
+
+window.dashboard .gauge-card {
+  padding: 6px 4px 8px;
+}
+
+window.dashboard .gauge-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: $neo-muted;
+}
+
+window.dashboard .gauge-percent {
+  font-size: 14px;
+  font-weight: 900;
+  color: $neo-ink;
+  margin-bottom: 2px;
+}
+
+window.dashboard .gauge-detail {
+  font-size: 10px;
+  color: $neo-muted;
+}
+
+window.dashboard .gauge-area {
+  background: $neo-surface;
+  border: 1px solid rgba($neo-ink, 0.14);
+  border-radius: 14px;
+  box-shadow: inset 0 1px 0 rgba($neo-ink, 0.14);
+  margin: 2px 0 6px;
+}
+
+window.dashboard .dashboard-calendar {
+  padding: 6px;
+  border: 1px solid rgba($neo-ink, 0.12);
+  border-radius: 10px;
+  background: rgba($neo-card, 0.98);
+  box-shadow: 0 10px 28px $neo-shadow;
+}
+
+window.dashboard calendar button {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 8px;
+  border: 1px solid rgba($neo-ink, 0.12);
+  background: rgba($neo-surface, 0.96);
+}
+
+window.dashboard calendar button:checked {
+  background: rgba($neo-accent, 0.24);
+  border-color: rgba($neo-accent, 0.6);
+}
+
+window.dashboard .pill-button {
+  padding: 5px 12px;
+  border-radius: 9px;
+  background: rgba($neo-accent, 0.18);
+  border: 1px solid rgba($neo-accent, 0.5);
+  box-shadow: none;
+  color: $neo-ink;
+}
+
+window.dashboard .dashboard-close {
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: rgba($neo-accent-2, 0.2);
+  border: 1px solid rgba($neo-accent-2, 0.55);
+  box-shadow: none;
+  font-weight: 800;
+}
+
+window.dashboard .storage-row {
+  background: $neo-surface;
+}
+
+window.dashboard .storage-mount {
+  font-weight: 800;
+}
+
+window.dashboard .storage-type,
+window.dashboard .storage-pct {
+  color: $neo-muted;
+}
+
+window.dashboard .window-title {
+  font-weight: 800;
+}
+
+window.dashboard .window-workspace {
+  color: $neo-ink;
+  background: rgba($neo-accent-2, 0.2);
+  padding: 2px 6px;
+  border: 1px solid rgba($neo-accent-2, 0.55);
+  border-radius: 7px;
+  box-shadow: none;
+}
+
+/* OSD */
+window.OSD {
+  background: transparent;
+}
+
+window.OSD .osd-container {
+  padding: 10px 12px;
+  border: 1px solid rgba($neo-ink, 0.14);
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba($neo-accent-2, 0.22), rgba($neo-card, 0.96));
+  box-shadow: 0 18px 40px $neo-shadow;
+}
+
+window.OSD .osd-icon {
+  font-size: 22px;
+  color: $neo-ink;
+}
+
+window.OSD .osd-percent {
+  font-size: 14px;
+  color: $neo-ink;
+}
+
+progressbar.osd-progress {
+  min-width: 240px;
+  border: 1px solid rgba($neo-ink, 0.14);
+  border-radius: 12px;
+  background: rgba($neo-surface, 0.98);
+  box-shadow: none;
+}
+
+progressbar.osd-progress trough {
+  border-radius: 12px;
+  background: $neo-surface;
+}
+
+progressbar.osd-progress progress {
+  border-radius: 10px;
+  background: $neo-accent;
+  box-shadow: inset 0 1px 0 rgba($neo-ink, 0.14);
+}

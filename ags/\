@@ -1,0 +1,188 @@
+import app from "ags/gtk4/app"
+import { Astal, Gtk, Gdk } from "ags/gtk4"
+import { execAsync } from "ags/process"
+import { createPoll } from "ags/time"
+
+export default function Bar(gdkmonitor: Gdk.Monitor) {
+  const { TOP, LEFT, RIGHT } = Astal.WindowAnchor
+
+  const time = createPoll("", 1000, "date +'%H:%M'")
+  const date = createPoll("", 1000, "date +'%a %d %b'")
+  
+  const musicStatus = createPoll(
+    { status: "NoPlayer", metadata: "No music" },
+    1000,
+    async () => {
+      try {
+        const status = await execAsync("playerctl status --ignore-player=chromium 2>/dev/null || echo 'NoPlayer'")
+        const metadata = await execAsync("playerctl metadata --format '{{artist}} - {{title}}' 2>/dev/null || echo 'No music'")
+        return { status: status.trim(), metadata: metadata.trim() }
+      } catch {
+        return { status: "NoPlayer", metadata: "No music" }
+      }
+    }
+  )
+
+  const volumeStatus = createPoll(
+    { volume: "100", isMuted: false },
+    2000,
+    async () => {
+      try {
+        const vol = await execAsync("pamixer --get-volume")
+        const muted = await execAsync("pamixer --get-mute")
+        return { volume: vol.trim(), isMuted: muted.trim() === "true" }
+      } catch {
+        return { volume: "100", isMuted: false }
+      }
+    }
+  )
+
+  const wifiStatus = createPoll(
+    "Disconnected",
+    5000,
+    async () => {
+      try {
+        const wifi = await execAsync("nmcli -t -f active,ssid dev wifi | grep '^yes' | cut -d':' -f2")
+        return wifi.trim() || "Disconnected"
+      } catch {
+        return "Disconnected"
+      }
+    }
+  )
+
+  const brightnessStatus = createPoll(
+    100,
+    2000,
+    async () => {
+      try {
+        const bright = await execAsync("brightnessctl g")
+        const max = await execAsync("brightnessctl m")
+        return Math.round((parseInt(bright) / parseInt(max)) * 100)
+      } catch {
+        return 100
+      }
+    }
+  )
+
+  // Transform accessors to labels
+  const musicIcon = musicStatus((m) => {
+    if (m?.status === "Playing") return "⏸️"
+    if (m?.status === "Paused") return "▶️"
+    return "♫"
+  })
+
+  const musicInfo = musicStatus((m) => {
+    const text = m?.metadata || "No music"
+    return text.length > 25 ? text.substring(0, 25) + "..." : text
+  })
+
+  const volumeIcon = volumeStatus((v) => {
+    if (v?.isMuted) return "󰖁"
+    const vol = parseInt(v?.volume || "100")
+    if (vol === 0) return "󰕿"
+    if (vol < 50) return "󰖀"
+    return "󰕾"
+  })
+
+  const wifiIcon = wifiStatus((w) => w === "Disconnected" ? "󰤭" : "󰤨")
+
+  const brightnessIcon = brightnessStatus((b) => {
+    const bright = b || 100
+    if (bright < 33) return "󰃚"
+    if (bright < 66) return "󰃞"
+    return "󰃠"
+  })
+
+  return (
+    <window
+      visible={true}
+      name="bar"
+      class="Bar"
+      gdkmonitor={gdkmonitor}
+      exclusivity={Astal.Exclusivity.EXCLUSIVE}
+      anchor={TOP | LEFT | RIGHT}
+      application={app}
+    >
+      <centerbox 
+        class="bar-content"
+        startWidget={
+          <box class="left-section">
+            <button
+              class="launcher"
+              onClicked={() => execAsync("wofi --show drun").catch(console.error)}
+            >
+              <label label="󰣇" />
+            </button>
+            
+            <box class="workspaces">
+              {Array.from({ length: 9 }, (_, i) => i + 1).map((ws) => (
+                <button
+                  class="workspace-btn"
+                  onClicked={() => execAsync(`hyprctl dispatch workspace ${ws}`).catch(console.error)}
+                >
+                  <label label={ws.toString()} />
+                </button>
+              ))}
+            </box>
+          </box>
+        }
+        centerWidget={
+          <box class="center-section">
+            <button
+              onClicked={() => execAsync("playerctl play-pause").catch(console.error)}
+              class="music-player"
+            >
+              <box>
+                <label label={musicIcon} class="music-icon" />
+                <label label={musicInfo} class="music-info" />
+              </box>
+            </button>
+          </box>
+        }
+        endWidget={
+          <box class="right-section">
+            <menubutton class="datetime">
+              <box>
+                <label label={time} class="time" />
+                <label label={date} class="date" />
+              </box>
+              <popover>
+                <Gtk.Calendar />
+              </popover>
+            </menubutton>
+            
+            <box class="system-indicators">
+              <button
+                class="indicator"
+                onClicked={() => execAsync("nm-connection-editor").catch(console.error)}
+              >
+                <label label={wifiIcon} />
+              </button>
+
+              <button
+                class="indicator"
+                onClicked={() => execAsync("bluetoothctl power on && blueman-manager").catch(console.error)}
+              >
+                <label label="󰂯" />
+              </button>
+
+              <button
+                class="indicator"
+                onClicked={() => execAsync("brightnessctl set 10%+").catch(console.error)}
+              >
+                <label label={brightnessIcon} />
+              </button>
+
+              <button
+                class="indicator"
+                onClicked={() => execAsync("pamixer -t").catch(console.error)}
+              >
+                <label label={volumeIcon} />
+              </button>
+            </box>
+          </box>
+        }
+      />
+    </window>
+  )
+}

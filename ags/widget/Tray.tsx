@@ -1,73 +1,96 @@
 // tray.tsx - FIXED VERSION
+import GLib from "gi://GLib"
 import AstalTray from "gi://AstalTray"
 import { Gtk } from "ags/gtk4"
 
 export default function TrayWidget() {
   const tray = AstalTray.get_default()
   const container = new Gtk.Box({ spacing: 5 })
+  const signalMap = new Map<any, number[]>()
+  let rebuildScheduled = false
+
+  const disconnectAllSignals = () => {
+    signalMap.forEach((handlers, item) => {
+      handlers.forEach((id) => {
+        try {
+          item.disconnect(id)
+        } catch {}
+      })
+    })
+    signalMap.clear()
+  }
+
+  const attachItemSignals = (
+    item: any,
+    button: Gtk.MenuButton,
+    image: Gtk.Image,
+    applyActionGroup: () => void
+  ) => {
+    const handlerIds = [
+      item.connect("notify::gicon", () => {
+        image.gicon = item.gicon ?? null
+      }),
+      item.connect("notify::action-group", () => {
+        applyActionGroup()
+      }),
+      item.connect("notify::menu-model", () => {
+        button.menu_model = item.menu_model
+      }),
+    ]
+    signalMap.set(item, handlerIds)
+  }
 
   const rebuild = () => {
-    console.log(`Tray rebuild called. Items count: ${tray.items.length}`)
-    
-    // Clear old children - FIXED for GTK4
+    disconnectAllSignals()
+
     let child = container.get_first_child()
     while (child) {
       container.remove(child)
       child = container.get_first_child()
     }
 
-    // Log each tray item
-    tray.items.forEach((item, index) => {
-      console.log(`Tray item ${index}:`, {
-        title: item.title,
-        hasIcon: !!item.gicon,
-        hasMenu: !!item.menu_model
-      })
-    })
-
-    // Add current tray items
-    for (const item of tray.items) {
-      const button = new Gtk.MenuButton({ 
+    tray.items.forEach((item) => {
+      const button = new Gtk.MenuButton({
         tooltip_text: item.title,
-        css_classes: ["tray-item"]
+        css_classes: ["tray-item"],
       })
-      
-      const image = new Gtk.Image({ 
-        gicon: item.gicon, 
-        pixel_size: 16
-      })
-      
-      button.set_child(image)
-      button.menu_model = item.menu_model
-      
-      if (item.action_group) {
-        button.insert_action_group("dbusmenu", item.action_group)
-      }
 
-      // FIX: Use property assignment instead of set_gicon method
-      item.connect("notify::gicon", () => {
-        if (image) image.gicon = item.gicon
+      const image = new Gtk.Image({
+        gicon: item.gicon ?? null,
+        pixel_size: 16,
       })
-      
-      item.connect("notify::action-group", () => {
+
+      const applyActionGroup = () => {
+        try {
+          button.remove_action_group("dbusmenu")
+        } catch {}
         if (item.action_group) {
           button.insert_action_group("dbusmenu", item.action_group)
         }
-      })
+      }
 
+      button.set_child(image)
+      button.menu_model = item.menu_model
+      applyActionGroup()
+      attachItemSignals(item, button, image, applyActionGroup)
       container.append(button)
-    }
+    })
 
-    // Show/hide container based on whether there are items
     container.visible = tray.items.length > 0
-    console.log(`Container visible: ${container.visible}`)
   }
 
-  // Initial build
-  rebuild()
+  const scheduleRebuild = () => {
+    if (rebuildScheduled) return
+    rebuildScheduled = true
+    GLib.idle_add(GLib.PRIORITY_DEFAULT_IDLE, () => {
+      rebuildScheduled = false
+      rebuild()
+      return GLib.SOURCE_REMOVE
+    })
+  }
 
-  // Connect to items change
-  tray.connect("notify::items", rebuild)
+  rebuild()
+  tray.connect("notify::items", scheduleRebuild)
 
   return container
 }

@@ -1,15 +1,46 @@
-/* Minimal dark grid skin for the bar, dashboard, and OSD */
+/* Minimal Floating Bar Theme - Dark Blue & Brownish */
 
-$neo-bg: #050812;
-$neo-surface: #0c1220;
-$neo-card: #111a2d;
-$neo-ink: #e7edf7;
-$neo-muted: #9fb2cf;
-$neo-accent: #58d2ff;
-$neo-accent-2: #9d8cff;
-$neo-accent-3: #f2c572;
-$neo-emerald: #5ae4a7;
-$neo-shadow: rgba(0, 0, 0, 0.34);
+$neo-bg: #0a0e15;
+$neo-surface: #1a1f2e;
+$neo-card: #151d2b;
+$neo-ink: #e8ecf1;
+$neo-muted: #8b92a9;
+$neo-accent: #6b9fd4;
+$neo-accent-2: #9b7d6b;
+$neo-accent-3: #c9a872;
+$neo-emerald: #7bb09b;
+$neo-shadow: rgba(0, 0, 0, 0.2);
+
+@keyframes slide-up-soft {
+  from {
+    transform: translateY(18px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right-soft {
+  from {
+    transform: translateX(18px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-soft {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 /* Base */
 * {
@@ -33,6 +64,7 @@ window {
 window.bar {
   background: transparent;
   font-size: 10px;
+  margin: 4px 8px;
 }
 
 window.bar label {
@@ -42,125 +74,235 @@ window.bar label {
 }
 
 window.bar .bar-content {
-  padding: 4px 8px;
-  border: 1px solid rgba($neo-ink, 0.14);
-  border-radius: 9px;
-  background: linear-gradient(180deg, rgba($neo-card, 0.92), rgba($neo-surface, 0.94));
-  box-shadow: 0 8px 24px $neo-shadow;
+  padding: 2px 10px;
+  border: 1px solid rgba($neo-accent, 0.12);
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba($neo-surface, 0.78), rgba($neo-card, 0.72));
+  backdrop-filter: blur(14px);
+  box-shadow:
+    0 6px 16px rgba(0, 0, 0, 0.25),
+    0 2px 6px rgba(0, 0, 0, 0.18);
+  transition: background 150ms ease, box-shadow 150ms ease;
 }
 
 window.bar button {
-  background: rgba($neo-surface, 0.95);
-  border: 1px solid rgba($neo-ink, 0.16);
-  border-radius: 5px;
-  padding: 3px;
-  min-width: 20px;
-  min-height: 20px;
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  padding: 2px 4px;
+  min-width: 16px;
+  min-height: 16px;
   box-shadow: none;
-  transition: background 120ms ease, border-color 120ms ease;
+  transition: background 120ms ease, color 120ms ease;
+  color: $neo-muted;
 }
 
 window.bar button:hover {
-  background: rgba($neo-accent, 0.14);
-  border-color: rgba($neo-accent, 0.55);
+  background: rgba($neo-accent, 0.12);
+  color: $neo-accent;
 }
 
 window.bar button:active {
-  background: rgba($neo-accent, 0.22);
+  background: rgba($neo-accent, 0.18);
+  color: $neo-accent;
 }
 
 window.bar .launcher {
+  background: rgba($neo-accent, 0.15);
+  color: $neo-accent;
+  // border: none;
+  // font-size: 3px;
+  padding: 0 6px;
+  // min-width: 25px;
+  min-height: 0;
+  // border-radius: 4px;
+  line-height: 1;
+  transition: background 120ms ease, color 120ms ease;
+}
+
+window.bar .launcher label {
+  font-size: 18px;
+  line-height: 1;
+}
+
+window.bar .launcher:hover {
   background: rgba($neo-accent, 0.25);
-  color: $neo-ink;
-  border-color: rgba($neo-accent, 0.55);
-  font-size: 14px;
-  padding: 4px 6px;
-  min-width: 28px;
-  min-height: 28px;
-  border-radius: 8px;
 }
 
 window.bar .workspaces {
-  padding: 4px;
-  border: 1px solid rgba($neo-ink, 0.12);
-  border-radius: 7px;
-  background: rgba($neo-card, 0.9);
+  padding: 2px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
   display: flex;
   align-items: center;
+  gap: 4px;
 }
 
-window.bar .workspace-btn {
-  min-width: 20px;
-  min-height: 20px;
-  padding: 3px;
-  border-radius: 4px;
-  background: rgba($neo-surface, 0.9);
-  border: 1px solid rgba($neo-ink, 0.14);
-  font-size: 11px;
-}
-
-window.bar .workspace-btn.active {
-  background: rgba($neo-accent-2, 0.25);
-  border-color: rgba($neo-accent-2, 0.65);
-  box-shadow: none;
-}
-
-window.bar .ws-circle {
-  font-weight: 800;
-}
-
-window.bar .center-section .music-player {
-  min-width: 140px;
-  background: linear-gradient(135deg, rgba($neo-accent, 0.18), rgba($neo-accent-2, 0.18));
-  border: 1px solid rgba($neo-ink, 0.14);
-  border-radius: 7px;
-  padding: 4px;
+window.bar .active-window {
+  padding: 2px 6px;
+  margin-right: 36px;
+  // border-radius: 8px;
+  background: rgba($neo-card, 0.35);
+  // border: 1px solid rgba($neo-accent, 0.1);
   display: flex;
   align-items: center;
-  box-shadow: none;
+  min-height: 22px;
 }
 
-window.bar .music-icon {
-  padding: 3px;
-  border: 1px solid rgba($neo-ink, 0.14);
-  border-radius: 5px;
-  background: rgba($neo-surface, 0.9);
-  min-width: 20px;
-  min-height: 20px;
-  font-size: 12px;
-}
-
-window.bar .music-info {
+window.bar .active-window-title {
+  font-size: 10px;
+  font-weight: 600;
   color: $neo-ink;
 }
 
-window.bar .system-indicators {
-  padding: 4px;
-  border: 1px solid rgba($neo-ink, 0.12);
-  border-radius: 8px;
-  background: rgba($neo-card, 0.95);
+window.bar .active-window-icon {
+  min-width: 16px;
+  min-height: 16px;
+}
+
+window.bar .workspace-btn {
+  min-width: 18px;
+  min-height: 16px;
+  padding: 2px 4px;
+  border-radius: 5px;
+  background: rgba($neo-ink, 0.04);
+  border: 1px solid rgba($neo-ink, 0.2);
+  color: rgba($neo-ink, 0.78);
+  transition: all 120ms ease;
+}
+
+window.bar .workspace-btn:hover {
+  background: rgba($neo-ink, 0.1);
+  border-color: rgba($neo-ink, 0.35);
+  color: $neo-ink;
+}
+
+window.bar .workspace-btn.active {
+  background: rgba($neo-accent, 0.2);
+  border-color: rgba($neo-accent, 0.9);
+  color: $neo-accent;
+  box-shadow:
+    0 0 0 2px rgba($neo-accent, 0.35),
+    0 4px 12px rgba($neo-accent, 0.2);
+}
+
+window.bar .workspace-icons {
   display: flex;
   align-items: center;
+  gap: 2px;
+  min-width: 12px;
+}
+
+window.bar .workspace-icon {
+  color: currentColor;
+  -gtk-icon-size: 13px;
+  opacity: 0.92;
+}
+
+window.bar .workspace-btn.active .workspace-icon,
+window.bar .workspace-btn:hover .workspace-icon {
+  opacity: 1;
+}
+
+window.bar .workspace-btn.active .workspace-icon {
+  color: $neo-accent;
+}
+
+window.bar .workspace-number {
+  font-weight: 800;
+  font-size: 10px;
+  color: currentColor;
+  min-width: 10px;
+  text-align: center;
+}
+
+window.bar .workspace-number.active {
+  color: $neo-accent;
+}
+
+window.bar .workspace-empty {
+  font-size: 11px;
+  color: currentColor;
+  opacity: 0.6;
+}
+
+window.bar .center-section .music-player {
+  min-width: 160px;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  box-shadow: none;
+  gap: 6px;
+}
+
+window.bar .music-icon {
+  padding: 4px;
+  border: none;
+  border-radius: 5px;
+  background: rgba($neo-accent-2, 0.15);
+  min-width: 24px;
+  min-height: 24px;
+  font-size: 12px;
+  color: $neo-accent-2;
+}
+
+window.bar .music-info {
+  color: $neo-muted;
+  font-size: 10px;
+}
+
+window.bar .system-indicators {
+  padding: 2px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 window.bar .indicator {
-  min-width: 20px;
-  min-height: 20px;
-  padding: 3px;
-  background: rgba($neo-surface, 0.95);
-  border: 1px solid rgba($neo-ink, 0.12);
-  border-radius: 5px;
+  min-width: 26px;
+  min-height: 26px;
+  padding: 3px 5px;
+  background: transparent;
+  border: none;
+  border-radius: 7px;
   box-shadow: none;
-  font-size: 12px;
+  color: $neo-accent;
+  transition: all 120ms ease;
 }
 
-// window.bar .indicator.battery {
-//   // background: rgba($neo-emerald, 0.18);
-//   // border-color: rgba($neo-emerald, 0.6);
-// }
+window.bar .indicator label {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1;
+  min-width: 16px;
+  min-height: 16px;
+  text-align: center;
+}
+
+window.bar .indicator.battery {
+  padding: 4px 10px;
+}
+
+window.bar .indicator:hover {
+  background: rgba($neo-accent, 0.12);
+  color: $neo-accent;
+}
 
 window.bar .battery-percentage {
   font-weight: 700;
+  color: $neo-accent;
+  font-size: 10px;
+  letter-spacing: 0.02em;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 window.bar .left-section,
@@ -170,43 +312,57 @@ window.bar .right-section {
   align-items: center;
   margin: 0;
   padding: 0;
+  gap: 3px;
 }
 
 window.bar .tray-container {
-  padding: 4px;
-  border: 1px solid rgba($neo-ink, 0.12);
+  padding: 2px;
+  border: none;
   border-radius: 8px;
-  background: rgba($neo-card, 0.9);
+  background: transparent;
   display: flex;
   align-items: center;
+  gap: 4px;
 }
 
 window.bar .tray-item {
-  padding: 3px;
-  border-radius: 5px;
-  border: 1px solid rgba($neo-ink, 0.12);
-  background: rgba($neo-surface, 0.95);
+  padding: 1px;
+  border-radius: 3px;
+  border: none;
+  background: transparent;
   box-shadow: none;
-  min-width: 20px;
-  min-height: 20px;
-  font-size: 12px;
+  min-width: 14px;
+  min-height: 14px;
+  font-size: 9px;
+  color: $neo-muted;
+  transition: all 120ms ease;
+}
+
+window.bar .tray-item:hover {
+  background: rgba($neo-accent, 0.12);
+  color: $neo-accent;
 }
 
 window.bar .datetime {
-  background: rgba($neo-accent, 0.18);
-  border: 1px solid rgba($neo-accent, 0.5);
-  border-radius: 9px;
-  padding: 2px 8px;
+  background: rgba($neo-card, 0.35);
+  border: 1px solid rgba($neo-accent, 0.12);
+  border-radius: 8px;
+  padding: 3px 8px;
   box-shadow: none;
 }
 
 window.bar .time {
-  font-size: 11.5px;
+  font-size: 12px;
   font-weight: 700;
+  color: $neo-accent;
+  letter-spacing: 0.02em;
 }
 
 window.bar .date {
-  color: $neo-muted;
+  color: $neo-ink;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
 }
 
 /* Dashboard */
@@ -215,39 +371,55 @@ window.dashboard {
 }
 
 window.dashboard .dashboard-overlay {
-  padding: 12px;
-  border: 1px solid rgba($neo-ink, 0.14);
-  border-radius: 12px;
-  background: linear-gradient(180deg, rgba($neo-bg, 0.9), rgba($neo-card, 0.95));
-  box-shadow: 0 28px 64px $neo-shadow;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  transition: opacity 150ms ease;
 }
 
 window.dashboard .dashboard-surface {
-  padding: 12px;
-  border: 1px solid rgba($neo-ink, 0.12);
-  border-radius: 12px;
-  background: $neo-surface;
-  box-shadow: inset 0 1px 0 rgba($neo-ink, 0.08);
+  padding: 24px;
+  border: none;
+  border-radius: 0;
+  background: linear-gradient(
+    135deg,
+    rgba($neo-bg, 0.94) 0%,
+    rgba($neo-surface, 0.9) 55%,
+    rgba($neo-card, 0.88) 100%
+  );
+  backdrop-filter: blur(10px);
+  box-shadow: inset 0 0 0 1px rgba($neo-accent, 0.08);
+  margin: 0;
 }
 
 window.dashboard .top-controls {
-  margin-bottom: 10px;
+  display: none;
 }
 
 window.dashboard .dashboard-header {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
+  color: $neo-ink;
+  font-size: 18px;
+  font-weight: 800;
 }
 
 window.dashboard .dashboard-columns {
-  margin-top: 4px;
+  margin-top: 8px;
+  display: flex;
+  gap: 14px;
+  justify-content: space-between;
 }
 
 window.dashboard .dashboard-column {
   min-width: 0;
+  flex: 1;
 }
 
 window.dashboard .dashboard-column > * {
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
 
 window.dashboard .dashboard-column > *:last-child {
@@ -255,44 +427,58 @@ window.dashboard .dashboard-column > *:last-child {
 }
 
 window.dashboard .dashboard-card {
-  padding: 10px;
-  border: 1px solid rgba($neo-ink, 0.12);
-  border-radius: 10px;
-  background: linear-gradient(180deg, rgba($neo-card, 0.96), rgba($neo-surface, 0.98));
-  box-shadow: 0 14px 38px $neo-shadow;
+  padding: 14px;
+  border: none;
+  border-radius: 14px;
+  background: rgba($neo-card, 0.72);
+  border: 1px solid rgba($neo-accent, 0.08);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: background 140ms ease, box-shadow 140ms ease;
+}
+
+window.dashboard .dashboard-card:hover {
+  background: rgba($neo-card, 0.8);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
 window.dashboard .profile-card {
-  background: linear-gradient(180deg, rgba($neo-accent-2, 0.18), rgba($neo-card, 0.96));
+  background: linear-gradient(135deg, rgba($neo-accent, 0.08), rgba($neo-accent-2, 0.06));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba($neo-accent, 0.15);
 }
 
 window.dashboard .card-title {
   display: inline-block;
-  padding: 2px 8px;
-  border: 1px solid rgba($neo-accent, 0.6);
-  border-radius: 8px;
-  background: rgba($neo-accent, 0.16);
+  padding: 5px 12px;
+  border: none;
+  border-radius: 7px;
+  background: rgba($neo-accent, 0.14);
   box-shadow: none;
   font-weight: 700;
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: $neo-ink;
-  margin-bottom: 6px;
+  color: $neo-accent;
+  margin-bottom: 10px;
 }
 
 window.dashboard .profile-top {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
 }
 
 window.dashboard .profile-avatar {
-  width: 82px;
-  height: 82px;
+  width: 92px;
+  height: 92px;
   border-radius: 16px;
   overflow: hidden;
-  border: 1px solid rgba($neo-ink, 0.14);
-  background: rgba($neo-surface, 0.96);
-  box-shadow: none;
+  border: 1px solid rgba($neo-accent, 0.2);
+  background: rgba($neo-card, 0.4);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  flex-shrink: 0;
 }
 
 window.dashboard .profile-avatar-img {
@@ -300,43 +486,62 @@ window.dashboard .profile-avatar-img {
 }
 
 window.dashboard .profile-avatar-initial {
-  font-size: 30px;
-  color: $neo-ink;
+  font-size: 34px;
+  color: $neo-accent;
+  font-weight: 900;
 }
 
 window.dashboard .profile-name {
-  font-size: 17px;
-  font-weight: 800;
+  font-size: 19px;
+  font-weight: 900;
+  color: $neo-ink;
+  margin-bottom: 2px;
 }
 
 window.dashboard .profile-title {
-  color: $neo-muted;
+  color: $neo-accent;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 4px;
 }
 
 window.dashboard .profile-meta {
   color: $neo-muted;
+  font-size: 11px;
+  margin-bottom: 6px;
 }
 
 window.dashboard .profile-status {
-  padding: 6px 8px;
-  border: 1px solid rgba($neo-accent, 0.5);
-  border-radius: 10px;
+  padding: 7px 11px;
+  border: 1px solid rgba($neo-accent, 0.3);
+  border-radius: 8px;
   background: rgba($neo-accent, 0.12);
   box-shadow: none;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+  color: $neo-accent;
+  font-size: 11px;
+  font-weight: 600;
 }
 
 window.dashboard .profile-bio {
-  color: $neo-ink;
+  color: $neo-muted;
+  font-size: 12px;
+  line-height: 1.5;
 }
 
 window.dashboard .dashboard-list-row {
-  padding: 6px 8px;
+  padding: 8px 10px;
   margin-bottom: 6px;
-  border: 1px solid rgba($neo-ink, 0.12);
+  border: none;
   border-radius: 10px;
-  background: rgba($neo-card, 0.96);
-  box-shadow: none;
+  background: rgba($neo-card, 0.6);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background 120ms ease, box-shadow 120ms ease;
+}
+
+window.dashboard .dashboard-list-row:hover {
+  background: rgba($neo-card, 0.7);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 window.dashboard .dashboard-list-row:last-child {
@@ -345,77 +550,79 @@ window.dashboard .dashboard-list-row:last-child {
 
 window.dashboard .dashboard-note {
   font-size: 11px;
-  color: $neo-muted;
-  padding: 6px 8px;
-  border: 1px solid rgba($neo-ink, 0.12);
+  color: $neo-accent-3;
+  padding: 8px 10px;
+  border: none;
   border-radius: 10px;
-  background: rgba($neo-accent-3, 0.14);
-  box-shadow: none;
+  background: rgba($neo-accent-3, 0.08);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 window.dashboard .power-card {
-  background: linear-gradient(140deg, rgba($neo-emerald, 0.14), rgba($neo-card, 0.96));
+  background: rgba($neo-emerald, 0.08);
+  backdrop-filter: blur(8px);
 }
 
 window.dashboard .power-row {
-  padding: 8px 10px;
-  border: 1px solid rgba($neo-ink, 0.12);
+  padding: 10px 12px;
+  border: none;
   border-radius: 10px;
-  background: rgba($neo-surface, 0.96);
-  box-shadow: none;
-  transition: transform 120ms ease, border 120ms ease, background 120ms ease;
+  background: rgba($neo-surface, 0.55);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background 120ms ease;
 }
 
 window.dashboard .power-row:hover {
-  background: rgba($neo-accent, 0.12);
-  border-color: rgba($neo-accent, 0.5);
-  transform: translateY(-1px);
+  background: rgba($neo-accent, 0.1);
 }
 
 window.dashboard .power-row.active {
-  background: rgba($neo-emerald, 0.16);
-  border-color: rgba($neo-emerald, 0.75);
-  box-shadow: 0 12px 26px $neo-shadow;
+  background: rgba($neo-emerald, 0.15);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 window.dashboard .power-row.disabled {
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 window.dashboard .power-icon {
   padding: 6px 8px;
-  border-radius: 10px;
-  border: 1px solid rgba($neo-ink, 0.14);
-  background: rgba($neo-card, 0.94);
+  border-radius: 8px;
+  border: none;
+  background: rgba($neo-card, 0.4);
   font-size: 16px;
+  color: $neo-muted;
 }
 
 window.dashboard .power-row.active .power-icon {
-  background: rgba($neo-emerald, 0.18);
-  border-color: rgba($neo-emerald, 0.7);
+  background: rgba($neo-emerald, 0.2);
+  color: $neo-emerald;
 }
 
 window.dashboard .power-label {
   font-weight: 800;
+  color: $neo-ink;
 }
 
 window.dashboard .power-hint {
-  font-size: 10.5px;
+  font-size: 10px;
   color: $neo-muted;
 }
 
 window.dashboard .power-active {
-  color: $neo-accent;
+  color: $neo-emerald;
   font-size: 14px;
 }
 
 window.dashboard .notification-card {
-  background: linear-gradient(180deg, rgba($neo-accent, 0.12), rgba($neo-card, 0.96));
-  border: 1px solid rgba($neo-accent, 0.35);
+  background: rgba($neo-accent, 0.08);
+  border: none;
+  backdrop-filter: blur(8px);
 }
 
 window.dashboard .notification-card-header {
-  padding-bottom: 2px;
+  padding-bottom: 4px;
+  color: $neo-accent;
 }
 
 window.dashboard .notification-list {
@@ -423,18 +630,23 @@ window.dashboard .notification-list {
 }
 
 window.dashboard .notification-row {
-  background: rgba($neo-surface, 0.98);
-  border: 1px solid rgba($neo-ink, 0.12);
-  box-shadow: 0 10px 24px $neo-shadow;
-  border-left: 3px solid rgba($neo-accent, 0.8);
+  background: rgba($neo-card, 0.4);
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-left: 3px solid $neo-accent;
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+  border-radius: 10px;
 }
 
 window.dashboard .notification-row:hover {
-  border-color: rgba($neo-accent, 0.45);
+  transform: translateX(-2px);
+  background: rgba($neo-card, 0.55);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 window.dashboard .notification-title {
   font-weight: 800;
+  color: $neo-ink;
 }
 
 window.dashboard .notification-body {
@@ -446,32 +658,36 @@ window.dashboard .notification-app {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: 10px;
+  color: $neo-accent;
+  font-weight: 600;
 }
 
 window.dashboard .notification-time {
   font-size: 10px;
   color: $neo-muted;
   padding: 2px 6px;
-  border-radius: 8px;
-  background: rgba($neo-card, 0.9);
+  border-radius: 6px;
+  background: transparent;
 }
 
 window.dashboard .notification-clear {
-  padding: 4px 10px;
+  padding: 6px 12px;
 }
 
 window.dashboard .notification-dismiss {
-  min-width: 26px;
-  min-height: 26px;
-  padding: 2px 6px;
+  min-width: 28px;
+  min-height: 28px;
+  padding: 4px 8px;
   border-radius: 8px;
-  background: rgba($neo-accent, 0.16);
-  border: 1px solid rgba($neo-accent, 0.5);
+  background: rgba($neo-accent, 0.1);
+  border: none;
   box-shadow: none;
+  color: $neo-accent;
+  transition: all 120ms ease;
 }
 
 window.dashboard .notification-dismiss:hover {
-  background: rgba($neo-accent, 0.24);
+  background: rgba($neo-accent, 0.2);
 }
 
 /* Notification popups */
@@ -480,43 +696,50 @@ window.notifications {
 }
 
 window.notifications .pill-button {
-  padding: 4px 10px;
-  border-radius: 10px;
-  background: rgba($neo-accent, 0.12);
-  border: 1px solid rgba($neo-accent, 0.45);
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: rgba($neo-accent, 0.1);
+  border: none;
   box-shadow: none;
-  color: $neo-ink;
+  color: $neo-accent;
   font-weight: 700;
+  transition: all 120ms ease;
+}
+
+window.notifications .pill-button:hover {
+  background: rgba($neo-accent, 0.18);
 }
 
 window.notifications .notification-popups {
-  min-width: 260px;
-  gap: 10px;
+  min-width: 280px;
+  gap: 12px;
+  animation: slide-in-right-soft 220ms ease, fade-in-soft 220ms ease;
 }
 
 window.notifications .notification-popup {
-  padding: 12px 14px;
+  padding: 14px 16px;
   border-radius: 14px;
-  border: 1px solid rgba($neo-ink, 0.1);
-  background: linear-gradient(150deg, rgba($neo-card, 0.86), rgba($neo-surface, 0.94));
+  border: none;
+  background: rgba($neo-surface, 0.5);
+  backdrop-filter: blur(10px);
   box-shadow:
-    inset 3px 0 0 rgba($neo-accent, 0.6),
-    0 12px 28px rgba($neo-ink, 0.25);
-  transition: transform 120ms ease, border 120ms ease, background 120ms ease, box-shadow 120ms ease;
+    inset 2px 0 0 $neo-accent,
+    0 4px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 120ms ease, background 120ms ease, box-shadow 120ms ease;
+  animation: slide-in-right-soft 200ms ease, fade-in-soft 200ms ease;
 }
 
 window.notifications .notification-popup:hover {
   transform: translateY(-2px);
-  border-color: rgba($neo-accent, 0.5);
-  background: linear-gradient(150deg, rgba($neo-accent, 0.14), rgba($neo-surface, 0.96));
+  background: rgba($neo-surface, 0.65);
   box-shadow:
-    inset 3px 0 0 rgba($neo-accent, 0.7),
-    0 16px 34px rgba($neo-ink, 0.28);
+    inset 2px 0 0 $neo-accent,
+    0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
 window.notifications .notification-popup-header {
-  padding-bottom: 4px;
-  border-bottom: 1px solid rgba($neo-ink, 0.08);
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba($neo-accent, 0.2);
 }
 
 window.notifications .notification-popup-title {
@@ -524,38 +747,44 @@ window.notifications .notification-popup-title {
   letter-spacing: 0.08em;
   font-size: 11px;
   text-transform: uppercase;
+  color: $neo-accent;
 }
 
 window.notifications .notification-close {
-  min-width: 26px;
-  min-height: 26px;
-  padding: 2px 6px;
-  border-radius: 9px;
-  background: rgba($neo-ink, 0.04);
-  border: 1px solid rgba($neo-ink, 0.12);
+  min-width: 28px;
+  min-height: 28px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  background: transparent;
+  border: none;
   box-shadow: none;
+  color: $neo-muted;
+  transition: all 120ms ease;
 }
 
 window.notifications .notification-close:hover {
-  background: rgba($neo-accent, 0.22);
-  border-color: rgba($neo-accent, 0.45);
+  background: rgba($neo-accent, 0.12);
+  color: $neo-accent;
 }
 
 window.notifications .notification-popup .notification-title {
   font-weight: 800;
   font-size: 12px;
+  color: $neo-ink;
 }
 
 window.notifications .notification-popup .notification-body {
-  color: rgba($neo-ink, 0.78);
+  color: $neo-muted;
   font-size: 11px;
-  line-height: 1.35;
+  line-height: 1.4;
 }
 
 window.notifications .notification-time {
   padding: 2px 6px;
-  border-radius: 8px;
-  background: rgba($neo-ink, 0.06);
+  border-radius: 6px;
+  background: transparent;
+  color: $neo-muted;
+  font-size: 10px;
 }
 
 window.dashboard .muted {
@@ -563,36 +792,36 @@ window.dashboard .muted {
 }
 
 window.dashboard .todo-item.checked {
-  background: rgba($neo-accent-2, 0.12);
+  background: rgba($neo-accent-2, 0.1);
 }
 
 window.dashboard .todo-icon {
-  color: $neo-ink;
+  color: $neo-accent;
   font-weight: 900;
 }
 
 window.dashboard scrolledwindow {
   min-height: 0;
-  background: rgba($neo-surface, 0.98);
-  border: 1px solid rgba($neo-ink, 0.12);
+  background: rgba($neo-card, 0.3);
+  border: none;
   border-radius: 10px;
-  box-shadow: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 window.dashboard scrolledwindow > viewport {
-  padding: 6px;
+  padding: 8px;
 }
 
 window.dashboard .gauge-stack {
-  padding: 5px;
-  border: 1px solid rgba($neo-ink, 0.12);
-  border-radius: 9px;
-  background: rgba($neo-card, 0.95);
-  box-shadow: none;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  background: rgba($neo-card, 0.4);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 window.dashboard .gauge-card {
-  padding: 6px 4px 8px;
+  padding: 8px 4px 10px;
 }
 
 window.dashboard .gauge-title {
@@ -602,10 +831,10 @@ window.dashboard .gauge-title {
 }
 
 window.dashboard .gauge-percent {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 900;
-  color: $neo-ink;
-  margin-bottom: 2px;
+  color: $neo-accent;
+  margin-bottom: 4px;
 }
 
 window.dashboard .gauge-detail {
@@ -614,76 +843,99 @@ window.dashboard .gauge-detail {
 }
 
 window.dashboard .gauge-area {
-  background: $neo-surface;
-  border: 1px solid rgba($neo-ink, 0.14);
-  border-radius: 14px;
-  box-shadow: inset 0 1px 0 rgba($neo-ink, 0.14);
-  margin: 2px 0 6px;
+  background: rgba($neo-surface, 0.4);
+  border: none;
+  border-radius: 12px;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1);
+  margin: 4px 0 8px;
 }
 
 window.dashboard .dashboard-calendar {
-  padding: 6px;
-  border: 1px solid rgba($neo-ink, 0.12);
-  border-radius: 10px;
-  background: rgba($neo-card, 0.98);
-  box-shadow: 0 10px 28px $neo-shadow;
+  padding: 8px;
+  border: none;
+  border-radius: 12px;
+  background: rgba($neo-card, 0.6);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 window.dashboard calendar button {
   padding-top: 4px;
   padding-bottom: 4px;
   border-radius: 8px;
-  border: 1px solid rgba($neo-ink, 0.12);
-  background: rgba($neo-surface, 0.96);
-}
-
-window.dashboard calendar button:checked {
-  background: rgba($neo-accent, 0.24);
-  border-color: rgba($neo-accent, 0.6);
-}
-
-window.dashboard .pill-button {
-  padding: 5px 12px;
-  border-radius: 9px;
-  background: rgba($neo-accent, 0.18);
-  border: 1px solid rgba($neo-accent, 0.5);
-  box-shadow: none;
+  border: none;
+  background: rgba($neo-surface, 0.45);
   color: $neo-ink;
 }
 
-window.dashboard .dashboard-close {
-  padding: 8px 14px;
-  border-radius: 10px;
-  background: rgba($neo-accent-2, 0.2);
-  border: 1px solid rgba($neo-accent-2, 0.55);
-  box-shadow: none;
+window.dashboard calendar button:hover {
+  background: rgba($neo-accent, 0.2);
+  color: $neo-ink;
+}
+
+window.dashboard calendar button:checked {
+  background: rgba($neo-accent, 0.55);
+  color: $neo-bg;
   font-weight: 800;
 }
 
+window.dashboard .pill-button {
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: rgba($neo-accent, 0.12);
+  border: none;
+  box-shadow: none;
+  color: $neo-accent;
+  transition: all 120ms ease;
+}
+
+window.dashboard .pill-button:hover {
+  background: rgba($neo-accent, 0.2);
+}
+
 window.dashboard .storage-row {
-  background: $neo-surface;
+  background: transparent;
 }
 
 window.dashboard .storage-mount {
   font-weight: 800;
+  color: $neo-ink;
 }
 
 window.dashboard .storage-type,
 window.dashboard .storage-pct {
   color: $neo-muted;
+  font-size: 11px;
 }
 
 window.dashboard .window-title {
   font-weight: 800;
+  color: $neo-ink;
 }
 
 window.dashboard .window-workspace {
-  color: $neo-ink;
-  background: rgba($neo-accent-2, 0.2);
-  padding: 2px 6px;
-  border: 1px solid rgba($neo-accent-2, 0.55);
-  border-radius: 7px;
+  color: $neo-accent;
+  background: rgba($neo-accent, 0.1);
+  padding: 2px 8px;
+  border: none;
+  border-radius: 6px;
   box-shadow: none;
+  font-size: 10px;
+}
+
+window.dashboard .window-workspace image {
+  -gtk-icon-size: 14px;
+  color: inherit;
+}
+
+window.dashboard .window-workspace label {
+  color: inherit;
+  font-size: inherit;
+  font-weight: 800;
+}
+
+window.dashboard .window-app-icon {
+  color: $neo-muted;
+  -gtk-icon-size: 18px;
 }
 
 /* OSD */
@@ -692,38 +944,156 @@ window.OSD {
 }
 
 window.OSD .osd-container {
-  padding: 10px 12px;
-  border: 1px solid rgba($neo-ink, 0.14);
+  padding: 12px 14px;
+  border: none;
   border-radius: 12px;
-  background: linear-gradient(180deg, rgba($neo-accent-2, 0.22), rgba($neo-card, 0.96));
-  box-shadow: 0 18px 40px $neo-shadow;
+  background: $neo-surface;
+  border: 1px solid rgba($neo-accent, 0.2);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
 }
 
 window.OSD .osd-icon {
-  font-size: 22px;
-  color: $neo-ink;
+  font-size: 26px;
+  color: $neo-accent;
+  font-weight: 700;
 }
 
 window.OSD .osd-percent {
   font-size: 14px;
   color: $neo-ink;
+  font-weight: 700;
 }
 
 progressbar.osd-progress {
-  min-width: 240px;
-  border: 1px solid rgba($neo-ink, 0.14);
+  min-width: 280px;
+  border: none;
   border-radius: 12px;
-  background: rgba($neo-surface, 0.98);
+  background: rgba($neo-card, 0.5);
   box-shadow: none;
 }
 
 progressbar.osd-progress trough {
   border-radius: 12px;
-  background: $neo-surface;
+  background: rgba($neo-card, 0.5);
+  border: none;
 }
 
 progressbar.osd-progress progress {
   border-radius: 10px;
-  background: $neo-accent;
-  box-shadow: inset 0 1px 0 rgba($neo-ink, 0.14);
+  background: linear-gradient(90deg, $neo-accent 0%, $neo-accent-2 100%);
+  box-shadow: 0 0 12px rgba($neo-accent, 0.5);
+}
+
+/* Control Panel Widgets (Side controls) */
+window.dashboard .control-panel {
+  background: transparent;
+  padding: 0;
+}
+
+window.dashboard .control-section {
+  padding: 12px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba($neo-card, 0.55), rgba($neo-surface, 0.35));
+  border: 1px solid rgba($neo-accent, 0.1);
+  backdrop-filter: blur(8px);
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+window.dashboard .control-section:last-child {
+  margin-bottom: 0;
+}
+
+window.dashboard .control-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: $neo-accent;
+  margin-bottom: 8px;
+  display: block;
+}
+
+window.dashboard .control-slider {
+  min-height: 6px;
+  border-radius: 3px;
+}
+
+window.dashboard .control-slider trough {
+  border-radius: 3px;
+  background: rgba($neo-surface, 0.4);
+  border: none;
+  min-height: 4px;
+}
+
+window.dashboard .control-slider highlight {
+  border-radius: 3px;
+  background: linear-gradient(90deg, $neo-accent 0%, $neo-accent-2 100%);
+}
+
+window.dashboard .control-value {
+  font-size: 12px;
+  font-weight: 700;
+  color: $neo-ink;
+  margin-top: 4px;
+  text-align: right;
+}
+
+window.dashboard .mixer-item {
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  background: rgba($neo-surface, 0.3);
+  transition: all 120ms ease;
+}
+
+window.dashboard .mixer-item:hover {
+  background: rgba($neo-surface, 0.5);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+window.dashboard .mixer-item:last-child {
+  margin-bottom: 0;
+}
+
+window.dashboard .mixer-name {
+  font-size: 11px;
+  font-weight: 600;
+  color: $neo-muted;
+  margin-bottom: 6px;
+}
+
+window.dashboard .mixer-slider {
+  min-height: 5px;
+}
+
+window.dashboard .playback-list {
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px solid rgba($neo-accent, 0.12);
+}
+
+window.dashboard .playback-list scrolledwindow {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+window.dashboard .playback-list scrolledwindow > viewport {
+  padding: 0;
+}
+
+window.dashboard .playback-list .mixer-item {
+  padding: 8px;
+}
+
+window.dashboard .network-info {
+  padding: 8px 0;
+  font-size: 11px;
+  color: $neo-muted;
+}
+
+window.dashboard .network-info strong {
+  color: $neo-accent;
+  font-weight: 700;
 }

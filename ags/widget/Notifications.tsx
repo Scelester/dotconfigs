@@ -245,7 +245,18 @@ const buildPopupRow = (popup: Popup) => {
     })()
   )
 
-  return box
+  const reveal = new Gtk.Revealer({
+    transition_type: Gtk.RevealerTransitionType.SLIDE_LEFT,
+    transition_duration: 200,
+    reveal_child: false
+  })
+  reveal.set_child(box)
+  GLib.idle_add(GLib.PRIORITY_DEFAULT_IDLE, () => {
+    reveal.reveal_child = true
+    return GLib.SOURCE_REMOVE
+  })
+
+  return reveal
 }
 
 export default function Notifications(gdkmonitor: Gdk.Monitor) {

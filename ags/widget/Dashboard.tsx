@@ -58,6 +58,13 @@ type DiskVolume = {
   pct: number
 }
 
+type PlaybackItem = {
+  id: number
+  name: string
+  volume: number
+  muted: boolean
+}
+
 type NotificationEntry = {
   id: number
   app: string
@@ -139,6 +146,11 @@ const prettyMount = (mount: string) => {
   if (mount === "/home") return "~/"
   if (mount === "/home/scelester/Container") return "~/Container"
   return mount.replace(GLib.get_home_dir(), "~")
+}
+
+const clampPercent = (value: number) => {
+  const safe = Number.isFinite(value) ? value : 0
+  return Math.max(0, Math.min(100, Math.round(safe)))
 }
 
 // Helper to decode GLib byte arrays
@@ -338,6 +350,60 @@ const fetchWindows = async (): Promise<WindowInfo[]> => {
   }
 }
 
+let cachedIconTheme: Gtk.IconTheme | null | undefined
+const getIconTheme = () => {
+  if (cachedIconTheme !== undefined) return cachedIconTheme
+  try {
+    const disp = Gdk.Display.get_default && Gdk.Display.get_default()
+    cachedIconTheme = disp ? Gtk.IconTheme.get_for_display(disp) : null
+  } catch {
+    cachedIconTheme = null
+  }
+  return cachedIconTheme
+}
+
+const pickIcon = (candidates: string[], fallback = "application-x-executable-symbolic") => {
+  const theme = getIconTheme()
+  if (theme) {
+    for (const name of candidates) {
+      if (name && theme.has_icon(name)) return name
+    }
+  }
+
+  return candidates.find(Boolean) || fallback
+}
+
+const resolveWindowIcon = (app: string) => {
+  const lower = (app || "").toLowerCase()
+
+  if (/firefox|librewolf/.test(lower))
+    return pickIcon(["firefox-symbolic", "firefox", "applications-internet-symbolic"])
+  if (/brave/.test(lower))
+    return pickIcon(["brave-browser-symbolic", "brave-browser", "applications-internet-symbolic"])
+  if (/chrome|chromium/.test(lower))
+    return pickIcon([
+      "google-chrome-symbolic",
+      "chromium-symbolic",
+      "google-chrome",
+      "chromium",
+      "applications-internet-symbolic"
+    ])
+  if (/code|vscode|vscodium|codium|cursor/.test(lower))
+    return pickIcon([
+      "visual-studio-code-symbolic",
+      "visual-studio-code",
+      "code",
+      "vscodium",
+      "applications-development-symbolic"
+    ])
+  if (/nvim|neovim|vim/.test(lower))
+    return pickIcon(["nvim-symbolic", "nvim", "neovim", "vim", "applications-development-symbolic"])
+  if (/wezterm|kitty|alacritty|foot|ghostty|terminal|tmux/.test(lower))
+    return pickIcon(["utilities-terminal-symbolic"])
+
+  return pickIcon([`${lower}-symbolic`, lower, "application-x-executable-symbolic"])
+}
+
 // Utility to redraw a GTK box with rendered children
 const renderList = <T,>(
   box: Gtk.Box,
@@ -455,6 +521,7 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
     css_classes: ["dashboard-note", "notification-empty"],
     xalign: 0
   })
+  notificationEmpty.visible = false
   const notificationClear = new Gtk.Button({
     label: "Clear",
     css_classes: ["pill-button", "notification-clear"],
@@ -463,8 +530,10 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
   notificationClear.set_sensitive(false)
   notificationClear.connect("clicked", () => clearNotificationHistory())
   const notificationScroll = new Gtk.ScrolledWindow({
-    vexpand: true,
-    min_content_height: NOTIFICATION_LIST_HEIGHT
+    vexpand: false,
+    min_content_height: NOTIFICATION_LIST_HEIGHT,
+    max_content_height: NOTIFICATION_LIST_HEIGHT,
+    height_request: NOTIFICATION_LIST_HEIGHT
   })
   notificationScroll.set_child(notificationBox)
 
@@ -472,6 +541,31 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
   const calendar = new Gtk.Calendar({
     css_classes: ["dashboard-calendar"]
   })
+
+  // Make today's highlight darker via application-level CSS provider and mark today
+  try {
+    const calCss = new Gtk.CssProvider()
+    calCss.load_from_data(`
+      .dashboard-calendar button:checked,
+      .dashboard-calendar .selected,
+      .dashboard-calendar .calendar-day.selected {
+        background-color: rgba(30,30,30,0.85);
+        color: rgba(255,255,255,0.98);
+        border-radius: 6px;
+      }
+    `)
+    const disp = Gdk.Display.get_default && Gdk.Display.get_default()
+    if (disp) Gtk.StyleContext.add_provider_for_display(disp, calCss, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION)
+  } catch (e) {
+    console.error("Calendar CSS provider failed:", e)
+  }
+
+  try {
+    const today = new Date()
+    calendar.mark_day && (calendar as any).mark_day(today.getDate())
+  } catch (e) {
+    // ignore on runtimes without mark_day
+  }
 
   const todoList = new Gtk.Box({
     orientation: Gtk.Orientation.VERTICAL,
@@ -485,6 +579,20 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
     css_classes: ["dashboard-list"]
   })
 
+  const playbackBox = new Gtk.Box({
+    orientation: Gtk.Orientation.VERTICAL,
+    spacing: 6,
+    css_classes: ["dashboard-list"]
+  })
+
+  const playbackScroll = new Gtk.ScrolledWindow({
+    vexpand: false,
+    min_content_height: 140,
+    max_content_height: 200,
+    height_request: 160
+  })
+  playbackScroll.set_child(playbackBox)
+
   const storageStatus = new Gtk.Label({
     label: "Loading disks…",
     css_classes: ["dashboard-note"],
@@ -496,10 +604,78 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
     css_classes: ["card-title"],
     xalign: 0
   })
+  const netSSID = new Gtk.Label({
+    label: "WiFi: —",
+    css_classes: ["network-info"],
+    xalign: 0,
+    ellipsize: Pango.EllipsizeMode.END,
+    max_width_chars: 28
+  })
   const netDetail = new Gtk.Label({
     label: "Down 0B/s · Up 0B/s",
     css_classes: ["dashboard-note"],
     xalign: 0
+  })
+
+  // Network history + simple sparkline drawing area
+  const MAX_NET_SAMPLES = 60
+  const netHistoryDown: number[] = []
+  const netHistoryUp: number[] = []
+  const netGraph = new Gtk.DrawingArea({
+    width_request: 220,
+    height_request: 44,
+    css_classes: ["network-graph"]
+  })
+
+  netGraph.set_draw_func((_area, cr, width, height) => {
+    // transparent background
+    cr.setSourceRGBA(0, 0, 0, 0)
+    cr.paint()
+
+    const down = netHistoryDown.slice(-MAX_NET_SAMPLES)
+    const up = netHistoryUp.slice(-MAX_NET_SAMPLES)
+    const samples = Math.max(down.length, up.length)
+    if (!samples) return
+
+    const all = down.concat(up)
+    const maxVal = Math.max(1, ...all)
+    const pad = 6
+    const w = Math.max(1, width - pad * 2)
+    const h = Math.max(1, height - pad * 2)
+
+    // subtle grid
+    cr.setLineWidth(1)
+    cr.setSourceRGBA(0.85, 0.85, 0.85, 0.08)
+    for (let i = 0; i < 3; i++) {
+      const y = pad + (i / 2) * h
+      cr.moveTo(pad, y)
+      cr.lineTo(pad + w, y)
+      cr.stroke()
+    }
+
+    const drawCurve = (arr: number[], r: number, g: number, b: number, fill = false, alpha = 1) => {
+      cr.setLineWidth(1.5)
+      cr.setSourceRGBA(r, g, b, alpha)
+      const step = w / Math.max(1, samples - 1)
+      if (fill) cr.moveTo(pad, pad + h)
+      arr.forEach((v, i) => {
+        const x = pad + i * step
+        const y = pad + h - (Math.max(0, v) / maxVal) * h
+        if (i === 0) cr.lineTo(x, y)
+        else cr.lineTo(x, y)
+      })
+      if (fill) {
+        cr.lineTo(pad + w, pad + h)
+        cr.closePath()
+        cr.setSourceRGBA(r, g, b, 0.12)
+        cr.fillPreserve()
+      }
+      cr.setSourceRGBA(r, g, b, Math.min(1, alpha))
+      cr.stroke()
+    }
+
+    drawCurve(down, 0.09, 0.53, 0.91, true, 1) // down = cyan area
+    drawCurve(up, 0.95, 0.45, 0.18, false, 1) // up = orange line
   })
 
   const uptimeLabel = new Gtk.Label({ label: "Uptime", css_classes: ["card-title"], xalign: 0 })
@@ -515,9 +691,140 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
     label: "No media",
     css_classes: ["dashboard-note"],
     xalign: 0,
-    wrap: true,
-    wrap_mode: Pango.WrapMode.WORD_CHAR,
+    ellipsize: Pango.EllipsizeMode.END,
     max_width_chars: 30
+  })
+
+  const volumeStatus = createPoll(
+    { volume: 100, isMuted: false },
+    1200,
+    async () => {
+      try {
+        const volStr = await execAsync("pamixer --get-volume")
+        const mutedStr = await execAsync("pamixer --get-mute")
+        const volume = clampPercent(parseInt(volStr.trim(), 10))
+        return { volume, isMuted: mutedStr.trim() === "true" }
+      } catch {
+        return { volume: 100, isMuted: false }
+      }
+    }
+  )
+
+  const micStatus = createPoll(
+    { volume: 100, isMuted: false },
+    1500,
+    async () => {
+      try {
+        const volStr = await execAsync("pamixer --default-source --get-volume")
+        const mutedStr = await execAsync("pamixer --default-source --get-mute")
+        const volume = clampPercent(parseInt(volStr.trim(), 10))
+        return { volume, isMuted: mutedStr.trim() === "true" }
+      } catch {
+        return { volume: 100, isMuted: false }
+      }
+    }
+  )
+
+  const brightnessStatus = createPoll(
+    100,
+    1500,
+    async () => {
+      try {
+        const bright = await execAsync("brightnessctl g")
+        const max = await execAsync("brightnessctl m")
+        const pct = Math.round((parseInt(bright, 10) / parseInt(max, 10)) * 100)
+        return clampPercent(pct)
+      } catch {
+        return 100
+      }
+    }
+  )
+
+  const volumeAdjustment = new Gtk.Adjustment({
+    lower: 0,
+    upper: 100,
+    step_increment: 1,
+    page_increment: 5,
+    value: 100
+  })
+  let volumeSync = false
+  const volumeScale = new Gtk.Scale({
+    orientation: Gtk.Orientation.HORIZONTAL,
+    adjustment: volumeAdjustment,
+    draw_value: false,
+    hexpand: true,
+    css_classes: ["control-slider", "mixer-slider"]
+  })
+  volumeScale.connect("value-changed", (scale) => {
+    if (volumeSync) return
+    const value = clampPercent(scale.get_value())
+    execAsync(`pamixer --set-volume ${value}`).catch(console.error)
+  })
+
+  const micAdjustment = new Gtk.Adjustment({
+    lower: 0,
+    upper: 100,
+    step_increment: 1,
+    page_increment: 5,
+    value: 100
+  })
+  let micSync = false
+  const micScale = new Gtk.Scale({
+    orientation: Gtk.Orientation.HORIZONTAL,
+    adjustment: micAdjustment,
+    draw_value: false,
+    hexpand: true,
+    css_classes: ["control-slider", "mixer-slider"]
+  })
+  micScale.connect("value-changed", (scale) => {
+    if (micSync) return
+    const value = clampPercent(scale.get_value())
+    execAsync(`pamixer --default-source --set-volume ${value}`).catch(console.error)
+  })
+
+  const brightnessAdjustment = new Gtk.Adjustment({
+    lower: 0,
+    upper: 100,
+    step_increment: 1,
+    page_increment: 5,
+    value: 100
+  })
+  let brightnessSync = false
+  const brightnessScale = new Gtk.Scale({
+    orientation: Gtk.Orientation.HORIZONTAL,
+    adjustment: brightnessAdjustment,
+    draw_value: false,
+    hexpand: true,
+    css_classes: ["control-slider"]
+  })
+  brightnessScale.connect("value-changed", (scale) => {
+    if (brightnessSync) return
+    const value = clampPercent(scale.get_value())
+    execAsync(`brightnessctl set ${value}%`).catch(console.error)
+  })
+
+  const volumeValueLabel = volumeStatus((state) => {
+    const value = clampPercent(state.volume)
+    volumeSync = true
+    volumeScale.set_value(value)
+    volumeSync = false
+    return state.isMuted ? "Muted" : `${value}%`
+  })
+
+  const micValueLabel = micStatus((state) => {
+    const value = clampPercent(state.volume)
+    micSync = true
+    micScale.set_value(value)
+    micSync = false
+    return state.isMuted ? "Muted" : `${value}%`
+  })
+
+  const brightnessValueLabel = brightnessStatus((value) => {
+    const pct = clampPercent(value)
+    brightnessSync = true
+    brightnessScale.set_value(pct)
+    brightnessSync = false
+    return `${pct}%`
   })
 
   const powerProfileStatus = createPoll<PowerProfileState>(
@@ -769,6 +1076,171 @@ const applyProfile = (profile: Profile) => {
     )
   }
 
+  const readPlaybackStreams = async (): Promise<PlaybackItem[]> => {
+    try {
+      const out = await execAsync("pactl -f json list sink-inputs")
+      const parsed = JSON.parse(out)
+      if (!Array.isArray(parsed)) throw new Error("Unexpected pactl json")
+
+      return parsed
+        .map((entry: any) => {
+          const id = typeof entry.index === "number" ? entry.index : parseInt(entry.index, 10)
+          const props = entry.properties || {}
+          const name =
+            props["application.name"] ||
+            props["media.name"] ||
+            props["application.process.binary"] ||
+            `App ${Number.isFinite(id) ? id : "?"}`
+
+          const volumeObj = entry.volume || {}
+          const channelPercents = Object.values(volumeObj)
+            .map((v: any) => {
+              if (!v) return null
+              if (typeof v === "number") return null
+              if (typeof v === "string") {
+                const match = v.match(/(\d+)%/)
+                return match ? parseInt(match[1], 10) : null
+              }
+              if (typeof v === "object" && typeof v.value_percent === "string") {
+                const match = v.value_percent.match(/(\d+)%/)
+                return match ? parseInt(match[1], 10) : null
+              }
+              if (typeof v === "object" && typeof v.value_percent === "number") {
+                return v.value_percent
+              }
+              return null
+            })
+            .filter((n) => typeof n === "number") as number[]
+
+          const volume = channelPercents.length
+            ? clampPercent(channelPercents.reduce((a, b) => a + b, 0) / channelPercents.length)
+            : 0
+
+          const muted = Boolean(entry.mute ?? entry.muted ?? false)
+
+          if (!Number.isFinite(id)) return null
+          return { id, name: String(name).trim() || `App ${id}`, volume, muted }
+        })
+        .filter((item: PlaybackItem | null): item is PlaybackItem => Boolean(item))
+    } catch {
+      // fallback to plain text parsing
+    }
+
+    try {
+      const out = await execAsync("pactl list sink-inputs")
+      const blocks = out.split(/Sink Input #/).slice(1)
+      return blocks
+        .map((block) => {
+          const lines = block.split("\n")
+          const id = parseInt(lines[0]?.trim() || "", 10)
+          if (!Number.isFinite(id)) return null
+
+          const nameLine =
+            lines.find((l) => l.includes("application.name")) ||
+            lines.find((l) => l.includes("media.name")) ||
+            lines.find((l) => l.includes("application.process.binary"))
+          const nameMatch = nameLine?.match(/=\s*\"(.+)\"/)
+          const name = nameMatch?.[1] || `App ${id}`
+
+          const muteLine = lines.find((l) => l.trim().startsWith("Mute:"))
+          const muted = muteLine?.includes("yes") || false
+
+          const volumeLine = lines.find((l) => l.trim().startsWith("Volume:")) || ""
+          const volMatch = volumeLine.match(/(\d+)%/)
+          const volume = volMatch ? clampPercent(parseInt(volMatch[1], 10)) : 0
+
+          return { id, name, volume, muted }
+        })
+        .filter((item: PlaybackItem | null): item is PlaybackItem => Boolean(item))
+    } catch {
+      return []
+    }
+  }
+
+  let lastPlaybackKey = ""
+  const renderPlaybackList = (items: PlaybackItem[]) => {
+    let child = playbackBox.get_first_child()
+    while (child) {
+      playbackBox.remove(child)
+      child = playbackBox.get_first_child()
+    }
+
+    if (!items.length) {
+      playbackBox.append(
+        new Gtk.Label({
+          label: "No active audio apps",
+          css_classes: ["dashboard-note"],
+          xalign: 0
+        })
+      )
+      return
+    }
+
+    items.forEach((item) => {
+      const row = new Gtk.Box({
+        orientation: Gtk.Orientation.VERTICAL,
+        spacing: 6,
+        css_classes: ["mixer-item"]
+      })
+
+      const header = new Gtk.Box({ spacing: 8 })
+      const nameLabel = new Gtk.Label({
+        label: item.name,
+        xalign: 0,
+        hexpand: true,
+        ellipsize: Pango.EllipsizeMode.END,
+        max_width_chars: 28,
+        css_classes: ["mixer-name"]
+      })
+      const valueLabel = new Gtk.Label({
+        label: item.muted ? "Muted" : `${item.volume}%`,
+        xalign: 1,
+        halign: Gtk.Align.END,
+        css_classes: ["control-value"]
+      })
+      header.append(nameLabel)
+      header.append(valueLabel)
+
+      const adjustment = new Gtk.Adjustment({
+        lower: 0,
+        upper: 100,
+        step_increment: 1,
+        page_increment: 5,
+        value: item.volume
+      })
+      let sync = false
+      const scale = new Gtk.Scale({
+        orientation: Gtk.Orientation.HORIZONTAL,
+        adjustment,
+        draw_value: false,
+        hexpand: true,
+        css_classes: ["control-slider", "mixer-slider"]
+      })
+      scale.connect("value-changed", (widget) => {
+        if (sync) return
+        const value = clampPercent(widget.get_value())
+        execAsync(`pactl set-sink-input-volume ${item.id} ${value}%`).catch(console.error)
+      })
+      sync = true
+      scale.set_value(item.volume)
+      sync = false
+
+      row.append(header)
+      row.append(scale)
+      playbackBox.append(row)
+    })
+  }
+
+  const refreshPlayback = async () => {
+    const items = await readPlaybackStreams()
+    const key = items.length
+      ? items.map((i) => `${i.id}:${i.volume}:${i.muted}:${i.name}`).join("|")
+      : "empty"
+    if (key === lastPlaybackKey) return
+    lastPlaybackKey = key
+    renderPlaybackList(items)
+  }
+
   const renderEmailList = (items: EmailItem[]) => {
     renderList(
       emailBox,
@@ -803,7 +1275,7 @@ const applyProfile = (profile: Profile) => {
 
   const renderNotificationList = (items: NotificationEntry[]) => {
     notificationClear.sensitive = items.length > 0
-    notificationScroll.visible = items.length > 0
+    notificationScroll.visible = true
 
     let child = notificationBox.get_first_child()
     while (child) {
@@ -812,12 +1284,17 @@ const applyProfile = (profile: Profile) => {
     }
 
     if (!items.length) {
-      notificationEmpty.visible = true
-      notificationBox.visible = false
+      notificationBox.visible = true
+      notificationBox.append(
+        new Gtk.Label({
+          label: "No notifications yet",
+          css_classes: ["dashboard-note", "notification-empty"],
+          xalign: 0
+        })
+      )
       return
     }
 
-    notificationEmpty.visible = false
     notificationBox.visible = true
 
     items.forEach((item) => {
@@ -887,7 +1364,19 @@ const applyProfile = (profile: Profile) => {
       row.append(header)
       row.append(summary)
       row.append(body)
-      notificationBox.append(row)
+
+      const reveal = new Gtk.Revealer({
+        transition_type: Gtk.RevealerTransitionType.SLIDE_LEFT,
+        transition_duration: 180,
+        reveal_child: false
+      })
+      reveal.set_child(row)
+      GLib.idle_add(GLib.PRIORITY_DEFAULT_IDLE, () => {
+        reveal.reveal_child = true
+        return GLib.SOURCE_REMOVE
+      })
+
+      notificationBox.append(reveal)
     })
   }
 
@@ -1022,6 +1511,8 @@ const applyProfile = (profile: Profile) => {
   }
 
   let lastNet = { rx: 0, tx: 0, ts: 0 }
+  let lastStorage = { totalPct: 0, volumes: [] as DiskVolume[] }
+  let storageTick = 0
   // Human readable network speeds
   const formatSpeed = (bps: number) => {
     const abs = Math.max(0, bps)
@@ -1031,8 +1522,38 @@ const applyProfile = (profile: Profile) => {
     return `${abs.toFixed(0)} B/s`
   }
 
+  const readWifiName = async () => {
+    try {
+      const out = await execAsync("iwgetid -r")
+      const ssid = out.trim()
+      if (ssid) return ssid
+    } catch {}
+
+    try {
+      const out = await execAsync("nmcli -t -f active,ssid dev wifi")
+      const line = out
+        .split("\n")
+        .map((l) => l.trim())
+        .find((l) => l.startsWith("yes:"))
+      if (line) return line.split(":").slice(1).join(":").trim()
+    } catch {}
+
+    try {
+      const out = await execAsync("iw dev")
+      const match = out.match(/ssid\s+(.+)/i)
+      if (match?.[1]) return match[1].trim()
+    } catch {}
+
+    return ""
+  }
+
   // Aggregate rx/tx across interfaces (excluding lo)
   const readNetwork = async () => {
+    let ssid = ""
+    try {
+      ssid = await readWifiName()
+    } catch {}
+
     try {
       const out = await execAsync("cat /proc/net/dev")
       const lines = out.split("\n").slice(2).filter((l) => l.trim().length > 0)
@@ -1052,16 +1573,27 @@ const applyProfile = (profile: Profile) => {
       const now = Date.now() / 1000
       if (lastNet.ts === 0) {
         lastNet = { rx, tx, ts: now }
-        return { down: 0, up: 0 }
+        return { down: 0, up: 0, ssid }
       }
       const dt = Math.max(0.5, now - lastNet.ts)
       const down = (rx - lastNet.rx) / dt
       const up = (tx - lastNet.tx) / dt
       lastNet = { rx, tx, ts: now }
-      return { down, up }
+      // update sparkline history and redraw
+      try {
+        netHistoryDown.push(down)
+        netHistoryUp.push(up)
+        if (netHistoryDown.length > MAX_NET_SAMPLES) netHistoryDown.shift()
+        if (netHistoryUp.length > MAX_NET_SAMPLES) netHistoryUp.shift()
+        netGraph.queue_draw()
+      } catch (e) {
+        // ignore if histories are not yet available for some reason
+      }
+
+      return { down, up, ssid }
     } catch (err) {
       console.error("Network read failed:", err)
-      return { down: 0, up: 0 }
+      return { down: 0, up: 0, ssid }
     }
   }
 
@@ -1228,19 +1760,30 @@ const applyProfile = (profile: Profile) => {
     const gpu = await readGpu()
     gpuGauge.update(gpu.pct, gpu.detail || "n/a")
 
-    const storage = await readStorageAll()
-    storageGauge.update(storage.totalPct, storage.volumes.length ? `${storage.volumes.length} vols` : "n/a")
-    renderStorageList(storage.volumes)
-    storageStatus.label = storage.volumes.length
-      ? `Total ${storage.totalPct}% across ${storage.volumes.length} vols`
-      : "No disks detected"
+    storageTick += 1
+    if (storageTick % 10 === 0 || !lastStorage.volumes.length) {
+      lastStorage = await readStorageAll()
+      renderStorageList(lastStorage.volumes)
+      storageStatus.label = lastStorage.volumes.length
+        ? `Total ${lastStorage.totalPct}% across ${lastStorage.volumes.length} vols`
+        : "No disks detected"
+    }
+
+    storageGauge.update(
+      lastStorage.totalPct,
+      lastStorage.volumes.length ? `${lastStorage.volumes.length} vols` : "n/a"
+    )
   }
 
   // Update network card
   const refreshNetwork = async () => {
     const net = await readNetwork()
     netLabel.label = "Network"
+    netSSID.label = net.ssid ? `WiFi: ${net.ssid}` : "WiFi: —"
     netDetail.label = `Down ${formatSpeed(net.down)} · Up ${formatSpeed(net.up)}`
+    try {
+      netGraph.queue_draw()
+    } catch (e) {}
   }
 
   // Update uptime/updates/media cards
@@ -1261,6 +1804,7 @@ const applyProfile = (profile: Profile) => {
     refreshGauges()
     refreshNetwork()
     refreshMeta()
+    refreshPlayback()
     refreshNotifications()
 
     const windows = await fetchWindows()
@@ -1269,6 +1813,17 @@ const applyProfile = (profile: Profile) => {
       windows,
       (item) => {
         const row = new Gtk.Box({ orientation: Gtk.Orientation.HORIZONTAL, spacing: 8, css_classes: ["dashboard-list-row", "windows-row"], hexpand: true })
+        const appIconName = resolveWindowIcon(item.app)
+        const appBox = new Gtk.Box({
+          orientation: Gtk.Orientation.HORIZONTAL,
+          spacing: 6,
+          valign: Gtk.Align.CENTER
+        })
+        const appIcon = new Gtk.Image({
+          icon_name: appIconName,
+          pixel_size: 18
+        })
+        appIcon.add_css_class("window-app-icon")
         const appLabel = new Gtk.Label({
           label: item.app,
           xalign: 0,
@@ -1277,6 +1832,9 @@ const applyProfile = (profile: Profile) => {
           max_width_chars: 12,
           width_chars: 12
         })
+        appBox.append(appIcon)
+        appBox.append(appLabel)
+        appBox.set_hexpand(false)
         const titleLabel = new Gtk.Label({
           label: item.title,
           xalign: 0,
@@ -1285,19 +1843,32 @@ const applyProfile = (profile: Profile) => {
           max_width_chars: 44,
           css_classes: ["window-title"]
         })
+        const wsBox = new Gtk.Box({
+          orientation: Gtk.Orientation.HORIZONTAL,
+          spacing: 6,
+          css_classes: ["window-workspace"],
+          halign: Gtk.Align.END,
+          valign: Gtk.Align.CENTER
+        })
+        const wsIcon = new Gtk.Image({
+          icon_name: appIconName,
+          pixel_size: 14
+        })
+        wsIcon.add_css_class("window-workspace-icon")
         const wsLabel = new Gtk.Label({
           label: `WS ${item.workspace}`,
           xalign: 1,
           halign: Gtk.Align.END,
           ellipsize: Pango.EllipsizeMode.END,
           width_chars: 6,
-          max_width_chars: 6,
-          css_classes: ["window-workspace"]
+          max_width_chars: 6
         })
-        wsLabel.set_hexpand(false)
-        row.append(appLabel)
+        wsBox.append(wsIcon)
+        wsBox.append(wsLabel)
+        wsBox.set_hexpand(false)
+        row.append(appBox)
         row.append(titleLabel)
-        row.append(wsLabel)
+        row.append(wsBox)
         return row
       }
     )
@@ -1351,7 +1922,11 @@ const applyProfile = (profile: Profile) => {
   const networkCard = (
     <box class="dashboard-card" orientation={Gtk.Orientation.VERTICAL} spacing={4}>
       {netLabel}
-      {netDetail}
+      {netSSID}
+      <box orientation={Gtk.Orientation.VERTICAL} spacing={6}>
+        {netDetail}
+        {netGraph}
+      </box>
     </box>
   )
 
@@ -1442,30 +2017,71 @@ const applyProfile = (profile: Profile) => {
     </box>
   )
 
-  // TODO preview with Obsidian link
-  const todoCard = (
-    <box class="dashboard-card" orientation={Gtk.Orientation.VERTICAL} spacing={6}>
-      <label label="Obsidian TODO" class="card-title" xalign={0} />
-      <scrolledwindow 
-        vexpand={true} 
-        min_content_height={TODO_LIST_HEIGHT}
-      >
-        {todoList}
-      </scrolledwindow>
-      <box halign={Gtk.Align.END}>
-        <button
-          class="pill-button"
-          onClicked={() =>
-            execAsync(`obsidian "${OBSIDIAN_URI}"`).catch(() =>
-              execAsync(`xdg-open "${TODO_PATH}"`).catch(console.error)
-            ).finally(() => hideDashboard())
-          }
-        >
-          <label label="Open" />
-        </button>
+  const playbackWrapper = (
+    <box class="playback-list" orientation={Gtk.Orientation.VERTICAL} spacing={6}>
+      <label label="Active Apps" class="mixer-name" xalign={0} />
+      {playbackScroll}
+    </box>
+  )
+
+  const audioMixerSection = (
+    <box class="control-section" orientation={Gtk.Orientation.VERTICAL} spacing={8}>
+      <label label="Audio Mixer" class="control-label" xalign={0} />
+      <box class="mixer-item" orientation={Gtk.Orientation.VERTICAL} spacing={6}>
+        <label label="Output" class="mixer-name" xalign={0} />
+        {volumeScale}
+        <label label={volumeValueLabel} class="control-value" xalign={1} />
+        {playbackWrapper}
+      </box>
+      <box class="mixer-item" orientation={Gtk.Orientation.VERTICAL} spacing={6}>
+        <label label="Microphone" class="mixer-name" xalign={0} />
+        {micScale}
+        <label label={micValueLabel} class="control-value" xalign={1} />
       </box>
     </box>
   )
+
+  const brightnessSection = (
+    <box class="control-section" orientation={Gtk.Orientation.VERTICAL} spacing={6}>
+      <label label="Brightness" class="control-label" xalign={0} />
+      {brightnessScale}
+      <label label={brightnessValueLabel} class="control-value" xalign={1} />
+    </box>
+  )
+
+  const controlPanel = (
+    <box class="control-panel" orientation={Gtk.Orientation.VERTICAL} spacing={10} vexpand={true}>
+      {audioMixerSection}
+      {brightnessSection}
+    </box>
+  )
+
+  // // TODO preview with Obsidian link
+  // const todoCard = (
+  //   <box class="dashboard-card" orientation={Gtk.Orientation.VERTICAL} spacing={6}>
+  //     <label label="Obsidian TODO" class="card-title" xalign={0} />
+  //     <scrolledwindow 
+  //       vexpand={false}
+  //       min_content_height={TODO_LIST_HEIGHT}
+  //       max_content_height={TODO_LIST_HEIGHT}
+  //       height_request={TODO_LIST_HEIGHT}
+  //     >
+  //       {todoList}
+  //     </scrolledwindow>
+  //     <box halign={Gtk.Align.END}>
+  //       <button
+  //         class="pill-button"
+  //         onClicked={() =>
+  //           execAsync(`obsidian "${OBSIDIAN_URI}"`).catch(() =>
+  //             execAsync(`xdg-open "${TODO_PATH}"`).catch(console.error)
+  //           ).finally(() => hideDashboard())
+  //         }
+  //       >
+  //         <label label="Open" />
+  //       </button>
+  //     </box>
+  //   </box>
+  // )
 
   // Running windows list
   const activityCard = (
@@ -1482,30 +2098,22 @@ const applyProfile = (profile: Profile) => {
     </box>
   )
 
-  // Close button to hide the dashboard
-  const closeButton = (
-    <button class="dashboard-close" onClicked={hideDashboard}>
-      <label label="✕ CLOSE" />
-    </button>
-  )
-
-  const columnGroup = new Gtk.SizeGroup({ mode: Gtk.SizeGroupMode.VERTICAL })
+  // Close button removed - use ESC or click away to close dashboard
 
   // Column stack: profile + utilities
   const leftColumn = (
-    <box class="dashboard-column left" orientation={Gtk.Orientation.VERTICAL} spacing={8} width_request={400}>
+    <box class="dashboard-column left" orientation={Gtk.Orientation.VERTICAL} spacing={8} width_request={400} hexpand={true} vexpand={true}>
       {profileCard}
       {mediaCard}
-      {todoCard}
+      {/* {todoCard} */}
       {uptimeCard}
       {networkCard}
     </box>
   ) as Gtk.Widget
-  columnGroup.add_widget(leftColumn)
 
   // Column stack: gauges
   const middleColumn = (
-    <box class="dashboard-column middle" orientation={Gtk.Orientation.VERTICAL} spacing={10} width_request={190} hexpand={true}>
+    <box class="dashboard-column middle" orientation={Gtk.Orientation.VERTICAL} spacing={10} width_request={190} hexpand={true} vexpand={true}>
       <box class="gauge-stack" orientation={Gtk.Orientation.VERTICAL} spacing={10} valign={Gtk.Align.START} halign={Gtk.Align.CENTER} margin_top={-4}>
         {cpuGauge.widget}
         {ramGauge.widget}
@@ -1514,60 +2122,90 @@ const applyProfile = (profile: Profile) => {
       </box>
     </box>
   ) as Gtk.Widget
-  columnGroup.add_widget(middleColumn)
 
   // Column stack: calendar + disks + windows
   const rightColumn = (
-    <box class="dashboard-column right" orientation={Gtk.Orientation.VERTICAL} spacing={8} width_request={400}>
+    <box class="dashboard-column right" orientation={Gtk.Orientation.VERTICAL} spacing={8} width_request={400} hexpand={true} vexpand={true}>
       {calendarCard}
       {storageCard}
       {activityCard}
     </box>
   ) as Gtk.Widget
-  columnGroup.add_widget(rightColumn)
 
   // Column stack: power + notifications
   const extraColumn = (
-    <box class="dashboard-column extra" orientation={Gtk.Orientation.VERTICAL} spacing={8} width_request={360}>
+    <box class="dashboard-column extra" orientation={Gtk.Orientation.VERTICAL} spacing={8} width_request={360} hexpand={true} vexpand={true}>
       {powerCard}
       {notificationCard}
     </box>
   ) as Gtk.Widget
-  columnGroup.add_widget(extraColumn)
 
-  // Main surface containing top controls and columns
+  const controlColumn = (
+    <box class="dashboard-column control" orientation={Gtk.Orientation.VERTICAL} spacing={8} width_request={300} hexpand={true} vexpand={true}>
+      {controlPanel}
+    </box>
+  ) as Gtk.Widget
+
+  // Main surface containing columns
   const layout = (
     <box
       class="dashboard-surface"
       orientation={Gtk.Orientation.VERTICAL}
-      spacing={10}
+      spacing={12}
       hexpand={true}
       vexpand={true}
+      halign={Gtk.Align.FILL}
+      valign={Gtk.Align.FILL}
     >
-      <box halign={Gtk.Align.END} class="top-controls">
-        {closeButton}
-      </box>
-      <box class="dashboard-columns" spacing={8} hexpand={true}>
+      <box
+        class="dashboard-columns"
+        spacing={14}
+        hexpand={true}
+        vexpand={true}
+        halign={Gtk.Align.FILL}
+        valign={Gtk.Align.FILL}
+      >
         {leftColumn}
         {middleColumn}
         {rightColumn}
         {extraColumn}
+        {controlColumn}
       </box>
     </box>
   )
 
-  // Centered overlay on the monitor
+  // Top-left overlay on the monitor
   const overlay = (
     <box
       class="dashboard-overlay"
       hexpand={true}
       vexpand={true}
-      halign={Gtk.Align.CENTER}
-      valign={Gtk.Align.CENTER}
+      halign={Gtk.Align.FILL}
+      valign={Gtk.Align.FILL}
     >
       {layout}
     </box>
-  )
+  ) as Gtk.Widget
+
+  const overlayStack = new Gtk.Stack({
+    transition_type: Gtk.StackTransitionType.CROSSFADE,
+    transition_duration: 150
+  })
+  overlayStack.set_hexpand(true)
+  overlayStack.set_vexpand(true)
+  overlayStack.set_halign(Gtk.Align.FILL)
+  overlayStack.set_valign(Gtk.Align.FILL)
+
+  const overlayBlank = new Gtk.Box({
+    hexpand: true,
+    vexpand: true
+  })
+  overlayStack.add_named(overlayBlank, "blank")
+  overlayStack.add_named(overlay, "overlay")
+  overlayStack.set_visible_child_name("blank")
+  const playOverlayTransition = () => {
+    overlayStack.set_visible_child_name("overlay")
+  }
 
   // The actual dashboard window
   const win = (
@@ -1579,6 +2217,7 @@ const applyProfile = (profile: Profile) => {
       application={app}
       visible={false}
       exclusivity={Astal.Exclusivity.IGNORE}
+      keymode={Astal.Keymode.ON_DEMAND}
       // Handle focus/esc + periodic refreshes
       onRealize={(self) => {
         try {
@@ -1587,48 +2226,63 @@ const applyProfile = (profile: Profile) => {
             // @ts-expect-error gtk4 types
             self.set_focus_on_map(true)
           }
-          self.grab_focus()
         } catch (err) {
           console.error("Dashboard focus setup failed:", err)
         }
 
         const keyController = new Gtk.EventControllerKey()
         keyController.set_propagation_phase(Gtk.PropagationPhase.CAPTURE)
-        keyController.connect("key-pressed", (_ctrl, keyval) => {
+        keyController.connect("key-pressed", (_self, keyval, _keycode, _state) => {
           if (keyval === Gdk.KEY_Escape) {
             hideDashboard()
-            return true
+            return Gdk.EVENT_STOP
           }
-          return false
+          return Gdk.EVENT_PROPAGATE
         })
         self.add_controller(keyController)
 
-        const focusController = new Gtk.EventControllerFocus()
-        focusController.connect("leave", () => hideDashboard())
-        self.add_controller(focusController)
-
         // Keep gauges warm while window stays open
-        timeout(500, () => {
+        timeout(1000, () => {
           refreshGauges()
           return true
         })
 
-        // Network poll
+        // Network poll (faster)
         timeout(1000, () => {
           refreshNetwork()
           return true
         })
 
-        // Slower meta poll (uptime/updates/media)
-        timeout(3000, () => {
+        // Meta poll (uptime/updates/media) - more frequent
+        timeout(2000, () => {
           refreshMeta()
           return true
         })
+
+        // Playback mixer refresh - faster for now-playing responsiveness
+        timeout(1000, () => {
+          refreshPlayback()
+          return true
+        })
+      }}
+      onShow={(self) => {
+        self.grab_focus()
+        playOverlayTransition()
+        // ensure everything is fresh immediately when the dashboard opens
+        refreshDashboard()
       }}
     >
-      {overlay}
+      {overlayStack}
     </window>
   ) as Astal.Window
+
+  win.connect("notify::visible", () => {
+    if (win.visible) {
+      playOverlayTransition()
+      // refresh on each toggle to make slow polls up-to-date immediately
+      refreshDashboard()
+    } else overlayStack.set_visible_child_name("blank")
+  })
 
   win.connect("destroy", () => stopNotificationsListener())
 

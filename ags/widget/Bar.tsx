@@ -4,6 +4,7 @@ import { execAsync } from "ags/process"
 import { createPoll } from "ags/time"
 import TrayWidget from "./Tray"
 import { toggleDashboard } from "./dashboardState"
+import Pango from "gi://Pango"
 
 type MusicState = {
   status: string
@@ -11,8 +12,68 @@ type MusicState = {
   source: "playerctl" | "mpc" | "none"
 }
 
+type ActiveWindow = {
+  title: string
+  app: string
+  icon: string
+}
+
+type WorkspaceSummary = {
+  id: number
+  icons: string[]
+}
+
 export default function Bar(gdkmonitor: Gdk.Monitor) {
   const { TOP, LEFT, RIGHT } = Astal.WindowAnchor
+
+  const iconTheme = Gtk.IconTheme.get_for_display(gdkmonitor.get_display())
+  const fallbackIcon = "applications-system-symbolic"
+  const normalizeIconName = (name: string) =>
+    name
+      .toLowerCase()
+      .replace(/\s+/g, "-")
+      .replace(/[^a-z0-9-]/g, "")
+
+  const hasThemeIcon = (name: string | undefined) => !!(name && iconTheme?.has_icon(name))
+
+  const pickIcon = (candidates: string[]) => {
+    for (const candidate of candidates) {
+      if (hasThemeIcon(candidate)) return candidate
+    }
+    return fallbackIcon
+  }
+
+  const resolveIconName = (name: string) => {
+    if (!name) return fallbackIcon
+    const lower = name.toLowerCase()
+    const cleaned = normalizeIconName(name)
+
+    if (/firefox|librewolf/.test(lower))
+      return pickIcon(["firefox-symbolic", "applications-internet-symbolic"])
+    if (/brave/.test(lower))
+      return pickIcon(["brave-browser-symbolic", "applications-internet-symbolic"])
+    if (/chrome|chromium/.test(lower))
+      return pickIcon(["google-chrome-symbolic", "chromium-symbolic", "applications-internet-symbolic"])
+    if (/code|vscode|codium|cursor/.test(lower))
+      return pickIcon([
+        "visual-studio-code-symbolic",
+        "visual-studio-code",
+        "code",
+        "code-oss",
+        "vscodium",
+        "applications-development-symbolic"
+      ])
+    if (/nvim|neovim|vim/.test(lower)) return pickIcon(["nvim-symbolic", "nvim", "vim"])
+    if (/wezterm|kitty|alacritty|foot|ghostty|terminal|tmux/.test(lower))
+      return pickIcon(["utilities-terminal-symbolic"])
+
+    return pickIcon([
+      `${cleaned}-symbolic`,
+      `${lower}-symbolic`,
+      "application-x-executable-symbolic",
+      fallbackIcon
+    ])
+  }
 
   const time = createPoll("", 1000, "date +'%H:%M'")
   const date = createPoll("", 1000, "date +'%a %d %b'")
@@ -31,20 +92,124 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
     }
   )
 
-  const workspacesWithWindows = createPoll(
-    [] as number[],
-    500,
+  const workspaceIcons = createPoll<WorkspaceSummary[]>(
+    [],
+    800,
     async () => {
       try {
         const clients = await execAsync("hyprctl clients -j")
         const json = JSON.parse(clients)
-        const workspaces = [...new Set(json.map((c: any) => c.workspace.id))]
-        return workspaces.filter((w: number) => w >= 1 && w <= 7)
+        const grouped = new Map<number, string[]>()
+
+        json.forEach((c: any) => {
+          const ws = c.workspace?.id
+          if (typeof ws !== "number" || ws < 1 || ws > 7) return
+          const app = c.class || c.app || c.initialClass || "App"
+          const icon = resolveIconName(app)
+          const list = grouped.get(ws) || []
+          if (!list.includes(icon)) list.push(icon)
+          grouped.set(ws, list.slice(0, 4))
+        })
+
+        return Array.from(grouped.entries())
+          .map(([id, icons]) => ({ id, icons }))
+          .sort((a, b) => a.id - b.id)
       } catch {
         return []
       }
     }
   )
+
+  const activeWindowStatus = createPoll<ActiveWindow>(
+    { title: "Desktop", app: "Desktop", icon: fallbackIcon },
+    500,
+    async () => {
+      try {
+        const active = await execAsync("hyprctl activewindow -j")
+        const json = JSON.parse(active)
+        const app = json.class || json.initialClass || json.app || "Desktop"
+        const title = json.title || json.initialTitle || app || "Desktop"
+        return { title, app, icon: resolveIconName(app) }
+      } catch {
+        return { title: "Desktop", app: "Desktop", icon: fallbackIcon }
+      }
+    }
+  )
+
+  const activeWindowIcon = new Gtk.Image({
+    icon_name: fallbackIcon,
+    pixel_size: 16,
+    css_classes: ["active-window-icon"]
+  })
+  const activeWindowTitle = new Gtk.Label({
+    label: "Desktop",
+    xalign: 0,
+    hexpand: true,
+    ellipsize: Pango.EllipsizeMode.END,
+    max_width_chars: 22,
+    css_classes: ["active-window-title"]
+  })
+  const activeWindowBox = new Gtk.Box({
+    spacing: 6,
+    css_classes: ["active-window"],
+    valign: Gtk.Align.CENTER
+  })
+  activeWindowBox.append(activeWindowIcon)
+  activeWindowBox.append(activeWindowTitle)
+
+  const updateActiveWindow = () => {
+    const state = activeWindowStatus.get()
+    activeWindowTitle.label = state.title || state.app || "Desktop"
+    activeWindowIcon.icon_name = state.icon || fallbackIcon
+  }
+  updateActiveWindow()
+  activeWindowStatus.subscribe(updateActiveWindow)
+  activeWindowStatus.subscribe(() => renderWorkspaceIcons(workspaceIcons.get()))
+
+  const workspaceIconBoxes: Gtk.Box[] = []
+  const workspaceButtons: Gtk.Button[] = []
+  const renderWorkspaceIcons = (summaries: WorkspaceSummary[]) => {
+    const summaryMap = new Map(summaries.map((s) => [s.id, s.icons]))
+    const activeWsId = parseInt(activeWorkspace.get() || "0", 10) || 0
+    const activeIcon = activeWindowStatus.get().icon || fallbackIcon
+
+    workspaceIconBoxes.forEach((box, idx) => {
+      const wsId = idx + 1
+      const icons = summaryMap.get(wsId) || []
+      let child = box.get_first_child()
+      while (child) {
+        box.remove(child)
+        child = box.get_first_child()
+      }
+      if (icons.length) {
+        if (wsId === activeWsId) {
+          box.append(
+            new Gtk.Label({
+              label: `${wsId}`,
+              css_classes: ["workspace-number", "active"]
+            })
+          )
+        }
+        icons.slice(0, 4).forEach((iconName) => {
+          box.append(
+            new Gtk.Image({
+              icon_name: iconName,
+              pixel_size: 12,
+              css_classes: ["workspace-icon"]
+            })
+          )
+        })
+      } else {
+        // Empty workspace: show its number; for active with no icons fall back to number as well
+        box.append(
+          new Gtk.Label({
+            label: `${wsId}`,
+            css_classes: ["workspace-number"]
+          })
+        )
+      }
+    })
+  }
 
   const readPlayerctl = async (): Promise<MusicState> => {
     try {
@@ -160,7 +325,7 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
   );
 
 
-  return [
+  const barWindow = (
     // Main Bar Window
     <window
       visible={true}
@@ -177,28 +342,44 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
           <box class="left-section" spacing={12}>
             <button
               class="launcher"
+              valign={Gtk.Align.CENTER}
+              vexpand={false}
               onClicked={() => execAsync("/home/scelester/.config/rofi/scripts/launcher_t1").catch(console.error)}
             >
-              <label label="󰣇" />
+              <label label="x" />
             </button>
 
             <box class="workspaces" spacing={4}>
-              {Array.from({ length: 7 }, (_, i) => i + 1).map((ws) => (
-                <button
-                  class={activeWorkspace((active) =>
-                    active === ws.toString() ? "workspace-btn active" : "workspace-btn"
-                  )}
-                  onClicked={() => execAsync(`hyprctl dispatch workspace ${ws}`).catch(console.error)}
-                >
-                  <label
-                    class="ws-circle"
-                    label={workspacesWithWindows((windows) =>
-                      windows.includes(ws) ? "■" : "□"
-                    )}
-                  />
-                </button>
-              ))}
+              {Array.from({ length: 7 }, (_, i) => i + 1).map((ws) => {
+                const iconsBox = new Gtk.Box({
+                  spacing: 3,
+                  css_classes: ["workspace-icons"],
+                  halign: Gtk.Align.CENTER,
+                  valign: Gtk.Align.CENTER
+                })
+                workspaceIconBoxes[ws - 1] = iconsBox
+                const button = new Gtk.Button({
+                  css_classes: ["workspace-btn"],
+                  valign: Gtk.Align.CENTER,
+                  vexpand: false
+                })
+                workspaceButtons[ws - 1] = button
+                const updateButtonState = (active: string) => {
+                  if (active === ws.toString()) {
+                    button.set_css_classes(["workspace-btn", "active"])
+                  } else {
+                    button.set_css_classes(["workspace-btn"])
+                  }
+                }
+                activeWorkspace.subscribe(updateButtonState)
+                updateButtonState(activeWorkspace.get())
+                button.connect("clicked", () => execAsync(`hyprctl dispatch workspace ${ws}`).catch(console.error))
+                button.set_child(iconsBox)
+                return button
+              })}
             </box>
+
+            {activeWindowBox}
           </box>
         }
         center_widget={
@@ -231,7 +412,7 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
                   label={musicStatus((m) => {
                     const base = m?.metadata || "No music"
                     const tagged = m?.source === "mpc" ? `${base} · mpc` : base
-                    return tagged.length > 30 ? tagged.substring(0, 30) + "..." : tagged
+                    return tagged.length > 30 ? tagged.substring(0, 40) + "|" : tagged
                   })}
                   class="music-info"
                 />
@@ -367,5 +548,11 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
         }
       />
     </window>
-  ]
+  )
+
+  workspaceIcons.subscribe(renderWorkspaceIcons)
+  activeWorkspace.subscribe(() => renderWorkspaceIcons(workspaceIcons.get()))
+  renderWorkspaceIcons(workspaceIcons.get())
+
+  return [barWindow]
 }

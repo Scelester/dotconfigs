@@ -1,0 +1,28 @@
+#!/bin/sh
+
+# Specify the child directory
+child_dir="/home/scelester/.config/hypr/scripts/custom_autostarts"
+
+# Check if the child directory exists
+if [ -d "${child_dir}" ]; then
+    # Sort files in the child directory by name
+    files_to_run=($(ls -1 "${child_dir}" | sort))
+
+    # Iterate through sorted files
+    for file in "${files_to_run[@]}"; do
+        file_path="${child_dir}/${file}"
+        
+        # Check if the file is not executable
+        if [ ! -x "${file_path}" ]; then
+            # Make the file executable
+            chmod +x "${file_path}"
+            echo "Made ${file_path} executable."s
+        fi
+
+        # Run the file
+        echo "Running ${file_path}"
+        "${file_path}"
+    done
+else
+    echo "Child directory '${child_dir}' does not exist."
+fi

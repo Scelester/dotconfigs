@@ -1,0 +1,68 @@
+{
+	"motd": {
+		"cloudBuildErrorAfter": 1594252800000,
+		"cloudBuildWarnAfter": 1590019200000,
+		"defaultNode10After": 1594252800000,
+		"minVersion": "3.0.5",
+		"node8DeploysDisabledAfter": 1613390400000,
+		"node8RuntimeDisabledAfter": 1615809600000,
+		"node8WarnAfter": 1600128000000,
+		"fetched": 1756968003017
+	},
+	"activeProjects": {
+		"/home/scelester/Container/ProjectD/Anweshan/Hire-Enumerator-FE": "prod",
+		"/home/scelester/Container/ProjectD/Anweshan/Hire-Enumerator-FE Func/Hire-Enumerator-Functions": "hire-enumerator-697cd",
+		"/home/scelester/Container/ProjectD/Anweshan/Hire-Enumerator-FE Func": "hire-enumerator-697cd",
+		"/home/scelester/Container/ProjectD/Anweshan/grafx": "grafx-dev",
+		"/home/scelester/Container/ProjectD/Anweshan/AgroAnweshan": "default",
+		"/home/scelester/Container/ProjectD/Personal Finance Tracker/PFT": "pft-smartbudget"
+	},
+	"previews": {
+		"webframeworks": false
+	},
+	"additionalAccounts": [],
+	"activeAccounts": {},
+	"adminsdkconfig": {
+		"hire-enumerator-697cd": {
+			"projectId": "hire-enumerator-697cd",
+			"storageBucket": "hire-enumerator-697cd.firebasestorage.app"
+		}
+	},
+	"user": {
+		"iss": "accounts.google.com",
+		"azp": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"aud": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"sub": "108038475607349697391",
+		"hd": "neuralgridlabs.com",
+		"email": "nabin.paudel@neuralgridlabs.com",
+		"email_verified": true,
+		"at_hash": "qfo8ffWyaKUvyyUkEC2xjQ",
+		"iat": 1756968013,
+		"exp": 1756971613
+	},
+	"tokens": {
+		"expires_at": 1756971612598,
+		"access_token": "ya29.a0AS3H6NzwLrHEO3tti0XBX3Loe-BVDfjKzkTluEj9CYQ7A5_ykamg3l_OajzSchgU0m_TvlOE2TKjO_SXOuyrKiwBWYedDYVzmoPm5ShTCRaiGCFNfZ47TAHpgc0OQcQv-AXTgFDzPYU14hJiAZfn6YAwHE1hCustHkDsh1DuVucWfuFOito6RXkZfZoqZTskZSo2VLaZwlAnaCgYKARISARQSFQHGX2MiqhAEz7mZMNDqdr67-3eGLg0211",
+		"expires_in": 3599,
+		"refresh_token": "1//0g8GjU0VbS4iVCgYIARAAGBASNwF-L9IrJgSr6E3SsB62xQ24jYPGb8vHUZ2_B12IJtXg1NMjAujMndMSp-t_q7OCQ5H9mH2hZFE",
+		"scope": "https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid",
+		"token_type": "Bearer",
+		"id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjJkN2VkMzM4YzBmMTQ1N2IyMTRhMjc0YjVlMGU2NjdiNDRhNDJkZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA4MDM4NDc1NjA3MzQ5Njk3MzkxIiwiaGQiOiJuZXVyYWxncmlkbGFicy5jb20iLCJlbWFpbCI6Im5hYmluLnBhdWRlbEBuZXVyYWxncmlkbGFicy5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6InFmbzhmZld5YUtVdnl5VWtFQzJ4alEiLCJpYXQiOjE3NTY5NjgwMTMsImV4cCI6MTc1Njk3MTYxM30.fPvFsEIqVqJq92LoA86UQClvuP0ctNQJzN7BCARvYoT547DhaPwxMAaX0ucdIc8ESy9v5h50iwdMuP592sG3etJH1hWnOJipj1SPPyN-P5XNzSJDpTVxIgz7eE7dgJ6oopEQUmVHKHh-3DFQt0Wvp8XOqfQ1lr2ywAHSzbHjKBeDxk5wbeIhaOLMUkqqgHkm-L04F6jpDUI2WJQK_aq57wZvyHpPOVtUeodS_Lx_fFx7Vt5M2px6kYPGouqQZBVfSvxoxvurHq0iWfaeWepbHg8MhGzaAoPuYddYJjcFOmxn8z49hJVdPXaOWOwjQ3PVP-dVAIicUg3E32VEtoPy3w"
+	},
+	"apiEnablementCache": {
+		"hire-enumerator-697cd": {
+			"cloudresourcemanager.googleapis.com": true,
+			"cloudfunctions.googleapis.com": true,
+			"cloudbuild.googleapis.com": true,
+			"runtimeconfig.googleapis.com": true,
+			"artifactregistry.googleapis.com": true,
+			"firebaseextensions.googleapis.com": true
+		},
+		"459384010887": {
+			"run.googleapis.com": true,
+			"eventarc.googleapis.com": true,
+			"pubsub.googleapis.com": true,
+			"storage.googleapis.com": true
+		}
+	}
+}

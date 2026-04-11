@@ -1,0 +1,14 @@
+{"timestamp":5686380,"category":"session_restore","name":"backup_can_be_loaded_session_file","extra":{"can_load":"true","path_key":"clean","loadfail_reason":"N/A","glean_timestamp":"1775816172688"}}
+{"timestamp":5686380,"category":"session_restore","name":"backup_can_be_loaded_session_file","extra":{"loadfail_reason":"N/A","can_load":"true","glean_timestamp":"1775816172688","path_key":"clean"}}
+{"timestamp":5686380,"category":"session_restore","name":"shutdown_success_session_startup","extra":{"shutdown_reason":"N/A","glean_timestamp":"1775816172689","shutdown_ok":"false"}}
+{"timestamp":5686627,"category":"webcompatreporting","name":"reason_dropdown","extra":{"setting":"required","glean_timestamp":"1775816172935"}}
+{"timestamp":5686727,"category":"profiles.default","name":"updated","extra":{"glean_timestamp":"1775816173035"}}
+{"timestamp":5686763,"category":"nimbus_events","name":"startup_database_consistency","extra":{"trigger":"startup","glean_timestamp":"1775816173071","db_active_count":"0","total_store_count":"0","total_db_count":"0","primary":"jsonfile","store_active_count":"0"}}
+{"timestamp":5686777,"category":"jsonfile","name":"load_autofillprofiles","extra":{"glean_timestamp":"1775816173085","value":"error_notfounderror"}}
+{"timestamp":5686784,"category":"doh","name":"state_rollback","extra":{"glean_timestamp":"1775816173092","value":"null"}}
+{"timestamp":5686919,"category":"nimbus_events","name":"is_ready","extra":{"glean_timestamp":"1775816173227"}}
+{"timestamp":5686949,"category":"containers","name":"container_profile_loaded","extra":{"containers":"4","glean_timestamp":"1775816173257"}}
+{"timestamp":5687012,"category":"upgrade_dialog","name":"trigger_reason","extra":{"glean_timestamp":"1775816173321","value":"not-major"}}
+{"timestamp":5693440,"category":"urlbar","name":"engagement","extra":{"results":"url,search_engine","engagement_type":"enter","available_semantic_sources":"none","search_mode":"","n_words":"1","search_engine_default_id":"google-b-d","selected_result":"url","n_chars":"27","groups":"heuristic,general","sap":"urlbar_newtab","selected_position":"1","n_results":"2","actions":"none,none","provider":"UrlbarProviderHeuristicFallback","glean_timestamp":"1775816179748","interaction":"typed"}}
+{"timestamp":5743516,"category":"profiles.default","name":"updated","extra":{"glean_timestamp":"1775816229824"}}
+{"timestamp":5744418,"category":"doh","name":"state_shutdown","extra":{"value":"null","glean_timestamp":"1775816230726"}}

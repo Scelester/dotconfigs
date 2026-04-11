@@ -1,0 +1,34 @@
+{
+  "about_get_books_msg_again": false,
+  "add a plugin dialog": "/home/scelester/Downloads",
+  "add books dialog dir": "/home/scelester/Downloads",
+  "add books dialog dir-last-used-filter-spec-all-files": false,
+  "choose_library_icon": "/home/scelester/Pictures",
+  "notified-version-updates": {
+    "__class__": "set",
+    "__value__": [
+      "8.0",
+      "7.22",
+      "8.3",
+      "8.8",
+      "8.1"
+    ]
+  },
+  "sort_history": [
+    [
+      "title",
+      true
+    ],
+    [
+      "timestamp",
+      false
+    ],
+    [
+      "timestamp",
+      false
+    ]
+  ],
+  "systray_msg": true,
+  "welcome_wizard_device": "default",
+  "welcome_wizard_was_run": true
+}

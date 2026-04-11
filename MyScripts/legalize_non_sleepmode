@@ -1,0 +1,4 @@
+#!/bin/sh
+
+pkill hypridle
+nohup hypridle -c ~/.config/hypr/hypridle.conf &

@@ -1,0 +1,10 @@
+{
+  "host": "imap.gmail.com",
+  "port": 993,
+  "user": "nabinpauudel664@gmail.com",
+  "password": "cqqd mhcd qxga vxzu",
+  "mailbox": "INBOX",
+  "limit": 8,
+  "ssl": true,
+  "starttls": false
+}

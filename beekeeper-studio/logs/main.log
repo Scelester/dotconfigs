@@ -1,0 +1,488 @@
+[2025-06-28 17:42:15.508] [info]  (main.ts) starting logging
+[2025-06-28 17:42:15.510] [debug] (main.ts) APP BOOTING
+[2025-06-28 17:42:15.510] [debug] (main.ts) ####################################
+[2025-06-28 17:42:15.510] [debug] (main.ts) Platform Information (App)
+[2025-06-28 17:42:15.510] [debug] (main.ts) {
+  "isWindows": false,
+  "isMac": false,
+  "isArm": false,
+  "oracleSupported": true,
+  "parsedArgs": {
+    "_": [],
+    "sandbox": false
+  },
+  "isLinux": true,
+  "sessionType": "wayland",
+  "isWayland": false,
+  "isPortable": false,
+  "isDevelopment": false,
+  "isAppImage": false,
+  "resourcesPath": "/usr/lib/beekeeper-studio/resources",
+  "env": {
+    "development": false,
+    "test": false,
+    "production": true
+  },
+  "debugEnabled": false,
+  "platform": "linux",
+  "darkMode": false,
+  "userDirectory": "/home/scelester/.config/beekeeper-studio",
+  "downloadsDirectory": "/home/scelester/Downloads",
+  "homeDirectory": "/home/scelester",
+  "pluginsDirectory": "/home/scelester/.config/beekeeper-studio/plugins",
+  "testMode": false,
+  "appDbPath": "/home/scelester/.config/beekeeper-studio/app.db",
+  "updatesDisabled": false,
+  "appVersion": "5.2.10",
+  "parsedAppVersion": {
+    "major": 5,
+    "minor": 2,
+    "patch": 10,
+    "channel": "stable"
+  },
+  "cloudUrl": "https://app.beekeeperstudio.io",
+  "locale": ""
+}
+[2025-06-28 17:42:15.515] [info]  (renderer/utilityconnection) QUEUEING REQUEST FOR NAME, ID:  license/getStatus 260a3f35-2702-4a64-a498-dfd395a23e45
+[2025-06-28 17:42:15.522] [info]  (main.ts)                    Received port in renderer with sId:  9025eb2e-8ce5-4912-bc1b-5bd2ccb50a95
+[2025-06-28 17:42:15.523] [info]  (renderer/utilityconnection) RECEIVED PORT IN UtilityConnection:  {}
+[2025-06-28 17:42:15.523] [info]  (renderer/utilityconnection) PROCESSING QUEUED REQUEST:  license/getStatus 260a3f35-2702-4a64-a498-dfd395a23e45
+[2025-06-28 17:42:15.523] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/setting/find c99738da-9f08-4e79-bc63-2646b3700b22
+[2025-06-28 17:42:15.530] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  260a3f35-2702-4a64-a498-dfd395a23e45
+[2025-06-28 17:42:15.531] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  license/get d7c12a95-6f25-4dcc-b022-bb479f6a9c0d
+[2025-06-28 17:42:15.532] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  c99738da-9f08-4e79-bc63-2646b3700b22
+[2025-06-28 17:42:15.533] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  d7c12a95-6f25-4dcc-b022-bb479f6a9c0d
+[2025-06-28 17:42:15.533] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  license/getInstallationId aac54a53-d067-4cf1-89dd-a4ceacb779bb
+[2025-06-28 17:42:15.535] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  aac54a53-d067-4cf1-89dd-a4ceacb779bb
+[2025-06-28 17:42:15.535] [info]  (renderer/utilityconnection) ADDED LISTENER:  enumFileChanged 4992f403-103e-4fab-bae6-850f3f9a8c46
+[2025-06-28 17:42:15.535] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  enum/init b410e8f0-c8fe-4730-bcac-7c0c63f75076
+[2025-06-28 17:42:15.537] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  b410e8f0-c8fe-4730-bcac-7c0c63f75076
+[2025-06-28 17:42:15.537] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  enum/load afd8ea8c-be2a-4a18-9096-6ca529bee6fe
+[2025-06-28 17:42:15.538] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  afd8ea8c-be2a-4a18-9096-6ca529bee6fe
+[2025-06-28 17:42:15.588] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/query/find 3bec23eb-4aef-4cfc-94b4-f3656d59299a
+[2025-06-28 17:42:15.589] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/saved/find 2ac3960b-48bc-4986-ba7e-38efb5fb0b87
+[2025-06-28 17:42:15.590] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/usedQuery/find f96c98c3-e1db-442c-9e8d-3c61cb428071
+[2025-06-28 17:42:15.590] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/used/find 24aa9993-3e4a-4a74-945b-3744b56b3d42
+[2025-06-28 17:42:15.592] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  license/getStatus d785619f-88ff-4540-a01a-0735eaefa4a0
+[2025-06-28 17:42:15.618] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/credential/find 7bc0e483-2838-454c-ac2a-44ce4376524b
+[2025-06-28 17:42:15.660] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/setting/get 4c5a226f-0f0d-49fa-b801-c1fa662047f3
+[2025-06-28 17:42:15.660] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/setting/get ebaf7c9f-d016-4993-831d-3334ecd320a8
+[2025-06-28 17:42:15.662] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/saved/new 3119e7a4-7935-4b7d-a8ff-5074cf7ccd5b
+[2025-06-28 17:42:15.707] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  3bec23eb-4aef-4cfc-94b4-f3656d59299a
+[2025-06-28 17:42:15.708] [debug] (StateManager)               removing from search index 0
+[2025-06-28 17:42:15.708] [debug] (StateManager)               adding to search index 2
+[2025-06-28 17:42:15.708] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  2ac3960b-48bc-4986-ba7e-38efb5fb0b87
+[2025-06-28 17:42:15.709] [debug] (StateManager)               removing from search index 0
+[2025-06-28 17:42:15.710] [debug] (StateManager)               adding to search index 3
+[2025-06-28 17:42:15.713] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  f96c98c3-e1db-442c-9e8d-3c61cb428071
+[2025-06-28 17:42:15.714] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  24aa9993-3e4a-4a74-945b-3744b56b3d42
+[2025-06-28 17:42:15.717] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  d785619f-88ff-4540-a01a-0735eaefa4a0
+[2025-06-28 17:42:15.717] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  license/get b995ecb0-8061-43f7-8d46-867d4e81b9bb
+[2025-06-28 17:42:15.717] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  7bc0e483-2838-454c-ac2a-44ce4376524b
+[2025-06-28 17:42:15.719] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  4c5a226f-0f0d-49fa-b801-c1fa662047f3
+[2025-06-28 17:42:15.719] [info]  (settings-plugin)            get {"id":10,"createdAt":"2025-03-09T05:36:34.000Z","updatedAt":"2025-03-09T05:36:34.000Z","_userValue":"name","defaultValue":"name","valueType":0,"version":0,"key":"connectionsSortBy","linuxDefault":null,"macDefault":null,"windowsDefault":null,"value":"name"}
+[2025-06-28 17:42:15.719] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  ebaf7c9f-d016-4993-831d-3334ecd320a8
+[2025-06-28 17:42:15.719] [info]  (settings-plugin)            get {"id":11,"createdAt":"2025-03-09T05:36:34.000Z","updatedAt":"2025-03-09T05:36:34.000Z","_userValue":"asc","defaultValue":"asc","valueType":0,"version":0,"key":"connectionsSortOrder","linuxDefault":null,"macDefault":null,"windowsDefault":null,"value":"asc"}
+[2025-06-28 17:42:15.719] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  3119e7a4-7935-4b7d-a8ff-5074cf7ccd5b
+[2025-06-28 17:42:15.720] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/saved/new 786adbf1-ea78-4d68-8a62-fa2447185bf1
+[2025-06-28 17:42:15.722] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/pinconn/find f149a3e5-4821-4977-aa66-b7e8ba1c4696
+[2025-06-28 17:42:15.733] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  b995ecb0-8061-43f7-8d46-867d4e81b9bb
+[2025-06-28 17:42:15.737] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  786adbf1-ea78-4d68-8a62-fa2447185bf1
+[2025-06-28 17:42:15.742] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  f149a3e5-4821-4977-aa66-b7e8ba1c4696
+[2025-06-28 17:42:15.743] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/pinconn/save 7e04199b-629a-4893-989a-78c03edc451b
+[2025-06-28 17:42:15.751] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  7e04199b-629a-4893-989a-78c03edc451b
+[2025-06-28 17:42:15.751] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/credential/find e2f82d1a-3bae-4e0c-acb1-4a1d348d8961
+[2025-06-28 17:42:15.757] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  e2f82d1a-3bae-4e0c-acb1-4a1d348d8961
+[2025-07-21 19:13:45.538] [info]  (BksConfig)           Loading configs.
+[2025-07-21 19:13:45.545] [debug] (BksConfig)           Loading config default.config.ini.
+[2025-07-21 19:13:45.545] [info]  (BksConfig)           Copying bundled config default.config.ini to /home/scelester/.config/beekeeper-studio/default.config.ini.
+[2025-07-21 19:13:45.546] [warn]  (BksConfig)           Skipping copy of default.config.ini. Permission denied or dest not writable: ENOENT: no such file or directory, access '/home/scelester/.config/beekeeper-studio/default.config.ini'
+[2025-07-21 19:13:45.551] [debug] (BksConfig)           Successfully read config /usr/lib/beekeeper-studio/resources/default.config.ini.
+[2025-07-21 19:13:45.551] [debug] (BksConfig)           Loading config system.config.ini.
+[2025-07-21 19:13:45.551] [warn]  (BksConfig)           Failed loading system config. System config path not found: /etc/beekeeper-studio/system.config.ini
+[2025-07-21 19:13:45.552] [debug] (BksConfig)           Loading config user.config.ini.
+[2025-07-21 19:13:45.552] [info]  (BksConfig)           Copying bundled config user.config.ini to /home/scelester/.config/beekeeper-studio/user.config.ini.
+[2025-07-21 19:13:45.552] [warn]  (BksConfig)           Skipping copy of user.config.ini. Permission denied or dest not writable: ENOENT: no such file or directory, access '/home/scelester/.config/beekeeper-studio/user.config.ini'
+[2025-07-21 19:13:45.553] [error] (BksConfig)           Failed reading config /home/scelester/.config/beekeeper-studio/user.config.ini. Error: ENOENT: no such file or directory, open '/home/scelester/.config/beekeeper-studio/user.config.ini'
+    at readFileSync (node:fs:448:20)
+    at t.readFileSync (node:electron/js2c/node_init:2:10175)
+    at readConfig (/usr/lib/beekeeper-studio/resources/app.asar/dist/main.js:278383:77)
+    at loadConfig (/usr/lib/beekeeper-studio/resources/app.asar/dist/main.js:278430:10)
+    at mainBksConfig (/usr/lib/beekeeper-studio/resources/app.asar/dist/main.js:278472:18)
+    at Object.<anonymous> (/usr/lib/beekeeper-studio/resources/app.asar/dist/main.js:278500:15)
+    at Module._compile (node:internal/modules/cjs/loader:1484:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1564:10)
+    at Module.load (node:internal/modules/cjs/loader:1295:32)
+    at Module._load (node:internal/modules/cjs/loader:1111:12)
+[2025-07-21 19:13:45.578] [warn]  (BksConfig)           Failed loading user config. Ignoring. Error: ENOENT: no such file or directory, open '/home/scelester/.config/beekeeper-studio/user.config.ini'
+    at readFileSync (node:fs:448:20)
+    at t.readFileSync (node:electron/js2c/node_init:2:10175)
+    at readConfig (/usr/lib/beekeeper-studio/resources/app.asar/dist/main.js:278383:77)
+    at loadConfig (/usr/lib/beekeeper-studio/resources/app.asar/dist/main.js:278430:10)
+    at mainBksConfig (/usr/lib/beekeeper-studio/resources/app.asar/dist/main.js:278472:18)
+    at Object.<anonymous> (/usr/lib/beekeeper-studio/resources/app.asar/dist/main.js:278500:15)
+    at Module._compile (node:internal/modules/cjs/loader:1484:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1564:10)
+    at Module.load (node:internal/modules/cjs/loader:1295:32)
+    at Module._load (node:internal/modules/cjs/loader:1111:12)
+[2025-07-21 19:13:45.579] [info]  (BksConfig)           Configs successfully loaded with 0 warnings.
+[2025-07-21 19:13:45.580] [warn]  (BksConfig)           Warnings: []
+[2025-07-21 19:13:45.581] [info]  (BksConfig)           Default config: {
+  "general": {
+    "checkForUpdatesInterval": 86400000,
+    "dataSyncInterval": 30000,
+    "workspaceSyncInterval": 5000
+  },
+  "security": {
+    "disconnectOnSuspend": false,
+    "disconnectOnLock": false,
+    "disconnectOnIdle": false,
+    "lockMode": "disabled",
+    "idleThresholdSeconds": 300,
+    "idleCheckIntervalSeconds": 30,
+    "minPinLength": 6
+  },
+  "ui": {
+    "general": {
+      "binaryEncoding": "hex"
+    },
+    "layout": {
+      "mainContentMinWidth": 200,
+      "primarySidebarMinWidth": 150,
+      "secondarySidebarMinWidth": 150
+    },
+    "queryEditor": {
+      "maxResults": 50000
+    },
+    "tableTable": {
+      "pageSize": 100,
+      "largeFieldWidth": 300,
+      "maxColumnWidth": 1000,
+      "minColumnWidth": 100,
+      "maxInitialWidth": 500,
+      "defaultColumnWidth": 125
+    },
+    "tableTriggers": {
+      "maxColumnWidth": 300
+    },
+    "tableList": {
+      "itemHeight": 22.8
+    },
+    "export": {
+      "errorNoticeTimeout": 60000
+    }
+  },
+  "db": {
+    "mysql": {
+      "connectTimeout": 3600000
+    },
+    "mariadb": {
+      "connectTimeout": 3600000
+    },
+    "postgres": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5
+    },
+    "cockroachdb": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5
+    },
+    "redshift": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5
+    }
+  },
+  "keybindings": {
+    "general": {
+      "refresh": [
+        "f5",
+        "ctrlOrCmd+r"
+      ],
+      "addRow": "ctrlOrCmd+n",
+      "save": "ctrlOrCmd+s",
+      "openInSqlEditor": "ctrlOrCmd+shift+s",
+      "openQuickSearch": "ctrlOrCmd+p",
+      "copySelection": "ctrlOrCmd+c",
+      "pasteSelection": "ctrlOrCmd+v",
+      "cloneSelection": "ctrlOrCmd+d",
+      "deleteSelection": "delete"
+    },
+    "tab": {
+      "closeTab": "ctrlOrCmd+w",
+      "nextTab": [
+        "ctrl+tab",
+        "ctrlOrCmd+pagedown"
+      ],
+      "previousTab": [
+        "ctrl+shift+tab",
+        "ctrlOrCmd+pageup"
+      ],
+      "reopenLastClosedTab": "ctrlOrCmd+shift+t",
+      "switchTab1": "alt+1",
+      "switchTab2": "alt+2",
+      "switchTab3": "alt+3",
+      "switchTab4": "alt+4",
+      "switchTab5": "alt+5",
+      "switchTab6": "alt+6",
+      "switchTab7": "alt+7",
+      "switchTab8": "alt+8",
+      "switchTab9": "alt+9"
+    },
+    "quickSearch": {
+      "focusSearch": [
+        "ctrlOrCmd+k",
+        "ctrlOrCmd+o"
+      ],
+      "close": "esc",
+      "selectUp": [
+        "up",
+        "ctrlOrCmd+p"
+      ],
+      "selectDown": [
+        "down",
+        "ctrlOrCmd+n"
+      ],
+      "open": "enter",
+      "altOpen": "ctrlOrCmd+enter",
+      "openInBackground": "right",
+      "altOpenInBackground": "ctrlOrCmd+right"
+    },
+    "queryEditor": {
+      "selectEditor": "ctrlOrCmd+l",
+      "submitQueryToFile": "ctrlOrCmd+i",
+      "submitCurrentQueryToFile": "ctrlOrCmd+shift+i",
+      "selectNextResult": "shift+up",
+      "selectPreviousResult": "shift+down",
+      "copyResultSelection": "ctrlOrCmd+c",
+      "switchPaneFocus": "ctrlOrCmd+`"
+    },
+    "tableTable": {
+      "nextPage": "ctrlOrCmd+right",
+      "previousPage": "ctrlOrCmd+left",
+      "focusOnFilterInput": "ctrlOrCmd+f",
+      "openEditorModal": "shift+enter"
+    }
+  }
+}
+[2025-07-21 19:13:45.582] [info]  (BksConfig)           System config: {}
+[2025-07-21 19:13:45.582] [info]  (BksConfig)           User config: {}
+[2025-07-21 19:13:45.731] [info]                        initializing background
+[2025-07-21 19:13:53.305] [info]  (main.ts) starting logging
+[2025-07-21 19:13:53.308] [debug] (main.ts) APP BOOTING
+[2025-07-21 19:13:53.308] [debug] (main.ts) ####################################
+[2025-07-21 19:13:53.308] [debug] (main.ts) Platform Information (App)
+[2025-07-21 19:13:53.309] [debug] (main.ts) {
+  "isWindows": false,
+  "isMac": false,
+  "isArm": false,
+  "oracleSupported": true,
+  "parsedArgs": {
+    "_": [],
+    "sandbox": false
+  },
+  "isLinux": true,
+  "sessionType": "wayland",
+  "isWayland": false,
+  "isPortable": false,
+  "isDevelopment": false,
+  "isAppImage": false,
+  "resourcesPath": "/usr/lib/beekeeper-studio/resources",
+  "env": {
+    "development": false,
+    "test": false,
+    "production": true
+  },
+  "debugEnabled": false,
+  "platform": "linux",
+  "darkMode": false,
+  "userDirectory": "/home/scelester/.config/beekeeper-studio",
+  "downloadsDirectory": "/home/scelester/Downloads",
+  "homeDirectory": "/home/scelester",
+  "pluginsDirectory": "/home/scelester/.config/beekeeper-studio/plugins",
+  "testMode": false,
+  "appDbPath": "/home/scelester/.config/beekeeper-studio/app.db",
+  "updatesDisabled": false,
+  "appVersion": "5.2.12",
+  "parsedAppVersion": {
+    "major": 5,
+    "minor": 2,
+    "patch": 12,
+    "channel": "stable"
+  },
+  "cloudUrl": "https://app.beekeeperstudio.io",
+  "locale": ""
+}
+[2025-07-21 19:13:53.317] [info]  (renderer/utilityconnection) QUEUEING REQUEST FOR NAME, ID:  license/getStatus f64ced4c-3fb1-4d17-b5d3-a2068f7cec0f
+[2025-07-21 19:13:53.329] [info]  (main.ts)                    Received port in renderer with sId:  3e51b751-b5d2-4feb-a16a-a30209c50c36
+[2025-07-21 19:13:53.329] [info]  (renderer/utilityconnection) RECEIVED PORT IN UtilityConnection:  {}
+[2025-07-21 19:13:53.330] [info]  (renderer/utilityconnection) PROCESSING QUEUED REQUEST:  license/getStatus f64ced4c-3fb1-4d17-b5d3-a2068f7cec0f
+[2025-07-21 19:13:53.330] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/setting/find 4787685b-66c0-41c0-a2c8-f1c4f77e91e1
+[2025-07-21 19:13:53.342] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  f64ced4c-3fb1-4d17-b5d3-a2068f7cec0f
+[2025-07-21 19:13:53.343] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  license/get 0de3462b-0319-4fb2-9896-6e0f765ea2cb
+[2025-07-21 19:13:53.346] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  4787685b-66c0-41c0-a2c8-f1c4f77e91e1
+[2025-07-21 19:13:53.347] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  0de3462b-0319-4fb2-9896-6e0f765ea2cb
+[2025-07-21 19:13:53.348] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  license/getInstallationId de06d775-2613-43ee-aa14-7921904eb2b4
+[2025-07-21 19:13:53.351] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  de06d775-2613-43ee-aa14-7921904eb2b4
+[2025-07-21 19:13:53.352] [info]  (renderer/utilityconnection) ADDED LISTENER:  enumFileChanged 63f16565-c571-42fd-a7be-1721acc378f8
+[2025-07-21 19:13:53.352] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  enum/init 3399f525-6944-424e-aa98-7b16443ad296
+[2025-07-21 19:13:53.356] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  3399f525-6944-424e-aa98-7b16443ad296
+[2025-07-21 19:13:53.356] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  enum/load b5bf9dbf-40cc-4a26-bc3a-f40cf02a549b
+[2025-07-21 19:13:53.357] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  b5bf9dbf-40cc-4a26-bc3a-f40cf02a549b
+[2025-07-21 19:13:53.479] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/query/find 34f9065f-1cd5-4550-8967-62636bbc0a31
+[2025-07-21 19:13:53.480] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/saved/find fe3ae927-9e1e-45fb-a526-316ea821d1f7
+[2025-07-21 19:13:53.481] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/usedQuery/find a8d26405-4d1e-4131-900d-5c07f8089ad5
+[2025-07-21 19:13:53.483] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/used/find 9396193e-a482-4941-8057-acf49cd4f1db
+[2025-07-21 19:13:53.488] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  license/getStatus c87d33c0-e7e2-4ca4-a7cd-e941a1662463
+[2025-07-21 19:13:53.536] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/credential/find 5c3d4e9f-e07b-4f58-8c35-7aaa660ec882
+[2025-07-21 19:13:53.617] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/setting/get f96335d6-40c1-49fc-8f3d-cde74e7f3eff
+[2025-07-21 19:13:53.617] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/setting/get 15996985-40f5-4a50-9708-1954d126a17e
+[2025-07-21 19:13:53.621] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/saved/new ea3a5880-f023-4a0f-a20c-18bd26777197
+[2025-07-21 19:13:53.716] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  34f9065f-1cd5-4550-8967-62636bbc0a31
+[2025-07-21 19:13:53.718] [debug] (StateManager)               removing from search index 0
+[2025-07-21 19:13:53.718] [debug] (StateManager)               adding to search index 2
+[2025-07-21 19:13:53.719] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  fe3ae927-9e1e-45fb-a526-316ea821d1f7
+[2025-07-21 19:13:53.722] [debug] (StateManager)               removing from search index 0
+[2025-07-21 19:13:53.722] [debug] (StateManager)               adding to search index 3
+[2025-07-21 19:13:53.730] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  a8d26405-4d1e-4131-900d-5c07f8089ad5
+[2025-07-21 19:13:53.731] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  9396193e-a482-4941-8057-acf49cd4f1db
+[2025-07-21 19:13:53.737] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  c87d33c0-e7e2-4ca4-a7cd-e941a1662463
+[2025-07-21 19:13:53.737] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  license/get 6b8b4e54-354e-4cfe-82ff-581fdc85644b
+[2025-07-21 19:13:53.737] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  5c3d4e9f-e07b-4f58-8c35-7aaa660ec882
+[2025-07-21 19:13:53.741] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  f96335d6-40c1-49fc-8f3d-cde74e7f3eff
+[2025-07-21 19:13:53.742] [info]  (settings-plugin)            get {"id":10,"createdAt":"2025-03-09T05:36:34.000Z","updatedAt":"2025-03-09T05:36:34.000Z","_userValue":"name","defaultValue":"name","valueType":0,"version":0,"key":"connectionsSortBy","linuxDefault":null,"macDefault":null,"windowsDefault":null,"value":"name"}
+[2025-07-21 19:13:53.742] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  15996985-40f5-4a50-9708-1954d126a17e
+[2025-07-21 19:13:53.742] [info]  (settings-plugin)            get {"id":11,"createdAt":"2025-03-09T05:36:34.000Z","updatedAt":"2025-03-09T05:36:34.000Z","_userValue":"asc","defaultValue":"asc","valueType":0,"version":0,"key":"connectionsSortOrder","linuxDefault":null,"macDefault":null,"windowsDefault":null,"value":"asc"}
+[2025-07-21 19:13:53.742] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  ea3a5880-f023-4a0f-a20c-18bd26777197
+[2025-07-21 19:13:53.743] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/saved/new c2d7f482-868a-40ba-af68-368742eccd17
+[2025-07-21 19:13:53.746] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/pinconn/find bc728baa-6714-40fb-84a6-c9b95b8e7141
+[2025-07-21 19:13:53.766] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  6b8b4e54-354e-4cfe-82ff-581fdc85644b
+[2025-07-21 19:13:53.775] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  c2d7f482-868a-40ba-af68-368742eccd17
+[2025-07-21 19:13:53.782] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  bc728baa-6714-40fb-84a6-c9b95b8e7141
+[2025-07-21 19:13:53.784] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/pinconn/save 1a8cb7a5-4f4b-4ece-a60e-89053d8c372d
+[2025-07-21 19:13:53.791] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  1a8cb7a5-4f4b-4ece-a60e-89053d8c372d
+[2025-07-21 19:13:53.792] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/credential/find 0eb52ab7-4aae-406e-93f6-7606e04abde5
+[2025-07-21 19:13:53.799] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  0eb52ab7-4aae-406e-93f6-7606e04abde5
+[2025-07-21 19:13:59.144] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/saved/new 6e9598bd-4f13-40e3-929d-ca4aca886024
+[2025-07-21 19:13:59.146] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  6e9598bd-4f13-40e3-929d-ca4aca886024
+[2025-07-21 19:14:02.912] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/saved/new 0aa6fc28-bee0-4247-bc29-4244fab8738a
+[2025-07-21 19:14:02.913] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  0aa6fc28-bee0-4247-bc29-4244fab8738a
+[2025-07-21 19:14:06.471] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/saved/new 9262530c-ce69-44d7-9df1-2d588bea1802
+[2025-07-21 19:14:06.472] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  9262530c-ce69-44d7-9df1-2d588bea1802
+[2025-07-21 19:14:09.524] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/saved/new 5037f12f-0db5-4e6e-b8b9-cc5b51d11ece
+[2025-07-21 19:14:09.554] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  5037f12f-0db5-4e6e-b8b9-cc5b51d11ece
+[2025-07-21 19:14:40.841] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  conn/test 4e85e5b3-6f84-448d-a2b7-8fd51b86df28
+[2025-07-21 19:14:40.866] [error] (renderer/utilityconnection) GOT ERROR BACK FOR REQUEST ID:  4e85e5b3-6f84-448d-a2b7-8fd51b86df28
+[2025-07-21 19:15:48.193] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  conn/test f00dca44-743e-45cf-b484-ae37881a1001
+[2025-07-21 19:15:48.222] [error] (renderer/utilityconnection) GOT ERROR BACK FOR REQUEST ID:  f00dca44-743e-45cf-b484-ae37881a1001
+[2025-07-21 19:15:49.030] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  conn/test 1d983178-4c1e-4d78-b8aa-bfebcf0cfacb
+[2025-07-21 19:15:49.037] [error] (renderer/utilityconnection) GOT ERROR BACK FOR REQUEST ID:  1d983178-4c1e-4d78-b8aa-bfebcf0cfacb
+[2025-07-21 19:16:02.197] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  conn/test a328c24a-ff75-4125-98cc-bc574e90facd
+[2025-07-21 19:16:02.226] [error] (renderer/utilityconnection) GOT ERROR BACK FOR REQUEST ID:  a328c24a-ff75-4125-98cc-bc574e90facd
+[2025-07-21 19:16:02.998] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  conn/test cdec7c64-2c73-4b56-ac24-d54e5690ab8a
+[2025-07-21 19:16:03.002] [error] (renderer/utilityconnection) GOT ERROR BACK FOR REQUEST ID:  cdec7c64-2c73-4b56-ac24-d54e5690ab8a
+[2025-07-21 19:16:14.725] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  conn/test 1597dee9-4535-4072-bb84-f7963c03eebe
+[2025-07-21 19:16:14.750] [error] (renderer/utilityconnection) GOT ERROR BACK FOR REQUEST ID:  1597dee9-4535-4072-bb84-f7963c03eebe
+[2025-07-21 19:16:44.320] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  conn/test 5182cfac-d5e6-43f9-8a31-3557b39ccfc6
+[2025-07-21 19:16:44.399] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  5182cfac-d5e6-43f9-8a31-3557b39ccfc6
+[2025-07-21 19:16:47.159] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  conn/create c143296c-a818-47a1-b4c2-3f5698400438
+[2025-07-21 19:16:47.180] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  c143296c-a818-47a1-b4c2-3f5698400438
+[2025-07-21 19:16:47.180] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  conn/defaultSchema 330deb33-627d-4a03-be8b-b987916f89a8
+[2025-07-21 19:16:47.181] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  330deb33-627d-4a03-be8b-b987916f89a8
+[2025-07-21 19:16:47.182] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  conn/supportedFeatures 8fd9a307-6bcc-4c29-b8af-97eecf5394e0
+[2025-07-21 19:16:47.184] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  8fd9a307-6bcc-4c29-b8af-97eecf5394e0
+[2025-07-21 19:16:47.184] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  conn/versionString af7cb209-f523-43a6-86e9-9ee88776b99d
+[2025-07-21 19:16:47.185] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  af7cb209-f523-43a6-86e9-9ee88776b99d
+[2025-07-21 19:16:47.185] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  conn/getServerConfig 7161b26e-c329-48cc-a23f-5aa68ff10164
+[2025-07-21 19:16:47.186] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  7161b26e-c329-48cc-a23f-5aa68ff10164
+[2025-07-21 19:16:47.190] [debug] (data/usedconnections)       Recording used config for:  {
+  id: null,
+  createdAt: '2025-07-21T13:29:09.525Z',
+  updatedAt: '2025-07-21T13:29:09.525Z',
+  connectionType: 'postgresql',
+  host: 'localhost',
+  port: 5432,
+  socketPath: '/var/run/postgresql',
+  socketPathEnabled: false,
+  username: 'postgres',
+  domain: null,
+  defaultDatabase: 'mcq_app_db',
+  url: null,
+  uniqueHash: 'DEPRECATED',
+  sshEnabled: false,
+  sshHost: null,
+  sshPort: 22,
+  sshKeyfile: null,
+  sshUsername: null,
+  sshBastionHost: null,
+  sshKeepaliveInterval: 60,
+  ssl: false,
+  sslCaFile: null,
+  sslCertFile: null,
+  sslKeyFile: null,
+  sslRejectUnauthorized: true,
+  readOnlyMode: false,
+  options: { connectionMethod: 'manual' },
+  redshiftOptions: {},
+  cassandraOptions: {},
+  bigQueryOptions: {},
+  azureAuthOptions: {},
+  authId: null,
+  libsqlOptions: { mode: 'url' },
+  sqlAnywhereOptions: { mode: 'server' },
+  trustServerCertificate: false,
+  serviceName: null,
+  labelColor: 'default',
+  workspaceId: -1,
+  rememberPassword: true,
+  password: 'thaxaina',
+  sshKeyfilePassword: null,
+  sshPassword: null,
+  sshMode: 'agent'
+}
+[2025-07-21 19:16:47.190] [debug] (data/usedconnections)       Found used config undefined
+[2025-07-21 19:16:47.191] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/used/save aab8a6d1-272a-4139-815e-cce64b9ad46f
+[2025-07-21 19:16:47.299] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/setting/get 2afbd26d-3da1-4780-876e-1aa4d5519a97
+[2025-07-21 19:16:47.303] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/setting/get 5afa3c86-5d2a-4182-aa5d-3b8e5681adad
+[2025-07-21 19:16:47.421] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  file/pathJoin 08b6c216-afb8-42de-a3f3-8f3cb88f8c6d
+[2025-07-21 19:16:47.591] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  file/pathJoin 9e4b5ac8-4fe1-48e3-acaa-260116545918
+[2025-07-21 19:16:47.641] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  aab8a6d1-272a-4139-815e-cce64b9ad46f
+[2025-07-21 19:16:47.642] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  conn/listDatabases 69ce8288-056f-4689-abe1-7f0e7bd104e6
+[2025-07-21 19:16:47.642] [info]  (app.vue)                    database changed mcq_app_db
+[2025-07-21 19:16:47.664] [info]  (TabModule)                  Loading tabs for  -1 5
+[2025-07-21 19:16:47.664] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/tabs/find 263f1a14-227c-4ea5-983e-358bd843d40d
+[2025-07-21 19:16:47.683] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  2afbd26d-3da1-4780-876e-1aa4d5519a97
+[2025-07-21 19:16:47.684] [info]  (settings-plugin)            get {"id":13,"createdAt":"2025-03-09T05:37:13.066Z","updatedAt":"2025-03-09T05:37:13.066Z","_userValue":"position","defaultValue":"position","valueType":0,"version":1,"key":"pinSortField","linuxDefault":null,"macDefault":null,"windowsDefault":null,"value":"position"}
+[2025-07-21 19:16:47.684] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  5afa3c86-5d2a-4182-aa5d-3b8e5681adad
+[2025-07-21 19:16:47.684] [info]  (settings-plugin)            get {"id":14,"createdAt":"2025-03-09T05:37:13.085Z","updatedAt":"2025-03-09T05:37:13.085Z","_userValue":"asc","defaultValue":"asc","valueType":0,"version":1,"key":"pinSortOrder","linuxDefault":null,"macDefault":null,"windowsDefault":null,"value":"asc"}
+[2025-07-21 19:16:47.684] [info]  (settings-plugin)            set pinSortField position
+[2025-07-21 19:16:47.684] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/setting/set 95540285-07bc-43e3-a716-9aed651fe661
+[2025-07-21 19:16:47.684] [info]  (settings-plugin)            set pinSortOrder asc
+[2025-07-21 19:16:47.684] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/setting/set 20df2147-6a10-4b15-9921-a0f2c7f059c0
+[2025-07-21 19:16:47.688] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  08b6c216-afb8-42de-a3f3-8f3cb88f8c6d
+[2025-07-21 19:16:47.688] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  file/exists 48384dec-42cf-454b-89b8-f99f15993262
+[2025-07-21 19:16:47.689] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  9e4b5ac8-4fe1-48e3-acaa-260116545918
+[2025-07-21 19:16:47.689] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  file/exists 95ed2647-fcea-4aac-90ca-21c0bcc3a27d
+[2025-07-21 19:16:47.694] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  69ce8288-056f-4689-abe1-7f0e7bd104e6
+[2025-07-21 19:16:47.694] [info]  (store/index)                databaseList:  [ 'mcq_app_db', 'postgres' ]
+[2025-07-21 19:16:47.695] [debug] (StateManager)               removing from search index 0
+[2025-07-21 19:16:47.696] [debug] (StateManager)               adding to search index 1
+[2025-07-21 19:16:47.700] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  conn/listTables f8ec5b03-5f01-427d-9391-44f5a878b02d
+[2025-07-21 19:16:47.703] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  263f1a14-227c-4ea5-983e-358bd843d40d
+[2025-07-21 19:16:47.726] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  95540285-07bc-43e3-a716-9aed651fe661
+[2025-07-21 19:16:47.733] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  20df2147-6a10-4b15-9921-a0f2c7f059c0
+[2025-07-21 19:16:47.734] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  48384dec-42cf-454b-89b8-f99f15993262
+[2025-07-21 19:16:47.751] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  95ed2647-fcea-4aac-90ca-21c0bcc3a27d
+[2025-07-21 19:16:47.758] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  f8ec5b03-5f01-427d-9391-44f5a878b02d
+[2025-07-21 19:16:47.758] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  conn/listViews 2672121c-34ac-42fb-a32c-bcbfe8f25039
+[2025-07-21 19:16:47.768] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  2672121c-34ac-42fb-a32c-bcbfe8f25039
+[2025-07-21 19:16:47.768] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  conn/listMaterializedViews 980e3f60-ae1f-47e1-a485-829680b6cfcb
+[2025-07-21 19:16:47.775] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  980e3f60-ae1f-47e1-a485-829680b6cfcb
+[2025-07-21 19:16:47.779] [debug] (StateManager)               removing from search index 0
+[2025-07-21 19:16:47.779] [debug] (StateManager)               adding to search index 211
+[2025-07-21 19:16:47.806] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  conn/listRoutines 6e28bbe4-ae92-4631-86e6-c3d2822f08be
+[2025-07-21 19:16:48.003] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  6e28bbe4-ae92-4631-86e6-c3d2822f08be
+[2025-07-21 19:16:48.061] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/tabhistory/clearDeletedTabs c1bdc0fe-d165-41a0-a9c6-d6090c108b72
+[2025-07-21 19:16:48.098] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  c1bdc0fe-d165-41a0-a9c6-d6090c108b72

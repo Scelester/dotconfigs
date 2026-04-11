@@ -1,0 +1,174 @@
+2025-08-14 14:21:40,545 DEBUG    root            Loaded Command Group: ['gcloud', 'components']
+2025-08-14 14:21:40,547 DEBUG    root            Loaded Command Group: ['gcloud', 'components', 'install']
+2025-08-14 14:21:40,548 DEBUG    root            Running [gcloud.components.install] with arguments: [--quiet: "True", COMPONENT-IDS:1: "['gke-gcloud-auth-plugin']"]
+2025-08-14 14:21:40,634 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2025-08-14 14:21:40,820 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-v534.0.0.json HTTP/11" 200 233150
+2025-08-14 14:21:40,918 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:21:40,919 INFO     ___FILE_ONLY___ 
+Your current Google Cloud CLI version is: 534.0.0
+
+2025-08-14 14:21:40,919 INFO     ___FILE_ONLY___ Installing components from version: 534.0.0
+
+2025-08-14 14:21:40,919 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:21:40,919 DEBUG    root            Chosen display Format:table[box,title="These components will be removed."](details.display_name:label=Name:align=left,version.version_string:label=Version:align=right,data.size.size(zero="",min=1048576):label=Size:align=right)
+2025-08-14 14:21:40,920 DEBUG    root            Chosen display Format:table[box,title="These components will be updated."](details.display_name:label=Name:align=left,version.version_string:label=Version:align=right,data.size.size(zero="",min=1048576):label=Size:align=right)
+2025-08-14 14:21:40,920 DEBUG    root            Chosen display Format:table[box,title="These components will be installed."](details.display_name:label=Name:align=left,version.version_string:label=Version:align=right,data.size.size(zero="",min=1048576):label=Size:align=right)
+2025-08-14 14:21:40,949 INFO     ___FILE_ONLY___ ┌────────────────────────────────────────────────────────────────┐
+2025-08-14 14:21:40,949 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:21:40,949 INFO     ___FILE_ONLY___ │              These components will be installed.               │
+2025-08-14 14:21:40,949 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:21:40,949 INFO     ___FILE_ONLY___ ├────────────────────────────────────────────┬─────────┬─────────┤
+2025-08-14 14:21:40,949 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:21:40,949 INFO     ___FILE_ONLY___ │                    Name                    │ Version │   Size  │
+2025-08-14 14:21:40,949 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:21:40,949 INFO     ___FILE_ONLY___ ├────────────────────────────────────────────┼─────────┼─────────┤
+2025-08-14 14:21:40,949 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:21:40,949 INFO     ___FILE_ONLY___ │ 
+2025-08-14 14:21:40,949 INFO     ___FILE_ONLY___ gke-gcloud-auth-plugin (Platform Specific)
+2025-08-14 14:21:40,949 INFO     ___FILE_ONLY___  
+2025-08-14 14:21:40,950 INFO     ___FILE_ONLY___ │ 
+2025-08-14 14:21:40,950 INFO     ___FILE_ONLY___  0.5.10
+2025-08-14 14:21:40,950 INFO     ___FILE_ONLY___  
+2025-08-14 14:21:40,950 INFO     ___FILE_ONLY___ │ 
+2025-08-14 14:21:40,950 INFO     ___FILE_ONLY___ 3.5 MiB
+2025-08-14 14:21:40,950 INFO     ___FILE_ONLY___  
+2025-08-14 14:21:40,950 INFO     ___FILE_ONLY___ │
+2025-08-14 14:21:40,950 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:21:40,950 INFO     ___FILE_ONLY___ └────────────────────────────────────────────┴─────────┴─────────┘
+2025-08-14 14:21:40,950 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:21:40,950 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:21:40,952 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2025-08-14 14:21:41,571 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/RELEASE_NOTES HTTP/11" 200 1464830
+2025-08-14 14:21:42,579 INFO     ___FILE_ONLY___ For the latest full release notes, please visit:
+  https://cloud.google.com/sdk/release_notes
+
+
+2025-08-14 14:21:42,579 INFO     ___FILE_ONLY___ Performing in place update...
+
+
+2025-08-14 14:21:42,579 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2025-08-14 14:21:42,579 INFO     ___FILE_ONLY___ ╠═ Downloading: gke-gcloud-auth-plugin                      ═╣
+
+2025-08-14 14:21:42,579 INFO     ___FILE_ONLY___ ╚
+2025-08-14 14:21:42,579 INFO     ___FILE_ONLY___ ════════════════════════════════════════════════════════════
+2025-08-14 14:21:42,579 INFO     ___FILE_ONLY___ ╝
+
+2025-08-14 14:21:42,580 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2025-08-14 14:21:42,580 INFO     ___FILE_ONLY___ ╠═ Downloading: gke-gcloud-auth-plugin (Platform Specific)  ═╣
+
+2025-08-14 14:21:42,580 INFO     ___FILE_ONLY___ ╚
+2025-08-14 14:21:42,582 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2025-08-14 14:21:43,304 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components/google-cloud-sdk-gke-gcloud-auth-plugin-linux-x86_64-20250117151628.tar.gz HTTP/11" 200 3667085
+2025-08-14 14:21:44,042 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,042 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,042 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,042 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,042 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,042 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,042 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,042 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,042 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,042 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,042 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,042 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,042 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,043 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,043 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,043 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,043 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,043 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,043 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,043 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,043 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,043 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,043 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,043 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,043 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,043 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,043 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,043 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,043 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,044 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,044 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,044 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,044 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,044 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,044 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,044 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,044 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,044 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,044 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,044 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,044 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,044 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,045 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,045 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,045 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,045 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,045 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,045 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,045 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,045 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,045 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,045 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,045 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,045 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,045 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,045 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,045 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,045 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,045 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,046 INFO     ___FILE_ONLY___ ═
+2025-08-14 14:21:44,046 INFO     ___FILE_ONLY___ ╝
+
+2025-08-14 14:21:44,046 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2025-08-14 14:21:44,046 INFO     ___FILE_ONLY___ ╠═ Installing: gke-gcloud-auth-plugin                       ═╣
+
+2025-08-14 14:21:44,046 INFO     ___FILE_ONLY___ ╚
+2025-08-14 14:21:44,048 INFO     ___FILE_ONLY___ ════════════════════════════════════════════════════════════
+2025-08-14 14:21:44,048 INFO     ___FILE_ONLY___ ╝
+
+2025-08-14 14:21:44,048 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2025-08-14 14:21:44,048 INFO     ___FILE_ONLY___ ╠═ Installing: gke-gcloud-auth-plugin (Platform Specific)   ═╣
+
+2025-08-14 14:21:44,048 INFO     ___FILE_ONLY___ ╚
+2025-08-14 14:21:44,137 INFO     ___FILE_ONLY___ ════════════════════════════════════════════════════════════
+2025-08-14 14:21:44,137 INFO     ___FILE_ONLY___ ╝
+
+2025-08-14 14:21:44,148 DEBUG    root            Updating notification cache...
+2025-08-14 14:21:44,149 INFO     ___FILE_ONLY___ 
+
+2025-08-14 14:21:44,149 INFO     ___FILE_ONLY___ Performing post processing steps...
+2025-08-14 14:21:44,149 DEBUG    root            Executing command: ['/home/scelester/.cache/paru/clone/google-cloud-cli/src/google-cloud-sdk/bin/gcloud', 'components', 'post-process']
+2025-08-14 14:21:52,771 DEBUG    ___FILE_ONLY___ 
+2025-08-14 14:21:52,771 DEBUG    ___FILE_ONLY___ 
+2025-08-14 14:21:54,573 INFO     root            descriptor_list: [{'universeDomain': 'googleapis.com', 'universeShortName': '', 'authenticationDomain': 'auth.cloud.google.com', 'projectPrefix': '', 'cloudWebDomain': 'cloud.google.com', 'documentationDomain': 'cloud.google.com', 'version': '1.0.0', 'state': 'primary', 'artifactRegistryDomain': 'pkg.dev'}]
+2025-08-14 14:21:54,574 INFO     ___FILE_ONLY___ 
+Update done!
+
+
+2025-08-14 14:21:54,575 WARNING  root              There are other instances of Google Cloud tools on your system PATH.
+  Please remove the following to avoid confusion or accidental invocation:
+
+  /opt/google-cloud-cli/bin/docker-credential-gcloud
+/opt/google-cloud-cli/bin/git-credential-gcloud.sh
+/opt/google-cloud-cli/bin/gcloud
+/opt/google-cloud-cli/bin/gcloud-crc32c
+
+  
+2025-08-14 14:21:54,577 DEBUG    root            Chosen display Format:none
+2025-08-14 14:21:54,577 INFO     root            Display format: "none"

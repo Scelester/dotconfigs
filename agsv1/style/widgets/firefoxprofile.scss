@@ -1,0 +1,70 @@
+.profile-launcher {
+    background: rgba(10, 9, 9, 0.7);
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Profile item: uniform height and centered content */
+.profile-item {
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px;
+    transition: background-image 600ms;
+    opacity: 0.5;
+    color: white;
+}
+
+
+.text-icon-container {
+    background-color:rgba(24, 5, 5, 0.8);
+}
+
+.profile-item:hover {
+    opacity: 1;
+    font-weight: bolder;
+}
+
+.profile-item:nth-child(2) {
+    background-image: url('/home/scelester/Pictures/firefoxprofileBG/shouko makinohara.jpg');
+}
+
+.profile-item:nth-child(4) {
+    background-image: url('/home/scelester/Pictures/firefoxprofileBG/kamisato saki.jpg');
+}
+
+.profile-item:nth-child(6) {
+    background-image: url('/home/scelester/Pictures/firefoxprofileBG/kaede azusahawa.jpg');
+}
+
+.profile-item:nth-child(8) {
+    background-image: url('/home/scelester/Pictures/firefoxprofileBG/sakurajima mai.jpg');
+}
+
+.profile-item:nth-child(10) {
+    background-image: url('/home/scelester/Pictures/firefoxprofileBG/tomoe koga.jpg');
+}
+
+.profile-item:nth-child(12) {
+    background-image: url('/home/scelester/Pictures/firefoxprofileBG/futaba rio.jpg');
+}
+
+.profile-item:nth-child(14) {
+    background-image: url('/home/scelester/Pictures/firefoxprofileBG/nodoka toyohama.png');
+}
+
+
+/* Icon styling */
+.profile-icon {
+    margin-right: 12px;
+}
+
+/* Label styling */
+.profile-label {
+    font-size: 14px;
+}
+
+/* Separator styling (optional) */
+.profile-separator {
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 4px 0;
+}

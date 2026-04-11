@@ -1,0 +1,3 @@
+{"timestamp":3639528,"category":"bounce.tracking.protection","name":"purge_action","extra":{"site_host":"discordapp.com","glean_timestamp":"1775814125836","success":"true","bounce_time":"1775806256","is_dry_run":"true","require_stateful_bounces":"false"}}
+{"timestamp":3639529,"category":"bounce.tracking.protection","name":"purge_action","extra":{"bounce_time":"1775806256","glean_timestamp":"1775814125837","require_stateful_bounces":"false","success":"true","is_dry_run":"true","site_host":"127.0.0.1"}}
+{"timestamp":5687038,"category":"glean","name":"restarted","extra":{"glean_timestamp":"1775816173346","glean.startup.date":"2026-04-10T16:01+05:45"},"execution_counter":1}

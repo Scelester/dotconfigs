@@ -1,0 +1,22 @@
+00:00:00.268890 VirtualBox GUI VM Selector Window 7.1.8 r168469 linux.amd64 (Apr 23 2025 07:57:44) release log
+00:00:00.268892 Log opened 2025-05-02T02:55:38.797374000Z
+00:00:00.268892 Build Type: release
+00:00:00.268893 OS Product: Linux
+00:00:00.268893 OS Release: 6.14.4-arch1-2
+00:00:00.268894 OS Version: #1 SMP PREEMPT_DYNAMIC Tue, 29 Apr 2025 09:23:13 +0000
+00:00:00.268905 DMI Product Name: ASUS TUF Gaming F15 FX506LH_FX506LH
+00:00:00.268909 DMI Product Version: 1.0
+00:00:00.268911 Firmware type: UEFI
+00:00:00.269101 Secure Boot: Enabled
+00:00:00.269119 Host RAM: 15824MB (15.4GB) total, 12704MB (12.4GB) available
+00:00:00.269121 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:00.269121 Process ID: 8772
+00:00:00.269121 Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.269136 Qt version: 6.9.0
+00:00:00.269460 GUI: UIMediumEnumerator: Initial medium-enumeration finished!
+00:00:00.276684 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:00.732856 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:05.210543 GUI: UIInvisibleWindow::sltFallback: Move event missing. Screen: 0, work area: 959x539 x 800x800
+00:00:05.210592 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 959x539 x 800x800
+00:00:45.961795 GUI: UICommon: Handling aboutToQuit request..
+00:00:46.849465 GUI: UICommon: aboutToQuit request handled!

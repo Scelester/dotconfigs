@@ -1,0 +1,19 @@
+[2025-01-10 20:54:00.439] [info]  @todesktop/runtime: AutoUpdater: @todesktop/runtime: skipping autoUpdater initialization because application is not in AppImage.
+[2025-01-10 20:54:00.625] [debug] @todesktop/runtime: AutoUpdater: electron will-finish-launching event emitted { appVersion: '3.110.1', runtimeVersion: '1.4.0' }
+[2025-01-10 20:54:22.474] [info]  @todesktop/runtime: AutoUpdater: @todesktop/runtime: skipping autoUpdater initialization because application is not in AppImage.
+[2025-01-10 20:54:22.625] [debug] @todesktop/runtime: AutoUpdater: electron will-finish-launching event emitted { appVersion: '3.110.1', runtimeVersion: '1.4.0' }
+[2025-01-10 20:54:52.841] [info]  @todesktop/runtime: AutoUpdater: .checkForUpdates called
+[2025-01-10 20:55:26.357] [info]  @todesktop/runtime: AutoUpdater: @todesktop/runtime: skipping autoUpdater initialization because application is not in AppImage.
+[2025-01-10 20:55:26.510] [debug] @todesktop/runtime: AutoUpdater: electron will-finish-launching event emitted { appVersion: '3.110.1', runtimeVersion: '1.4.0' }
+[2025-01-10 21:52:54.084] [info]  @todesktop/runtime: AutoUpdater: @todesktop/runtime: skipping autoUpdater initialization because application is not in AppImage.
+[2025-01-10 21:52:54.264] [debug] @todesktop/runtime: AutoUpdater: electron will-finish-launching event emitted { appVersion: '3.110.1', runtimeVersion: '1.4.0' }
+[2025-01-10 21:53:24.476] [info]  @todesktop/runtime: AutoUpdater: .checkForUpdates called
+[2025-01-10 21:53:55.364] [info]  @todesktop/runtime: AutoUpdater: @todesktop/runtime: skipping autoUpdater initialization because application is not in AppImage.
+[2025-01-10 21:53:55.500] [debug] @todesktop/runtime: AutoUpdater: electron will-finish-launching event emitted { appVersion: '3.110.1', runtimeVersion: '1.4.0' }
+[2025-01-10 23:40:32.817] [info]  @todesktop/runtime: AutoUpdater: @todesktop/runtime: skipping autoUpdater initialization because application is not in AppImage.
+[2025-01-10 23:40:33.006] [debug] @todesktop/runtime: AutoUpdater: electron will-finish-launching event emitted { appVersion: '3.110.1', runtimeVersion: '1.4.0' }
+[2025-01-10 23:47:56.117] [info]  @todesktop/runtime: AutoUpdater: @todesktop/runtime: skipping autoUpdater initialization because application is not in AppImage.
+[2025-01-10 23:47:56.263] [debug] @todesktop/runtime: AutoUpdater: electron will-finish-launching event emitted { appVersion: '3.110.1', runtimeVersion: '1.4.0' }
+[2025-01-10 23:48:26.325] [info]  @todesktop/runtime: AutoUpdater: .checkForUpdates called
+[2025-01-10 23:48:38.465] [info]  @todesktop/runtime: AutoUpdater: @todesktop/runtime: skipping autoUpdater initialization because application is not in AppImage.
+[2025-01-10 23:48:38.621] [debug] @todesktop/runtime: AutoUpdater: electron will-finish-launching event emitted { appVersion: '3.110.1', runtimeVersion: '1.4.0' }

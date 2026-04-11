@@ -1,0 +1,25 @@
+#/bin/bash
+
+source /home/scelester/MyScripts/database_accesser.sh
+
+name="MainDiscord"
+
+# if main discord is not discord
+if [ "$(db_get)" == "f" ]; then
+    state="true"
+    db_set
+
+    kill $(pgrep -f webcord | head -n 1)
+    discord
+    
+    
+
+elif [ "$(db_get)" == "t" ];then
+    state="false"
+    db_set
+    
+    killall Discord
+    webcord
+    
+    
+fi

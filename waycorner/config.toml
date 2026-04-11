@@ -1,0 +1,23 @@
+[left]
+enter_command = [ "/home/scelester/MyScripts/hyprexpotoggle.sh"]
+# Command to run when cursor exits hotcorner.
+
+locations = ["top_left"]  # default
+
+size = 4  # default
+
+# Margin on the sides of the hot edges, only applicable to edge locations.
+# See the comment with sizes attribute above.
+margin = 1  # default
+
+# Timeout in milliseconds before command is triggered.
+timeout_ms = 100  # 
+
+
+[right]
+enter_command = ["kitty","btop"]
+
+#exit_command = [ "killall", "btop" ]
+
+
+locations = ["top_right"] # default

@@ -1,0 +1,62 @@
+{
+  "disabled_plugins": {
+    "__class__": "set",
+    "__value__": [
+      "ManyBooks",
+      "ebook.de",
+      "Project Gutenberg",
+      "Amazon IT Kindle",
+      "Baen Ebooks",
+      "OZON.ru",
+      "Amazon CA Kindle",
+      "Woblink",
+      "Amazon FR Kindle",
+      "Google Books",
+      "Beam EBooks DE",
+      "Bubok Portugal",
+      "Kobo",
+      "eBooks.com",
+      "RW2010",
+      "Świat Ebooków",
+      "Amazon Kindle",
+      "Virtualo",
+      "Wolne Lektury",
+      "Amazon UK Kindle",
+      "Amazon IN Kindle",
+      "MobileRead",
+      "Publio",
+      "Smashwords",
+      "Библио.бг",
+      "Моята библиотека",
+      "Amazon AU Kindle",
+      "Pragmatic Bookshelf",
+      "Mills and Boon UK",
+      "LitRes",
+      "Amazon DE Kindle",
+      "Amazon ES Kindle",
+      "eBook.nl",
+      "Barnes and Noble",
+      "Feedbooks",
+      "Ebookpoint",
+      "Legimi",
+      "Weightless Books",
+      "Empik",
+      "Nexto",
+      "Bubok Spain",
+      "EbooksGratuits.com",
+      "Archive.org"
+    ]
+  },
+  "enabled_plugins": {
+    "__class__": "set",
+    "__value__": [
+      "Library Genesis"
+    ]
+  },
+  "filetype_mapping": {},
+  "plugin_customization": {},
+  "plugins": {
+    "Libgen Fiction": "/home/scelester/.config/calibre/plugins/Libgen Fiction.zip",
+    "Library Genesis": "/home/scelester/.config/calibre/plugins/Library Genesis.zip"
+  }
+}

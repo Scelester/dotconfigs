@@ -1,0 +1,7 @@
+#!/bin/bash
+
+
+
+kill $(pgrep -f "/usr/lib/electron28/electron /usr/lib/obsidian/app.asar")
+killall thunderbird
+killall spotify

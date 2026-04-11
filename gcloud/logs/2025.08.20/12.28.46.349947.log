@@ -1,0 +1,30 @@
+2025-08-20 12:28:46,351 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2025-08-20 12:28:46,415 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'set']
+2025-08-20 12:28:46,417 DEBUG    root            Running [gcloud.config.set] with arguments: [SECTION/PROPERTY: "project", VALUE: "hire-enumerator-697cd"]
+2025-08-20 12:28:46,426 WARNING  root            Your active project does not match the quota project in your local Application Default Credentials file. This might result in unexpected quota issues.
+
+To update your Application Default Credentials quota project, use the `gcloud auth application-default set-quota-project` command.
+2025-08-20 12:28:46,457 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2025-08-20 12:28:46,458 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-08-20 12:28:46,799 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/11" 400 None
+2025-08-20 12:28:46,801 DEBUG    root            using google-auth reauth
+2025-08-20 12:28:46,802 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2025-08-20 12:28:46,921 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+2025-08-20 12:28:46,922 DEBUG    google.auth.transport.requests Making request: POST https://reauth.googleapis.com/v2/sessions:start
+2025-08-20 12:28:46,922 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): reauth.googleapis.com:443
+2025-08-20 12:28:47,856 DEBUG    urllib3.connectionpool https://reauth.googleapis.com:443 "POST /v2/sessions:start HTTP/11" 200 None
+2025-08-20 12:28:53,541 DEBUG    google.auth.transport.requests Making request: POST https://reauth.googleapis.com/v2/sessions/ALgCv6zg8_nRcprC3ZSJW-Z3Pmo-YLoRbCFp5bYkAUeBliESU4JHyJG6my1VvXyX:continue
+2025-08-20 12:28:53,877 DEBUG    urllib3.connectionpool https://reauth.googleapis.com:443 "POST /v2/sessions/ALgCv6zg8_nRcprC3ZSJW-Z3Pmo-YLoRbCFp5bYkAUeBliESU4JHyJG6my1VvXyX:continue HTTP/11" 200 None
+2025-08-20 12:28:56,203 DEBUG    google.auth.transport.requests Making request: POST https://reauth.googleapis.com/v2/sessions/ALgCv6zg8_nRcprC3ZSJW-Z3Pmo-YLoRbCFp5bYkAUeBliESU4JHyJG6my1VvXyX:continue
+2025-08-20 12:28:56,652 DEBUG    urllib3.connectionpool https://reauth.googleapis.com:443 "POST /v2/sessions/ALgCv6zg8_nRcprC3ZSJW-Z3Pmo-YLoRbCFp5bYkAUeBliESU4JHyJG6my1VvXyX:continue HTTP/11" 200 None
+2025-08-20 12:28:59,438 DEBUG    google.auth.transport.requests Making request: POST https://reauth.googleapis.com/v2/sessions/ALgCv6zg8_nRcprC3ZSJW-Z3Pmo-YLoRbCFp5bYkAUeBliESU4JHyJG6my1VvXyX:continue
+2025-08-20 12:29:00,756 DEBUG    urllib3.connectionpool https://reauth.googleapis.com:443 "POST /v2/sessions/ALgCv6zg8_nRcprC3ZSJW-Z3Pmo-YLoRbCFp5bYkAUeBliESU4JHyJG6my1VvXyX:continue HTTP/11" 200 None
+2025-08-20 12:29:00,758 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2025-08-20 12:29:00,886 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+2025-08-20 12:29:00,954 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2025-08-20 12:29:02,517 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/hire-enumerator-697cd?alt=json HTTP/11" 200 None
+2025-08-20 12:29:02,521 INFO     ___FILE_ONLY___ Updated property [core/project].
+
+2025-08-20 12:29:02,524 DEBUG    root            Chosen display Format:default
+2025-08-20 12:29:02,526 INFO     root            Display format: "default"
+2025-08-20 12:29:02,527 DEBUG    root            SDK update checks are disabled.

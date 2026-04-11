@@ -1,0 +1,40 @@
+2025-08-18 11:56:33,831 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'ssh']
+2025-08-18 11:56:33,855 DEBUG    root            Running [gcloud.compute.ssh] with arguments: [--project: "anweshanorg", --zone: "asia-south1-b", [USER@]INSTANCE: "milli-search-hireenumerator"]
+2025-08-18 11:56:33,894 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2025-08-18 11:56:33,895 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-08-18 11:56:34,193 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/11" 400 None
+2025-08-18 11:56:34,193 DEBUG    root            using google-auth reauth
+2025-08-18 11:56:34,193 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2025-08-18 11:56:34,312 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+2025-08-18 11:56:34,313 DEBUG    google.auth.transport.requests Making request: POST https://reauth.googleapis.com/v2/sessions:start
+2025-08-18 11:56:34,313 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): reauth.googleapis.com:443
+2025-08-18 11:56:35,246 DEBUG    urllib3.connectionpool https://reauth.googleapis.com:443 "POST /v2/sessions:start HTTP/11" 200 None
+2025-08-18 11:56:37,503 DEBUG    google.auth.transport.requests Making request: POST https://reauth.googleapis.com/v2/sessions/ALgCv6w7wpp0d72uWWGokOLh7dMSvmXf3F6-YD7nH47u-0d0ezzopsNKOSSAiUQA:continue
+2025-08-18 11:56:37,926 DEBUG    urllib3.connectionpool https://reauth.googleapis.com:443 "POST /v2/sessions/ALgCv6w7wpp0d72uWWGokOLh7dMSvmXf3F6-YD7nH47u-0d0ezzopsNKOSSAiUQA:continue HTTP/11" 200 None
+2025-08-18 11:56:40,101 DEBUG    google.auth.transport.requests Making request: POST https://reauth.googleapis.com/v2/sessions/ALgCv6w7wpp0d72uWWGokOLh7dMSvmXf3F6-YD7nH47u-0d0ezzopsNKOSSAiUQA:continue
+2025-08-18 11:56:40,500 DEBUG    urllib3.connectionpool https://reauth.googleapis.com:443 "POST /v2/sessions/ALgCv6w7wpp0d72uWWGokOLh7dMSvmXf3F6-YD7nH47u-0d0ezzopsNKOSSAiUQA:continue HTTP/11" 200 None
+2025-08-18 11:56:42,921 DEBUG    google.auth.transport.requests Making request: POST https://reauth.googleapis.com/v2/sessions/ALgCv6w7wpp0d72uWWGokOLh7dMSvmXf3F6-YD7nH47u-0d0ezzopsNKOSSAiUQA:continue
+2025-08-18 11:56:44,193 DEBUG    urllib3.connectionpool https://reauth.googleapis.com:443 "POST /v2/sessions/ALgCv6w7wpp0d72uWWGokOLh7dMSvmXf3F6-YD7nH47u-0d0ezzopsNKOSSAiUQA:continue HTTP/11" 200 None
+2025-08-18 11:56:44,195 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2025-08-18 11:56:44,317 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+2025-08-18 11:56:44,887 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2025-08-18 11:56:45,366 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/anweshanorg/zones/asia-south1-b/instances/milli-search-hireenumerator?alt=json HTTP/11" 200 None
+2025-08-18 11:56:45,852 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/anweshanorg?alt=json HTTP/11" 200 None
+2025-08-18 11:56:45,862 DEBUG    root            OS Login Enabled: False
+2FA Enabled: False
+Security Keys Enabled: False
+Username: scelester
+Third Party User: False
+SSH Security Key Support: None
+Environment: None
+Security Keys:
+
+Signed SSH Key: False
+Require Certificates: False
+
+2025-08-18 11:56:45,866 DEBUG    root            Current SSH keys in project: ['scelester:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCzfR6hB2DvrR6UtYqw4t0Oj0AoXoBI608lqeKuFu8PowWBDLgoDkoAhzt6L02zYMlP6dSOCqaQuN4ah6fgtGkql9jh6jjrPLLlWU0/Pd7OWhrTaKuhochPXpTUOuKdaarbF9YSU8bGil4zV+Lb/FciThlFw36xQGQCqtVcqhbErWSAY8V/yfyu1LSkL27LVWEC/aqrB7wsVpZK5d0aEgz3UhvDAALc6dwZxwM7ZFmsOKAd19qrqJFFj8Ujr3yqRuyKj4lzQ4UiVjvbUZ/qP8NuK5lN9srIlifBGsXN2WhSnPoK4hnd5gxMyDlgC27/YymQkEuLke8IM02ZkygNS45JvlNh2+fldoPCq0yUTKSXD1i9nFwQLGWCcrUXAO6joHZTNW6V4/j0a3Jpn8+3i1D2KRjxHi5EusMb7Jf7t4PoQZKGu3Vf4XC3jUcmzSdT4BYFPxWPu+IeCY/v1t2NgKcCax6S9znX0zvJ71psIq9Z47C7ljuz0Fjz84znNGriA20= scelester@AsusTUF', 'madhu:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCvbBjBbHcYfn16WtDGmDAGJqevlJU+jXrpUyhjXnhOJGNXMMs6vLhN+SQkqNnlQJTzYXH+9SDmYzoUjBMSPUhsy96odp8SvcIVo/8/OdvMf547diLh0jEZZOpxsLpcql5Di8RVijUaVhcA0cixdBmHQpZ4WQMPe4nd52uZTDXzAD/VlAi7ZGmUY60+dG23ffPwjDAiMGaXE8YYTpPuvKA8kFsLqgSQgbTJPqt1w/b/IfkufQ2B0a03YtKTfqxQG1G7APOp5NygWc0AuUAIyZUeIsUTiyoZGELszhCGUvGDKH+CsebdjX5HLbo/hOUYumuU87uxPY0+NgC7e6ROwoyT PHENOM\\madhu@Phenom', 'madhu_sharma:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCvbBjBbHcYfn16WtDGmDAGJqevlJU+jXrpUyhjXnhOJGNXMMs6vLhN+SQkqNnlQJTzYXH+9SDmYzoUjBMSPUhsy96odp8SvcIVo/8/OdvMf547diLh0jEZZOpxsLpcql5Di8RVijUaVhcA0cixdBmHQpZ4WQMPe4nd52uZTDXzAD/VlAi7ZGmUY60+dG23ffPwjDAiMGaXE8YYTpPuvKA8kFsLqgSQgbTJPqt1w/b/IfkufQ2B0a03YtKTfqxQG1G7APOp5NygWc0AuUAIyZUeIsUTiyoZGELszhCGUvGDKH+CsebdjX5HLbo/hOUYumuU87uxPY0+NgC7e6ROwoyT PHENOM\\madhu@Phenom']
+2025-08-18 11:56:45,866 DEBUG    root            Running command [/usr/bin/ssh -t -i /home/scelester/.ssh/google_compute_engine -o CheckHostIP=no -o HashKnownHosts=no -o HostKeyAlias=compute.5349184008453324632 -o IdentitiesOnly=yes -o StrictHostKeyChecking=no -o UserKnownHostsFile=/home/scelester/.ssh/google_compute_known_hosts scelester@35.207.215.131].
+2025-08-18 11:56:45,867 DEBUG    root            Executing command: ['/usr/bin/ssh', '-t', '-i', '/home/scelester/.ssh/google_compute_engine', '-o', 'CheckHostIP=no', '-o', 'HashKnownHosts=no', '-o', 'HostKeyAlias=compute.5349184008453324632', '-o', 'IdentitiesOnly=yes', '-o', 'StrictHostKeyChecking=no', '-o', 'UserKnownHostsFile=/home/scelester/.ssh/google_compute_known_hosts', 'scelester@35.207.215.131']
+2025-08-18 12:40:09,676 DEBUG    root            Chosen display Format:default
+2025-08-18 12:40:09,678 INFO     root            Display format: "default"
+2025-08-18 12:40:09,678 DEBUG    root            SDK update checks are disabled.

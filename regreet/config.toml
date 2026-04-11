@@ -1,0 +1,14 @@
+[style]
+background = "#282828"
+text = "#ebdbb2"
+input_background = "#3c3836"
+input_border = "#d79921"
+input_text = "#ebdbb2"
+input_placeholder = "#928374"
+input_error = "#fb4934"
+button_background = "#689d6a"
+button_text = "#ebdbb2"
+
+[layout]
+input_position = "center"
+button_position = "center"

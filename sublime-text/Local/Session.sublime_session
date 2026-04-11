@@ -1,0 +1,1020 @@
+{
+	"file_history":
+	[
+		"/home/scelester/Downloads/arcodify cv/notes.txt",
+		"/home/scelester/Downloads/Arcodify Hiring Campaign 10 Sep 2025 - ad_Leads_2025-09-10_2025-09-10 2.csv",
+		"/home/scelester/ProjectD/Arcodify/email_validator/generic/split_non_generic_into_personal_company.py",
+		"/home/scelester/ProjectD/Arcodify/HolyEmailExtractor/out_free_big/travel_emails_1757208542.json",
+		"/home/scelester/ProjectD/Arcodify/HolyEmailExtractor/seeds.json",
+		"/home/scelester/.config/hypr/hyprland.conf",
+		"/home/scelester/Downloads/ARCHITECHTURE DIAGRAM",
+		"/home/scelester/ProjectD/Arcodify/test/date/supreme_MONDAY_output.html",
+		"/home/scelester/.config/ags/style/widgets/musicbg.scss",
+		"/home/scelester/ProjectD/Arcodify/test/output.html",
+		"/home/scelester/gemini_sheet_cleaner.json",
+		"/home/scelester/ProjectD/Arcodify/HolyEmailExtractor/out_free/travel_emails_1756377312.csv",
+		"/home/scelester/ProjectD/Arcodify/HolyEmailExtractor/out/travel_emails_1756280694.json",
+		"/home/scelester/ProjectD/Arcodify/HolyEmailExtractor/summary_20250827_120053.json",
+		"/home/scelester/.config/hypr/settings/mouse_and_keyboards.conf",
+		"/home/scelester/.config/hypr/settings/autostart.conf",
+		"/home/scelester/.config/hypr/settings/window_rule.conf",
+		"/home/scelester/.config/ags/options.ts",
+		"/home/scelester/.config/hypr/scripts/toggle_shaders",
+		"/home/scelester/Container/ProjectD/Arcodify/HandleMyCase_BE/Core/app/api/v1/appointments_routes.py",
+		"/home/scelester/Container/ProjectD/Arcodify/HandleMyCase_BE/Core/app/api/v1/cases_routes.py",
+		"/home/scelester/.config/hypr/settings/env.conf",
+		"/home/scelester/Container/ProjectD/Anweshan/ASR_Nepal/datasets/EXTRACTED/combined/data/files.txt",
+		"/home/scelester/blenders/bugatti/README.txt",
+		"/home/scelester/Container/ProjectD/DSA/Project/chat_system.py",
+		"/home/scelester/Container/ProjectD/DSA/Project/README.md",
+		"/home/scelester/Container/ProjectD/DSA/Project/user.py",
+		"/home/scelester/Container/ProjectD/DSA/Project/data_structures.py",
+		"/home/scelester/Container/ProjectD/DSA/Project/client.py",
+		"/home/scelester/Container/ProjectD/DSA/Project/main.py",
+		"/home/scelester/.config/hypr/settings/keybindings.conf",
+		"/home/scelester/.steam/steam/steamapps/common/Counter-Strike Global Offensive/game/cs2.sh",
+		"/home/scelester/Downloads/message.txt",
+		"/home/scelester/.ssh/github_cicd",
+		"/home/scelester/Desktop/Testspace/rope/faceswap/jobs/failed/batch-2025-07-13-15-00-54.json",
+		"/home/scelester/Downloads/index(1).html",
+		"/home/scelester/Downloads/index.html",
+		"/home/scelester/questionJSON.csv",
+		"/home/scelester/Downloads/set-1.json",
+		"/home/scelester/Downloads/result_for_Exam__IOE_Set_1_at_2025-07-12_03-35-00.csv",
+		"/home/scelester/set1-IOE.csv",
+		"/home/scelester/dummyCandidate.csv",
+		"/home/scelester/.cookiecutter_replay/cookiecutter-django.json",
+		"/home/scelester/env",
+		"/home/scelester/ProjectD/AerikTech-ExamCenter/exam-center-fe/.env",
+		"/home/scelester/Downloads/noname.html",
+		"/tmp/xa-35WU82/.env",
+		"/home/scelester/ProjectD/AerikTech-ExamCenter/exam-center-be/models.dot",
+		"/home/scelester/Downloads/student-dataset.csv",
+		"/home/scelester/Downloads/Sample_question_format.csv",
+		"/home/scelester/Downloads/questions.txt",
+		"/home/scelester/Downloads/ioe_exam_questions.txt",
+		"/home/scelester/Downloads/template(2).json",
+		"/home/scelester/Downloads/template_updated_with_name_roll.json",
+		"/home/scelester/Downloads/template(1).json",
+		"/home/scelester/Downloads/config(1).json",
+		"/home/scelester/.mozilla/firefox/profile-01JP20GFH0JZERY2KXA5WQ8BXY/chrome/EXTRA THEMES/Spill/installation.txt",
+		"/home/scelester/.mozilla/firefox/profile-01JP20GFH0JZERY2KXA5WQ8BXY/chrome/colored_soundplaying_tab.css",
+		"/home/scelester/.mozilla/firefox/profile-01JP20GFH0JZERY2KXA5WQ8BXY/chrome/userChrome.css",
+		"/home/scelester/.mozilla/firefox/profile-01JP20GFH0JZERY2KXA5WQ8BXY/chrome/EXTRA MODS/Search Bar Mods/Search box - No search engine buttons/installation.txt",
+		"/home/scelester/.mozilla/firefox/profile-01JP20GFH0JZERY2KXA5WQ8BXY/chrome/EXTRA MODS/Bookmarks Bar Mods/Transparent bookmarks bar/installation.txt",
+		"/home/scelester/.mozilla/firefox/profile-01JP20GFH0JZERY2KXA5WQ8BXY/chrome/userContent.css",
+		"/home/scelester/.mozilla/firefox/profile-01JP20GFH0JZERY2KXA5WQ8BXY/chrome/EXTRA MODS/Tabs Bar Mods/Colored sound playing tab/colored_soundplaying_tab.css",
+		"/home/scelester/.mozilla/firefox/profile-01JP20GFH0JZERY2KXA5WQ8BXY/chrome/EXTRA THEMES/Wallpaper Edition/installation.txt",
+		"/home/scelester/Container/Testspace/websocket.html",
+		"/home/scelester/ProjectD/AerikTech-ExamCenter/exam-center-be/docker-compose.local.yml",
+		"/home/scelester/Downloads/answer_sheet_system.html",
+		"/home/scelester/test.html",
+		"/home/scelester/test.json",
+		"/home/scelester/Downloads/MFS100ClientServiceWebTest/mfs100-9.0.2.6.js",
+		"/home/scelester/Downloads/MFS100ClientServiceWebTest/jquery-1.8.2.js",
+		"/home/scelester/Downloads/MFS100ClientServiceWebTest/MFS100ClientServiceTest.htm",
+		"/home/scelester/.wine/dosdevices/c:/Program Files/Mantra/MFS100/MFS100ClientService/Test/MFS100ClientServiceTest.htm",
+		"/home/scelester/Downloads/system_logs_20250609_130631.json",
+		"/home/scelester/Downloads/system_logs_20250615_085809.json",
+		"/home/scelester/.wine/drive_c/Program Files/Mantra/MFS100/Driver/MFS100Test/FingerData/WSQImage.wsq",
+		"/home/scelester/.wine/drive_c/Program Files/Mantra/MFS100/Driver/MFS100Test/FingerData/RawData.raw",
+		"/home/scelester/ProjectD/fetcher/fetcher",
+		"/home/scelester/Desktop/Testspace/websocket.html",
+		"/home/scelester/ProjectD/DSA/Map and Set/map.py",
+		"/home/scelester/ProjectD/DSA/Map and Set/set.py",
+		"/home/scelester/.ssh/github_cicd.pub",
+		"/home/scelester/Downloads/templateExamQuestion.txt",
+		"/home/scelester/Downloads/assm4_group_tue_am/crust_pizza/includes/config.php",
+		"/home/scelester/Downloads/exam.html",
+		"/home/scelester/Downloads/Backend API.yaml",
+		"/home/scelester/ProjectD/AerikTech - ExamCenter/backups/users/api/views.py",
+		"/home/scelester/ProjectD/AerikTech - ExamCenter/exam-center-be/appAuthentication/tasks.py",
+		"/home/scelester/ProjectD/AerikTech - ExamCenter/backups/users/tasks.py",
+		"/home/scelester/ProjectD/AerikTech - ExamCenter/backups/users/urls.py",
+		"/home/scelester/ProjectD/AerikTech - ExamCenter/backups/users/views.py",
+		"/home/scelester/ProjectD/AerikTech - ExamCenter/backups/users/models.py",
+		"/home/scelester/ProjectD/AerikTech - ExamCenter/backups/users/adapters.py",
+		"/home/scelester/ProjectD/AerikTech - ExamCenter/backups/users/migrations/0001_initial.py",
+		"/home/scelester/ProjectD/AerikTech - ExamCenter/backups/users/migrations/__init__.py",
+		"/home/scelester/.ssh/id_rsa.pub",
+		"/home/scelester/.bashrc",
+		"/home/scelester/Downloads/anweshanBackup/backup-5.23.2025_10-14-54_anweshan/meta/homedir_paths",
+		"/home/scelester/Downloads/anweshanBackup/backup-5.23.2025_10-14-54_anweshan/meta/mailserver",
+		"/home/scelester/Downloads/anweshanBackup/backup-5.23.2025_10-14-54_anweshan/meta/dbprefix",
+		"/home/scelester/Downloads/anweshanBackup/backup-5.23.2025_10-14-54_anweshan/meta/hostname",
+		"/home/scelester/Downloads/anweshanBackup/backup-5.23.2025_10-14-54_anweshan/mysql-timestamps/mysql",
+		"/home/scelester/Downloads/anweshanBackup/backup-5.23.2025_10-14-54_anweshan/cron/anweshan",
+		"/home/scelester/eclipse-workspace/FlyHigh/src/main/webapp/WEB-INF/pages/admin/contact_messages.jsp",
+		"/home/scelester/eclipse-workspace/FlyHigh/src/main/webapp/WEB-INF/pages/admin/dashboard.jsp",
+		"/home/scelester/Downloads/flyhigh.sql",
+		"/home/scelester/http:/localhost:8080/FlyHigh",
+		"/home/scelester/tomcat10-eclipse/tomcat/RELEASE-NOTES",
+		"/home/scelester/java_things/apache-tomcat-10.0.27/webapps/ROOT/index.jsp",
+		"/home/scelester/https:/www.eclipse.org/sponsor/ide/?scope=Eclipse%20IDE%20for%20Java%20Developers%20(includes%20Incubating%20components)&version=4.35.0.20250306-0811&campaign=2025-03",
+		"/home/scelester/.zshrc",
+		"/home/scelester/Megasync/Clojure/running_robot/src/running_robot/core.clj",
+		"/home/scelester/Downloads/Week 9 - Tutorial Materials-20250518/Week9handson/lab09-exercise01.php",
+		"/home/scelester/.zprofile",
+		"/home/scelester/suspend-dmesg.log",
+		"/home/scelester/Games/Liars.Bar.v0.92/Game/steam_appid.txt",
+		"/home/scelester/Games/Liars.Bar.v0.92/README.txt",
+		"/home/scelester/Games/Liars.Bar.v0.92/_INSTALL TUTORIAL.txt",
+		"/home/scelester/Games/Liars.Bar.v0.92/OneHack.Us.txt",
+		"/home/scelester/Downloads/Disco.Elysium.Update.Twitch.Companion/OneHack.Us.txt",
+		"/home/scelester/.config/hypr/settings/plugins.conf",
+		"/home/scelester/.config/sublime-text/Packages/Default/Preferences.sublime-settings",
+		"/home/scelester/.config/sublime-text/Packages/User/Preferences.sublime-settings",
+		"/home/scelester/Megasync/Python_start_l/4.Chapter_4_working_with_list_loop_indroduce.py",
+		"/home/scelester/gay_message.txt",
+		"/home/scelester/.config/hypr/hyprlock.conf"
+	],
+	"folder_history":
+	[
+		"/home/scelester/.config/hypr",
+		"/home/scelester/.config/ags",
+		"/home/scelester/Container/ProjectD/Arcodify/HandleMyCase_BE",
+		"/home/scelester/Container/ProjectD/DSA/Project"
+	],
+	"last_version": 4200,
+	"last_window_id": 3,
+	"log_indexing": false,
+	"next_update_check": 1757645169,
+	"settings":
+	{
+		"new_window_full_screen": true,
+		"new_window_height": 1042.0,
+		"new_window_maximized": true,
+		"new_window_position":
+		[
+			0.0,
+			0.0
+		],
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"build_system_choices":
+			[
+				[
+					[
+						[
+							"Packages/Python/Python.sublime-build",
+							""
+						],
+						[
+							"Packages/Python/Python.sublime-build",
+							"Syntax Check"
+						]
+					],
+					[
+						"Packages/Python/Python.sublime-build",
+						""
+					]
+				]
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"theme",
+						"UI: Select Theme"
+					],
+					[
+						"color",
+						"UI: Select Color Scheme"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 166.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/scelester/Downloads/arcodify cv/notes.txt",
+				"/home/scelester/Downloads/Arcodify Hiring Campaign 10 Sep 2025 - ad_Leads_2025-09-10_2025-09-10 2.csv",
+				"/home/scelester/ProjectD/Arcodify/email_validator/generic/split_non_generic_into_personal_company.py",
+				"/home/scelester/ProjectD/Arcodify/HolyEmailExtractor/out_free_big/travel_emails_1757208542.json",
+				"/home/scelester/ProjectD/Arcodify/HolyEmailExtractor/seeds.json",
+				"/home/scelester/.config/hypr/hyprland.conf",
+				"/home/scelester/Downloads/ARCHITECHTURE DIAGRAM",
+				"/home/scelester/ProjectD/Arcodify/test/date/supreme_MONDAY_output.html",
+				"/home/scelester/.config/ags/style/widgets/musicbg.scss",
+				"/home/scelester/ProjectD/Arcodify/test/output.html",
+				"/home/scelester/gemini_sheet_cleaner.json",
+				"/home/scelester/ProjectD/Arcodify/HolyEmailExtractor/out_free/travel_emails_1756377312.csv",
+				"/home/scelester/ProjectD/Arcodify/HolyEmailExtractor/out/travel_emails_1756280694.json",
+				"/home/scelester/ProjectD/Arcodify/HolyEmailExtractor/summary_20250827_120053.json",
+				"/home/scelester/.config/hypr/settings/mouse_and_keyboards.conf",
+				"/home/scelester/.config/hypr/settings/autostart.conf",
+				"/home/scelester/.config/hypr/settings/window_rule.conf",
+				"/home/scelester/.config/ags/options.ts",
+				"/home/scelester/.config/hypr/scripts/toggle_shaders",
+				"/home/scelester/Container/ProjectD/Arcodify/HandleMyCase_BE/Core/app/api/v1/appointments_routes.py",
+				"/home/scelester/Container/ProjectD/Arcodify/HandleMyCase_BE/Core/app/api/v1/cases_routes.py",
+				"/home/scelester/.config/hypr/settings/env.conf",
+				"/home/scelester/Container/ProjectD/Anweshan/ASR_Nepal/datasets/EXTRACTED/combined/data/files.txt",
+				"/home/scelester/blenders/bugatti/README.txt",
+				"/home/scelester/Container/ProjectD/DSA/Project/chat_system.py",
+				"/home/scelester/Container/ProjectD/DSA/Project/README.md",
+				"/home/scelester/Container/ProjectD/DSA/Project/user.py",
+				"/home/scelester/Container/ProjectD/DSA/Project/data_structures.py",
+				"/home/scelester/Container/ProjectD/DSA/Project/client.py",
+				"/home/scelester/Container/ProjectD/DSA/Project/main.py",
+				"/home/scelester/.config/hypr/settings/keybindings.conf",
+				"/home/scelester/.steam/steam/steamapps/common/Counter-Strike Global Offensive/game/cs2.sh",
+				"/home/scelester/Downloads/message.txt",
+				"/home/scelester/.ssh/github_cicd",
+				"/home/scelester/Desktop/Testspace/rope/faceswap/jobs/failed/batch-2025-07-13-15-00-54.json",
+				"/home/scelester/Downloads/index(1).html",
+				"/home/scelester/Downloads/index.html",
+				"/home/scelester/questionJSON.csv",
+				"/home/scelester/Downloads/set-1.json",
+				"/home/scelester/Downloads/result_for_Exam__IOE_Set_1_at_2025-07-12_03-35-00.csv",
+				"/home/scelester/set1-IOE.csv",
+				"/home/scelester/dummyCandidate.csv",
+				"/home/scelester/.cookiecutter_replay/cookiecutter-django.json",
+				"/home/scelester/env",
+				"/home/scelester/ProjectD/AerikTech-ExamCenter/exam-center-fe/.env",
+				"/home/scelester/Downloads/noname.html",
+				"/tmp/xa-35WU82/.env",
+				"/home/scelester/ProjectD/AerikTech-ExamCenter/exam-center-be/models.dot",
+				"/home/scelester/Downloads/student-dataset.csv",
+				"/home/scelester/Downloads/Sample_question_format.csv",
+				"/home/scelester/Downloads/questions.txt",
+				"/home/scelester/Downloads/ioe_exam_questions.txt",
+				"/home/scelester/Downloads/template(2).json",
+				"/home/scelester/Downloads/template_updated_with_name_roll.json",
+				"/home/scelester/Downloads/template(1).json",
+				"/home/scelester/Downloads/config(1).json",
+				"/home/scelester/.mozilla/firefox/profile-01JP20GFH0JZERY2KXA5WQ8BXY/chrome/EXTRA THEMES/Spill/installation.txt",
+				"/home/scelester/.mozilla/firefox/profile-01JP20GFH0JZERY2KXA5WQ8BXY/chrome/colored_soundplaying_tab.css",
+				"/home/scelester/.mozilla/firefox/profile-01JP20GFH0JZERY2KXA5WQ8BXY/chrome/userChrome.css",
+				"/home/scelester/.mozilla/firefox/profile-01JP20GFH0JZERY2KXA5WQ8BXY/chrome/EXTRA MODS/Search Bar Mods/Search box - No search engine buttons/installation.txt",
+				"/home/scelester/.mozilla/firefox/profile-01JP20GFH0JZERY2KXA5WQ8BXY/chrome/EXTRA MODS/Bookmarks Bar Mods/Transparent bookmarks bar/installation.txt",
+				"/home/scelester/.mozilla/firefox/profile-01JP20GFH0JZERY2KXA5WQ8BXY/chrome/userContent.css",
+				"/home/scelester/.mozilla/firefox/profile-01JP20GFH0JZERY2KXA5WQ8BXY/chrome/EXTRA MODS/Tabs Bar Mods/Colored sound playing tab/colored_soundplaying_tab.css",
+				"/home/scelester/.mozilla/firefox/profile-01JP20GFH0JZERY2KXA5WQ8BXY/chrome/EXTRA THEMES/Wallpaper Edition/installation.txt",
+				"/home/scelester/Container/Testspace/websocket.html",
+				"/home/scelester/ProjectD/AerikTech-ExamCenter/exam-center-be/docker-compose.local.yml",
+				"/home/scelester/Downloads/answer_sheet_system.html",
+				"/home/scelester/test.html",
+				"/home/scelester/test.json",
+				"/home/scelester/Downloads/MFS100ClientServiceWebTest/mfs100-9.0.2.6.js",
+				"/home/scelester/Downloads/MFS100ClientServiceWebTest/jquery-1.8.2.js",
+				"/home/scelester/Downloads/MFS100ClientServiceWebTest/MFS100ClientServiceTest.htm",
+				"/home/scelester/.wine/dosdevices/c:/Program Files/Mantra/MFS100/MFS100ClientService/Test/MFS100ClientServiceTest.htm",
+				"/home/scelester/Downloads/system_logs_20250609_130631.json",
+				"/home/scelester/Downloads/system_logs_20250615_085809.json",
+				"/home/scelester/.wine/drive_c/Program Files/Mantra/MFS100/Driver/MFS100Test/FingerData/WSQImage.wsq",
+				"/home/scelester/.wine/drive_c/Program Files/Mantra/MFS100/Driver/MFS100Test/FingerData/RawData.raw",
+				"/home/scelester/ProjectD/fetcher/fetcher",
+				"/home/scelester/Desktop/Testspace/websocket.html",
+				"/home/scelester/ProjectD/DSA/Map and Set/map.py",
+				"/home/scelester/ProjectD/DSA/Map and Set/set.py",
+				"/home/scelester/.ssh/github_cicd.pub",
+				"/home/scelester/Downloads/templateExamQuestion.txt",
+				"/home/scelester/Downloads/assm4_group_tue_am/crust_pizza/includes/config.php",
+				"/home/scelester/Downloads/exam.html",
+				"/home/scelester/Downloads/Backend API.yaml",
+				"/home/scelester/ProjectD/AerikTech - ExamCenter/backups/users/api/views.py",
+				"/home/scelester/ProjectD/AerikTech - ExamCenter/exam-center-be/appAuthentication/tasks.py",
+				"/home/scelester/ProjectD/AerikTech - ExamCenter/backups/users/tasks.py",
+				"/home/scelester/ProjectD/AerikTech - ExamCenter/backups/users/urls.py",
+				"/home/scelester/ProjectD/AerikTech - ExamCenter/backups/users/views.py",
+				"/home/scelester/ProjectD/AerikTech - ExamCenter/backups/users/models.py",
+				"/home/scelester/ProjectD/AerikTech - ExamCenter/backups/users/adapters.py",
+				"/home/scelester/ProjectD/AerikTech - ExamCenter/backups/users/migrations/0001_initial.py",
+				"/home/scelester/ProjectD/AerikTech - ExamCenter/backups/users/migrations/__init__.py",
+				"/home/scelester/.ssh/id_rsa.pub",
+				"/home/scelester/.bashrc",
+				"/home/scelester/Downloads/anweshanBackup/backup-5.23.2025_10-14-54_anweshan/meta/homedir_paths",
+				"/home/scelester/Downloads/anweshanBackup/backup-5.23.2025_10-14-54_anweshan/meta/mailserver",
+				"/home/scelester/Downloads/anweshanBackup/backup-5.23.2025_10-14-54_anweshan/meta/dbprefix",
+				"/home/scelester/Downloads/anweshanBackup/backup-5.23.2025_10-14-54_anweshan/meta/hostname",
+				"/home/scelester/Downloads/anweshanBackup/backup-5.23.2025_10-14-54_anweshan/mysql-timestamps/mysql",
+				"/home/scelester/Downloads/anweshanBackup/backup-5.23.2025_10-14-54_anweshan/cron/anweshan",
+				"/home/scelester/eclipse-workspace/FlyHigh/src/main/webapp/WEB-INF/pages/admin/contact_messages.jsp",
+				"/home/scelester/eclipse-workspace/FlyHigh/src/main/webapp/WEB-INF/pages/admin/dashboard.jsp",
+				"/home/scelester/Downloads/flyhigh.sql",
+				"/home/scelester/http:/localhost:8080/FlyHigh",
+				"/home/scelester/tomcat10-eclipse/tomcat/RELEASE-NOTES",
+				"/home/scelester/java_things/apache-tomcat-10.0.27/webapps/ROOT/index.jsp",
+				"/home/scelester/https:/www.eclipse.org/sponsor/ide/?scope=Eclipse%20IDE%20for%20Java%20Developers%20(includes%20Incubating%20components)&version=4.35.0.20250306-0811&campaign=2025-03",
+				"/home/scelester/.zshrc",
+				"/home/scelester/Megasync/Clojure/running_robot/src/running_robot/core.clj",
+				"/home/scelester/Downloads/Week 9 - Tutorial Materials-20250518/Week9handson/lab09-exercise01.php",
+				"/home/scelester/.zprofile",
+				"/home/scelester/suspend-dmesg.log",
+				"/home/scelester/Games/Liars.Bar.v0.92/Game/steam_appid.txt",
+				"/home/scelester/Games/Liars.Bar.v0.92/README.txt",
+				"/home/scelester/Games/Liars.Bar.v0.92/_INSTALL TUTORIAL.txt",
+				"/home/scelester/Games/Liars.Bar.v0.92/OneHack.Us.txt",
+				"/home/scelester/Downloads/Disco.Elysium.Update.Twitch.Companion/OneHack.Us.txt",
+				"/home/scelester/.config/hypr/settings/plugins.conf",
+				"/home/scelester/Megasync/Python_start_l/4.Chapter_4_working_with_list_loop_indroduce.py",
+				"/home/scelester/gay_message.txt",
+				"/home/scelester/.config/hypr/hyprlock.conf"
+			],
+			"find":
+			{
+				"height": 35.0
+			},
+			"find_in_files":
+			{
+				"height": 322.0,
+				"where_history":
+				[
+					""
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"rm",
+					"mega:/$",
+					":/$ ",
+					"mega:/$",
+					"google",
+					"no_hardware",
+					"ferd",
+					"ferdium",
+					"missing",
+					"ferdi",
+					"code",
+					"shade",
+					"sahdde",
+					"shadde",
+					"toggle_sh",
+					"float",
+					"floating",
+					"genera",
+					"#",
+					"ferdium",
+					"from user",
+					"emp",
+					"EphemeralUser",
+					"Ephemeral",
+					"$",
+					"$m",
+					"jquery",
+					"${mcqs.map((mcq, index) => ` ",
+					"76",
+					"\"question\": \"",
+					"80'",
+					"80",
+					"discord",
+					"mod",
+					"cyc",
+					"grave",
+					"esc",
+					"ESC",
+					"ags",
+					"`",
+					"id",
+					"prt",
+					"pr",
+					"69.",
+					"map",
+					"wsUrl",
+					"misc",
+					"g",
+					"sync",
+					"explicit",
+					"refres",
+					"vrr",
+					"vrf",
+					"UserViewSet",
+					"$",
+					"lid",
+					",P",
+					"hypr",
+					"swww",
+					"online",
+					"user "
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"Relay",
+					""
+				],
+				"reverse": false,
+				"scrollbar_highlights": true,
+				"show_context": true,
+				"use_buffer2": true,
+				"use_gitignore": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 35.0
+			},
+			"input":
+			{
+				"height": 72.0
+			},
+			"menu_visible": false,
+			"output.exec":
+			{
+				"height": 199.0,
+				"history":
+				[
+				]
+			},
+			"output.find_results":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"pinned_build_system": "",
+			"replace":
+			{
+				"height": 66.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"hyprland",
+						"hyprland.conf"
+					],
+					[
+						"music",
+						"style/widgets/musicbg.scss"
+					],
+					[
+						"hy",
+						"hyprland.conf"
+					],
+					[
+						"hypr",
+						"hyprland.conf"
+					],
+					[
+						"hyprla",
+						"hyprland.conf"
+					],
+					[
+						"win",
+						"settings/window_rule.conf"
+					],
+					[
+						"aut",
+						"settings/autostart.conf"
+					],
+					[
+						"options",
+						"options.ts"
+					],
+					[
+						"auto",
+						"settings/autostart.conf"
+					],
+					[
+						"shade",
+						"scripts/toggle_shaders"
+					],
+					[
+						"hyr",
+						"hyprland.conf"
+					],
+					[
+						"gen",
+						"settings/env.conf"
+					],
+					[
+						"window",
+						"settings/window_rule.conf"
+					],
+					[
+						"",
+						"hyprland.conf"
+					],
+					[
+						"ke",
+						"settings/keybindings.conf"
+					],
+					[
+						"wnd",
+						"settings/window_rule.conf"
+					],
+					[
+						"key",
+						"settings/keybindings.conf"
+					],
+					[
+						"au",
+						"settings/autostart.conf"
+					],
+					[
+						"plug",
+						"settings/plugins.conf"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 395.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 960.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"build_system": "Packages/Python/Python.sublime-build",
+			"build_system_choices":
+			[
+				[
+					[
+						[
+							"Packages/Python/Python.sublime-build",
+							""
+						],
+						[
+							"Packages/Python/Python.sublime-build",
+							"Syntax Check"
+						]
+					],
+					[
+						"Packages/Python/Python.sublime-build",
+						""
+					]
+				]
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"theme",
+						"UI: Select Theme"
+					],
+					[
+						"color",
+						"UI: Select Color Scheme"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 166.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/scelester/Downloads/arcodify cv/notes.txt",
+				"/home/scelester/Downloads/Arcodify Hiring Campaign 10 Sep 2025 - ad_Leads_2025-09-10_2025-09-10 2.csv",
+				"/home/scelester/ProjectD/Arcodify/email_validator/generic/split_non_generic_into_personal_company.py",
+				"/home/scelester/ProjectD/Arcodify/HolyEmailExtractor/out_free_big/travel_emails_1757208542.json",
+				"/home/scelester/ProjectD/Arcodify/HolyEmailExtractor/seeds.json",
+				"/home/scelester/.config/hypr/hyprland.conf",
+				"/home/scelester/Downloads/ARCHITECHTURE DIAGRAM",
+				"/home/scelester/ProjectD/Arcodify/test/date/supreme_MONDAY_output.html",
+				"/home/scelester/.config/ags/style/widgets/musicbg.scss",
+				"/home/scelester/ProjectD/Arcodify/test/output.html",
+				"/home/scelester/gemini_sheet_cleaner.json",
+				"/home/scelester/ProjectD/Arcodify/HolyEmailExtractor/out_free/travel_emails_1756377312.csv",
+				"/home/scelester/ProjectD/Arcodify/HolyEmailExtractor/out/travel_emails_1756280694.json",
+				"/home/scelester/ProjectD/Arcodify/HolyEmailExtractor/summary_20250827_120053.json",
+				"/home/scelester/.config/hypr/settings/mouse_and_keyboards.conf",
+				"/home/scelester/.config/hypr/settings/autostart.conf",
+				"/home/scelester/.config/hypr/settings/window_rule.conf",
+				"/home/scelester/.config/ags/options.ts",
+				"/home/scelester/.config/hypr/scripts/toggle_shaders",
+				"/home/scelester/Container/ProjectD/Arcodify/HandleMyCase_BE/Core/app/api/v1/appointments_routes.py",
+				"/home/scelester/Container/ProjectD/Arcodify/HandleMyCase_BE/Core/app/api/v1/cases_routes.py",
+				"/home/scelester/.config/hypr/settings/env.conf",
+				"/home/scelester/Container/ProjectD/Anweshan/ASR_Nepal/datasets/EXTRACTED/combined/data/files.txt",
+				"/home/scelester/blenders/bugatti/README.txt",
+				"/home/scelester/Container/ProjectD/DSA/Project/chat_system.py",
+				"/home/scelester/Container/ProjectD/DSA/Project/README.md",
+				"/home/scelester/Container/ProjectD/DSA/Project/user.py",
+				"/home/scelester/Container/ProjectD/DSA/Project/data_structures.py",
+				"/home/scelester/Container/ProjectD/DSA/Project/client.py",
+				"/home/scelester/Container/ProjectD/DSA/Project/main.py",
+				"/home/scelester/.config/hypr/settings/keybindings.conf",
+				"/home/scelester/.steam/steam/steamapps/common/Counter-Strike Global Offensive/game/cs2.sh",
+				"/home/scelester/Downloads/message.txt",
+				"/home/scelester/.ssh/github_cicd",
+				"/home/scelester/Desktop/Testspace/rope/faceswap/jobs/failed/batch-2025-07-13-15-00-54.json",
+				"/home/scelester/Downloads/index(1).html",
+				"/home/scelester/Downloads/index.html",
+				"/home/scelester/questionJSON.csv",
+				"/home/scelester/Downloads/set-1.json",
+				"/home/scelester/Downloads/result_for_Exam__IOE_Set_1_at_2025-07-12_03-35-00.csv",
+				"/home/scelester/set1-IOE.csv",
+				"/home/scelester/dummyCandidate.csv",
+				"/home/scelester/.cookiecutter_replay/cookiecutter-django.json",
+				"/home/scelester/env",
+				"/home/scelester/ProjectD/AerikTech-ExamCenter/exam-center-fe/.env",
+				"/home/scelester/Downloads/noname.html",
+				"/tmp/xa-35WU82/.env",
+				"/home/scelester/ProjectD/AerikTech-ExamCenter/exam-center-be/models.dot",
+				"/home/scelester/Downloads/student-dataset.csv",
+				"/home/scelester/Downloads/Sample_question_format.csv",
+				"/home/scelester/Downloads/questions.txt",
+				"/home/scelester/Downloads/ioe_exam_questions.txt",
+				"/home/scelester/Downloads/template(2).json",
+				"/home/scelester/Downloads/template_updated_with_name_roll.json",
+				"/home/scelester/Downloads/template(1).json",
+				"/home/scelester/Downloads/config(1).json",
+				"/home/scelester/.mozilla/firefox/profile-01JP20GFH0JZERY2KXA5WQ8BXY/chrome/EXTRA THEMES/Spill/installation.txt",
+				"/home/scelester/.mozilla/firefox/profile-01JP20GFH0JZERY2KXA5WQ8BXY/chrome/colored_soundplaying_tab.css",
+				"/home/scelester/.mozilla/firefox/profile-01JP20GFH0JZERY2KXA5WQ8BXY/chrome/userChrome.css",
+				"/home/scelester/.mozilla/firefox/profile-01JP20GFH0JZERY2KXA5WQ8BXY/chrome/EXTRA MODS/Search Bar Mods/Search box - No search engine buttons/installation.txt",
+				"/home/scelester/.mozilla/firefox/profile-01JP20GFH0JZERY2KXA5WQ8BXY/chrome/EXTRA MODS/Bookmarks Bar Mods/Transparent bookmarks bar/installation.txt",
+				"/home/scelester/.mozilla/firefox/profile-01JP20GFH0JZERY2KXA5WQ8BXY/chrome/userContent.css",
+				"/home/scelester/.mozilla/firefox/profile-01JP20GFH0JZERY2KXA5WQ8BXY/chrome/EXTRA MODS/Tabs Bar Mods/Colored sound playing tab/colored_soundplaying_tab.css",
+				"/home/scelester/.mozilla/firefox/profile-01JP20GFH0JZERY2KXA5WQ8BXY/chrome/EXTRA THEMES/Wallpaper Edition/installation.txt",
+				"/home/scelester/Container/Testspace/websocket.html",
+				"/home/scelester/ProjectD/AerikTech-ExamCenter/exam-center-be/docker-compose.local.yml",
+				"/home/scelester/Downloads/answer_sheet_system.html",
+				"/home/scelester/test.html",
+				"/home/scelester/test.json",
+				"/home/scelester/Downloads/MFS100ClientServiceWebTest/mfs100-9.0.2.6.js",
+				"/home/scelester/Downloads/MFS100ClientServiceWebTest/jquery-1.8.2.js",
+				"/home/scelester/Downloads/MFS100ClientServiceWebTest/MFS100ClientServiceTest.htm",
+				"/home/scelester/.wine/dosdevices/c:/Program Files/Mantra/MFS100/MFS100ClientService/Test/MFS100ClientServiceTest.htm",
+				"/home/scelester/Downloads/system_logs_20250609_130631.json",
+				"/home/scelester/Downloads/system_logs_20250615_085809.json",
+				"/home/scelester/.wine/drive_c/Program Files/Mantra/MFS100/Driver/MFS100Test/FingerData/WSQImage.wsq",
+				"/home/scelester/.wine/drive_c/Program Files/Mantra/MFS100/Driver/MFS100Test/FingerData/RawData.raw",
+				"/home/scelester/ProjectD/fetcher/fetcher",
+				"/home/scelester/Desktop/Testspace/websocket.html",
+				"/home/scelester/ProjectD/DSA/Map and Set/map.py",
+				"/home/scelester/ProjectD/DSA/Map and Set/set.py",
+				"/home/scelester/.ssh/github_cicd.pub",
+				"/home/scelester/Downloads/templateExamQuestion.txt",
+				"/home/scelester/Downloads/assm4_group_tue_am/crust_pizza/includes/config.php",
+				"/home/scelester/Downloads/exam.html",
+				"/home/scelester/Downloads/Backend API.yaml",
+				"/home/scelester/ProjectD/AerikTech - ExamCenter/backups/users/api/views.py",
+				"/home/scelester/ProjectD/AerikTech - ExamCenter/exam-center-be/appAuthentication/tasks.py",
+				"/home/scelester/ProjectD/AerikTech - ExamCenter/backups/users/tasks.py",
+				"/home/scelester/ProjectD/AerikTech - ExamCenter/backups/users/urls.py",
+				"/home/scelester/ProjectD/AerikTech - ExamCenter/backups/users/views.py",
+				"/home/scelester/ProjectD/AerikTech - ExamCenter/backups/users/models.py",
+				"/home/scelester/ProjectD/AerikTech - ExamCenter/backups/users/adapters.py",
+				"/home/scelester/ProjectD/AerikTech - ExamCenter/backups/users/migrations/0001_initial.py",
+				"/home/scelester/ProjectD/AerikTech - ExamCenter/backups/users/migrations/__init__.py",
+				"/home/scelester/.ssh/id_rsa.pub",
+				"/home/scelester/.bashrc",
+				"/home/scelester/Downloads/anweshanBackup/backup-5.23.2025_10-14-54_anweshan/meta/homedir_paths",
+				"/home/scelester/Downloads/anweshanBackup/backup-5.23.2025_10-14-54_anweshan/meta/mailserver",
+				"/home/scelester/Downloads/anweshanBackup/backup-5.23.2025_10-14-54_anweshan/meta/dbprefix",
+				"/home/scelester/Downloads/anweshanBackup/backup-5.23.2025_10-14-54_anweshan/meta/hostname",
+				"/home/scelester/Downloads/anweshanBackup/backup-5.23.2025_10-14-54_anweshan/mysql-timestamps/mysql",
+				"/home/scelester/Downloads/anweshanBackup/backup-5.23.2025_10-14-54_anweshan/cron/anweshan",
+				"/home/scelester/eclipse-workspace/FlyHigh/src/main/webapp/WEB-INF/pages/admin/contact_messages.jsp",
+				"/home/scelester/eclipse-workspace/FlyHigh/src/main/webapp/WEB-INF/pages/admin/dashboard.jsp",
+				"/home/scelester/Downloads/flyhigh.sql",
+				"/home/scelester/http:/localhost:8080/FlyHigh",
+				"/home/scelester/tomcat10-eclipse/tomcat/RELEASE-NOTES",
+				"/home/scelester/java_things/apache-tomcat-10.0.27/webapps/ROOT/index.jsp",
+				"/home/scelester/https:/www.eclipse.org/sponsor/ide/?scope=Eclipse%20IDE%20for%20Java%20Developers%20(includes%20Incubating%20components)&version=4.35.0.20250306-0811&campaign=2025-03",
+				"/home/scelester/.zshrc",
+				"/home/scelester/Megasync/Clojure/running_robot/src/running_robot/core.clj",
+				"/home/scelester/Downloads/Week 9 - Tutorial Materials-20250518/Week9handson/lab09-exercise01.php",
+				"/home/scelester/.zprofile",
+				"/home/scelester/suspend-dmesg.log",
+				"/home/scelester/Games/Liars.Bar.v0.92/Game/steam_appid.txt",
+				"/home/scelester/Games/Liars.Bar.v0.92/README.txt",
+				"/home/scelester/Games/Liars.Bar.v0.92/_INSTALL TUTORIAL.txt",
+				"/home/scelester/Games/Liars.Bar.v0.92/OneHack.Us.txt",
+				"/home/scelester/Downloads/Disco.Elysium.Update.Twitch.Companion/OneHack.Us.txt",
+				"/home/scelester/.config/hypr/settings/plugins.conf",
+				"/home/scelester/Megasync/Python_start_l/4.Chapter_4_working_with_list_loop_indroduce.py",
+				"/home/scelester/gay_message.txt",
+				"/home/scelester/.config/hypr/hyprlock.conf"
+			],
+			"find":
+			{
+				"height": 35.0
+			},
+			"find_in_files":
+			{
+				"height": 322.0,
+				"where_history":
+				[
+					""
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"rm",
+					"mega:/$",
+					":/$ ",
+					"mega:/$",
+					"google",
+					"no_hardware",
+					"ferd",
+					"ferdium",
+					"missing",
+					"ferdi",
+					"code",
+					"shade",
+					"sahdde",
+					"shadde",
+					"toggle_sh",
+					"float",
+					"floating",
+					"genera",
+					"#",
+					"ferdium",
+					"from user",
+					"emp",
+					"EphemeralUser",
+					"Ephemeral",
+					"$",
+					"$m",
+					"jquery",
+					"${mcqs.map((mcq, index) => ` ",
+					"76",
+					"\"question\": \"",
+					"80'",
+					"80",
+					"discord",
+					"mod",
+					"cyc",
+					"grave",
+					"esc",
+					"ESC",
+					"ags",
+					"`",
+					"id",
+					"prt",
+					"pr",
+					"69.",
+					"map",
+					"wsUrl",
+					"misc",
+					"g",
+					"sync",
+					"explicit",
+					"refres",
+					"vrr",
+					"vrf",
+					"UserViewSet",
+					"$",
+					"lid",
+					",P",
+					"hypr",
+					"swww",
+					"online",
+					"user "
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"Relay",
+					""
+				],
+				"reverse": false,
+				"scrollbar_highlights": true,
+				"show_context": true,
+				"use_buffer2": true,
+				"use_gitignore": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 35.0
+			},
+			"input":
+			{
+				"height": 72.0
+			},
+			"menu_visible": false,
+			"output.exec":
+			{
+				"height": 199.0,
+				"history":
+				[
+				]
+			},
+			"output.find_results":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"pinned_build_system": "",
+			"position": "1,1,0,0,0,0,0,960,1042,1920,1080,0",
+			"replace":
+			{
+				"height": 66.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"hyprland",
+						"hyprland.conf"
+					],
+					[
+						"music",
+						"style/widgets/musicbg.scss"
+					],
+					[
+						"hy",
+						"hyprland.conf"
+					],
+					[
+						"hypr",
+						"hyprland.conf"
+					],
+					[
+						"hyprla",
+						"hyprland.conf"
+					],
+					[
+						"win",
+						"settings/window_rule.conf"
+					],
+					[
+						"aut",
+						"settings/autostart.conf"
+					],
+					[
+						"options",
+						"options.ts"
+					],
+					[
+						"auto",
+						"settings/autostart.conf"
+					],
+					[
+						"shade",
+						"scripts/toggle_shaders"
+					],
+					[
+						"hyr",
+						"hyprland.conf"
+					],
+					[
+						"gen",
+						"settings/env.conf"
+					],
+					[
+						"window",
+						"settings/window_rule.conf"
+					],
+					[
+						"",
+						"hyprland.conf"
+					],
+					[
+						"ke",
+						"settings/keybindings.conf"
+					],
+					[
+						"wnd",
+						"settings/window_rule.conf"
+					],
+					[
+						"key",
+						"settings/keybindings.conf"
+					],
+					[
+						"au",
+						"settings/autostart.conf"
+					],
+					[
+						"plug",
+						"settings/plugins.conf"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 395.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 1
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}

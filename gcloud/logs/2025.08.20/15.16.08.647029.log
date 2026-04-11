@@ -1,0 +1,15 @@
+2025-08-20 15:16:08,654 DEBUG    root            Loaded Command Group: ['gcloud', 'functions']
+2025-08-20 15:16:08,796 DEBUG    root            Loaded Command Group: ['gcloud', 'functions', 'describe']
+2025-08-20 15:16:08,862 DEBUG    root            Running [gcloud.functions.describe] with arguments: [--format: "value(serviceAccountEmail)", --region: "asia-south1", NAME: "syncApplicationsToMeiliSearch"]
+2025-08-20 15:16:08,882 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2025-08-20 15:16:08,883 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-08-20 15:16:09,345 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+2025-08-20 15:16:09,384 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2025-08-20 15:16:10,312 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/hire-enumerator-697cd/locations/asia-south1/functions/syncApplicationsToMeiliSearch?alt=json HTTP/11" 200 None
+2025-08-20 15:16:10,337 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2025-08-20 15:16:10,869 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/projects/hire-enumerator-697cd/locations/asia-south1/functions/syncApplicationsToMeiliSearch?alt=json HTTP/11" 200 None
+2025-08-20 15:16:10,877 DEBUG    root            Chosen display Format:default value(serviceAccountEmail)
+2025-08-20 15:16:10,878 INFO     root            Display format: "default value(serviceAccountEmail)"
+2025-08-20 15:16:11,000 INFO     ___FILE_ONLY___ hire-enumerator-697cd@appspot.gserviceaccount.com
+
+2025-08-20 15:16:11,001 DEBUG    root            SDK update checks are disabled.

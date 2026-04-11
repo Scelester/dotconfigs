@@ -1,0 +1,67 @@
+00:00:00.003877 main     VirtualBox XPCOM Server 7.1.8 r168469 linux.amd64 (Apr 23 2025 07:57:44) release log
+00:00:00.003879 main     Log opened 2025-05-08T08:16:42.128140000Z
+00:00:00.003879 main     Build Type: release
+00:00:00.003881 main     OS Product: Linux
+00:00:00.003881 main     OS Release: 6.14.4-arch1-2
+00:00:00.003881 main     OS Version: #1 SMP PREEMPT_DYNAMIC Tue, 29 Apr 2025 09:23:13 +0000
+00:00:00.003897 main     DMI Product Name: ASUS TUF Gaming F15 FX506LH_FX506LH
+00:00:00.003901 main     DMI Product Version: 1.0
+00:00:00.003904 main     Firmware type: UEFI
+00:00:00.004122 main     Secure Boot: Enabled
+00:00:00.004144 main     Host RAM: 15824MB (15.4GB) total, 6188MB (6.0GB) available
+00:00:00.004146 main     Executable: /usr/lib/virtualbox/VBoxSVC
+00:00:00.004147 main     Process ID: 31780
+00:00:00.004147 main     Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.005810 main     IPC socket path: /tmp/.vbox-scelester-ipc/ipcd
+00:00:00.045051 DCon01   VirtualBox: object creation starts
+00:00:00.045965 DCon01   Home directory: '/home/scelester/.config/VirtualBox'
+00:00:00.046589 DCon01   Loading settings file "/home/scelester/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:00.049916 DCon01   Successfully initialised host USB using sysfs
+00:00:00.058339 DCon01   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlan0: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:00:00.059484 DCon01   HostDnsMonitor: initializing
+00:00:00.059569 DCon01   NAT: resolv.conf: nameserver 1.1.1.1
+00:00:00.059572 DCon01   NAT: resolv.conf: nameserver 100.127.255.165
+00:00:00.059574 DCon01   NAT: resolv.conf: nameserver 100.127.255.73
+00:00:00.059576 DCon01   NAT: resolv.conf: too many nameserver lines, ignoring 2400:1a00:0:32::165
+00:00:00.059577 DCon01   NAT: resolv.conf: too many nameserver lines, ignoring 2400:1a00:8000:4::73
+00:00:00.059581 DCon01   HostDnsMonitor: updating information
+00:00:00.059587 DCon01   HostDnsMonitor: old information
+00:00:00.059588 DCon01     no server entries
+00:00:00.059589 DCon01     no domain set
+00:00:00.059590 DCon01     no search string entries
+00:00:00.059591 DCon01   HostDnsMonitor: new information
+00:00:00.059592 DCon01     server 1: 1.1.1.1
+00:00:00.059593 DCon01     server 2: 100.127.255.165
+00:00:00.059594 DCon01     server 3: 100.127.255.73
+00:00:00.059595 DCon01     domain: worldlink.com.np
+00:00:00.059596 DCon01     search string 1: worldlink.com.np
+00:00:00.062995 DCon01   VD: VDInit finished with VINF_SUCCESS
+00:00:00.064253 DCon01   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={925084b0-625f-422f-a67d-0ede1880a56c} aComponent={SystemPropertiesWrap} aText={Cannot determine default Guest Additions ISO location. Most likely they are not available}, preserve=false aResultDetail=0
+00:00:00.066064 DCon01   Platform architecture set to 'x86'
+00:00:00.067135 DCon01   Loading settings file "/home/scelester/VirtualBox VMs/NIX/NIX.vbox" with version "1.19-linux"
+00:00:00.067647 DCon01   Platform architecture set to 'x86'
+00:00:00.068320 DCon01   VirtualBox: object created
+00:00:00.796089 DCon05   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={5bfd8965-b81b-469f-8649-f717ce97a5d5} aComponent={NvramStoreWrap} aText={The UEFI NVRAM file is not existing for this machine}, preserve=false aResultDetail=0
+00:00:00.913524 DCon05   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={The machine is not mutable, saved or running (state is Saved)}, preserve=false aResultDetail=0
+00:00:01.073120 DCon05   Saving settings file "/home/scelester/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:01.077332 DCon05   Finished saving settings file "/home/scelester/.config/VirtualBox/VirtualBox.xml"
+00:00:14.108138 DCon05   Saving settings file "/home/scelester/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:14.113070 DCon05   Finished saving settings file "/home/scelester/.config/VirtualBox/VirtualBox.xml"
+00:00:14.113122 DCon05   Saving settings file "/home/scelester/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:14.115239 DCon05   Finished saving settings file "/home/scelester/.config/VirtualBox/VirtualBox.xml"
+00:00:14.122037 DeleteVM Saving settings file "/home/scelester/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:14.130435 DeleteVM Finished saving settings file "/home/scelester/.config/VirtualBox/VirtualBox.xml"
+00:00:14.131141 DCon06   Saving settings file "/home/scelester/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:14.136142 DCon06   Finished saving settings file "/home/scelester/.config/VirtualBox/VirtualBox.xml"
+00:00:14.146231 DCon06   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={d644ad1e-c501-4fc7-9ab6-aa6d763bc540} aComponent={VirtualBoxWrap} aText={Could not find a registered machine with UUID {954767ab-78bf-4d5d-a2b2-ea41f94439ad}}, preserve=false aResultDetail=0
+00:00:14.147157 DCon06   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={Saved screenshot thumbnail data is not available (VERR_FILE_NOT_FOUND)}, preserve=false aResultDetail=-102
+00:00:14.167437 DCon06   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={d644ad1e-c501-4fc7-9ab6-aa6d763bc540} aComponent={VirtualBoxWrap} aText={Could not find a registered machine with UUID {954767ab-78bf-4d5d-a2b2-ea41f94439ad}}, preserve=false aResultDetail=0
+00:00:14.168190 DCon06   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={Saved screenshot thumbnail data is not available (VERR_FILE_NOT_FOUND)}, preserve=false aResultDetail=-102
+00:00:14.190611 DCon06   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={5bfd8965-b81b-469f-8649-f717ce97a5d5} aComponent={NvramStoreWrap} aText={The UEFI NVRAM file is not existing for this machine}, preserve=false aResultDetail=0
+00:00:14.194271 DCon06   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={Saved screenshot thumbnail data is not available (VERR_FILE_NOT_FOUND)}, preserve=false aResultDetail=-102
+00:00:14.205609 DCon06   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={bea3ef5c-de2f-4b74-aa3a-15d6249371a0} aComponent={RecordingSettingsWrap} aText={Recording not started}, preserve=false aResultDetail=0
+00:00:21.644503 main     VirtualBox: object deletion starts
+00:00:21.644795 main     HostDnsMonitor: shutting down ...
+00:00:21.650093 main     HostDnsMonitor: shut down
+00:00:21.665378 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={d644ad1e-c501-4fc7-9ab6-aa6d763bc540} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:00:21.665437 main     VirtualBox: object deleted

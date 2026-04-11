@@ -1,0 +1,133 @@
+{
+  "cache_thread_count": 2,
+  "config_dialog_tab_index": 0,
+  "cover_thread_count": 2,
+  "details_thread_count": 4,
+  "first_run": false,
+  "geometry-of-config_dialog_geometry": {
+    "frame_geometry": {
+      "height": 996,
+      "width": 1890,
+      "x": 0,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 996,
+      "width": 1890,
+      "x": 0,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 600,
+      "width": 800,
+      "x": 0,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAAB2EAAAPjAAAAAAAAAAAAAAMfAAACVwAAAAACAAAAB4AAAAAAAAAAAAAAB2EAAAPj"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "Najing CEC Panda FPD Technology CO. ltd",
+      "model": "0x004D",
+      "name": "eDP-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-geometry": {
+    "frame_geometry": {
+      "height": 996,
+      "width": 1033,
+      "x": 0,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 996,
+      "width": 1033,
+      "x": 0,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 996,
+      "width": 1890,
+      "x": 0,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAABAgAAAPjAAAAAAAAAAAAAAdhAAAD4wAAAAACAAAAB4AAAAAAAAAAAAAABAgAAAPj"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "Najing CEC Panda FPD Technology CO. ltd",
+      "model": "0x004D",
+      "name": "eDP-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "hang_time": 75,
+  "max_results": 10,
+  "open_external": true,
+  "results_view_column_width": [
+    85,
+    324,
+    204,
+    77,
+    128,
+    49,
+    49
+  ],
+  "search_thread_count": 4,
+  "sort_col": 2,
+  "sort_order": 0,
+  "store_checked": {
+    "Libgen Fiction": true,
+    "Library Genesis": true
+  },
+  "store_splitter_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAEAAAACAAAATQAAAXQB/////wEAAAABAA=="
+  },
+  "timeout": 75
+}

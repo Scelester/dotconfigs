@@ -1,0 +1,35 @@
+2025-08-14 14:26:14,020 DEBUG    root            Loaded Command Group: ['gcloud', 'storage']
+2025-08-14 14:26:14,021 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets']
+2025-08-14 14:26:14,484 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets', 'add_iam_policy_binding']
+2025-08-14 14:26:14,485 DEBUG    root            Running [gcloud.storage.buckets.add-iam-policy-binding] with arguments: [--member: "serviceAccount:service-652347975853@gcp-sa-aiplatform.iam.gserviceaccount.com", --role: "roles/storage.objectAdmin", URL: "cloud-ai-platform-f511c133-160b-4432-b173-aa89cc7e9fbc"]
+2025-08-14 14:26:14,486 DEBUG    root            (gcloud.storage.buckets.add-iam-policy-binding) "gcloud storage buckets add-iam-policy-binding" only accepts Google Cloud Storage URLs.
+Example: "gs://bucket"
+Received: "file://cloud-ai-platform-f511c133-160b-4432-b173-aa89cc7e9fbc"
+Traceback (most recent call last):
+  File "/usr/bin/../../opt/google-cloud-cli/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/usr/bin/../../opt/google-cloud-cli/lib/googlecloudsdk/calliope/backend.py", line 945, in Run
+    resources = command_instance.Run(args)
+  File "/usr/bin/../../opt/google-cloud-cli/lib/surface/storage/buckets/add_iam_policy_binding.py", line 66, in Run
+    errors_util.raise_error_if_not_gcs_bucket(args.command_path, url_object)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../../opt/google-cloud-cli/lib/googlecloudsdk/command_lib/storage/errors_util.py", line 80, in raise_error_if_not_gcs_bucket
+    raise_error_if_not_gcs(command_list, url)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../../opt/google-cloud-cli/lib/googlecloudsdk/command_lib/storage/errors_util.py", line 74, in raise_error_if_not_gcs
+    _raise_error_for_wrong_resource_type(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        command_list, 'Google Cloud Storage', example, url
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/bin/../../opt/google-cloud-cli/lib/googlecloudsdk/command_lib/storage/errors_util.py", line 48, in _raise_error_for_wrong_resource_type
+    raise errors.InvalidUrlError(
+    ...<3 lines>...
+    )
+googlecloudsdk.command_lib.storage.errors.InvalidUrlError: "gcloud storage buckets add-iam-policy-binding" only accepts Google Cloud Storage URLs.
+Example: "gs://bucket"
+Received: "file://cloud-ai-platform-f511c133-160b-4432-b173-aa89cc7e9fbc"
+2025-08-14 14:26:14,487 ERROR    root            (gcloud.storage.buckets.add-iam-policy-binding) "gcloud storage buckets add-iam-policy-binding" only accepts Google Cloud Storage URLs.
+Example: "gs://bucket"
+Received: "file://cloud-ai-platform-f511c133-160b-4432-b173-aa89cc7e9fbc"

@@ -1,0 +1,20 @@
+#!/usr/bin/sh
+
+
+
+function run(){
+	playerctl -p spotify $1
+}
+
+
+if [[ "$1" == "p" ]]; then
+	run play-pause
+elif [[ "$1" == "n" ]];then
+	run next
+elif [[ "$1" == "u" ]];then
+	run volume 0.1+
+elif [[ "$1" == "d" ]];then
+	run volume 0.1-
+elif [[ "$1" == "gt" ]];then
+	run metadata title
+fi

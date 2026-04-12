@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 
-# Toggle AGS dashboard when AGS is running; otherwise fall back to Caelestia sidebar.
+# Toggle AGS dashboard when the AGS control service is available; otherwise fall back to Caelestia sidebar.
 
-if pgrep -x "ags" >/dev/null 2>&1; then
-  ags toggle dashboard
+if gdbus call --session \
+  --dest org.scelester.AGS \
+  --object-path /org/scelester/AGS \
+  --method org.scelester.AGS.ToggleDashboard >/dev/null 2>&1; then
+  exit 0
 elif command -v caelestia >/dev/null 2>&1; then
   caelestia shell drawers toggle sidebar
 else

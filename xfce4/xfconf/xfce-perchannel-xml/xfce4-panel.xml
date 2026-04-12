@@ -79,6 +79,7 @@
         <value type="string" value="rquickshare"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="chrome_status_icon_1"/>
         <value type="string" value="remmina-icon"/>
         <value type="string" value="nm-applet"/>
         <value type="string" value="steam"/>
@@ -129,7 +130,7 @@
     </property>
     <property name="notes" type="empty">
       <property name="global" type="empty">
-        <property name="version" type="string" value="1.11.2"/>
+        <property name="version" type="string" value="1.12.0"/>
       </property>
     </property>
   </property>

@@ -40,9 +40,6 @@
   </property>
   <property name="Notify" type="int" value="1"/>
   <property name="AutoEnableProfiles" type="int" value="3"/>
-  <property name="Schemes" type="empty">
-    <property name="Apply" type="string" value="Temp"/>
-  </property>
   <property name="Default" type="empty">
     <property name="eDP-1" type="string" value="Laptop">
       <property name="EDID" type="string" value="4c5cf4f6da427ce8556353ba76256387b7a5ec84"/>

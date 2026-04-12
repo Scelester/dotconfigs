@@ -19,6 +19,10 @@ configs:
       width: 1920
       height: 1080
   icons:
+    "/home/scelester/Container/docker-data/overlay2/db508ae194c3920d19d21bd73d0b994686c7570de19ab078353373e8eac5e555/merged":
+      row: 5
+      col: 0
+      last_seen: 1775974912173613
     "/home/scelester/Desktop/document1.jpg":
       row: 1
       col: 1
@@ -95,10 +99,10 @@ configs:
       row: 2
       col: 0
     "/home/scelester":
-      row: 3
+      row: 0
       col: 0
     "trash:///":
-      row: 0
+      row: 1
       col: 0
     "/home/scelester/Desktop/steam.desktop":
       row: 5
@@ -112,6 +116,14 @@ configs:
     "/home/scelester/Desktop/Screenshot_1739550264.png":
       row: 1
       col: 2
+    "2c9ca703-4a5d-4d80-97aa-02279adea0eb":
+      row: 4
+      col: 0
+      last_seen: 1775974912165170
     "/home/scelester/Desktop/PFT.zip":
       row: 5
       col: 2
+    "3236ae5f-d367-47e3-96f6-465b21b8aba8":
+      row: 3
+      col: 0
+      last_seen: 1775974912154625

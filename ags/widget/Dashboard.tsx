@@ -6,6 +6,7 @@ import Gio from "gi://Gio"
 import GLib from "gi://GLib"
 import Pango from "gi://Pango"
 import { hideDashboard, registerDashboard } from "./dashboardState"
+import { resolveWindowIcon } from "./iconResolver"
 
 // Profile info shown in the top-left card
 type Profile = {
@@ -80,6 +81,8 @@ type PowerProfileState = {
   error?: string
 }
 
+type DashboardSectionId = "overview" | "controls" | "notifications" | "windows" | "calendar"
+
 // Paths to local data
 const PROFILE_PATH = GLib.build_filenamev([
   GLib.get_home_dir(),
@@ -129,16 +132,40 @@ const fallbackWindows: WindowInfo[] = [
 // Layout sizing and storage filters
 const MODAL_WIDTH = 1380
 const MODAL_HEIGHT = 820
+const SECTION_STAGE_HEIGHT = MODAL_HEIGHT - 214
+const DASHBOARD_HERO_HEIGHT = 96
+const DASHBOARD_TABS_HEIGHT = 48
+const SECTION_ROW_GAP = 14
+const OVERVIEW_TOP_ROW_HEIGHT = 278
+const OVERVIEW_BOTTOM_ROW_HEIGHT = SECTION_STAGE_HEIGHT - SECTION_ROW_GAP - OVERVIEW_TOP_ROW_HEIGHT
+const CONTROLS_TOP_ROW_HEIGHT = 418
+const CONTROLS_BOTTOM_ROW_HEIGHT = SECTION_STAGE_HEIGHT - SECTION_ROW_GAP - CONTROLS_TOP_ROW_HEIGHT
+const PROFILE_CARD_HEIGHT = OVERVIEW_TOP_ROW_HEIGHT
+const SUMMARY_CARD_HEIGHT = 88
+const SUMMARY_STRIP_HEIGHT = OVERVIEW_TOP_ROW_HEIGHT - SUMMARY_CARD_HEIGHT - SECTION_ROW_GAP
+const METRICS_CARD_HEIGHT = OVERVIEW_BOTTOM_ROW_HEIGHT
+const ACTIONS_CARD_HEIGHT = OVERVIEW_BOTTOM_ROW_HEIGHT
+const CONTROLS_CARD_HEIGHT = CONTROLS_TOP_ROW_HEIGHT
+const POWER_CARD_HEIGHT = CONTROLS_TOP_ROW_HEIGHT
+const STORAGE_CARD_HEIGHT = CONTROLS_BOTTOM_ROW_HEIGHT
 const TODO_LIST_HEIGHT = 220
-const WINDOWS_LIST_HEIGHT = 300
-const STORAGE_LIST_HEIGHT = 160
-const NOTIFICATION_LIST_HEIGHT = 360
+const WINDOWS_LIST_HEIGHT = SECTION_STAGE_HEIGHT - 158
+const STORAGE_LIST_HEIGHT = 146
+const NOTIFICATION_LIST_HEIGHT = SECTION_STAGE_HEIGHT - 158
 const TODO_PREVIEW_MAX = 8
 const GAUGE_SIZE = 70
 const STORAGE_EXCLUDED = ["tmpfs", "devtmpfs", "overlay", "squashfs"]
 const STORAGE_WHITELIST = ["/", "/home", "/home/scelester/Container"]
 const NOTIFICATION_HISTORY_LIMIT = 500
 const POWER_PROFILE_ORDER = ["performance", "balanced", "power-saver"] as const
+const DASHBOARD_DEFAULT_SECTION: DashboardSectionId = "overview"
+const DASHBOARD_SECTIONS: { id: DashboardSectionId; label: string; icon: string }[] = [
+  { id: "overview", label: "Overview", icon: "󰍹" },
+  { id: "controls", label: "Controls", icon: "󰒓" },
+  { id: "notifications", label: "Notifications", icon: "󰂚" },
+  { id: "windows", label: "Windows", icon: "󱂬" },
+  { id: "calendar", label: "Calendar", icon: "󰃭" }
+]
 
 // Convert absolute mounts into nicer labels
 const prettyMount = (mount: string) => {
@@ -158,6 +185,16 @@ const decodeBuffer = (bytes: Uint8Array) => {
   const decoder = new TextDecoder()
   return decoder.decode(bytes)
 }
+
+const safePoll = <T,>(init: T, interval: number, fn: (prev: T) => T | Promise<T>) =>
+  createPoll(init, interval, async (prev) => {
+    try {
+      return await fn(prev)
+    } catch (err) {
+      console.error("Dashboard poll failed:", err)
+      return prev
+    }
+  })
 
 // Notification capture (dbus-monitor)
 const notificationHistory: NotificationEntry[] = []
@@ -312,6 +349,14 @@ const titleCaseProfile = (name: string) => {
     .join(" ")
 }
 
+const dashboardStamp = safePoll("", 1000, async () => {
+  try {
+    return (await execAsync("date +'%A · %d %b · %H:%M'")).trim()
+  } catch {
+    return "Now"
+  }
+})
+
 // Read profile JSON or fall back
 const loadProfile = (): Profile => {
   try {
@@ -348,60 +393,6 @@ const fetchWindows = async (): Promise<WindowInfo[]> => {
     console.error("Dashboard windows fetch failed:", err)
     return fallbackWindows
   }
-}
-
-let cachedIconTheme: Gtk.IconTheme | null | undefined
-const getIconTheme = () => {
-  if (cachedIconTheme !== undefined) return cachedIconTheme
-  try {
-    const disp = Gdk.Display.get_default && Gdk.Display.get_default()
-    cachedIconTheme = disp ? Gtk.IconTheme.get_for_display(disp) : null
-  } catch {
-    cachedIconTheme = null
-  }
-  return cachedIconTheme
-}
-
-const pickIcon = (candidates: string[], fallback = "application-x-executable-symbolic") => {
-  const theme = getIconTheme()
-  if (theme) {
-    for (const name of candidates) {
-      if (name && theme.has_icon(name)) return name
-    }
-  }
-
-  return candidates.find(Boolean) || fallback
-}
-
-const resolveWindowIcon = (app: string) => {
-  const lower = (app || "").toLowerCase()
-
-  if (/firefox|librewolf/.test(lower))
-    return pickIcon(["firefox-symbolic", "firefox", "applications-internet-symbolic"])
-  if (/brave/.test(lower))
-    return pickIcon(["brave-browser-symbolic", "brave-browser", "applications-internet-symbolic"])
-  if (/chrome|chromium/.test(lower))
-    return pickIcon([
-      "google-chrome-symbolic",
-      "chromium-symbolic",
-      "google-chrome",
-      "chromium",
-      "applications-internet-symbolic"
-    ])
-  if (/code|vscode|vscodium|codium|cursor/.test(lower))
-    return pickIcon([
-      "visual-studio-code-symbolic",
-      "visual-studio-code",
-      "code",
-      "vscodium",
-      "applications-development-symbolic"
-    ])
-  if (/nvim|neovim|vim/.test(lower))
-    return pickIcon(["nvim-symbolic", "nvim", "neovim", "vim", "applications-development-symbolic"])
-  if (/wezterm|kitty|alacritty|foot|ghostty|terminal|tmux/.test(lower))
-    return pickIcon(["utilities-terminal-symbolic"])
-
-  return pickIcon([`${lower}-symbolic`, lower, "application-x-executable-symbolic"])
 }
 
 // Utility to redraw a GTK box with rendered children
@@ -473,6 +464,7 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
   const avatarInitial = new Gtk.Label({ label: "S", css_classes: ["profile-avatar-initial"] })
   const avatarWrapper = new Gtk.Box({ css_classes: ["profile-avatar"], halign: Gtk.Align.START })
   avatarWrapper.set_valign(Gtk.Align.CENTER)
+  avatarWrapper.set_size_request(92, 92)
   const hasFace = GLib.file_test(FACE_PATH, GLib.FileTest.EXISTS)
 
   if (hasFace) {
@@ -553,7 +545,7 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
         color: rgba(255,255,255,0.98);
         border-radius: 6px;
       }
-    `)
+    `, -1)
     const disp = Gdk.Display.get_default && Gdk.Display.get_default()
     if (disp) Gtk.StyleContext.add_provider_for_display(disp, calCss, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION)
   } catch (e) {
@@ -695,7 +687,7 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
     max_width_chars: 30
   })
 
-  const volumeStatus = createPoll(
+  const volumeStatus = safePoll(
     { volume: 100, isMuted: false },
     1200,
     async () => {
@@ -710,7 +702,7 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
     }
   )
 
-  const micStatus = createPoll(
+  const micStatus = safePoll(
     { volume: 100, isMuted: false },
     1500,
     async () => {
@@ -725,7 +717,7 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
     }
   )
 
-  const brightnessStatus = createPoll(
+  const brightnessStatus = safePoll(
     100,
     1500,
     async () => {
@@ -827,7 +819,7 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
     return `${pct}%`
   })
 
-  const powerProfileStatus = createPoll<PowerProfileState>(
+  const powerProfileStatus = safePoll<PowerProfileState>(
     { active: "unknown", available: [], details: {}, error: "" },
     5000,
     async () => {
@@ -1232,13 +1224,17 @@ const applyProfile = (profile: Profile) => {
   }
 
   const refreshPlayback = async () => {
-    const items = await readPlaybackStreams()
-    const key = items.length
-      ? items.map((i) => `${i.id}:${i.volume}:${i.muted}:${i.name}`).join("|")
-      : "empty"
-    if (key === lastPlaybackKey) return
-    lastPlaybackKey = key
-    renderPlaybackList(items)
+    try {
+      const items = await readPlaybackStreams()
+      const key = items.length
+        ? items.map((i) => `${i.id}:${i.volume}:${i.muted}:${i.name}`).join("|")
+        : "empty"
+      if (key === lastPlaybackKey) return
+      lastPlaybackKey = key
+      renderPlaybackList(items)
+    } catch (err) {
+      console.error("Playback refresh failed:", err)
+    }
   }
 
   const renderEmailList = (items: EmailItem[]) => {
@@ -1300,22 +1296,47 @@ const applyProfile = (profile: Profile) => {
     items.forEach((item) => {
       const row = new Gtk.Box({
         orientation: Gtk.Orientation.VERTICAL,
-        spacing: 4,
+        spacing: 10,
         css_classes: ["dashboard-list-row", "notification-row"]
       })
 
-      const header = new Gtk.Box({ spacing: 8, hexpand: true })
+      const iconWrap = new Gtk.Box({ css_classes: ["notification-app-icon-wrap"] })
+      iconWrap.append(
+        new Gtk.Image({
+          icon_name: resolveWindowIcon(item.app, item.summary),
+          pixel_size: 16,
+          css_classes: ["notification-app-icon"]
+        })
+      )
+
+      const meta = new Gtk.Box({
+        orientation: Gtk.Orientation.VERTICAL,
+        spacing: 2,
+        hexpand: true
+      })
       const appLabel = new Gtk.Label({
         label: item.app,
         css_classes: ["muted", "notification-app"],
         xalign: 0,
         hexpand: true,
         ellipsize: Pango.EllipsizeMode.END,
-        max_width_chars: 18
+        max_width_chars: 22
       })
+      const summary = new Gtk.Label({
+        label: item.summary || "(no title)",
+        css_classes: ["notification-title"],
+        xalign: 0,
+        ellipsize: Pango.EllipsizeMode.END,
+        max_width_chars: 42,
+        hexpand: true
+      })
+      meta.append(appLabel)
+      meta.append(summary)
+
+      const header = new Gtk.Box({ spacing: 10, hexpand: true, valign: Gtk.Align.START })
       const timeLabel = new Gtk.Label({
         label: formatTimeShort(item.timestamp),
-        css_classes: ["notification-time", "muted"],
+        css_classes: ["notification-time"],
         xalign: 1,
         halign: Gtk.Align.END,
         width_chars: 6
@@ -1327,21 +1348,13 @@ const applyProfile = (profile: Profile) => {
         valign: Gtk.Align.START,
         tooltip_text: "Dismiss"
       })
-      dismissBtn.set_child(new Gtk.Image({ icon_name: "window-close-symbolic", pixel_size: 12 }))
+      dismissBtn.set_child(new Gtk.Image({ icon_name: "window-close-symbolic", pixel_size: 15 }))
       dismissBtn.connect("clicked", () => removeNotification(item.id))
 
-      header.append(appLabel)
+      header.append(iconWrap)
+      header.append(meta)
       header.append(timeLabel)
       header.append(dismissBtn)
-
-      const summary = new Gtk.Label({
-        label: item.summary || "(no title)",
-        css_classes: ["notification-title"],
-        xalign: 0,
-        ellipsize: Pango.EllipsizeMode.END,
-        max_width_chars: 48,
-        hexpand: true
-      })
 
       const body = new Gtk.Label({
         label: item.body,
@@ -1349,7 +1362,7 @@ const applyProfile = (profile: Profile) => {
         xalign: 0,
         wrap: true,
         wrap_mode: Pango.WrapMode.WORD_CHAR,
-        max_width_chars: 64,
+        max_width_chars: 52,
         visible: !!item.body
       })
 
@@ -1362,21 +1375,8 @@ const applyProfile = (profile: Profile) => {
       )
 
       row.append(header)
-      row.append(summary)
       row.append(body)
-
-      const reveal = new Gtk.Revealer({
-        transition_type: Gtk.RevealerTransitionType.SLIDE_LEFT,
-        transition_duration: 180,
-        reveal_child: false
-      })
-      reveal.set_child(row)
-      GLib.idle_add(GLib.PRIORITY_DEFAULT_IDLE, () => {
-        reveal.reveal_child = true
-        return GLib.SOURCE_REMOVE
-      })
-
-      notificationBox.append(reveal)
+      notificationBox.append(row)
     })
   }
 
@@ -1751,69 +1751,69 @@ const applyProfile = (profile: Profile) => {
 
   // Update gauges + disks list
   const refreshGauges = async () => {
-    const cpu = await readCpuUsage()
-    cpuGauge.update(cpu, "")
+    try {
+      const cpu = await readCpuUsage()
+      cpuGauge.update(cpu, "")
 
-    const ram = await readRamUsage()
-    ramGauge.update(ram.pct, "")
+      const ram = await readRamUsage()
+      ramGauge.update(ram.pct, "")
 
-    const gpu = await readGpu()
-    gpuGauge.update(gpu.pct, gpu.detail || "n/a")
+      const gpu = await readGpu()
+      gpuGauge.update(gpu.pct, gpu.detail || "n/a")
 
-    storageTick += 1
-    if (storageTick % 10 === 0 || !lastStorage.volumes.length) {
-      lastStorage = await readStorageAll()
-      renderStorageList(lastStorage.volumes)
-      storageStatus.label = lastStorage.volumes.length
-        ? `Total ${lastStorage.totalPct}% across ${lastStorage.volumes.length} vols`
-        : "No disks detected"
+      storageTick += 1
+      if (storageTick % 10 === 0 || !lastStorage.volumes.length) {
+        lastStorage = await readStorageAll()
+        renderStorageList(lastStorage.volumes)
+        storageStatus.label = lastStorage.volumes.length
+          ? `Total ${lastStorage.totalPct}% across ${lastStorage.volumes.length} vols`
+          : "No disks detected"
+      }
+
+      storageGauge.update(
+        lastStorage.totalPct,
+        lastStorage.volumes.length ? `${lastStorage.volumes.length} vols` : "n/a"
+      )
+    } catch (err) {
+      console.error("Gauge refresh failed:", err)
     }
-
-    storageGauge.update(
-      lastStorage.totalPct,
-      lastStorage.volumes.length ? `${lastStorage.volumes.length} vols` : "n/a"
-    )
   }
 
   // Update network card
   const refreshNetwork = async () => {
-    const net = await readNetwork()
-    netLabel.label = "Network"
-    netSSID.label = net.ssid ? `WiFi: ${net.ssid}` : "WiFi: —"
-    netDetail.label = `Down ${formatSpeed(net.down)} · Up ${formatSpeed(net.up)}`
     try {
+      const net = await readNetwork()
+      netLabel.label = "Network"
+      netSSID.label = net.ssid ? `WiFi: ${net.ssid}` : "WiFi: —"
+      netDetail.label = `Down ${formatSpeed(net.down)} · Up ${formatSpeed(net.up)}`
       netGraph.queue_draw()
-    } catch (e) {}
+    } catch (err) {
+      console.error("Network refresh failed:", err)
+    }
   }
 
   // Update uptime/updates/media cards
   const refreshMeta = async () => {
-    uptimeDetail.label = await readUptime()
-    updatesDetail.label = await readUpdates()
-    mediaDetail.label = await readMedia()
+    try {
+      uptimeDetail.label = await readUptime()
+      updatesDetail.label = await readUpdates()
+      mediaDetail.label = await readMedia()
+    } catch (err) {
+      console.error("Meta refresh failed:", err)
+    }
   }
 
   const refreshNotifications = () => {
     renderNotificationList(getNotificationHistory())
   }
 
-  // Full dashboard refresh flow
-  const refreshDashboard = async () => {
-    applyProfile(loadProfile())
-    loadTodo()
-    refreshGauges()
-    refreshNetwork()
-    refreshMeta()
-    refreshPlayback()
-    refreshNotifications()
-
-    const windows = await fetchWindows()
+  const renderWindows = (windows: WindowInfo[]) => {
     renderList(
       windowsBox,
       windows,
       (item) => {
         const row = new Gtk.Box({ orientation: Gtk.Orientation.HORIZONTAL, spacing: 8, css_classes: ["dashboard-list-row", "windows-row"], hexpand: true })
-        const appIconName = resolveWindowIcon(item.app)
+        const appIconName = resolveWindowIcon(item.app, item.title)
         const appBox = new Gtk.Box({
           orientation: Gtk.Orientation.HORIZONTAL,
           spacing: 6,
@@ -1874,20 +1874,75 @@ const applyProfile = (profile: Profile) => {
     )
   }
 
-  const stopNotificationsListener = onNotificationUpdate(() => {
-    GLib.idle_add(GLib.PRIORITY_DEFAULT_IDLE, () => {
-      refreshNotifications()
-      return GLib.SOURCE_REMOVE
-    })
-  })
+  let dashboardRefreshActive = false
+  let dashboardRefreshQueued = false
+
+  // Full dashboard refresh flow
+  const refreshDashboard = async () => {
+    if (dashboardRefreshActive) {
+      dashboardRefreshQueued = true
+      return
+    }
+
+    dashboardRefreshActive = true
+
+    applyProfile(loadProfile())
+    refreshNotifications()
+
+    try {
+      const [windows] = await Promise.all([
+        fetchWindows(),
+        refreshGauges(),
+        refreshNetwork(),
+        refreshMeta(),
+        refreshPlayback()
+      ])
+
+      renderWindows(windows)
+    } catch (err) {
+      console.error("Dashboard refresh failed:", err)
+    } finally {
+      dashboardRefreshActive = false
+
+      if (dashboardRefreshQueued) {
+        dashboardRefreshQueued = false
+        void refreshDashboard().catch((err) => console.error("Queued dashboard refresh failed:", err))
+      }
+    }
+  }
+
+  let stopNotificationsListener = () => {}
+  let currentSection: DashboardSectionId = DASHBOARD_DEFAULT_SECTION
+  let sectionStack: Gtk.Stack | null = null
+  const sectionButtons = new Map<DashboardSectionId, Gtk.Button>()
+
+  const setSectionButtonState = (id: DashboardSectionId, button: Gtk.Button) => {
+    button.set_css_classes([
+      "dashboard-tab",
+      currentSection === id ? "active" : "inactive"
+    ])
+  }
+
+  const syncSectionButtons = () => {
+    sectionButtons.forEach((button, id) => setSectionButtonState(id, button))
+  }
+
+  const activateSection = (id: DashboardSectionId) => {
+    currentSection = id
+    sectionStack?.set_visible_child_name(id)
+    syncSectionButtons()
+  }
 
   // Profile summary card
   const profileCard = (
     <box
-      class="dashboard-card profile-card"
+      class="dashboard-card profile-card profile-hero"
       orientation={Gtk.Orientation.VERTICAL}
+      spacing={10}
       valign={Gtk.Align.START}
+      height_request={PROFILE_CARD_HEIGHT}
     >
+      <label label="Profile" class="card-title" xalign={0} />
       <box class="profile-top" spacing={8}>
         {avatarWrapper}
         <box orientation={Gtk.Orientation.VERTICAL} spacing={1}  valign={Gtk.Align.START}>
@@ -1903,7 +1958,7 @@ const applyProfile = (profile: Profile) => {
 
   // Disks overview card
   const storageCard = (
-    <box class="dashboard-card" orientation={Gtk.Orientation.VERTICAL} spacing={6}>
+    <box class="dashboard-card storage-card" orientation={Gtk.Orientation.VERTICAL} spacing={6} height_request={STORAGE_CARD_HEIGHT}>
       <box spacing={8} valign={Gtk.Align.CENTER}>
         <label label="Disks" class="card-title" xalign={0} hexpand />
       </box>
@@ -1920,7 +1975,7 @@ const applyProfile = (profile: Profile) => {
 
   // Network summary card
   const networkCard = (
-    <box class="dashboard-card" orientation={Gtk.Orientation.VERTICAL} spacing={4}>
+    <box class="dashboard-card network-card" orientation={Gtk.Orientation.VERTICAL} spacing={6} height_request={SUMMARY_STRIP_HEIGHT}>
       {netLabel}
       {netSSID}
       <box orientation={Gtk.Orientation.VERTICAL} spacing={6}>
@@ -1932,7 +1987,7 @@ const applyProfile = (profile: Profile) => {
 
   // Uptime/updates card
   const uptimeCard = (
-    <box class="dashboard-card" orientation={Gtk.Orientation.VERTICAL} spacing={4}>
+    <box class="dashboard-card status-card" orientation={Gtk.Orientation.VERTICAL} spacing={6} height_request={SUMMARY_STRIP_HEIGHT}>
       {uptimeLabel}
       {uptimeDetail}
       {updatesDetail}
@@ -1941,7 +1996,7 @@ const applyProfile = (profile: Profile) => {
 
   // Media now-playing card
   const mediaCard = (
-    <box class="dashboard-card" orientation={Gtk.Orientation.VERTICAL} spacing={6} height_request={72}>
+    <box class="dashboard-card media-card" orientation={Gtk.Orientation.VERTICAL} spacing={6} height_request={SUMMARY_CARD_HEIGHT}>
       {mediaLabel}
       {mediaDetail}
     </box>
@@ -1949,7 +2004,16 @@ const applyProfile = (profile: Profile) => {
 
   // Calendar widget card
   const calendarCard = (
-    <box class="dashboard-card" orientation={Gtk.Orientation.VERTICAL} spacing={6} height_request={190} valign={Gtk.Align.START}>
+    <box
+      class="dashboard-card calendar-card"
+      orientation={Gtk.Orientation.VERTICAL}
+      spacing={8}
+      height_request={SECTION_STAGE_HEIGHT - 148}
+      hexpand={true}
+      vexpand={true}
+      valign={Gtk.Align.START}
+    >
+      <label label="Calendar" class="card-title" xalign={0} />
       {calendar}
     </box>
   )
@@ -1961,7 +2025,7 @@ const applyProfile = (profile: Profile) => {
   }
 
   const powerCard = (
-    <box class="dashboard-card power-card" orientation={Gtk.Orientation.VERTICAL} spacing={8}>
+    <box class="dashboard-card power-card" orientation={Gtk.Orientation.VERTICAL} spacing={8} height_request={POWER_CARD_HEIGHT}>
       <label label="Power Profiles" class="card-title" xalign={0} />
       <box orientation={Gtk.Orientation.VERTICAL} spacing={6}>
         {POWER_PROFILE_ORDER.map((profile) => (
@@ -2007,7 +2071,7 @@ const applyProfile = (profile: Profile) => {
   )
 
   const notificationCard = (
-    <box class="dashboard-card notification-card" orientation={Gtk.Orientation.VERTICAL} spacing={8}>
+    <box class="dashboard-card notification-card" orientation={Gtk.Orientation.VERTICAL} spacing={8} hexpand={true} vexpand={true} height_request={SECTION_STAGE_HEIGHT}>
       <box class="notification-card-header" spacing={8} valign={Gtk.Align.CENTER}>
         <label label="Notifications" class="card-title" xalign={0} hexpand={true} />
         {notificationClear}
@@ -2050,7 +2114,7 @@ const applyProfile = (profile: Profile) => {
   )
 
   const controlPanel = (
-    <box class="control-panel" orientation={Gtk.Orientation.VERTICAL} spacing={10} vexpand={true}>
+    <box class="control-panel cockpit-controls" orientation={Gtk.Orientation.VERTICAL} spacing={10} vexpand={true}>
       {audioMixerSection}
       {brightnessSection}
     </box>
@@ -2085,7 +2149,7 @@ const applyProfile = (profile: Profile) => {
 
   // Running windows list
   const activityCard = (
-    <box class="dashboard-card" orientation={Gtk.Orientation.VERTICAL} spacing={6}>
+    <box class="dashboard-card activity-card" orientation={Gtk.Orientation.VERTICAL} spacing={6} hexpand={true} vexpand={true} height_request={SECTION_STAGE_HEIGHT}>
       <label label="Running Windows" class="card-title" xalign={0} />
       <scrolledwindow 
         vexpand={false}
@@ -2100,81 +2164,302 @@ const applyProfile = (profile: Profile) => {
 
   // Close button removed - use ESC or click away to close dashboard
 
-  // Column stack: profile + utilities
-  const leftColumn = (
-    <box class="dashboard-column left" orientation={Gtk.Orientation.VERTICAL} spacing={8} width_request={400} hexpand={true} vexpand={true}>
-      {profileCard}
-      {mediaCard}
-      {/* {todoCard} */}
-      {uptimeCard}
-      {networkCard}
-    </box>
-  ) as Gtk.Widget
-
-  // Column stack: gauges
-  const middleColumn = (
-    <box class="dashboard-column middle" orientation={Gtk.Orientation.VERTICAL} spacing={10} width_request={190} hexpand={true} vexpand={true}>
-      <box class="gauge-stack" orientation={Gtk.Orientation.VERTICAL} spacing={10} valign={Gtk.Align.START} halign={Gtk.Align.CENTER} margin_top={-4}>
-        {cpuGauge.widget}
-        {ramGauge.widget}
-        {gpuGauge.widget}
-        {storageGauge.widget}
-      </box>
-    </box>
-  ) as Gtk.Widget
-
-  // Column stack: calendar + disks + windows
-  const rightColumn = (
-    <box class="dashboard-column right" orientation={Gtk.Orientation.VERTICAL} spacing={8} width_request={400} hexpand={true} vexpand={true}>
-      {calendarCard}
-      {storageCard}
-      {activityCard}
-    </box>
-  ) as Gtk.Widget
-
-  // Column stack: power + notifications
-  const extraColumn = (
-    <box class="dashboard-column extra" orientation={Gtk.Orientation.VERTICAL} spacing={8} width_request={360} hexpand={true} vexpand={true}>
-      {powerCard}
-      {notificationCard}
-    </box>
-  ) as Gtk.Widget
-
-  const controlColumn = (
-    <box class="dashboard-column control" orientation={Gtk.Orientation.VERTICAL} spacing={8} width_request={300} hexpand={true} vexpand={true}>
-      {controlPanel}
-    </box>
-  ) as Gtk.Widget
-
-  // Main surface containing columns
-  const layout = (
-    <box
-      class="dashboard-surface"
-      orientation={Gtk.Orientation.VERTICAL}
-      spacing={12}
-      hexpand={true}
-      vexpand={true}
-      halign={Gtk.Align.FILL}
-      valign={Gtk.Align.FILL}
-    >
-      <box
-        class="dashboard-columns"
-        spacing={14}
-        hexpand={true}
-        vexpand={true}
-        halign={Gtk.Align.FILL}
-        valign={Gtk.Align.FILL}
-      >
-        {leftColumn}
-        {middleColumn}
-        {rightColumn}
-        {extraColumn}
-        {controlColumn}
+  const metricsCard = (
+    <box class="dashboard-card metrics-card" orientation={Gtk.Orientation.VERTICAL} spacing={10} height_request={METRICS_CARD_HEIGHT}>
+      <label label="System Load" class="card-title" xalign={0} />
+      <box class="gauge-grid" orientation={Gtk.Orientation.VERTICAL} spacing={10} valign={Gtk.Align.START}>
+        <box class="gauge-row" orientation={Gtk.Orientation.HORIZONTAL} spacing={10}>
+          {cpuGauge.widget}
+          {ramGauge.widget}
+        </box>
+        <box class="gauge-row" orientation={Gtk.Orientation.HORIZONTAL} spacing={10}>
+          {gpuGauge.widget}
+          {storageGauge.widget}
+        </box>
       </box>
     </box>
   )
 
-  // Top-left overlay on the monitor
+  const controlsCard = (
+    <box class="dashboard-card controls-card" orientation={Gtk.Orientation.VERTICAL} spacing={10} hexpand={true} vexpand={true} height_request={CONTROLS_CARD_HEIGHT}>
+      <label label="Mixer & Display" class="card-title" xalign={0} />
+      {controlPanel}
+    </box>
+  )
+
+  const overviewActionsCard = (
+    <box class="dashboard-card overview-actions-card" orientation={Gtk.Orientation.VERTICAL} spacing={12} height_request={ACTIONS_CARD_HEIGHT}>
+      <label label="Jump To" class="card-title" xalign={0} />
+      <label
+        label="Swap sections from here or the top tab row. Every view is focused now, so you should not have to scroll the whole dashboard to find one thing."
+        class="dashboard-subcopy"
+        xalign={0}
+        wrap={true}
+        wrap_mode={Pango.WrapMode.WORD_CHAR}
+        max_width_chars={42}
+      />
+      <box class="overview-shortcuts" orientation={Gtk.Orientation.VERTICAL} spacing={8}>
+        {[["controls", "notifications"], ["windows", "calendar"]].map((row) => (
+          <box class="overview-shortcut-row" orientation={Gtk.Orientation.HORIZONTAL} spacing={8} hexpand={true}>
+            {row.map((id) => {
+              const section = DASHBOARD_SECTIONS.find((entry) => entry.id === id)!
+              return (
+                <button class="section-shortcut" hexpand={true} onClicked={() => activateSection(section.id)}>
+                  <box spacing={8} hexpand={true}>
+                    <label label={section.icon} class="section-shortcut-icon" />
+                    <label label={section.label} class="section-shortcut-label" xalign={0} />
+                  </box>
+                </button>
+              )
+            })}
+          </box>
+        ))}
+      </box>
+      <label
+        label={powerProfileStatus((state) =>
+          state.active === "unknown" ? "Power profile is syncing." : `Current profile: ${titleCaseProfile(state.active)}`
+        )}
+        class="overview-actions-hint"
+        xalign={0}
+      />
+    </box>
+  )
+
+  const calendarSpotlightCard = (
+    <box class="dashboard-card calendar-spotlight-card" orientation={Gtk.Orientation.VERTICAL} spacing={12} height_request={SECTION_STAGE_HEIGHT - 148}>
+      <label label="Today" class="card-title" xalign={0} />
+      <label label={dashboardStamp((value) => value || "Now")} class="calendar-spotlight-time" xalign={0} wrap={true} />
+      <label
+        label={powerProfileStatus((state) =>
+          state.active === "unknown" ? "Power profile syncing" : `System is running in ${titleCaseProfile(state.active)} mode`
+        )}
+        class="calendar-spotlight-note"
+        xalign={0}
+        wrap={true}
+        wrap_mode={Pango.WrapMode.WORD_CHAR}
+      />
+      <label
+        label="The calendar gets its own view now instead of being crammed into a side rail. Use the top tabs to jump straight to the next thing."
+        class="dashboard-subcopy"
+        xalign={0}
+        wrap={true}
+        wrap_mode={Pango.WrapMode.WORD_CHAR}
+        max_width_chars={34}
+      />
+    </box>
+  )
+
+  const dashboardHero = (
+    <box class="dashboard-hero" spacing={16} hexpand={true} height_request={DASHBOARD_HERO_HEIGHT}>
+      <box orientation={Gtk.Orientation.VERTICAL} spacing={4} hexpand={true}>
+        <label label="Dashboard Deck" class="dashboard-heading" xalign={0} />
+        <label
+          label="One focused section at a time. Start on Overview, then jump to Controls, Notifications, Windows, or Calendar from the top row without scrolling the whole dashboard."
+          class="dashboard-subheading"
+          xalign={0}
+          wrap={true}
+          wrap_mode={Pango.WrapMode.WORD_CHAR}
+          max_width_chars={66}
+        />
+      </box>
+      <box
+        class="dashboard-badges"
+        orientation={Gtk.Orientation.VERTICAL}
+        spacing={8}
+        halign={Gtk.Align.END}
+        width_request={248}
+      >
+        <label
+          label={dashboardStamp((value) => value || "Now")}
+          class="dashboard-badge accent"
+          xalign={1}
+          ellipsize={Pango.EllipsizeMode.END}
+          max_width_chars={26}
+          width_chars={26}
+        />
+        <label
+          label={powerProfileStatus((state) =>
+            state.active === "unknown" ? "Power · Syncing" : `Power · ${titleCaseProfile(state.active)}`
+          )}
+          class="dashboard-badge"
+          xalign={1}
+          ellipsize={Pango.EllipsizeMode.END}
+          max_width_chars={26}
+          width_chars={26}
+        />
+      </box>
+    </box>
+  )
+
+  const overviewSummary = (
+    <box class="dashboard-section-column overview-summary" orientation={Gtk.Orientation.VERTICAL} spacing={14} hexpand={true}>
+      {mediaCard}
+      <box class="dashboard-section-row summary-strip" orientation={Gtk.Orientation.HORIZONTAL} spacing={14} hexpand={true}>
+        <box class="dashboard-section-cell" hexpand={true}>{uptimeCard}</box>
+        <box class="dashboard-section-cell" hexpand={true}>{networkCard}</box>
+      </box>
+    </box>
+  ) as Gtk.Widget
+
+  const overviewSection = (
+    <box class="dashboard-section overview-section" orientation={Gtk.Orientation.VERTICAL} spacing={14} hexpand={true} vexpand={true}>
+      <box
+        class="dashboard-section-row"
+        orientation={Gtk.Orientation.HORIZONTAL}
+        spacing={14}
+        hexpand={true}
+        height_request={OVERVIEW_TOP_ROW_HEIGHT}
+      >
+        <box class="dashboard-section-cell profile-stage" width_request={372} hexpand={false}>
+          {profileCard}
+        </box>
+        <box class="dashboard-section-cell" hexpand={true}>
+          {overviewSummary}
+        </box>
+      </box>
+      <box
+        class="dashboard-section-row"
+        orientation={Gtk.Orientation.HORIZONTAL}
+        spacing={14}
+        hexpand={true}
+        vexpand={true}
+        height_request={OVERVIEW_BOTTOM_ROW_HEIGHT}
+      >
+        <box class="dashboard-section-cell metrics-stage" width_request={430} hexpand={false}>
+          {metricsCard}
+        </box>
+        <box class="dashboard-section-cell" hexpand={true}>
+          {overviewActionsCard}
+        </box>
+      </box>
+    </box>
+  ) as Gtk.Widget
+
+  const controlsSection = (
+    <box class="dashboard-section controls-section" orientation={Gtk.Orientation.VERTICAL} spacing={14} hexpand={true} vexpand={true}>
+      <box
+        class="dashboard-section-row"
+        orientation={Gtk.Orientation.HORIZONTAL}
+        spacing={14}
+        hexpand={true}
+        height_request={CONTROLS_TOP_ROW_HEIGHT}
+      >
+        <box class="dashboard-section-cell controls-stage" hexpand={true}>
+          {controlsCard}
+        </box>
+        <box class="dashboard-section-cell power-stage" width_request={386} hexpand={false}>
+          {powerCard}
+        </box>
+      </box>
+      <box
+        class="dashboard-section-row"
+        orientation={Gtk.Orientation.HORIZONTAL}
+        spacing={14}
+        hexpand={true}
+        height_request={CONTROLS_BOTTOM_ROW_HEIGHT}
+      >
+        <box class="dashboard-section-cell" hexpand={true}>
+          {storageCard}
+        </box>
+      </box>
+    </box>
+  ) as Gtk.Widget
+
+  const notificationsSection = (
+    <box class="dashboard-section focused-section" orientation={Gtk.Orientation.VERTICAL} spacing={14} hexpand={true} vexpand={true}>
+      {notificationCard}
+    </box>
+  ) as Gtk.Widget
+
+  const windowsSection = (
+    <box class="dashboard-section focused-section" orientation={Gtk.Orientation.VERTICAL} spacing={14} hexpand={true} vexpand={true}>
+      {activityCard}
+    </box>
+  ) as Gtk.Widget
+
+  const calendarSection = (
+    <box class="dashboard-section calendar-section" orientation={Gtk.Orientation.HORIZONTAL} spacing={14} hexpand={true} vexpand={true}>
+      <box class="dashboard-section-cell calendar-stage" hexpand={true}>
+        {calendarCard}
+      </box>
+      <box class="dashboard-section-cell calendar-side-stage" width_request={340} hexpand={false}>
+        {calendarSpotlightCard}
+      </box>
+    </box>
+  ) as Gtk.Widget
+
+  sectionStack = new Gtk.Stack({
+    transition_type: Gtk.StackTransitionType.CROSSFADE,
+    transition_duration: 180
+  })
+  sectionStack.set_hexpand(true)
+  sectionStack.set_vexpand(true)
+  sectionStack.add_named(overviewSection, "overview")
+  sectionStack.add_named(controlsSection, "controls")
+  sectionStack.add_named(notificationsSection, "notifications")
+  sectionStack.add_named(windowsSection, "windows")
+  sectionStack.add_named(calendarSection, "calendar")
+  sectionStack.set_visible_child_name(DASHBOARD_DEFAULT_SECTION)
+
+  const dashboardTabs = (
+    <box
+      class="dashboard-tabs"
+      orientation={Gtk.Orientation.HORIZONTAL}
+      spacing={10}
+      hexpand={true}
+      homogeneous={true}
+      height_request={DASHBOARD_TABS_HEIGHT}
+    >
+      {DASHBOARD_SECTIONS.map((section) => (
+        <button
+          class="dashboard-tab"
+          hexpand={true}
+          onClicked={() => activateSection(section.id)}
+          onRealize={(self) => {
+            sectionButtons.set(section.id, self)
+            setSectionButtonState(section.id, self)
+          }}
+        >
+          <box spacing={8} halign={Gtk.Align.CENTER}>
+            <label label={section.icon} class="dashboard-tab-icon" />
+            <label label={section.label} class="dashboard-tab-label" />
+          </box>
+        </button>
+      ))}
+    </box>
+  ) as Gtk.Widget
+
+  const sectionStage = (
+    <box
+      class="dashboard-stage"
+      orientation={Gtk.Orientation.VERTICAL}
+      hexpand={true}
+      vexpand={true}
+      height_request={SECTION_STAGE_HEIGHT}
+    >
+      {sectionStack}
+    </box>
+  ) as Gtk.Widget
+
+  // Main surface containing columns
+  const surface = (
+    <box
+      class="dashboard-surface"
+      orientation={Gtk.Orientation.VERTICAL}
+      spacing={14}
+      width_request={MODAL_WIDTH - 120}
+      height_request={MODAL_HEIGHT - 72}
+      hexpand={false}
+      vexpand={false}
+      halign={Gtk.Align.END}
+      valign={Gtk.Align.START}
+    >
+      {dashboardHero}
+      {dashboardTabs}
+      {sectionStage}
+    </box>
+  )
+
   const overlay = (
     <box
       class="dashboard-overlay"
@@ -2183,29 +2468,27 @@ const applyProfile = (profile: Profile) => {
       halign={Gtk.Align.FILL}
       valign={Gtk.Align.FILL}
     >
-      {layout}
+      <box
+        class="dashboard-frame"
+        orientation={Gtk.Orientation.HORIZONTAL}
+        hexpand={true}
+        vexpand={true}
+        halign={Gtk.Align.END}
+        valign={Gtk.Align.START}
+      >
+        <box
+          class="dashboard-shell"
+          orientation={Gtk.Orientation.VERTICAL}
+          hexpand={false}
+          vexpand={false}
+          halign={Gtk.Align.END}
+          valign={Gtk.Align.START}
+        >
+          {surface}
+        </box>
+      </box>
     </box>
   ) as Gtk.Widget
-
-  const overlayStack = new Gtk.Stack({
-    transition_type: Gtk.StackTransitionType.CROSSFADE,
-    transition_duration: 150
-  })
-  overlayStack.set_hexpand(true)
-  overlayStack.set_vexpand(true)
-  overlayStack.set_halign(Gtk.Align.FILL)
-  overlayStack.set_valign(Gtk.Align.FILL)
-
-  const overlayBlank = new Gtk.Box({
-    hexpand: true,
-    vexpand: true
-  })
-  overlayStack.add_named(overlayBlank, "blank")
-  overlayStack.add_named(overlay, "overlay")
-  overlayStack.set_visible_child_name("blank")
-  const playOverlayTransition = () => {
-    overlayStack.set_visible_child_name("overlay")
-  }
 
   // The actual dashboard window
   const win = (
@@ -2218,7 +2501,6 @@ const applyProfile = (profile: Profile) => {
       visible={false}
       exclusivity={Astal.Exclusivity.IGNORE}
       keymode={Astal.Keymode.ON_DEMAND}
-      // Handle focus/esc + periodic refreshes
       onRealize={(self) => {
         try {
           self.set_focusable(true)
@@ -2232,7 +2514,7 @@ const applyProfile = (profile: Profile) => {
 
         const keyController = new Gtk.EventControllerKey()
         keyController.set_propagation_phase(Gtk.PropagationPhase.CAPTURE)
-        keyController.connect("key-pressed", (_self, keyval, _keycode, _state) => {
+        keyController.connect("key-pressed", (_controller, keyval) => {
           if (keyval === Gdk.KEY_Escape) {
             hideDashboard()
             return Gdk.EVENT_STOP
@@ -2241,54 +2523,45 @@ const applyProfile = (profile: Profile) => {
         })
         self.add_controller(keyController)
 
-        // Keep gauges warm while window stays open
-        timeout(1000, () => {
-          refreshGauges()
+        timeout(30000, () => {
+          if (self.visible) {
+            void refreshDashboard().catch((err) => console.error("Timed dashboard refresh failed:", err))
+          }
           return true
         })
-
-        // Network poll (faster)
-        timeout(1000, () => {
-          refreshNetwork()
-          return true
-        })
-
-        // Meta poll (uptime/updates/media) - more frequent
-        timeout(2000, () => {
-          refreshMeta()
-          return true
-        })
-
-        // Playback mixer refresh - faster for now-playing responsiveness
-        timeout(1000, () => {
-          refreshPlayback()
-          return true
-        })
-      }}
-      onShow={(self) => {
-        self.grab_focus()
-        playOverlayTransition()
-        // ensure everything is fresh immediately when the dashboard opens
-        refreshDashboard()
       }}
     >
-      {overlayStack}
+      {overlay}
     </window>
   ) as Astal.Window
 
   win.connect("notify::visible", () => {
     if (win.visible) {
-      playOverlayTransition()
-      // refresh on each toggle to make slow polls up-to-date immediately
-      refreshDashboard()
-    } else overlayStack.set_visible_child_name("blank")
+      activateSection(DASHBOARD_DEFAULT_SECTION)
+      try {
+        win.grab_focus()
+      } catch (err) {
+        console.error("Dashboard present failed:", err)
+      }
+
+      void refreshDashboard().catch((err) => console.error("Visible dashboard refresh failed:", err))
+    }
+  })
+
+  stopNotificationsListener = onNotificationUpdate(() => {
+    if (!win.visible) return
+    GLib.idle_add(GLib.PRIORITY_DEFAULT_IDLE, () => {
+      refreshNotifications()
+      return GLib.SOURCE_REMOVE
+    })
   })
 
   win.connect("destroy", () => stopNotificationsListener())
 
   // Expose refresh + show/hide hooks to the rest of the app
-  registerDashboard(win, refreshDashboard)
-  refreshDashboard()
+  registerDashboard(win)
+  applyProfile(loadProfile())
+  refreshNotifications()
 
   return win
 }

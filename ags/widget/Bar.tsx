@@ -4,6 +4,7 @@ import { execAsync } from "ags/process"
 import { createPoll } from "ags/time"
 import TrayWidget from "./Tray"
 import { toggleDashboard } from "./dashboardState"
+import { getFallbackIcon, resolveWindowIcon } from "./iconResolver"
 import Pango from "gi://Pango"
 
 type MusicState = {
@@ -26,59 +27,34 @@ type WorkspaceSummary = {
 export default function Bar(gdkmonitor: Gdk.Monitor) {
   const { TOP, LEFT, RIGHT } = Astal.WindowAnchor
 
-  const iconTheme = Gtk.IconTheme.get_for_display(gdkmonitor.get_display())
-  const fallbackIcon = "applications-system-symbolic"
-  const normalizeIconName = (name: string) =>
-    name
-      .toLowerCase()
-      .replace(/\s+/g, "-")
-      .replace(/[^a-z0-9-]/g, "")
+  const fallbackIcon = getFallbackIcon()
 
-  const hasThemeIcon = (name: string | undefined) => !!(name && iconTheme?.has_icon(name))
+  const safePoll = <T,>(init: T, interval: number, fn: (prev: T) => T | Promise<T>) =>
+    createPoll(init, interval, async (prev) => {
+      try {
+        return await fn(prev)
+      } catch (err) {
+        console.error("Bar poll failed:", err)
+        return prev
+      }
+    })
 
-  const pickIcon = (candidates: string[]) => {
-    for (const candidate of candidates) {
-      if (hasThemeIcon(candidate)) return candidate
+  const time = safePoll("", 1000, async () => {
+    try {
+      return (await execAsync("date +'%H:%M'")).trim()
+    } catch {
+      return "--:--"
     }
-    return fallbackIcon
-  }
+  })
+  const date = safePoll("", 1000, async () => {
+    try {
+      return (await execAsync("date +'%a %d %b'")).trim()
+    } catch {
+      return "Date"
+    }
+  })
 
-  const resolveIconName = (name: string) => {
-    if (!name) return fallbackIcon
-    const lower = name.toLowerCase()
-    const cleaned = normalizeIconName(name)
-
-    if (/firefox|librewolf/.test(lower))
-      return pickIcon(["firefox-symbolic", "applications-internet-symbolic"])
-    if (/brave/.test(lower))
-      return pickIcon(["brave-browser-symbolic", "applications-internet-symbolic"])
-    if (/chrome|chromium/.test(lower))
-      return pickIcon(["google-chrome-symbolic", "chromium-symbolic", "applications-internet-symbolic"])
-    if (/code|vscode|codium|cursor/.test(lower))
-      return pickIcon([
-        "visual-studio-code-symbolic",
-        "visual-studio-code",
-        "code",
-        "code-oss",
-        "vscodium",
-        "applications-development-symbolic"
-      ])
-    if (/nvim|neovim|vim/.test(lower)) return pickIcon(["nvim-symbolic", "nvim", "vim"])
-    if (/wezterm|kitty|alacritty|foot|ghostty|terminal|tmux/.test(lower))
-      return pickIcon(["utilities-terminal-symbolic"])
-
-    return pickIcon([
-      `${cleaned}-symbolic`,
-      `${lower}-symbolic`,
-      "application-x-executable-symbolic",
-      fallbackIcon
-    ])
-  }
-
-  const time = createPoll("", 1000, "date +'%H:%M'")
-  const date = createPoll("", 1000, "date +'%a %d %b'")
-
-  const activeWorkspace = createPoll(
+  const activeWorkspace = safePoll(
     "1",
     300,
     async () => {
@@ -92,7 +68,7 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
     }
   )
 
-  const workspaceIcons = createPoll<WorkspaceSummary[]>(
+  const workspaceIcons = safePoll<WorkspaceSummary[]>(
     [],
     800,
     async () => {
@@ -105,10 +81,11 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
           const ws = c.workspace?.id
           if (typeof ws !== "number" || ws < 1 || ws > 7) return
           const app = c.class || c.app || c.initialClass || "App"
-          const icon = resolveIconName(app)
+          const title = c.title || c.initialTitle || app
+          const icon = resolveWindowIcon(app, title)
           const list = grouped.get(ws) || []
           if (!list.includes(icon)) list.push(icon)
-          grouped.set(ws, list.slice(0, 4))
+          grouped.set(ws, list.slice(0, 3))
         })
 
         return Array.from(grouped.entries())
@@ -120,7 +97,7 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
     }
   )
 
-  const activeWindowStatus = createPoll<ActiveWindow>(
+  const activeWindowStatus = safePoll<ActiveWindow>(
     { title: "Desktop", app: "Desktop", icon: fallbackIcon },
     500,
     async () => {
@@ -129,7 +106,7 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
         const json = JSON.parse(active)
         const app = json.class || json.initialClass || json.app || "Desktop"
         const title = json.title || json.initialTitle || app || "Desktop"
-        return { title, app, icon: resolveIconName(app) }
+        return { title, app, icon: resolveWindowIcon(app, title) }
       } catch {
         return { title: "Desktop", app: "Desktop", icon: fallbackIcon }
       }
@@ -168,46 +145,49 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
 
   const workspaceIconBoxes: Gtk.Box[] = []
   const workspaceButtons: Gtk.Button[] = []
+  const setWorkspaceButtonState = (button: Gtk.Button, wsId: number, hasIcons: boolean) => {
+    const cssClasses = ["workspace-btn"]
+    if (hasIcons) cssClasses.push("occupied")
+    else cssClasses.push("empty")
+    if (activeWorkspace.get() === wsId.toString()) cssClasses.push("active")
+    button.set_css_classes(cssClasses)
+  }
+
   const renderWorkspaceIcons = (summaries: WorkspaceSummary[]) => {
     const summaryMap = new Map(summaries.map((s) => [s.id, s.icons]))
     const activeWsId = parseInt(activeWorkspace.get() || "0", 10) || 0
-    const activeIcon = activeWindowStatus.get().icon || fallbackIcon
 
     workspaceIconBoxes.forEach((box, idx) => {
       const wsId = idx + 1
       const icons = summaryMap.get(wsId) || []
+      const button = workspaceButtons[idx]
+      const isActive = wsId === activeWsId
       let child = box.get_first_child()
       while (child) {
         box.remove(child)
         child = box.get_first_child()
       }
+
+      box.append(
+        new Gtk.Label({
+          label: `${wsId}`,
+          css_classes: ["workspace-number", isActive ? "active" : "inactive"]
+        })
+      )
+
       if (icons.length) {
-        if (wsId === activeWsId) {
-          box.append(
-            new Gtk.Label({
-              label: `${wsId}`,
-              css_classes: ["workspace-number", "active"]
-            })
-          )
-        }
-        icons.slice(0, 4).forEach((iconName) => {
+        icons.slice(0, isActive ? 2 : 3).forEach((iconName) => {
           box.append(
             new Gtk.Image({
               icon_name: iconName,
-              pixel_size: 12,
+              pixel_size: 13,
               css_classes: ["workspace-icon"]
             })
           )
         })
-      } else {
-        // Empty workspace: show its number; for active with no icons fall back to number as well
-        box.append(
-          new Gtk.Label({
-            label: `${wsId}`,
-            css_classes: ["workspace-number"]
-          })
-        )
       }
+
+      if (button) setWorkspaceButtonState(button, wsId, icons.length > 0)
     })
   }
 
@@ -239,7 +219,37 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
     }
   }
 
-  const musicStatus = createPoll<MusicState>(
+  const runMediaAction = async (playerctlCommand: string, mpcCommand?: string) => {
+    const current = musicStatus.get()
+
+    if (current?.source === "mpc" && mpcCommand) {
+      await execAsync(mpcCommand).catch(console.error)
+      return
+    }
+
+    try {
+      await execAsync(playerctlCommand)
+    } catch (err) {
+      if (mpcCommand) {
+        await execAsync(mpcCommand).catch(console.error)
+        return
+      }
+      console.error("Media action failed:", err)
+    }
+  }
+
+  const adjustMediaVolume = async (direction: "up" | "down") => {
+    const current = musicStatus.get()
+
+    if (current?.source === "mpc") {
+      await execAsync(direction === "up" ? "mpc volume +5" : "mpc volume -5").catch(console.error)
+      return
+    }
+
+    await execAsync(direction === "up" ? "playerctl volume 0.05+" : "playerctl volume 0.05-").catch(console.error)
+  }
+
+  const musicStatus = safePoll<MusicState>(
     { status: "NoPlayer", metadata: "No music", source: "none" },
     1000,
     async () => {
@@ -255,7 +265,7 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
   )
 
   // System status polls with OSD integration
-  const volumeStatus = createPoll(
+  const volumeStatus = safePoll(
     { volume: "100", isMuted: false },
     300,
     async () => {
@@ -269,7 +279,7 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
     }
   )
 
-  const brightnessStatus = createPoll(
+  const brightnessStatus = safePoll(
     100,
     300,
     async () => {
@@ -284,7 +294,7 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
   )
 
   // Microphone status polling
-  const microphoneStatus = createPoll(
+  const microphoneStatus = safePoll(
     { isMuted: false },
     500,
     async () => {
@@ -297,7 +307,7 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
     }
   )
 
-  const batteryStatus = createPoll(
+  const batteryStatus = safePoll(
     { percentage: 100, status: "Full", isCharging: false },
     10000,
     async () => {
@@ -364,15 +374,6 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
                   vexpand: false
                 })
                 workspaceButtons[ws - 1] = button
-                const updateButtonState = (active: string) => {
-                  if (active === ws.toString()) {
-                    button.set_css_classes(["workspace-btn", "active"])
-                  } else {
-                    button.set_css_classes(["workspace-btn"])
-                  }
-                }
-                activeWorkspace.subscribe(updateButtonState)
-                updateButtonState(activeWorkspace.get())
                 button.connect("clicked", () => execAsync(`hyprctl dispatch workspace ${ws}`).catch(console.error))
                 button.set_child(iconsBox)
                 return button
@@ -385,19 +386,31 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
         center_widget={
           <box class="center-section">
             <button
-              onClicked={async () => {
-                try {
-                  const current = musicStatus.get()
-                  if (current?.source === "mpc") {
-                    await execAsync("mpc toggle")
-                  } else {
-                    await execAsync("playerctl play-pause")
-                  }
-                } catch (err) {
-                  console.error("Music toggle failed:", err)
-                }
-              }}
+              onClicked={() => runMediaAction("playerctl play-pause", "mpc toggle")}
               class="music-player"
+              tooltip_text="Left click: play/pause • Right click: next • Middle click: previous • Scroll: volume"
+              onRealize={(self) => {
+                const scroll = Gtk.EventControllerScroll.new(
+                  Gtk.EventControllerScrollFlags.VERTICAL | Gtk.EventControllerScrollFlags.DISCRETE
+                )
+                scroll.connect("scroll", async (_ctrl, _dx, dy) => {
+                  if (dy < 0) await adjustMediaVolume("up")
+                  if (dy > 0) await adjustMediaVolume("down")
+                  return Gdk.EVENT_STOP
+                })
+
+                const nextClick = new Gtk.GestureClick()
+                nextClick.set_button(Gdk.BUTTON_SECONDARY)
+                nextClick.connect("released", () => runMediaAction("playerctl next", "mpc next"))
+
+                const prevClick = new Gtk.GestureClick()
+                prevClick.set_button(Gdk.BUTTON_MIDDLE)
+                prevClick.connect("released", () => runMediaAction("playerctl previous", "mpc prev"))
+
+                self.add_controller(scroll)
+                self.add_controller(nextClick)
+                self.add_controller(prevClick)
+              }}
             >
               <box spacing={8}>
                 <label
@@ -412,7 +425,7 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
                   label={musicStatus((m) => {
                     const base = m?.metadata || "No music"
                     const tagged = m?.source === "mpc" ? `${base} · mpc` : base
-                    return tagged.length > 30 ? tagged.substring(0, 40) + "|" : tagged
+                    return tagged.length > 40 ? tagged.substring(0, 39) + "…" : tagged
                   })}
                   class="music-info"
                 />

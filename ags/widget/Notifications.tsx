@@ -1,8 +1,10 @@
 import app from "ags/gtk4/app"
 import { Astal, Gtk, Gdk } from "ags/gtk4"
+import { execAsync } from "ags/process"
 import Gio from "gi://Gio?version=2.0"
 import GLib from "gi://GLib?version=2.0"
 import Pango from "gi://Pango?version=1.0"
+import { resolveWindowIcon } from "./iconResolver"
 
 type Popup = {
   id: number
@@ -48,6 +50,8 @@ const ifaceInfo = nodeInfo.interfaces[0]
 
 const popups: Popup[] = []
 const popupTimeouts = new Map<number, number>()
+const popupRevealers = new Map<number, Gtk.Revealer>()
+const popupClosures = new Map<number, number>()
 const listeners = new Set<() => void>()
 let nextId = 1
 let exported: Gio.DBusExportedObject | null = null
@@ -71,10 +75,19 @@ const clearPopupTimeout = (id: number) => {
   }
 }
 
-const removePopup = (id: number) => {
+const clearPopupClosure = (id: number) => {
+  const tag = popupClosures.get(id)
+  if (tag) {
+    GLib.source_remove(tag)
+    popupClosures.delete(id)
+  }
+}
+
+const finalizePopupRemoval = (id: number) => {
   clearPopupTimeout(id)
-  let idx = popups.findIndex((p) => p.id === id)
-  if (idx < 0 && popups.length) idx = 0
+  clearPopupClosure(id)
+  popupRevealers.delete(id)
+  const idx = popups.findIndex((p) => p.id === id)
 
   if (idx >= 0) {
     popups.splice(idx, 1)
@@ -82,12 +95,27 @@ const removePopup = (id: number) => {
   }
 }
 
+const removePopup = (id: number) => {
+  const revealer = popupRevealers.get(id)
+  if (revealer && revealer.reveal_child) {
+    clearPopupTimeout(id)
+    clearPopupClosure(id)
+    revealer.reveal_child = false
+    const tag = GLib.timeout_add(GLib.PRIORITY_DEFAULT, 220, () => {
+      popupClosures.delete(id)
+      finalizePopupRemoval(id)
+      return GLib.SOURCE_REMOVE
+    })
+    popupClosures.set(id, tag)
+    return
+  }
+
+  finalizePopupRemoval(id)
+}
+
 const clearPopups = () => {
-  popupTimeouts.forEach((tag) => GLib.source_remove(tag))
-  popupTimeouts.clear()
   if (!popups.length) return
-  popups.splice(0, popups.length)
-  notifyListeners()
+  popups.slice().forEach((popup) => removePopup(popup.id))
 }
 
 const schedulePopupTimeout = (entry: Popup) => {
@@ -101,6 +129,12 @@ const schedulePopupTimeout = (entry: Popup) => {
   popupTimeouts.set(entry.id, tag)
 }
 
+const playNotificationSound = () => {
+  void execAsync(
+    "sh -c 'command -v canberra-gtk-play >/dev/null 2>&1 && canberra-gtk-play -i message-new-instant >/dev/null 2>&1 || command -v canberra-gtk-play >/dev/null 2>&1 && canberra-gtk-play -i dialog-information >/dev/null 2>&1 || paplay /usr/share/sounds/freedesktop/stereo/message.oga >/dev/null 2>&1 || paplay /usr/share/sounds/freedesktop/stereo/dialog-information.oga >/dev/null 2>&1 || true'"
+  ).catch(() => {})
+}
+
 const addPopup = (entry: Popup) => {
   const existing = popups.findIndex((p) => p.id === entry.id)
   if (existing >= 0) {
@@ -111,6 +145,7 @@ const addPopup = (entry: Popup) => {
       const dropped = popups.pop()
       if (dropped) clearPopupTimeout(dropped.id)
     }
+    playNotificationSound()
   }
 
   notifyListeners()
@@ -161,7 +196,6 @@ const ensureNotificationService = () => {
       "org.freedesktop.Notifications",
       Gio.BusNameOwnerFlags.NONE,
       null,
-      null,
       null
     )
   } catch (err) {
@@ -177,22 +211,51 @@ const formatTime = (ts: number) => {
 const buildPopupRow = (popup: Popup) => {
   const box = new Gtk.Box({
     orientation: Gtk.Orientation.VERTICAL,
-    spacing: 6,
+    spacing: 10,
     css_classes: ["notification-popup"]
   })
 
-  const header = new Gtk.Box({ spacing: 8, hexpand: true })
+  const iconWrap = new Gtk.Box({
+    css_classes: ["notification-app-icon-wrap"],
+    valign: Gtk.Align.START
+  })
+  iconWrap.append(
+    new Gtk.Image({
+      icon_name: resolveWindowIcon(popup.appName, popup.summary),
+      pixel_size: 16,
+      css_classes: ["notification-app-icon"]
+    })
+  )
+
+  const meta = new Gtk.Box({
+    orientation: Gtk.Orientation.VERTICAL,
+    spacing: 2,
+    hexpand: true
+  })
   const appLabel = new Gtk.Label({
     label: popup.appName || "App",
     css_classes: ["notification-app"],
     xalign: 0,
     hexpand: true,
     ellipsize: Pango.EllipsizeMode.END,
-    max_width_chars: 20
+    max_width_chars: 22
   })
+  const title = new Gtk.Label({
+    label: popup.summary,
+    css_classes: ["notification-title"],
+    xalign: 0,
+    wrap: true,
+    wrap_mode: Pango.WrapMode.WORD_CHAR,
+    ellipsize: Pango.EllipsizeMode.END,
+    max_width_chars: 34
+  })
+  meta.append(appLabel)
+  meta.append(title)
+
+  const header = new Gtk.Box({ spacing: 10, hexpand: true, valign: Gtk.Align.START })
   const timeLabel = new Gtk.Label({
     label: formatTime(popup.created),
-    css_classes: ["notification-time", "muted"],
+    css_classes: ["notification-time"],
     xalign: 1,
     halign: Gtk.Align.END,
     width_chars: 6
@@ -203,22 +266,13 @@ const buildPopupRow = (popup: Popup) => {
     valign: Gtk.Align.START,
     tooltip_text: "Dismiss"
   })
-  closeBtn.set_child(new Gtk.Image({ icon_name: "window-close-symbolic", pixel_size: 12 }))
+  closeBtn.set_child(new Gtk.Image({ icon_name: "window-close-symbolic", pixel_size: 15 }))
   closeBtn.connect("clicked", () => removePopup(popup.id))
 
-  header.append(appLabel)
+  header.append(iconWrap)
+  header.append(meta)
   header.append(timeLabel)
   header.append(closeBtn)
-
-  const title = new Gtk.Label({
-    label: popup.summary,
-    css_classes: ["notification-title"],
-    xalign: 0,
-    wrap: true,
-    wrap_mode: Pango.WrapMode.WORD_CHAR,
-    ellipsize: Pango.EllipsizeMode.END,
-    max_width_chars: 36
-  })
 
   const body = new Gtk.Label({
     label: popup.body,
@@ -226,12 +280,11 @@ const buildPopupRow = (popup: Popup) => {
     xalign: 0,
     wrap: true,
     wrap_mode: Pango.WrapMode.WORD_CHAR,
-    max_width_chars: 48,
+    max_width_chars: 42,
     visible: !!popup.body
   })
 
   box.append(header)
-  box.append(title)
   box.append(body)
 
   box.add_controller(
@@ -246,11 +299,16 @@ const buildPopupRow = (popup: Popup) => {
   )
 
   const reveal = new Gtk.Revealer({
-    transition_type: Gtk.RevealerTransitionType.SLIDE_LEFT,
-    transition_duration: 200,
+    transition_type: Gtk.RevealerTransitionType.SLIDE_DOWN,
+    transition_duration: 220,
     reveal_child: false
   })
   reveal.set_child(box)
+  popupRevealers.set(popup.id, reveal)
+  reveal.connect("destroy", () => {
+    popupRevealers.delete(popup.id)
+    clearPopupClosure(popup.id)
+  })
   GLib.idle_add(GLib.PRIORITY_DEFAULT_IDLE, () => {
     reveal.reveal_child = true
     return GLib.SOURCE_REMOVE
@@ -296,13 +354,6 @@ export default function Notifications(gdkmonitor: Gdk.Monitor) {
   })
   container.append(headerBar)
   container.append(popupList)
-  container.add_controller(
-    (() => {
-      const click = new Gtk.GestureClick()
-      click.connect("released", () => clearPopups())
-      return click
-    })()
-  )
 
   const rebuild = () => {
     let child = popupList.get_first_child()

@@ -1,6 +1,9 @@
 {
 	"file_history":
 	[
+		"/home/scelester/Downloads/3934cb02-a195-4f28-90e6-ec83f5d1783b.conf",
+		"/home/scelester/Downloads/OneDrive_1_4-11-2026/dev-fe.conf",
+		"/home/scelester/Downloads/OneDrive_1_4-11-2026/dev-api.conf",
 		"/home/scelester/Downloads/arcodify cv/notes.txt",
 		"/home/scelester/Downloads/Arcodify Hiring Campaign 10 Sep 2025 - ad_Leads_2025-09-10_2025-09-10 2.csv",
 		"/home/scelester/ProjectD/Arcodify/email_validator/generic/split_non_generic_into_personal_company.py",
@@ -125,8 +128,7 @@
 		"/home/scelester/.config/sublime-text/Packages/Default/Preferences.sublime-settings",
 		"/home/scelester/.config/sublime-text/Packages/User/Preferences.sublime-settings",
 		"/home/scelester/Megasync/Python_start_l/4.Chapter_4_working_with_list_loop_indroduce.py",
-		"/home/scelester/gay_message.txt",
-		"/home/scelester/.config/hypr/hyprlock.conf"
+		"/home/scelester/gay_message.txt"
 	],
 	"folder_history":
 	[
@@ -138,11 +140,11 @@
 	"last_version": 4200,
 	"last_window_id": 3,
 	"log_indexing": false,
-	"next_update_check": 1757645169,
+	"next_update_check": 1776015443,
 	"settings":
 	{
-		"new_window_full_screen": true,
-		"new_window_height": 1042.0,
+		"new_window_full_screen": false,
+		"new_window_height": 493.0,
 		"new_window_maximized": true,
 		"new_window_position":
 		[
@@ -212,6 +214,9 @@
 			},
 			"file_history":
 			[
+				"/home/scelester/Downloads/3934cb02-a195-4f28-90e6-ec83f5d1783b.conf",
+				"/home/scelester/Downloads/OneDrive_1_4-11-2026/dev-fe.conf",
+				"/home/scelester/Downloads/OneDrive_1_4-11-2026/dev-api.conf",
 				"/home/scelester/Downloads/arcodify cv/notes.txt",
 				"/home/scelester/Downloads/Arcodify Hiring Campaign 10 Sep 2025 - ad_Leads_2025-09-10_2025-09-10 2.csv",
 				"/home/scelester/ProjectD/Arcodify/email_validator/generic/split_non_generic_into_personal_company.py",
@@ -575,7 +580,7 @@
 			{
 			}
 		},
-		"new_window_width": 960.0
+		"new_window_width": 940.0
 	},
 	"windows":
 	[
@@ -642,6 +647,9 @@
 			},
 			"file_history":
 			[
+				"/home/scelester/Downloads/3934cb02-a195-4f28-90e6-ec83f5d1783b.conf",
+				"/home/scelester/Downloads/OneDrive_1_4-11-2026/dev-fe.conf",
+				"/home/scelester/Downloads/OneDrive_1_4-11-2026/dev-api.conf",
 				"/home/scelester/Downloads/arcodify cv/notes.txt",
 				"/home/scelester/Downloads/Arcodify Hiring Campaign 10 Sep 2025 - ad_Leads_2025-09-10_2025-09-10 2.csv",
 				"/home/scelester/ProjectD/Arcodify/email_validator/generic/split_non_generic_into_personal_company.py",
@@ -887,7 +895,7 @@
 				]
 			},
 			"pinned_build_system": "",
-			"position": "1,1,0,0,0,0,0,960,1042,1920,1080,0",
+			"position": "0,1,0,0,0,0,0,933,486,1920,1080,0",
 			"replace":
 			{
 				"height": 66.0

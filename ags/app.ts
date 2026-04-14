@@ -4,6 +4,7 @@ import Bar from "./widget/Bar"
 import OSD from "./widget/OSD"
 import Dashboard from "./widget/Dashboard"
 import Notifications from "./widget/Notifications"
+import GamingModeOverlay from "./widget/GamingModeOverlay"
 import Gio from "gi://Gio"
 import { hideDashboard, showDashboard, toggleDashboard } from "./widget/dashboardState"
 
@@ -29,6 +30,7 @@ app.start({
 
     monitors.map(Bar)
     monitors.map(OSD)
+    monitors.map(GamingModeOverlay)
     if (monitors[0]) Dashboard(monitors[0])
     monitors.map(Notifications)
 

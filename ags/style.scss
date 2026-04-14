@@ -42,6 +42,80 @@ $neo-shadow: rgba(0, 0, 0, 0.2);
   }
 }
 
+@keyframes gaming-banner-in {
+  from {
+    transform: translateY(-18px) scale(0.96);
+    opacity: 0;
+  }
+  65% {
+    transform: translateY(2px) scale(1.01);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes gaming-pulse {
+  0% {
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.04),
+      0 0 0 rgba($neo-accent, 0);
+  }
+  55% {
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.05),
+      0 20px 46px rgba($neo-accent, 0.22);
+  }
+  100% {
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.04),
+      0 14px 28px rgba(0, 0, 0, 0.26);
+  }
+}
+
+@keyframes gaming-orb-ignite {
+  from {
+    transform: scale(0.84);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.03);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes gaming-ring-wave {
+  0% {
+    box-shadow:
+      0 0 0 0 rgba($neo-accent-3, 0.34),
+      0 0 0 14px rgba($neo-accent-3, 0.08),
+      0 24px 54px rgba(0, 0, 0, 0.34);
+  }
+  100% {
+    box-shadow:
+      0 0 0 16px rgba($neo-accent-3, 0),
+      0 0 0 34px rgba($neo-accent-3, 0),
+      0 24px 54px rgba(0, 0, 0, 0.28);
+  }
+}
+
+@keyframes gaming-copy-glow {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Base */
 * {
   color: $neo-ink;
@@ -306,6 +380,49 @@ window.bar .indicator:hover {
   color: $neo-ink;
 }
 
+window.bar .gaming-toggle {
+  padding: 3px 10px;
+  min-width: 78px;
+  color: rgba($neo-ink, 0.9);
+}
+
+window.bar .gaming-toggle .gaming-toggle-icon {
+  font-size: 15px;
+  color: $neo-accent-3;
+}
+
+window.bar .gaming-toggle .gaming-toggle-label,
+window.bar .gaming-toggle .gaming-toggle-state {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+window.bar .gaming-toggle .gaming-toggle-label {
+  color: rgba($neo-ink, 0.8);
+}
+
+window.bar .gaming-toggle .gaming-toggle-state {
+  color: rgba($neo-ink, 0.7);
+}
+
+window.bar .gaming-toggle.enabled {
+  background: linear-gradient(180deg, rgba($neo-accent-3, 0.26), rgba($neo-accent, 0.16));
+  border-color: rgba($neo-accent-3, 0.45);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 12px 22px rgba($neo-accent-3, 0.16);
+}
+
+window.bar .gaming-toggle.enabled .gaming-toggle-icon,
+window.bar .gaming-toggle.enabled .gaming-toggle-state {
+  color: $neo-ink;
+}
+
+window.bar .gaming-toggle.disabled .gaming-toggle-state {
+  color: $neo-muted;
+}
+
 window.bar .battery-percentage {
   font-weight: 700;
   color: $neo-accent;
@@ -523,6 +640,17 @@ window.dashboard .dashboard-section-cell,
 window.dashboard .summary-strip {
   min-width: 0;
   min-height: 0;
+}
+
+window.dashboard .controls-section-scroll {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+window.dashboard .controls-section-scroll > viewport {
+  padding: 0;
+  background: transparent;
 }
 
 window.dashboard .dashboard-section {
@@ -1137,6 +1265,20 @@ window.dashboard .pill-button:hover {
 
 window.dashboard .storage-row {
   background: transparent;
+  padding: 7px 9px;
+  margin-bottom: 4px;
+}
+
+window.dashboard .storage-card {
+  padding: 12px 14px;
+}
+
+window.dashboard .storage-card .dashboard-note {
+  padding: 6px 10px;
+}
+
+window.dashboard .storage-card scrolledwindow > viewport {
+  padding: 4px 6px;
 }
 
 window.dashboard .storage-mount {
@@ -1225,6 +1367,146 @@ progressbar.osd-progress progress {
   border-radius: 10px;
   background: linear-gradient(90deg, $neo-accent 0%, $neo-accent-2 100%);
   box-shadow: 0 0 12px rgba($neo-accent, 0.5);
+}
+
+window.gaming-mode {
+  background: transparent;
+}
+
+window.gaming-mode .gaming-mode-stage {
+  min-width: 360px;
+  padding: 18px 28px 22px;
+  border-radius: 30px;
+  background: transparent;
+}
+
+window.gaming-mode .gaming-mode-stage.flash-a,
+window.gaming-mode .gaming-mode-stage.flash-b {
+  animation: gaming-copy-glow 220ms ease;
+}
+
+window.gaming-mode .gaming-mode-orb-shell {
+  min-width: 232px;
+  min-height: 232px;
+  padding: 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background:
+    radial-gradient(circle at center, rgba($neo-card, 0.98), rgba($neo-surface, 0.94) 72%, rgba($neo-bg, 0.8));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 26px 60px rgba(0, 0, 0, 0.34);
+  animation: gaming-orb-ignite 220ms ease;
+}
+
+window.gaming-mode .gaming-mode-orb-shell.enabled {
+  border-color: rgba($neo-accent-3, 0.42);
+  background:
+    radial-gradient(circle at center, rgba($neo-accent-3, 0.16), rgba($neo-card, 0.96) 38%, rgba($neo-surface, 0.94) 72%);
+}
+
+window.gaming-mode .gaming-mode-orb-shell.disabled {
+  border-color: rgba($neo-accent-2, 0.28);
+  background:
+    radial-gradient(circle at center, rgba($neo-accent-2, 0.1), rgba($neo-card, 0.96) 38%, rgba($neo-surface, 0.94) 72%);
+}
+
+window.gaming-mode .gaming-mode-orb-shell.flash-a,
+window.gaming-mode .gaming-mode-orb-shell.flash-b {
+  animation:
+    gaming-orb-ignite 220ms ease,
+    gaming-ring-wave 560ms ease;
+}
+
+window.gaming-mode .gaming-mode-orb-ring {
+  min-width: 196px;
+  min-height: 196px;
+  padding: 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background:
+    radial-gradient(circle at center, rgba(255, 255, 255, 0.03), rgba($neo-bg, 0.44));
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.03),
+    0 0 0 8px rgba(255, 255, 255, 0.02);
+}
+
+window.gaming-mode .gaming-mode-orb-core {
+  min-width: 152px;
+  min-height: 152px;
+  padding: 18px;
+  border-radius: 999px;
+  background: rgba($neo-bg, 0.64);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 18px 34px rgba(0, 0, 0, 0.22);
+}
+
+window.gaming-mode .gaming-mode-orb-icon {
+  font-size: 52px;
+  color: $neo-accent-3;
+}
+
+window.gaming-mode .gaming-mode-orb-state {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  color: rgba($neo-ink, 0.82);
+}
+
+window.gaming-mode .gaming-mode-copy {
+  padding: 14px 18px;
+  border-radius: 22px;
+  background: rgba($neo-bg, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.03),
+    0 14px 30px rgba(0, 0, 0, 0.22);
+}
+
+window.gaming-mode .gaming-mode-copy.enabled {
+  border-color: rgba($neo-accent-3, 0.2);
+}
+
+window.gaming-mode .gaming-mode-copy.disabled {
+  border-color: rgba($neo-accent-2, 0.16);
+}
+
+window.gaming-mode .gaming-mode-mode {
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+window.gaming-mode .gaming-mode-mode.enabled {
+  background: rgba($neo-accent-3, 0.16);
+  color: $neo-accent-3;
+}
+
+window.gaming-mode .gaming-mode-mode.disabled {
+  background: rgba($neo-accent-2, 0.14);
+  color: $neo-accent-2;
+}
+
+window.gaming-mode .gaming-mode-title {
+  margin-top: 4px;
+  font-size: 18px;
+  font-weight: 900;
+  color: $neo-ink;
+}
+
+window.gaming-mode .gaming-mode-summary {
+  color: rgba($neo-ink, 0.84);
+  font-size: 12px;
+}
+
+window.gaming-mode .gaming-mode-arcade {
+  color: $neo-muted;
+  font-size: 10px;
+  letter-spacing: 0.06em;
 }
 
 /* Control Panel Widgets (Side controls) */

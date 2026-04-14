@@ -135,10 +135,11 @@ const MODAL_HEIGHT = 820
 const SECTION_STAGE_HEIGHT = MODAL_HEIGHT - 214
 const DASHBOARD_HERO_HEIGHT = 96
 const DASHBOARD_TABS_HEIGHT = 48
+const DASHBOARD_SURFACE_PADDING = 18
 const SECTION_ROW_GAP = 14
 const OVERVIEW_TOP_ROW_HEIGHT = 278
 const OVERVIEW_BOTTOM_ROW_HEIGHT = SECTION_STAGE_HEIGHT - SECTION_ROW_GAP - OVERVIEW_TOP_ROW_HEIGHT
-const CONTROLS_TOP_ROW_HEIGHT = 418
+const CONTROLS_TOP_ROW_HEIGHT = 360
 const CONTROLS_BOTTOM_ROW_HEIGHT = SECTION_STAGE_HEIGHT - SECTION_ROW_GAP - CONTROLS_TOP_ROW_HEIGHT
 const PROFILE_CARD_HEIGHT = OVERVIEW_TOP_ROW_HEIGHT
 const SUMMARY_CARD_HEIGHT = 88
@@ -150,7 +151,7 @@ const POWER_CARD_HEIGHT = CONTROLS_TOP_ROW_HEIGHT
 const STORAGE_CARD_HEIGHT = CONTROLS_BOTTOM_ROW_HEIGHT
 const TODO_LIST_HEIGHT = 220
 const WINDOWS_LIST_HEIGHT = SECTION_STAGE_HEIGHT - 158
-const STORAGE_LIST_HEIGHT = 146
+const STORAGE_LIST_HEIGHT = Math.max(72, STORAGE_CARD_HEIGHT - 122)
 const NOTIFICATION_LIST_HEIGHT = SECTION_STAGE_HEIGHT - 158
 const TODO_PREVIEW_MAX = 8
 const GAUGE_SIZE = 70
@@ -158,6 +159,12 @@ const STORAGE_EXCLUDED = ["tmpfs", "devtmpfs", "overlay", "squashfs"]
 const STORAGE_WHITELIST = ["/", "/home", "/home/scelester/Container"]
 const NOTIFICATION_HISTORY_LIMIT = 500
 const POWER_PROFILE_ORDER = ["performance", "balanced", "power-saver"] as const
+const DASHBOARD_SURFACE_HEIGHT =
+  DASHBOARD_HERO_HEIGHT +
+  DASHBOARD_TABS_HEIGHT +
+  SECTION_STAGE_HEIGHT +
+  SECTION_ROW_GAP * 2 +
+  DASHBOARD_SURFACE_PADDING * 2
 const DASHBOARD_DEFAULT_SECTION: DashboardSectionId = "overview"
 const DASHBOARD_SECTIONS: { id: DashboardSectionId; label: string; icon: string }[] = [
   { id: "overview", label: "Overview", icon: "󰍹" },
@@ -588,7 +595,8 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
   const storageStatus = new Gtk.Label({
     label: "Loading disks…",
     css_classes: ["dashboard-note"],
-    xalign: 0
+    xalign: 0,
+    visible: false
   })
 
   const netLabel = new Gtk.Label({
@@ -1034,13 +1042,6 @@ const applyProfile = (profile: Profile) => {
           max_width_chars: 18,
           css_classes: ["storage-mount"]
         })
-        const type = new Gtk.Label({
-          label: vol.fstype,
-          xalign: 0,
-          css_classes: ["muted", "storage-type"],
-          ellipsize: Pango.EllipsizeMode.END,
-          max_width_chars: 8
-        })
         const usage = new Gtk.Label({
           label: `${(vol.used / 1024 / 1024 / 1024).toFixed(0)} / ${(vol.size / 1024 / 1024 / 1024).toFixed(0)} GiB`,
           xalign: 1,
@@ -1060,9 +1061,8 @@ const applyProfile = (profile: Profile) => {
           width_chars: 5
         })
         row.attach(mount, 0, 0, 1, 1)
-        row.attach(type, 1, 0, 1, 1)
-        row.attach(usage, 2, 0, 1, 1)
-        row.attach(pct, 3, 0, 1, 1)
+        row.attach(usage, 1, 0, 1, 1)
+        row.attach(pct, 2, 0, 1, 1)
         return row
       }
     )
@@ -1768,6 +1768,8 @@ const applyProfile = (profile: Profile) => {
         storageStatus.label = lastStorage.volumes.length
           ? `Total ${lastStorage.totalPct}% across ${lastStorage.volumes.length} vols`
           : "No disks detected"
+        storageStatus.visible = !lastStorage.volumes.length
+        queueDashboardSizing()
       }
 
       storageGauge.update(
@@ -1914,7 +1916,53 @@ const applyProfile = (profile: Profile) => {
   let stopNotificationsListener = () => {}
   let currentSection: DashboardSectionId = DASHBOARD_DEFAULT_SECTION
   let sectionStack: Gtk.Stack | null = null
+  let storageScroll: Gtk.ScrolledWindow | null = null
   const sectionButtons = new Map<DashboardSectionId, Gtk.Button>()
+  let dashboardSizingSource = 0
+  let lastSizingSnapshot = ""
+
+  const measureNaturalHeight = (widget: Gtk.Widget | null, forWidth = -1) => {
+    if (!widget) return 0
+    try {
+      const [_minimum, natural] = widget.measure(Gtk.Orientation.VERTICAL, forWidth)
+      return natural
+    } catch (err) {
+      console.error("Dashboard height measure failed:", err)
+      return 0
+    }
+  }
+
+  const syncDashboardSizing = () => {
+    const sectionWidth = MODAL_WIDTH - 120 - DASHBOARD_SURFACE_PADDING * 2
+
+    if (!storageScroll) return
+
+    const storageNatural = measureNaturalHeight(storageBox, sectionWidth)
+    const desiredStorageHeight = Math.max(72, Math.min(storageNatural + 12, 260))
+    storageScroll.set_min_content_height(desiredStorageHeight)
+    storageScroll.set_max_content_height(desiredStorageHeight)
+    storageScroll.set_size_request(-1, desiredStorageHeight)
+
+    const snapshot = JSON.stringify({
+      currentSection,
+      sectionWidth,
+      storageNatural,
+      desiredStorageHeight
+    })
+    if (snapshot !== lastSizingSnapshot) {
+      lastSizingSnapshot = snapshot
+      console.log(`[dashboard-size] ${snapshot}`)
+    }
+  }
+
+  const queueDashboardSizing = () => {
+    if (dashboardSizingSource) return
+    dashboardSizingSource = GLib.idle_add(GLib.PRIORITY_DEFAULT_IDLE, () => {
+      dashboardSizingSource = 0
+      syncDashboardSizing()
+      return GLib.SOURCE_REMOVE
+    })
+  }
 
   const setSectionButtonState = (id: DashboardSectionId, button: Gtk.Button) => {
     button.set_css_classes([
@@ -1931,6 +1979,7 @@ const applyProfile = (profile: Profile) => {
     currentSection = id
     sectionStack?.set_visible_child_name(id)
     syncSectionButtons()
+    queueDashboardSizing()
   }
 
   // Profile summary card
@@ -1958,12 +2007,17 @@ const applyProfile = (profile: Profile) => {
 
   // Disks overview card
   const storageCard = (
-    <box class="dashboard-card storage-card" orientation={Gtk.Orientation.VERTICAL} spacing={6} height_request={STORAGE_CARD_HEIGHT}>
+    <box class="dashboard-card storage-card" orientation={Gtk.Orientation.VERTICAL} spacing={6} vexpand={false}>
       <box spacing={8} valign={Gtk.Align.CENTER}>
         <label label="Disks" class="card-title" xalign={0} hexpand />
       </box>
       {storageStatus}
       <scrolledwindow 
+        onRealize={(self) => {
+          storageScroll = self
+          queueDashboardSizing()
+        }}
+        vexpand={false}
         min_content_height={STORAGE_LIST_HEIGHT}
         max_content_height={STORAGE_LIST_HEIGHT}
         height_request={STORAGE_LIST_HEIGHT}
@@ -2010,7 +2064,7 @@ const applyProfile = (profile: Profile) => {
       spacing={8}
       height_request={SECTION_STAGE_HEIGHT - 148}
       hexpand={true}
-      vexpand={true}
+      vexpand={false}
       valign={Gtk.Align.START}
     >
       <label label="Calendar" class="card-title" xalign={0} />
@@ -2071,7 +2125,7 @@ const applyProfile = (profile: Profile) => {
   )
 
   const notificationCard = (
-    <box class="dashboard-card notification-card" orientation={Gtk.Orientation.VERTICAL} spacing={8} hexpand={true} vexpand={true} height_request={SECTION_STAGE_HEIGHT}>
+    <box class="dashboard-card notification-card" orientation={Gtk.Orientation.VERTICAL} spacing={8} hexpand={true} vexpand={false} height_request={SECTION_STAGE_HEIGHT}>
       <box class="notification-card-header" spacing={8} valign={Gtk.Align.CENTER}>
         <label label="Notifications" class="card-title" xalign={0} hexpand={true} />
         {notificationClear}
@@ -2114,7 +2168,7 @@ const applyProfile = (profile: Profile) => {
   )
 
   const controlPanel = (
-    <box class="control-panel cockpit-controls" orientation={Gtk.Orientation.VERTICAL} spacing={10} vexpand={true}>
+    <box class="control-panel cockpit-controls" orientation={Gtk.Orientation.VERTICAL} spacing={10} vexpand={false}>
       {audioMixerSection}
       {brightnessSection}
     </box>
@@ -2149,7 +2203,7 @@ const applyProfile = (profile: Profile) => {
 
   // Running windows list
   const activityCard = (
-    <box class="dashboard-card activity-card" orientation={Gtk.Orientation.VERTICAL} spacing={6} hexpand={true} vexpand={true} height_request={SECTION_STAGE_HEIGHT}>
+    <box class="dashboard-card activity-card" orientation={Gtk.Orientation.VERTICAL} spacing={6} hexpand={true} vexpand={false} height_request={SECTION_STAGE_HEIGHT}>
       <label label="Running Windows" class="card-title" xalign={0} />
       <scrolledwindow 
         vexpand={false}
@@ -2181,7 +2235,7 @@ const applyProfile = (profile: Profile) => {
   )
 
   const controlsCard = (
-    <box class="dashboard-card controls-card" orientation={Gtk.Orientation.VERTICAL} spacing={10} hexpand={true} vexpand={true} height_request={CONTROLS_CARD_HEIGHT}>
+    <box class="dashboard-card controls-card" orientation={Gtk.Orientation.VERTICAL} spacing={10} hexpand={true} vexpand={false} height_request={CONTROLS_CARD_HEIGHT}>
       <label label="Mixer & Display" class="card-title" xalign={0} />
       {controlPanel}
     </box>
@@ -2302,7 +2356,12 @@ const applyProfile = (profile: Profile) => {
   ) as Gtk.Widget
 
   const overviewSection = (
-    <box class="dashboard-section overview-section" orientation={Gtk.Orientation.VERTICAL} spacing={14} hexpand={true} vexpand={true}>
+    <box class="dashboard-section overview-section" 
+      orientation={Gtk.Orientation.VERTICAL} 
+      spacing={14}
+      hexpand={true} 
+      vexpand={false}
+      height_request={SECTION_STAGE_HEIGHT} >
       <box
         class="dashboard-section-row"
         orientation={Gtk.Orientation.HORIZONTAL}
@@ -2322,7 +2381,7 @@ const applyProfile = (profile: Profile) => {
         orientation={Gtk.Orientation.HORIZONTAL}
         spacing={14}
         hexpand={true}
-        vexpand={true}
+        vexpand={false}
         height_request={OVERVIEW_BOTTOM_ROW_HEIGHT}
       >
         <box class="dashboard-section-cell metrics-stage" width_request={430} hexpand={false}>
@@ -2335,8 +2394,14 @@ const applyProfile = (profile: Profile) => {
     </box>
   ) as Gtk.Widget
 
-  const controlsSection = (
-    <box class="dashboard-section controls-section" orientation={Gtk.Orientation.VERTICAL} spacing={14} hexpand={true} vexpand={true}>
+  const controlsSectionContent = (
+    <box
+      class="dashboard-section controls-section"
+      orientation={Gtk.Orientation.VERTICAL}
+      spacing={14}
+      hexpand={true}
+      vexpand={false}
+    >
       <box
         class="dashboard-section-row"
         orientation={Gtk.Orientation.HORIZONTAL}
@@ -2356,7 +2421,6 @@ const applyProfile = (profile: Profile) => {
         orientation={Gtk.Orientation.HORIZONTAL}
         spacing={14}
         hexpand={true}
-        height_request={CONTROLS_BOTTOM_ROW_HEIGHT}
       >
         <box class="dashboard-section-cell" hexpand={true}>
           {storageCard}
@@ -2365,20 +2429,52 @@ const applyProfile = (profile: Profile) => {
     </box>
   ) as Gtk.Widget
 
+  const controlsSection = (
+    <scrolledwindow
+      class="controls-section-scroll"
+      hscrollbar_policy={Gtk.PolicyType.NEVER}
+      vscrollbar_policy={Gtk.PolicyType.AUTOMATIC}
+      min_content_height={SECTION_STAGE_HEIGHT}
+      max_content_height={SECTION_STAGE_HEIGHT}
+      height_request={SECTION_STAGE_HEIGHT}
+      onRealize={() => queueDashboardSizing()}
+    >
+      {controlsSectionContent}
+    </scrolledwindow>
+  ) as Gtk.Widget
+
   const notificationsSection = (
-    <box class="dashboard-section focused-section" orientation={Gtk.Orientation.VERTICAL} spacing={14} hexpand={true} vexpand={true}>
+    <box
+      class="dashboard-section focused-section"
+      orientation={Gtk.Orientation.VERTICAL}
+      spacing={14}
+      hexpand={true}
+      vexpand={false}
+    >
       {notificationCard}
     </box>
   ) as Gtk.Widget
 
   const windowsSection = (
-    <box class="dashboard-section focused-section" orientation={Gtk.Orientation.VERTICAL} spacing={14} hexpand={true} vexpand={true}>
+    <box
+      class="dashboard-section focused-section"
+      orientation={Gtk.Orientation.VERTICAL}
+      spacing={14}
+      hexpand={true}
+      vexpand={false}
+    >
       {activityCard}
     </box>
   ) as Gtk.Widget
 
   const calendarSection = (
-    <box class="dashboard-section calendar-section" orientation={Gtk.Orientation.HORIZONTAL} spacing={14} hexpand={true} vexpand={true}>
+    <box
+      class="dashboard-section calendar-section"
+      orientation={Gtk.Orientation.HORIZONTAL}
+      spacing={14}
+      hexpand={true}
+      vexpand={false}
+    >
       <box class="dashboard-section-cell calendar-stage" hexpand={true}>
         {calendarCard}
       </box>
@@ -2389,11 +2485,19 @@ const applyProfile = (profile: Profile) => {
   ) as Gtk.Widget
 
   sectionStack = new Gtk.Stack({
-    transition_type: Gtk.StackTransitionType.CROSSFADE,
-    transition_duration: 180
+    transition_type: Gtk.StackTransitionType.NONE,
+    transition_duration: 0
   })
   sectionStack.set_hexpand(true)
-  sectionStack.set_vexpand(true)
+  sectionStack.set_vexpand(false)
+  sectionStack.set_hhomogeneous(true)
+  sectionStack.set_vhomogeneous(true)
+  // Keep the stack on a fixed footprint during transitions.
+  if ("set_interpolate_size" in sectionStack) {
+    // @ts-expect-error gtk4 stack API
+    sectionStack.set_interpolate_size(false)
+  }
+  sectionStack.set_size_request(-1, SECTION_STAGE_HEIGHT)
   sectionStack.add_named(overviewSection, "overview")
   sectionStack.add_named(controlsSection, "controls")
   sectionStack.add_named(notificationsSection, "notifications")
@@ -2434,7 +2538,7 @@ const applyProfile = (profile: Profile) => {
       class="dashboard-stage"
       orientation={Gtk.Orientation.VERTICAL}
       hexpand={true}
-      vexpand={true}
+      vexpand={false}
       height_request={SECTION_STAGE_HEIGHT}
     >
       {sectionStack}
@@ -2448,7 +2552,7 @@ const applyProfile = (profile: Profile) => {
       orientation={Gtk.Orientation.VERTICAL}
       spacing={14}
       width_request={MODAL_WIDTH - 120}
-      height_request={MODAL_HEIGHT - 72}
+      height_request={DASHBOARD_SURFACE_HEIGHT}
       hexpand={false}
       vexpand={false}
       halign={Gtk.Align.END}
@@ -2464,21 +2568,23 @@ const applyProfile = (profile: Profile) => {
     <box
       class="dashboard-overlay"
       hexpand={true}
-      vexpand={true}
+      vexpand={false}
       halign={Gtk.Align.FILL}
       valign={Gtk.Align.FILL}
     >
       <box
         class="dashboard-frame"
         orientation={Gtk.Orientation.HORIZONTAL}
+        height_request={DASHBOARD_SURFACE_HEIGHT}
         hexpand={true}
-        vexpand={true}
+        vexpand={false}
         halign={Gtk.Align.END}
         valign={Gtk.Align.START}
       >
         <box
           class="dashboard-shell"
           orientation={Gtk.Orientation.VERTICAL}
+          height_request={DASHBOARD_SURFACE_HEIGHT}
           hexpand={false}
           vexpand={false}
           halign={Gtk.Align.END}

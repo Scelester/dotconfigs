@@ -5,6 +5,7 @@ import { createPoll } from "ags/time"
 import TrayWidget from "./Tray"
 import { toggleDashboard } from "./dashboardState"
 import { getFallbackIcon, resolveWindowIcon } from "./iconResolver"
+import { getGamingModeState, subscribeGamingMode } from "./gamingModeState"
 import Pango from "gi://Pango"
 
 type MusicState = {
@@ -334,6 +335,51 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
     }
   );
 
+  const gamingModeIcon = new Gtk.Label({
+    label: "󰊴",
+    css_classes: ["gaming-toggle-icon"]
+  })
+  const gamingModeLabel = new Gtk.Label({
+    label: "GAME",
+    css_classes: ["gaming-toggle-label"]
+  })
+  const gamingModeStateLabel = new Gtk.Label({
+    label: "OFF",
+    css_classes: ["gaming-toggle-state"]
+  })
+  const gamingModeInner = new Gtk.Box({
+    spacing: 6,
+    valign: Gtk.Align.CENTER
+  })
+  gamingModeInner.append(gamingModeIcon)
+  gamingModeInner.append(gamingModeLabel)
+  gamingModeInner.append(gamingModeStateLabel)
+
+  const gamingModeButton = new Gtk.Button({
+    css_classes: ["indicator", "gaming-toggle", "disabled"],
+    tooltip_text: "Toggle gaming mode • Super+Shift+G"
+  })
+  gamingModeButton.set_child(gamingModeInner)
+  gamingModeButton.connect("clicked", () => {
+    execAsync("/home/scelester/.local/bin/gaming-mode-toggle").catch(console.error)
+  })
+
+  const updateGamingMode = () => {
+    const state = getGamingModeState()
+    const enabled = state.enabled
+
+    gamingModeIcon.label = enabled ? "󰮯" : "󰊴"
+    gamingModeStateLabel.label = enabled ? "ON" : "OFF"
+    gamingModeButton.set_css_classes([
+      "indicator",
+      "gaming-toggle",
+      enabled ? "enabled" : "disabled"
+    ])
+    gamingModeButton.tooltip_text = `${state.title}\n${state.summary}\nArcade: ${state.arcadeDir}`
+  }
+  updateGamingMode()
+  subscribeGamingMode(() => updateGamingMode())
+
 
   const barWindow = (
     // Main Bar Window
@@ -436,6 +482,7 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
         end_widget={
           <box class="right-section" spacing={12}>
             <box class="system-indicators" spacing={2}>
+              {gamingModeButton}
 
 
               {/* Brightness with OSD */}

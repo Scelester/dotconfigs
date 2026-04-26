@@ -58,6 +58,9 @@ let exported: Gio.DBusExportedObject | null = null
 let nameOwnerId: number | null = null
 let popupWindow: Astal.Window | null = null
 
+const NOTIFICATION_EDGE_MARGIN = 16
+const NOTIFICATION_TOP_OFFSET = 56
+
 const notifyListeners = () => {
   listeners.forEach((fn) => fn())
 }
@@ -393,10 +396,10 @@ export default function Notifications(gdkmonitor: Gdk.Monitor) {
       <box
         valign={Gtk.Align.START}
         halign={Gtk.Align.END}
-        margin_top={16}
-        margin_end={16}
-        margin_start={16}
-        margin_bottom={16}
+        margin_top={NOTIFICATION_TOP_OFFSET}
+        margin_end={NOTIFICATION_EDGE_MARGIN}
+        margin_start={NOTIFICATION_EDGE_MARGIN}
+        margin_bottom={NOTIFICATION_EDGE_MARGIN}
       >
         {container}
       </box>

@@ -101,8 +101,8 @@ export default function GamingModeOverlay(gdkmonitor: Gdk.Monitor) {
   let animationFlip = false
   const playOverlaySound = (enabled: boolean) => {
     const command = enabled
-      ? "sh -c 'command -v canberra-gtk-play >/dev/null 2>&1 && canberra-gtk-play -i complete >/dev/null 2>&1 || paplay /usr/share/sounds/freedesktop/stereo/device-added.oga >/dev/null 2>&1 || true'"
-      : "sh -c 'command -v canberra-gtk-play >/dev/null 2>&1 && canberra-gtk-play -i service-logout >/dev/null 2>&1 || paplay /usr/share/sounds/freedesktop/stereo/device-removed.oga >/dev/null 2>&1 || true'"
+      ? "sh -c 'command -v canberra-gtk-play >/dev/null 2>&1 && canberra-gtk-play -i complete >/dev/null 2>&1 || paplay /home/scelester/MyScripts/game_mode_on.wav >/dev/null 2>&1 || true'"
+      : "sh -c 'command -v canberra-gtk-play >/dev/null 2>&1 && canberra-gtk-play -i service-logout >/dev/null 2>&1 || paplay /home/scelester/MyScripts/game_mode_off.wav >/dev/null 2>&1 || true'"
     execAsync(command).catch(() => {})
   }
 

@@ -1,6 +1,11 @@
 {
 	"file_history":
 	[
+		"/home/scelester/Downloads/2082.json",
+		"/home/scelester/Megasync/extras/git.help",
+		"/home/scelester/ARCADE/.LauAdventure 1.0.1/www/package.json",
+		"/home/scelester/ARCADE/.LauAdventure 1.0.1/package.json",
+		"/home/scelester/.local/share/PrismLauncher/accounts.json",
 		"/home/scelester/Downloads/3934cb02-a195-4f28-90e6-ec83f5d1783b.conf",
 		"/home/scelester/Downloads/OneDrive_1_4-11-2026/dev-fe.conf",
 		"/home/scelester/Downloads/OneDrive_1_4-11-2026/dev-api.conf",
@@ -123,12 +128,7 @@
 		"/home/scelester/Games/Liars.Bar.v0.92/README.txt",
 		"/home/scelester/Games/Liars.Bar.v0.92/_INSTALL TUTORIAL.txt",
 		"/home/scelester/Games/Liars.Bar.v0.92/OneHack.Us.txt",
-		"/home/scelester/Downloads/Disco.Elysium.Update.Twitch.Companion/OneHack.Us.txt",
-		"/home/scelester/.config/hypr/settings/plugins.conf",
-		"/home/scelester/.config/sublime-text/Packages/Default/Preferences.sublime-settings",
-		"/home/scelester/.config/sublime-text/Packages/User/Preferences.sublime-settings",
-		"/home/scelester/Megasync/Python_start_l/4.Chapter_4_working_with_list_loop_indroduce.py",
-		"/home/scelester/gay_message.txt"
+		"/home/scelester/Downloads/Disco.Elysium.Update.Twitch.Companion/OneHack.Us.txt"
 	],
 	"folder_history":
 	[
@@ -140,11 +140,11 @@
 	"last_version": 4200,
 	"last_window_id": 3,
 	"log_indexing": false,
-	"next_update_check": 1776015443,
+	"next_update_check": 1777365721,
 	"settings":
 	{
-		"new_window_full_screen": false,
-		"new_window_height": 493.0,
+		"new_window_full_screen": true,
+		"new_window_height": 1024.0,
 		"new_window_maximized": true,
 		"new_window_position":
 		[
@@ -214,6 +214,11 @@
 			},
 			"file_history":
 			[
+				"/home/scelester/Downloads/2082.json",
+				"/home/scelester/Megasync/extras/git.help",
+				"/home/scelester/ARCADE/.LauAdventure 1.0.1/www/package.json",
+				"/home/scelester/ARCADE/.LauAdventure 1.0.1/package.json",
+				"/home/scelester/.local/share/PrismLauncher/accounts.json",
 				"/home/scelester/Downloads/3934cb02-a195-4f28-90e6-ec83f5d1783b.conf",
 				"/home/scelester/Downloads/OneDrive_1_4-11-2026/dev-fe.conf",
 				"/home/scelester/Downloads/OneDrive_1_4-11-2026/dev-api.conf",
@@ -336,15 +341,11 @@
 				"/home/scelester/Games/Liars.Bar.v0.92/README.txt",
 				"/home/scelester/Games/Liars.Bar.v0.92/_INSTALL TUTORIAL.txt",
 				"/home/scelester/Games/Liars.Bar.v0.92/OneHack.Us.txt",
-				"/home/scelester/Downloads/Disco.Elysium.Update.Twitch.Companion/OneHack.Us.txt",
-				"/home/scelester/.config/hypr/settings/plugins.conf",
-				"/home/scelester/Megasync/Python_start_l/4.Chapter_4_working_with_list_loop_indroduce.py",
-				"/home/scelester/gay_message.txt",
-				"/home/scelester/.config/hypr/hyprlock.conf"
+				"/home/scelester/Downloads/Disco.Elysium.Update.Twitch.Companion/OneHack.Us.txt"
 			],
 			"find":
 			{
-				"height": 35.0
+				"height": 47.0
 			},
 			"find_in_files":
 			{
@@ -359,6 +360,7 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"type",
 					"rm",
 					"mega:/$",
 					":/$ ",
@@ -580,7 +582,7 @@
 			{
 			}
 		},
-		"new_window_width": 940.0
+		"new_window_width": 960.0
 	},
 	"windows":
 	[
@@ -647,6 +649,11 @@
 			},
 			"file_history":
 			[
+				"/home/scelester/Downloads/2082.json",
+				"/home/scelester/Megasync/extras/git.help",
+				"/home/scelester/ARCADE/.LauAdventure 1.0.1/www/package.json",
+				"/home/scelester/ARCADE/.LauAdventure 1.0.1/package.json",
+				"/home/scelester/.local/share/PrismLauncher/accounts.json",
 				"/home/scelester/Downloads/3934cb02-a195-4f28-90e6-ec83f5d1783b.conf",
 				"/home/scelester/Downloads/OneDrive_1_4-11-2026/dev-fe.conf",
 				"/home/scelester/Downloads/OneDrive_1_4-11-2026/dev-api.conf",
@@ -769,15 +776,11 @@
 				"/home/scelester/Games/Liars.Bar.v0.92/README.txt",
 				"/home/scelester/Games/Liars.Bar.v0.92/_INSTALL TUTORIAL.txt",
 				"/home/scelester/Games/Liars.Bar.v0.92/OneHack.Us.txt",
-				"/home/scelester/Downloads/Disco.Elysium.Update.Twitch.Companion/OneHack.Us.txt",
-				"/home/scelester/.config/hypr/settings/plugins.conf",
-				"/home/scelester/Megasync/Python_start_l/4.Chapter_4_working_with_list_loop_indroduce.py",
-				"/home/scelester/gay_message.txt",
-				"/home/scelester/.config/hypr/hyprlock.conf"
+				"/home/scelester/Downloads/Disco.Elysium.Update.Twitch.Companion/OneHack.Us.txt"
 			],
 			"find":
 			{
-				"height": 35.0
+				"height": 47.0
 			},
 			"find_in_files":
 			{
@@ -792,6 +795,7 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"type",
 					"rm",
 					"mega:/$",
 					":/$ ",
@@ -895,7 +899,7 @@
 				]
 			},
 			"pinned_build_system": "",
-			"position": "0,1,0,0,0,0,0,933,486,1920,1080,0",
+			"position": "1,1,0,0,0,0,0,960,1024,1920,1080,0",
 			"replace":
 			{
 				"height": 66.0

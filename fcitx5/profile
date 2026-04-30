@@ -1,0 +1,29 @@
+[Groups/0]
+# Group Name
+Name=Default
+# Layout
+Default Layout=us
+# Default Input Method
+DefaultIM=m17n_ne_rom
+
+[Groups/0/Items/0]
+# Name
+Name=keyboard-us
+# Layout
+Layout=
+
+[Groups/0/Items/1]
+# Name
+Name=m17n_ne_rom
+# Layout
+Layout=
+
+[Groups/0/Items/2]
+# Name
+Name=m17n_ne_trad
+# Layout
+Layout=
+
+[GroupOrder]
+0=Default
+

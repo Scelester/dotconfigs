@@ -1,0 +1,18 @@
+remote_id = '52323484'
+kb_layout_type = ''
+size = [
+    0,
+    0,
+    0,
+    0,
+]
+fav = []
+
+[options]
+remote-menubar-drag-right = '1.0'
+remote-menubar-drag-left = '0.0'
+
+[ui_flutter]
+wm_RemoteDesktop = '{"width":null,"height":null,"offsetWidth":null,"offsetHeight":null,"isMaximized":true,"isFullscreen":false}'
+peer-sorting = 'Remote ID'
+wm_Main = '{"width":null,"height":null,"offsetWidth":null,"offsetHeight":null,"isMaximized":true,"isFullscreen":false}'

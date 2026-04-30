@@ -134,7 +134,6 @@ enable_mode() {
   local blur
   local vfr
   local hypridle_running=0
-  local copyq_running=0
   local mega_running=0
   local hyprshade_running=0
   local awww_running=0
@@ -151,7 +150,6 @@ enable_mode() {
   vfr="$(hypr_get_int "misc:vfr")"
 
   proc_running hypridle && hypridle_running=1
-  proc_running copyq && copyq_running=1
   proc_running mega-cmd-server && mega_running=1
   proc_running awww-daemon && awww_running=1
   command_exists hyprshade && hyprshade_running=1
@@ -169,13 +167,12 @@ enable_mode() {
   stop_proc mega-cmd-server
   stop_proc mega-cmd
   stop_proc megacmdserver
-  stop_proc copyq
   stop_proc hypridle
   stop_proc awww-daemon
 
   summary="Performance locked. Blur and animations are off. Background junk is paused."
   write_state 1 "Gaming mode enabled" "$summary" "$previous_profile" "$animations" "$blur" "$vfr" \
-    "$hypridle_running" "$copyq_running" "$mega_running" "$hyprshade_running" "$awww_running" \
+    "$hypridle_running" 0 "$mega_running" "$hyprshade_running" "$awww_running" \
     "${KILLED[@]}"
 }
 
@@ -185,7 +182,6 @@ disable_mode() {
   local blur
   local vfr
   local hypridle_running
-  local copyq_running
   local mega_running
   local hyprshade_running
   local awww_running
@@ -197,7 +193,6 @@ disable_mode() {
   blur="$(read_json_int blur)"
   vfr="$(read_json_int vfr)"
   hypridle_running="$(read_json_bool hypridleWasRunning)"
-  copyq_running="$(read_json_bool copyqWasRunning)"
   mega_running="$(read_json_bool megaWasRunning)"
   hyprshade_running="$(read_json_bool hyprshadeWasEnabled)"
   awww_running="$(read_json_bool awwwWasRunning)"
@@ -216,10 +211,6 @@ disable_mode() {
     start_in_bg hypridle -c "$HYPRIDLE_CONF"
   fi
 
-  if [ "$copyq_running" = "1" ] && ! proc_running copyq; then
-    start_in_bg copyq
-  fi
-
   if [ "$mega_running" = "1" ] && ! proc_running mega-cmd-server; then
     start_in_bg mega-cmd
   fi
@@ -233,7 +224,7 @@ disable_mode() {
 
   write_state 0 "Gaming mode disabled" "Desktop effects and background services restored." \
     "$previous_profile" "${animations:-1}" "${blur:-1}" "${vfr:-0}" \
-    "$hypridle_running" "$copyq_running" "$mega_running" "$hyprshade_running" "$awww_running"
+    "$hypridle_running" 0 "$mega_running" "$hyprshade_running" "$awww_running"
 }
 
 current_enabled="$(read_json_bool enabled)"

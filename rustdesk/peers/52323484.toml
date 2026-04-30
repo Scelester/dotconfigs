@@ -1,0 +1,63 @@
+password = []
+size = [
+    0,
+    0,
+    0,
+    0,
+]
+size_ft = [
+    0,
+    0,
+    0,
+    0,
+]
+size_pf = [
+    0,
+    0,
+    0,
+    0,
+]
+view_style = 'original'
+scroll_style = 'scrollauto'
+edge_scroll_edge_thickness = 100
+image_quality = 'balanced'
+custom_image_quality = [50]
+show_remote_cursor = false
+lock_after_session_end = false
+terminal-persistent = false
+privacy_mode = false
+allow_swap_key = false
+port_forwards = []
+direct_failures = 0
+disable_audio = false
+disable_clipboard = false
+enable-file-copy-paste = true
+show_quality_monitor = false
+follow_remote_cursor = false
+follow_remote_window = false
+keyboard_mode = 'map'
+view_only = false
+show_my_cursor = false
+sync-init-clipboard = false
+trackpad-speed = 100
+
+[options]
+swap-left-right-mouse = ''
+collapse_toolbar = 'Y'
+remote-menubar-drag-x = '0.500544069640914'
+codec-preference = 'auto'
+custom-fps = '30'
+i444 = ''
+zoom-cursor = ''
+
+[ui_flutter]
+wm_RemoteDesktop = '{"width":null,"height":null,"offsetWidth":null,"offsetHeight":null,"isMaximized":true,"isFullscreen":false}'
+
+[info]
+username = 'nitro'
+hostname = 'desktop-5j91gqq'
+platform = 'Windows'
+
+[transfer]
+write_jobs = []
+read_jobs = []

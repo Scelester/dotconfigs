@@ -18019,3 +18019,95 @@ Note: Hit end of (available) data during resync.
 2026-04-14T00:40:59 player: played "Post Malone, Swae Lee - Sunflower (Spider-Man Into the Spider-Verse).mp3"
 2026-04-14T00:40:59 player: played "OneRepublic - Rescue Me.mp3"
 2026-04-14T13:58:53 exception: Stored playlists are disabled
+2026-04-14T15:30:46 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-04-14T15:31:21 player: played "Post Malone, Swae Lee - Sunflower (Spider-Man Into the Spider-Verse).mp3"
+2026-04-14T21:04:59 exception: Stored playlists are disabled
+2026-04-14T21:05:07 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-04-16T01:29:44 player: played "Furfuri - Kuma Sagar.m4a"
+2026-04-16T01:29:44 player: played "Post Malone, Swae Lee - Sunflower (Spider-Man Into the Spider-Verse).mp3"
+2026-04-16T01:29:44 player: played "Furfuri - Kuma Sagar.m4a"
+2026-04-16T10:56:48 player: played "Post Malone, Swae Lee - Sunflower (Spider-Man Into the Spider-Verse).mp3"
+2026-04-16T11:00:30 player: played "[SPOTIFY-DOWNLOADER.COM] Smoke.mp3"
+2026-04-16T11:04:12 player: played "21 Savage, Travis Scott, Metro Boomin - née-nah (Official Audio).mp3"
+2026-04-16T11:36:40 player: played "21 Savage, Travis Scott, Metro Boomin - née-nah (Official Audio).mp3"
+2026-04-16T11:40:53 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-04-16T11:40:53 ffmpeg/aac: Could not update timestamps for skipped samples.
+2026-04-16T11:41:28 player: played "Bipul Chettri - Syndicate (Album - Maya).mp3"
+2026-04-16T11:42:40 player: played "It's Not Fair, I Found Love. - Liffty.m4a"
+2026-04-16T11:47:08 player: played "Starship - Nothing's Gonna Stop Us Now (Official Music Video) [HD].mp3"
+2026-04-16T11:49:01 player: played "Resentvul - Save Me (Official Music Video).mp3"
+2026-04-16T11:51:43 player: played "Post Malone, Swae Lee - Sunflower (Spider-Man Into the Spider-Verse).mp3"
+2026-04-16T11:55:56 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-04-16T11:55:56 ffmpeg/aac: Could not update timestamps for skipped samples.
+2026-04-16T11:56:30 player: played "Enrique Iglesias - Bailando ft. Descemer Bueno, Gente De Zona.mp3"
+2026-04-16T11:58:18 player: played "Nvm - DarriusTheGreatest.m4a"
+2026-04-16T12:02:30 player: played "Black Clover Ending 4 Full『four』by FAKY ｜ Lyrics.mp3"
+2026-04-16T12:05:19 player: played "[SPOTIFY-DOWNLOADER.COM] Wow. - Remix.mp3"
+2026-04-16T12:09:33 player: played "Skee-Lo - I Wish (Official Video).mp3"
+2026-04-16T12:14:27 player: played "Fleetwood Mac - Gypsy (Official Music Video) [HD].mp3"
+2026-04-16T12:18:35 player: played "Little Mix - Power (Lyrics) ft. Stormzy.mp3"
+2026-04-16T12:21:35 player: played "[SPOTIFY-DOWNLOADER.COM] eyes blue x heather - Slowed.mp3"
+2026-04-16T12:25:13 player: played "[SPOTIFY-DOWNLOADER.COM] Can't Feel My Face.mp3"
+2026-04-16T12:29:03 player: played "5 Seconds of Summer - Youngblood (Official Video) [-RJSbO8UZVY].mp3"
+2026-04-16T12:32:14 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-04-16T12:32:55 player: played "[SPOTIFY-DOWNLOADER.COM] Zero - From the Original Motion Picture _Ralph Breaks The Internet_.mp3"
+2026-04-16T12:35:33 player: played "I'm Sorry - Swell.m4a"
+2026-04-16T12:39:15 player: played "[SPOTIFY-DOWNLOADER.COM] Smoke.mp3"
+2026-04-16T12:43:48 player: played "The Weeknd - Starboy ft. Daft Punk (Official Video)_34Na4j8AVgA.mp3"
+2026-04-16T13:56:03 exception: Stored playlists are disabled
+2026-04-16T18:48:31 player: played "[SPOTIFY-DOWNLOADER.COM] September Song.mp3"
+2026-04-16T18:48:31 player: played "[SPOTIFY-DOWNLOADER.COM] September Song.mp3"
+2026-04-16T18:49:28 player: played "[SPOTIFY-DOWNLOADER.COM] September Song.mp3"
+2026-04-17T10:01:26 exception: Stored playlists are disabled
+2026-04-17T10:02:58 player: played "[SPOTIFY-DOWNLOADER.COM] September Song.mp3"
+2026-04-18T13:18:32 player: played "[SPOTIFY-DOWNLOADER.COM] The Way I Am.mp3"
+2026-04-18T13:18:32 player: played "[SPOTIFY-DOWNLOADER.COM] September Song.mp3"
+2026-04-18T13:21:40 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-04-18T13:21:40 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-04-18T19:26:37 exception: Stored playlists are disabled
+2026-04-18T19:38:32 exception: Stored playlists are disabled
+2026-04-18T19:40:47 player: played "Eurythmics, Annie Lennox, Dave Stewart - Sweet Dreams (Are Made Of This) (Official Video).mp3"
+2026-04-18T19:40:47 player: played "Eurythmics, Annie Lennox, Dave Stewart - Sweet Dreams (Are Made Of This) (Official Video).mp3"
+2026-04-18T19:40:47 player: played "Eurythmics, Annie Lennox, Dave Stewart - Sweet Dreams (Are Made Of This) (Official Video).mp3"
+2026-04-19T00:12:15 player: played "Eurythmics, Annie Lennox, Dave Stewart - Sweet Dreams (Are Made Of This) (Official Video).mp3"
+2026-04-19T00:16:00 player: played "Eurythmics, Annie Lennox, Dave Stewart - Sweet Dreams (Are Made Of This) (Official Video).mp3"
+2026-04-19T10:46:24 player: played "Eurythmics, Annie Lennox, Dave Stewart - Sweet Dreams (Are Made Of This) (Official Video).mp3"
+2026-04-19T23:41:19 player: played "Eurythmics, Annie Lennox, Dave Stewart - Sweet Dreams (Are Made Of This) (Official Video).mp3"
+2026-04-20T11:28:38 player: played "Eurythmics, Annie Lennox, Dave Stewart - Sweet Dreams (Are Made Of This) (Official Video).mp3"
+2026-04-20T18:31:49 player: played "Eurythmics, Annie Lennox, Dave Stewart - Sweet Dreams (Are Made Of This) (Official Video).mp3"
+2026-04-21T12:00:58 player: played "Eurythmics, Annie Lennox, Dave Stewart - Sweet Dreams (Are Made Of This) (Official Video).mp3"
+2026-04-22T13:16:49 player: played "Eurythmics, Annie Lennox, Dave Stewart - Sweet Dreams (Are Made Of This) (Official Video).mp3"
+2026-04-22T20:01:51 player: played "Eurythmics, Annie Lennox, Dave Stewart - Sweet Dreams (Are Made Of This) (Official Video).mp3"
+2026-04-22T23:58:37 player: played "Eurythmics, Annie Lennox, Dave Stewart - Sweet Dreams (Are Made Of This) (Official Video).mp3"
+2026-04-24T08:43:06 player: played "Eurythmics, Annie Lennox, Dave Stewart - Sweet Dreams (Are Made Of This) (Official Video).mp3"
+2026-04-24T08:46:58 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-04-24T08:46:58 ffmpeg/aac: Could not update timestamps for skipped samples.
+2026-04-24T08:47:39 player: played "The Weeknd - Starboy ft. Daft Punk (Official Video)_34Na4j8AVgA.mp3"
+2026-04-24T08:49:19 player: played "Off the Deep End - fenekot.m4a"
+2026-04-24T08:52:28 player: played "[SPOTIFY-DOWNLOADER.COM] Middle Of The Night.mp3"
+2026-04-24T08:56:18 player: played "5 Seconds of Summer - Youngblood (Official Video) [-RJSbO8UZVY].mp3"
+2026-04-24T09:01:04 player: played "[SPOTIFY-DOWNLOADER.COM] South of the Border (feat. Camila Cabello & Cardi B).mp3"
+2026-04-24T09:04:42 player: played "[SPOTIFY-DOWNLOADER.COM] Heathens.mp3"
+2026-04-24T09:08:06 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-04-24T09:08:06 ffmpeg/aac: Could not update timestamps for skipped samples.
+2026-04-24T09:08:44 player: played "Coldplay - Viva La Vida (Official Video).mp3"
+2026-04-24T09:09:56 player: played "It's Not Fair, I Found Love. - Liffty.m4a"
+2026-04-24T09:12:44 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-04-24T09:13:24 player: played "[SPOTIFY-DOWNLOADER.COM] When The Sun Goes Down.mp3"
+2026-04-24T09:16:02 player: played "I'm Sorry - Swell.m4a"
+2026-04-24T09:20:03 player: played "[SPOTIFY-DOWNLOADER.COM] I Will Follow You into the Dark(1).mp3"
+2026-04-24T09:23:43 player: played "Loud Luxury feat. brando - Body (Official Music Video)_IetIg7y5k3A.mp3"
+2026-04-24T09:27:16 player: played "Maroon 5 - What Lovers Do ft. SZA (Official Music Video)_5Wiio4KoGe8.mp3"
+2026-04-24T09:28:59 player: played "Kanye West - POWER.mp3"
+2026-04-24T09:33:01 player: played "Coldplay - Viva La Vida (Official Video).mp3"
+2026-04-24T09:36:36 player: played "[SPOTIFY-DOWNLOADER.COM] September Song.mp3"
+2026-04-24T09:39:56 player: played "Sacar - KT NEPALI ft. Chintu (LYRICS VIDEO) ll #lyricsvideo #sacar.mp3"
+2026-04-24T12:28:36 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-04-24T12:29:13 player: played "[SPOTIFY-DOWNLOADER.COM] When The Sun Goes Down.mp3"
+2026-04-24T12:31:50 player: played "I'm Sorry - Swell.m4a"
+2026-04-25T05:15:35 player: played "Fleetwood Mac - The Chain (Official Audio) [xwTPvcPYaOo](1).mp3"
+2026-04-25T20:58:17 player: played "Fleetwood Mac - The Chain (Official Audio) [xwTPvcPYaOo](1).mp3"
+2026-04-26T09:04:03 player: played "Fleetwood Mac - The Chain (Official Audio) [xwTPvcPYaOo](1).mp3"
+2026-04-26T21:04:24 player: played "Fleetwood Mac - The Chain (Official Audio) [xwTPvcPYaOo](1).mp3"
+                                                                                                     2026-04-28T16:16:11 player: played "Fleetwood Mac - The Chain (Official Audio) [xwTPvcPYaOo](1).mp3"
+2026-04-30T21:34:32 player: played "Fleetwood Mac - The Chain (Official Audio) [xwTPvcPYaOo](1).mp3"

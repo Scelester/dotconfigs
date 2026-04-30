@@ -19,8 +19,8 @@ class Asusctl extends Service {
     #mode: Mode = "Hybrid"
 
     async nextProfile() {
-        await sh("asusctl profile -n")
-        const profile = await sh("asusctl profile -p")
+        await sh("asusctl profile next")
+        const profile = await sh("asusctl profile get |  awk 'NR==1 {print $NF}'")
         const profilefilter = profile.split('\n').filter(line => line.includes("Active profile is"))[0].split(' ').slice(-1)[0];
         const p = profilefilter as Profile
         this.#profile = p
@@ -28,7 +28,7 @@ class Asusctl extends Service {
     }
 
     async setProfile(prof: Profile) {
-        await sh(`asusctl profile --profile-set ${prof}`)
+        await sh(`asusctl profile set ${prof}`)
         this.#profile = prof
         this.changed("profile")
     }
@@ -43,7 +43,7 @@ class Asusctl extends Service {
         super()
 
         if (this.available) {
-            sh("asusctl profile -p").then(p => this.#profile = p.split('\n').filter(line => line.includes("Active profile is"))[0].split(' ').slice(-1)[0] as Profile)
+            sh("asusctl profile get |  awk 'NR==1 {print $NF}'").then(p => this.#profile = p.split('\n').filter(line => line.includes("Active profile is"))[0].split(' ').slice(-1)[0] as Profile)
             sh("supergfxctl -g").then(m => this.#mode = m as Mode)
         }
     }

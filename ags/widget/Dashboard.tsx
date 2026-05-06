@@ -35,6 +35,13 @@ type NotificationEntry = {
   timestamp: number
 }
 
+type NotificationThread = {
+  app: string
+  summary: string
+  items: NotificationEntry[]
+  latestTimestamp: number
+}
+
 type PlaybackItem = {
   id: number
   name: string
@@ -110,22 +117,20 @@ const fallbackWindows: WindowInfo[] = [
   }
 ]
 
-const MODAL_WIDTH = 1450
-const MODAL_HEIGHT = 930
+const MODAL_WIDTH = 1572
+const MODAL_HEIGHT = 970
 const PROFILE_CARD_HEIGHT = 316
 const POWER_CARD_HEIGHT = 176
 const UTILITY_CARD_HEIGHT = 236
 const METRICS_CARD_HEIGHT = 292
 const CONTROLS_CARD_HEIGHT = 272
 const STORAGE_CARD_HEIGHT = 118
-const NOTIFICATION_CARD_HEIGHT = 526
-const WINDOWS_CARD_HEIGHT = 356
+const NOTIFICATION_CARD_HEIGHT = 932
 const COLUMN_GAP = 14
 const LEFT_COLUMN_WIDTH = 322
-const RIGHT_COLUMN_WIDTH = 408
+const RIGHT_COLUMN_WIDTH = 530
 const CENTER_COLUMN_WIDTH = MODAL_WIDTH - LEFT_COLUMN_WIDTH - RIGHT_COLUMN_WIDTH - COLUMN_GAP * 2 - 32
-const NOTIFICATION_LIST_HEIGHT = 460
-const WINDOWS_LIST_HEIGHT = 292
+const NOTIFICATION_LIST_HEIGHT = 866
 const STORAGE_LIST_HEIGHT = 54
 const PLAYBACK_LIST_HEIGHT = 118
 const GAUGE_SIZE = 76
@@ -134,6 +139,14 @@ const STORAGE_EXCLUDED = ["tmpfs", "devtmpfs", "overlay", "squashfs"]
 const STORAGE_WHITELIST = ["/", "/home", "/home/scelester/Container"]
 const NOTIFICATION_HISTORY_LIMIT = 500
 const POWER_PROFILE_ORDER = ["performance", "balanced", "power-saver"] as const
+const DASHBOARD_OPEN_DURATION_MS = 260
+const DASHBOARD_CLOSE_DURATION_MS = 220
+const DASHBOARD_LIVE_REFRESH_MS = 2400
+const WIFI_CACHE_MS = 12000
+const UPTIME_CACHE_MS = 60000
+const UPDATES_CACHE_MS = 15 * 60 * 1000
+const MEDIA_CACHE_MS = 2500
+const GPU_CACHE_MS = 5000
 
 const prettyMount = (mount: string) => {
   if (mount === "/") return "/"
@@ -149,15 +162,24 @@ const clampPercent = (value: number) => {
 
 const decodeBuffer = (bytes: Uint8Array) => new TextDecoder().decode(bytes)
 
+const readTextFile = (path: string) => {
+  try {
+    const [ok, data] = GLib.file_get_contents(path)
+    if (ok && data) return decodeBuffer(data)
+  } catch {}
+
+  return ""
+}
+
 const safePoll = <T,>(init: T, interval: number, fn: (prev: T) => T | Promise<T>) =>
-  createPoll(init, interval, async (prev) => {
-    try {
-      return await fn(prev)
-    } catch (err) {
-      console.error("Dashboard poll failed:", err)
-      return prev
-    }
-  })
+  createPoll(init, interval, (prev) =>
+    Promise.resolve()
+      .then(() => fn(prev))
+      .catch((err) => {
+        console.error("Dashboard poll failed:", err)
+        return prev
+      })
+  )
 
 const titleCaseProfile = (name: string) =>
   name
@@ -169,6 +191,32 @@ const formatTimeShort = (ts: number) => {
   if (!Number.isFinite(ts)) return "--:--"
   const d = new Date(ts)
   return d.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })
+}
+
+const notificationThreadKey = (entry: Pick<NotificationEntry, "app" | "summary">) =>
+  `${entry.app.trim().toLowerCase()}::${entry.summary.trim().toLowerCase()}`
+
+const groupNotifications = (items: NotificationEntry[]): NotificationThread[] => {
+  const groups = new Map<string, NotificationThread>()
+
+  items.forEach((item) => {
+    const key = notificationThreadKey(item)
+    const existing = groups.get(key)
+
+    if (existing) {
+      existing.items.push(item)
+      return
+    }
+
+    groups.set(key, {
+      app: item.app,
+      summary: item.summary || "(no title)",
+      items: [item],
+      latestTimestamp: item.timestamp
+    })
+  })
+
+  return Array.from(groups.values())
 }
 
 const formatBytes = (bytes: number) => {
@@ -188,21 +236,45 @@ const formatSpeed = (bps: number) => {
   return `${abs.toFixed(0)} B/s`
 }
 
+const formatUptimeSeconds = (totalSeconds: number) => {
+  const days = Math.floor(totalSeconds / 86400)
+  const hours = Math.floor((totalSeconds % 86400) / 3600)
+  const minutes = Math.floor((totalSeconds % 3600) / 60)
+
+  if (days > 0) return `up ${days}d ${hours}h`
+  if (hours > 0) return `up ${hours}h ${minutes}m`
+  return `up ${minutes}m`
+}
+
 const setLabelIfChanged = (label: Gtk.Label, value: string) => {
   if (label.label === value) return
   label.label = value
 }
 
-const runDashboardCommand = (command: string) => {
-  hideDashboard()
+const runDashboardCommand = (command: string, hideAfter = true) => {
+  if (hideAfter) hideDashboard()
   execAsync(command).catch((err) => console.error(`Dashboard command failed: ${command}`, err))
 }
+
+const TOGGLE_NIGHT_LIGHT_COMMAND =
+  "sh -lc 'if pgrep -x gammastep >/dev/null; then pkill -x gammastep; elif command -v gammastep >/dev/null; then gammastep -O 4500 >/dev/null 2>&1 & disown; else exit 1; fi'"
+
+const TOGGLE_KEYBOARD_BACKLIGHT_COMMAND =
+  "sh -lc 'if [ -x /usr/bin/toggle-laptop-kb ]; then /usr/bin/toggle-laptop-kb; else exit 1; fi'"
 
 const notificationHistory: NotificationEntry[] = []
 const notificationListeners = new Set<() => void>()
 let notificationWatcherStarted = false
 let notificationStoreLoaded = false
 let lastNotificationId = 0
+const uptimeCache = { value: "up 0m", timestamp: 0 }
+const updatesCache = { value: "Updates: n/a", timestamp: 0 }
+const mediaCache = { value: "No media", timestamp: 0 }
+const wifiCache = { value: "", timestamp: 0 }
+const gpuCache = {
+  value: { pct: 0, detail: "GPU N/A" },
+  timestamp: 0
+}
 
 const nextNotificationId = () => {
   const now = Date.now()
@@ -479,7 +551,7 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
 
   const windowsBox = new Gtk.Box({
     orientation: Gtk.Orientation.VERTICAL,
-    spacing: 8,
+    spacing: 6,
     css_classes: ["dashboard-list"]
   })
   const storageBox = new Gtk.Box({
@@ -506,12 +578,6 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
     xalign: 1,
     halign: Gtk.Align.END
   })
-  const windowsCount = new Gtk.Label({
-    label: "0 windows",
-    css_classes: ["card-kicker"],
-    xalign: 1,
-    halign: Gtk.Align.END
-  })
   const storageSummary = new Gtk.Label({
     label: "Mounts",
     css_classes: ["card-kicker"],
@@ -534,16 +600,6 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
     vscrollbar_policy: Gtk.PolicyType.AUTOMATIC
   })
   notificationScroll.set_child(notificationBox)
-
-  const windowsScroll = new Gtk.ScrolledWindow({
-    vexpand: false,
-    min_content_height: WINDOWS_LIST_HEIGHT,
-    max_content_height: WINDOWS_LIST_HEIGHT,
-    height_request: WINDOWS_LIST_HEIGHT,
-    hscrollbar_policy: Gtk.PolicyType.NEVER,
-    vscrollbar_policy: Gtk.PolicyType.AUTOMATIC
-  })
-  windowsScroll.set_child(windowsBox)
 
   const storageScroll = new Gtk.ScrolledWindow({
     vexpand: false,
@@ -821,7 +877,7 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
     adjustment: brightnessAdjustment,
     draw_value: false,
     hexpand: true,
-    css_classes: ["control-slider"]
+    css_classes: ["control-slider", "brightness-slider"]
   })
   brightnessScale.connect("value-changed", (scale) => {
     if (brightnessSync) return
@@ -1186,8 +1242,12 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
   let lastCpu = { idle: 0, total: 0 }
   const readCpuUsage = async () => {
     try {
-      const stat = await execAsync("grep 'cpu ' /proc/stat")
-      const parts = stat.trim().split(/\s+/).slice(1).map((n) => parseInt(n, 10))
+      const statLine = readTextFile("/proc/stat")
+        .split("\n")
+        .find((line) => line.startsWith("cpu "))
+      if (!statLine) return 0
+
+      const parts = statLine.trim().split(/\s+/).slice(1).map((n) => parseInt(n, 10))
       const idle = (parts[3] || 0) + (parts[4] || 0)
       const total = parts.reduce((a, b) => a + b, 0)
       if (lastCpu.total === 0) {
@@ -1207,12 +1267,10 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
 
   const readRamUsage = async () => {
     try {
-      const out = await execAsync(
-        "awk '/MemTotal/ {t=$2} /MemAvailable/ {a=$2} END {print (t-a)\" \"t}' /proc/meminfo"
-      )
-      const [usedStr, totalStr] = out.trim().split(/\s+/)
-      const used = parseInt(usedStr, 10)
-      const total = parseInt(totalStr, 10)
+      const meminfo = readTextFile("/proc/meminfo")
+      const total = parseInt(meminfo.match(/^MemTotal:\s+(\d+)/m)?.[1] || "0", 10)
+      const available = parseInt(meminfo.match(/^MemAvailable:\s+(\d+)/m)?.[1] || "0", 10)
+      const used = Math.max(0, total - available)
       if (!total || Number.isNaN(total)) return { pct: 0, used: 0, total: 0 }
       return {
         pct: clampPercent((used / total) * 100),
@@ -1272,22 +1330,30 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
   }
 
   const readWifiName = async () => {
+    const now = Date.now()
+    if (now - wifiCache.timestamp < WIFI_CACHE_MS) return wifiCache.value
+
+    let ssid = ""
+
     try {
       const out = await execAsync("iwgetid -r")
-      const ssid = out.trim()
-      if (ssid) return ssid
+      ssid = out.trim()
     } catch {}
 
-    try {
-      const out = await execAsync("nmcli -t -f active,ssid dev wifi")
-      const line = out
-        .split("\n")
-        .map((entry) => entry.trim())
-        .find((entry) => entry.startsWith("yes:"))
-      if (line) return line.split(":").slice(1).join(":").trim()
-    } catch {}
+    if (!ssid) {
+      try {
+        const out = await execAsync("nmcli -t -f active,ssid dev wifi")
+        const line = out
+          .split("\n")
+          .map((entry) => entry.trim())
+          .find((entry) => entry.startsWith("yes:"))
+        if (line) ssid = line.split(":").slice(1).join(":").trim()
+      } catch {}
+    }
 
-    return ""
+    wifiCache.value = ssid
+    wifiCache.timestamp = now
+    return ssid
   }
 
   let lastNet = { rx: 0, tx: 0, ts: 0 }
@@ -1298,7 +1364,7 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
     } catch {}
 
     try {
-      const out = await execAsync("cat /proc/net/dev")
+      const out = readTextFile("/proc/net/dev")
       const lines = out.split("\n").slice(2).filter((line) => line.trim().length > 0)
       let rx = 0
       let tx = 0
@@ -1327,7 +1393,6 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
       netHistoryUp.push(up)
       if (netHistoryDown.length > MAX_NET_SAMPLES) netHistoryDown.shift()
       if (netHistoryUp.length > MAX_NET_SAMPLES) netHistoryUp.shift()
-      netGraph.queue_draw()
 
       return { down, up, ssid }
     } catch (err) {
@@ -1337,24 +1402,43 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
   }
 
   const readUptime = async () => {
+    const now = Date.now()
+    if (now - uptimeCache.timestamp < UPTIME_CACHE_MS) return uptimeCache.value
+
     try {
-      return (await execAsync("uptime -p")).trim()
+      const seconds = Math.floor(parseFloat(readTextFile("/proc/uptime").split(/\s+/)[0] || "0"))
+      if (seconds > 0) {
+        uptimeCache.value = formatUptimeSeconds(seconds)
+        uptimeCache.timestamp = now
+        return uptimeCache.value
+      }
+    } catch {}
+
+    try {
+      uptimeCache.value = (await execAsync("uptime -p")).trim()
     } catch {
-      const seconds = Math.floor(GLib.get_monotonic_time() / 1_000_000)
-      const hours = Math.floor(seconds / 3600)
-      const minutes = Math.floor((seconds % 3600) / 60)
-      return `up ${hours}h ${minutes}m`
+      uptimeCache.value = formatUptimeSeconds(Math.floor(GLib.get_monotonic_time() / 1_000_000))
     }
+
+    uptimeCache.timestamp = now
+    return uptimeCache.value
   }
 
   const readUpdates = async () => {
+    const now = Date.now()
+    if (now - updatesCache.timestamp < UPDATES_CACHE_MS) return updatesCache.value
+
     try {
       const out = await execAsync("/usr/bin/checkupdates")
-      if (!out.trim()) return "Updates: 0"
-      return `Updates: ${out.trim().split("\n").filter(Boolean).length}`
+      updatesCache.value = out.trim()
+        ? `Updates: ${out.trim().split("\n").filter(Boolean).length}`
+        : "Updates: 0"
     } catch {
-      return "Updates: n/a"
+      updatesCache.value = "Updates: n/a"
     }
+
+    updatesCache.timestamp = now
+    return updatesCache.value
   }
 
   const readMpcTrack = async () => {
@@ -1377,6 +1461,9 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
   }
 
   const readMedia = async () => {
+    const now = Date.now()
+    if (now - mediaCache.timestamp < MEDIA_CACHE_MS) return mediaCache.value
+
     let playerctlTrack = ""
     let playerctlStatus = "NoPlayer"
 
@@ -1388,23 +1475,61 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
             "playerctl metadata --format '{{title}} — {{artist}}' --ignore-player=chromium"
           )
         ).trim()
-        if (playerctlStatus === "Playing" && playerctlTrack) return playerctlTrack
+        if (playerctlStatus === "Playing" && playerctlTrack) {
+          mediaCache.value = playerctlTrack
+          mediaCache.timestamp = now
+          return mediaCache.value
+        }
       }
     } catch {}
 
     const mpc = await readMpcTrack()
     if (mpc) {
       const suffix = mpc.status === "paused" ? " · mpc (paused)" : " · mpc"
-      if (mpc.status === "playing") return `${mpc.title}${suffix}`
-      if (!playerctlTrack) return `${mpc.title}${suffix}`
+      if (mpc.status === "playing") {
+        mediaCache.value = `${mpc.title}${suffix}`
+        mediaCache.timestamp = now
+        return mediaCache.value
+      }
+      if (!playerctlTrack) {
+        mediaCache.value = `${mpc.title}${suffix}`
+        mediaCache.timestamp = now
+        return mediaCache.value
+      }
     }
 
-    if (playerctlTrack) return playerctlTrack
-    return "No media"
+    mediaCache.value = playerctlTrack || "No media"
+    mediaCache.timestamp = now
+    return mediaCache.value
   }
 
   const readGpu = async () => {
+    const now = Date.now()
+    if (now - gpuCache.timestamp < GPU_CACHE_MS) return gpuCache.value
+
     try {
+      for (const node of ["renderD128", "renderD129", "renderD130"]) {
+        const trimmed =
+          readTextFile(`/sys/class/drm/${node}/device/gpu_busy_percent`).trim() ||
+          readTextFile(`/sys/class/drm/${node}/device/gt_busy_percent`).trim()
+        if (trimmed) {
+          gpuCache.value = { pct: clampPercent(parseInt(trimmed, 10)), detail: node }
+          gpuCache.timestamp = now
+          return gpuCache.value
+        }
+      }
+
+      for (const card of [0, 1, 2]) {
+        const trimmed =
+          readTextFile(`/sys/class/drm/card${card}/device/gpu_busy_percent`).trim() ||
+          readTextFile(`/sys/class/drm/card${card}/device/gt_busy_percent`).trim()
+        if (trimmed) {
+          gpuCache.value = { pct: clampPercent(parseInt(trimmed, 10)), detail: `card${card}` }
+          gpuCache.timestamp = now
+          return gpuCache.value
+        }
+      }
+
       try {
         const out = await execAsync(
           "/usr/bin/nvidia-smi --query-gpu=utilization.gpu,memory.used,memory.total --format=csv,noheader,nounits"
@@ -1414,43 +1539,28 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
           const pct = parseInt(parts[0] || "0", 10)
           const used = parseInt(parts[1] || "0", 10)
           const total = parseInt(parts[2] || "0", 10)
-          return {
+          gpuCache.value = {
             pct: clampPercent(pct),
             detail: total ? `${used}/${total}MB` : "NVIDIA"
           }
+          gpuCache.timestamp = now
+          return gpuCache.value
         }
       } catch {}
 
-      for (const node of ["renderD128", "renderD129", "renderD130"]) {
-        try {
-          const busy = await execAsync(
-            `cat /sys/class/drm/${node}/device/gpu_busy_percent 2>/dev/null || cat /sys/class/drm/${node}/device/gt_busy_percent 2>/dev/null || echo ""`
-          )
-          const trimmed = busy.trim()
-          if (trimmed) return { pct: clampPercent(parseInt(trimmed, 10)), detail: node }
-        } catch {}
-      }
-
-      for (const card of [0, 1, 2]) {
-        try {
-          const busy = await execAsync(
-            `cat /sys/class/drm/card${card}/device/gpu_busy_percent 2>/dev/null || cat /sys/class/drm/card${card}/device/gt_busy_percent 2>/dev/null || echo ""`
-          )
-          const trimmed = busy.trim()
-          if (trimmed) return { pct: clampPercent(parseInt(trimmed, 10)), detail: `card${card}` }
-        } catch {}
-      }
-
-      return { pct: 0, detail: "GPU N/A" }
+      gpuCache.value = { pct: 0, detail: "GPU N/A" }
+      gpuCache.timestamp = now
+      return gpuCache.value
     } catch (err) {
       console.error("GPU read failed:", err)
-      return { pct: 0, detail: "GPU N/A" }
+      return gpuCache.value
     }
   }
 
   let lastStorage = { totalPct: 0, volumes: [] as DiskVolume[] }
   let lastStorageKey = ""
   let lastWindowsKey = ""
+  let lastNotificationKey = ""
   let dashboardRefreshActive = false
   let dashboardRefreshQueued = false
 
@@ -1465,14 +1575,17 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
       const ramTotalGiB = ram.total / 1024 / 1024
       ramGauge.update(ram.pct, `${ramUsedGiB.toFixed(1)} / ${ramTotalGiB.toFixed(1)} GiB`)
       setLabelIfChanged(ramMetaValue, `${ramUsedGiB.toFixed(1)} / ${ramTotalGiB.toFixed(1)} GiB`)
-
-      const gpu = await readGpu()
-      gpuGauge.update(gpu.pct, gpu.detail)
-      setLabelIfChanged(gpuMetaValue, gpu.detail || "GPU N/A")
       storageGauge.update(
         lastStorage.totalPct,
         lastStorage.volumes.length ? `${lastStorage.volumes.length} mounts` : "n/a"
       )
+
+      void readGpu()
+        .then((gpu) => {
+          gpuGauge.update(gpu.pct, gpu.detail)
+          setLabelIfChanged(gpuMetaValue, gpu.detail || "GPU N/A")
+        })
+        .catch((err) => console.error("GPU refresh failed:", err))
     } catch (err) {
       console.error("Gauge refresh failed:", err)
     }
@@ -1523,9 +1636,13 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
 
   const refreshMeta = async () => {
     try {
-      setLabelIfChanged(uptimeValue, await readUptime())
-      setLabelIfChanged(updatesValue, await readUpdates())
-      setLabelIfChanged(mediaValue, await readMedia())
+      const [uptime, media] = await Promise.all([readUptime(), readMedia()])
+      setLabelIfChanged(uptimeValue, uptime)
+      setLabelIfChanged(mediaValue, media)
+
+      void readUpdates()
+        .then((updates) => setLabelIfChanged(updatesValue, updates))
+        .catch((err) => console.error("Updates refresh failed:", err))
     } catch (err) {
       console.error("Meta refresh failed:", err)
     }
@@ -1533,8 +1650,15 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
 
   const refreshNotifications = () => {
     const items = getNotificationHistory()
+    const threads = groupNotifications(items)
+    const notificationKey = items.length
+      ? items.map((item) => `${item.id}:${item.timestamp}`).join("|")
+      : "empty"
     notificationCount.label = items.length === 1 ? "1 item" : `${items.length} items`
     notificationClear.sensitive = items.length > 0
+
+    if (notificationKey === lastNotificationKey) return
+    lastNotificationKey = notificationKey
 
     let child = notificationBox.get_first_child()
     while (child) {
@@ -1553,8 +1677,9 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
       return
     }
 
-    items.forEach((item, index) => {
-      const isRecent = Date.now() - item.timestamp < 15 * 60 * 1000 || index < 3
+    threads.forEach((thread, index) => {
+      const newest = thread.items[0]
+      const isRecent = Date.now() - thread.latestTimestamp < 15 * 60 * 1000 || index < 3
       const row = new Gtk.Box({
         orientation: Gtk.Orientation.VERTICAL,
         spacing: 10,
@@ -1565,7 +1690,7 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
       const iconWrap = new Gtk.Box({ css_classes: ["notification-app-icon-wrap"] })
       iconWrap.append(
         new Gtk.Image({
-          icon_name: resolveWindowIcon(item.app, item.summary),
+          icon_name: resolveWindowIcon(thread.app, thread.summary),
           pixel_size: 16,
           css_classes: ["notification-app-icon"]
         })
@@ -1578,7 +1703,7 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
       })
       meta.append(
         new Gtk.Label({
-          label: item.app,
+          label: thread.app,
           css_classes: ["notification-app"],
           xalign: 0,
           ellipsize: Pango.EllipsizeMode.END,
@@ -1587,7 +1712,7 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
       )
       meta.append(
         new Gtk.Label({
-          label: item.summary || "(no title)",
+          label: thread.summary || "(no title)",
           css_classes: ["notification-title"],
           xalign: 0,
           ellipsize: Pango.EllipsizeMode.END,
@@ -1596,7 +1721,7 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
       )
 
       const timeLabel = new Gtk.Label({
-        label: formatTimeShort(item.timestamp),
+        label: formatTimeShort(thread.latestTimestamp),
         css_classes: ["notification-time"],
         xalign: 1,
         halign: Gtk.Align.END
@@ -1608,50 +1733,116 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
         visible: isRecent
       })
 
+      const threadCount = new Gtk.Label({
+        label: thread.items.length > 1 ? `${thread.items.length} replies` : "single",
+        css_classes: ["notification-thread-count"]
+      })
+
       const dismissBtn = new Gtk.Button({
         css_classes: ["notification-dismiss"],
-        tooltip_text: "Dismiss"
+        tooltip_text:
+          thread.items.length > 1 ? "Dismiss this thread" : "Dismiss this notification"
       })
       dismissBtn.set_child(new Gtk.Image({ icon_name: "window-close-symbolic", pixel_size: 14 }))
-      dismissBtn.connect("clicked", () => removeNotification(item.id))
+      dismissBtn.connect("clicked", () => thread.items.forEach((entry) => removeNotification(entry.id)))
 
       header.append(iconWrap)
       header.append(meta)
       header.append(newBadge)
+      header.append(threadCount)
       header.append(timeLabel)
       header.append(dismissBtn)
 
-      const body = new Gtk.Label({
-        label: item.body,
-        css_classes: ["notification-body"],
-        xalign: 0,
-        wrap: true,
-        wrap_mode: Pango.WrapMode.WORD_CHAR,
-        max_width_chars: 44,
-        visible: Boolean(item.body)
-      })
-
-      row.add_controller(
-        (() => {
-          const click = new Gtk.GestureClick()
-          click.connect("released", () => removeNotification(item.id))
-          return click
-        })()
-      )
-
       row.append(header)
-      row.append(body)
+
+      if (thread.items.length === 1) {
+        const body = new Gtk.Label({
+          label: newest.body,
+          css_classes: ["notification-body"],
+          xalign: 0,
+          wrap: true,
+          wrap_mode: Pango.WrapMode.WORD_CHAR,
+          max_width_chars: 44,
+          visible: Boolean(newest.body)
+        })
+
+        row.add_controller(
+          (() => {
+            const click = new Gtk.GestureClick()
+            click.connect("released", () => removeNotification(newest.id))
+            return click
+          })()
+        )
+
+        row.append(body)
+      } else {
+        const repliesBox = new Gtk.Box({
+          orientation: Gtk.Orientation.VERTICAL,
+          spacing: 6,
+          css_classes: ["notification-thread-list"]
+        })
+
+        thread.items.forEach((entry) => {
+          const reply = new Gtk.Box({
+            orientation: Gtk.Orientation.VERTICAL,
+            spacing: 4,
+            css_classes: ["notification-thread-item"]
+          })
+
+          const replyHeader = new Gtk.Box({ spacing: 8, hexpand: true })
+          replyHeader.append(
+            new Gtk.Label({
+              label: formatTimeShort(entry.timestamp),
+              css_classes: ["notification-thread-time"],
+              xalign: 0
+            })
+          )
+
+          const replyDismiss = new Gtk.Button({
+            css_classes: ["notification-thread-dismiss"],
+            halign: Gtk.Align.END,
+            hexpand: true,
+            tooltip_text: "Dismiss this reply"
+          })
+          replyDismiss.set_child(new Gtk.Image({ icon_name: "window-close-symbolic", pixel_size: 12 }))
+          replyDismiss.connect("clicked", () => removeNotification(entry.id))
+          replyHeader.append(replyDismiss)
+
+          const replyBody = new Gtk.Label({
+            label: entry.body || "(no body)",
+            css_classes: ["notification-body", "notification-thread-body"],
+            xalign: 0,
+            wrap: true,
+            wrap_mode: Pango.WrapMode.WORD_CHAR,
+            max_width_chars: 42
+          })
+
+          reply.append(replyHeader)
+          reply.append(replyBody)
+          repliesBox.append(reply)
+        })
+
+        const threadScroll = new Gtk.ScrolledWindow({
+          min_content_height: Math.min(180, 66 * thread.items.length),
+          max_content_height: 180,
+          hscrollbar_policy: Gtk.PolicyType.NEVER,
+          vscrollbar_policy: Gtk.PolicyType.AUTOMATIC,
+          css_classes: ["notification-thread-scroll"]
+        })
+        threadScroll.set_child(repliesBox)
+
+        row.append(threadScroll)
+      }
+
       notificationBox.append(row)
     })
   }
 
   const renderWindows = (windows: WindowInfo[]) => {
-    windowsCount.label = windows.length === 1 ? "1 window" : `${windows.length} windows`
-
     renderList(windowsBox, windows, (item) => {
       const row = new Gtk.Box({
         orientation: Gtk.Orientation.HORIZONTAL,
-        spacing: 10,
+        spacing: 8,
         css_classes: ["dashboard-list-row", "windows-row"],
         hexpand: true
       })
@@ -1663,14 +1854,14 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
       iconWrap.append(
         new Gtk.Image({
           icon_name: resolveWindowIcon(item.app, item.title),
-          pixel_size: 17,
+          pixel_size: 22,
           css_classes: ["window-app-icon"]
         })
       )
 
       const meta = new Gtk.Box({
         orientation: Gtk.Orientation.VERTICAL,
-        spacing: 2,
+        spacing: 1,
         hexpand: true
       })
       meta.append(
@@ -1679,7 +1870,7 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
           css_classes: ["window-app"],
           xalign: 0,
           ellipsize: Pango.EllipsizeMode.END,
-          max_width_chars: 22
+          max_width_chars: 18
         })
       )
       meta.append(
@@ -1688,7 +1879,7 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
           css_classes: ["window-title"],
           xalign: 0,
           ellipsize: Pango.EllipsizeMode.END,
-          max_width_chars: 30
+          max_width_chars: 40
         })
       )
 
@@ -1775,18 +1966,6 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
 
   const actionButtons = [
     {
-      icon: "󰆍",
-      label: "Terminal",
-      command:
-        "sh -lc 'if command -v kitty >/dev/null; then kitty; elif command -v foot >/dev/null; then foot; elif command -v alacritty >/dev/null; then alacritty; else exit 1; fi'"
-    },
-    {
-      icon: "󰉋",
-      label: "Files",
-      command:
-        "sh -lc 'if command -v thunar >/dev/null; then thunar; elif command -v nautilus >/dev/null; then nautilus; elif command -v dolphin >/dev/null; then dolphin; else exit 1; fi'"
-    },
-    {
       icon: "󰕾",
       label: "Audio",
       command:
@@ -1831,17 +2010,7 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
       {profileStatus}
       {profileBio}
       <box class="quick-actions" spacing={8} homogeneous={true}>
-        {actionButtons.slice(0, 2).map((action) => (
-          <button class="quick-action" onClicked={() => runDashboardCommand(action.command)}>
-            <box orientation={Gtk.Orientation.VERTICAL} spacing={4} halign={Gtk.Align.CENTER}>
-              <label label={action.icon} class="quick-action-icon" />
-              <label label={action.label} class="quick-action-label" />
-            </box>
-          </button>
-        ))}
-      </box>
-      <box class="quick-actions" spacing={8} homogeneous={true}>
-        {actionButtons.slice(2).map((action) => (
+        {actionButtons.map((action) => (
           <button class="quick-action" onClicked={() => runDashboardCommand(action.command)}>
             <box orientation={Gtk.Orientation.VERTICAL} spacing={4} halign={Gtk.Align.CENTER}>
               <label label={action.icon} class="quick-action-icon" />
@@ -1894,10 +2063,16 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
 
   const utilityActions = [
     {
-      icon: "󰖟",
-      label: "Browser",
-      command:
-        "sh -lc 'if command -v firefox >/dev/null; then firefox; elif command -v chromium >/dev/null; then chromium; else exit 1; fi'"
+      icon: "󰖔",
+      label: "Night Light",
+      command: TOGGLE_NIGHT_LIGHT_COMMAND,
+      hideAfter: false
+    },
+    {
+      icon: "󰌌",
+      label: "Keyboard Toggle",
+      command: TOGGLE_KEYBOARD_BACKLIGHT_COMMAND,
+      hideAfter: false
     },
     {
       icon: "󰦝",
@@ -1906,28 +2081,16 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
         "sh -lc 'if command -v mullvad-vpn >/dev/null; then mullvad-vpn; elif command -v protonvpn-app >/dev/null; then protonvpn-app; elif command -v nm-connection-editor >/dev/null; then nm-connection-editor; elif command -v kitty >/dev/null && command -v nordvpn >/dev/null; then kitty -e nordvpn; elif command -v foot >/dev/null && command -v nordvpn >/dev/null; then foot -e nordvpn; else exit 1; fi'"
     },
     {
-      icon: "󰈙",
-      label: "Obsidian",
-      command:
-        "sh -lc 'if command -v obsidian >/dev/null; then obsidian; else exit 1; fi'"
-    },
-    {
-      icon: "󰙯",
-      label: "Discord",
-      command:
-        "sh -lc 'if command -v discord >/dev/null; then discord; elif command -v vesktop >/dev/null; then vesktop; else exit 1; fi'"
-    },
-    {
-      icon: "󰨞",
-      label: "Neovim",
-      command:
-        "sh -lc 'if command -v nvim >/dev/null; then if command -v kitty >/dev/null; then kitty -e nvim; elif command -v foot >/dev/null; then foot -e nvim; elif command -v alacritty >/dev/null; then alacritty -e nvim; else exit 1; fi; else exit 1; fi'"
-    },
-    {
       icon: "󰌾",
       label: "Lock",
       command:
         "sh -lc 'if command -v hyprlock >/dev/null; then hyprlock; elif command -v loginctl >/dev/null; then loginctl lock-session; else exit 1; fi'"
+    },
+    {
+      icon: "󰤨",
+      label: "Wi-Fi",
+      command:
+        "sh -lc 'if command -v nmtui >/dev/null; then if command -v kitty >/dev/null; then kitty -e nmtui; elif command -v foot >/dev/null; then foot -e nmtui; elif command -v alacritty >/dev/null; then alacritty -e nmtui; else exit 1; fi; elif command -v nm-connection-editor >/dev/null; then nm-connection-editor; else exit 1; fi'"
     }
   ]
 
@@ -1939,16 +2102,19 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
       width_request={LEFT_COLUMN_WIDTH}
       height_request={UTILITY_CARD_HEIGHT}
     >
-      <label label="Launch Pad" class="card-title" xalign={0} />
+      <label label="System Actions" class="card-title" xalign={0} />
       <box class="utility-grid" orientation={Gtk.Orientation.VERTICAL} spacing={8}>
         {[
           utilityActions.slice(0, 2),
           utilityActions.slice(2, 4),
           utilityActions.slice(4, 6)
-        ].map((row) => (
+        ].filter((row) => row.length > 0).map((row) => (
           <box spacing={8} homogeneous={true}>
             {row.map((action) => (
-              <button class="utility-action" onClicked={() => runDashboardCommand(action.command)}>
+              <button
+                class="utility-action"
+                onClicked={() => runDashboardCommand(action.command, action.hideAfter ?? true)}
+              >
                 <box spacing={8} halign={Gtk.Align.CENTER}>
                   <label label={action.icon} class="utility-action-icon" />
                   <label label={action.label} class="utility-action-label" />
@@ -2095,22 +2261,6 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
     </box>
   )
 
-  const windowsCard = (
-    <box
-      class="dashboard-card activity-card"
-      orientation={Gtk.Orientation.VERTICAL}
-      spacing={10}
-      width_request={RIGHT_COLUMN_WIDTH}
-      height_request={WINDOWS_CARD_HEIGHT}
-    >
-      <box spacing={8} valign={Gtk.Align.CENTER}>
-        <label label="Recent Windows" class="card-title" xalign={0} hexpand={true} />
-        {windowsCount}
-      </box>
-      {windowsScroll}
-    </box>
-  )
-
   const surface = (
     <box
       class="dashboard-surface"
@@ -2149,7 +2299,6 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
           valign={Gtk.Align.START}
         >
           {notificationCard}
-          {windowsCard}
         </box>
       </box>
     </box>
@@ -2188,14 +2337,43 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
   })
   surfaceViewport.set_child(surfaceShell)
 
+  const surfaceRevealer = new Gtk.Revealer({
+    transition_type: Gtk.RevealerTransitionType.SLIDE_UP,
+    transition_duration: DASHBOARD_OPEN_DURATION_MS,
+    reveal_child: false
+  })
+  surfaceRevealer.set_child(surfaceViewport)
+
   const overlayStage = new Gtk.Fixed({
     hexpand: true,
     vexpand: true,
     css_classes: ["dashboard-overlay", "dashboard-stage"]
   })
-  overlayStage.put(surfaceViewport, surfaceX, surfaceY)
+  overlayStage.put(surfaceRevealer, surfaceX, surfaceY)
 
-  const overlay = overlayStage as Gtk.Widget
+  const closeButton = new Gtk.Button({
+    css_classes: ["dashboard-close"],
+    halign: Gtk.Align.END,
+    valign: Gtk.Align.START
+  })
+  closeButton.set_child(new Gtk.Image({ icon_name: "window-close-symbolic", pixel_size: 14 }))
+  closeButton.connect("clicked", () => hideDashboard())
+  const closeRevealer = new Gtk.Revealer({
+    transition_type: Gtk.RevealerTransitionType.CROSSFADE,
+    transition_duration: 160,
+    reveal_child: false
+  })
+  closeRevealer.set_child(closeButton)
+  overlayStage.put(closeRevealer, surfaceX + MODAL_WIDTH + 45, Math.max(0, surfaceY - 90))
+
+  const overlayRevealer = new Gtk.Revealer({
+    transition_type: Gtk.RevealerTransitionType.CROSSFADE,
+    transition_duration: 160,
+    reveal_child: false
+  })
+  overlayRevealer.set_child(overlayStage)
+
+  const overlay = overlayRevealer as Gtk.Widget
 
   const win = (
     <window
@@ -2229,21 +2407,41 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
         })
         self.add_controller(keyController)
 
-        GLib.timeout_add(GLib.PRIORITY_DEFAULT, 1800, () => {
-          if (self.visible) {
+        GLib.timeout_add(GLib.PRIORITY_DEFAULT, DASHBOARD_LIVE_REFRESH_MS, () => {
+          if (self.visible && isDashboardOpen) {
             void refreshLiveCards().catch((err) => console.error("Live dashboard refresh failed:", err))
           }
           return GLib.SOURCE_CONTINUE
         })
-
       }}
     >
       {overlay}
     </window>
   ) as Astal.Window
+  let hideTransitionId = 0
+  let refreshKickoffId = 0
+  let isDashboardOpen = false
 
-  win.connect("notify::visible", () => {
-    if (!win.visible) return
+  const clearHideTransition = () => {
+    if (!hideTransitionId) return
+    GLib.source_remove(hideTransitionId)
+    hideTransitionId = 0
+  }
+
+  const clearRefreshKickoff = () => {
+    if (!refreshKickoffId) return
+    GLib.source_remove(refreshKickoffId)
+    refreshKickoffId = 0
+  }
+
+  const presentDashboard = () => {
+    if (isDashboardOpen && win.visible) return
+
+    clearHideTransition()
+    clearRefreshKickoff()
+    isDashboardOpen = true
+
+    if (!win.visible) win.visible = true
 
     try {
       win.grab_focus()
@@ -2251,20 +2449,78 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
       console.error("Dashboard present failed:", err)
     }
 
-    void refreshDashboard().catch((err) => console.error("Visible dashboard refresh failed:", err))
-  })
+    GLib.idle_add(GLib.PRIORITY_DEFAULT_IDLE, () => {
+      overlayRevealer.reveal_child = true
+      return GLib.SOURCE_REMOVE
+    })
+
+    GLib.timeout_add(GLib.PRIORITY_DEFAULT, 24, () => {
+      if (!isDashboardOpen) return GLib.SOURCE_REMOVE
+      surfaceRevealer.reveal_child = true
+      closeRevealer.reveal_child = true
+      return GLib.SOURCE_REMOVE
+    })
+
+    refreshKickoffId = GLib.idle_add(GLib.PRIORITY_DEFAULT_IDLE, () => {
+      refreshKickoffId = 0
+      if (isDashboardOpen) {
+        void refreshDashboard().catch((err) =>
+          console.error("Visible dashboard refresh failed:", err)
+        )
+      }
+      return GLib.SOURCE_REMOVE
+    })
+  }
+
+  const dismissDashboard = () => {
+    if (!win.visible && !isDashboardOpen) return
+
+    isDashboardOpen = false
+    clearHideTransition()
+    clearRefreshKickoff()
+    surfaceRevealer.reveal_child = false
+    closeRevealer.reveal_child = false
+    overlayRevealer.reveal_child = false
+
+    hideTransitionId = GLib.timeout_add(
+      GLib.PRIORITY_DEFAULT,
+      DASHBOARD_CLOSE_DURATION_MS + 40,
+      () => {
+        hideTransitionId = 0
+        if (!isDashboardOpen) win.visible = false
+        return GLib.SOURCE_REMOVE
+      }
+    )
+  }
+
+  const toggleDashboardVisibility = () => {
+    if (isDashboardOpen || win.visible) {
+      dismissDashboard()
+      return
+    }
+
+    presentDashboard()
+  }
 
   const stopNotificationsListener = onNotificationUpdate(() => {
-    if (!win.visible) return
+    if (!isDashboardOpen) return
     GLib.idle_add(GLib.PRIORITY_DEFAULT_IDLE, () => {
       refreshNotifications()
       return GLib.SOURCE_REMOVE
     })
   })
 
-  win.connect("destroy", () => stopNotificationsListener())
+  win.connect("destroy", () => {
+    clearHideTransition()
+    clearRefreshKickoff()
+    stopNotificationsListener()
+  })
 
-  registerDashboard(win)
+  registerDashboard(win, {
+    show: presentDashboard,
+    hide: dismissDashboard,
+    toggle: toggleDashboardVisibility
+  })
   applyProfile(loadProfile())
   refreshNotifications()
 

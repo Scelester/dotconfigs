@@ -1,11 +1,12 @@
 import app from "ags/gtk4/app"
 import { Astal, Gtk, Gdk } from "ags/gtk4"
-import { execAsync } from "ags/process"
+import { execAsync, subprocess } from "ags/process"
 import { createPoll } from "ags/time"
 import TrayWidget from "./Tray"
 import { toggleDashboard } from "./dashboardState"
 import { getFallbackIcon, resolveWindowIcon } from "./iconResolver"
 import { getGamingModeState, subscribeGamingMode } from "./gamingModeState"
+import GLib from "gi://GLib"
 import Pango from "gi://Pango"
 
 type MusicState = {
@@ -27,92 +28,87 @@ type WorkspaceSummary = {
 
 export default function Bar(gdkmonitor: Gdk.Monitor) {
   const { TOP, LEFT, RIGHT } = Astal.WindowAnchor
+  const HYPR_EVENT_DEBOUNCE_MS = 24
 
   const fallbackIcon = getFallbackIcon()
+  const logBarActionError = (action: string, err: unknown) => console.error(`Bar ${action} failed:`, err)
 
   const safePoll = <T,>(init: T, interval: number, fn: (prev: T) => T | Promise<T>) =>
-    createPoll(init, interval, async (prev) => {
-      try {
-        return await fn(prev)
-      } catch (err) {
-        console.error("Bar poll failed:", err)
-        return prev
-      }
-    })
+    createPoll(init, interval, (prev) =>
+      Promise.resolve()
+        .then(() => fn(prev))
+        .catch((err) => {
+          console.error("Bar poll failed:", err)
+          return prev
+        })
+    )
 
   const time = safePoll("", 1000, async () => {
-    try {
-      return (await execAsync("date +'%H:%M'")).trim()
-    } catch {
-      return "--:--"
-    }
+    const now = new Date()
+    return now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", hour12: false })
   })
   const date = safePoll("", 1000, async () => {
-    try {
-      return (await execAsync("date +'%a %d %b'")).trim()
-    } catch {
-      return "Date"
-    }
+    return new Date().toLocaleDateString([], {
+      weekday: "short",
+      day: "2-digit",
+      month: "short"
+    })
   })
 
-  const activeWorkspace = safePoll(
-    "1",
-    300,
-    async () => {
-      try {
-        const active = await execAsync("hyprctl activeworkspace -j")
-        const json = JSON.parse(active)
-        return json.id.toString()
-      } catch {
-        return "1"
-      }
+  let activeWorkspaceId = "1"
+  let workspaceSummaries: WorkspaceSummary[] = []
+  let activeWindowState: ActiveWindow = {
+    title: "Desktop",
+    app: "Desktop",
+    icon: fallbackIcon
+  }
+
+  const readActiveWorkspace = async () => {
+    try {
+      const active = await execAsync("hyprctl activeworkspace -j")
+      const json = JSON.parse(active)
+      return json.id?.toString?.() || "1"
+    } catch {
+      return "1"
     }
-  )
+  }
 
-  const workspaceIcons = safePoll<WorkspaceSummary[]>(
-    [],
-    800,
-    async () => {
-      try {
-        const clients = await execAsync("hyprctl clients -j")
-        const json = JSON.parse(clients)
-        const grouped = new Map<number, string[]>()
+  const readWorkspaceSummaries = async (): Promise<WorkspaceSummary[]> => {
+    try {
+      const clients = await execAsync("hyprctl clients -j")
+      const json = JSON.parse(clients)
+      const grouped = new Map<number, string[]>()
 
-        json.forEach((c: any) => {
-          const ws = c.workspace?.id
-          if (typeof ws !== "number" || ws < 1 || ws > 7) return
-          const app = c.class || c.app || c.initialClass || "App"
-          const title = c.title || c.initialTitle || app
-          const icon = resolveWindowIcon(app, title)
-          const list = grouped.get(ws) || []
-          if (!list.includes(icon)) list.push(icon)
-          grouped.set(ws, list.slice(0, 3))
-        })
+      json.forEach((c: any) => {
+        const ws = c.workspace?.id
+        if (typeof ws !== "number" || ws < 1 || ws > 7) return
+        const app = c.class || c.app || c.initialClass || "App"
+        const title = c.title || c.initialTitle || app
+        const icon = resolveWindowIcon(app, title)
+        const list = grouped.get(ws) || []
+        if (!list.includes(icon)) list.push(icon)
+        grouped.set(ws, list.slice(0, 3))
+      })
 
-        return Array.from(grouped.entries())
-          .map(([id, icons]) => ({ id, icons }))
-          .sort((a, b) => a.id - b.id)
-      } catch {
-        return []
-      }
+      return Array.from(grouped.entries())
+        .map(([id, icons]) => ({ id, icons }))
+        .sort((a, b) => a.id - b.id)
+    } catch {
+      return []
     }
-  )
+  }
 
-  const activeWindowStatus = safePoll<ActiveWindow>(
-    { title: "Desktop", app: "Desktop", icon: fallbackIcon },
-    500,
-    async () => {
-      try {
-        const active = await execAsync("hyprctl activewindow -j")
-        const json = JSON.parse(active)
-        const app = json.class || json.initialClass || json.app || "Desktop"
-        const title = json.title || json.initialTitle || app || "Desktop"
-        return { title, app, icon: resolveWindowIcon(app, title) }
-      } catch {
-        return { title: "Desktop", app: "Desktop", icon: fallbackIcon }
-      }
+  const readActiveWindow = async (): Promise<ActiveWindow> => {
+    try {
+      const active = await execAsync("hyprctl activewindow -j")
+      const json = JSON.parse(active)
+      const app = json.class || json.initialClass || json.app || "Desktop"
+      const title = json.title || json.initialTitle || app || "Desktop"
+      return { title, app, icon: resolveWindowIcon(app, title) }
+    } catch {
+      return { title: "Desktop", app: "Desktop", icon: fallbackIcon }
     }
-  )
+  }
 
   const activeWindowIcon = new Gtk.Image({
     icon_name: fallbackIcon,
@@ -136,13 +132,9 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
   activeWindowBox.append(activeWindowTitle)
 
   const updateActiveWindow = () => {
-    const state = activeWindowStatus.get()
-    activeWindowTitle.label = state.title || state.app || "Desktop"
-    activeWindowIcon.icon_name = state.icon || fallbackIcon
+    activeWindowTitle.label = activeWindowState.title || activeWindowState.app || "Desktop"
+    activeWindowIcon.icon_name = activeWindowState.icon || fallbackIcon
   }
-  updateActiveWindow()
-  activeWindowStatus.subscribe(updateActiveWindow)
-  activeWindowStatus.subscribe(() => renderWorkspaceIcons(workspaceIcons.get()))
 
   const workspaceIconBoxes: Gtk.Box[] = []
   const workspaceButtons: Gtk.Button[] = []
@@ -150,13 +142,13 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
     const cssClasses = ["workspace-btn"]
     if (hasIcons) cssClasses.push("occupied")
     else cssClasses.push("empty")
-    if (activeWorkspace.get() === wsId.toString()) cssClasses.push("active")
+    if (activeWorkspaceId === wsId.toString()) cssClasses.push("active")
     button.set_css_classes(cssClasses)
   }
 
   const renderWorkspaceIcons = (summaries: WorkspaceSummary[]) => {
     const summaryMap = new Map(summaries.map((s) => [s.id, s.icons]))
-    const activeWsId = parseInt(activeWorkspace.get() || "0", 10) || 0
+    const activeWsId = parseInt(activeWorkspaceId || "0", 10) || 0
 
     workspaceIconBoxes.forEach((box, idx) => {
       const wsId = idx + 1
@@ -191,6 +183,83 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
       if (button) setWorkspaceButtonState(button, wsId, icons.length > 0)
     })
   }
+
+  let hyprSyncSourceId = 0
+  const syncHyprlandState = async () => {
+    const [workspace, summaries, activeWindow] = await Promise.all([
+      readActiveWorkspace(),
+      readWorkspaceSummaries(),
+      readActiveWindow()
+    ])
+
+    activeWorkspaceId = workspace
+    workspaceSummaries = summaries
+    activeWindowState = activeWindow
+    updateActiveWindow()
+    renderWorkspaceIcons(workspaceSummaries)
+  }
+
+  const queueHyprlandSync = (delay = HYPR_EVENT_DEBOUNCE_MS) => {
+    if (hyprSyncSourceId) return
+    hyprSyncSourceId = GLib.timeout_add(GLib.PRIORITY_DEFAULT, delay, () => {
+      hyprSyncSourceId = 0
+      void syncHyprlandState().catch((err) => console.error("Bar Hyprland sync failed:", err))
+      return GLib.SOURCE_REMOVE
+    })
+  }
+
+  const startHyprlandEventStream = () => {
+    const runtimeDir = GLib.getenv("XDG_RUNTIME_DIR")
+    const signature = GLib.getenv("HYPRLAND_INSTANCE_SIGNATURE")
+    if (!runtimeDir || !signature) return false
+
+    const socketPath = `${runtimeDir}/hypr/${signature}/.socket2.sock`
+    if (!GLib.file_test(socketPath, GLib.FileTest.EXISTS)) return false
+
+    try {
+      subprocess(
+        `sh -lc 'exec socat -U - UNIX-CONNECT:"${socketPath}"'`,
+        (line) => {
+          const trimmed = line.trim()
+          if (!trimmed) return
+
+          const [event] = trimmed.split(">>", 1)
+          if (
+            [
+              "workspace",
+              "workspacev2",
+              "focusedmon",
+              "focusedmonv2",
+              "activewindow",
+              "activewindowv2",
+              "windowtitle",
+              "windowtitlev2",
+              "openwindow",
+              "closewindow",
+              "movewindow",
+              "movewindowv2",
+              "createworkspace",
+              "createworkspacev2",
+              "destroyworkspace",
+              "destroyworkspacev2",
+              "moveworkspace",
+              "moveworkspacev2",
+              "changefloatingmode"
+            ].includes(event)
+          ) {
+            queueHyprlandSync()
+          }
+        },
+        (err) => console.error("Bar Hyprland event stream failed:", err)
+      )
+      return true
+    } catch (err) {
+      console.error("Bar Hyprland event stream start failed:", err)
+      return false
+    }
+  }
+
+  updateActiveWindow()
 
   const readPlayerctl = async (): Promise<MusicState> => {
     try {
@@ -402,7 +471,7 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
               vexpand={false}
               onClicked={() => execAsync("/home/scelester/.config/rofi/scripts/launcher_t1").catch(console.error)}
             >
-              <label label="x" />
+              <label label="󰀻" />
             </button>
 
             <box class="workspaces" spacing={4}>
@@ -492,12 +561,16 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
                     Gtk.EventControllerScrollFlags.VERTICAL
                   )
                   controller.connect("scroll", async (_ctrl, dx, dy) => {
-                    if (dy < 0) {
-                      await execAsync("brightnessctl set 5%+").catch(console.error)
-                      const bright = await brightnessStatus.get()
-                    } else if (dy > 0) {
-                      await execAsync("brightnessctl set 5%-").catch(console.error)
-                      const bright = await brightnessStatus.get()
+                    try {
+                      if (dy < 0) {
+                        await execAsync("brightnessctl set 5%+")
+                        await brightnessStatus.get()
+                      } else if (dy > 0) {
+                        await execAsync("brightnessctl set 5%-")
+                        await brightnessStatus.get()
+                      }
+                    } catch (err) {
+                      logBarActionError("brightness scroll", err)
                     }
                   })
                   self.add_controller(controller)
@@ -520,8 +593,12 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
               <button
                 class="indicator"
                 onClicked={async () => {
-                  await execAsync("pamixer --default-source -t").catch(console.error)
-                  const mic = await microphoneStatus.get()
+                  try {
+                    await execAsync("pamixer --default-source -t")
+                    await microphoneStatus.get()
+                  } catch (err) {
+                    logBarActionError("microphone toggle", err)
+                  }
                 }}
               >
                 <label
@@ -536,12 +613,16 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
                     Gtk.EventControllerScrollFlags.VERTICAL
                   )
                   controller.connect("scroll", async (_ctrl, dx, dy) => {
-                    if (dy < 0) {
-                      await execAsync("pamixer -i 5").catch(console.error)
-                      const vol = await volumeStatus.get()
-                    } else if (dy > 0) {
-                      await execAsync("pamixer -d 5").catch(console.error)
-                      const vol = await volumeStatus.get()
+                    try {
+                      if (dy < 0) {
+                        await execAsync("pamixer -i 5")
+                        await volumeStatus.get()
+                      } else if (dy > 0) {
+                        await execAsync("pamixer -d 5")
+                        await volumeStatus.get()
+                      }
+                    } catch (err) {
+                      logBarActionError("volume scroll", err)
                     }
                   })
                   self.add_controller(controller)
@@ -550,9 +631,12 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
                 <button
                   class="indicator"
                   onClicked={async () => {
-                    await execAsync("pamixer -t").catch(console.error)
-                    const vol = await volumeStatus.get()
-                    // For toggle, we want to show the new state, so we pass the inverted muted state
+                    try {
+                      await execAsync("pamixer -t")
+                      await volumeStatus.get()
+                    } catch (err) {
+                      logBarActionError("volume toggle", err)
+                    }
                   }}
 
                 >
@@ -598,7 +682,10 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
               <TrayWidget />
             </box>
 
-            <button class="datetime" onClicked={() => toggleDashboard()}>
+            <button
+              class="datetime"
+              onClicked={() => toggleDashboard()}
+            >
               <box spacing={8}>
                 <label label={time} class="time" />
                 <label label={date} class="date" />
@@ -610,9 +697,14 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
     </window>
   )
 
-  workspaceIcons.subscribe(renderWorkspaceIcons)
-  activeWorkspace.subscribe(() => renderWorkspaceIcons(workspaceIcons.get()))
-  renderWorkspaceIcons(workspaceIcons.get())
+  renderWorkspaceIcons([])
+  queueHyprlandSync(0)
+  if (!startHyprlandEventStream()) {
+    GLib.timeout_add(GLib.PRIORITY_DEFAULT, 5000, () => {
+      void syncHyprlandState().catch((err) => console.error("Bar Hyprland fallback sync failed:", err))
+      return GLib.SOURCE_CONTINUE
+    })
+  }
 
   return [barWindow]
 }

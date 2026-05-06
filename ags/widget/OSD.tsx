@@ -196,25 +196,33 @@ export default function OSD(gdkmonitor: Gdk.Monitor) {
     } catch {}
 
     // Now start monitoring
-    subprocess("pactl subscribe", (line) => {
-      if (line.includes("sink") && !line.includes("source")) {
-        checkVolume()
-      }
-      if (line.includes("source")) {
-        checkMic()
-      }
-    })
+    try {
+      subprocess("pactl subscribe", (line) => {
+        if (line.includes("sink") && !line.includes("source")) {
+          void checkVolume()
+        }
+        if (line.includes("source")) {
+          void checkMic()
+        }
+      })
+    } catch (err) {
+      console.error("OSD volume monitor start failed:", err)
+    }
 
-    subprocess("stdbuf -oL udevadm monitor -u -s backlight", (line) => {
-      if (line.includes("change")) {
-        checkBrightness()
-      }
-    })
+    try {
+      subprocess("stdbuf -oL udevadm monitor -u -s backlight", (line) => {
+        if (line.includes("change")) {
+          void checkBrightness()
+        }
+      })
+    } catch (err) {
+      console.error("OSD brightness monitor start failed:", err)
+    }
   }
 
   // Start initialization after a small delay to ensure window is ready
   timeout(100, () => {
-    initializeAndMonitor()
+    void initializeAndMonitor().catch((err) => console.error("OSD initialization failed:", err))
   })
 
   return win

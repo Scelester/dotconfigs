@@ -58,6 +58,7 @@
     <property name="file-icons" type="empty">
       <property name="migrated-4.19" type="array">
         <value type="string" value="184aad52180a2b8270c52d072e758e987addd904"/>
+        <value type="string" value="152a49732d4cb24514a7c04b38eebbf01d5e33e2"/>
       </property>
     </property>
   </property>

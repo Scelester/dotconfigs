@@ -1,14 +1,14 @@
-/* Minimal Floating Bar Theme - Dark Blue & Brownish */
+/* Minimal Floating Bar Theme - Deep Blue/Black */
 
-$neo-bg: #0a0e15;
-$neo-surface: #1a1f2e;
-$neo-card: #151d2b;
-$neo-ink: #e8ecf1;
-$neo-muted: #8b92a9;
-$neo-accent: #6b9fd4;
-$neo-accent-2: #9b7d6b;
-$neo-accent-3: #c9a872;
-$neo-emerald: #7bb09b;
+$neo-bg: #10161F;
+$neo-surface: #151D29;
+$neo-card: #1B2635;
+$neo-ink: #EDF3FA;
+$neo-muted: #91A0B5;
+$neo-accent: #73B7FF;
+$neo-accent-2: #A98BFF;
+$neo-accent-3: #F0C674;
+$neo-emerald: #67D5A0;
 $neo-shadow: rgba(0, 0, 0, 0.2);
 
 @keyframes slide-up-soft {
@@ -494,9 +494,9 @@ window.dashboard {
 window.dashboard .dashboard-overlay {
   padding: 18px 22px 22px;
   background:
-    radial-gradient(circle at 14% 18%, rgba($neo-accent, 0.1), transparent 24%),
-    radial-gradient(circle at 86% 12%, rgba($neo-accent-2, 0.08), transparent 20%),
-    linear-gradient(180deg, rgba($neo-bg, 0.64), rgba($neo-bg, 0.36));
+    radial-gradient(circle at 14% 18%, rgba($neo-accent, 0.12), transparent 24%),
+    radial-gradient(circle at 86% 12%, rgba($neo-accent-2, 0.1), transparent 20%),
+    linear-gradient(180deg, rgba($neo-bg, 0.78), rgba($neo-bg, 0.5));
 }
 
 window.dashboard .dashboard-stage,
@@ -522,13 +522,13 @@ window.dashboard .dashboard-surface-shell {
   border-radius: 28px;
   border: 1px solid rgba($neo-accent, 0.14);
   background:
-    radial-gradient(circle at top left, rgba($neo-accent, 0.08), transparent 24%),
-    radial-gradient(circle at top right, rgba($neo-accent-2, 0.06), transparent 22%),
-    linear-gradient(180deg, rgba($neo-surface, 0.992), rgba($neo-card, 0.992));
+    radial-gradient(circle at top left, rgba($neo-accent, 0.1), transparent 24%),
+    radial-gradient(circle at top right, rgba($neo-accent-2, 0.08), transparent 22%),
+    linear-gradient(180deg, rgba($neo-surface, 0.995), rgba($neo-card, 0.995));
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.04),
-    0 18px 46px rgba(0, 0, 0, 0.28),
-    0 0 0 1px rgba(255, 255, 255, 0.02);
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 24px 58px rgba(0, 0, 0, 0.42),
+    0 0 0 1px rgba(255, 255, 255, 0.025);
 }
 
 window.dashboard .dashboard-surface {
@@ -726,8 +726,23 @@ window.dashboard .utility-action:hover {
   border-color: rgba($neo-accent, 0.18);
 }
 
+window.dashboard .utility-action.active {
+  background:
+    radial-gradient(circle at top left, rgba($neo-accent, 0.18), transparent 60%),
+    rgba($neo-bg, 0.78);
+  border-color: rgba($neo-accent, 0.38);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 12px 22px rgba($neo-accent, 0.08);
+}
+
 window.dashboard .utility-action-icon {
   font-size: 17px;
+  color: $neo-accent;
+}
+
+window.dashboard .utility-action.active .utility-action-icon,
+window.dashboard .utility-action.active .utility-action-label {
   color: $neo-accent;
 }
 

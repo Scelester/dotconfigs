@@ -19,19 +19,22 @@ configs:
       width: 1920
       height: 1080
   icons:
-    "/home/scelester/Container/docker-data/overlay2/db508ae194c3920d19d21bd73d0b994686c7570de19ab078353373e8eac5e555/merged":
-      row: 5
-      col: 0
-      last_seen: 1775974912173613
+    "/home/scelester/Desktop/scelester.gif":
+      row: 0
+      col: 1
     "/home/scelester/Desktop/document1.jpg":
       row: 1
       col: 1
+    "90969422-69a2-4343-9774-1a17d357490d":
+      row: 3
+      col: 0
+      last_seen: 1783962207766042
+    "/home/scelester/Desktop/Qform_electrolysis":
+      row: 6
+      col: 0
     "/home/scelester/Desktop/togglemonitorlock":
       row: 2
       col: 1
-    "/home/scelester/Desktop/cover_updated.jpg":
-      row: 7
-      col: 0
     "/home/scelester/Desktop/test":
       row: 5
       col: 0
@@ -43,6 +46,9 @@ configs:
       col: 1
     "/home/scelester/Desktop/test.rs":
       row: 6
+      col: 0
+    "/home/scelester/Desktop/cover_updated.jpg":
+      row: 7
       col: 0
     "/home/scelester/Desktop/Enabling Secure Boot.pdf":
       row: 6
@@ -81,8 +87,8 @@ configs:
       row: 8
       col: 1
     "/home/scelester/Desktop/Testspace":
-      row: 4
-      col: 1
+      row: 7
+      col: 0
     "/home/scelester/Desktop/Screenshot_1739550262.png":
       row: 2
       col: 2
@@ -92,21 +98,22 @@ configs:
     "/home/scelester/Desktop/Invoice 54.pdf":
       row: 4
       col: 0
-    "/home/scelester/Desktop/scelester.gif":
-      row: 0
-      col: 1
     "/":
       row: 2
       col: 0
     "/home/scelester":
       row: 0
       col: 0
+    "2c9ca703-4a5d-4d80-97aa-02279adea0eb":
+      row: 4
+      col: 0
+      last_seen: 1775974912165170
     "trash:///":
       row: 1
       col: 0
-    "/home/scelester/Desktop/steam.desktop":
+    "/home/scelester/Desktop/PFT.zip":
       row: 5
-      col: 0
+      col: 2
     "/home/scelester/Desktop/Cover Letter.pdf":
       row: 7
       col: 1
@@ -116,14 +123,36 @@ configs:
     "/home/scelester/Desktop/Screenshot_1739550264.png":
       row: 1
       col: 2
-    "2c9ca703-4a5d-4d80-97aa-02279adea0eb":
+    "/home/scelester/Desktop/steam.desktop":
+      row: 8
+      col: 0
+    "/home/scelester/Container/docker-data/overlay2/db508ae194c3920d19d21bd73d0b994686c7570de19ab078353373e8eac5e555/merged":
+      row: 5
+      col: 0
+      last_seen: 1783962207785878
+    "3236ae5f-d367-47e3-96f6-465b21b8aba8":
       row: 4
       col: 0
-      last_seen: 1775974912165170
-    "/home/scelester/Desktop/PFT.zip":
-      row: 5
-      col: 2
-    "3236ae5f-d367-47e3-96f6-465b21b8aba8":
+      last_seen: 1783962207777335
+- level: 0
+  monitors:
+  - id: "152a49732d4cb24514a7c04b38eebbf01d5e33e2"
+    display_name: "Default Monitor"
+    geometry:
+      x: 0
+      y: 0
+      width: 640
+      height: 480
+  icons:
+    "Trash":
+      row: 1
+      col: 0
+    "/":
+      row: 2
+      col: 0
+    "E24A70F54A70C835":
+      row: 0
+      col: 0
+    "/home/scelester":
       row: 3
       col: 0
-      last_seen: 1775974912154625

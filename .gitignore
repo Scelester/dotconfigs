@@ -57,3 +57,35 @@ Microsoft
 Microsoft Teams - Preview
 Ferdium
 mozilla/
+
+# --- credentials / secrets ---
+filezilla/
+dconf/user
+copyq/
+rustdesk/
+github-copilot/auth.db*
+Proton/
+kdeconnect/
+libaccounts-glib/
+
+# --- pure cache / runtime state / logs ---
+go/telemetry/
+mpd/database
+mpd/log
+mpd/pid
+mpd/state
+cmus/
+calibre/dynamic.pickle.json
+calibre/fonts/scanner_cache.json
+calibre/gui.json
+calibre/icons-any.rcc
+calibre/icons-dark.rcc
+fcitx5/conf/cached_layouts
+obs-studio/logs/
+obs-studio/profiler_data/
+obs-studio/basic/scenes/*.bak
+sublime-text/Local/Session.sublime_session
+ibus/bus/
+flutter/tool_state
+MusicBrainz/.Picard.ini.synclock
+OpenRGB/logs/

@@ -2,4 +2,4 @@
 
 
 dbus-update-activation-environment --systemd --all
-systemctl --user import-environment QT_QPA_PLATFORMTHEME
+systemctl --user import-environment QT_STYLE_OVERRIDE QT_QPA_PLATFORMTHEME QT_QUICK_CONTROLS_STYLE

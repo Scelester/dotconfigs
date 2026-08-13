@@ -56,6 +56,10 @@ type PowerProfileState = {
   error?: string
 }
 
+type UtilityToggleKey = "nightLight" | "keyboardBacklight" | "awake"
+
+type UtilityToggleState = Record<UtilityToggleKey, boolean>
+
 type DiskVolume = {
   mount: string
   fstype: string
@@ -121,7 +125,7 @@ const MODAL_WIDTH = 1572
 const MODAL_HEIGHT = 970
 const PROFILE_CARD_HEIGHT = 316
 const POWER_CARD_HEIGHT = 176
-const UTILITY_CARD_HEIGHT = 236
+const UTILITY_CARD_HEIGHT = 292
 const METRICS_CARD_HEIGHT = 292
 const CONTROLS_CARD_HEIGHT = 272
 const STORAGE_CARD_HEIGHT = 118
@@ -139,14 +143,16 @@ const STORAGE_EXCLUDED = ["tmpfs", "devtmpfs", "overlay", "squashfs"]
 const STORAGE_WHITELIST = ["/", "/home", "/home/scelester/Container"]
 const NOTIFICATION_HISTORY_LIMIT = 500
 const POWER_PROFILE_ORDER = ["performance", "balanced", "power-saver"] as const
-const DASHBOARD_OPEN_DURATION_MS = 260
-const DASHBOARD_CLOSE_DURATION_MS = 220
+const DASHBOARD_OPEN_DURATION_MS = 360
+const DASHBOARD_CLOSE_DURATION_MS = 260
 const DASHBOARD_LIVE_REFRESH_MS = 2400
 const WIFI_CACHE_MS = 12000
 const UPTIME_CACHE_MS = 60000
 const UPDATES_CACHE_MS = 15 * 60 * 1000
 const MEDIA_CACHE_MS = 2500
 const GPU_CACHE_MS = 5000
+const POWER_PROFILE_REFRESH_MS = 5000
+const UTILITY_TOGGLE_REFRESH_MS = 2000
 
 const prettyMount = (mount: string) => {
   if (mount === "/") return "/"
@@ -180,6 +186,19 @@ const safePoll = <T,>(init: T, interval: number, fn: (prev: T) => T | Promise<T>
         return prev
       })
   )
+
+const DEFAULT_POWER_PROFILE_STATE: PowerProfileState = {
+  active: "unknown",
+  available: [],
+  details: {},
+  error: ""
+}
+
+const DEFAULT_UTILITY_TOGGLE_STATE: UtilityToggleState = {
+  nightLight: false,
+  keyboardBacklight: false,
+  awake: false
+}
 
 const titleCaseProfile = (name: string) =>
   name
@@ -261,6 +280,9 @@ const TOGGLE_NIGHT_LIGHT_COMMAND =
 
 const TOGGLE_KEYBOARD_BACKLIGHT_COMMAND =
   "sh -lc 'if [ -x /usr/bin/toggle-laptop-kb ]; then /usr/bin/toggle-laptop-kb; else exit 1; fi'"
+
+const AWAKE_PID_PATH = "/tmp/ags-dashboard-awake.pid"
+const TOGGLE_AWAKE_COMMAND = `sh -lc 'pidfile="${AWAKE_PID_PATH}"; if [ -f "$pidfile" ] && kill -0 "$(cat "$pidfile")" 2>/dev/null; then kill "$(cat "$pidfile")" 2>/dev/null && rm -f "$pidfile"; else systemd-inhibit --what=idle:sleep --why="AGS Dashboard Awake" sh -lc "trap exit INT TERM; while :; do sleep 3600; done" >/dev/null 2>&1 & echo $! > "$pidfile"; fi'`
 
 const notificationHistory: NotificationEntry[] = []
 const notificationListeners = new Set<() => void>()
@@ -584,6 +606,12 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
     xalign: 1,
     halign: Gtk.Align.END
   })
+  const powerProfileSummary = new Gtk.Label({
+    label: "Syncing",
+    css_classes: ["card-kicker"],
+    xalign: 1,
+    halign: Gtk.Align.END
+  })
   const notificationClear = new Gtk.Button({
     label: "Clear All",
     css_classes: ["pill-button", "notification-clear"],
@@ -620,6 +648,15 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
     vscrollbar_policy: Gtk.PolicyType.AUTOMATIC
   })
   playbackScroll.set_child(playbackBox)
+
+  let powerProfileState = DEFAULT_POWER_PROFILE_STATE
+  let pendingPowerProfile: string | null = null
+  let powerProfileRequestId = 0
+  const powerProfileButtons = new Map<string, Gtk.Button>()
+
+  let utilityToggleState = DEFAULT_UTILITY_TOGGLE_STATE
+  const pendingUtilityToggles: Partial<Record<UtilityToggleKey, boolean>> = {}
+  const utilityButtons = new Map<UtilityToggleKey, Gtk.Button>()
 
   const netSSID = new Gtk.Label({
     label: "WiFi unavailable",
@@ -763,62 +800,74 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
     }
   })
 
-  const powerProfileStatus = safePoll<PowerProfileState>(
-    { active: "unknown", available: [], details: {}, error: "" },
-    5000,
-    async () => {
-      try {
-        const out = await execAsync("powerprofilesctl list")
-        const lines = out.split("\n")
-        let current: string | null = null
-        let active = "unknown"
-        const available: string[] = []
-        const details: Record<string, string[]> = {}
+  const readPowerProfileState = async (): Promise<PowerProfileState> => {
+    try {
+      const out = await execAsync("powerprofilesctl list")
+      const lines = out.split("\n")
+      let current: string | null = null
+      let active = "unknown"
+      const available: string[] = []
+      const details: Record<string, string[]> = {}
 
-        for (const line of lines) {
-          const trimmed = line.trim()
-          if (!trimmed) continue
+      for (const line of lines) {
+        const trimmed = line.trim()
+        if (!trimmed) continue
 
-          const header = trimmed.match(/^(\*?)\s*([A-Za-z0-9\-]+):/)
-          if (header) {
-            current = header[2]
-            available.push(current)
-            details[current] = []
-            if (header[1] === "*") active = current
-            continue
-          }
-
-          if (!current || !trimmed.includes(":")) continue
-          details[current]?.push(trimmed.replace(/\s+/g, " "))
+        const header = trimmed.match(/^(\*?)\s*([A-Za-z0-9\-]+):/)
+        if (header) {
+          const profileName = header[2]
+          current = profileName
+          available.push(profileName)
+          details[profileName] = []
+          if (header[1] === "*") active = profileName
+          continue
         }
 
-        if (!available.length) {
-          return { active: "unknown", available, details, error: "No power profiles detected" }
-        }
+        if (!current || !trimmed.includes(":")) continue
+        details[current]?.push(trimmed.replace(/\s+/g, " "))
+      }
 
-        return {
-          active: active === "unknown" ? available[0] : active,
-          available,
-          details,
-          error: ""
-        }
-      } catch (err) {
-        console.error("Power profiles read failed:", err)
-        return {
-          active: "unknown",
-          available: [],
-          details: {},
-          error: "powerprofilesctl unavailable"
-        }
+      if (!available.length) {
+        return { active: "unknown", available, details, error: "No power profiles detected" }
+      }
+
+      return {
+        active: active === "unknown" ? available[0] : active,
+        available,
+        details,
+        error: ""
+      }
+    } catch (err) {
+      console.error("Power profiles read failed:", err)
+      return {
+        active: "unknown",
+        available: [],
+        details: {},
+        error: "powerprofilesctl unavailable"
       }
     }
-  )
+  }
 
-  const setPowerProfile = async (profile: string) => {
+  const readUtilityToggleState = async (): Promise<UtilityToggleState> => {
     try {
-      await execAsync(`powerprofilesctl set ${profile}`)
+      const [nightLightRaw, keyboardRaw, awakeRaw] = await Promise.all([
+        execAsync("sh -lc 'pgrep -x gammastep >/dev/null && echo on || echo off'"),
+        execAsync(
+          "sh -lc 'for f in /sys/class/leds/*::kbd_backlight/brightness /sys/class/leds/*kbd*backlight*/brightness /sys/class/leds/*keyboard*backlight*/brightness; do if [ -f \"$f\" ]; then cat \"$f\"; exit 0; fi; done; echo 0'"
+        ),
+        execAsync(
+          `sh -lc 'pidfile="${AWAKE_PID_PATH}"; if [ -f "$pidfile" ] && kill -0 "$(cat "$pidfile")" 2>/dev/null; then echo on; else rm -f "$pidfile"; echo off; fi'`
+        )
+      ])
+
+      return {
+        nightLight: nightLightRaw.trim() === "on",
+        keyboardBacklight: parseInt(keyboardRaw.trim(), 10) > 0,
+        awake: awakeRaw.trim() === "on"
+      }
     } catch (err) {
-      console.error("Power profile set failed:", err)
+      console.error("Utility toggle state read failed:", err)
+      return DEFAULT_UTILITY_TOGGLE_STATE
     }
   }
 
@@ -1933,6 +1982,118 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
     await Promise.all([refreshWindows(), refreshPlayback(), refreshStorage()])
   }
 
+  const effectiveUtilityToggleState = (): UtilityToggleState => ({
+    nightLight: pendingUtilityToggles.nightLight ?? utilityToggleState.nightLight,
+    keyboardBacklight:
+      pendingUtilityToggles.keyboardBacklight ?? utilityToggleState.keyboardBacklight,
+    awake: pendingUtilityToggles.awake ?? utilityToggleState.awake
+  })
+
+  const applyPowerProfileUi = () => {
+    const activeProfile = pendingPowerProfile ?? powerProfileState.active
+    powerProfileSummary.label =
+      activeProfile === "unknown" ? "Syncing" : titleCaseProfile(activeProfile)
+
+    for (const profile of POWER_PROFILE_ORDER) {
+      const button = powerProfileButtons.get(profile)
+      if (!button) continue
+
+      const isActive = activeProfile === profile
+      const isAvailable = powerProfileState.available.includes(profile)
+      button.set_css_classes([
+        "power-option",
+        ...(isActive ? ["active"] : []),
+        ...(isAvailable ? [] : ["disabled"])
+      ])
+      button.sensitive = isAvailable
+    }
+  }
+
+  const syncPowerProfileUi = async () => {
+    powerProfileState = await readPowerProfileState()
+    if (pendingPowerProfile && powerProfileState.active === pendingPowerProfile) {
+      pendingPowerProfile = null
+    }
+    applyPowerProfileUi()
+  }
+
+  const setPowerProfile = async (profile: string) => {
+    const currentProfile = pendingPowerProfile ?? powerProfileState.active
+    if (currentProfile === profile) return
+
+    pendingPowerProfile = profile
+    const requestId = ++powerProfileRequestId
+    applyPowerProfileUi()
+
+    try {
+      await execAsync(`powerprofilesctl set ${profile}`)
+    } catch (err) {
+      console.error("Power profile set failed:", err)
+      if (powerProfileRequestId === requestId) {
+        pendingPowerProfile = null
+        applyPowerProfileUi()
+      }
+      return
+    }
+
+    if (powerProfileRequestId !== requestId) return
+    void syncPowerProfileUi().catch((err) =>
+      console.error("Power profile sync failed:", err)
+    )
+  }
+
+  const applyUtilityToggleUi = () => {
+    const state = effectiveUtilityToggleState()
+
+    for (const [key, button] of utilityButtons.entries()) {
+      const active = state[key]
+      button.set_css_classes(["utility-action", ...(active ? ["active"] : [])])
+    }
+  }
+
+  const syncUtilityToggleUi = async () => {
+    utilityToggleState = await readUtilityToggleState()
+
+    for (const key of Object.keys(pendingUtilityToggles) as UtilityToggleKey[]) {
+      if (pendingUtilityToggles[key] === utilityToggleState[key]) {
+        delete pendingUtilityToggles[key]
+      }
+    }
+
+    applyUtilityToggleUi()
+  }
+
+  const triggerUtilityAction = (action: {
+    command: string
+    hideAfter?: boolean
+    toggleKey?: UtilityToggleKey
+  }) => {
+    if (action.hideAfter ?? true) hideDashboard()
+
+    if (!action.toggleKey) {
+      execAsync(action.command).catch((err: unknown) =>
+        console.error(`Dashboard command failed: ${action.command}`, err)
+      )
+      return
+    }
+
+    const key = action.toggleKey
+    pendingUtilityToggles[key] = !effectiveUtilityToggleState()[key]
+    applyUtilityToggleUi()
+
+    execAsync(action.command)
+      .then(() => {
+        void syncUtilityToggleUi().catch((err: unknown) =>
+          console.error("Utility toggle sync failed:", err)
+        )
+      })
+      .catch((err: unknown) => {
+        delete pendingUtilityToggles[key]
+        applyUtilityToggleUi()
+        console.error(`Dashboard command failed: ${action.command}`, err)
+      })
+  }
+
   const refreshDashboard = async () => {
     if (dashboardRefreshActive) {
       dashboardRefreshQueued = true
@@ -1944,7 +2105,12 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
     refreshNotifications()
 
     try {
-      await Promise.all([refreshLiveCards(), refreshSupportCards()])
+      await Promise.all([
+        refreshLiveCards(),
+        refreshSupportCards(),
+        syncPowerProfileUi(),
+        syncUtilityToggleUi()
+      ])
     } catch (err) {
       console.error("Dashboard refresh failed:", err)
     } finally {
@@ -2032,23 +2198,16 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
     >
       <box spacing={8} valign={Gtk.Align.CENTER}>
         <label label="Power Profiles" class="card-title" xalign={0} hexpand={true} />
-        <label
-          label={powerProfileStatus((state) =>
-            state.active === "unknown" ? "Syncing" : titleCaseProfile(state.active)
-          )}
-          class="card-kicker"
-          xalign={1}
-        />
+        {powerProfileSummary}
       </box>
       <box class="power-switcher" spacing={8} homogeneous={true}>
         {POWER_PROFILE_ORDER.map((profile) => (
           <button
-            class={powerProfileStatus((state) => {
-              const active = state.active === profile
-              const available = state.available.includes(profile)
-              return `power-option${active ? " active" : ""}${available ? "" : " disabled"}`
-            })}
-            sensitive={powerProfileStatus((state) => state.available.includes(profile))}
+            class="power-option disabled"
+            onRealize={(self) => {
+              powerProfileButtons.set(profile, self)
+              applyPowerProfileUi()
+            }}
             onClicked={() => setPowerProfile(profile)}
           >
             <box orientation={Gtk.Orientation.VERTICAL} spacing={4} halign={Gtk.Align.CENTER}>
@@ -2066,13 +2225,22 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
       icon: "󰖔",
       label: "Night Light",
       command: TOGGLE_NIGHT_LIGHT_COMMAND,
-      hideAfter: false
+      hideAfter: false,
+      toggleKey: "nightLight" as const
     },
     {
       icon: "󰌌",
       label: "Keyboard Toggle",
       command: TOGGLE_KEYBOARD_BACKLIGHT_COMMAND,
-      hideAfter: false
+      hideAfter: false,
+      toggleKey: "keyboardBacklight" as const
+    },
+    {
+      icon: "󰅶",
+      label: "Awake",
+      command: TOGGLE_AWAKE_COMMAND,
+      hideAfter: false,
+      toggleKey: "awake" as const
     },
     {
       icon: "󰦝",
@@ -2104,16 +2272,20 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
     >
       <label label="System Actions" class="card-title" xalign={0} />
       <box class="utility-grid" orientation={Gtk.Orientation.VERTICAL} spacing={8}>
-        {[
-          utilityActions.slice(0, 2),
-          utilityActions.slice(2, 4),
-          utilityActions.slice(4, 6)
-        ].filter((row) => row.length > 0).map((row) => (
+        {Array.from({ length: Math.ceil(utilityActions.length / 2) }, (_, index) =>
+          utilityActions.slice(index * 2, index * 2 + 2)
+        ).filter((row) => row.length > 0).map((row) => (
           <box spacing={8} homogeneous={true}>
             {row.map((action) => (
               <button
                 class="utility-action"
-                onClicked={() => runDashboardCommand(action.command, action.hideAfter ?? true)}
+                onRealize={(self) => {
+                  if (action.toggleKey) {
+                    utilityButtons.set(action.toggleKey, self)
+                    applyUtilityToggleUi()
+                  }
+                }}
+                onClicked={() => triggerUtilityAction(action)}
               >
                 <box spacing={8} halign={Gtk.Align.CENTER}>
                   <label label={action.icon} class="utility-action-icon" />
@@ -2374,6 +2546,8 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
   overlayRevealer.set_child(overlayStage)
 
   const overlay = overlayRevealer as Gtk.Widget
+  let powerProfileRefreshId = 0
+  let utilityToggleRefreshId = 0
 
   const win = (
     <window
@@ -2413,6 +2587,28 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
           }
           return GLib.SOURCE_CONTINUE
         })
+
+        powerProfileRefreshId = GLib.timeout_add(
+          GLib.PRIORITY_DEFAULT,
+          POWER_PROFILE_REFRESH_MS,
+          () => {
+            void syncPowerProfileUi().catch((err) =>
+              console.error("Power profile refresh failed:", err)
+            )
+            return GLib.SOURCE_CONTINUE
+          }
+        )
+
+        utilityToggleRefreshId = GLib.timeout_add(
+          GLib.PRIORITY_DEFAULT,
+          UTILITY_TOGGLE_REFRESH_MS,
+          () => {
+            void syncUtilityToggleUi().catch((err) =>
+              console.error("Utility toggle refresh failed:", err)
+            )
+            return GLib.SOURCE_CONTINUE
+          }
+        )
       }}
     >
       {overlay}
@@ -2454,7 +2650,7 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
       return GLib.SOURCE_REMOVE
     })
 
-    GLib.timeout_add(GLib.PRIORITY_DEFAULT, 24, () => {
+    GLib.timeout_add(GLib.PRIORITY_DEFAULT, 40, () => {
       if (!isDashboardOpen) return GLib.SOURCE_REMOVE
       surfaceRevealer.reveal_child = true
       closeRevealer.reveal_child = true
@@ -2511,6 +2707,8 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
   })
 
   win.connect("destroy", () => {
+    if (powerProfileRefreshId) GLib.source_remove(powerProfileRefreshId)
+    if (utilityToggleRefreshId) GLib.source_remove(utilityToggleRefreshId)
     clearHideTransition()
     clearRefreshKickoff()
     stopNotificationsListener()
@@ -2523,6 +2721,14 @@ export default function Dashboard(gdkmonitor: Gdk.Monitor) {
   })
   applyProfile(loadProfile())
   refreshNotifications()
+  applyPowerProfileUi()
+  applyUtilityToggleUi()
+  void syncPowerProfileUi().catch((err: unknown) =>
+    console.error("Initial power profile sync failed:", err)
+  )
+  void syncUtilityToggleUi().catch((err: unknown) =>
+    console.error("Initial utility toggle sync failed:", err)
+  )
 
   return win
 }

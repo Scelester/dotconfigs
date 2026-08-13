@@ -13,26 +13,26 @@ ShowSidebar=false
 MenuBar=Disabled
 
 [Recent Files]
-File1[$e]=$HOME/client-update-apr-14-to-apr-21-2026.md
-File10[$e]=$HOME/Downloads/Exam System - Manual project.pdf
-File2[$e]=$HOME/Downloads/sagardhunganacv.pdf
-File3[$e]=$HOME/Downloads/raman.pdf
-File4[$e]=$HOME/Downloads/cv final canva.pdf
-File5[$e]=$HOME/Documents/REP/targeted.pdf
-File6[$e]=$HOME/Documents/REP/research.pdf
-File7[$e]=$HOME/Gmail - Nabin , a new email address was added to your account.pdf
-File8[$e]=$HOME/risingvoice.md.pdf
-File9[$e]=$HOME/Downloads/risingvoice.pdf
-Name1[$e]=client-update-apr-14-to-apr-21-2026.md
-Name10[$e]=Exam System - Manual project.pdf
-Name2[$e]=sagardhunganacv.pdf
-Name3[$e]=raman.pdf
-Name4[$e]=cv final canva.pdf
-Name5[$e]=targeted.pdf
-Name6[$e]=research.pdf
-Name7[$e]=Gmail - Nabin , a new email address was added to your account.pdf
-Name8[$e]=risingvoice.md.pdf
-Name9[$e]=risingvoice.pdf
+File1[$e]=$HOME/Container/ProjectD/mountainHelicopter/DataCollection/docs/Data Collection & Lead Research Requirement.pdf
+File10[$e]=$HOME/Downloads/The Rising Voice Of Nepal final case study.pdf
+File2[$e]=$HOME/Documents/arcodify/Agr_The_rising_voice.pdf
+File3[$e]=$HOME/Documents/arcodify/handlemycase_mcp_data/sources/7.pdf
+File4[$e]=$HOME/Documents/arcodify/handlemycase_mcp_data/sources/8.pdf
+File5[$e]=$HOME/Documents/arcodify/handlemycase_mcp_data/sources/6.pdf
+File6[$e]=$HOME/Documents/arcodify/handlemycase_mcp_data/sources/3.pdf
+File7[$e]=$HOME/Documents/arcodify/handlemycase_mcp_data/suprem court/source/सर्वोच्च_अदालत-फैसला(०७१-MS-000४-२०७६-१०-२८).pdf
+File8[$e]=$HOME/Documents/arcodify/handlemycase_mcp_data/suprem court/source/फैसला_२०७४-०८-२४(०७१-CR-००८७).pdf
+File9[$e]=$HOME/Downloads/Cloud-Kitchen-Proposals.pdf
+Name1[$e]=Data Collection & Lead Research Requirement.pdf
+Name10[$e]=The Rising Voice Of Nepal final case study.pdf
+Name2[$e]=Agr_The_rising_voice.pdf
+Name3[$e]=7.pdf
+Name4[$e]=8.pdf
+Name5[$e]=6.pdf
+Name6[$e]=3.pdf
+Name7[$e]=सर्वोच्च_अदालत-फैसला(०७१-MS-000४-२०७६-१०-२८).pdf
+Name8[$e]=फैसला_२०७४-०८-२४(०७१-CR-००८७).pdf
+Name9[$e]=Cloud-Kitchen-Proposals.pdf
 
 [UiSettings]
 ColorScheme=KvAdaptaDark

@@ -32,6 +32,16 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
 
   const fallbackIcon = getFallbackIcon()
   const logBarActionError = (action: string, err: unknown) => console.error(`Bar ${action} failed:`, err)
+  const openHymissionWorkspaceStrip = () => {
+    execAsync("hyprctl dispatch hymission:open onlycurrentworkspace").catch((err) =>
+      logBarActionError("hymission workspace-strip overview", err)
+    )
+  }
+  const openHymissionFullOverview = () => {
+    execAsync("hyprctl dispatch hymission:open forceall").catch((err) =>
+      logBarActionError("hymission full overview", err)
+    )
+  }
 
   const safePoll = <T,>(init: T, interval: number, fn: (prev: T) => T | Promise<T>) =>
     createPoll(init, interval, (prev) =>
@@ -489,7 +499,7 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
                   vexpand: false
                 })
                 workspaceButtons[ws - 1] = button
-                button.connect("clicked", () => execAsync(`hyprctl dispatch workspace ${ws}`).catch(console.error))
+                button.connect("clicked", () => execAsync(`hyprctl dispatch hl.dsp.focus({workspace=${ws}})`).catch(console.error))
                 button.set_child(iconsBox)
                 return button
               })}
@@ -684,7 +694,18 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
 
             <button
               class="datetime"
+              tooltip_text="Left click: dashboard • Right click: Hymission strip • Middle click: Hymission full overview"
               onClicked={() => toggleDashboard()}
+              onRealize={(self) => {
+                const hymissionClick = new Gtk.GestureClick()
+                hymissionClick.set_button(Gdk.BUTTON_SECONDARY)
+                hymissionClick.connect("released", () => openHymissionWorkspaceStrip())
+                const hymissionFullClick = new Gtk.GestureClick()
+                hymissionFullClick.set_button(Gdk.BUTTON_MIDDLE)
+                hymissionFullClick.connect("released", () => openHymissionFullOverview())
+                self.add_controller(hymissionClick)
+                self.add_controller(hymissionFullClick)
+              }}
             >
               <box spacing={8}>
                 <label label={time} class="time" />

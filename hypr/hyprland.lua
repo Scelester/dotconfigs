@@ -76,11 +76,12 @@ hl.config({
     },
 })
 
--- Touchpad workspace swipe: the old hyprland.conf `gestures {}` block only
--- tuned an implicit built-in swipe, but this Hyprland build requires the
--- gesture to be explicitly registered via hl.gesture() (native Lua config) -
--- that call was missing from the migration, which is why swipe did nothing.
-hl.gesture({ fingers = 3, direction = "horizontal", action = "workspace" })
+-- Touchpad swipes (3 and 4 finger) are handled entirely by libinput-gestures
+-- (~/.config/libinput-gestures.conf), which dispatches the custom e+1/e-1/
+-- empty/fullscreen bindings. A native hl.gesture() registration for 3-finger
+-- horizontal used to live here too, but it fought libinput-gestures for the
+-- same swipe (both reacting to one physical gesture), causing erratic/
+-- inconsistent behavior - removed so libinput-gestures is the sole owner.
 
 -- Bezier used for the border angle animation
 hl.curve("linear", { type = "bezier", points = { { 0.0, 0.0 }, { 1.0, 1.0 } } })
@@ -140,8 +141,8 @@ hl.config({
 
             height = 12,
 
-            -- Fully opaque white for high contrast in dark mode
-            text_color = 0xFFFFFFFF,
+            -- Catppuccin Mocha "text" - softer than pure white, matches the rest of the theme
+            text_color = 0xFFCDD6F4,
 
             scrolling = true,
 
@@ -155,9 +156,12 @@ hl.config({
 
             gradients = true,
 
+            -- active is Catppuccin Mocha's own muted teal (not the neon border
+            -- accent - full-bar neon was too much) fading into surface1; inactive
+            -- uses surface0/base instead of flat greys
             col = {
-                active   = { colors = { "0xFF15803D", "0xFF14532D" }, angle = 180 },
-                inactive = { colors = { "0xFF2E2E2E", "0xFF1A1A1A" }, angle = 10 },
+                active   = { colors = { "0xFF94E2D5", "0xFF45475A" }, angle = 180 },
+                inactive = { colors = { "0xFF313244", "0xFF1E1E2E" }, angle = 10 },
             },
 
             gaps_in  = 4,

@@ -8,7 +8,7 @@ hl.bind(mainMod .. " + Space", exec("alacritty"))                              -
 hl.bind(mainMod .. " + SHIFT + Space", exec("alacritty --title=float"))        -- open the terminal (floating)
 hl.bind("ALT + F4", hl.dsp.window.close())                                     -- close the active window
 hl.bind(mainMod .. " + L", exec("pidof hyprlock || hyprlock && sleep 0.5"))    -- lock the screen
-hl.bind(mainMod .. " + M", exec("ags -t datemenu"))                            -- show the logout window
+hl.bind(mainMod .. " + M", exec("ags toggle datemenu"))                        -- show the logout window
 hl.bind(mainMod .. " + SHIFT + M", hl.dsp.exit())                              -- exit Hyprland entirely (force quit)
 hl.bind(mainMod .. " + E", exec("thunar"))                                     -- graphical file browser
 hl.bind(mainMod .. " + V", exec("copyq toggle"))
@@ -17,11 +17,11 @@ hl.bind(mainMod .. " + O", hl.dsp.window.set_prop({ prop = "opaque", value = "to
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))                       -- dwindle only
 
 hl.bind("Print", exec('wayfreeze --after-freeze-cmd \'grim -g "$(slurp)" - | tee ~/Pictures/Screenshots/"$(date +%Y-%m-%d_%H-%M-%S)".png | wl-copy; killall wayfreeze\''))
-hl.bind("CTRL + Print", exec("ags -r 'recorder.screenshot(true)'"))
-hl.bind(mainMod .. " + ALT + R", exec("ags -r 'recorder.start()'"))
-hl.bind(mainMod .. " + W", exec("ags -t 'bar0'"))
+hl.bind("CTRL + Print", exec("ags request 'recorder.screenshot(true)'"))
+hl.bind(mainMod .. " + ALT + R", exec("ags request 'recorder.start()'"))
+hl.bind(mainMod .. " + W", exec("ags toggle 'bar0'"))
 hl.bind(mainMod .. " + grave", exec("/home/scelester/MyScripts/dashboard_env_toggle.sh"))
-hl.bind(mainMod .. " + S", exec('ags -r "openSearchOverlay()"'))
+hl.bind(mainMod .. " + S", exec('ags request "openSearchOverlay()"'))
 
 -- rofi / launcher
 hl.bind(mainMod .. " + R", exec("/home/scelester/MyScripts/launcher_env_toggle.sh"))
@@ -101,28 +101,47 @@ hl.bind("F11", hl.dsp.window.fullscreen())
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen())
 hl.bind(mainMod .. " + C", hl.dsp.window.center())
 
--- swapnext / changegroupactive don't have dedicated Lua dispatcher wrappers
--- yet, so these go through hl.dsp.exec_raw (native raw-dispatcher passthrough).
--- NOTE: shelling out via exec("hyprctl dispatch <name>") does NOT work here:
--- hyprctl dispatch now evaluates its argument as Lua (`return hl.dispatch(...)`),
--- so a bare dispatcher name like `cyclenext` is parsed as an undefined Lua
--- global and errors instead of dispatching.
-hl.bind("ALT + Q", hl.dsp.exec_raw("swapnext"))               -- dwindle
+-- NOTE on hl.dsp.exec_raw: it looks like the intended passthrough for raw/
+-- plugin dispatcher names, and it returns "ok" with no error - but verified
+-- live against the running compositor (toggling a window group, switching
+-- workspaces) it never actually performs the action. It's a no-op in this
+-- Hyprland build (0.56.2). Everything below uses the typed hl.dsp.* wrappers
+-- instead, each verified to actually change compositor state.
 hl.bind("ALT + Tab", hl.dsp.window.cycle_next())
-hl.bind("ALT + Escape", hl.dsp.exec_raw("changegroupactive"))
+hl.bind("ALT + Escape", hl.dsp.group.next())      -- cycle active window within group (only fires if grouped)
+hl.bind("ALT + grave", hl.dsp.group.next())
 hl.bind("ALT + Tab", hl.dsp.window.bring_to_top())
 
-hl.bind(mainMod .. " + Q", exec("hyprctl dispatch fullscreenstate -1 2"))
-hl.bind(mainMod .. " + Tab", exec("ags -t overview"))
+-- Alt+~ (Alt+Shift+`): create/break a window group. Pairs with Alt+`/Alt+Esc
+-- above, which cycle the active window once inside a group.
+hl.bind("ALT + SHIFT + grave", hl.dsp.group.toggle())
+
+-- ALT+Q used to be bound to the legacy "swapnext" (dwindle: swap active
+-- window with the next one in layout order). There's no typed hl.dsp
+-- wrapper for that specific dispatcher, and exec_raw can't reach it (see
+-- note above) - left unbound rather than silently changing its behavior.
+-- hl.dsp.window.swap({ direction = "left"/"right"/"up"/"down" }) is the
+-- closest available primitive if you want directional swap instead.
+
+hl.bind(mainMod .. " + Q", hl.dsp.window.fullscreen_state({ internal = -1, client = 2 }))
+
+-- SUPER+Tab was previously bound to "ags -t overview", which isn't a real
+-- ags command or window ("ags toggle overview" -> "no window registered
+-- with name 'overview'") - it never worked. hymission:toggle would be the
+-- real overview-style plugin, but it's unreachable due to the exec_raw bug
+-- noted above. Left unbound until one of those is actually usable.
+-- hl.bind(mainMod .. " + Tab", exec("ags toggle overview"))
 
 -- power
-hl.bind("XF86PowerOff", exec("ags -t powermenu"))
+hl.bind("XF86PowerOff", exec("ags toggle powermenu"))
 
--- monitors
-hl.bind(mainMod .. " + CTRL + left", exec("hyprctl dispatch movecurrentworkspacetomonitor l"))
-hl.bind(mainMod .. " + CTRL + right", exec("hyprctl dispatch movecurrentworkspacetomonitor r"))
+-- monitors (hardcoded to the two monitors defined at the top of hyprland.lua:
+-- HDMI-A-1 is physically positioned left of eDP-1)
+hl.bind(mainMod .. " + CTRL + left", hl.dsp.workspace.move({ monitor = "HDMI-A-1" }))
+hl.bind(mainMod .. " + CTRL + right", hl.dsp.workspace.move({ monitor = "eDP-1" }))
 
--- hymission plugin dispatcher: was already invalid/broken in the old .conf
--- (hyprctl reported "Invalid dispatcher: hymission:toggle" even before this
--- migration) - carried over as-is, still a no-op until that plugin is set up
-hl.bind("SUPER + Tab", exec("hyprctl dispatch hymission:toggle"))
+-- hymission plugin IS loaded (see `hyprctl plugin list`), but its dispatcher
+-- can only be reached through the broken exec_raw (see note above), so there
+-- is currently no way to call it from Lua config. Left unbound - this is an
+-- upstream limitation, not a config mistake.
+-- hl.bind("SUPER + Tab", hl.dsp.exec_raw("hymission:toggle"))

@@ -4,6 +4,57 @@ local function exec(cmd)
     return hl.dsp.exec_cmd(cmd)
 end
 
+local gaps_hidden = false
+local default_gaps_in = 5
+local default_gaps_out = 20
+
+local function toggle_window_gaps()
+    gaps_hidden = not gaps_hidden
+
+    hl.config({
+        general = {
+            gaps_in = gaps_hidden and 0 or default_gaps_in,
+            gaps_out = gaps_hidden and 0 or default_gaps_out,
+        },
+    })
+end
+
+local function window_center(window)
+    return {
+        x = window.at.x + (window.size.x / 2),
+        y = window.at.y + (window.size.y / 2),
+    }
+end
+
+local function swap_any_direction()
+    local active = hl.get_active_window()
+    if not active or active.floating or not active.workspace then
+        return
+    end
+
+    local active_center = window_center(active)
+    local best_window = nil
+    local best_distance = math.huge
+
+    for _, window in ipairs(active.workspace:get_windows()) do
+        if window.address ~= active.address and window.visible and not window.floating then
+            local center = window_center(window)
+            local dx = center.x - active_center.x
+            local dy = center.y - active_center.y
+            local distance = (dx * dx) + (dy * dy)
+
+            if distance < best_distance then
+                best_window = window
+                best_distance = distance
+            end
+        end
+    end
+
+    if best_window then
+        hl.dispatch(hl.dsp.window.swap({ target = best_window }))
+    end
+end
+
 hl.bind(mainMod .. " + Space", exec("alacritty"))                              -- open the terminal
 hl.bind(mainMod .. " + SHIFT + Space", exec("alacritty --title=float"))        -- open the terminal (floating)
 hl.bind("ALT + F4", hl.dsp.window.close())                                     -- close the active window
@@ -19,7 +70,8 @@ hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))                       -
 hl.bind("Print", exec('wayfreeze --after-freeze-cmd \'grim -g "$(slurp)" - | tee ~/Pictures/Screenshots/"$(date +%Y-%m-%d_%H-%M-%S)".png | wl-copy; killall wayfreeze\''))
 hl.bind("CTRL + Print", exec("ags request 'recorder.screenshot(true)'"))
 hl.bind(mainMod .. " + ALT + R", exec("ags request 'recorder.start()'"))
-hl.bind(mainMod .. " + W", exec("ags toggle 'bar0'"))
+hl.bind(mainMod .. " + W", exec("ags toggle bar"))
+hl.bind(mainMod .. " + SHIFT + W", toggle_window_gaps)
 hl.bind(mainMod .. " + grave", exec("/home/scelester/MyScripts/dashboard_env_toggle.sh"))
 hl.bind(mainMod .. " + S", exec('ags request "openSearchOverlay()"'))
 
@@ -91,10 +143,10 @@ hl.bind(mainMod .. " + N", hl.dsp.window.move({ workspace = "empty" }))
 hl.bind(mainMod .. " + SHIFT + N", hl.dsp.window.move({ workspace = "empty silent" }))
 
 -- resize windows
-hl.bind("ALT + l", hl.dsp.window.resize({ x = 30, y = 0 }), { repeating = true })
-hl.bind("ALT + h", hl.dsp.window.resize({ x = -30, y = 0 }), { repeating = true })
-hl.bind("ALT + j", hl.dsp.window.resize({ x = 0, y = -30 }), { repeating = true })
-hl.bind("ALT + k", hl.dsp.window.resize({ x = 0, y = 30 }), { repeating = true })
+hl.bind("ALT + l", hl.dsp.window.resize({ x = 30, y = 0, relative = true }), { repeating = true })
+hl.bind("ALT + h", hl.dsp.window.resize({ x = -30, y = 0, relative = true }), { repeating = true })
+hl.bind("ALT + j", hl.dsp.window.resize({ x = 0, y = -30, relative = true }), { repeating = true })
+hl.bind("ALT + k", hl.dsp.window.resize({ x = 0, y = 30, relative = true }), { repeating = true })
 
 -- custom windows setup
 hl.bind("F11", hl.dsp.window.fullscreen())
@@ -116,12 +168,7 @@ hl.bind("ALT + Tab", hl.dsp.window.bring_to_top())
 -- above, which cycle the active window once inside a group.
 hl.bind("ALT + SHIFT + grave", hl.dsp.group.toggle())
 
--- ALT+Q used to be bound to the legacy "swapnext" (dwindle: swap active
--- window with the next one in layout order). There's no typed hl.dsp
--- wrapper for that specific dispatcher, and exec_raw can't reach it (see
--- note above) - left unbound rather than silently changing its behavior.
--- hl.dsp.window.swap({ direction = "left"/"right"/"up"/"down" }) is the
--- closest available primitive if you want directional swap instead.
+hl.bind("ALT + Q", swap_any_direction)
 
 hl.bind(mainMod .. " + Q", hl.dsp.window.fullscreen_state({ internal = -1, client = 2 }))
 

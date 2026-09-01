@@ -26,54 +26,54 @@ require("lua.keybindings")
 -----------------------
 
 hl.config({
-    general = {
-        border_size = 1,
-        col = {
-            active_border = "rgba(22fff8cc)",
-        },
-        layout = "dwindle",
-        allow_tearing = true,
-    },
+	general = {
+		border_size = 1,
+		col = {
+			active_border = "rgba(22fff8cc)",
+		},
+		layout = "dwindle",
+		allow_tearing = true,
+	},
 
-    decoration = {
-        rounding = 10,
+	decoration = {
+		rounding = 10,
 
-        shadow = {
-            enabled      = false,
-            range        = 10,
-            render_power = 2,
-            color        = "rgba(1,1,1,1)",
-        },
+		shadow = {
+			enabled = false,
+			range = 10,
+			render_power = 2,
+			color = "rgba(1,1,1,1)",
+		},
 
-        blur = {
-            enabled           = true,
-            size              = 8,
-            passes            = 3,
-            new_optimizations = true,
-        },
+		blur = {
+			enabled = true,
+			size = 8,
+			passes = 3,
+			new_optimizations = true,
+		},
 
-        dim_special   = 0.6,
-        dim_inactive  = false,
-        dim_strength  = 0.3,
-    },
+		dim_special = 0.6,
+		dim_inactive = false,
+		dim_strength = 0.3,
+	},
 
-    misc = {
-        disable_hyprland_logo = true,
-        focus_on_activate     = true,
-    },
+	misc = {
+		disable_hyprland_logo = true,
+		focus_on_activate = true,
+	},
 
-    dwindle = {
-        preserve_split = true, -- you probably want this
-    },
+	dwindle = {
+		preserve_split = true, -- you probably want this
+	},
 
-    master = {
-        new_status = "master",
-    },
+	master = {
+		new_status = "master",
+	},
 
-    gestures = {
-        workspace_swipe_use_r    = false,
-        workspace_swipe_forever  = false,
-    },
+	gestures = {
+		workspace_swipe_use_r = false,
+		workspace_swipe_forever = false,
+	},
 })
 
 -- Touchpad swipes (3 and 4 finger) are handled entirely by libinput-gestures
@@ -106,66 +106,71 @@ hl.animation({ leaf = "workspaces", enabled = true, speed = 2, bezier = "default
 ----------------------
 
 hl.config({
-    group = {
-        -- Automatically group new windows with the focused unlocked group
-        auto_group = true,
+	group = {
+		-- Automatically group new windows with the focused unlocked group
+		auto_group = true,
 
-        -- Insert new windows after the current one in the group
-        insert_after_current = true,
+		-- Insert new windows after the current one in the group
+		insert_after_current = true,
 
-        -- Focus on the window removed from the group
-        focus_removed_window = true,
+		-- Focus on the window removed from the group
+		focus_removed_window = true,
 
-        -- Dragging windows into a group behavior: 0 = disabled, 1 = enabled, 2 = only via groupbar
-        drag_into_group = 1,
+		-- Dragging windows into a group behavior: 0 = disabled, 1 = enabled, 2 = only via groupbar
+		drag_into_group = 1,
 
-        -- Allow merging of window groups by dragging
-        merge_groups_on_drag = true,
+		-- Allow merging of window groups by dragging
+		merge_groups_on_drag = true,
 
-        -- Merge groups when dragging into the groupbar
-        merge_groups_on_groupbar = true,
+		-- Merge groups when dragging into the groupbar
+		merge_groups_on_groupbar = true,
 
-        -- Merge floating windows into tiled groups via groupbar
-        merge_floated_into_tiled_on_groupbar = false,
+		-- Merge floating windows into tiled groups via groupbar
+		merge_floated_into_tiled_on_groupbar = false,
 
-        -- Merge window into workspace's solitary unlocked group on movetoworkspace
-        group_on_movetoworkspace = false,
+		-- Merge window into workspace's solitary unlocked group on movetoworkspace
+		group_on_movetoworkspace = false,
 
-        groupbar = {
-            enabled = true,
+		groupbar = {
+			enabled = true,
 
-            font_family = "YourPreferredFont", -- Replace with your chosen font
-            font_size   = 10,
+			-- filled in) - using the Nerd Font your AGS bar already uses
+			font_family = "JetBrainsMono Nerd Font",
+			font_size = 11,
 
-            render_titles = true,
+			render_titles = true,
 
-            height = 12,
+			height = 4,
 
-            -- Catppuccin Mocha "text" - softer than pure white, matches the rest of the theme
-            text_color = 0xFFCDD6F4,
+			-- Catppuccin Mocha "text" - softer than pure white, matches the rest of the theme
+			-- text_color = 0xFFCDD6F4,
 
-            scrolling = true,
+			scrolling = true,
 
-            indicator_height = 0,
+			-- was 0 (invisible) - small readable marker for a locked group
 
-            rounding          = 0,
-            gradient_rounding = 5,
+			-- was rounding=0 (sharp) with gradient_rounding=5 (rounded) - two
+			-- different corner styles on the same bar. Matched, and closer to
+			-- the general.rounding=10 windows use so the bar doesn't look
+			-- like a different UI stapled onto rounded windows.
+			-- rounding = 8,
+			-- gradient_rounding = 8,
 
-            stacked          = false,
-            round_only_edges = false,
+			stacked = false,
+			round_only_edges = false,
 
-            gradients = true,
+			gradients = false,
 
-            -- active is Catppuccin Mocha's own muted teal (not the neon border
-            -- accent - full-bar neon was too much) fading into surface1; inactive
-            -- uses surface0/base instead of flat greys
-            col = {
-                active   = { colors = { "0xFF94E2D5", "0xFF45475A" }, angle = 180 },
-                inactive = { colors = { "0xFF313244", "0xFF1E1E2E" }, angle = 10 },
-            },
+			-- active is Catppuccin Mocha's own muted teal (not the neon border
+			-- accent - full-bar neon was too much) fading into surface1; inactive
+			-- uses surface0/base instead of flat greys
+			col = {
+				active = { colors = { "0xFF94E2D5", "0xFF45475A" }, angle = 180 },
+				inactive = { colors = { "0xFF313244", "0xFF1E1E2E" }, angle = 10 },
+			},
 
-            gaps_in  = 4,
-            gaps_out = 5,
-        },
-    },
+			gaps_in = 4,
+			gaps_out = 5,
+		},
+	},
 })
